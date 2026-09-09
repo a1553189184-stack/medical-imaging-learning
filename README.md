@@ -5,7 +5,7 @@
 ## 功能
 
 - 学习首页、课程进度和每日病例
-- 16 个覆盖胸部、神经、腹部和骨骼肌肉的精编病例
+- 10 个覆盖胸部、神经、腹部和骨骼肌肉的真实开放影像病例
 - 按系统筛选与搜索病例
 - 病例收藏、收藏夹筛选与随机挑战
 - 模拟阅片工作台：调窗、缩放、反相、标注
@@ -30,4 +30,4 @@ npx serve .
 - [Cornerstone3D](https://github.com/cornerstonejs/cornerstone3D)：Web 医学影像交互能力与 DICOMweb 扩展方向
 - [RadGame](https://github.com/siavashraissi/RadGame)：病例驱动、游戏化反馈的影像教学方式
 
-当前原型使用程序化合成影像占位图，不含患者数据，也不用于临床诊断。生产版本可接入 Cornerstone3D、经过去标识化的 DICOM 教学库、用户认证与后端题库。
+当前病例使用下载到站内的真实开放医学影像；完整作者、原始链接和许可见 `IMAGE_SOURCES.md`。本站仅用于教学，不用于临床诊断。后续可进一步接入 Cornerstone3D、完整去标识化 DICOM 序列、用户认证与后端题库。
