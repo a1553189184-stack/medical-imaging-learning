@@ -63,7 +63,7 @@
     </section>
 
     <section class="view" id="cases">
-      <div class="page-title"><div><span class="eyebrow mint">CASE ATLAS</span><h1>病例图谱</h1><p>按系统浏览高质量典型病例，建立模式识别能力。</p></div><span class="case-total">128 <small>个病例</small></span></div>
+      <div class="page-title"><div><span class="eyebrow mint">CASE ATLAS</span><h1>病例图谱</h1><p>按系统浏览高质量典型病例，建立模式识别能力。</p></div><span class="case-total"><span id="caseTotal">16</span> <small>个精编病例</small></span></div>
       <div class="case-actions"><div class="filters"><button class="active" data-filter="all">全部</button><button data-filter="胸部">胸部</button><button data-filter="神经">神经</button><button data-filter="腹部">腹部</button><button data-filter="骨骼">骨骼肌肉</button><button data-filter="favorite">☆ 收藏</button></div><button class="random-case" id="randomCase">随机挑战 ↗</button></div>
       <div class="case-list" id="caseList"></div>
     </section>
@@ -74,7 +74,7 @@
         <div class="workbench">
           <div class="tools"><button class="tool active" data-tool="window" title="窗宽窗位">◐<span>调窗</span></button><button class="tool" data-tool="zoom" title="缩放">⌕<span>缩放</span></button><button class="tool" data-tool="annotate" title="标注">＋<span>标注</span></button><button class="tool" data-tool="invert" title="反相">◑<span>反相</span></button></div>
           <div class="viewport" id="viewport"><div class="dicom-info left">YYS TEACHING FILE<br>PA CHEST<br>120 kVp · 2.5 mAs</div><div class="dicom-info right">W <span id="ww">1500</span><br>L <span id="wl">−600</span></div><div class="scan large chest-scan" id="activeScan"></div><div class="orientation top">A</div><div class="orientation bottom">P</div><div class="scale">10 cm</div></div>
-          <aside class="case-panel"><span class="eyebrow">CLINICAL CONTEXT</span><h2 id="caseQuestion">你观察到了什么？</h2><p id="caseHistory">23 岁男性，运动后突发右侧胸痛，伴轻度呼吸困难。</p><div class="question"><b>请选择最可能的诊断</b><div id="answers"></div></div><div class="feedback" id="feedback"></div><button class="primary full" id="submitAnswer">提交判断</button><button class="next-case" id="nextCase">下一病例 →</button><div class="notes"><div><b>我的阅片笔记</b><span id="noteSaved">自动保存</span></div><textarea id="caseNote" placeholder="记录征象、鉴别诊断或复习要点…"></textarea></div><small class="shortcuts">滚轮：调窗/缩放 · A：标注 · R：重置 · →：下一例</small><small class="disclaimer">仅供医学教育，不用于临床诊断。</small></aside>
+          <aside class="case-panel"><span class="eyebrow">CLINICAL CONTEXT</span><h2 id="caseQuestion">你观察到了什么？</h2><p id="caseHistory">23 岁男性，运动后突发右侧胸痛，伴轻度呼吸困难。</p><div class="question"><b>请选择最可能的诊断</b><div id="answers"></div></div><div class="feedback" id="feedback"></div><div class="learning-reveal" id="learningReveal"></div><button class="primary full" id="submitAnswer">提交判断</button><button class="next-case" id="nextCase">下一病例 →</button><div class="notes"><div><b>我的阅片笔记</b><span id="noteSaved">自动保存</span></div><textarea id="caseNote" placeholder="记录征象、鉴别诊断或复习要点…"></textarea></div><small class="shortcuts">滚轮：调窗/缩放 · A：标注 · R：重置 · →：下一例</small><small class="disclaimer">仅供医学教育，不用于临床诊断。</small></aside>
         </div>
       </div>
     </section>
@@ -85,6 +85,7 @@
       <article class="panel mastery"><div class="section-head compact"><div><span class="eyebrow">SYSTEM MASTERY</span><h2>系统掌握度</h2></div></div><div class="master-row"><b>胸部影像</b><div class="progress"><i style="width:82%"></i></div><span>82%</span></div><div class="master-row"><b>神经影像</b><div class="progress"><i style="width:68%"></i></div><span>68%</span></div><div class="master-row"><b>腹部影像</b><div class="progress"><i style="width:54%"></i></div><span>54%</span></div><div class="master-row"><b>骨骼肌肉</b><div class="progress"><i style="width:41%"></i></div><span>41%</span></div></article>
     </section>
   </main>
+  <script src="cases.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
