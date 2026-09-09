@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="影研社——面向医学影像学习者的交互式病例训练平台" />
+  <title>影研社 · 医学影像学习平台</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <aside class="sidebar">
+    <a class="brand" href="#"><span class="brand-mark">影</span><span>影研社<small>IMAGE LAB</small></span></a>
+    <nav aria-label="主导航">
+      <button class="nav-item active" data-view="home"><span>⌂</span>学习首页</button>
+      <button class="nav-item" data-view="cases"><span>▦</span>病例图谱</button>
+      <button class="nav-item" data-view="viewer"><span>◫</span>阅片训练</button>
+      <button class="nav-item" data-view="progress"><span>↗</span>学习进度</button>
+    </nav>
+    <div class="side-card">
+      <span class="eyebrow">今日目标</span>
+      <strong><span id="dailyCount">1</span> / 3 例</strong>
+      <div class="progress"><i style="width:33%"></i></div>
+      <p>再完成 2 例，延续你的学习节奏。</p>
+    </div>
+    <div class="profile"><div class="avatar">林</div><div><b>林同学</b><small>住院医师 · R2</small></div><button>•••</button></div>
+  </aside>
+
+  <main>
+    <header>
+      <button class="menu" aria-label="展开菜单">☰</button>
+      <div class="search"><span>⌕</span><input id="globalSearch" placeholder="搜索疾病、征象或解剖部位…" /><kbd>⌘ K</kbd></div>
+      <div class="header-actions"><button aria-label="通知">♢<i></i></button><span class="streak">🔥 12 天连续</span></div>
+    </header>
+
+    <section class="view active" id="home">
+      <div class="hero">
+        <div>
+          <span class="eyebrow mint">WED · SEPTEMBER 09</span>
+          <h1>看见影像，<br><em>读懂临床。</em></h1>
+          <p>从典型征象到鉴别诊断，在真实病例节奏中建立你的影像思维。</p>
+          <button class="primary" data-open-case="0">继续今日训练 <span>→</span></button>
+        </div>
+        <div class="hero-visual">
+          <div class="scan-frame"><div class="scan chest-scan"></div><span class="scan-label">PA · CHEST</span><span class="scan-meta">W 1500&nbsp;&nbsp; L −600</span><i class="target t1"></i><i class="target t2"></i></div>
+          <div class="float-note"><span>本周准确率</span><strong>86<small>%</small></strong><i>↑ 8.4%</i></div>
+        </div>
+      </div>
+
+      <div class="section-head"><div><span class="eyebrow">CONTINUE LEARNING</span><h2>继续学习</h2></div><button class="text-btn" data-go="cases">查看全部 →</button></div>
+      <div class="course-grid">
+        <article class="course-card coral" data-open-case="0"><div class="card-top"><span>胸部 · X-RAY</span><b>中级</b></div><div class="mini-scan chest-scan"></div><div class="course-copy"><small>模块 04 / 08</small><h3>胸部急症影像</h3><p>气胸 · 肺水肿 · 主动脉综合征</p><div class="progress"><i style="width:62%"></i></div></div></article>
+        <article class="course-card blue" data-open-case="1"><div class="card-top"><span>神经 · CT</span><b>入门</b></div><div class="mini-scan brain-scan"></div><div class="course-copy"><small>模块 02 / 06</small><h3>颅脑 CT 基础</h3><p>脑出血 · 梗死 · 占位效应</p><div class="progress"><i style="width:35%"></i></div></div></article>
+        <article class="course-card green" data-open-case="2"><div class="card-top"><span>腹部 · MRI</span><b>进阶</b></div><div class="mini-scan abdomen-scan"></div><div class="course-copy"><small>模块 01 / 05</small><h3>肝脏病变辨识</h3><p>血管瘤 · HCC · 转移瘤</p><div class="progress"><i style="width:18%"></i></div></div></article>
+      </div>
+      <div class="lower-grid">
+        <article class="panel"><div class="section-head compact"><div><span class="eyebrow">DAILY CASE</span><h2>今日一例</h2></div><span class="tag">+ 30 XP</span></div><div class="daily-case"><div class="case-icon">23<small>岁</small></div><div><b>突发胸痛伴呼吸困难</b><p>男性 · 急诊 · 胸部正位片</p></div><button class="round" data-open-case="0">→</button></div></article>
+        <article class="panel stats"><div><span class="eyebrow">WEEKLY FOCUS</span><h2>本周专注</h2></div><strong>18<small>例</small></strong><div class="bars"><i style="height:35%"></i><i style="height:55%"></i><i style="height:42%"></i><i style="height:78%"></i><i style="height:62%"></i><i class="today" style="height:90%"></i><i style="height:25%"></i></div><div class="days"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span></div></article>
+      </div>
+    </section>
+
+    <section class="view" id="cases">
+      <div class="page-title"><div><span class="eyebrow mint">CASE ATLAS</span><h1>病例图谱</h1><p>按系统浏览高质量典型病例，建立模式识别能力。</p></div><span class="case-total">128 <small>个病例</small></span></div>
+      <div class="case-actions"><div class="filters"><button class="active" data-filter="all">全部</button><button data-filter="胸部">胸部</button><button data-filter="神经">神经</button><button data-filter="腹部">腹部</button><button data-filter="骨骼">骨骼肌肉</button><button data-filter="favorite">☆ 收藏</button></div><button class="random-case" id="randomCase">随机挑战 ↗</button></div>
+      <div class="case-list" id="caseList"></div>
+    </section>
+
+    <section class="view" id="viewer">
+      <div class="viewer-shell">
+        <div class="viewer-top"><button class="back" data-go="cases">← 返回病例库</button><div><b id="viewerTitle">自发性气胸</b><span id="viewerIndex">病例 01 / 04</span></div><div class="viewer-actions"><button class="outline" id="favoriteCase">☆ 收藏</button><button class="outline" id="resetViewer">重置影像</button></div></div>
+        <div class="workbench">
+          <div class="tools"><button class="tool active" data-tool="window" title="窗宽窗位">◐<span>调窗</span></button><button class="tool" data-tool="zoom" title="缩放">⌕<span>缩放</span></button><button class="tool" data-tool="annotate" title="标注">＋<span>标注</span></button><button class="tool" data-tool="invert" title="反相">◑<span>反相</span></button></div>
+          <div class="viewport" id="viewport"><div class="dicom-info left">YYS TEACHING FILE<br>PA CHEST<br>120 kVp · 2.5 mAs</div><div class="dicom-info right">W <span id="ww">1500</span><br>L <span id="wl">−600</span></div><div class="scan large chest-scan" id="activeScan"></div><div class="orientation top">A</div><div class="orientation bottom">P</div><div class="scale">10 cm</div></div>
+          <aside class="case-panel"><span class="eyebrow">CLINICAL CONTEXT</span><h2 id="caseQuestion">你观察到了什么？</h2><p id="caseHistory">23 岁男性，运动后突发右侧胸痛，伴轻度呼吸困难。</p><div class="question"><b>请选择最可能的诊断</b><div id="answers"></div></div><div class="feedback" id="feedback"></div><button class="primary full" id="submitAnswer">提交判断</button><button class="next-case" id="nextCase">下一病例 →</button><div class="notes"><div><b>我的阅片笔记</b><span id="noteSaved">自动保存</span></div><textarea id="caseNote" placeholder="记录征象、鉴别诊断或复习要点…"></textarea></div><small class="shortcuts">滚轮：调窗/缩放 · A：标注 · R：重置 · →：下一例</small><small class="disclaimer">仅供医学教育，不用于临床诊断。</small></aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="view" id="progress">
+      <div class="page-title"><div><span class="eyebrow mint">YOUR PROGRESS</span><h1>学习进度</h1><p>稳步积累，比短暂冲刺更重要。</p></div></div>
+      <div class="metric-grid"><article><span>累计病例</span><strong id="solvedCount">36</strong><small>本月 +12</small></article><article><span>诊断准确率</span><strong id="accuracy">86%</strong><small>较上周 +8.4%</small></article><article><span>学习时长</span><strong>14.5h</strong><small>目标完成 72%</small></article><article><span>连续学习</span><strong>12天</strong><small>个人最佳 18 天</small></article></div>
+      <article class="panel mastery"><div class="section-head compact"><div><span class="eyebrow">SYSTEM MASTERY</span><h2>系统掌握度</h2></div></div><div class="master-row"><b>胸部影像</b><div class="progress"><i style="width:82%"></i></div><span>82%</span></div><div class="master-row"><b>神经影像</b><div class="progress"><i style="width:68%"></i></div><span>68%</span></div><div class="master-row"><b>腹部影像</b><div class="progress"><i style="width:54%"></i></div><span>54%</span></div><div class="master-row"><b>骨骼肌肉</b><div class="progress"><i style="width:41%"></i></div><span>41%</span></div></article>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
