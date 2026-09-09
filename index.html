@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="learning.css" />
 </head>
 <body>
   <div class="noise"></div>
@@ -45,7 +46,7 @@
           <button class="primary" data-open-case="0">开始病例训练 <span>→</span></button>
         </div>
         <div class="hero-visual">
-          <div class="scan-frame"><img class="scan" src="assets/images/pneumothorax.png" alt="右侧张力性气胸胸部 X 光片"><span class="scan-label">PA · CHEST</span><span class="scan-meta">开放教学影像</span></div>
+          <div class="scan-frame"><img class="scan" src="assets/images/pneumothorax.png" alt="右侧气胸胸部 X 光片"><span class="scan-label">X-RAY · CHEST</span><span class="scan-meta">开放教学影像</span></div>
           <div class="float-note"><span>经核验开放病例</span><strong>10<small>例</small></strong><i>4 个系统</i></div>
         </div>
       </div>
@@ -57,36 +58,98 @@
         <article class="course-card green" data-open-case="7"><div class="card-top"><span>腹部 / 骨骼</span><b>3 例</b></div><img class="mini-scan" src="assets/images/liver-hemangioma.jpg" alt="肝血管瘤增强 MRI"><div class="course-copy"><small>真实开放影像</small><h3>腹部与骨骼</h3><p>肝血管瘤 · 阑尾炎 · Colles 骨折</p></div></article>
       </div>
       <div class="lower-grid">
-        <article class="panel"><div class="section-head compact"><div><span class="eyebrow">DAILY CASE</span><h2>今日一例</h2></div><span class="tag">+ 30 XP</span></div><div class="daily-case"><div class="case-icon">67<small>岁</small></div><div><b>突发胸痛伴血压下降</b><p>男性 · 急诊 · 胸部正位片</p></div><button class="round" data-open-case="0">→</button></div></article>
+        <article class="panel"><div class="section-head compact"><div><span class="eyebrow">GET STARTED</span><h2>从一例开始</h2></div><span class="tag">教学情境</span></div><div class="daily-case"><div class="case-icon">67<small>岁</small></div><div><b>突发胸痛伴血压下降</b><p>教学设定 · 胸部 X 线</p></div><button class="round" data-open-case="0" aria-label="开始第一例训练">→</button></div></article>
         <article class="panel catalog-summary"><div><span class="eyebrow">CURRICULUM</span><h2>病例库构成</h2></div><strong>10<small>例</small></strong><div class="catalog-breakdown"><span>胸部 <b>4</b></span><span>神经 <b>3</b></span><span>腹部 <b>2</b></span><span>骨骼 <b>1</b></span></div><p>数量来自当前公开题库，不是虚构的用户统计。</p></article>
       </div>
     </section>
 
     <section class="view" id="cases">
-      <div class="page-title"><div><span class="eyebrow mint">CASE ATLAS</span><h1>病例图谱</h1><p>按系统浏览高质量典型病例，建立模式识别能力。</p></div><span class="case-total"><span id="caseTotal">16</span> <small>个精编病例</small></span></div>
+      <div class="page-title"><div><span class="eyebrow mint">CASE ATLAS</span><h1>病例图谱</h1><p>从影像征象到诊断路径。每个病例都有方法、技巧和易错点。</p></div><span class="case-total"><span id="caseTotal">10</span> <small>个影像病例</small></span></div>
       <div class="case-actions"><div class="filters"><button class="active" data-filter="all">全部</button><button data-filter="胸部">胸部</button><button data-filter="神经">神经</button><button data-filter="腹部">腹部</button><button data-filter="骨骼">骨骼肌肉</button><button data-filter="favorite">☆ 收藏</button></div><button class="random-case" id="randomCase">随机挑战 ↗</button></div>
+      <div class="atlas-controls">
+        <label>影像类型<select id="modalityFilter"><option value="all">全部类型</option><option value="X-RAY">X 线</option><option value="CT">CT / CTPA</option><option value="MRI">MRI</option></select></label>
+        <label>难度<select id="levelFilter"><option value="all">全部难度</option><option>入门</option><option>中级</option><option>进阶</option></select></label>
+        <label>学习状态<select id="statusFilter"><option value="all">全部状态</option><option value="unanswered">未答题</option><option value="completed">已答题</option><option value="reviewed">已背题</option></select></label>
+        <button id="clearFilters" class="soft-button">清除筛选</button>
+        <span id="filterCount" role="status"></span>
+      </div>
+      <div class="atlas-batch"><span>可以先查资料，再挑选病例练习。</span><div><button id="studyFiltered" class="soft-button">背诵筛选结果</button><button id="quizFiltered" class="primary">练习筛选结果</button></div></div>
       <div class="case-list" id="caseList"></div>
-      <p class="source-note">全部病例使用已下载到本站的去标识化开放影像。每例的原始来源、作者和许可均可在阅片页查看。</p>
+      <p class="source-note">图片保留原始标注；病史为教学设定。详情页提供图片来源及诊断方法参考资料。</p>
+    </section>
+
+    <section class="view" id="caseDetail">
+      <button class="back" data-go="cases">← 返回病例图谱</button>
+      <div id="detailContent"></div>
     </section>
 
     <section class="view" id="viewer">
+      <div class="training-controls">
+        <div><span class="eyebrow">READ · RECALL · PRACTISE</span><h2>阅片训练</h2></div>
+        <div class="mode-tabs" role="group" aria-label="学习模式">
+          <button id="quizMode" data-mode="quiz" aria-pressed="true">答题模式</button>
+          <button id="studyMode" data-mode="study" aria-pressed="false">背题模式</button>
+        </div>
+        <button id="configureQueue" class="soft-button">选择题目与顺序</button>
+      </div>
+      <div class="training-order">
+        <label>出题顺序<select id="orderMode"><option value="ordered">题库顺序</option><option value="random">随机顺序</option><option value="custom">自定义顺序</option></select></label>
+        <button id="reshuffle" class="soft-button" hidden>重新洗牌</button>
+        <label class="jump-label">跳到<select id="jumpCase" aria-label="跳转题目"></select></label>
+        <span id="queueSummary"></span>
+      </div>
+      <p id="modeHint" class="mode-hint"></p>
       <div class="viewer-shell">
-        <div class="viewer-top"><button class="back" data-go="cases">← 返回病例库</button><div><b id="viewerTitle">自发性气胸</b><span id="viewerIndex">病例 01 / 04</span></div><div class="viewer-actions"><button class="outline" id="favoriteCase">☆ 收藏</button><button class="outline" id="resetViewer">重置影像</button></div></div>
+        <div class="viewer-top"><button class="back" data-go="cases">← 病例图谱</button><div><b id="viewerTitle">病例训练</b><span id="viewerIndex"></span></div><div class="viewer-actions"><button class="outline" id="favoriteCase">☆ 收藏</button><button class="outline" id="resetViewer">重置影像</button></div></div>
         <div class="workbench">
-          <div class="tools"><button class="tool active" data-tool="window" title="窗宽窗位">◐<span>调窗</span></button><button class="tool" data-tool="zoom" title="缩放">⌕<span>缩放</span></button><button class="tool" data-tool="annotate" title="标注">＋<span>标注</span></button><button class="tool" data-tool="invert" title="反相">◑<span>反相</span></button></div>
-          <div class="viewport" id="viewport"><div class="dicom-info left">OPEN TEACHING FILE<br><span id="viewerModality">X-RAY</span><br>DE-IDENTIFIED</div><div class="dicom-info right">W <span id="ww">1500</span><br>L <span id="wl">−600</span></div><img class="scan large" id="activeScan" src="assets/images/pneumothorax.png" alt="当前病例医学影像"><div class="orientation top">A</div><div class="orientation bottom">P</div><div class="scale">10 cm</div></div>
-          <aside class="case-panel"><span class="eyebrow">CLINICAL CONTEXT</span><h2 id="caseQuestion">你观察到了什么？</h2><p id="caseHistory">67 岁男性，突发呼吸困难、胸痛，血压下降。</p><div class="image-credit"><span>影像来源</span><a id="imageCredit" href="#" target="_blank" rel="noopener"></a></div><div class="question"><b>请选择最可能的诊断</b><div id="answers"></div></div><div class="feedback" id="feedback"></div><div class="learning-reveal" id="learningReveal"></div><button class="primary full" id="submitAnswer">提交判断</button><button class="next-case" id="nextCase">下一病例 →</button><div class="notes"><div><b>我的阅片笔记</b><span id="noteSaved">自动保存</span></div><textarea id="caseNote" placeholder="记录征象、鉴别诊断或复习要点…"></textarea></div><small class="shortcuts">滚轮：调窗/缩放 · A：标注 · R：重置 · →：下一例</small><small class="disclaimer">真实开放影像，仅供医学教育，不用于临床诊断。</small></aside>
+          <div class="tools"><button class="tool active" data-tool="contrast" title="对比度（非 DICOM 调窗）">◐<span>对比</span></button><button class="tool" data-tool="zoom" title="缩放">⌕<span>缩放</span></button><button class="tool" data-tool="annotate" title="点击图像标注">＋<span>标注</span></button><button class="tool" data-tool="invert" title="反相" aria-pressed="false">◑<span>反相</span></button></div>
+          <div class="viewport" id="viewport">
+            <div class="dicom-info left">教学影像<br><span id="viewerModality"></span></div>
+            <div class="dicom-info right">对比 <span id="contrastValue">100%</span><br>缩放 <span id="zoomValue">100%</span></div>
+            <div id="imageStage"><img id="activeScan" src="assets/images/pneumothorax.png" alt="当前题目影像" draggable="false"><div id="annotations"></div></div>
+            <p id="imageError" role="alert" hidden>图片加载失败，请刷新页面重试。</p>
+            <span class="viewport-caption">静态图片 · 原始标注保留</span>
+          </div>
+          <aside class="case-panel">
+            <span class="eyebrow">教学情境 · 非原始病历</span>
+            <h2 id="caseQuestion">你观察到了什么？</h2>
+            <p id="caseHistory"></p>
+            <div class="question" id="questionBlock"><b>请选择最可能的诊断</b><div id="answers" role="group" aria-label="诊断选项"></div></div>
+            <div class="feedback" id="feedback" role="status"></div>
+            <button class="primary full" id="submitAnswer">提交判断</button>
+            <button id="toggleRecall" class="outline full" hidden>收起答案，尝试回忆</button>
+            <div id="studyAnswer"></div>
+            <div class="learning-reveal" id="learningReveal"></div>
+            <button id="markReviewed" class="primary full" hidden>标记已背</button>
+            <div id="trainingCredit" class="image-credit"></div>
+            <button id="openCurrentDetail" class="outline full">查看完整病例资料</button>
+            <div class="notes"><div><label for="caseNote">本例笔记</label><span id="noteSaved">自动保存</span></div><textarea id="caseNote" placeholder="记录征象、鉴别诊断或复习要点…"></textarea></div>
+            <small class="shortcuts">← → 切题 · 1–4 选择 · A 标注 · R 重置</small>
+          </aside>
         </div>
       </div>
+      <div class="training-pagination"><button id="prevCase" class="soft-button">← 上一题</button><span id="queuePosition" aria-live="polite"></span><button id="nextCase" class="primary">下一题 →</button></div>
+      <div id="sessionSummary" class="panel" hidden role="status"></div>
     </section>
 
     <section class="view" id="progress">
       <div class="page-title"><div><span class="eyebrow mint">LOCAL PROGRESS</span><h1>本机学习记录</h1><p>以下数据只来自当前浏览器中的真实操作；清除浏览器数据后会归零。</p></div></div>
       <div class="metric-grid"><article><span>已完成病例</span><strong><span id="solvedCount">0</span><small> / 10</small></strong><small>首次提交后计入</small></article><article><span>首次判断正确率</span><strong id="accuracy">—</strong><small>未答题时不显示比例</small></article><article><span>已收藏病例</span><strong id="favoriteCount">0</strong><small>当前设备</small></article><article><span>已写笔记</span><strong id="noteCount">0</strong><small>当前设备</small></article></div>
       <article class="panel mastery"><div class="section-head compact"><div><span class="eyebrow">COMPLETION BY SYSTEM</span><h2>各系统完成度</h2></div></div><div class="master-row" data-system="胸部"><b>胸部影像</b><div class="progress"><i style="width:0"></i></div><span>0 / 4</span></div><div class="master-row" data-system="神经"><b>神经影像</b><div class="progress"><i style="width:0"></i></div><span>0 / 3</span></div><div class="master-row" data-system="腹部"><b>腹部影像</b><div class="progress"><i style="width:0"></i></div><span>0 / 2</span></div><div class="master-row" data-system="骨骼"><b>骨骼肌肉</b><div class="progress"><i style="width:0"></i></div><span>0 / 1</span></div></article>
+      <p class="source-note">已背 <span id="reviewedCount">0</span> 例。背题记录与答题记录分开，背题不会增加答题数或正确率。</p>
     </section>
   </main>
+  <dialog id="queueDialog" aria-labelledby="queueTitle">
+    <div class="dialog-head"><div><span class="eyebrow">YOUR STUDY LIST</span><h2 id="queueTitle">选择题目与顺序</h2></div><button id="closeQueue" class="soft-button" aria-label="关闭题目设置">关闭</button></div>
+    <p>勾选需要学习的病例，用箭头调整先后。答题模式的跳题目录只显示编号。</p>
+    <div class="queue-shortcuts"><button class="soft-button" data-preset="all">选择全部</button><button class="soft-button" data-preset="filtered">按图谱筛选</button><button class="soft-button" data-preset="favorites">仅收藏</button><button class="soft-button" data-preset="none">全部取消</button></div>
+    <div class="queue-settings"><label>学习模式<select id="draftMode"><option value="quiz">答题模式</option><option value="study">背题模式</option></select></label><label>应用顺序<select id="draftOrder"><option value="custom">使用下方顺序</option><option value="ordered">题库顺序</option><option value="random">随机顺序</option></select></label></div>
+    <ol id="queueList"></ol>
+    <div class="dialog-footer"><span id="selectionCount" role="status"></span><button id="applyQueue" class="primary">应用并开始</button></div>
+  </dialog>
+  <div id="notice" role="status" aria-live="polite"></div>
   <script src="cases.js"></script>
+  <script src="curriculum.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
