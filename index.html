@@ -21,44 +21,44 @@
       <button class="nav-item" data-view="progress"><span>↗</span>学习进度</button>
     </nav>
     <div class="side-card">
-      <span class="eyebrow">今日目标</span>
-      <strong><span id="dailyCount">1</span> / 3 例</strong>
-      <div class="progress"><i style="width:33%"></i></div>
-      <p>再完成 2 例，延续你的学习节奏。</p>
+      <span class="eyebrow">本机学习记录</span>
+      <strong><span id="dailyCount">0</span> / <span id="sideTotal">10</span> 例</strong>
+      <div class="progress"><i id="sideProgress" style="width:0"></i></div>
+      <p>仅统计当前浏览器实际完成的病例，不代表任何真实身份。</p>
     </div>
-    <div class="profile"><div class="avatar">林</div><div><b>林同学</b><small>住院医师 · R2</small></div><button>•••</button></div>
+    <div class="privacy-label"><span>◉</span><div><b>访客模式</b><small>数据仅保存在此设备</small></div></div>
   </aside>
 
   <main>
     <header>
       <button class="menu" aria-label="展开菜单">☰</button>
       <div class="search"><span>⌕</span><input id="globalSearch" placeholder="搜索疾病、征象或解剖部位…" /><kbd>⌘ K</kbd></div>
-      <div class="header-actions"><button aria-label="通知">♢<i></i></button><span class="streak">🔥 12 天连续</span></div>
+      <div class="header-actions"><span class="local-mode">访客模式 · 无账号</span></div>
     </header>
 
     <section class="view active" id="home">
       <div class="hero">
         <div>
-          <span class="eyebrow mint">WED · SEPTEMBER 09</span>
+          <span class="eyebrow mint">OPEN RADIOLOGY EDUCATION</span>
           <h1>看见影像，<br><em>读懂临床。</em></h1>
           <p>从典型征象到鉴别诊断，在真实病例节奏中建立你的影像思维。</p>
-          <button class="primary" data-open-case="0">继续今日训练 <span>→</span></button>
+          <button class="primary" data-open-case="0">开始病例训练 <span>→</span></button>
         </div>
         <div class="hero-visual">
           <div class="scan-frame"><img class="scan" src="assets/images/pneumothorax.png" alt="右侧张力性气胸胸部 X 光片"><span class="scan-label">PA · CHEST</span><span class="scan-meta">开放教学影像</span></div>
-          <div class="float-note"><span>本周准确率</span><strong>86<small>%</small></strong><i>↑ 8.4%</i></div>
+          <div class="float-note"><span>经核验开放病例</span><strong>10<small>例</small></strong><i>4 个系统</i></div>
         </div>
       </div>
 
       <div class="section-head"><div><span class="eyebrow">CONTINUE LEARNING</span><h2>继续学习</h2></div><button class="text-btn" data-go="cases">查看全部 →</button></div>
       <div class="course-grid">
-        <article class="course-card coral" data-open-case="0"><div class="card-top"><span>胸部 · X-RAY</span><b>入门</b></div><img class="mini-scan" src="assets/images/pneumothorax.png" alt="气胸胸部 X 光片"><div class="course-copy"><small>真实开放影像</small><h3>胸部急症影像</h3><p>气胸 · 肺水肿 · 肺动脉栓塞</p><div class="progress"><i style="width:62%"></i></div></div></article>
-        <article class="course-card blue" data-open-case="4"><div class="card-top"><span>神经 · CT</span><b>入门</b></div><img class="mini-scan" src="assets/images/basal-ganglia-hemorrhage.png" alt="基底节区脑出血 CT"><div class="course-copy"><small>真实开放影像</small><h3>颅脑 CT 急症</h3><p>脑出血 · 硬膜外血肿 · 占位效应</p><div class="progress"><i style="width:35%"></i></div></div></article>
-        <article class="course-card green" data-open-case="7"><div class="card-top"><span>腹部 · MRI</span><b>中级</b></div><img class="mini-scan" src="assets/images/liver-hemangioma.jpg" alt="肝血管瘤增强 MRI"><div class="course-copy"><small>真实开放影像</small><h3>腹部病变辨识</h3><p>肝血管瘤 · 急性阑尾炎</p><div class="progress"><i style="width:18%"></i></div></div></article>
+        <article class="course-card coral" data-open-case="0"><div class="card-top"><span>胸部 · X-RAY / CT</span><b>4 例</b></div><img class="mini-scan" src="assets/images/pneumothorax.png" alt="气胸胸部 X 光片"><div class="course-copy"><small>真实开放影像</small><h3>胸部急症影像</h3><p>气胸 · 肺水肿 · 肺栓塞 · 肺癌</p></div></article>
+        <article class="course-card blue" data-open-case="4"><div class="card-top"><span>神经 · CT / MRI</span><b>3 例</b></div><img class="mini-scan" src="assets/images/basal-ganglia-hemorrhage.png" alt="基底节区脑出血 CT"><div class="course-copy"><small>真实开放影像</small><h3>神经系统影像</h3><p>脑出血 · 硬膜外血肿 · 多发性硬化</p></div></article>
+        <article class="course-card green" data-open-case="7"><div class="card-top"><span>腹部 / 骨骼</span><b>3 例</b></div><img class="mini-scan" src="assets/images/liver-hemangioma.jpg" alt="肝血管瘤增强 MRI"><div class="course-copy"><small>真实开放影像</small><h3>腹部与骨骼</h3><p>肝血管瘤 · 阑尾炎 · Colles 骨折</p></div></article>
       </div>
       <div class="lower-grid">
         <article class="panel"><div class="section-head compact"><div><span class="eyebrow">DAILY CASE</span><h2>今日一例</h2></div><span class="tag">+ 30 XP</span></div><div class="daily-case"><div class="case-icon">67<small>岁</small></div><div><b>突发胸痛伴血压下降</b><p>男性 · 急诊 · 胸部正位片</p></div><button class="round" data-open-case="0">→</button></div></article>
-        <article class="panel stats"><div><span class="eyebrow">WEEKLY FOCUS</span><h2>本周专注</h2></div><strong>18<small>例</small></strong><div class="bars"><i style="height:35%"></i><i style="height:55%"></i><i style="height:42%"></i><i style="height:78%"></i><i style="height:62%"></i><i class="today" style="height:90%"></i><i style="height:25%"></i></div><div class="days"><span>一</span><span>二</span><span>三</span><span>四</span><span>五</span><span>六</span><span>日</span></div></article>
+        <article class="panel catalog-summary"><div><span class="eyebrow">CURRICULUM</span><h2>病例库构成</h2></div><strong>10<small>例</small></strong><div class="catalog-breakdown"><span>胸部 <b>4</b></span><span>神经 <b>3</b></span><span>腹部 <b>2</b></span><span>骨骼 <b>1</b></span></div><p>数量来自当前公开题库，不是虚构的用户统计。</p></article>
       </div>
     </section>
 
@@ -81,9 +81,9 @@
     </section>
 
     <section class="view" id="progress">
-      <div class="page-title"><div><span class="eyebrow mint">YOUR PROGRESS</span><h1>学习进度</h1><p>稳步积累，比短暂冲刺更重要。</p></div></div>
-      <div class="metric-grid"><article><span>累计病例</span><strong id="solvedCount">36</strong><small>本月 +12</small></article><article><span>诊断准确率</span><strong id="accuracy">86%</strong><small>较上周 +8.4%</small></article><article><span>学习时长</span><strong>14.5h</strong><small>目标完成 72%</small></article><article><span>连续学习</span><strong>12天</strong><small>个人最佳 18 天</small></article></div>
-      <article class="panel mastery"><div class="section-head compact"><div><span class="eyebrow">SYSTEM MASTERY</span><h2>系统掌握度</h2></div></div><div class="master-row"><b>胸部影像</b><div class="progress"><i style="width:82%"></i></div><span>82%</span></div><div class="master-row"><b>神经影像</b><div class="progress"><i style="width:68%"></i></div><span>68%</span></div><div class="master-row"><b>腹部影像</b><div class="progress"><i style="width:54%"></i></div><span>54%</span></div><div class="master-row"><b>骨骼肌肉</b><div class="progress"><i style="width:41%"></i></div><span>41%</span></div></article>
+      <div class="page-title"><div><span class="eyebrow mint">LOCAL PROGRESS</span><h1>本机学习记录</h1><p>以下数据只来自当前浏览器中的真实操作；清除浏览器数据后会归零。</p></div></div>
+      <div class="metric-grid"><article><span>已完成病例</span><strong><span id="solvedCount">0</span><small> / 10</small></strong><small>首次提交后计入</small></article><article><span>首次判断正确率</span><strong id="accuracy">—</strong><small>未答题时不显示比例</small></article><article><span>已收藏病例</span><strong id="favoriteCount">0</strong><small>当前设备</small></article><article><span>已写笔记</span><strong id="noteCount">0</strong><small>当前设备</small></article></div>
+      <article class="panel mastery"><div class="section-head compact"><div><span class="eyebrow">COMPLETION BY SYSTEM</span><h2>各系统完成度</h2></div></div><div class="master-row" data-system="胸部"><b>胸部影像</b><div class="progress"><i style="width:0"></i></div><span>0 / 4</span></div><div class="master-row" data-system="神经"><b>神经影像</b><div class="progress"><i style="width:0"></i></div><span>0 / 3</span></div><div class="master-row" data-system="腹部"><b>腹部影像</b><div class="progress"><i style="width:0"></i></div><span>0 / 2</span></div><div class="master-row" data-system="骨骼"><b>骨骼肌肉</b><div class="progress"><i style="width:0"></i></div><span>0 / 1</span></div></article>
     </section>
   </main>
   <script src="cases.js"></script>
