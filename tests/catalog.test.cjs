@@ -6,7 +6,7 @@ const vm = require('node:vm');
 const {createHash} = require('node:crypto');
 
 const root = path.resolve(__dirname,'..');
-const catalogScripts = ['cases.js','curriculum.js','expanded-sources.js','expanded-cases.js'];
+const catalogScripts = ['cases.js','curriculum.js','expanded-sources.js','additional-groups.js','expanded-cases.js'];
 const source = catalogScripts.map(file => fs.readFileSync(path.join(root,file),'utf8')).join('\n');
 const data = vm.runInNewContext(source + '\nJSON.stringify({cases:CASES,curriculum:CURRICULUM,sources:EXPANDED_CASE_SOURCES})');
 const {cases,curriculum,sources} = JSON.parse(data);
@@ -14,16 +14,19 @@ const getId = c => path.basename(c.image,path.extname(c.image));
 const expanded = cases.filter(c => c.image.startsWith('assets/images/expanded/'));
 const latestChestIds = ['chest-bronchiectasis-01','chest-emphysema-01','chest-pulmonary-fibrosis-01','chest-pericardial-effusion-01','chest-thymoma-01','chest-aortic-dissection-01','chest-hiatal-hernia-01','chest-pneumomediastinum-01','chest-svc-syndrome-01','chest-lung-abscess-01'];
 
-test('catalog has 10 additional distinct chest cases', () => {
-  assert.equal(cases.length,224);
-  assert.equal(expanded.length,210);
+test('catalog has 50 additional cases in every system', () => {
+  assert.equal(cases.length,424);
+  assert.equal(expanded.length,410);
   const totals = Object.fromEntries(['胸部','神经','腹部','骨骼'].map(system => [system,cases.filter(c => c.system===system).length]));
-  assert.deepEqual(totals,{胸部:66,神经:54,腹部:53,骨骼:51});
-  assert.deepEqual(Object.fromEntries(Object.keys(totals).map(system=>[system,expanded.filter(c=>c.system===system).length])),{胸部:60,神经:50,腹部:50,骨骼:50});
+  assert.deepEqual(totals,{胸部:116,神经:104,腹部:103,骨骼:101});
+  assert.deepEqual(Object.fromEntries(Object.keys(totals).map(system=>[system,expanded.filter(c=>c.system===system).length])),{胸部:110,神经:100,腹部:100,骨骼:100});
   const latest = sources.filter(record=>latestChestIds.includes(record.id));
   assert.equal(latest.length,10);
   assert.equal(new Set(latest.map(record=>record.groupKey)).size,10);
   assert.ok(latestChestIds.every(id=>cases.some(c=>getId(c)===id && c.system==='胸部')));
+  const secondBatch=sources.slice(210);
+  assert.equal(secondBatch.length,200);
+  assert.deepEqual(Object.fromEntries(Object.keys(totals).map(system=>[system,secondBatch.filter(c=>c.system===system).length])),{胸部:50,神经:50,腹部:50,骨骼:50});
 });
 
 test('case metadata, diagnosis content and local images match one-to-one', () => {
@@ -54,11 +57,11 @@ test('case metadata, diagnosis content and local images match one-to-one', () =>
 
 test('expanded image sources are complete, distinct and cryptographically verified', () => {
   const manifest = JSON.parse(fs.readFileSync(path.join(root,'data','expanded-case-sources.json'),'utf8'));
-  assert.equal(manifest.count,210);
-  assert.equal(manifest.records.length,210);
-  assert.equal(sources.length,210);
+  assert.equal(manifest.count,410);
+  assert.equal(manifest.records.length,410);
+  assert.equal(sources.length,410);
   for(const key of ['id','image','sourceUrl','originalSha1','localSha256']) {
-    assert.equal(new Set(sources.map(record=>record[key])).size,210,`${key} must be unique`);
+    assert.equal(new Set(sources.map(record=>record[key])).size,410,`${key} must be unique`);
   }
   const sourceById = new Map(sources.map(record=>[record.id,record]));
   for(const c of expanded) {

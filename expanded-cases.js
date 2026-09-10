@@ -272,6 +272,10 @@ const EXPANDED_METHOD_START = {
   '骨骼':'先确认侧别、投照与覆盖范围，至少联合两个正交方向检查骨皮质、小梁、关节对位和软组织。'
 };
 
+// Additional diagnosis groups are generated from the manually reviewed second
+// expansion batch before source records are converted into cases.
+Object.assign(EXPANDED_GROUPS, ADDITIONAL_GROUPS);
+
 function expandedModality(source, fallback) {
   const text = (source.sourceTitle + ' ' + source.sourceDescription).toLocaleLowerCase();
   if (/mri|mrt|magnetic resonance|\brm\b/.test(text)) return 'MRI';
@@ -314,6 +318,8 @@ EXPANDED_CASE_SOURCES.forEach(function(source,index) {
     ],
     tips:group.tips, pitfalls:group.pitfalls, recall:group.recall,
     limitation:'这是来源提供的单张或拼图式静态影像，不含完整DICOM序列、可校准像素间距和完整病史。诊断名称依据来源说明；本页不能替代放射科正式阅片或临床诊疗。',
-    refs:[EXPANDED_REFS[group.ref],EXPANDED_REFS.acr]
+    refs:[EXPANDED_REFS[group.ref],EXPANDED_REFS.acr].filter(function(ref,index,items){
+      return index === items.findIndex(function(item){ return item[1] === ref[1]; });
+    })
   });
 });
