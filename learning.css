@@ -144,8 +144,24 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
 #notice.visible { opacity: 1; }
 .metric-grid strong #solvedCount { font-size: inherit; display: inline; color: inherit; }
 .mini-scan { object-fit: contain; background: #080d0a; filter: none; }
+.needs-review { color: #a2412f; }
+.case-panel .attempt-status { color: #93a68d; font-size: 11px; line-height: 1.7; margin: 13px 0; }
+.review-panel { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 25px; margin: 24px 0; }
+.review-panel > div:first-child { flex: 1 1 280px; }
+.review-panel h2 { margin: 8px 0 12px; font-size: 25px; }
+.review-panel p { font-size: 14px; line-height: 1.9; }
+.review-panel small { display: block; color: #697664; font-size: 12px; line-height: 1.9; max-width: 680px; }
+.review-actions { display: flex; gap: 10px; flex-shrink: 0; flex-wrap: wrap; }
+.review-actions .primary { margin: 0; font-size: 13px; padding: 13px 17px; }
+.course-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.course-card { min-width: 0; }
+.course-card:last-child { display: block; }
+.float-note strong [data-catalog-total], .metric-grid small [data-catalog-total] { font-size: inherit; color: inherit; display: inline; }
+.course-card:focus-visible { outline: 3px solid #75ad26; outline-offset: 4px; }
+.course-copy p { line-height: 1.8; }
 .scan-frame img.scan { object-fit: contain; }
 @media (min-width: 1600px) { .case-list { grid-template-columns: repeat(3,minmax(0,1fr)); } }
+@media (min-width: 1450px) { .course-grid { grid-template-columns: repeat(4,minmax(0,1fr)); } }
 @media (max-width: 1100px) {
   .workbench { grid-template-columns: 52px minmax(0,1fr); height: auto; }
   .viewport { height: 540px; }
@@ -159,6 +175,8 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
   .nav-item, .nav-item.active { font-size: 0; gap: 0; }
 }
 @media (max-width: 680px) {
+  .course-grid { grid-template-columns: minmax(0,1fr); }
+  .review-panel { align-items: stretch; flex-direction: column; }
   header { padding: 0 16px; gap: 10px; height: 72px; }
   .header-actions { display: none; }
   .menu { flex-shrink: 0; }

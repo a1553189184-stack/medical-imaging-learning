@@ -142,3 +142,62 @@ const CURRICULUM = [
     refs: [['AAOS：桡骨远端骨折说明', 'https://orthoinfo.aaos.org/globalassets/pdfs/distal-radius-fractures-cpg_pls.pdf']]
   }
 ];
+
+CURRICULUM.push(
+  {
+    id:'pleural-effusion', english:'Left pleural effusion',
+    tags:['肋膈角变钝','弧形上缘','胸部超声'],
+    methods:[
+      ['胸片识别分布','确认侧别、体位和肋膈角，判断阴影是否符合胸膜腔内液体的分布。'],
+      ['超声确认液体','胸部超声可确认积液，检查分隔及胸膜情况，并在需要穿刺时辅助定位。'],
+      ['查明积液原因','结合心、肝、肾疾病及感染或肿瘤线索；必要时由临床进行胸液分析，影像不能单独区分漏出液与渗出液。']
+    ],
+    tips:['先沿膈面和肋膈角观察，再回到液体上缘。','注意原图为立位；卧位积液可能不出现典型的弧形上缘。'],
+    pitfalls:['原图圆圈只是教学标注，并不等于液体的精确边界。','单凭“白了一片”不能判断为肺炎，也不能据此确定积液病因。'],
+    recall:'侧别与体位 → 肋膈角及上缘 → 超声确认 → 病因评估。',
+    limitation:'图中圆圈为原始标注；不能从这一张胸片估算准确积液毫升数。',
+    refs:[['MSD 专业版：胸腔积液','https://www.msdmanuals.com/professional/pulmonary-disorders/mediastinal-and-pleural-disorders/pleural-effusion']]
+  },
+  {
+    id:'lobar-pneumonia', english:'Right middle lobe pneumonia',
+    tags:['局灶性实变','肺野与肺叶','临床结合'],
+    methods:[
+      ['核对感染情境','将发热、咳嗽、咳痰与体格检查及必要的化验结果结合，判断是否支持肺部感染。'],
+      ['影像定位与描述','胸片观察实变分布；肺叶定位需结合解剖边界，必要时参考侧位片或 CT，不能只按上、中、下肺野命名。'],
+      ['评价疑难或并发症','需要进一步解释病灶或怀疑并发症时可使用 CT 等检查；持续不吸收的阴影需重新评估原因。']
+    ],
+    tips:['先描述“局灶性实变”，再在临床背景下提出肺炎诊断。','比较心缘、膈面和邻近肺野，不把局部高密度都叫做肿块。'],
+    pitfalls:['胸片不能可靠区分具体细菌或病毒。','影像形态并非肺炎特有，不应忽略肺不张及阻塞后改变。'],
+    recall:'局灶实变 + 感染症状 → 解剖定位 → 检查病程与并发症。',
+    limitation:'右中叶定位来自图片来源；本页未提供侧位片、病原学证据或复查影像。',
+    refs:[['ACR / RSNA：肺炎诊断与评估','https://www.radiologyinfo.org/en/info/pneumonia']]
+  },
+  {
+    id:'subdural-hematoma', english:'Left subdural hematoma',
+    tags:['新月形','脑外血肿','中线移位'],
+    methods:[
+      ['结合外伤与神经体征','了解外伤时间、用药和意识变化；进行临床神经系统评估。'],
+      ['头颅 CT 判断类型','沿颅骨内板寻找脑外积血，结合血肿形态和脑实质的关系，与硬膜外及脑内血肿区分。'],
+      ['检查占位与伴随损伤','在完整序列中评估脑室、脑池、中线及其他损伤；存在临床恶化时及时进行神经外科评估。']
+    ],
+    tips:['新月形有助识别硬膜下位置，但不能仅凭形态判断所有细节。','先看血肿，再回看对侧脑室和中线，避免漏掉占位效应。'],
+    pitfalls:['不能用单张图排除其他层面的出血或骨折。','血肿密度会随时间等因素变化，不能据截图准确推定发生天数。'],
+    recall:'脑外位置 → 新月形铺展 → 脑室与中线 → 临床紧急程度。',
+    limitation:'箭头来自原图；未提供完整 CT、出血时间及凝血检查，不进行精确体积和病程判断。',
+    refs:[['NHS：硬膜下血肿症状与检查','https://www.nhs.uk/conditions/subdural-haematoma/'],['MSD 专业版：常见创伤性脑损伤类型','https://www.msdmanuals.com/professional/multimedia/table/common-types-of-traumatic-brain-injury']]
+  },
+  {
+    id:'hydronephrosis', english:'Hydronephrosis with cortical thinning',
+    tags:['超声','肾盂肾盏扩张','无回声区'],
+    methods:[
+      ['多切面确认集合系统','通过纵横切面观察肾盂、肾盏的连续性，并评价肾实质，避免把孤立囊肿误认为积水。'],
+      ['寻找原因与影响','结合输尿管、膀胱及临床信息，检查肾功能；单个肾脏截图不能定位全部梗阻部位。'],
+      ['按临床问题补充检查','依据症状和初步检查，由临床选择 CT、MR 尿路成像或核医学等进一步评价；并非每例都采用相同检查。']
+    ],
+    tips:['无回声区要看分布和相互关系，不只看“黑色面积”。','皮质变薄提示需关注长期影响，但不能直接换算为肾功能损失程度。'],
+    pitfalls:['积水不一定意味着当前存在梗阻，早期梗阻也可能没有明显扩张。','本图没有提供结石、输尿管全程或彩色多普勒证据，不能自行补写这些结论。'],
+    recall:'集合系统扩张 → 皮质厚度 → 输尿管与膀胱 → 病因和肾功能。',
+    limitation:'图片未明确侧别；原始 1.07 cm 标记是一个肾盏的测量，不是肾盂前后径或肾脏长度。',
+    refs:[['MSD 专业版：梗阻性尿路病','https://www.msdmanuals.com/professional/genitourinary-disorders/obstructive-uropathy/obstructive-uropathy']]
+  }
+);

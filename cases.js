@@ -10,3 +10,59 @@ const CASES = [
 {system:'腹部',modality:'CT',title:'急性阑尾炎',history:'27 岁男性，转移性右下腹痛伴恶心 12 小时。',image:'assets/images/appendicitis.jpg',level:'入门',answer:1,options:['盲肠憩室炎','急性阑尾炎','末端回肠炎','输尿管结石'],explain:'右下腹阑尾明显增粗，测量约 17 mm，并伴周围炎性改变。',findings:['阑尾直径明显增大，约 17 mm','阑尾壁增厚','阑尾周围脂肪间隙模糊'],differential:'盲肠憩室炎的炎症中心位于憩室；末端回肠炎表现为较长节段肠壁增厚。',pearl:'阑尾直径大于 6 mm 不能单独诊断，必须结合壁改变和周围炎症。',report:'CT 表现符合急性阑尾炎，未见明确脓肿或游离气体。',source:'Wikimedia Commons · James Heilman, MD',license:'CC BY-SA 3.0',sourceUrl:'https://commons.wikimedia.org/wiki/File:CAT_scan_demonstrating_acute_appendicitis.jpg'},
 {system:'骨骼',modality:'X-RAY',title:'桡骨远端 Colles 骨折',history:'71 岁女性，跌倒后手掌撑地，腕部肿痛畸形。',image:'assets/images/colles-fracture.jpg',level:'入门',answer:3,options:['舟骨骨折','月骨脱位','Smith 骨折','Colles 骨折'],explain:'桡骨远端骨折伴远端骨块向背侧移位和成角，符合 Colles 骨折。',findings:['桡骨远端干骺端骨折','远端骨块背侧移位及背侧成角','可见桡骨高度下降'],differential:'Smith 骨折的远端骨块向掌侧移位；Barton 骨折累及关节面并伴腕骨脱位。',pearl:'报告应描述关节面受累、移位方向、桡骨高度和倾斜角。',report:'左侧桡骨远端 Colles 型骨折，伴背侧成角及轻度短缩。',source:'Wikimedia Commons · Lucien Monfils',license:'CC BY-SA 3.0',sourceUrl:'https://commons.wikimedia.org/wiki/File:Collesfracture.jpg'}
 ];
+
+// Append new cases to preserve older bookmarks, URLs, notes and first-attempt scores.
+CASES.push(
+  {
+    system:'胸部', modality:'X-RAY', title:'左侧胸腔积液', level:'入门',
+    history:'成人，逐渐出现活动后气短，查体发现左下胸叩诊浊音。',
+    image:'assets/images/pleural-effusion.png', answer:2,
+    options:['左侧气胸','左上叶肺不张','左侧胸腔积液','双肺肺水肿'],
+    findings:['左侧中下胸部均匀致密影','左侧肋膈角及膈面显示不清','液体上缘呈外高内低的弧形轮廓'],
+    explain:'立位胸片显示左侧下胸部均匀增白和弧形上缘，支持胸腔积液。原图圆圈标出主要异常区域。',
+    differential:'肺实变主要位于肺内，可有含气支气管；肺不张常伴容积减小。胸膜增厚也可使肋膈角变钝，超声有助区分。',
+    pearl:'确认“有液体”和判断“为什么有液体”是两个不同问题。',
+    report:'左侧胸腔积液影。建议结合胸部超声和临床资料评估积液范围及病因。',
+    source:'Wikimedia Commons · James Heilman, MD', license:'CC BY-SA 3.0',
+    sourceUrl:'https://commons.wikimedia.org/wiki/File:Effusionhalf.PNG'
+  },
+  {
+    system:'胸部', modality:'X-RAY', title:'右肺中叶肺炎', level:'入门',
+    history:'成人，发热、咳嗽伴咳痰，胸片发现右侧肺野局灶性阴影。',
+    image:'assets/images/lobar-pneumonia.jpg', answer:0,
+    options:['右肺中叶肺炎','右侧气胸','双肺弥漫性肺水肿','左侧胸腔积液'],
+    findings:['右侧中下肺野局灶性实变影','病灶呈片状，密度高于周围含气肺组织','原始资料将病灶定位于右肺中叶'],
+    explain:'胸片所示局灶性实变，结合教学情境中的发热与咳痰，支持肺炎。肺叶定位依据原图说明，不把正位上的“下肺野”直接等同于“下叶”。',
+    differential:'肺不张需观察肺容积和叶间裂改变；肿瘤或阻塞后改变也可表现为局灶性阴影，需结合病程和复查。',
+    pearl:'影像支持肺炎，但不能只凭一张胸片推断病原菌。',
+    report:'右肺局灶性实变，结合临床考虑肺炎；病灶位于右中叶（依据来源资料），建议结合完整检查与病程评价。',
+    source:'Wikimedia Commons · Mikael Häggström, MD', license:'CC0',
+    sourceUrl:'https://commons.wikimedia.org/wiki/File:X-ray_of_lobar_pneumonia.jpg'
+  },
+  {
+    system:'神经', modality:'CT', title:'左侧硬膜下血肿', level:'中级',
+    history:'成人，头部外伤后头痛加重，逐渐出现嗜睡。',
+    image:'assets/images/subdural-hematoma.png', answer:1,
+    options:['硬膜外血肿','硬膜下血肿','脑内血肿','正常头颅 CT'],
+    findings:['左侧额顶颅骨内侧新月形脑外积血','左侧脑实质及侧脑室受压','中线结构向右移位'],
+    explain:'原图箭头指向左侧颅骨内侧的脑外血肿，沿大脑表面铺展，伴明显占位效应，符合硬膜下血肿。',
+    differential:'硬膜外血肿通常呈双凸透镜形；硬膜下积液的密度更接近脑脊液，仍需结合病史及完整序列鉴别。',
+    pearl:'先辨脑内与脑外，再看形态与占位效应；意识恶化不能只当作影像练习题处理。',
+    report:'左侧额顶硬膜下血肿，伴脑室受压及中线右移。建议紧急临床与神经外科评估。',
+    source:'Wikimedia Commons · James Heilman, MD', license:'CC BY-SA 3.0',
+    sourceUrl:'https://commons.wikimedia.org/wiki/File:Subduralandherniation.PNG'
+  },
+  {
+    system:'腹部', modality:'US', title:'肾积水伴皮质变薄', level:'中级',
+    history:'成人，反复腰部不适，接受泌尿系统超声检查。',
+    image:'assets/images/hydronephrosis.jpg', answer:3,
+    options:['单纯肾囊肿','正常肾窦','实性肾肿瘤','肾积水'],
+    findings:['肾盂及多个肾盏呈无回声扩张','扩张区域位于集合系统，呈分支样分布','肾皮质变薄，需进一步评价肾实质及功能'],
+    explain:'图示集合系统多处无回声扩张并伴皮质变薄，符合肾积水的超声表现。原图测量线标示一个肾盏，不是整个肾脏的长度。',
+    differential:'肾旁盂囊肿可模拟积水，需多切面确认是否与集合系统相通；血管需要彩色多普勒辅助识别。',
+    pearl:'肾积水是影像表现，并不直接等于结石或已证实的机械性梗阻。',
+    report:'所示肾脏集合系统扩张，伴皮质变薄。建议结合完整泌尿系检查、肾功能及临床症状查明原因。',
+    source:'Wikimedia Commons · Kristoffer Lindskov Hansen、Michael Bachmann Nielsen、Caroline Ewertsen', license:'CC BY 4.0',
+    sourceUrl:'https://commons.wikimedia.org/wiki/File:Ultrasonography_of_hydronephrosis_with_dilated_anechoic_pelvis_and_calyces,_along_with_cortical_atrophy.jpg'
+  }
+);

@@ -54,6 +54,25 @@ if (storedSession.answers && typeof storedSession.answers === 'object') {
     if (c && Number.isInteger(entry[1]) && entry[1] >= 0 && entry[1] < c.options.length) session.answers[c.id] = entry[1];
   });
 }
+const attemptsKey = storagePrefix + '-attempts-v1';
+const storedAttempts = read(attemptsKey, {}), attempts = {};
+if (storedAttempts && typeof storedAttempts === 'object' && !Array.isArray(storedAttempts)) {
+  Object.entries(storedAttempts).forEach(function(entry) {
+    const c = byId.get(entry[0]), item = entry[1];
+    if (!c || !item || typeof item !== 'object') return;
+    if (Number.isSafeInteger(item.count) && item.count > 0 && Number.isSafeInteger(item.wrong) && item.wrong >= 0 && item.wrong <= item.count &&
+        Number.isInteger(item.lastAnswer) && item.lastAnswer >= 0 && item.lastAnswer < c.options.length) {
+      attempts[c.id] = {count:item.count, wrong:item.wrong, lastAnswer:item.lastAnswer};
+    }
+  });
+}
+// Recover only answers actually stored by the previous version, never infer a wrong case from an aggregate score.
+Object.entries(session.answers).forEach(function(entry) {
+  if (!attempts[entry[0]]) attempts[entry[0]] = {count:1, wrong:entry[1] === byId.get(entry[0]).answer ? 0 : 1, lastAnswer:entry[1]};
+});
+save(attemptsKey, attempts);
+const isMistake = function(c) { return Boolean(attempts[c.id] && attempts[c.id].lastAnswer !== c.answer); };
+const mistakeIds = function() { return cases.filter(isMistake).map(function(c) { return c.id; }); };
 let currentView = 'home', detailId = ids[0], selected = null, recallOpen = true;
 let atlasSystem = 'all', noticeTimer, draftRows = [], draftSelected = new Set();
 let tool = 'contrast', zoom = 1, contrast = 1, inverted = false, imageMarks = [];
@@ -105,7 +124,7 @@ function filteredCases() {
       (modality === 'all' || c.modality === modality || (modality === 'CT' && c.modality === 'CTPA')) &&
       (level === 'all' || c.level === level) &&
       (status === 'all' || (status === 'completed' && completed.includes(i)) ||
-        (status === 'unanswered' && !completed.includes(i)) || (status === 'reviewed' && reviewed.includes(c.id))) &&
+        (status === 'unanswered' && !completed.includes(i)) || (status === 'reviewed' && reviewed.includes(c.id)) || (status === 'mistakes' && isMistake(c))) &&
       (!query || searchText.includes(query));
   });
 }
@@ -124,7 +143,7 @@ function renderCases() {
       '<button class="bookmark" data-favorite="' + c.id + '" aria-label="' + (isFav ? '取消收藏' : '收藏') + esc(c.title) + '" aria-pressed="' + isFav + '">' + (isFav ? '★' : '☆') + '</button></div>' +
       '<h2><a href="?view=caseDetail&amp;case=' + i + '" data-detail="' + c.id + '">' + esc(c.title) + '</a></h2><p class="english-name">' + esc(c.english) + '</p>' +
       tags(c) + '<p class="atlas-clue"><b>诊断要点</b>' + esc(c.recall) + '</p>' +
-      '<div class="case-status">' + (completed.includes(i) ? '<span>已答题</span>' : '<span>未答题</span>') + (reviewed.includes(c.id) ? '<span>已背题</span>' : '') + '</div>' +
+      '<div class="case-status">' + (completed.includes(i) ? '<span>已答题</span>' : '<span>未答题</span>') + (reviewed.includes(c.id) ? '<span>已背题</span>' : '') + (isMistake(c) ? '<span class="needs-review">待复习错题</span>' : '') + '</div>' +
       '<div class="card-buttons"><button class="soft-button" data-detail="' + c.id + '">诊断方法与详情</button><button class="soft-button" data-study="' + c.id + '">背题</button><button class="soft-button" data-quiz="' + c.id + '">答题</button></div></div></article>';
   }).join('') || '<div class="empty-state"><b>没有符合条件的病例</b><p>试着减少筛选条件，或搜索另一种征象。</p><button class="soft-button" data-clear>重置筛选</button></div>';
 }
@@ -246,6 +265,8 @@ function renderAnswerPanel() {
   $('#studyAnswer').innerHTML = study && visible ? '<div class="memory-line"><span>参考诊断 · ' + 'ABCD'[c.answer] + '</span><h3>' + esc(c.title) + '</h3><p>' + esc(c.recall) + '</p></div>' : '';
   $('#learningReveal').innerHTML = visible ? knowledgeHTML(c) : '';
   $('#trainingCredit').innerHTML = visible ? creditHTML(c) : '<span>作答后显示完整图片来源及诊断参考资料。</span>';
+  const record = attempts[c.id];
+  $('#attemptStatus').textContent = record ? '已记录 ' + record.count + ' 次作答 · 错 ' + record.wrong + ' 次 · ' + (isMistake(c) ? '待复习' : '最近答对') : '本例暂无逐题作答记录';
 }
 function submitAnswer() {
   const c = currentCase();
@@ -256,6 +277,9 @@ function submitAnswer() {
     return;
   }
   session.answers[c.id] = selected;
+  const previous = attempts[c.id] || {count:0,wrong:0};
+  attempts[c.id] = {count:previous.count + 1, wrong:previous.wrong + (selected === c.answer ? 0 : 1), lastAnswer:selected};
+  save(attemptsKey, attempts);
   const index = cases.indexOf(c);
   if (!completed.includes(index)) {
     if (selected === c.answer) correct++;
@@ -309,6 +333,12 @@ function updateStats() {
   $('#sideTotal').textContent = cases.length;
   $('#sideProgress').style.width = (completed.length / cases.length * 100) + '%';
   $('#reviewedCount').textContent = reviewed.length;
+  const wrong = mistakeIds();
+  $('#wrongCount').textContent = wrong.length;
+  $('#everWrongCount').textContent = Object.values(attempts).filter(function(item) { return item.wrong > 0; }).length;
+  $('#studyWrong').disabled = $('#reviewWrong').disabled = wrong.length === 0;
+  $$('[data-catalog-total]').forEach(function(el) { el.textContent = cases.length; });
+  $$('[data-system-total]').forEach(function(el) { el.textContent = cases.filter(function(c) { return c.system === el.dataset.systemTotal; }).length; });
   $$('.master-row').forEach(function(row) {
     const total = cases.filter(function(c) { return c.system === row.dataset.system; }).length;
     const done = completed.filter(function(i) { return cases[i].system === row.dataset.system; }).length;
@@ -467,7 +497,7 @@ $('#queueList').addEventListener('click', function(e) {
 $$('[data-preset]').forEach(function(b) { b.onclick = function() {
   const preset = b.dataset.preset;
   const chosen = preset === 'all' ? ids : preset === 'filtered' ? filteredCases().map(function(c) { return c.id; }) :
-    preset === 'favorites' ? favorites.map(function(i) { return cases[i].id; }) : [];
+    preset === 'favorites' ? favorites.map(function(i) { return cases[i].id; }) : preset === 'mistakes' ? mistakeIds() : [];
   draftSelected = new Set(chosen);
   draftRows = chosen.concat(ids.filter(function(id) { return !draftSelected.has(id); }));
   renderDraft();
@@ -489,6 +519,8 @@ $$('.filters button').forEach(function(b) { b.onclick = function() {
 $('#globalSearch').oninput = function() { showView('cases'); };
 $('#quizFiltered').onclick = function() { startTraining(filteredCases().map(function(c) { return c.id; }), 'quiz'); };
 $('#studyFiltered').onclick = function() { startTraining(filteredCases().map(function(c) { return c.id; }), 'study'); };
+$('#studyWrong').onclick = function() { startTraining(mistakeIds(), 'study'); };
+$('#reviewWrong').onclick = function() { startTraining(mistakeIds(), 'quiz'); };
 $('#randomCase').onclick = function() { startTraining(filteredCases().map(function(c) { return c.id; }), 'quiz', 'random'); };
 $('.menu').onclick = function() { $('.sidebar').classList.toggle('open'); $('.menu').setAttribute('aria-expanded',$('.sidebar').classList.contains('open')); };
 $('.brand').onclick = function(e) { e.preventDefault(); showView('home'); };
@@ -498,6 +530,16 @@ $$('.nav-item').forEach(function(b) { b.onclick = function() {
 }; });
 $$('[data-go]').forEach(function(b) { b.onclick = function() { showView(b.dataset.go); }; });
 $$('[data-open-case]').forEach(function(el) { el.onclick = function() { startTraining(ids, 'quiz', 'ordered', ids[Number(el.dataset.openCase)]); }; });
+$$('[data-library-system]').forEach(function(el) {
+  function openSystem() {
+    clearFilters();
+    atlasSystem = el.dataset.librarySystem;
+    $$('.filters button').forEach(function(b) { b.classList.toggle('active',b.dataset.filter === atlasSystem); });
+    showView('cases');
+  }
+  el.onclick = openSystem;
+  el.onkeydown = function(e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openSystem(); } };
+});
 document.addEventListener('click', function(e) {
   const el = e.target.closest('[data-detail],[data-quiz],[data-study],[data-favorite],[data-clear],[data-summary-config]');
   if (!el || el.disabled) return;
