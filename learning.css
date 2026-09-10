@@ -45,7 +45,7 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
 .detail-visual { position: sticky; top: 20px; }
 .detail-visual figure { margin: 0; background: #0a100d; border-radius: 18px; overflow: hidden; padding: 16px; }
 .detail-visual figure img { width: 100%; height: 330px; object-fit: contain; }
-.detail-visual figcaption { display: flex; flex-direction: column; gap: 6px; padding: 14px 4px 4px; font-size: 11px; line-height: 1.6; color: #90a59b; }
+.detail-visual figcaption { display: flex; flex-direction: column; gap: 6px; padding: 14px 4px 4px; font-size: 11px; line-height: 1.6; color: #90a59b; overflow-wrap: anywhere; }
 .detail-visual figcaption a { color: #c7dcce; }
 .detail-actions { display: flex; flex-wrap: wrap; gap: 8px; margin: 15px 0; }
 .detail-actions .primary { margin: 0; padding: 12px 15px; font-size: 13px; }
@@ -69,6 +69,12 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
 .knowledge blockquote { padding: 15px; margin: 0; border-left: 2px solid #a3b88b; background: #f4f6ed; }
 .knowledge a { color: #3d713c; text-underline-offset: 3px; overflow-wrap: anywhere; }
 .knowledge .image-limit { font-size: 12px; color: #7e7152; }
+.source-evidence { border-left: 4px solid #82a56f !important; }
+.source-evidence dl { display: grid; gap: 10px; margin: 0; }
+.source-evidence dl > div { display: grid; grid-template-columns: 92px minmax(0,1fr); gap: 14px; align-items: start; }
+.source-evidence dt { color: #70806d; font-size: 12px; font-weight: 700; }
+.source-evidence dd { margin: 0; overflow-wrap: anywhere; }
+.source-evidence code { font-size: 11px; color: #52614e; }
 .detail-pagination { display: flex; align-items: center; justify-content: space-between; margin-top: 25px; font-size: 13px; }
 .training-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 22px; flex-wrap: wrap; }
 .training-controls h2 { margin: 5px 0 0; font-size: 28px; }
@@ -100,6 +106,9 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
 .case-panel .knowledge a { color: #b5dca7; }
 .case-panel .knowledge blockquote { background: #122418; }
 .case-panel .knowledge .image-limit { color: #baa98b; }
+.case-panel .source-evidence { border-left-color: #86a974 !important; }
+.case-panel .source-evidence dt { color: #93a995; }
+.case-panel .source-evidence code { color: #afc3b1; }
 .case-panel .notes textarea { font-size: 13px; height: 100px; line-height: 1.8; }
 .case-panel .notes > div { font-size: 12px; }
 #trainingCredit { font-size: 11px; line-height: 1.65; margin: 18px 0; padding: 12px 0; overflow-wrap: anywhere; }
@@ -175,6 +184,7 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
   .nav-item, .nav-item.active { font-size: 0; gap: 0; }
 }
 @media (max-width: 680px) {
+  .source-evidence dl > div { grid-template-columns: 1fr; gap: 2px; }
   .course-grid { grid-template-columns: minmax(0,1fr); }
   .review-panel { align-items: stretch; flex-direction: column; }
   header { padding: 0 16px; gap: 10px; height: 72px; }

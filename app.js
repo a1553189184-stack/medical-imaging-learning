@@ -115,7 +115,7 @@ function showView(view, updateUrl = true) {
 function filteredCases() {
   const query = $('#globalSearch').value.trim().toLocaleLowerCase();
   return cases.filter(function(c, i) {
-    const searchText = [c.title,c.english,c.system,c.modality,c.history,c.explain,c.differential,c.pearl,c.recall]
+    const searchText = [c.title,c.english,c.system,c.modality,c.history,c.explain,c.differential,c.pearl,c.recall,c.sourceEvidence || '',c.sourceFile || '']
       .concat(c.tags,c.findings,c.tips,c.pitfalls,c.methods.flat()).join(' ').toLocaleLowerCase();
     const modality = $('#modalityFilter').value;
     const level = $('#levelFilter').value;
@@ -147,13 +147,15 @@ function renderCases() {
       '<div class="card-buttons"><button class="soft-button" data-detail="' + c.id + '">诊断方法与详情</button><button class="soft-button" data-study="' + c.id + '">背题</button><button class="soft-button" data-quiz="' + c.id + '">答题</button></div></div></article>';
   }).join('') || '<div class="empty-state"><b>没有符合条件的病例</b><p>试着减少筛选条件，或搜索另一种征象。</p><button class="soft-button" data-clear>重置筛选</button></div>';
 }
-const licenseLinks = {'CC BY-SA 3.0':'https://creativecommons.org/licenses/by-sa/3.0/','CC BY-SA 4.0':'https://creativecommons.org/licenses/by-sa/4.0/','CC BY 2.0':'https://creativecommons.org/licenses/by/2.0/','CC BY 2.5':'https://creativecommons.org/licenses/by/2.5/','CC BY 4.0':'https://creativecommons.org/licenses/by/4.0/','CC0':'https://creativecommons.org/publicdomain/zero/1.0/'};
+const licenseLinks = {'CC BY-SA 2.0':'https://creativecommons.org/licenses/by-sa/2.0/','CC BY-SA 2.5':'https://creativecommons.org/licenses/by-sa/2.5/','CC BY-SA 3.0':'https://creativecommons.org/licenses/by-sa/3.0/','CC BY-SA 4.0':'https://creativecommons.org/licenses/by-sa/4.0/','CC BY 2.0':'https://creativecommons.org/licenses/by/2.0/','CC BY 2.5':'https://creativecommons.org/licenses/by/2.5/','CC BY 3.0':'https://creativecommons.org/licenses/by/3.0/','CC BY 4.0':'https://creativecommons.org/licenses/by/4.0/','CC0':'https://creativecommons.org/publicdomain/zero/1.0/','Public domain':'https://commons.wikimedia.org/wiki/Commons:Public_domain'};
 function creditHTML(c) {
-  return '<a href="' + c.sourceUrl + '" target="_blank" rel="noopener">' + esc(c.source) + ' ↗</a><a href="' + licenseLinks[c.license] + '" target="_blank" rel="noopener">' + c.license + '</a>';
+  const licenseUrl = c.licenseUrl || licenseLinks[c.license] || c.sourceUrl;
+  return '<a href="' + c.sourceUrl + '" target="_blank" rel="noopener">' + esc(c.source) + ' ↗</a><a href="' + licenseUrl + '" target="_blank" rel="noopener">' + esc(c.license) + '</a>';
 }
 function knowledgeHTML(c) {
   const list = function(items) { return '<ul>' + items.map(function(t) { return '<li>' + esc(t) + '</li>'; }).join('') + '</ul>'; };
-  return '<div class="knowledge">' +
+  const evidence = c.sourceEvidence ? '<section class="source-evidence"><h3>00 · 来源核验</h3><dl><div><dt>原始文件</dt><dd>' + esc(c.sourceFile) + '</dd></div><div><dt>来源诊断说明</dt><dd lang="en">' + esc(c.sourceEvidence) + '</dd></div><div><dt>图像指纹</dt><dd><code>SHA-1 ' + esc(c.sourceSha1) + '</code></dd></div></dl><p>诊断名称按原始来源归类；未提供的信息不会补写为患者事实。</p></section>' : '';
+  return '<div class="knowledge">' + evidence +
     '<section><h3>01 · 关键征象与要点</h3>' + list(c.findings) + '<p>' + esc(c.explain) + '</p></section>' +
     '<section><h3>02 · 诊断方法</h3><ol class="method-steps">' + c.methods.map(function(step) { return '<li><h4>' + esc(step[0]) + '</h4><p>' + esc(step[1]) + '</p></li>'; }).join('') + '</ol></section>' +
     '<section><h3>03 · 阅片技巧</h3>' + list(c.tips) + '</section>' +
@@ -169,7 +171,7 @@ function showDetail(id) {
   $('#detailContent').innerHTML = '<div class="detail-heading"><span class="eyebrow">' + c.system + ' / ' + c.modality + ' / ' + c.level + '</span><h1>' + esc(c.title) + '</h1><p>' + esc(c.english) + '</p>' + tags(c) + '</div>' +
     '<div class="detail-grid"><div class="detail-visual"><figure><img src="' + c.image + '" alt="' + esc(c.title) + '"><figcaption>' + creditHTML(c) + '<span>保留原图标注，按比例显示。</span></figcaption></figure>' +
     '<div class="detail-actions"><button class="primary" data-study="' + id + '">背诵本例</button><button class="soft-button" data-quiz="' + id + '">练习本例</button><button class="soft-button" data-favorite="' + id + '" aria-pressed="' + favorites.includes(i) + '">' + (favorites.includes(i) ? '★ 已收藏' : '☆ 收藏') + '</button></div>' +
-    '<div class="panel context-panel"><h3>教学情境</h3><p>' + esc(c.history) + '</p><small>情境为教学编写，不代表原图患者病史。</small></div>' +
+    '<div class="panel context-panel"><h3>' + (c.sourceEvidence ? '病例信息边界' : '教学情境') + '</h3><p>' + esc(c.history) + '</p><small>' + (c.sourceEvidence ? '不虚构患者病史；来源原文在右侧“来源核验”中展示。' : '情境为教学编写，不代表原图患者病史。') + '</small></div>' +
     '<div class="memory-line"><span>回忆线索</span><p>' + esc(c.recall) + '</p></div></div>' +
     '<div class="detail-knowledge">' + knowledgeHTML(c) + '</div></div>' +
     '<div class="detail-pagination"><button class="soft-button" data-detail="' + ids[Math.max(0, i-1)] + '"' + (i === 0 ? ' disabled' : '') + '>← 上一病例</button><span>' + (i+1) + ' / ' + cases.length + '</span><button class="soft-button" data-detail="' + ids[Math.min(ids.length-1, i+1)] + '"' + (i === ids.length-1 ? ' disabled' : '') + '>下一病例 →</button></div>';

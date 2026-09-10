@@ -2,6 +2,8 @@
 
 本站影像均已下载到 `assets/images/`，用于非诊断性的医学教育。原始文件、作者及许可如下：
 
+下表列出最初 14 例。2026-09-10 扩充的 200 例（胸部、神经、腹部、骨骼各 50 例）完整逐条清单见 [`data/expanded-case-sources.json`](data/expanded-case-sources.json)。该清单保存病例 ID、Commons 文件页、来源原文说明、作者、许可与许可页、原始 SHA-1、本地 SHA-256、图像尺寸和文件大小；网站详情页会直接显示其中的关键核验信息。
+
 | 病例 | 作者 | 许可 | 原始文件 |
 |---|---|---|---|
 | 右侧气胸 | Hellerhoff | CC BY-SA 3.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:09-01-Pneumothorax.png) |
@@ -20,6 +22,8 @@
 | 肾积水伴皮质变薄 | Kristoffer Lindskov Hansen、Michael Bachmann Nielsen、Caroline Ewertsen | CC BY 4.0 | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ultrasonography_of_hydronephrosis_with_dilated_anechoic_pelvis_and_calyces,_along_with_cortical_atrophy.jpg) |
 
 所有图像均未进行诊断性修改，仅在网页中通过 CSS 调整显示尺寸、缩放、亮度或对比度。各文件继续适用其原始许可。
+
+新增 200 例均来自互不相同的 Wikimedia Commons 文件页和原始 SHA-1；同一文件的标注版/未标注版、连续 CT 层面、不同裁切或衍生版本不作为不同病例重复收录。发布前还进行了图片解码、尺寸、哈希与缩略图接触表检查。部分来源只支持一个诊断类别或某一影像征象，因此病例页明确保留来源说明和单图局限，不反推未公开的患者病史。
 
 年龄、症状等病史为教学编写，不代表原始患者资料。第一例来源仅标注右侧气胸，是否伴张力性生理改变需要临床判断；各例影像限制与诊断方法参考链接见网站详情页。
 

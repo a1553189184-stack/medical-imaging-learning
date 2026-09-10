@@ -1,4 +1,6 @@
 work/
 outputs/
+data/commons-candidates.json
+data/selected-case-sources.json
 .DS_Store
 Thumbs.db
