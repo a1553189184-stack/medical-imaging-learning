@@ -20,7 +20,15 @@ const EXPANDED_REFS = {
   aaa: ['SVS：腹主动脉瘤影像与评估', 'https://vascular.org/pmg/vascular-conditions/abdominal-aortic-aneurysms'],
   ankle: ['ACR：急性踝关节创伤影像评估', 'https://acsearch.acr.org/docs/69436/Narrative/'],
   clavicle: ['AAOS：锁骨骨折循证患者说明', 'https://orthoinfo.aaos.org/globalassets/pdfs/clavicle-fx-cpg_pls.pdf'],
-  ra: ['American College of Rheumatology：类风湿关节炎', 'https://rheumatology.org/patients/rheumatoid-arthritis']
+  ra: ['American College of Rheumatology：类风湿关节炎', 'https://rheumatology.org/patients/rheumatoid-arthritis'],
+  bronchiectasis: ['ERS：成人支气管扩张临床实践指南', 'https://publications.ersnet.org/lookup/doi/10.1183/13993003.01126-2025'],
+  copd: ['GOLD：2026 COPD 全球策略', 'https://goldcopd.org/2026-gold-report-and-pocket-guide/'],
+  ipf: ['ATS/ERS/JRS/ALAT：IPF 诊断指南工具', 'https://www.thoracic.org/statements/guideline-implementation-tools/diagnosis-of-ipf.php'],
+  pericardial: ['ESC：心包疾病专业资料', 'https://www.escardio.org/communities/working-groups/myocardial-pericardial-diseases/'],
+  aortic: ['ACC/AHA：主动脉疾病指南要点', 'https://www.acc.org/Latest-in-Cardiology/ten-points-to-remember/2022/11/01/12/17/2022-guideline-on-aortic-disease-1-gl-ad'],
+  thymoma: ['NCI：胸腺瘤与胸腺癌专业版', 'https://www.cancer.gov/types/thymus-cancer/hp/thymoma-treatment-pdq'],
+  hiatal: ['SAGES：食管裂孔疝指南', 'https://www.sages.org/publications/guidelines/guidelines-for-the-surgical-treatment-of-hiatal-hernias/'],
+  svc: ['NCI：上腔静脉综合征', 'https://www.cancer.gov/about-cancer/treatment/side-effects/cardiopulmonary-hp-pdq']
 };
 
 const EXPANDED_GROUPS = {
@@ -94,6 +102,76 @@ const EXPANDED_GROUPS = {
     basis:'来源诊断为肺结节病或结节病相关肺门淋巴结病；典型分布只能支持，不能单独确诊。', differential:'淋巴瘤、结核、真菌感染和尘肺均可有肺门或纵隔淋巴结及肺内结节。', pearl:'结节病诊断需要相容临床、影像/组织学证据并排除其他肉芽肿性疾病。',
     method:'按淋巴结、肺实质和纤维化三个层次描述，并记录对称性与分布。', next:'结合全身受累线索；需要取样时按ATS建议选择合适淋巴结评估路径。',
     tips:['对称双肺门淋巴结是重要线索，但不是病理诊断。','CT可更好显示沿淋巴管分布的微结节。'], pitfalls:['不能把所有双肺门增大都称为结节病。','胸片分期不等同于疾病活动度或预后。'], recall:'淋巴结对称性 → 肺内分布 → 纤维化 → 排除替代诊断。', ref:'sarcoid'
+  },
+  'chest-bronchiectasis': {
+    title:'支气管扩张', english:'Bronchiectasis', modality:'CT', level:'中级', distractors:['肺气肿','蜂窝肺','肺水肿'], tags:['支气管扩张','印戒征','不变细'],
+    signs:['比较支气管内径与伴行动脉，寻找印戒征','观察支气管向外周走行时是否不再逐渐变细','记录柱状、曲张或囊状形态及黏液栓、树芽征和分布'],
+    basis:'来源明确标注左下肺基底段支气管扩张；诊断核心是CT显示永久性支气管扩张，而不是单凭感染症状。', differential:'牵拉性支气管扩张伴周围纤维化和结构扭曲；急性感染可暂时使支气管显宽，轻度边界病例需结合完整薄层CT。', pearl:'先确认“扩张且不变细”，再按肺叶分布寻找潜在病因。',
+    method:'用薄层CT连续追踪支气管，比较支气管-动脉比例、外周可见度及是否伴结构扭曲。', next:'报告范围、形态、黏液栓和活动性感染征象，并结合临床检查原发或继发原因。',
+    tips:['不要只凭一个印戒样截面，要在连续层面确认。','老年、肺动脉偏细或高原环境可影响支气管-动脉比例。'], pitfalls:['肺纤维化中的牵拉扩张不应脱离纤维化单独解释。','网页拼图不能完成全肺严重度评分。'], recall:'管腔大于伴行动脉 → 不变细 → 外周可见 → 分布与病因。', ref:'bronchiectasis'
+  },
+  'chest-emphysema': {
+    title:'肺气肿', english:'Pulmonary emphysema', modality:'CT', level:'中级', distractors:['支气管扩张','蜂窝肺','气胸'], tags:['低密度区','血管稀疏','肺大疱'],
+    signs:['在肺窗寻找无明显壁的异常低密度区','评估小叶中心型、全小叶型或间隔旁型分布','检查血管纹理减少、肺大疱和过度充气等伴随改变'],
+    basis:'来源为终末期肺气肿CT；影像可显示实质破坏，但COPD的临床诊断和气流受限确认依赖肺功能。', differential:'气胸位于脏层胸膜外；蜂窝肺囊腔常有可见壁、层叠和纤维化背景；肺囊肿通常边界更清楚。', pearl:'“低密度”要结合壁、分布和血管改变，不能把正常肺窗黑色区域都当肺气肿。',
+    method:'核对肺窗后从肺尖到肺底比较低密度分布、血管稀疏和肺容积。', next:'完整评估应结合吸烟/暴露史、肺功能及并发肺大疱或肺癌风险。',
+    tips:['窗位不一致会显著改变低密度区观感。','间隔旁型肺气肿常位于胸膜下，需与气胸分开。'], pitfalls:['单张CT不能做可靠定量。','影像严重程度与症状和肺功能并非完全一致。'], recall:'低密度无壁 → 血管稀疏 → 分布分型 → 肺功能确认气流受限。', ref:'copd'
+  },
+  'chest-pulmonary-fibrosis': {
+    title:'胺碘酮相关肺纤维化', english:'Amiodarone-related pulmonary fibrosis', modality:'X-RAY', level:'进阶', distractors:['心源性肺水肿','多灶肺炎','淋巴管癌病'], tags:['网状影','肺容积','药物相关'],
+    signs:['观察双肺网状或网结节状间质性阴影及分布','评估肺容积下降、结构扭曲和可能的牵拉性支气管扩张','比较既往片并检查叠加实变、胸腔积液或心影变化'],
+    basis:'来源明确说明为胺碘酮诱导的肺纤维化胸片；本例不能套用为特发性肺纤维化。', differential:'肺水肿通常结合血管和胸膜改变；感染、其他药物毒性及结缔组织病相关间质病可重叠。', pearl:'“纤维化模式”与“纤维化病因”是两个层级，病因必须结合用药和完整HRCT。',
+    method:'先描述间质影分布和肺容积，再用HRCT评价网格、牵拉支扩、蜂窝和替代诊断征象。', next:'核对药物暴露和时间关系，由临床综合排除感染、心衰及其他间质性肺病。',
+    tips:['胸片对早期间质病敏感度有限。','比较既往片有助区分慢性纤维化和急性叠加病变。'], pitfalls:['不能见网状影就诊断IPF。','单张胸片不能认定药物因果关系。'], recall:'间质模式 → HRCT分型 → 暴露时间线 → 排除替代病因。', ref:'ipf'
+  },
+  'chest-pericardial-effusion': {
+    title:'心包积液影像提示', english:'Imaging features suggesting pericardial effusion', modality:'X-RAY', level:'中级', distractors:['心腔扩大','心源性肺水肿','前纵隔肿块'], tags:['球形心影','心影增大','超声确认'],
+    signs:['观察心影是否呈对称、光滑的球形或水瓶样扩大','核对PA/AP投照、旋转和吸气程度','同时评估肺血管、肺水肿和胸腔积液以寻找伴随线索'],
+    basis:'来源标注心包积液；胸片只能提示心包液体，不能可靠区分心包积液与心腔扩大。', differential:'扩张型心肌病和瓣膜病也可造成心影增大；AP投照和吸气不足可造成假性放大。', pearl:'心包填塞是血流动力学诊断，心影大小不能判断是否存在填塞。',
+    method:'先排除技术性放大，再描述心影轮廓和肺循环，随后用超声心动图确认积液及血流动力学影响。', next:'结合症状、血压和超声结果评估病因与紧急程度。',
+    tips:['急性少量积液也可发生填塞而胸片心影不大。','慢性大量积液才更容易形成典型球形心影。'], pitfalls:['不能用心胸比估算心包液量。','肺野清晰并不能排除危险性心包积液。'], recall:'技术质量 → 球形心影提示 → 超声确认 → 血流动力学判断。', ref:'pericardial'
+  },
+  'chest-thymoma': {
+    title:'前纵隔胸腺瘤', english:'Anterior mediastinal thymoma', modality:'CT', level:'进阶', distractors:['淋巴瘤','生殖细胞肿瘤','胸骨后甲状腺肿'], tags:['前纵隔','强化肿块','局部侵犯'],
+    signs:['定位前纵隔肿块并观察其与胸腺床的关系','评估边缘、强化、坏死、钙化和脂肪间隙','检查心包、胸膜、肺和大血管受侵及胸膜种植'],
+    basis:'来源为病理证实的胸腺瘤，并明确伴同期结节病所致双肺门淋巴结增大；肺门结节不能误当胸腺瘤转移。', differential:'前纵隔鉴别包括淋巴瘤、生殖细胞肿瘤、胸骨后甲状腺病变和胸腺增生。', pearl:'先完成纵隔分区和侵犯评估，CT形态不能替代组织学分型。',
+    method:'增强CT多平面观察肿块分区、包膜完整性及与心包和血管的界面。', next:'结合肿瘤标志物、重症肌无力等临床线索，由胸部肿瘤团队完成分期和诊疗。',
+    tips:['脂肪间隙消失不总等于明确侵犯。','化学位移MRI可辅助胸腺增生鉴别。'], pitfalls:['不能把本图双肺门淋巴结增大直接归为肿瘤转移。','单幅轴位图不能完成可切除性判断。'], recall:'前纵隔定位 → 组成/边缘 → 邻近侵犯 → 分期与病理。', ref:'thymoma'
+  },
+  'chest-aortic-dissection': {
+    title:'Stanford B型主动脉夹层', english:'Stanford type B aortic dissection', modality:'CT', level:'进阶', distractors:['主动脉瘤伴附壁血栓','肺动脉栓塞','主动脉壁内血肿'], tags:['内膜片','真假腔','分支血管'],
+    signs:['在降主动脉内寻找分隔真假腔的内膜片','沿全主动脉追踪夹层起止范围并判断是否累及升主动脉','评估分支血管灌注、破裂、心包或胸腔积血等并发症'],
+    basis:'来源明确标注降主动脉Stanford B型夹层；分类取决于升主动脉是否受累，必须查看完整CTA。', differential:'壁内血肿表现为主动脉壁新月形增厚而无典型内膜片；附壁血栓通常不形成两个强化腔。', pearl:'发现内膜片后，真正决定紧急处置的是范围、破裂和器官灌注。',
+    method:'从主动脉根部连续追踪到髂动脉，确认真假腔、入口和每支重要分支的起源。', next:'急性主动脉综合征需紧急多学科处理；报告应明确Stanford分类和复杂征象。',
+    tips:['非心电门控升主动脉运动伪影可模拟夹层。','用多平面重建确认可疑内膜线。'], pitfalls:['所示拼图不能排除升主动脉受累。','不能只凭真假腔大小判断灌注。'], recall:'内膜片 → 升主动脉受累否 → 分支灌注 → 破裂征象。', ref:'aortic'
+  },
+  'chest-hiatal-hernia': {
+    title:'食管裂孔疝', english:'Hiatal hernia on chest radiographs', modality:'X-RAY', level:'中级', distractors:['左下叶肺脓肿','膈疝','纵隔囊肿'], tags:['心后区','气液平面','侧位'],
+    signs:['在心后区寻找含气或气液平面的胃泡样影','联合正位和侧位确认病变位于后纵隔','观察膈肌轮廓及是否有胃或其他腹腔结构进入胸腔'],
+    basis:'来源为未标注的正侧位食管裂孔疝胸片；两幅投照属于同一次病例而非两个病例。', differential:'肺脓肿位于肺内并有厚壁和周围炎症；膈疝位置与疝内容不同；纵隔囊肿通常无气液面。', pearl:'正位心后区异常需要侧位定位，不能只凭一个气液面下结论。',
+    method:'先在正位定位心后区异常，再在侧位确认后纵隔位置和与膈肌、食管裂孔的关系。', next:'按症状和临床问题选择上消化道造影、内镜或CT进一步评价。',
+    tips:['侧位片能把心后区病变与肺内病变分开。','注意不要把正常胃泡误认为胸内胃。'], pitfalls:['胸片不能可靠完成裂孔疝分型。','两投照应联合解释，不能拆成两个独立病例。'], recall:'心后区气液面 → 侧位后纵隔 → 膈肌关系 → 进一步检查。', ref:'hiatal'
+  },
+  'chest-pneumomediastinum': {
+    title:'纵隔气肿', english:'Pneumomediastinum', modality:'X-RAY', level:'中级', distractors:['气胸','心包积气','皮下气肿'], tags:['纵隔旁透亮线','连续膈征','颈部气体'],
+    signs:['寻找勾勒主动脉、心缘或气管的线状透亮影','检查气体是否向颈部软组织延伸并伴皮下气肿','评估是否同时存在气胸、胸腔积液或其他食管/气道损伤线索'],
+    basis:'来源明确标注主动脉和左颈总动脉旁的纵隔气体；箭头注释来自原文件。', differential:'气胸位于脏层胸膜外；心包积气多局限于心包反折以下；皮肤皱褶可产生伪线。', pearl:'纵隔气肿是征象，关键下一步是根据情境判断自发性、外伤性或食管气道破裂。',
+    method:'沿纵隔轮廓、心缘、膈肌和颈部软组织系统寻找气体，并用CT确认范围和原因。', next:'如有剧烈呕吐、外伤、感染或不稳定表现，应紧急排查食管或气道损伤。',
+    tips:['连续膈征指心影下方膈肌被气体连续勾勒。','侧位片和颈部软组织可显示正位不明显的气体。'], pitfalls:['不能把纵隔气肿自动等同于Boerhaave综合征。','胸片阴性不能排除少量纵隔气体。'], recall:'纵隔轮廓被气体勾勒 → 颈部/皮下 → 并发气胸 → 找原因。', ref:'chest'
+  },
+  'chest-svc-syndrome': {
+    title:'上腔静脉综合征相关胸部CT', english:'CT findings associated with superior vena cava syndrome', modality:'CT', level:'进阶', distractors:['肺动脉栓塞','主动脉夹层','单纯肺门淋巴结增大'], tags:['上腔静脉受压','肺门肿块','侧支循环'],
+    signs:['追踪上腔静脉是否受压、狭窄或闭塞','定位右肺门/纵隔肿块并评估与血管的关系','检查胸壁、奇静脉和纵隔侧支静脉及血栓'],
+    basis:'来源明确说明右肺门肿块导致上腔静脉综合征；影像显示机械原因，综合征仍需结合临床表现。', differential:'上腔静脉血栓可无外压肿块；非肿瘤性纵隔纤维化也可造成狭窄。', pearl:'报告不能停在“有肿块”，必须交代上腔静脉通畅性、侧支和潜在病因。',
+    method:'增强CT沿头臂静脉至右心房追踪上腔静脉，同时评价纵隔和侧支循环。', next:'结合面颈上肢肿胀、气道或脑水肿危险征象，尽快完成病因诊断和专科处理。',
+    tips:['对比剂注射侧和流动伪影可影响静脉评价。','重建图像有助显示狭窄长度和侧支。'], pitfalls:['单张层面不能判定狭窄全长。','影像血管受压不等于已经出现完整临床综合征。'], recall:'SVC通畅性 → 外压/血栓 → 侧支 → 病因和紧急征象。', ref:'svc'
+  },
+  'chest-lung-abscess': {
+    title:'肺脓肿', english:'Lung abscess', modality:'CT', level:'中级', distractors:['空洞性肺癌','肺结核空洞','感染性肺大疱'], tags:['厚壁空洞','气液平面','周围实变'],
+    signs:['在肺内寻找厚壁空洞及气液平面','观察壁厚是否均匀、内缘是否光滑以及周围实变','检查多发病灶、胸膜受累和脓胸等并发症'],
+    basis:'来源明确标注肺炎液化形成的肺脓肿，并同时展示软组织窗和肺窗。', differential:'空洞性肿瘤常壁不规则或结节样；结核及真菌感染需结合分布和微生物学；脓胸位于胸膜腔。', pearl:'先确认病灶位于肺实质还是胸膜腔，再讨论空洞病因。',
+    method:'联合肺窗和纵隔窗评价空洞壁、内容物、周围肺和胸膜，并在相邻层面确认位置。', next:'结合感染症状、误吸风险和微生物检查；不典型或治疗反应差时重新排查阻塞和肿瘤。',
+    tips:['气液平面并非肺脓肿特异征。','胸膜夹角和肺受压形态有助与脓胸区分。'], pitfalls:['不能凭一张空洞图推断病原体。','来源拼图中的上下图是同一病例不同窗位。'], recall:'肺内厚壁空洞 → 内容物/气液面 → 周围实变 → 排肿瘤和脓胸。', ref:'chest'
   },
 
   'neuro-subdural': {
