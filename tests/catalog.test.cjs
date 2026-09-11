@@ -120,6 +120,9 @@ test('DICOM trial has five distinct IDC studies per system', () => {
   const server = config.servers.dicomWeb[0];
   assert.match(server.qidoRoot,/^https:\/\/proxy\.imaging\.datacommons\.cancer\.gov\//);
   assert.equal(server.qidoRoot,server.wadoRoot);
+  const app = fs.readFileSync(path.join(root,'app.js'),'utf8');
+  assert.match(app,/searchParams\.set\('studyInstanceUIDs', study\.uid\)/);
+  assert.doesNotMatch(app,/searchParams\.set\('StudyInstanceUIDs', study\.uid\)/);
 });
 
 test('advanced study controls and stable-record migration are wired', () => {

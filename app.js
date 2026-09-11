@@ -169,7 +169,9 @@ function renderCases() {
 function ohifUrl(study) {
   const url = new URL('https://viewer.ohif.org/viewer/dicomwebproxy');
   url.searchParams.set('url', new URL('idc-dicomweb.json', location.href).href);
-  url.searchParams.set('StudyInstanceUIDs', study.uid);
+  // The dynamic dicomwebproxy route uses a lower-case initial, unlike OHIF's
+  // regular viewer route. Keep this exact spelling or the proxy drops the UID.
+  url.searchParams.set('studyInstanceUIDs', study.uid);
   return url.href;
 }
 function renderDicomStudies() {
