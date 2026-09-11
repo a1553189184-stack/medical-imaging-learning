@@ -10,6 +10,8 @@ const catalogScripts = ['cases.js','curriculum.js','expanded-sources.js','additi
 const source = catalogScripts.map(file => fs.readFileSync(path.join(root,file),'utf8')).join('\n');
 const data = vm.runInNewContext(source + '\nJSON.stringify({cases:CASES,curriculum:CURRICULUM,sources:EXPANDED_CASE_SOURCES})');
 const {cases,curriculum,sources} = JSON.parse(data);
+const dicomStudies = JSON.parse(vm.runInNewContext(fs.readFileSync(path.join(root,'dicom-series.js'),'utf8') + '\nJSON.stringify(DICOM_STUDIES)'));
+const medicalReviews = JSON.parse(vm.runInNewContext(fs.readFileSync(path.join(root,'medical-reviews.js'),'utf8') + '\nJSON.stringify(MEDICAL_REVIEWS)'));
 const getId = c => path.basename(c.image,path.extname(c.image));
 const expanded = cases.filter(c => c.image.startsWith('assets/images/expanded/'));
 const latestChestIds = ['chest-bronchiectasis-01','chest-emphysema-01','chest-pulmonary-fibrosis-01','chest-pericardial-effusion-01','chest-thymoma-01','chest-aortic-dissection-01','chest-hiatal-hernia-01','chest-pneumomediastinum-01','chest-svc-syndrome-01','chest-lung-abscess-01'];
@@ -27,6 +29,13 @@ test('catalog has 50 additional cases in every system', () => {
   const secondBatch=sources.slice(210);
   assert.equal(secondBatch.length,200);
   assert.deepEqual(Object.fromEntries(Object.keys(totals).map(system=>[system,secondBatch.filter(c=>c.system===system).length])),{胸部:50,神经:50,腹部:50,骨骼:50});
+});
+
+test('bone cases are split into source-supported teaching subtypes', () => {
+  const diagnosis = c => c.title.split(' · 开放病例')[0];
+  const diversity = Object.fromEntries(['胸部','神经','腹部','骨骼'].map(system=>[system,new Set(cases.filter(c=>c.system===system).map(diagnosis)).size]));
+  assert.deepEqual(diversity,{胸部:45,神经:42,腹部:46,骨骼:57});
+  for(const title of ['股骨颈骨折（Garden III）','转子间股骨骨折','肩关节后脱位','儿童桡骨青枝骨折','Tillaux 骨折']) assert.ok(cases.some(c=>diagnosis(c)===title),title);
 });
 
 test('case metadata, diagnosis content and local images match one-to-one', () => {
@@ -83,4 +92,52 @@ test('original ten IDs keep their order for old URLs and records', () => {
 test('four earlier additions remain byte-identical to Commons originals', () => {
   const hashes = {'pleural-effusion.png':'ac1d79df646a717b668d9ca40b008748ab50387e','lobar-pneumonia.jpg':'f8e927b2bfc4246de8c2356b5495818a429afbbe','subdural-hematoma.png':'da86d03e22343cdc284ed9c5d96b5c37ba3e182a','hydronephrosis.jpg':'a87be26c8e0db46d6ff17a5b5c7c7c77040f7b6d'};
   for(const [name,hash] of Object.entries(hashes)) assert.equal(createHash('sha1').update(fs.readFileSync(path.join(root,'assets/images',name))).digest('hex'),hash,name);
+});
+
+test('every atlas image has a lightweight WebP thumbnail', () => {
+  let totalBytes = 0;
+  for(const c of cases) {
+    const relative = c.image.replace(/^assets\/images\//,'').replace(/\.[^.]+$/,'.webp');
+    const file = path.join(root,'assets','thumbnails',relative);
+    const bytes = fs.readFileSync(file);
+    totalBytes += bytes.length;
+    assert.equal(bytes.subarray(0,4).toString(),'RIFF',relative);
+    assert.equal(bytes.subarray(8,12).toString(),'WEBP',relative);
+  }
+  assert.ok(totalBytes < 10 * 1024 * 1024,'thumbnail payload stays below 10 MB');
+});
+
+test('DICOM trial has five distinct IDC studies per system', () => {
+  assert.equal(dicomStudies.length,20);
+  assert.equal(new Set(dicomStudies.map(item=>item.uid)).size,20);
+  assert.deepEqual(Object.fromEntries(['胸部','神经','腹部','骨骼'].map(system=>[system,dicomStudies.filter(item=>item.system===system).length])),{胸部:5,神经:5,腹部:5,骨骼:5});
+  for(const study of dicomStudies) {
+    assert.match(study.uid,/^[0-9.]+$/);
+    assert.match(study.doi,/^10\./);
+    assert.ok(study.collection && study.subject && study.modality && study.license && study.size>0);
+  }
+  const config = JSON.parse(fs.readFileSync(path.join(root,'idc-dicomweb.json'),'utf8'));
+  const server = config.servers.dicomWeb[0];
+  assert.match(server.qidoRoot,/^https:\/\/proxy\.imaging\.datacommons\.cancer\.gov\//);
+  assert.equal(server.qidoRoot,server.wadoRoot);
+});
+
+test('advanced study controls and stable-record migration are wired', () => {
+  const html = fs.readFileSync(path.join(root,'index.html'),'utf8');
+  const app = fs.readFileSync(path.join(root,'app.js'),'utf8');
+  for(const id of ['quickTen','loadMoreCases','queueSearch','queueDiagnosis','queueSampleSize','exportProgress','importProgress','dicomList']) assert.match(html,new RegExp(`id="${id}"`));
+  assert.match(app,/const stablePrefix = 'yys-honest-v2'/);
+  assert.match(app,/function exportLearningRecord/);
+  assert.match(app,/function importLearningRecord/);
+  assert.match(app,/function sampleByDiagnosis/);
+});
+
+test('medical-review registry cannot silently mark unknown cases approved', () => {
+  const knownIds = new Set(cases.map(getId));
+  for(const [id,review] of Object.entries(medicalReviews)) {
+    assert.ok(knownIds.has(id),id);
+    assert.equal(review.status,'approved');
+    for(const field of ['reviewer','credentials','reviewedAt','contentVersion']) assert.ok(review[field],`${id}.${field}`);
+    assert.match(review.reviewedAt,/^\d{4}-\d{2}-\d{2}$/);
+  }
 });

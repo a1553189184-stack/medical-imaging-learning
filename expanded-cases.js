@@ -276,6 +276,137 @@ const EXPANDED_METHOD_START = {
 // expansion batch before source records are converted into cases.
 Object.assign(EXPANDED_GROUPS, ADDITIONAL_GROUPS);
 
+// Source-supported subtypes prevent distinct images from collapsing into one
+// generic lesson. These labels only use details stated on each Commons page.
+function specializedGroup(baseKey,title,english,patch) {
+  return Object.assign({},EXPANDED_GROUPS[baseKey],{title:title,english:english},patch);
+}
+Object.assign(EXPANDED_GROUPS,{
+  'bone-hip-garden-iii':specializedGroup('bone-hip-fracture','股骨颈骨折（Garden III）','Garden III femoral neck fracture',{
+    distractors:['股骨颈无移位骨折','转子间骨折','髋关节脱位'],tags:['股骨颈','Garden III','部分移位'],
+    signs:['确认股骨颈完全骨折线及头颈连续性中断','观察骨折端部分移位、旋转与短缩','评估股骨头位置、Shenton线及髋臼'],
+    differential:'与Garden I/II无移位骨折、转子间骨折及投照旋转鉴别；分型需结合标准正位和侧位。',recall:'完全骨折 → 部分移位 → Garden III → 评估头颈血供风险。'}),
+  'bone-hip-nondisplaced-medial':specializedGroup('bone-hip-fracture','内侧型无移位股骨颈骨折','Nondisplaced medial femoral neck fracture',{
+    distractors:['转子间骨折','髋关节退变','髋臼骨折'],tags:['股骨颈内侧型','无移位','隐匿'],
+    signs:['沿股骨颈皮质寻找细微中断或致密嵌插线','比较双侧Shenton线并观察头颈轴线','侧位确认骨折线且评估后倾'],
+    differential:'骨小梁重叠与皮肤皱褶可模拟骨折；持续临床怀疑时不能以单张阴性正位片排除。',recall:'细微皮质/嵌插线 → 无明显移位 → 侧位或MRI确认。'}),
+  'bone-hip-pertrochanteric':specializedGroup('bone-hip-fracture','转子间股骨骨折','Pertrochanteric femoral fracture',{
+    distractors:['股骨颈骨折','转子下骨折','髋关节脱位'],tags:['转子间区','粉碎','内翻短缩'],
+    signs:['定位骨折线是否经过大、小转子之间','描述粉碎程度、小转子骨片及内侧支撑','评估内翻、短缩和股骨头髋臼对位'],
+    differential:'股骨颈骨折位于关节囊内；转子下骨折中心位于小转子下方。',recall:'转子间骨折线 → 粉碎/小转子 → 内侧支撑 → 移位。'}),
+  'bone-hip-subcapital-occult':specializedGroup('bone-hip-fracture','隐匿或嵌插性头下型股骨颈骨折','Occult or impacted subcapital fracture',{
+    distractors:['髋部软组织挫伤','髋关节骨关节炎','转子间骨折'],tags:['头下型','嵌插','隐匿骨折'],
+    signs:['寻找股骨头下方细密骨折线或局灶骨小梁压缩','检查皮质是否仍近似连续及轻微头颈角改变','阴性或可疑X线需结合CT/MRI确认'],
+    differential:'骨赘和骨小梁重叠可产生假线；MRI骨髓水肿与低信号骨折线支持隐匿骨折。',recall:'头下细线/压缩 → X线可隐匿 → CT或MRI确认。'}),
+  'bone-hip-displaced-neck':specializedGroup('bone-hip-fracture','移位性股骨颈骨折','Displaced femoral neck fracture',{
+    distractors:['无移位股骨颈骨折','转子间骨折','髋臼骨折'],tags:['股骨颈','移位','Garden IV'],
+    signs:['确认股骨颈骨折并描述头颈骨折端分离','观察内翻、旋转、短缩及Shenton线中断','评估股骨头仍位于髋臼内以及其他骨盆损伤'],
+    differential:'与转子间骨折按骨折中心区分；严重旋转的投照片不能替代正交位。',recall:'股骨颈骨折 → 明显移位 → Shenton线中断 → 评估并发风险。'}),
+  'bone-hip-medial-neck':specializedGroup('bone-hip-fracture','内侧型股骨颈骨折','Medial femoral neck fracture',{
+    distractors:['转子间骨折','转子下骨折','髋臼骨折'],tags:['股骨颈内侧型','关节囊内','正交位'],
+    signs:['定位骨折线位于股骨颈内侧关节囊内区域','描述骨折端对位、头颈角及Shenton线','侧位补充判断前后移位并检查股骨头'],
+    differential:'与头下型、经颈型和转子间骨折按骨折中心区分；来源未说明时不擅自追加Garden分型。',recall:'股骨颈内侧区 → 描述移位而不臆测分型 → 正交位确认。'}),
+  'bone-hip-transcervical':specializedGroup('bone-hip-fracture','经颈型股骨颈骨折','Transcervical femoral neck fracture',{
+    distractors:['头下型股骨颈骨折','转子间骨折','转子下骨折'],tags:['经颈型','股骨颈中段','关节囊内'],
+    signs:['确认骨折线横过股骨颈中段','描述内翻、旋转、短缩及骨折端移位','观察股骨头髋臼对位并结合侧位'],
+    differential:'头下型更靠近股骨头；基底颈型接近转子间线。来源未说明时不追加移位分级。',recall:'股骨颈中段骨折线 → 经颈型 → 描述实际移位。'}),
+  'bone-hip-subtrochanteric':specializedGroup('bone-hip-fracture','转子下股骨螺旋骨折','Subtrochanteric spiral femoral fracture',{
+    distractors:['转子间骨折','股骨颈骨折','病理性骨折'],tags:['转子下','螺旋骨折','股骨干近端'],
+    signs:['定位骨折中心在小转子下方','沿股骨干近端追踪螺旋形骨折线','描述移位、成角、短缩并检查髋关节'],
+    differential:'转子间骨折累及大小转子区；低能量非典型横行骨折需结合用药和骨质背景。',recall:'小转子下方 → 螺旋线 → 移位成角 → 检查全股骨。'}),
+
+  'bone-clavicle-lateral':specializedGroup('bone-clavicle-fracture','锁骨外侧端骨折','Lateral clavicle fracture',{
+    distractors:['肩锁关节脱位','锁骨中段骨折','肩峰骨折'],tags:['锁骨外侧端','肩锁关节','喙锁韧带'],
+    signs:['确认骨折位于锁骨外侧三分之一','观察肩锁关节、喙锁间距与骨折端移位','检查肩峰及上位肋骨'],recall:'外侧三分之一 → 肩锁/喙锁关系 → 稳定性线索。'}),
+  'bone-clavicle-midshaft':specializedGroup('bone-clavicle-fracture','锁骨中段骨折','Midshaft clavicle fracture',{
+    distractors:['肩锁关节脱位','锁骨外侧端骨折','第一肋骨骨折'],tags:['锁骨中段','移位','短缩'],
+    signs:['沿锁骨S形轮廓定位中段皮质中断','描述上下移位、重叠短缩和成角','评估皮肤顶压征象需结合临床并检查胸廓'],recall:'中段皮质中断 → 移位/短缩 → 胸廓伴随损伤。'}),
+  'bone-clavicle-comminuted':specializedGroup('bone-clavicle-fracture','粉碎性锁骨骨折','Comminuted clavicle fracture',{
+    distractors:['单纯线性锁骨骨折','肩锁关节脱位','肩胛骨骨折'],tags:['锁骨','粉碎','蝶形骨片'],
+    signs:['识别两个以上骨折片并定位主要骨折区','描述蝶形骨片、移位、短缩和成角','检查肩锁/胸锁关节及同侧胸廓'],recall:'多骨片 → 主骨折端 → 短缩成角 → 邻近关节与胸廓。'}),
+  'bone-clavicle-butterfly':specializedGroup('bone-clavicle-fracture','锁骨蝶形骨片骨折','Clavicle butterfly fracture',{
+    distractors:['单纯横行骨折','肩锁关节脱位','陈旧骨折骨痂'],tags:['蝶形骨片','弯曲楔形','锁骨'],
+    signs:['识别锁骨骨折处楔形蝶形骨片','描述主骨折端移位、短缩及骨片方向','检查皮肤、神经血管风险需结合临床'],recall:'楔形第三骨片 → 蝶形骨折 → 描述短缩与移位。'}),
+  'bone-clavicle-scapula':specializedGroup('bone-clavicle-fracture','锁骨合并肩胛骨骨折','Combined clavicle and scapular fracture',{
+    distractors:['单纯锁骨骨折','肩锁关节脱位','肱骨近端骨折'],tags:['锁骨骨折','肩胛骨骨折','肩胛带'],
+    signs:['分别确认锁骨与肩胛骨皮质中断','评价肩胛颈、关节盂及肩胛带稳定性','检查同侧肋骨和胸部伴随损伤'],recall:'锁骨 + 肩胛骨双处损伤 → 评价悬肩复合体。'}),
+
+  'bone-radius-dorsal-tilt':specializedGroup('bone-distal-radius','桡骨远端骨折伴背侧倾斜','Distal radius fracture with dorsal tilt',{
+    distractors:['掌侧倾斜骨折','腕关节脱位','舟骨骨折'],tags:['桡骨远端','背侧倾斜','侧位测量'],
+    signs:['侧位确定桡骨远端关节面向背侧倾斜','比较正常掌倾角并观察桡骨高度','检查关节内延伸与尺骨茎突'],recall:'侧位关节面 → 背倾 → 桡骨高度/关节内受累。'}),
+  'bone-radius-fatpad':specializedGroup('bone-distal-radius','无移位桡骨远端骨折与旋前方脂肪垫征','Nondisplaced distal radius fracture with pronator fat-pad sign',{
+    distractors:['腕部软组织肿胀','舟骨骨折','尺骨茎突骨折'],tags:['无移位','旋前方脂肪垫','隐匿骨折'],
+    signs:['寻找细微桡骨远端皮质中断','观察旋前方脂肪垫隆起或移位','结合正侧位确认无明显成角或移位'],recall:'细微骨折线 + 异常旋前方脂肪垫 → 隐匿远端桡骨骨折。'}),
+  'bone-radius-intraarticular':specializedGroup('bone-distal-radius','移位性关节内桡骨远端骨折','Displaced intra-articular distal radius fracture',{
+    distractors:['关节外Colles骨折','舟骨骨折','腕骨脱位'],tags:['关节内','移位','关节面台阶'],
+    signs:['追踪骨折线进入桡腕关节面','描述关节面台阶、间隙及骨片移位','评估桡骨短缩、倾斜和远端尺桡关节'],recall:'骨折线入关节 → 台阶/分离 → 桡骨短缩与DRUJ。'}),
+  'bone-radius-buckle':specializedGroup('bone-distal-radius','儿童桡骨远端隆起骨折','Distal radius buckle fracture',{
+    distractors:['青枝骨折','Salter–Harris骨折','正常骨骺'],tags:['儿童','隆起骨折','骨皮质皱褶'],
+    signs:['寻找干骺端单侧皮质隆起或皱褶','确认无贯穿性骨折线和明显成角','检查尺骨伴随隆起骨折与骨骺'],recall:'干骺端皮质隆起 → 不完全骨折 → 无明显移位。'}),
+  'bone-radius-greenstick':specializedGroup('bone-distal-radius','儿童桡骨青枝骨折','Distal radius greenstick fracture',{
+    distractors:['隆起骨折','完全横行骨折','Salter–Harris骨折'],tags:['儿童','青枝骨折','单侧皮质中断'],
+    signs:['确认一侧皮质中断而对侧皮质弯曲','描述成角方向及程度','检查尺骨伴随损伤和远端骨骺'],recall:'一侧断裂 + 对侧弯曲 → 青枝骨折 → 描述成角。'}),
+  'bone-radius-salter-ii':specializedGroup('bone-distal-radius','桡骨远端 Salter–Harris II 骨折','Salter–Harris II distal radius fracture',{
+    distractors:['Salter–Harris I骨折','青枝骨折','桡骨远端隆起骨折'],tags:['骨骺损伤','Salter–Harris II','Thurston-Holland骨片'],
+    signs:['骨折线经过骨骺板并延伸至干骺端','寻找三角形干骺端骨片','描述骨骺移位并检查尺骨骨骺'],recall:'骨骺板 + 干骺端骨片 → Salter–Harris II。'}),
+  'bone-radius-chauffeur':specializedGroup('bone-distal-radius','桡骨茎突 Chauffeur 骨折','Chauffeur fracture of the radius',{
+    distractors:['舟骨骨折','Colles骨折','尺骨茎突骨折'],tags:['桡骨茎突','关节内','Chauffeur骨折'],
+    signs:['定位骨折累及桡骨茎突','确认关节内延伸及骨片移位','检查舟骨、月骨与远端尺桡关节'],recall:'桡骨茎突骨片 → 关节内 → 检查腕骨排列。'}),
+
+  'bone-shoulder-anterior':specializedGroup('bone-shoulder-dislocation','肩关节前脱位','Anterior shoulder dislocation',{
+    distractors:['肩关节后脱位','下方脱位','肱骨近端骨折'],tags:['前下方脱位','盂下位','Hill-Sachs'],
+    signs:['肱骨头位于关节盂前下方并失去同心对位','检查Hill-Sachs压陷及关节盂骨折','复位前后均评估肱骨近端和肩胛骨'],recall:'肱骨头前下方 → 失去对位 → 查Hill-Sachs/Bankart。'}),
+  'bone-shoulder-posterior':specializedGroup('bone-shoulder-dislocation','肩关节后脱位','Posterior shoulder dislocation',{
+    distractors:['肩关节前脱位','肱骨近端骨折','肩锁关节脱位'],tags:['后脱位','灯泡征','肩胛Y位'],
+    signs:['正位寻找肱骨头内旋形成灯泡征','肩胛Y位或腋位确认肱骨头位于盂后方','检查反Hill-Sachs压陷与近端骨折'],recall:'固定内旋/灯泡征 → 腋位确认后脱位 → 查反Hill-Sachs。'}),
+  'bone-shoulder-inferior':specializedGroup('bone-shoulder-dislocation','肩关节下方脱位（Luxatio erecta）','Inferior shoulder dislocation (luxatio erecta)',{
+    distractors:['肩关节前脱位','肩关节后脱位','肱骨颈骨折'],tags:['下方脱位','上举固定','Luxatio erecta'],
+    signs:['肱骨头位于关节盂下方','肱骨干呈固定上举姿势','检查肱骨头、关节盂骨折及神经血管风险'],recall:'肱骨头盂下 + 上举固定 → Luxatio erecta。'}),
+  'bone-shoulder-chronic':specializedGroup('bone-shoulder-dislocation','慢性前上方肩关节脱位','Chronic anterosuperior shoulder dislocation',{
+    distractors:['急性前脱位','肩袖撕裂关节病','肱骨近端骨折'],tags:['慢性脱位','前上方','假关节'],
+    signs:['肱骨头长期位于关节盂前上方','观察与锁骨或肩峰间继发假关节改变','评估骨质重塑和关节盂缺损'],recall:'固定前上方脱位 → 骨质重塑/假关节 → 慢性。'}),
+
+  'bone-scoliosis-idiopathic':specializedGroup('bone-scoliosis','青少年特发性脊柱侧弯','Adolescent idiopathic scoliosis',{
+    distractors:['姿势性侧弯','先天性半椎体','神经肌肉性侧弯'],tags:['青少年','特发性','Cobb角'],
+    signs:['站立全脊柱片确定主弯、顶椎和端椎','测量Cobb角并记录曲线方向与节段','观察椎体旋转、冠状平衡与骨成熟度'],recall:'站立片 → 主弯/端椎 → Cobb角 → 旋转与骨成熟。'}),
+  'bone-scoliosis-lumbar-obliquity':specializedGroup('bone-scoliosis','腰椎侧弯伴骨盆倾斜','Lumbar scoliosis with pelvic obliquity',{
+    distractors:['单纯体位倾斜','腰椎滑脱','髋关节挛缩'],tags:['腰椎侧弯','骨盆倾斜','冠状平衡'],
+    signs:['确认腰椎弯曲方向与顶椎','比较双侧髂嵴高度并评价骨盆倾斜','区分结构性曲线与长短腿或体位代偿'],recall:'腰椎曲线 → 髂嵴高度 → 结构性或代偿性。'}),
+  'bone-scoliosis-dystrophic':specializedGroup('bone-scoliosis','营养不良型脊柱侧弯','Dystrophic scoliosis',{
+    distractors:['青少年特发性侧弯','姿势性侧弯','退变性侧弯'],tags:['营养不良型','短锐曲线','严重侧弯'],
+    signs:['识别短节段、锐角度的严重胸椎曲线','观察椎体扇贝样改变、肋骨铅笔样变等营养不良征象','评价冠状/矢状失衡及快速进展风险'],recall:'短锐重度曲线 + 椎体/肋骨营养不良改变。'}),
+
+  'bone-tibia-tubercle-avulsion':specializedGroup('bone-tibia-fracture','胫骨结节撕脱骨折','Tibial tubercle avulsion fracture',{
+    distractors:['髌骨骨折','胫骨平台骨折','Osgood–Schlatter病'],tags:['胫骨结节','撕脱骨折','伸膝装置'],
+    signs:['侧位识别胫骨结节骨片分离','描述骨片移位及是否延伸至骨骺/关节面','评估髌骨高度和伸膝装置'],recall:'胫骨结节骨片 → 移位 → 骨骺/关节面与伸膝装置。'}),
+  'bone-tibia-occult':specializedGroup('bone-tibia-fracture','隐匿性胫骨近端骨折','Occult proximal tibial fracture',{
+    distractors:['骨挫伤','骨髓炎','胫骨平台退变'],tags:['隐匿骨折','MRI','骨髓水肿'],
+    signs:['液敏序列寻找骨髓水肿','T1序列确认低信号骨折线','在正交平面判断是否累及关节面'],recall:'液敏高信号水肿 + T1低信号线 → 隐匿骨折。'}),
+  'bone-tibia-tillaux':specializedGroup('bone-tibia-fracture','Tillaux 骨折','Tillaux fracture',{
+    distractors:['三平面骨折','Salter–Harris II骨折','外踝骨折'],tags:['Tillaux','前外侧骨骺','Salter–Harris III'],
+    signs:['识别远端胫骨前外侧骨骺骨折片','确认骨折线从骨骺板进入关节面','评估关节面分离和移位'],recall:'青春期 + 前外侧骨骺 + 关节内 → Tillaux。'}),
+  'bone-ankle-salter-iii':specializedGroup('bone-ankle-fracture','踝部 Salter–Harris III 骨折','Salter–Harris III ankle fracture',{
+    distractors:['Salter–Harris II骨折','三平面骨折','踝关节扭伤'],tags:['Salter–Harris III','骨骺','关节内'],
+    signs:['骨折线经过骨骺板并穿过骨骺进入关节面','评价关节面塌陷或die-punch骨片','描述移位并评估生长板'],recall:'骨骺板 → 骨骺 → 关节面 = Salter–Harris III。'}),
+  'bone-ankle-salter-ii':specializedGroup('bone-ankle-fracture','踝部 Salter–Harris II 骨折','Salter–Harris II ankle fracture',{
+    distractors:['Salter–Harris III骨折','Tillaux骨折','踝关节扭伤'],tags:['Salter–Harris II','干骺端骨片','骨骺早闭'],
+    signs:['骨折线经过骨骺板并延伸至干骺端','侧位评价骨骺移位方向','随访比较双侧骨骺板并观察早闭'],recall:'骨骺板 + 干骺端 → Salter–Harris II → 随访骨骺早闭。'})
+});
+
+const SPECIALIZED_GROUP_BY_ID = {
+  'bone-hip-fracture-01':'bone-hip-garden-iii','bone-hip-fracture-02':'bone-hip-nondisplaced-medial','bone-hip-fracture-08':'bone-hip-nondisplaced-medial',
+  'bone-hip-fracture-03':'bone-hip-pertrochanteric','bone-hip-fracture-06':'bone-hip-pertrochanteric','bone-hip-fracture-12':'bone-hip-pertrochanteric','bone-hip-fracture-14':'bone-hip-pertrochanteric','bone-hip-fracture-19':'bone-hip-pertrochanteric','bone-hip-fracture-20':'bone-hip-pertrochanteric',
+  'bone-hip-fracture-04':'bone-hip-subcapital-occult','bone-hip-fracture-15':'bone-hip-subcapital-occult','bone-hip-fracture-10':'bone-hip-subtrochanteric',
+  'bone-hip-fracture-05':'bone-hip-displaced-neck','bone-hip-fracture-11':'bone-hip-displaced-neck','bone-hip-fracture-07':'bone-hip-medial-neck','bone-hip-fracture-17':'bone-hip-medial-neck','bone-hip-fracture-16':'bone-hip-transcervical','bone-hip-fracture-18':'bone-hip-transcervical',
+  'bone-clavicle-fracture-01':'bone-clavicle-lateral','bone-clavicle-fracture-08':'bone-clavicle-lateral','bone-clavicle-fracture-10':'bone-clavicle-comminuted','bone-clavicle-fracture-13':'bone-clavicle-comminuted','bone-clavicle-fracture-14':'bone-clavicle-comminuted','bone-clavicle-fracture-11':'bone-clavicle-butterfly','bone-clavicle-fracture-12':'bone-clavicle-scapula',
+  'bone-clavicle-fracture-03':'bone-clavicle-midshaft','bone-clavicle-fracture-09':'bone-clavicle-midshaft',
+  'bone-distal-radius-01':'bone-radius-dorsal-tilt','bone-distal-radius-02':'bone-radius-fatpad','bone-distal-radius-07':'bone-radius-fatpad','bone-distal-radius-03':'bone-radius-intraarticular','bone-distal-radius-04':'bone-radius-buckle','bone-distal-radius-06':'bone-radius-buckle','bone-distal-radius-08':'bone-radius-buckle','bone-distal-radius-05':'bone-radius-greenstick','bone-distal-radius-09':'bone-radius-greenstick','bone-distal-radius-10':'bone-radius-salter-ii','bone-distal-radius-11':'bone-radius-chauffeur',
+  'bone-shoulder-dislocation-01':'bone-shoulder-chronic','bone-shoulder-dislocation-02':'bone-shoulder-posterior','bone-shoulder-dislocation-04':'bone-shoulder-posterior','bone-shoulder-dislocation-12':'bone-shoulder-posterior','bone-shoulder-dislocation-05':'bone-shoulder-inferior','bone-shoulder-dislocation-07':'bone-shoulder-inferior',
+  'bone-shoulder-dislocation-03':'bone-shoulder-anterior','bone-shoulder-dislocation-09':'bone-shoulder-anterior','bone-shoulder-dislocation-11':'bone-shoulder-anterior',
+  'bone-scoliosis-01':'bone-scoliosis-idiopathic','bone-scoliosis-04':'bone-scoliosis-idiopathic','bone-scoliosis-12':'bone-scoliosis-idiopathic','bone-scoliosis-03':'bone-scoliosis-lumbar-obliquity','bone-scoliosis-07':'bone-scoliosis-lumbar-obliquity','bone-scoliosis-09':'bone-scoliosis-dystrophic',
+  'bone-tibia-fracture-01':'bone-tibia-tubercle-avulsion','bone-tibia-fracture-02':'bone-tibia-occult','bone-tibia-fracture-03':'bone-tibia-occult','bone-tibia-fracture-04':'bone-tibia-tillaux','bone-ankle-fracture-01':'bone-ankle-salter-iii','bone-ankle-fracture-02':'bone-ankle-salter-ii'
+};
+
 function expandedModality(source, fallback) {
   const text = (source.sourceTitle + ' ' + source.sourceDescription).toLocaleLowerCase();
   if (/mri|mrt|magnetic resonance|\brm\b/.test(text)) return 'MRI';
@@ -287,10 +418,11 @@ function expandedModality(source, fallback) {
 
 const expandedSequence = {};
 EXPANDED_CASE_SOURCES.forEach(function(source,index) {
-  const group = EXPANDED_GROUPS[source.groupKey];
+  const teachingKey = SPECIALIZED_GROUP_BY_ID[source.id] || source.groupKey;
+  const group = EXPANDED_GROUPS[teachingKey];
   if (!group) throw new Error('Missing teaching group: ' + source.groupKey);
-  const sequence = (expandedSequence[source.groupKey] || 0) + 1;
-  expandedSequence[source.groupKey] = sequence;
+  const sequence = (expandedSequence[teachingKey] || 0) + 1;
+  expandedSequence[teachingKey] = sequence;
   const answer = index % 4;
   const options = group.distractors.slice();
   options.splice(answer,0,group.title);
@@ -302,7 +434,7 @@ EXPANDED_CASE_SOURCES.forEach(function(source,index) {
     image:source.image, level:group.level, answer:answer, options:options,
     findings:group.signs, explain:group.basis, differential:group.differential,
     pearl:group.pearl,
-    report:'所示公开病例影像表现与“' + group.title + '”相符（诊断名称依据原始来源说明）。建议结合完整检查、临床资料及必要的进一步评估。',
+    report:modality + '图像显示' + group.signs[0] + '；并应' + group.signs[1] + '。结合本图公开来源标签，考虑“' + group.title + '”。建议结合完整检查与临床资料确认。',
     source:'Wikimedia Commons · ' + source.artist, license:source.license,
     licenseUrl:source.licenseUrl, sourceUrl:source.sourceUrl,
     sourceFile:source.sourceTitle, sourceEvidence:source.sourceDescription,

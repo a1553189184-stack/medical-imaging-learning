@@ -75,6 +75,11 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
 .source-evidence dt { color: #70806d; font-size: 12px; font-weight: 700; }
 .source-evidence dd { margin: 0; overflow-wrap: anywhere; }
 .source-evidence code { font-size: 11px; color: #52614e; }
+.review-state { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; margin: 0 0 18px; padding: 12px 14px; border-radius: 12px; background: #edf4e7; color: #36563a; }
+.review-state b { font-size: 13px; }
+.review-state span { font-size: 12px; color: #617462; }
+.review-state.authored { background: #f4f0e3; color: #665a36; }
+.review-state.approved { background: #dff1df; color: #285c30; border: 1px solid #9cc69e; }
 .detail-pagination { display: flex; align-items: center; justify-content: space-between; margin-top: 25px; font-size: 13px; }
 .training-controls { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 22px; flex-wrap: wrap; }
 .training-controls h2 { margin: 5px 0 0; font-size: 28px; }
@@ -129,17 +134,23 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
 .training-pagination .primary { margin: 0; }
 #sessionSummary { margin-top: 20px; line-height: 1.9; font-size: 14px; }
 .training-controls ~ .viewer-shell { border-radius: 20px; }
-#queueDialog { width: min(720px, calc(100vw - 24px)); max-height: min(850px,90dvh); border: 1px solid #d0dac8; border-radius: 20px; padding: 26px; color: #243b28; background: #f7f8f1; box-shadow: 0 25px 90px #0c1b1340; }
+#queueDialog { width: min(920px, calc(100vw - 24px)); max-height: min(850px,90dvh); border: 1px solid #d0dac8; border-radius: 20px; padding: 26px; color: #243b28; background: #f7f8f1; box-shadow: 0 25px 90px #0c1b1340; }
 #queueDialog::backdrop { background: #0c1b138f; backdrop-filter: blur(3px); }
 .dialog-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
 .dialog-head h2 { font-size: 25px; margin: 5px 0; }
 #queueDialog > p { color: #76806b; line-height: 1.7; font-size: 13px; }
 .queue-shortcuts { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0; }
+.queue-discovery { display: grid; grid-template-columns: 1.4fr .8fr 1fr .8fr auto; gap: 10px; align-items: end; margin-bottom: 14px; }
+.queue-discovery label { display: grid; gap: 6px; font-size: 12px; color: #5f6d64; }
+.queue-discovery input, .queue-discovery select { min-width: 0; width: 100%; border: 1px solid #ced8c6; background: white; color: #283c2b; border-radius: 9px; padding: 10px; font: inherit; }
 .queue-settings { display: flex; gap: 15px; margin-bottom: 18px; }
 .queue-settings label { flex: 1; }
 #queueList { list-style: none; padding: 0; margin: 0; }
 #queueList li { display: flex; align-items: center; gap: 10px; border: 1px solid #dce2d3; background: #f1f3eb; margin: 7px 0; border-radius: 12px; padding: 12px; }
 #queueList li.chosen { background: white; border-color: #afc998; }
+#queueList li.dragging { opacity: .45; }
+.drag-handle { color: #81917d; cursor: grab; font-size: 17px; user-select: none; }
+#queueList .queue-empty { justify-content: center; color: #6f7e6c; padding: 24px; }
 #queueList label { flex: 1; display: flex; gap: 10px; align-items: center; min-width: 0; font-size: 13px; }
 #queueList label b { font-weight: 500; }
 #queueList label small { display: block; font-size: 10px; color: #7a8873; margin-top: 4px; }
@@ -147,6 +158,8 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
 #queueList li > div { display: flex; gap: 5px; }
 #queueList .soft-button { padding: 8px 11px; }
 .queue-number { width: 18px; font-size: 12px; color: #698054; }
+.load-more-row { display: flex; justify-content: center; margin: 24px 0 8px; }
+.load-more-row button { min-width: 220px; }
 .dialog-footer { display: flex; justify-content: space-between; align-items: center; position: sticky; bottom: -26px; margin-top: 12px; padding: 15px 0; background: #f7f8f1; border-top: 1px solid #dce2d3; font-size: 13px; }
 .dialog-footer .primary { margin: 0; }
 #notice { position: fixed; bottom: 25px; left: 50%; transform: translateX(-50%); z-index: 50; max-width: 90vw; background: #193b2f; color: white; border-radius: 12px; padding: 13px 20px; opacity: 0; pointer-events: none; font-size: 13px; transition: opacity .2s; }
@@ -162,6 +175,32 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
 .review-panel small { display: block; color: #697664; font-size: 12px; line-height: 1.9; max-width: 680px; }
 .review-actions { display: flex; gap: 10px; flex-shrink: 0; flex-wrap: wrap; }
 .review-actions .primary { margin: 0; font-size: 13px; padding: 13px 17px; }
+.dicom-guide { display: grid; grid-template-columns: 1.5fr 1fr; gap: 28px; align-items: center; margin-bottom: 18px; }
+.dicom-guide h2 { margin: 0 0 8px; }
+.dicom-guide p { margin: 0; color: #657163; line-height: 1.7; }
+.dicom-guide > div:last-child { display: grid; grid-template-columns: auto 1fr; gap: 8px 14px; border-left: 1px solid #dce5d6; padding-left: 24px; font-size: 13px; }
+.dicom-guide span { color: #6e7d6b; }
+.dicom-filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0; }
+.dicom-filters button { border: 1px solid #cfdac8; background: #f5f7f0; color: #405442; border-radius: 999px; padding: 10px 16px; }
+.dicom-filters button.active { background: var(--green); color: white; border-color: var(--green); }
+.dicom-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; }
+.dicom-card { min-width: 0; border: 1px solid #d8e0d2; border-radius: 18px; background: #fbfcf8; padding: 20px; box-shadow: 0 8px 24px #1f33250a; }
+.dicom-card-top { display: flex; justify-content: space-between; color: #647461; font-size: 12px; }
+.dicom-card-top b { color: #2f5538; }
+.dicom-card h2 { font-size: 18px; line-height: 1.4; margin: 14px 0 6px; }
+.dicom-card > p { color: #677565; font-size: 13px; overflow-wrap: anywhere; }
+.dicom-card code { font-size: 11px; }
+.dicom-card dl { display: grid; gap: 7px; margin: 16px 0; }
+.dicom-card dl div { display: flex; justify-content: space-between; gap: 12px; font-size: 12px; }
+.dicom-card dt { color: #7a8876; }
+.dicom-card dd { margin: 0; text-align: right; overflow-wrap: anywhere; }
+.dicom-links { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 16px 0 12px; }
+.dicom-links .primary { text-decoration: none; font-size: 13px; padding: 10px 14px; }
+.dicom-links > a:not(.primary) { color: #3d6845; font-size: 12px; }
+.dicom-card > small { color: #7b8879; }
+.data-panel { display: flex; justify-content: space-between; gap: 28px; align-items: center; margin-top: 18px; }
+.data-panel h2 { margin: 6px 0; }
+.data-panel p { margin: 0; color: #6d7969; max-width: 700px; }
 .course-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
 .course-card { min-width: 0; }
 .course-card:last-child { display: block; }
@@ -172,6 +211,10 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
 @media (min-width: 1600px) { .case-list { grid-template-columns: repeat(3,minmax(0,1fr)); } }
 @media (min-width: 1450px) { .course-grid { grid-template-columns: repeat(4,minmax(0,1fr)); } }
 @media (max-width: 1100px) {
+  .dicom-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .queue-discovery { grid-template-columns: 1fr 1fr; }
+  .queue-discovery label:first-child { grid-column: 1 / -1; }
+  .queue-discovery button { grid-column: 1 / -1; }
   .workbench { grid-template-columns: 52px minmax(0,1fr); height: auto; }
   .viewport { height: 540px; }
   .case-panel { grid-column: 1/-1; height: auto; max-height: none; border: 0; }
@@ -187,6 +230,10 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
   .source-evidence dl > div { grid-template-columns: 1fr; gap: 2px; }
   .course-grid { grid-template-columns: minmax(0,1fr); }
   .review-panel { align-items: stretch; flex-direction: column; }
+  .data-panel { align-items: stretch; flex-direction: column; }
+  .dicom-guide { grid-template-columns: 1fr; }
+  .dicom-guide > div:last-child { border-left: 0; border-top: 1px solid #dce5d6; padding: 16px 0 0; }
+  .dicom-grid { grid-template-columns: minmax(0,1fr); }
   header { padding: 0 16px; gap: 10px; height: 72px; }
   .header-actions { display: none; }
   .menu { flex-shrink: 0; }

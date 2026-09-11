@@ -1,0 +1,18 @@
+{
+  "servers": {
+    "dicomWeb": [
+      {
+        "name": "NCI Imaging Data Commons",
+        "wadoUriRoot": "https://proxy.imaging.datacommons.cancer.gov/current/viewer-only-no-downloads-see-tinyurl-dot-com-slash-3j3d9jyp/dicomWeb",
+        "qidoRoot": "https://proxy.imaging.datacommons.cancer.gov/current/viewer-only-no-downloads-see-tinyurl-dot-com-slash-3j3d9jyp/dicomWeb",
+        "wadoRoot": "https://proxy.imaging.datacommons.cancer.gov/current/viewer-only-no-downloads-see-tinyurl-dot-com-slash-3j3d9jyp/dicomWeb",
+        "qidoSupportsIncludeField": true,
+        "imageRendering": "wadors",
+        "thumbnailRendering": "wadors",
+        "enableStudyLazyLoad": true,
+        "supportsFuzzyMatching": false,
+        "supportsWildcard": false
+      }
+    ]
+  }
+}
