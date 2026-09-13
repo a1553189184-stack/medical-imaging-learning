@@ -97,6 +97,36 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
 .case-panel > p { font-size: 14px; line-height: 1.85; }
 .case-panel .question { margin-top: 20px; }
 .case-panel .question b { font-size: 14px; }
+.reasoning-steps { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 6px; margin: 18px 0 4px; padding: 4px; border: 1px solid #304039; border-radius: 12px; background: #0a1511; }
+.reasoning-steps button { min-width: 0; border: 0; border-radius: 9px; padding: 10px 6px; background: transparent; color: #91a299; font: inherit; font-size: 13px; cursor: pointer; }
+.reasoning-steps button span { display: block; margin-bottom: 3px; color: #6e8278; font-size: 10px; }
+.reasoning-steps button[aria-selected="true"] { color: #e8f1e4; background: #294338; box-shadow: 0 3px 12px #0004; }
+.reasoning-steps button[aria-selected="true"] span { color: var(--mint); }
+.reasoning-pane { padding-top: 16px; }
+.reasoning-pane > label, .report-workspace label { display: grid; gap: 7px; color: #c8d7cd; font-size: 14px; line-height: 1.55; }
+.reasoning-pane textarea, .report-workspace input { width: 100%; border: 1px solid #354840; border-radius: 10px; background: #09130f; color: #e1ebe5; padding: 11px 12px; font: inherit; font-size: 14px; line-height: 1.7; outline: none; resize: vertical; }
+.reasoning-pane textarea { min-height: 112px; }
+.reasoning-pane textarea:focus, .report-workspace input:focus { border-color: #94bc56; box-shadow: 0 0 0 3px #94bc5620; }
+.draft-meta { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 8px; }
+.draft-meta span { color: #82958b; font-size: 12px; }
+.draft-meta .soft-button { margin-left: auto; color: #dce8dc; border-color: #41574d; background: #17261f; }
+.report-workspace { display: grid; gap: 13px; }
+.report-workspace[hidden], .reasoning-pane[hidden] { display: none; }
+.report-workspace textarea { min-height: 92px; }
+.report-workspace label:nth-of-type(2) textarea { min-height: 130px; }
+.report-boundary { margin: 0; padding: 10px 12px; border-left: 3px solid #c6a45c; background: #2a2419; color: #d8c8a8; font-size: 12px; line-height: 1.7; }
+.report-feedback { border-radius: 11px; font-size: 13px; line-height: 1.7; }
+.report-feedback:not(:empty) { padding: 13px; border: 1px solid #3b4d44; background: #14231c; }
+.report-feedback strong, .report-feedback small { display: block; }
+.report-feedback ul { margin: 9px 0; padding-left: 18px; }
+.report-feedback.strong { border-color: #4f8062; background: #163525; }
+.report-feedback.partial { border-color: #8c7444; background: #30291b; }
+.report-feedback.weak { border-color: #874f47; background: #35201c; }
+.report-reference { padding: 15px; border: 1px solid #3b5547; border-radius: 11px; background: #13251b; color: #b8cbbd; font-size: 13px; line-height: 1.8; }
+.report-reference h3 { margin: 0 0 8px; color: #d9e8d7; font-size: 14px; }
+.report-reference h3:not(:first-child) { margin-top: 15px; }
+.report-reference ul { margin: 0; padding-left: 19px; }
+.report-reference blockquote { margin: 0; padding: 11px; border-left: 3px solid #82a967; background: #0e1d15; color: #d5e1d8; }
 .answer { width: 100%; text-align: left; color: #c7d5c9; font-size: 13px; line-height: 1.7; background: none; min-height: 48px; }
 .answer:disabled { opacity: 1; cursor: default; }
 .answer-letter { font: 12px "DM Sans",sans-serif; border: 1px solid #53675b; flex-shrink: 0; border-radius: 6px; padding: 4px 6px; }
@@ -135,10 +165,30 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
 #sessionSummary { margin-top: 20px; line-height: 1.9; font-size: 14px; }
 .training-controls ~ .viewer-shell { border-radius: 20px; }
 #queueDialog { width: min(920px, calc(100vw - 24px)); max-height: min(850px,90dvh); border: 1px solid #d0dac8; border-radius: 20px; padding: 26px; color: #243b28; background: #f7f8f1; box-shadow: 0 25px 90px #0c1b1340; }
-#queueDialog::backdrop { background: #0c1b138f; backdrop-filter: blur(3px); }
+#queueDialog::backdrop, #compareDialog::backdrop { background: #0c1b138f; backdrop-filter: blur(3px); }
 .dialog-head { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
 .dialog-head h2 { font-size: 25px; margin: 5px 0; }
 #queueDialog > p { color: #76806b; line-height: 1.7; font-size: 13px; }
+#compareDialog { width: min(1080px,calc(100vw - 24px)); max-height: min(900px,92dvh); border: 1px solid #405248; border-radius: 20px; padding: 26px; color: #e4ece6; background: #101b17; box-shadow: 0 25px 90px #0009; }
+#compareDialog > p { color: #9caf9f; line-height: 1.75; font-size: 14px; }
+#compareDialog .dialog-head h2 { color: white; }
+#compareDialog .dialog-head .eyebrow { color: #a6cf66; }
+#compareDialog .dialog-head .soft-button { color: #d9e4dc; border-color: #45594f; background: #1d2c25; }
+.compare-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px; margin: 18px 0; }
+.compare-grid figure { min-width: 0; margin: 0; border: 1px solid #34473e; border-radius: 14px; overflow: hidden; background: #070c09; }
+.compare-grid figure > img { display: block; width: 100%; height: min(43vh,390px); object-fit: contain; }
+.compare-grid figcaption { display: grid; gap: 5px; padding: 13px; background: #17251f; }
+.compare-grid figcaption b { color: var(--mint); font-size: 12px; }
+.compare-grid figcaption span { color: #eef4ef; font-size: 14px; overflow-wrap: anywhere; }
+.compare-grid figcaption small { color: #92a49a; font-size: 12px; }
+.compare-grid figcaption a { color: #b8dca0; font-size: 12px; }
+.compare-choices { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 8px; }
+.compare-choices button { min-width: 0; padding: 7px; border: 1px solid #34473e; border-radius: 10px; background: #17251f; color: #cfdbd3; text-align: left; cursor: pointer; }
+.compare-choices button[aria-pressed="true"] { border-color: var(--mint); background: #274033; }
+.compare-choices img { display: block; width: 100%; height: 64px; border-radius: 6px; background: #070c09; object-fit: cover; }
+.compare-choices span, .compare-choices small { display: block; margin-top: 6px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.compare-choices span { font-size: 12px; }
+.compare-choices small { color: #8fa097; font-size: 10px; }
 .queue-shortcuts { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0; }
 .queue-discovery { display: grid; grid-template-columns: 1.4fr .8fr 1fr .8fr auto; gap: 10px; align-items: end; margin-bottom: 14px; }
 .queue-discovery label { display: grid; gap: 6px; font-size: 12px; color: #5f6d64; }
@@ -165,6 +215,7 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
 #notice { position: fixed; bottom: 25px; left: 50%; transform: translateX(-50%); z-index: 50; max-width: 90vw; background: #193b2f; color: white; border-radius: 12px; padding: 13px 20px; opacity: 0; pointer-events: none; font-size: 13px; transition: opacity .2s; }
 #notice.visible { opacity: 1; }
 .metric-grid strong #solvedCount { font-size: inherit; display: inline; color: inherit; }
+.metric-grid { grid-template-columns: repeat(auto-fit,minmax(160px,1fr)); }
 .mini-scan { object-fit: contain; background: #080d0a; filter: none; }
 .needs-review { color: #a2412f; }
 .case-panel .attempt-status { color: #93a68d; font-size: 11px; line-height: 1.7; margin: 13px 0; }
@@ -227,6 +278,14 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
   .nav-item, .nav-item.active { font-size: 0; gap: 0; }
 }
 @media (max-width: 680px) {
+  .reasoning-steps button { padding: 9px 4px; font-size: 12px; }
+  .draft-meta { align-items: stretch; flex-direction: column; }
+  .draft-meta .soft-button { width: 100%; margin-left: 0; }
+  #compareDialog { padding: 18px; }
+  .compare-grid { grid-template-columns: minmax(0,1fr); }
+  .compare-grid figure > img { height: 280px; }
+  .compare-choices { display: flex; overflow-x: auto; padding-bottom: 6px; }
+  .compare-choices button { flex: 0 0 130px; }
   .source-evidence dl > div { grid-template-columns: 1fr; gap: 2px; }
   .course-grid { grid-template-columns: minmax(0,1fr); }
   .review-panel { align-items: stretch; flex-direction: column; }

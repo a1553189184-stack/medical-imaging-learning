@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="learning.css?v=atlas10" />
+  <link rel="stylesheet" href="learning.css?v=atlas11" />
 </head>
 <body>
   <div class="noise"></div>
@@ -118,15 +118,38 @@
             <span class="eyebrow">教学情境 · 非原始病历</span>
             <h2 id="caseQuestion">你观察到了什么？</h2>
             <p id="caseHistory"></p>
-            <div class="question" id="questionBlock"><b>请选择最可能的诊断</b><div id="answers" role="group" aria-label="诊断选项"></div></div>
-            <div class="feedback" id="feedback" role="status"></div>
-            <p id="attemptStatus" class="attempt-status"></p>
-            <button class="primary full" id="submitAnswer">提交判断</button>
+            <div class="reasoning-steps" role="tablist" aria-label="阅片推理阶段">
+              <button data-reasoning-step="findings" role="tab" aria-selected="true"><span>01</span>描述所见</button>
+              <button data-reasoning-step="diagnosis" role="tab" aria-selected="false"><span>02</span>诊断判断</button>
+              <button data-reasoning-step="report" role="tab" aria-selected="false"><span>03</span>报告训练</button>
+            </div>
+            <section class="reasoning-pane" id="findingsPane" role="tabpanel">
+              <label for="findingDraft">先记录定位、形态、分布和伴随征象</label>
+              <textarea id="findingDraft" placeholder="例如：右肺上叶见边界不规则结节影……"></textarea>
+              <div class="draft-meta"><span id="findingSaved">自动保存</span><button class="soft-button" id="continueDiagnosis">进入诊断判断 →</button></div>
+            </section>
+            <section class="reasoning-pane" id="diagnosisPane" role="tabpanel" hidden>
+              <div class="question" id="questionBlock"><b>请选择最可能的诊断</b><div id="answers" role="group" aria-label="诊断选项"></div></div>
+              <div class="feedback" id="feedback" role="status"></div>
+              <p id="attemptStatus" class="attempt-status"></p>
+              <button class="primary full" id="submitAnswer">提交判断</button>
+            </section>
+            <section class="reasoning-pane report-workspace" id="reportPane" role="tabpanel" hidden>
+              <p class="report-boundary">评分仅检查结构完整度及参考诊断名称命中，不判断临床正确性。</p>
+              <label for="reportLocation">病灶定位<input id="reportLocation" placeholder="器官、侧别、分区或节段"></label>
+              <label for="reportFindings">影像所见<textarea id="reportFindings" placeholder="描述大小、密度/信号、边界、分布和伴随征象"></textarea></label>
+              <label for="reportImpression">诊断印象<textarea id="reportImpression" placeholder="给出首要诊断，必要时列出鉴别"></textarea></label>
+              <label for="reportAdvice">建议与下一步<textarea id="reportAdvice" placeholder="结合完整序列、复查或进一步检查"></textarea></label>
+              <button class="primary full" id="scoreReport">保存并检查报告</button>
+              <div id="reportFeedback" class="report-feedback" role="status"></div>
+              <div id="reportReference" class="report-reference" hidden></div>
+            </section>
             <button id="toggleRecall" class="outline full" hidden>收起答案，尝试回忆</button>
             <div id="studyAnswer"></div>
             <div class="learning-reveal" id="learningReveal"></div>
             <button id="markReviewed" class="primary full" hidden>标记已背</button>
             <div id="trainingCredit" class="image-credit"></div>
+            <button id="openComparison" class="outline full" hidden>同主题影像对照</button>
             <button id="openCurrentDetail" class="outline full">查看完整病例资料</button>
             <div class="notes"><div><label for="caseNote">本例笔记</label><span id="noteSaved">自动保存</span></div><textarea id="caseNote" placeholder="记录征象、鉴别诊断或复习要点…"></textarea></div>
             <small class="shortcuts">← → 切题 · 1–4 选择 · A 标注 · R 重置</small>
@@ -147,9 +170,9 @@
 
     <section class="view" id="progress">
       <div class="page-title"><div><span class="eyebrow mint">LOCAL PROGRESS</span><h1>本机学习记录</h1><p>以下数据只来自当前浏览器中的真实操作；清除浏览器数据后会归零。</p></div></div>
-      <div class="metric-grid"><article><span>已完成病例</span><strong><span id="solvedCount">0</span><small> / <span data-catalog-total>700</span></small></strong><small>首次提交后计入</small></article><article><span>首次判断正确率</span><strong id="accuracy">—</strong><small>未答题时不显示比例</small></article><article><span>已收藏病例</span><strong id="favoriteCount">0</strong><small>当前设备</small></article><article><span>已写笔记</span><strong id="noteCount">0</strong><small>当前设备</small></article></div>
+      <div class="metric-grid"><article><span>已完成病例</span><strong><span id="solvedCount">0</span><small> / <span data-catalog-total>700</span></small></strong><small>首次提交后计入</small></article><article><span>首次判断正确率</span><strong id="accuracy">—</strong><small>未答题时不显示比例</small></article><article><span>已收藏病例</span><strong id="favoriteCount">0</strong><small>当前设备</small></article><article><span>已写笔记</span><strong id="noteCount">0</strong><small>当前设备</small></article><article><span>报告草稿</span><strong id="reportCount">0</strong><small>结构化报告训练</small></article></div>
       <article class="panel review-panel"><div><span class="eyebrow">REVISIT &amp; UNDERSTAND</span><h2>错题复习</h2><p>待复习 <b id="wrongCount">0</b> 例 · 本次记录以来曾答错 <b id="everWrongCount">0</b> 例</p><small>最近一次答错的病例进入待复习，重练答对后移出。背题不改变错题状态；旧版没有逐题记录的历史错误无法还原。</small></div><div class="review-actions"><button id="studyWrong" class="soft-button">背诵错题</button><button id="reviewWrong" class="primary">重练错题 →</button></div></article>
-      <article class="panel data-panel"><div><span class="eyebrow">PORTABLE LEARNING RECORD</span><h2>备份与恢复</h2><p>导出收藏、答题记录、错题、背题标记、笔记和当前题目列表。导入前会校验版本与病例 ID。</p></div><div class="review-actions"><button id="exportProgress" class="soft-button">导出学习记录</button><button id="importProgress" class="primary">导入学习记录</button><input id="importProgressFile" type="file" accept="application/json,.json" hidden></div></article>
+      <article class="panel data-panel"><div><span class="eyebrow">PORTABLE LEARNING RECORD</span><h2>备份与恢复</h2><p>导出收藏、答题记录、错题、背题标记、笔记、所见草稿、结构化报告和当前题目列表。导入前会校验版本与病例 ID。</p></div><div class="review-actions"><button id="exportProgress" class="soft-button">导出学习记录</button><button id="importProgress" class="primary">导入学习记录</button><input id="importProgressFile" type="file" accept="application/json,.json" hidden></div></article>
       <article class="panel mastery"><div class="section-head compact"><div><span class="eyebrow">COMPLETION BY SYSTEM</span><h2>各系统完成度</h2></div></div><div class="master-row" data-system="胸部"><b>胸部影像</b><div class="progress"><i style="width:0"></i></div><span>0 / 4</span></div><div class="master-row" data-system="神经"><b>神经影像</b><div class="progress"><i style="width:0"></i></div><span>0 / 3</span></div><div class="master-row" data-system="腹部"><b>腹部影像</b><div class="progress"><i style="width:0"></i></div><span>0 / 2</span></div><div class="master-row" data-system="骨骼"><b>骨骼肌肉</b><div class="progress"><i style="width:0"></i></div><span>0 / 1</span></div></article>
       <p class="source-note">已背 <span id="reviewedCount">0</span> 例。背题记录与答题记录分开，背题不会增加答题数或正确率。</p>
     </section>
@@ -163,6 +186,12 @@
     <ol id="queueList"></ol>
     <div class="dialog-footer"><span id="selectionCount" role="status"></span><button id="applyQueue" class="primary">应用并开始</button></div>
   </dialog>
+  <dialog id="compareDialog" aria-labelledby="compareTitle">
+    <div class="dialog-head"><div><span class="eyebrow">COMPARE CASES</span><h2 id="compareTitle">同主题影像对照</h2></div><button id="closeComparison" class="soft-button" aria-label="关闭影像对照">关闭</button></div>
+    <p>左右影像来自不同公开病例，只用于比较同病种或同系统的影像表现，不代表同一患者的不同序列。</p>
+    <div class="compare-grid"><figure id="comparePrimary"></figure><figure id="compareSecondary"></figure></div>
+    <div id="compareChoices" class="compare-choices" aria-label="选择对照病例"></div>
+  </dialog>
   <div id="notice" role="status" aria-live="polite"></div>
   <script src="cases.js?v=atlas10"></script>
   <script src="curriculum.js?v=atlas10"></script>
@@ -174,6 +203,6 @@
   <script src="expanded-cases.js?v=atlas10"></script>
   <script src="dicom-series.js?v=atlas10"></script>
   <script src="medical-reviews.js?v=atlas10"></script>
-  <script src="app.js?v=atlas10"></script>
+  <script src="app.js?v=atlas11"></script>
 </body>
 </html>

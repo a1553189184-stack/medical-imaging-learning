@@ -145,11 +145,15 @@ test('DICOM trial has five distinct IDC studies per system', () => {
 test('advanced study controls and stable-record migration are wired', () => {
   const html = fs.readFileSync(path.join(root,'index.html'),'utf8');
   const app = fs.readFileSync(path.join(root,'app.js'),'utf8');
-  for(const id of ['quickTen','loadMoreCases','queueSearch','queueDiagnosis','queueSampleSize','exportProgress','importProgress','dicomList']) assert.match(html,new RegExp(`id="${id}"`));
+  for(const id of ['quickTen','loadMoreCases','queueSearch','queueDiagnosis','queueSampleSize','exportProgress','importProgress','dicomList','findingDraft','reportLocation','reportFindings','reportImpression','reportAdvice','scoreReport','openComparison','compareDialog','reportCount']) assert.match(html,new RegExp(`id="${id}"`));
   assert.match(app,/const stablePrefix = 'yys-honest-v2'/);
   assert.match(app,/function exportLearningRecord/);
   assert.match(app,/function importLearningRecord/);
   assert.match(app,/function sampleByDiagnosis/);
+  assert.match(app,/function scoreCurrentReport/);
+  assert.match(app,/function showComparison/);
+  assert.match(html,/不判断临床正确性/);
+  assert.match(html,/不同公开病例/);
 });
 
 test('medical-review registry cannot silently mark unknown cases approved', () => {

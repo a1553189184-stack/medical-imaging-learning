@@ -38,13 +38,28 @@ let completed = validIds(read(stablePrefix + '-completed', migrateLegacyIndices(
 let correct = Math.max(0, Math.min(Number(read(storagePrefix + '-correct', 0)) || 0, completed.length));
 let reviewed = validIds(read(storagePrefix + '-reviewed', []));
 const notes = {};
+const findingDrafts = {};
+const reportDrafts = {};
 cases.forEach(function(c, i) {
   try {
     const stable = localStorage.getItem(stablePrefix + '-note-' + c.id);
     const legacy = localStorage.getItem(storagePrefix + '-note-' + i);
     notes[c.id] = stable !== null ? stable : (legacy || '');
     if (stable === null && legacy) localStorage.setItem(stablePrefix + '-note-' + c.id, legacy);
-  } catch { notes[c.id] = ''; }
+    findingDrafts[c.id] = localStorage.getItem(stablePrefix + '-finding-' + c.id) || '';
+    const storedReport = read(stablePrefix + '-report-' + c.id, {});
+    reportDrafts[c.id] = storedReport && typeof storedReport === 'object' ? {
+      location:typeof storedReport.location === 'string' ? storedReport.location.slice(0,2000) : '',
+      findings:typeof storedReport.findings === 'string' ? storedReport.findings.slice(0,20000) : '',
+      impression:typeof storedReport.impression === 'string' ? storedReport.impression.slice(0,10000) : '',
+      advice:typeof storedReport.advice === 'string' ? storedReport.advice.slice(0,10000) : '',
+      score:Number.isFinite(storedReport.score) ? Math.max(0,Math.min(100,storedReport.score)) : null
+    } : {location:'',findings:'',impression:'',advice:'',score:null};
+  } catch {
+    notes[c.id] = '';
+    findingDrafts[c.id] = '';
+    reportDrafts[c.id] = {location:'',findings:'',impression:'',advice:'',score:null};
+  }
 });
 save(stablePrefix + '-favorites', favorites);
 save(stablePrefix + '-completed', completed);
@@ -84,9 +99,10 @@ Object.entries(session.answers).forEach(function(entry) {
 save(attemptsKey, attempts);
 const isMistake = function(c) { return Boolean(attempts[c.id] && attempts[c.id].lastAnswer !== c.answer); };
 const mistakeIds = function() { return cases.filter(isMistake).map(function(c) { return c.id; }); };
-let currentView = 'home', detailId = ids[0], selected = null, recallOpen = true;
+let currentView = 'home', detailId = ids[0], selected = null, recallOpen = true, reasoningStep = 'findings';
 let atlasSystem = 'all', atlasLimit = 48, noticeTimer, draftRows = [], draftSelected = new Set(), dicomSystem = 'all';
 let tool = 'contrast', zoom = 1, contrast = 1, inverted = false, imageMarks = [];
+let comparePrimaryId = ids[0], compareSecondaryId = null;
 const currentCase = function() { return byId.get(session.queue[session.cursor]); };
 const hasAnswer = function(c) { return Object.prototype.hasOwnProperty.call(session.answers, c.id); };
 const persistSession = function() { save(sessionKey, session); };
@@ -141,6 +157,125 @@ function filteredCases() {
   });
 }
 function diagnosisName(c) { return c.title.replace(/\s*·\s*开放病例\s*\d+$/, ''); }
+function relatedCases(c) {
+  const ownDiagnosis = diagnosisName(c);
+  return cases.filter(function(item) { return item.id !== c.id && item.sourceUrl !== c.sourceUrl; }).map(function(item) {
+    const sharedTags = (c.tags || []).filter(function(tag) { return (item.tags || []).includes(tag); }).length;
+    const sameDiagnosis = diagnosisName(item) === ownDiagnosis;
+    const score = (sameDiagnosis ? 100 : 0) + (item.system === c.system ? 18 : 0) + sharedTags * 12 + (item.modality !== c.modality ? 3 : 0);
+    return {item:item,score:score,sameDiagnosis:sameDiagnosis};
+  }).filter(function(entry) { return entry.sameDiagnosis || entry.score >= 30; }).sort(function(a,b) {
+    return b.score - a.score || cases.indexOf(a.item) - cases.indexOf(b.item);
+  }).slice(0,5).map(function(entry) { return entry.item; });
+}
+function comparisonFigure(c, label) {
+  return '<img src="' + esc(c.image) + '" alt="' + esc(label + '：' + c.title) + '"><figcaption><b>' + esc(label) + '</b><span>' + esc(c.title) + '</span><small>' + esc(c.modality + ' · ' + c.system) + '</small><a href="' + esc(c.sourceUrl) + '" target="_blank" rel="noopener">查看独立来源 ↗</a></figcaption>';
+}
+function showComparison(id, selectedId) {
+  const primary = byId.get(id), related = primary ? relatedCases(primary) : [];
+  if (!primary || !related.length) { notify('本例暂时没有合适的同主题对照影像。'); return; }
+  comparePrimaryId = primary.id;
+  compareSecondaryId = related.some(function(c) { return c.id === selectedId; }) ? selectedId : related[0].id;
+  const secondary = byId.get(compareSecondaryId);
+  $('#comparePrimary').innerHTML = comparisonFigure(primary,'当前病例');
+  $('#compareSecondary').innerHTML = comparisonFigure(secondary,'对照病例');
+  $('#compareChoices').innerHTML = related.map(function(c) {
+    return '<button data-compare-choice="' + esc(c.id) + '" aria-pressed="' + (c.id === secondary.id) + '"><img src="' + esc(thumbFor(c)) + '" alt=""><span>' + esc(c.title) + '</span><small>' + esc(c.modality) + '</small></button>';
+  }).join('');
+  if (!$('#compareDialog').open) $('#compareDialog').showModal();
+}
+function setReasoningStep(step) {
+  if (!['findings','diagnosis','report'].includes(step)) return;
+  reasoningStep = step;
+  $$('[data-reasoning-step]').forEach(function(button) {
+    const active = button.dataset.reasoningStep === step;
+    button.setAttribute('aria-selected',active);
+    button.tabIndex = active ? 0 : -1;
+  });
+  $('#findingsPane').hidden = step !== 'findings';
+  $('#diagnosisPane').hidden = step !== 'diagnosis';
+  $('#reportPane').hidden = step !== 'report';
+  $('#caseQuestion').textContent = step === 'findings' ? '你观察到了什么？' : step === 'diagnosis' ?
+    (session.mode === 'study' ? '诊断与记忆要点' : '最可能的诊断是什么？') : '写一份可复核的影像报告';
+}
+function saveFindingDraft() {
+  const c = currentCase(), value = $('#findingDraft').value.slice(0,20000);
+  findingDrafts[c.id] = value;
+  try {
+    if (value.trim()) localStorage.setItem(stablePrefix + '-finding-' + c.id,value);
+    else localStorage.removeItem(stablePrefix + '-finding-' + c.id);
+    $('#findingSaved').textContent = '已保存';
+  } catch { $('#findingSaved').textContent = '仅当前页面保留'; }
+}
+function currentReportDraft() {
+  const c = currentCase();
+  return reportDrafts[c.id] || (reportDrafts[c.id] = {location:'',findings:'',impression:'',advice:'',score:null});
+}
+function mayRevealCase(c) { return session.mode === 'study' || hasAnswer(c); }
+function collectReportDraft() {
+  const draft = currentReportDraft();
+  draft.location = $('#reportLocation').value.slice(0,2000);
+  draft.findings = $('#reportFindings').value.slice(0,20000);
+  draft.impression = $('#reportImpression').value.slice(0,10000);
+  draft.advice = $('#reportAdvice').value.slice(0,10000);
+  return draft;
+}
+function saveReportDraft() {
+  const c = currentCase(), draft = collectReportDraft();
+  draft.score = null;
+  save(stablePrefix + '-report-' + c.id,draft);
+  $('#reportFeedback').className = 'report-feedback';
+  $('#reportFeedback').innerHTML = '';
+  $('#reportReference').hidden = true;
+  $('#reportReference').innerHTML = '';
+  updateStats();
+}
+function reportDiagnosisMatched(c, impression) {
+  const normalized = impression.replace(/[\s·（）()、，。:：/\-]/g,'').toLocaleLowerCase();
+  const candidates = [diagnosisName(c),c.options[c.answer]].concat(c.tags || []).map(function(term) {
+    return String(term).replace(/开放病例\d+|影像表现|表现|征象|胸片|x线|ct|mri|超声/gi,'').replace(/[\s·（）()、，。:：/\-]/g,'').toLocaleLowerCase();
+  }).filter(function(term) { return term.length >= 2; }).sort(function(a,b) { return b.length-a.length; });
+  return candidates.some(function(term) { return normalized.includes(term) || (term.length >= 5 && normalized.includes(term.slice(0,4))); });
+}
+function scoreCurrentReport() {
+  const c = currentCase(), draft = collectReportDraft(), checks = [];
+  let score = 0;
+  function award(ok, points, label) { if (ok) score += points; checks.push((ok ? '✓ ' : '○ ') + label + '（' + points + '分）'); }
+  award(draft.location.trim().length >= 4,15,'病灶定位明确');
+  award(draft.findings.trim().length >= 25,25,'影像所见达到基本描述长度');
+  award(draft.impression.trim().length >= 4,15,'填写诊断印象');
+  award(reportDiagnosisMatched(c,draft.impression),20,'命中参考诊断名称或核心术语');
+  award(draft.advice.trim().length >= 6,10,'给出下一步建议');
+  award(/鉴别|考虑|不除外|可能|建议|结合/.test(draft.impression + draft.advice),10,'包含鉴别或条件化表达');
+  award((findingDrafts[c.id] || '').trim().length >= 12,5,'先完成独立所见草稿');
+  draft.score = score;
+  save(stablePrefix + '-report-' + c.id,draft);
+  $('#reportFeedback').className = 'report-feedback ' + (score >= 80 ? 'strong' : score >= 55 ? 'partial' : 'weak');
+  const reveal = mayRevealCase(c);
+  $('#reportFeedback').innerHTML = '<strong>结构与参考命中度 ' + score + ' / 100</strong><ul>' + checks.map(function(item) { return '<li>' + esc(item) + '</li>'; }).join('') + '</ul><small>此分数不理解同义词，也不评价医学正确性。' + (reveal ? '请继续与参考报告逐项核对。' : '提交诊断判断后才能查看参考报告。') + '</small>';
+  $('#reportReference').hidden = !reveal;
+  $('#reportReference').innerHTML = reveal ? '<h3>核对清单</h3><ul>' + c.findings.map(function(item) { return '<li>' + esc(item) + '</li>'; }).join('') + '</ul><h3>参考表达</h3><blockquote>' + esc(c.report) + '</blockquote>' : '';
+  updateStats();
+}
+function loadReportWorkspace(c) {
+  const draft = currentReportDraft();
+  $('#reportLocation').value = draft.location;
+  $('#reportFindings').value = draft.findings;
+  $('#reportImpression').value = draft.impression;
+  $('#reportAdvice').value = draft.advice;
+  if (draft.score === null) {
+    $('#reportFeedback').className = 'report-feedback';
+    $('#reportFeedback').innerHTML = '';
+    $('#reportReference').hidden = true;
+    $('#reportReference').innerHTML = '';
+  } else {
+    $('#reportFeedback').className = 'report-feedback ' + (draft.score >= 80 ? 'strong' : draft.score >= 55 ? 'partial' : 'weak');
+    $('#reportFeedback').innerHTML = '<strong>上次结构与参考命中度 ' + draft.score + ' / 100</strong><small>修改后可重新检查；分数不代表医学正确性。</small>';
+    const reveal = mayRevealCase(c);
+    $('#reportReference').hidden = !reveal;
+    $('#reportReference').innerHTML = reveal ? '<h3>核对清单</h3><ul>' + c.findings.map(function(item) { return '<li>' + esc(item) + '</li>'; }).join('') + '</ul><h3>参考表达</h3><blockquote>' + esc(c.report) + '</blockquote>' : '';
+  }
+}
 function thumbFor(c) {
   const filename = c.image.split('/').pop().replace(/\.[^.]+$/, '.webp');
   return 'assets/thumbnails/' + (c.image.includes('/expanded/') ? 'expanded/' : '') + filename;
@@ -207,9 +342,10 @@ function showDetail(id) {
   if (!c) return;
   detailId = id;
   const i = cases.indexOf(c);
+  const comparisonButton = relatedCases(c).length ? '<button class="soft-button" data-compare="' + id + '">同主题影像对照</button>' : '';
   $('#detailContent').innerHTML = '<div class="detail-heading"><span class="eyebrow">' + c.system + ' / ' + c.modality + ' / ' + c.level + '</span><h1>' + esc(c.title) + '</h1><p>' + esc(c.english) + '</p>' + tags(c) + '</div>' +
     '<div class="detail-grid"><div class="detail-visual"><figure><img src="' + c.image + '" alt="' + esc(c.title) + '"><figcaption>' + creditHTML(c) + '<span>保留原图标注，按比例显示。</span></figcaption></figure>' +
-    '<div class="detail-actions"><button class="primary" data-study="' + id + '">背诵本例</button><button class="soft-button" data-quiz="' + id + '">练习本例</button><button class="soft-button" data-favorite="' + id + '" aria-pressed="' + favorites.includes(c.id) + '">' + (favorites.includes(c.id) ? '★ 已收藏' : '☆ 收藏') + '</button></div>' +
+    '<div class="detail-actions"><button class="primary" data-study="' + id + '">背诵本例</button><button class="soft-button" data-quiz="' + id + '">练习本例</button>' + comparisonButton + '<button class="soft-button" data-favorite="' + id + '" aria-pressed="' + favorites.includes(c.id) + '">' + (favorites.includes(c.id) ? '★ 已收藏' : '☆ 收藏') + '</button></div>' +
     '<div class="panel context-panel"><h3>' + (c.sourceEvidence ? '病例信息边界' : '教学情境') + '</h3><p>' + esc(c.history) + '</p><small>' + (c.sourceEvidence ? '不虚构患者病史；来源原文在右侧“来源核验”中展示。' : '情境为教学编写，不代表原图患者病史。') + '</small></div>' +
     '<div class="memory-line"><span>回忆线索</span><p>' + esc(c.recall) + '</p></div></div>' +
     '<div class="detail-knowledge">' + knowledgeHTML(c) + '</div></div>' +
@@ -242,6 +378,7 @@ function startTraining(queue, mode, order = 'ordered', firstId = null) {
   session.cursor = firstId && session.queue.includes(firstId) ? session.queue.indexOf(firstId) : 0;
   session.answers = {};
   selected = null;
+  reasoningStep = mode === 'study' ? 'diagnosis' : 'findings';
   persistSession();
   renderTraining();
   showView('viewer');
@@ -268,6 +405,9 @@ function renderTraining() {
   $('#imageError').hidden = true;
   $('#activeScan').src = c.image;
   $('#caseNote').value = notes[c.id] || '';
+  $('#findingDraft').value = findingDrafts[c.id] || '';
+  $('#findingSaved').textContent = storageAvailable ? '自动保存' : '仅当前页面保留';
+  loadReportWorkspace(c);
   $('#noteSaved').textContent = storageAvailable ? '自动保存' : '仅当前页面保留';
   $('#viewerIndex').textContent = '病例编号 ' + String(index + 1).padStart(2,'0');
   $('#queuePosition').textContent = '第 ' + (session.cursor + 1) + ' / ' + session.queue.length + ' 题';
@@ -275,6 +415,7 @@ function renderTraining() {
   $('#nextCase').textContent = session.cursor === session.queue.length-1 ? '本轮小结' : '下一题 →';
   updateFavorite();
   renderAnswerPanel();
+  setReasoningStep(session.mode === 'study' ? 'diagnosis' : reasoningStep);
   resetImage();
   $('.case-panel').scrollTop = 0;
   persistSession();
@@ -315,6 +456,8 @@ function renderAnswerPanel() {
   $('#studyAnswer').innerHTML = study && visible ? '<div class="memory-line"><span>参考诊断 · ' + 'ABCD'[c.answer] + '</span><h3>' + esc(c.title) + '</h3><p>' + esc(c.recall) + '</p></div>' : '';
   $('#learningReveal').innerHTML = visible ? knowledgeHTML(c) : '';
   $('#trainingCredit').innerHTML = visible ? creditHTML(c) : '<span>作答后显示完整图片来源及诊断参考资料。</span>';
+  $('#openComparison').hidden = !visible || relatedCases(c).length === 0;
+  if (currentReportDraft().score !== null) loadReportWorkspace(c);
   const record = attempts[c.id];
   $('#attemptStatus').textContent = record ? '已记录 ' + record.count + ' 次作答 · 错 ' + record.wrong + ' 次 · ' + (isMistake(c) ? '待复习' : '最近答对') : '本例暂无逐题作答记录';
 }
@@ -344,6 +487,7 @@ function moveQuestion(delta) {
   const next = session.cursor + delta;
   if (next < 0 || next >= session.queue.length) return;
   session.cursor = next;
+  reasoningStep = session.mode === 'study' ? 'diagnosis' : 'findings';
   renderTraining();
   updateLocation();
 }
@@ -377,6 +521,9 @@ function updateStats() {
   $('#accuracy').textContent = completed.length ? Math.round(correct / completed.length * 100) + '%' : '—';
   $('#favoriteCount').textContent = favorites.length;
   $('#noteCount').textContent = Object.values(notes).filter(function(s) { return s.trim(); }).length;
+  $('#reportCount').textContent = Object.values(reportDrafts).filter(function(draft) {
+    return draft && [draft.location,draft.findings,draft.impression,draft.advice].some(function(value) { return value && value.trim(); });
+  }).length;
   $('#dailyCount').textContent = completed.length;
   $('#sideTotal').textContent = cases.length;
   $('#sideProgress').style.width = (completed.length / cases.length * 100) + '%';
@@ -399,7 +546,8 @@ function exportLearningRecord() {
     format:'image-lab-learning-record', version:2, exportedAt:new Date().toISOString(),
     catalogSize:cases.length,
     favorites:favorites.slice(), completed:completed.slice(), correct:correct,
-    reviewed:reviewed.slice(), notes:Object.assign({},notes), attempts:Object.assign({},attempts),
+    reviewed:reviewed.slice(), notes:Object.assign({},notes), findings:Object.assign({},findingDrafts),
+    reports:Object.assign({},reportDrafts), attempts:Object.assign({},attempts),
     session:{queue:session.queue.slice(),cursor:session.cursor,mode:session.mode,order:session.order,answers:Object.assign({},session.answers)}
   };
   const blob = new Blob([JSON.stringify(payload,null,2)],{type:'application/json'});
@@ -426,6 +574,20 @@ async function importLearningRecord(file) {
     if (payload.notes && typeof payload.notes === 'object') Object.entries(payload.notes).forEach(function(entry) {
       if (byId.has(entry[0]) && typeof entry[1] === 'string' && entry[1].trim()) notes[entry[0]] = entry[1].slice(0,20000);
     });
+    if (payload.findings && typeof payload.findings === 'object') Object.entries(payload.findings).forEach(function(entry) {
+      if (byId.has(entry[0]) && typeof entry[1] === 'string' && entry[1].trim()) findingDrafts[entry[0]] = entry[1].slice(0,20000);
+    });
+    if (payload.reports && typeof payload.reports === 'object') Object.entries(payload.reports).forEach(function(entry) {
+      if (!byId.has(entry[0]) || !entry[1] || typeof entry[1] !== 'object') return;
+      const imported = entry[1];
+      reportDrafts[entry[0]] = {
+        location:typeof imported.location === 'string' ? imported.location.slice(0,2000) : '',
+        findings:typeof imported.findings === 'string' ? imported.findings.slice(0,20000) : '',
+        impression:typeof imported.impression === 'string' ? imported.impression.slice(0,10000) : '',
+        advice:typeof imported.advice === 'string' ? imported.advice.slice(0,10000) : '',
+        score:Number.isFinite(imported.score) ? Math.max(0,Math.min(100,imported.score)) : null
+      };
+    });
     if (payload.attempts && typeof payload.attempts === 'object') Object.entries(payload.attempts).forEach(function(entry) {
       const c = byId.get(entry[0]);
       if (c && validAttemptRecord(entry[1],c) && (!attempts[entry[0]] || entry[1].count >= attempts[entry[0]].count)) attempts[entry[0]] = entry[1];
@@ -449,6 +611,11 @@ async function importLearningRecord(file) {
     save(storagePrefix + '-reviewed',reviewed);
     save(attemptsKey,attempts);
     Object.entries(notes).forEach(function(entry) { if (entry[1].trim()) localStorage.setItem(stablePrefix + '-note-' + entry[0],entry[1]); });
+    Object.entries(findingDrafts).forEach(function(entry) { if (entry[1].trim()) localStorage.setItem(stablePrefix + '-finding-' + entry[0],entry[1]); });
+    Object.entries(reportDrafts).forEach(function(entry) {
+      const draft = entry[1];
+      if ([draft.location,draft.findings,draft.impression,draft.advice].some(function(value) { return value.trim(); })) save(stablePrefix + '-report-' + entry[0],draft);
+    });
     persistSession();
     updateStats(); renderCases(); renderTraining();
     notify('导入完成，记录已按病例 ID 合并。');
@@ -531,12 +698,14 @@ function setOrder(order) {
   session.queue = order === 'random' ? shuffle(session.queue) : ids.filter(function(id) { return session.queue.includes(id); });
   session.cursor = order === 'random' ? 0 : session.queue.indexOf(currentId);
   session.order = order;
+  reasoningStep = session.mode === 'study' ? 'diagnosis' : 'findings';
   renderTraining();
   updateLocation();
 }
 function setMode(mode) {
   if (session.mode === mode) return;
   session.mode = mode;
+  reasoningStep = mode === 'study' ? 'diagnosis' : 'findings';
   renderTraining();
   updateLocation();
 }
@@ -594,6 +763,21 @@ $('#caseNote').addEventListener('input', function(e) {
   } catch { $('#noteSaved').textContent = '仅当前页面保留'; }
   updateStats();
 });
+$$('[data-reasoning-step]').forEach(function(button) {
+  button.onclick = function() { setReasoningStep(button.dataset.reasoningStep); };
+});
+$('#findingDraft').addEventListener('input', saveFindingDraft);
+$('#continueDiagnosis').onclick = function() { saveFindingDraft(); setReasoningStep('diagnosis'); };
+['#reportLocation','#reportFindings','#reportImpression','#reportAdvice'].forEach(function(selector) {
+  $(selector).addEventListener('input',saveReportDraft);
+});
+$('#scoreReport').onclick = scoreCurrentReport;
+$('#openComparison').onclick = function() { showComparison(currentCase().id); };
+$('#closeComparison').onclick = function() { $('#compareDialog').close(); };
+$('#compareChoices').onclick = function(e) {
+  const button = e.target.closest('[data-compare-choice]');
+  if (button) showComparison(comparePrimaryId,button.dataset.compareChoice);
+};
 $('#submitAnswer').onclick = submitAnswer;
 $('#answers').onclick = function(e) {
   const button = e.target.closest('[data-answer]');
@@ -614,7 +798,11 @@ $('#prevCase').onclick = function() { moveQuestion(-1); };
 $('#nextCase').onclick = function() {
   if (session.cursor === session.queue.length-1) summary(); else moveQuestion(1);
 };
-$('#jumpCase').onchange = function(e) { session.cursor = Number(e.target.value); renderTraining(); updateLocation(); };
+$('#jumpCase').onchange = function(e) {
+  session.cursor = Number(e.target.value);
+  reasoningStep = session.mode === 'study' ? 'diagnosis' : 'findings';
+  renderTraining(); updateLocation();
+};
 $$('[data-mode]').forEach(function(b) { b.onclick = function() { setMode(b.dataset.mode); }; });
 $('#orderMode').onchange = function(e) { setOrder(e.target.value); };
 $('#reshuffle').onclick = function() { setOrder('random'); };
@@ -734,18 +922,19 @@ $$('[data-library-system]').forEach(function(el) {
   el.onkeydown = function(e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openSystem(); } };
 });
 document.addEventListener('click', function(e) {
-  const el = e.target.closest('[data-detail],[data-quiz],[data-study],[data-favorite],[data-clear],[data-summary-config]');
+  const el = e.target.closest('[data-detail],[data-quiz],[data-study],[data-favorite],[data-compare],[data-clear],[data-summary-config]');
   if (!el || el.disabled) return;
   e.preventDefault();
   if (el.dataset.detail) showDetail(el.dataset.detail);
   else if (el.dataset.quiz) startAt(el.dataset.quiz, 'quiz');
   else if (el.dataset.study) startAt(el.dataset.study, 'study');
   else if (el.dataset.favorite) toggleFavorite(el.dataset.favorite);
+  else if (el.dataset.compare) showComparison(el.dataset.compare);
   else if (el.hasAttribute('data-clear')) clearFilters();
   else openQueue();
 });
 document.addEventListener('keydown', function(e) {
-  if ($('#queueDialog').open) return;
+  if ($('#queueDialog').open || $('#compareDialog').open) return;
   if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); $('#globalSearch').focus(); return; }
   if (currentView !== 'viewer' || e.target.matches('input,textarea,select') || e.ctrlKey || e.metaKey || e.altKey) return;
   if (e.key === 'ArrowRight') { e.preventDefault(); moveQuestion(1); }
