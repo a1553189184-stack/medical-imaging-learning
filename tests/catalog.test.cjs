@@ -6,7 +6,7 @@ const vm = require('node:vm');
 const {createHash} = require('node:crypto');
 
 const root = path.resolve(__dirname,'..');
-const catalogScripts = ['cases.js','curriculum.js','expanded-sources.js','additional-groups.js','next-76-groups.js','expanded-cases.js'];
+const catalogScripts = ['cases.js','curriculum.js','expanded-sources.js','additional-groups.js','next-76-groups.js','next-200-groups.js','next-200-review.js','expanded-cases.js'];
 const source = catalogScripts.map(file => fs.readFileSync(path.join(root,file),'utf8')).join('\n');
 const data = vm.runInNewContext(source + '\nJSON.stringify({cases:CASES,curriculum:CURRICULUM,sources:EXPANDED_CASE_SOURCES})');
 const {cases,curriculum,sources} = JSON.parse(data);
@@ -16,12 +16,12 @@ const getId = c => path.basename(c.image,path.extname(c.image));
 const expanded = cases.filter(c => c.image.startsWith('assets/images/expanded/'));
 const latestChestIds = ['chest-bronchiectasis-01','chest-emphysema-01','chest-pulmonary-fibrosis-01','chest-pericardial-effusion-01','chest-thymoma-01','chest-aortic-dissection-01','chest-hiatal-hernia-01','chest-pneumomediastinum-01','chest-svc-syndrome-01','chest-lung-abscess-01'];
 
-test('catalog has 500 cases with 19 new cases in every system', () => {
-  assert.equal(cases.length,500);
-  assert.equal(expanded.length,486);
+test('catalog has 700 cases with 50 new cases in every system', () => {
+  assert.equal(cases.length,700);
+  assert.equal(expanded.length,686);
   const totals = Object.fromEntries(['胸部','神经','腹部','骨骼'].map(system => [system,cases.filter(c => c.system===system).length]));
-  assert.deepEqual(totals,{胸部:135,神经:123,腹部:122,骨骼:120});
-  assert.deepEqual(Object.fromEntries(Object.keys(totals).map(system=>[system,expanded.filter(c=>c.system===system).length])),{胸部:129,神经:119,腹部:119,骨骼:119});
+  assert.deepEqual(totals,{胸部:185,神经:173,腹部:172,骨骼:170});
+  assert.deepEqual(Object.fromEntries(Object.keys(totals).map(system=>[system,expanded.filter(c=>c.system===system).length])),{胸部:179,神经:169,腹部:169,骨骼:169});
   const latest = sources.filter(record=>latestChestIds.includes(record.id));
   assert.equal(latest.length,10);
   assert.equal(new Set(latest.map(record=>record.groupKey)).size,10);
@@ -29,19 +29,27 @@ test('catalog has 500 cases with 19 new cases in every system', () => {
   const secondBatch=sources.slice(210,410);
   assert.equal(secondBatch.length,200);
   assert.deepEqual(Object.fromEntries(Object.keys(totals).map(system=>[system,secondBatch.filter(c=>c.system===system).length])),{胸部:50,神经:50,腹部:50,骨骼:50});
-  const finalBatch=sources.slice(410);
+  const finalBatch=sources.slice(410,486);
   assert.equal(finalBatch.length,76);
   assert.deepEqual(Object.fromEntries(Object.keys(totals).map(system=>[system,finalBatch.filter(c=>c.system===system).length])),{胸部:19,神经:19,腹部:19,骨骼:19});
   assert.equal(new Set(finalBatch.map(record=>record.groupKey)).size,76);
   assert.equal(new Set(finalBatch.map(record=>record.sourceTitle)).size,76);
   assert.equal(new Set(cases.slice(-76).map(c=>c.title.split(' · 开放病例')[0])).size,76);
   assert.ok(finalBatch.every(record=>!/histolog|histopath|micrograph|gross pathology|autopsy|specimen|cells or tissue/i.test(`${record.sourceTitle} ${record.sourceDescription}`)));
+  const expansion700=sources.slice(486);
+  assert.equal(expansion700.length,200);
+  assert.deepEqual(Object.fromEntries(Object.keys(totals).map(system=>[system,expansion700.filter(c=>c.system===system).length])),{胸部:50,神经:50,腹部:50,骨骼:50});
+  assert.equal(new Set(expansion700.map(record=>record.groupKey)).size,200);
+  assert.equal(new Set(expansion700.map(record=>record.sourceTitle)).size,200);
+  assert.equal(new Set(cases.slice(-200).map(c=>c.title.split(' · 开放病例')[0])).size,200);
+  assert.ok(cases.slice(-200).every(c=>c.findings.length>=3 && !c.findings.some(item=>item.startsWith('识别与'))));
+  assert.ok(expansion700.every(record=>!/histolog|histopath|micrograph|gross pathology|autopsy|specimen|cells or tissue/i.test(`${record.sourceTitle} ${record.sourceDescription}`)));
 });
 
 test('bone cases are split into source-supported teaching subtypes', () => {
   const diagnosis = c => c.title.split(' · 开放病例')[0];
   const diversity = Object.fromEntries(['胸部','神经','腹部','骨骼'].map(system=>[system,new Set(cases.filter(c=>c.system===system).map(diagnosis)).size]));
-  assert.deepEqual(diversity,{胸部:63,神经:61,腹部:65,骨骼:76});
+  assert.deepEqual(diversity,{胸部:113,神经:111,腹部:115,骨骼:126});
   for(const title of ['股骨颈骨折（Garden III）','转子间股骨骨折','肩关节后脱位','儿童桡骨青枝骨折','Tillaux 骨折']) assert.ok(cases.some(c=>diagnosis(c)===title),title);
 });
 
@@ -73,12 +81,13 @@ test('case metadata, diagnosis content and local images match one-to-one', () =>
 
 test('expanded image sources are complete, distinct and cryptographically verified', () => {
   const manifest = JSON.parse(fs.readFileSync(path.join(root,'data','expanded-case-sources.json'),'utf8'));
-  assert.equal(manifest.count,486);
-  assert.equal(manifest.records.length,486);
-  assert.equal(sources.length,486);
-  assert.ok(manifest.records.slice(410).every(record=>record.qualityScore==='manual-source-match'||record.qualityScore==='manual-source-and-image-match'));
+  assert.equal(manifest.count,686);
+  assert.equal(manifest.records.length,686);
+  assert.equal(sources.length,686);
+  assert.ok(manifest.records.slice(410,486).every(record=>record.qualityScore==='manual-source-match'||record.qualityScore==='manual-source-and-image-match'));
+  assert.ok(manifest.records.slice(486).every(record=>record.qualityScore==='source-and-contact-sheet-review'));
   for(const key of ['id','image','sourceUrl','originalSha1','localSha256']) {
-    assert.equal(new Set(sources.map(record=>record[key])).size,486,`${key} must be unique`);
+    assert.equal(new Set(sources.map(record=>record[key])).size,686,`${key} must be unique`);
   }
   const sourceById = new Map(sources.map(record=>[record.id,record]));
   for(const c of expanded) {

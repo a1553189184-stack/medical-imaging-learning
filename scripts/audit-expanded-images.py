@@ -74,6 +74,25 @@ for system in ["胸部", "神经", "腹部", "骨骼"]:
 
 report = {"count": len(records), "decodeErrors": errors, "nearDuplicates": near}
 (out_dir / "report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+# Keep a stable, compact review set for the most recent 200-case expansion.
+for system in ["胸部", "神经", "腹部", "骨骼"]:
+    group = [record for record in records[-200:] if record["system"] == system]
+    for page_number in range(0, len(group), 25):
+        page = group[page_number : page_number + 25]
+        sheet = Image.new("RGB", (1200, 1025), "#161a1d")
+        draw = ImageDraw.Draw(sheet)
+        for position, record in enumerate(page):
+            col, row = position % 5, position // 5
+            x, y = col * 240, row * 205
+            with Image.open(ROOT / record["image"]) as image:
+                image = ImageOps.exif_transpose(image).convert("RGB")
+                image.thumbnail((224, 165), Image.Resampling.LANCZOS)
+                tile = Image.new("RGB", (224, 165), "black")
+                tile.paste(image, ((224 - image.width) // 2, (165 - image.height) // 2))
+                sheet.paste(tile, (x + 8, y + 8))
+            draw.text((x + 8, y + 178), record["id"], fill="white", font=font)
+        sheet.save(out_dir / f"review-700-{system}-{page_number // 25 + 1}.jpg", quality=92)
 print(json.dumps({"count": len(records), "errors": len(errors), "nearDuplicatePairs": len(near)}, ensure_ascii=False))
 for item in near[:80]:
     print(f"dHash {item['distance']}: {item['left']} <> {item['right']}")

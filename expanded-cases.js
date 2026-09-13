@@ -274,7 +274,7 @@ const EXPANDED_METHOD_START = {
 
 // Additional diagnosis groups are generated from the manually reviewed second
 // expansion batch before source records are converted into cases.
-Object.assign(EXPANDED_GROUPS, ADDITIONAL_GROUPS, NEXT_76_GROUPS);
+Object.assign(EXPANDED_GROUPS, ADDITIONAL_GROUPS, NEXT_76_GROUPS, NEXT_200_GROUPS);
 
 // Source-supported subtypes prevent distinct images from collapsing into one
 // generic lesson. These labels only use details stated on each Commons page.
