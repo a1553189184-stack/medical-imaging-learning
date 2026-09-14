@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="learning.css?v=atlas17" />
+  <link rel="stylesheet" href="learning.css?v=atlas18" />
 </head>
 <body>
   <div class="noise"></div>
@@ -210,9 +210,11 @@
           <button data-cs-tool="pan" aria-pressed="false">平移</button>
           <button data-cs-tool="zoom" aria-pressed="false">缩放</button>
           <button data-cs-tool="length" aria-pressed="false">长度</button>
+          <button data-cs-tool="rectangle" aria-pressed="false">矩形圈画</button>
+          <button data-cs-tool="ellipse" aria-pressed="false">椭圆圈画</button>
         </div>
         <label>序列<select id="cornerstoneSeries" aria-label="选择 DICOM 序列" disabled><option>等待检查信息…</option></select></label>
-        <div class="cornerstone-actions"><button data-cs-action="reset">复位</button><button data-cs-action="clear">清除测量</button></div>
+        <div class="cornerstone-actions"><button data-cs-action="capture">截图讨论卡</button><button data-cs-action="reset">复位</button><button data-cs-action="clear">清除标注</button></div>
       </div>
       <div class="cornerstone-stage">
         <div id="cornerstoneViewport" tabindex="0" aria-label="DICOM 影像显示区域"></div>
@@ -221,6 +223,10 @@
         <div id="cornerstoneStatus" class="cornerstone-status" role="status" aria-live="polite">准备载入…</div>
         <div id="cornerstoneError" class="cornerstone-error" role="alert" hidden><b>暂时无法显示</b><p></p><button id="retryCornerstone">重试</button><a id="cornerstoneOhif" target="_blank" rel="noopener">改用 OHIF ↗</a></div>
       </div>
+      <section class="cornerstone-discussion" aria-labelledby="discussionCardTitle">
+        <div class="discussion-head"><div><span class="eyebrow mint">LOCAL DISCUSSION CARD</span><h3 id="discussionCardTitle">匿名化阅片讨论卡</h3><p>截图与文字仅在当前浏览器生成；不会上传到本站或任何 AI 服务。确认截图没有可识别的烧录文字后，再自行粘贴到已获授权的工具。</p></div><button id="downloadDiscussionCapture" class="cornerstone-close" disabled>下载当前截图</button></div>
+        <div class="discussion-grid"><div class="discussion-inputs"><label>提问方向<select id="discussionDirection"><option value="localization">定位与分布</option><option value="findings">影像征象</option><option value="differential">鉴别诊断</option><option value="report">报告表达</option></select></label><label>我的观察（可选；勿填写身份信息）<textarea id="discussionObservation" maxlength="1200" placeholder="例如：病变位于……，形态/密度/信号表现为……"></textarea></label><button id="buildDiscussionCard" class="cornerstone-close">生成结构化提问卡</button><p id="discussionAnnotationSummary" class="discussion-summary">尚未截图；可先圈画或测量后生成。</p></div><div class="discussion-output"><img id="discussionCapture" alt="本地截取的当前 DICOM 层面" hidden><textarea id="discussionCard" readonly aria-label="匿名化病例讨论卡与可复制提问词" placeholder="点击“截图讨论卡”或“生成结构化提问卡”后显示。"></textarea><button id="copyDiscussionCard" class="cornerstone-close" disabled>复制提问词</button></div></div>
+      </section>
       <footer class="cornerstone-foot"><span>影像由 IDC 只读 DICOMweb 按需传输；集合名称仅表示来源背景。</span><span>试验功能仅供教学，不用于临床诊断。</span></footer>
     </div>
   </dialog>
@@ -236,6 +242,6 @@
   <script src="dicom-series.js?v=atlas10"></script>
   <script src="medical-reviews.js?v=atlas10"></script>
   <script src="case-packages.js?v=atlas12"></script>
-  <script src="app.js?v=atlas17"></script>
+  <script src="app.js?v=atlas18"></script>
 </body>
 </html>

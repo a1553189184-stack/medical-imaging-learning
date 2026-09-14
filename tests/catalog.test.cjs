@@ -171,7 +171,7 @@ test('DICOM trial has five distinct IDC studies per system', () => {
 test('advanced study controls and stable-record migration are wired', () => {
   const html = fs.readFileSync(path.join(root,'index.html'),'utf8');
   const app = fs.readFileSync(path.join(root,'app.js'),'utf8');
-  for(const id of ['quickTen','loadMoreCases','queueSearch','queueDiagnosis','queueSampleSize','exportProgress','importProgress','dicomList','findingDraft','reasoningCoach','reasoningCount','reportLocation','reportFindings','reportImpression','reportAdvice','scoreReport','openComparison','compareDialog','reportCount','learnerLevel','requestHint','hintPanel','hintCount','prescriptionList','startPrescription','studyPrescription','reviewPlanList','dueReviewCount','startDueReviews','studyDueReviews','systemPerformance']) assert.match(html,new RegExp(`id="${id}"`));
+  for(const id of ['quickTen','loadMoreCases','queueSearch','queueDiagnosis','queueSampleSize','exportProgress','importProgress','dicomList','findingDraft','reasoningCoach','reasoningCount','reportLocation','reportFindings','reportImpression','reportAdvice','scoreReport','openComparison','compareDialog','reportCount','learnerLevel','requestHint','hintPanel','hintCount','prescriptionList','startPrescription','studyPrescription','reviewPlanList','dueReviewCount','startDueReviews','studyDueReviews','systemPerformance','discussionDirection','discussionObservation','discussionCapture','discussionCard','copyDiscussionCard']) assert.match(html,new RegExp(`id="${id}"`));
   assert.match(app,/const stablePrefix = 'yys-honest-v2'/);
   assert.match(app,/function exportLearningRecord/);
   assert.match(app,/function importLearningRecord/);
@@ -193,6 +193,12 @@ test('advanced study controls and stable-record migration are wired', () => {
   assert.match(app,/reasoning_checkpoint_completed/);
   assert.match(app,/function recordLearningEvent/);
   assert.match(app,/packageSha256/);
+  assert.match(app,/cornerstone\/viewer\.js\?v=atlas18/);
+  const viewerSource = fs.readFileSync(path.join(root,'src','cornerstone-viewer.js'),'utf8');
+  assert.match(viewerSource,/RectangleROITool/);
+  assert.match(viewerSource,/EllipticalROITool/);
+  assert.match(viewerSource,/function captureDiscussionLayer/);
+  assert.match(viewerSource,/function buildDiscussionCard/);
   assert.match(html,/不判断临床正确性/);
   assert.match(html,/不同公开病例/);
 });

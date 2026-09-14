@@ -107,6 +107,13 @@ try {
   assert.ok(await evaluate("Number(document.querySelector('#cornerstonePosition').textContent.split('/')[1]) > 1"));
   await evaluate("document.querySelector('[data-cs-tool=length]').click()");
   assert.equal(await evaluate("document.querySelector('[data-cs-tool=length]').getAttribute('aria-pressed')"), 'true');
+  await evaluate("document.querySelector('[data-cs-tool=rectangle]').click()");
+  assert.equal(await evaluate("document.querySelector('[data-cs-tool=rectangle]').getAttribute('aria-pressed')"), 'true');
+  await evaluate("document.querySelector('#discussionObservation').value='局部结构异常，需结合完整序列确认范围。';document.querySelector('[data-cs-action=capture]').click()");
+  assert.equal(await evaluate("document.querySelector('#discussionCapture').hidden"), false);
+  assert.match(await evaluate("document.querySelector('#discussionCard').value"), /匿名化医学影像学习讨论卡/);
+  assert.match(await evaluate("document.querySelector('#discussionCard').value"), /局部结构异常/);
+  assert.equal(await evaluate("document.querySelector('#copyDiscussionCard').disabled"), false);
   if (process.env.DICOM_SCREENSHOT) {
     const screenshot = await command('Page.captureScreenshot', { format: 'png' });
     fs.writeFileSync(process.env.DICOM_SCREENSHOT, Buffer.from(screenshot.data, 'base64'));

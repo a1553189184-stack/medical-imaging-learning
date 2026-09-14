@@ -1308,7 +1308,7 @@ document.addEventListener('click', function(e) {
     if (!study) return;
     dicomButton.disabled = true;
     dicomButton.textContent = '正在启动…';
-    cornerstoneModulePromise = cornerstoneModulePromise || import('./assets/cornerstone/viewer.js?v=atlas13');
+    cornerstoneModulePromise = cornerstoneModulePromise || import('./assets/cornerstone/viewer.js?v=atlas18');
     cornerstoneModulePromise.then(function() {
       window.CornerstonePilot.open(study);
     }).catch(function(error) {

@@ -333,9 +333,9 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
 .dicom-links > a { color: #3d6845; font-size: 12px; }
 .dicom-card > small { color: #7b8879; }
 .dialog-open { overflow: hidden; }
-.cornerstone-dialog { width: min(1500px,calc(100vw - 28px)); height: min(940px,calc(100dvh - 28px)); max-width: none; max-height: none; border: 0; padding: 0; border-radius: 20px; background: #07100e; color: #ecf4ef; overflow: hidden; }
+.cornerstone-dialog { width: min(1500px,calc(100vw - 28px)); height: min(940px,calc(100dvh - 28px)); max-width: none; max-height: none; border: 0; padding: 0; border-radius: 20px; background: #07100e; color: #ecf4ef; overflow: auto; }
 .cornerstone-dialog::backdrop { background: #07100ed9; backdrop-filter: blur(6px); }
-.cornerstone-shell { height: 100%; display: grid; grid-template-rows: auto auto minmax(0,1fr) auto; }
+.cornerstone-shell { height: 100%; display: grid; grid-template-rows: auto auto minmax(280px,1fr) auto auto; }
 .cornerstone-head { height: auto; min-height: 76px; padding: 14px 20px; border-bottom: 1px solid #27352f; background: #0e1c18; }
 .cornerstone-head h2 { margin: 3px 0; font-size: 19px; }
 .cornerstone-head p { margin: 0; color: #8da099; font-size: 11px; }
@@ -343,6 +343,7 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
 .cornerstone-close { margin-left: auto; }
 .cornerstone-controls { min-height: 58px; display: flex; align-items: center; gap: 14px; padding: 9px 16px; border-bottom: 1px solid #27352f; background: #0b1613; }
 .cornerstone-tools,.cornerstone-actions { display: flex; gap: 6px; }
+.cornerstone-tools button,.cornerstone-actions button { white-space: nowrap; }
 .cornerstone-tools button.active { color: #162f26; background: var(--mint); border-color: var(--mint); font-weight: 700; }
 .cornerstone-controls label { min-width: 210px; flex: 1; display: flex; align-items: center; gap: 8px; color: #91a39c; font-size: 11px; white-space: nowrap; }
 .cornerstone-controls select { width: 100%; min-width: 0; border: 1px solid #405149; border-radius: 9px; background: #15241f; color: #e7f0eb; padding: 9px; }
@@ -359,6 +360,22 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
 .cornerstone-error p { color: #b7c6c0; font-size: 13px; line-height: 1.6; }
 .cornerstone-error a { color: var(--mint); margin-left: 12px; font-size: 12px; }
 .cornerstone-foot { min-height: 42px; display: flex; justify-content: space-between; gap: 12px; align-items: center; padding: 9px 16px; border-top: 1px solid #27352f; background: #0e1c18; color: #788b84; font-size: 10px; }
+.cornerstone-discussion { padding: 14px 18px; border-top: 1px solid #27352f; background: #0b1613; max-height: 270px; overflow: auto; }
+.discussion-head { display: flex; justify-content: space-between; align-items: start; gap: 16px; }
+.discussion-head h3 { margin: 3px 0; font-size: 16px; }
+.discussion-head p { max-width: 850px; margin: 0; color: #91a39c; font-size: 12px; line-height: 1.55; }
+.discussion-head .cornerstone-close { flex-shrink: 0; }
+.discussion-grid { display: grid; grid-template-columns: minmax(260px,.85fr) minmax(0,1.15fr); gap: 14px; margin-top: 12px; }
+.discussion-inputs { display: grid; gap: 9px; align-content: start; }
+.discussion-inputs label { display: grid; gap: 5px; color: #c8d7cf; font-size: 12px; }
+.discussion-inputs select,.discussion-inputs textarea,.discussion-output textarea { width: 100%; border: 1px solid #405149; border-radius: 8px; background: #101d19; color: #e4eee8; padding: 8px 9px; font: inherit; font-size: 12px; line-height: 1.55; }
+.discussion-inputs textarea { min-height: 64px; resize: vertical; }
+.discussion-inputs .cornerstone-close { justify-self: start; }
+.discussion-summary { margin: 0; color: #9db0a7; font-size: 11px; line-height: 1.55; }
+.discussion-output { display: grid; grid-template-columns: 145px minmax(0,1fr); grid-template-rows: minmax(94px,1fr) auto; gap: 8px; min-height: 105px; }
+.discussion-output img { width: 145px; height: 102px; object-fit: contain; border: 1px solid #405149; border-radius: 8px; background: #030504; }
+.discussion-output textarea { min-height: 108px; resize: vertical; white-space: pre-wrap; }
+.discussion-output .cornerstone-close { grid-column: 2; justify-self: end; }
 .data-panel { display: flex; justify-content: space-between; gap: 28px; align-items: center; margin-top: 18px; }
 .data-panel h2 { margin: 6px 0; }
 .data-panel p { margin: 0; color: #6d7969; max-width: 700px; }
@@ -384,6 +401,12 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
   .detail-grid { grid-template-columns: minmax(0,1fr); }
   .detail-visual { position: static; }
   .detail-visual figure img { height: 400px; }
+}
+@media (max-width: 960px) {
+  .cornerstone-controls { align-items: stretch; flex-wrap: wrap; }
+  .cornerstone-tools { flex: 0 0 100%; width: 100%; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .cornerstone-controls label { flex: 0 0 100%; min-width: 0; width: 100%; }
+  .cornerstone-actions { margin-left: auto; }
 }
 @media (min-width:681px) and (max-width:1000px) {
   .nav-item, .nav-item.active { font-size: 0; gap: 0; }
@@ -414,12 +437,18 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
   .dicom-grid { grid-template-columns: minmax(0,1fr); }
   .cornerstone-dialog { width: 100vw; height: 100dvh; border-radius: 0; }
   .cornerstone-controls { align-items: stretch; flex-wrap: wrap; }
-  .cornerstone-tools { width: 100%; display: grid; grid-template-columns: repeat(4,1fr); }
+  .cornerstone-tools { width: 100%; display: grid; grid-template-columns: repeat(3,1fr); }
   .cornerstone-controls label { min-width: 0; width: 100%; }
   .cornerstone-actions { margin-left: auto; }
   .cornerstone-overlay.bottom-left { display: none; }
   .cornerstone-foot { display: block; }
   .cornerstone-foot span { display: block; }
+  .cornerstone-discussion { max-height: 300px; padding: 13px; }
+  .discussion-head { align-items: stretch; flex-direction: column; }
+  .discussion-head .cornerstone-close { align-self: start; }
+  .discussion-grid { grid-template-columns: minmax(0,1fr); }
+  .discussion-output { grid-template-columns: 112px minmax(0,1fr); }
+  .discussion-output img { width: 112px; height: 94px; }
   header { padding: 0 16px; gap: 10px; height: 72px; }
   .header-actions { display: none; }
   .menu { flex-shrink: 0; }
