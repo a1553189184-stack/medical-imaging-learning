@@ -12,9 +12,16 @@ const data = vm.runInNewContext(source + '\nJSON.stringify({cases:CASES,curricul
 const {cases,curriculum,sources} = JSON.parse(data);
 const dicomStudies = JSON.parse(vm.runInNewContext(fs.readFileSync(path.join(root,'dicom-series.js'),'utf8') + '\nJSON.stringify(DICOM_STUDIES)'));
 const medicalReviews = JSON.parse(vm.runInNewContext(fs.readFileSync(path.join(root,'medical-reviews.js'),'utf8') + '\nJSON.stringify(MEDICAL_REVIEWS)'));
+const casePackages = JSON.parse(vm.runInNewContext(fs.readFileSync(path.join(root,'case-packages.js'),'utf8') + '\nJSON.stringify(CASE_PACKAGES)'));
 const getId = c => path.basename(c.image,path.extname(c.image));
 const expanded = cases.filter(c => c.image.startsWith('assets/images/expanded/'));
 const latestChestIds = ['chest-bronchiectasis-01','chest-emphysema-01','chest-pulmonary-fibrosis-01','chest-pericardial-effusion-01','chest-thymoma-01','chest-aortic-dissection-01','chest-hiatal-hernia-01','chest-pneumomediastinum-01','chest-svc-syndrome-01','chest-lung-abscess-01'];
+const sha256 = value => createHash('sha256').update(value).digest('hex');
+const canonical = value => {
+  if(Array.isArray(value)) return '['+value.map(canonical).join(',')+']';
+  if(value && typeof value==='object') return '{'+Object.keys(value).sort().map(key=>JSON.stringify(key)+':'+canonical(value[key])).join(',')+'}';
+  return JSON.stringify(value);
+};
 
 test('catalog has 700 cases with 50 new cases in every system', () => {
   assert.equal(cases.length,700);
@@ -124,6 +131,25 @@ test('every atlas image has a lightweight WebP thumbnail', () => {
   assert.ok(totalBytes < 10 * 1024 * 1024,'thumbnail payload stays below 10 MB');
 });
 
+test('all cases have deterministic versioned packages covering content, lesson and image bytes', () => {
+  assert.equal(casePackages.length,700);
+  assert.equal(new Set(casePackages.map(record=>record.id)).size,700);
+  const packageById = new Map(casePackages.map(record=>[record.id,record]));
+  const lessonById = new Map(curriculum.map(lesson=>[lesson.id,lesson]));
+  for(const item of cases) {
+    const id=getId(item), lesson=lessonById.get(id), record=packageById.get(id);
+    assert.ok(record,id);
+    const caseCore={id,title:item.title,system:item.system,modality:item.modality,level:item.level,history:item.history,options:item.options,answer:item.answer,findings:item.findings,explain:item.explain,report:item.report,source:item.source,sourceUrl:item.sourceUrl,license:item.license,licenseUrl:item.licenseUrl||''};
+    const lessonCore={id,english:lesson.english,recall:lesson.recall,methods:lesson.methods,tips:lesson.tips,pitfalls:lesson.pitfalls,differential:lesson.differential,pearl:lesson.pearl,limitation:lesson.limitation,refs:lesson.refs};
+    assert.equal(record.schemaVersion,'1.0');
+    assert.match(record.contentVersion,/^\d{4}\.\d{2}\.\d+$/);
+    assert.equal(record.caseSha256,sha256(canonical(caseCore)),id+' case content');
+    assert.equal(record.lessonSha256,sha256(canonical(lessonCore)),id+' lesson content');
+    assert.equal(record.imageSha256,sha256(fs.readFileSync(path.join(root,item.image))),id+' image');
+    assert.equal(record.packageSha256,sha256(canonical({schemaVersion:'1.0',contentVersion:record.contentVersion,id,caseSha256:record.caseSha256,lessonSha256:record.lessonSha256,imageSha256:record.imageSha256})),id+' package');
+  }
+});
+
 test('DICOM trial has five distinct IDC studies per system', () => {
   assert.equal(dicomStudies.length,20);
   assert.equal(new Set(dicomStudies.map(item=>item.uid)).size,20);
@@ -145,13 +171,16 @@ test('DICOM trial has five distinct IDC studies per system', () => {
 test('advanced study controls and stable-record migration are wired', () => {
   const html = fs.readFileSync(path.join(root,'index.html'),'utf8');
   const app = fs.readFileSync(path.join(root,'app.js'),'utf8');
-  for(const id of ['quickTen','loadMoreCases','queueSearch','queueDiagnosis','queueSampleSize','exportProgress','importProgress','dicomList','findingDraft','reportLocation','reportFindings','reportImpression','reportAdvice','scoreReport','openComparison','compareDialog','reportCount']) assert.match(html,new RegExp(`id="${id}"`));
+  for(const id of ['quickTen','loadMoreCases','queueSearch','queueDiagnosis','queueSampleSize','exportProgress','importProgress','dicomList','findingDraft','reportLocation','reportFindings','reportImpression','reportAdvice','scoreReport','openComparison','compareDialog','reportCount','learnerLevel','requestHint','hintPanel','hintCount']) assert.match(html,new RegExp(`id="${id}"`));
   assert.match(app,/const stablePrefix = 'yys-honest-v2'/);
   assert.match(app,/function exportLearningRecord/);
   assert.match(app,/function importLearningRecord/);
   assert.match(app,/function sampleByDiagnosis/);
   assert.match(app,/function scoreCurrentReport/);
   assert.match(app,/function showComparison/);
+  assert.match(app,/function requestHint/);
+  assert.match(app,/function recordLearningEvent/);
+  assert.match(app,/packageSha256/);
   assert.match(html,/不判断临床正确性/);
   assert.match(html,/不同公开病例/);
 });
