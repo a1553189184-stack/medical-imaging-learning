@@ -517,6 +517,74 @@ function shuffle(array) {
   return result;
 }
 function sample(array, count) { return shuffle(array).slice(0, Math.min(count, array.length)); }
+let prescriptionGroups = [];
+function hintCountsByCase() {
+  return learningEvents.filter(function(event) { return event.type === 'hint_requested'; }).reduce(function(result,event) {
+    result[event.caseId] = (result[event.caseId] || 0) + 1;
+    return result;
+  },{});
+}
+function prescriptionSignal(c, hintCounts) {
+  const attempt = attempts[c.id];
+  if (!attempt || !attempt.count) return {score:0,reasons:[]};
+  const reasons = [];
+  let score = 0;
+  if (attempt.lastAnswer !== c.answer) { score += 8; reasons.push('最近答错'); }
+  if (attempt.wrong > 0) { score += Math.min(attempt.wrong,3) * 2; reasons.push('历史答错 ' + attempt.wrong + ' 次'); }
+  const hintCount = hintCounts[c.id] || 0;
+  if (hintCount >= 2) { score += 2; reasons.push('使用 ' + hintCount + ' 次提示'); }
+  const report = reportDrafts[c.id];
+  if (report && Number.isFinite(report.score) && report.score < 55) { score += 1; reasons.push('报告结构分 ' + report.score + ' 分'); }
+  const reasoning = reasoningDrafts[c.id];
+  if (!reasoning || !reasoning.completedAt) { score += 1; reasons.push('推理追问未完成'); }
+  return {score:score,reasons:reasons};
+}
+function buildPrescription() {
+  const hintCounts = hintCountsByCase();
+  const signals = cases.map(function(c) { return Object.assign({case:c},prescriptionSignal(c,hintCounts)); }).filter(function(item) { return item.score > 0; });
+  const groupMap = new Map();
+  signals.forEach(function(item) {
+    const key = item.case.system + '|' + diagnosisName(item.case);
+    const group = groupMap.get(key) || {key:key,system:item.case.system,diagnosis:diagnosisName(item.case),items:[],score:0,reasons:new Set()};
+    group.items.push(item); group.score += item.score; item.reasons.forEach(function(reason) { group.reasons.add(reason); });
+    groupMap.set(key,group);
+  });
+  prescriptionGroups = Array.from(groupMap.values()).map(function(group) {
+    group.items.sort(function(a,b) { return b.score - a.score || a.case.id.localeCompare(b.case.id); });
+    group.ids = group.items.map(function(item) { return item.case.id; });
+    group.queueIds = group.ids.concat(cases.filter(function(c) {
+      return c.system === group.system && diagnosisName(c) === group.diagnosis && !group.ids.includes(c.id);
+    }).map(function(c) { return c.id; }));
+    group.reasonText = Array.from(group.reasons).slice(0,3).join(' · ');
+    return group;
+  }).sort(function(a,b) { return b.score - a.score || b.items.length - a.items.length || a.diagnosis.localeCompare(b.diagnosis); });
+  const selected = [];
+  prescriptionGroups.forEach(function(group) { group.ids.forEach(function(id) { if (!selected.includes(id) && selected.length < 10) selected.push(id); }); });
+  prescriptionGroups.forEach(function(group) { group.queueIds.forEach(function(id) { if (!selected.includes(id) && selected.length < 10) selected.push(id); }); });
+  prescriptionGroups.forEach(function(group) { cases.filter(function(c) { return c.system === group.system; }).forEach(function(c) {
+    if (!selected.includes(c.id) && selected.length < 10) selected.push(c.id);
+  }); });
+  return {groups:prescriptionGroups,ids:selected};
+}
+function renderPrescription() {
+  const prescription = buildPrescription();
+  $('#startPrescription').disabled = prescription.ids.length === 0;
+  $('#studyPrescription').disabled = prescription.ids.length === 0;
+  if (!prescription.groups.length) {
+    $('#prescriptionList').innerHTML = '<div class="prescription-empty"><b>尚无可识别的复习信号</b><span>完成答题后，这里会按真实记录显示建议复习的主题；未开始的病例不会被推断为薄弱项。</span></div>';
+    return;
+  }
+  $('#prescriptionList').innerHTML = prescription.groups.slice(0,6).map(function(group) {
+    return '<article class="prescription-item"><div><span class="prescription-system">' + esc(group.system) + '</span><h3>' + esc(group.diagnosis) + '</h3><p>' + esc(group.reasonText) + '</p></div><div><b>' + group.items.length + ' 例需回顾</b><button class="soft-button" data-prescription-topic="' + esc(group.key) + '">练此主题</button></div></article>';
+  }).join('');
+}
+function startPrescription(mode, key) {
+  const prescription = buildPrescription();
+  const group = key ? prescription.groups.find(function(item) { return item.key === key; }) : null;
+  const queue = group ? group.queueIds : prescription.ids;
+  if (!queue.length) { notify('完成一些答题后，学习处方才会出现。'); return; }
+  startTraining(queue,mode,'custom');
+}
 function weaknessQueue() {
   return ids.filter(function(id) { return attempts[id] && attempts[id].count; }).sort(function(a,b) {
     const left = attempts[a], right = attempts[b];
@@ -696,6 +764,7 @@ function updateStats() {
   $('#wrongCount').textContent = wrong.length;
   $('#everWrongCount').textContent = Object.values(attempts).filter(function(item) { return item.wrong > 0; }).length;
   $('#studyWrong').disabled = $('#reviewWrong').disabled = wrong.length === 0;
+  renderPrescription();
   $$('[data-catalog-total]').forEach(function(el) { el.textContent = cases.length; });
   $$('[data-system-total]').forEach(function(el) { el.textContent = cases.filter(function(c) { return c.system === el.dataset.systemTotal; }).length; });
   $$('.master-row').forEach(function(row) {
@@ -1106,6 +1175,8 @@ $('#studyFiltered').onclick = function() { startTraining(filteredCases().map(fun
 $('#quickTen').onclick = function() { startTraining(sample(filteredCases().map(function(c) { return c.id; }),10), 'quiz','custom'); };
 $('#studyWrong').onclick = function() { startTraining(mistakeIds(), 'study'); };
 $('#reviewWrong').onclick = function() { startTraining(mistakeIds(), 'quiz'); };
+$('#studyPrescription').onclick = function() { startPrescription('study'); };
+$('#startPrescription').onclick = function() { startPrescription('quiz'); };
 $('#randomCase').onclick = function() { startTraining(filteredCases().map(function(c) { return c.id; }), 'quiz', 'random'); };
 $$('[data-dicom-filter]').forEach(function(b) { b.onclick = function() {
   dicomSystem = b.dataset.dicomFilter;
@@ -1158,6 +1229,8 @@ document.addEventListener('click', function(e) {
     });
     return;
   }
+  const prescriptionButton = e.target.closest('[data-prescription-topic]');
+  if (prescriptionButton) { e.preventDefault(); startPrescription('quiz',prescriptionButton.dataset.prescriptionTopic); return; }
   const el = e.target.closest('[data-detail],[data-quiz],[data-study],[data-favorite],[data-compare],[data-clear],[data-summary-config]');
   if (!el || el.disabled) return;
   e.preventDefault();

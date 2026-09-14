@@ -171,7 +171,7 @@ test('DICOM trial has five distinct IDC studies per system', () => {
 test('advanced study controls and stable-record migration are wired', () => {
   const html = fs.readFileSync(path.join(root,'index.html'),'utf8');
   const app = fs.readFileSync(path.join(root,'app.js'),'utf8');
-  for(const id of ['quickTen','loadMoreCases','queueSearch','queueDiagnosis','queueSampleSize','exportProgress','importProgress','dicomList','findingDraft','reasoningCoach','reasoningCount','reportLocation','reportFindings','reportImpression','reportAdvice','scoreReport','openComparison','compareDialog','reportCount','learnerLevel','requestHint','hintPanel','hintCount']) assert.match(html,new RegExp(`id="${id}"`));
+  for(const id of ['quickTen','loadMoreCases','queueSearch','queueDiagnosis','queueSampleSize','exportProgress','importProgress','dicomList','findingDraft','reasoningCoach','reasoningCount','reportLocation','reportFindings','reportImpression','reportAdvice','scoreReport','openComparison','compareDialog','reportCount','learnerLevel','requestHint','hintPanel','hintCount','prescriptionList','startPrescription','studyPrescription']) assert.match(html,new RegExp(`id="${id}"`));
   assert.match(app,/const stablePrefix = 'yys-honest-v2'/);
   assert.match(app,/function exportLearningRecord/);
   assert.match(app,/function importLearningRecord/);
@@ -180,6 +180,10 @@ test('advanced study controls and stable-record migration are wired', () => {
   assert.match(app,/function showComparison/);
   assert.match(app,/function requestHint/);
   assert.match(app,/function renderReasoningCoach/);
+  assert.match(app,/function prescriptionSignal/);
+  assert.match(app,/function buildPrescription/);
+  assert.match(app,/function startPrescription/);
+  assert.match(html,/未答题病例不会被标成/);
   assert.match(app,/reasoning_checkpoint_completed/);
   assert.match(app,/function recordLearningEvent/);
   assert.match(app,/packageSha256/);

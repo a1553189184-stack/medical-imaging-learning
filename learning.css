@@ -267,6 +267,23 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
 .review-panel small { display: block; color: #697664; font-size: 12px; line-height: 1.9; max-width: 680px; }
 .review-actions { display: flex; gap: 10px; flex-shrink: 0; flex-wrap: wrap; }
 .review-actions .primary { margin: 0; font-size: 13px; padding: 13px 17px; }
+.prescription-panel { margin: 18px 0; }
+.prescription-heading { display: flex; justify-content: space-between; align-items: center; gap: 25px; flex-wrap: wrap; }
+.prescription-heading > div:first-child { flex: 1 1 380px; }
+.prescription-heading h2 { margin: 7px 0; font-size: 25px; }
+.prescription-heading p { margin: 0; max-width: 760px; color: #647462; font-size: 14px; line-height: 1.8; }
+.prescription-list { display: grid; gap: 9px; margin-top: 20px; }
+.prescription-item { display: flex; justify-content: space-between; align-items: center; gap: 18px; padding: 14px 15px; border: 1px solid #d9e3d2; border-radius: 13px; background: #fbfcf8; }
+.prescription-item > div:first-child { min-width: 0; }
+.prescription-system { color: #557a43; font-size: 11px; font-weight: 700; letter-spacing: .08em; }
+.prescription-item h3 { margin: 4px 0; font-size: 16px; }
+.prescription-item p { margin: 0; color: #71806d; font-size: 12px; line-height: 1.6; }
+.prescription-item > div:last-child { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.prescription-item b { color: #405b3d; white-space: nowrap; font-size: 12px; }
+.prescription-item .soft-button { padding: 9px 12px; font-size: 12px; }
+.prescription-method { margin: 15px 0 0; color: #778572; font-size: 11px; line-height: 1.8; }
+.prescription-empty { display: grid; gap: 5px; padding: 16px; border: 1px dashed #ccd8c6; border-radius: 12px; color: #687765; font-size: 13px; line-height: 1.7; }
+.prescription-empty b { color: #405a3d; }
 .dicom-guide { display: grid; grid-template-columns: 1.5fr 1fr; gap: 28px; align-items: center; margin-bottom: 18px; }
 .dicom-guide h2 { margin: 0 0 8px; }
 .dicom-guide p { margin: 0; color: #657163; line-height: 1.7; }
@@ -359,6 +376,9 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
   .source-evidence dl > div { grid-template-columns: 1fr; gap: 2px; }
   .course-grid { grid-template-columns: minmax(0,1fr); }
   .review-panel { align-items: stretch; flex-direction: column; }
+  .prescription-heading { align-items: stretch; flex-direction: column; }
+  .prescription-item { align-items: stretch; flex-direction: column; gap: 10px; }
+  .prescription-item > div:last-child { justify-content: space-between; }
   .data-panel { align-items: stretch; flex-direction: column; }
   .dicom-guide { grid-template-columns: 1fr; }
   .dicom-guide > div:last-child { border-left: 0; border-top: 1px solid #dce5d6; padding: 16px 0 0; }

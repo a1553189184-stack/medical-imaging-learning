@@ -100,6 +100,12 @@ try {
   assert.ok(events.some(event=>event.type==='answer_submitted'));
   assert.ok(events.some(event=>event.type==='report_scored'));
   assert.ok(events.every(event=>!Object.keys(event).some(key=>/text|image|prompt|note|report/i.test(key))));
+  await evaluate("document.querySelector('[data-view=progress]').click()");
+  assert.match(await evaluate("document.querySelector('#prescriptionList').textContent"),/气胸/);
+  assert.equal(await evaluate("document.querySelector('#startPrescription').disabled"),false);
+  await evaluate("document.querySelector('#startPrescription').click()");
+  assert.match(await evaluate("document.querySelector('#queueSummary').textContent"),/自定义顺序/);
+  assert.match(await evaluate("document.querySelector('#queueSummary').textContent"),/10 题/);
   await command('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});
   assert.equal(await evaluate("document.documentElement.scrollWidth <= window.innerWidth"),true);
   assert.deepEqual(runtimeErrors,[]);
