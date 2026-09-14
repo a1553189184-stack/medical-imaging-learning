@@ -63,6 +63,7 @@ try {
     return result.result.value;
   };
   await command('Runtime.enable');
+  await command('Page.enable');
   for(let attempt=0;attempt<50;attempt++) {
     if((await evaluate("document.querySelector('#viewerIndex')?.textContent || ''")).includes('病例编号')) break;
     await delay(100);
@@ -73,14 +74,28 @@ try {
   const hint=await evaluate("document.querySelector('#hintPanel').textContent");
   assert.match(hint,/提示 1/);
   assert.doesNotMatch(hint,/气胸/);
-  await evaluate("document.querySelector('[data-reasoning-step=diagnosis]').click();document.querySelector('[data-answer=\"0\"]').click();document.querySelector('#submitAnswer').click()");
+  await evaluate("document.querySelector('[data-reasoning-step=diagnosis]').click()");
+  assert.doesNotMatch(await evaluate("document.querySelector('#reasoningCoach').textContent"),/气胸/);
+  await evaluate("document.querySelector('#reasoningResponse').value='右侧胸腔及右肺外周';document.querySelector('#reasoningResponse').dispatchEvent(new Event('input',{bubbles:true}));document.querySelector('[data-coach-move=\"1\"]').click()");
+  await evaluate("document.querySelector('#reasoningResponse').value='可疑胸膜线，外周肺纹理减少';document.querySelector('#reasoningResponse').dispatchEvent(new Event('input',{bubbles:true}));document.querySelector('[data-coach-move=\"1\"]').click()");
+  await evaluate("document.querySelector('#reasoningResponse').value='巨大肺大疱；需确认胸膜线及其外周纹理';document.querySelector('#reasoningResponse').dispatchEvent(new Event('input',{bubbles:true}));document.querySelector('#completeReasoning').click()");
+  assert.match(await evaluate("document.querySelector('#reasoningCoach').textContent"),/已完成检查点/);
+  if(process.env.TRAINING_SCREENSHOT) {
+    await evaluate("document.querySelector('.case-panel').scrollIntoView({block:'start'})");
+    await delay(150);
+    const screenshot=await command('Page.captureScreenshot',{format:'png'});
+    fs.writeFileSync(process.env.TRAINING_SCREENSHOT,Buffer.from(screenshot.data,'base64'));
+  }
+  await evaluate("document.querySelector('[data-answer=\"0\"]').click();document.querySelector('#submitAnswer').click()");
   assert.match(await evaluate("document.querySelector('#feedback').textContent"),/参考答案/);
+  assert.match(await evaluate("document.querySelector('#reasoningCoach').textContent"),/本例参考路径/);
   await evaluate("document.querySelector('[data-reasoning-step=report]').click();document.querySelector('#reportLocation').value='右侧胸腔';document.querySelector('#reportFindings').value='右侧胸腔透亮度增高，可见胸膜线，外周肺纹理减少，右肺受压。';document.querySelector('#reportImpression').value='考虑右侧气胸。';document.querySelector('#reportAdvice').value='建议结合临床评估并复查胸部影像。';document.querySelector('#scoreReport').click()");
   assert.match(await evaluate("document.querySelector('#reportFeedback').textContent"),/\/ 100/);
   assert.equal(await evaluate("document.querySelector('#reportReference').hidden"),false);
   assert.equal(await evaluate("document.querySelector('.package-seal code')?.textContent.length"),13);
   const events=await evaluate("JSON.parse(localStorage.getItem('yys-honest-v2-learning-events'))");
   assert.ok(events.some(event=>event.type==='hint_requested'));
+  assert.ok(events.some(event=>event.type==='reasoning_checkpoint_completed' && event.checkpointCount===3));
   assert.ok(events.some(event=>event.type==='answer_submitted'));
   assert.ok(events.some(event=>event.type==='report_scored'));
   assert.ok(events.every(event=>!Object.keys(event).some(key=>/text|image|prompt|note|report/i.test(key))));

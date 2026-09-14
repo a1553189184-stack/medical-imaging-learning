@@ -121,6 +121,30 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
 #hintPanel { margin-top: 10px; }
 #hintPanel p { margin: 7px 0 0; padding: 10px; border-left: 3px solid #98bd60; background: #172b21; color: #b9cbbd; font-size: 13px; line-height: 1.75; }
 #hintPanel b { display: block; margin-bottom: 3px; color: var(--mint); font-size: 11px; }
+.socratic-coach { margin-bottom: 18px; padding: 14px; border: 1px solid #3b5046; border-radius: 14px; background: linear-gradient(145deg,#14271f,#0d1a15); }
+.coach-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.coach-head span,.coach-head b { display: block; }
+.coach-head span { margin-bottom: 3px; color: #95b762; font-size: 11px; letter-spacing: .06em; }
+.coach-head b { color: #e0ebe3; font-size: 15px; }
+.coach-head strong { min-width: 48px; color: var(--mint); font-size: 14px; text-align: right; }
+.coach-tabs { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 5px; margin: 13px 0; }
+.coach-tabs button { min-width: 0; border: 1px solid #34483e; border-radius: 9px; background: #0b1712; color: #91a39a; padding: 8px 4px; font: inherit; font-size: 12px; cursor: pointer; }
+.coach-tabs button span { display: inline-grid; width: 21px; height: 21px; margin-right: 4px; place-items: center; border-radius: 50%; background: #24382f; color: #9bad9f; font-size: 10px; }
+.coach-tabs button[aria-selected="true"] { border-color: #789d52; color: #eef5e9; background: #243b30; }
+.coach-tabs button.filled span { background: #52783f; color: white; }
+.socratic-coach > label { display: grid; gap: 7px; color: #c9d7ce; font-size: 14px; line-height: 1.65; }
+.socratic-coach > label > span { color: #9fc86a; font-size: 12px; font-weight: 700; }
+.socratic-coach textarea { width: 100%; min-height: 92px; border: 1px solid #354840; border-radius: 10px; background: #07100d; color: #e1ebe5; padding: 10px 11px; font: inherit; font-size: 14px; line-height: 1.65; resize: vertical; outline: none; }
+.socratic-coach textarea:focus { border-color: #94bc56; box-shadow: 0 0 0 3px #94bc5620; }
+.coach-locked { margin: 10px 0 0; color: #81938a; font-size: 12px; line-height: 1.65; }
+.coach-reference { margin-top: 10px; padding: 11px; border-left: 3px solid #9bc963; background: #172d22; color: #c8d8cd; font-size: 13px; line-height: 1.7; }
+.coach-reference b,.coach-reference small { display: block; }
+.coach-reference b { color: var(--mint); font-size: 12px; }
+.coach-reference p { margin: 5px 0; }
+.coach-reference small { color: #82958a; }
+.coach-actions { display: flex; justify-content: flex-end; gap: 7px; margin-top: 11px; }
+.coach-actions .soft-button { border-color: #41574d; background: #17261f; color: #dce8dc; }
+.coach-actions .soft-button:disabled { opacity: .45; cursor: default; }
 .report-workspace { display: grid; gap: 13px; }
 .report-workspace[hidden], .reasoning-pane[hidden] { display: none; }
 .report-workspace textarea { min-height: 92px; }

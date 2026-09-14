@@ -26,7 +26,7 @@ function save(key, value) {
   }
 }
 const validLearnerLevels = ['student','resident','advanced'];
-const validLearningEventTypes = ['hint_requested','answer_submitted','report_scored','reviewed_changed'];
+const validLearningEventTypes = ['hint_requested','answer_submitted','report_scored','reviewed_changed','reasoning_checkpoint_completed'];
 const storedLearnerLevel = read(stablePrefix + '-learner-level','student');
 let learnerLevel = validLearnerLevels.includes(storedLearnerLevel) ? storedLearnerLevel : 'student';
 function sanitizeLearningEvent(event) {
@@ -38,6 +38,7 @@ function sanitizeLearningEvent(event) {
   if (Number.isInteger(event.answerIndex) && event.answerIndex >= 0 && event.answerIndex <= 3) clean.answerIndex = event.answerIndex;
   if (typeof event.correct === 'boolean') clean.correct = event.correct;
   if (Number.isFinite(event.score)) clean.score = Math.max(0,Math.min(100,event.score));
+  if (Number.isInteger(event.checkpointCount) && event.checkpointCount >= 1 && event.checkpointCount <= 3) clean.checkpointCount = event.checkpointCount;
   if (typeof event.reviewed === 'boolean') clean.reviewed = event.reviewed;
   return clean;
 }
@@ -71,6 +72,7 @@ let reviewed = validIds(read(storagePrefix + '-reviewed', []));
 const notes = {};
 const findingDrafts = {};
 const reportDrafts = {};
+const reasoningDrafts = {};
 cases.forEach(function(c, i) {
   try {
     const stable = localStorage.getItem(stablePrefix + '-note-' + c.id);
@@ -86,10 +88,19 @@ cases.forEach(function(c, i) {
       advice:typeof storedReport.advice === 'string' ? storedReport.advice.slice(0,10000) : '',
       score:Number.isFinite(storedReport.score) ? Math.max(0,Math.min(100,storedReport.score)) : null
     } : {location:'',findings:'',impression:'',advice:'',score:null};
+    const storedReasoning = read(stablePrefix + '-reasoning-' + c.id, {});
+    const reasoningResponses = storedReasoning && Array.isArray(storedReasoning.responses) ? [0,1,2].map(function(index) { return typeof storedReasoning.responses[index] === 'string' ? storedReasoning.responses[index].slice(0,4000) : ''; }) : ['','',''];
+    const reasoningComplete = reasoningResponses.every(function(response) { return response.trim().length >= 6; });
+    reasoningDrafts[c.id] = {
+      responses:reasoningResponses,
+      completedAt:reasoningComplete && storedReasoning && typeof storedReasoning.completedAt === 'string' ? storedReasoning.completedAt.slice(0,40) : null,
+      eventRecorded:Boolean(reasoningComplete && storedReasoning && storedReasoning.eventRecorded === true)
+    };
   } catch {
     notes[c.id] = '';
     findingDrafts[c.id] = '';
     reportDrafts[c.id] = {location:'',findings:'',impression:'',advice:'',score:null};
+    reasoningDrafts[c.id] = {responses:['','',''],completedAt:null,eventRecorded:false};
   }
 });
 save(stablePrefix + '-favorites', favorites);
@@ -136,7 +147,7 @@ Object.entries(session.answers).forEach(function(entry) {
 save(attemptsKey, attempts);
 const isMistake = function(c) { return Boolean(attempts[c.id] && attempts[c.id].lastAnswer !== c.answer); };
 const mistakeIds = function() { return cases.filter(isMistake).map(function(c) { return c.id; }); };
-let currentView = 'home', detailId = ids[0], selected = null, recallOpen = true, reasoningStep = 'findings';
+let currentView = 'home', detailId = ids[0], selected = null, recallOpen = true, reasoningStep = 'findings', reasoningPromptIndex = 0;
 let atlasSystem = 'all', atlasLimit = 48, noticeTimer, draftRows = [], draftSelected = new Set(), dicomSystem = 'all';
 let tool = 'contrast', zoom = 1, contrast = 1, inverted = false, imageMarks = [];
 let comparePrimaryId = ids[0], compareSecondaryId = null;
@@ -229,6 +240,70 @@ function requestHint() {
   persistSession();
   recordLearningEvent('hint_requested',c,{hintLevel:used + 1});
   renderHintPanel(c);
+  updateStats();
+}
+function currentReasoningDraft(c) {
+  return reasoningDrafts[c.id] || (reasoningDrafts[c.id] = {responses:['','',''],completedAt:null,eventRecorded:false});
+}
+function reasoningPrompts(c) {
+  const firstMethod = c.methods[0] || ['系统定位','先确认异常所在的解剖区域。'];
+  return [
+    {
+      label:'定位',
+      question:'先不命名疾病：在这例 ' + c.modality + ' 影像中，异常位于哪里？请写明侧别、器官或解剖分区。',
+      placeholder:'例如：左侧、某叶/节段、骨端或关节面……',
+      reference:redactDiagnosis(c,firstMethod[0] + '：' + firstMethod[1])
+    },
+    {
+      label:'表型',
+      question:'哪些影像特征最有区分度？至少写出两个，并说明形态、密度/信号或分布。',
+      placeholder:'征象 1……；征象 2……；伴随征象……',
+      reference:c.findings.slice(0,3).join('；')
+    },
+    {
+      label:'鉴别',
+      question:'写出一个最需要排除的替代诊断，并说明支持它和反对它的依据。',
+      placeholder:'替代诊断……；支持点……；反对点……',
+      reference:c.differential + ' 易错提醒：' + c.pitfalls[0]
+    }
+  ];
+}
+function reasoningCompletedCount(draft) {
+  return draft.responses.filter(function(response) { return response.trim().length >= 6; }).length;
+}
+function renderReasoningCoach(c) {
+  const prompts = reasoningPrompts(c), draft = currentReasoningDraft(c), prompt = prompts[reasoningPromptIndex];
+  const count = reasoningCompletedCount(draft), reveal = mayRevealCase(c);
+  $('#reasoningCoach').innerHTML = '<div class="coach-head"><div><span>病例专属追问</span><b>先推理，再看参考路径</b></div><strong id="reasoningProgress">' + count + ' / 3</strong></div>' +
+    '<div class="coach-tabs" role="tablist" aria-label="推理检查点">' + prompts.map(function(item,index) {
+      const filled = draft.responses[index].trim().length >= 6;
+      return '<button role="tab" data-reasoning-prompt="' + index + '" aria-selected="' + (index === reasoningPromptIndex) + '"' + (filled ? ' class="filled"' : '') + '><span>' + (filled ? '✓' : '0' + (index + 1)) + '</span>' + esc(item.label) + '</button>';
+    }).join('') + '</div>' +
+    '<label for="reasoningResponse"><span>' + esc(prompt.label) + '追问</span>' + esc(prompt.question) + '<textarea id="reasoningResponse" maxlength="4000" placeholder="' + esc(prompt.placeholder) + '">' + esc(draft.responses[reasoningPromptIndex]) + '</textarea></label>' +
+    (reveal ? '<div class="coach-reference"><b>本例参考路径</b><p>' + esc(prompt.reference) + '</p><small>用于逐项核对，不是自动判分。</small></div>' : '<p class="coach-locked">提交诊断判断后显示本例参考路径；当前内容只保存在本机。</p>') +
+    '<div class="coach-actions"><button class="soft-button" data-coach-move="-1"' + (reasoningPromptIndex === 0 ? ' disabled' : '') + '>上一问</button>' +
+    (reasoningPromptIndex < 2 ? '<button class="soft-button" data-coach-move="1">下一问</button>' : '<button class="soft-button" id="completeReasoning"' + (count < 3 ? ' disabled' : '') + '>' + (draft.completedAt ? '✓ 已完成检查点' : '完成推理检查点') + '</button>') + '</div>';
+}
+function saveReasoningResponse(c,value) {
+  const draft = currentReasoningDraft(c);
+  draft.responses[reasoningPromptIndex] = value.slice(0,4000);
+  if (reasoningCompletedCount(draft) < 3) draft.completedAt = null;
+  save(stablePrefix + '-reasoning-' + c.id,draft);
+  const progress = $('#reasoningProgress');
+  if (progress) progress.textContent = reasoningCompletedCount(draft) + ' / 3';
+  const completeButton = $('#completeReasoning');
+  if (completeButton) completeButton.disabled = reasoningCompletedCount(draft) < 3;
+}
+function completeReasoningCheckpoint() {
+  const c = currentCase(), draft = currentReasoningDraft(c);
+  if (reasoningCompletedCount(draft) < 3) return;
+  draft.completedAt = new Date().toISOString();
+  if (!draft.eventRecorded) {
+    draft.eventRecorded = true;
+    recordLearningEvent('reasoning_checkpoint_completed',c,{checkpointCount:3});
+  }
+  save(stablePrefix + '-reasoning-' + c.id,draft);
+  renderReasoningCoach(c);
   updateStats();
 }
 function relatedCases(c) {
@@ -471,6 +546,7 @@ function startAt(id, mode) {
 }
 function renderTraining() {
   const c = currentCase(), index = cases.indexOf(c);
+  reasoningPromptIndex = 0;
   selected = hasAnswer(c) ? session.answers[c.id] : null;
   recallOpen = true;
   $('#sessionSummary').hidden = true;
@@ -480,8 +556,8 @@ function renderTraining() {
   $('#reshuffle').hidden = session.order !== 'random';
   $('#queueSummary').textContent = session.queue.length + ' 题 · ' + ({ordered:'题库顺序',random:'随机顺序',custom:'自定义顺序'}[session.order]);
   $('#modeHint').textContent = session.mode === 'study' ?
-    '背题：直接阅读诊断、技巧和方法；可收起答案自测，标记已背。背题不计入答题正确率。' :
-    '答题：选择后提交查看解析。原图可能带位置标注；首次提交计入正确率，可自由跳题。';
+    '背题：直接阅读诊断、技巧和方法；病例追问同步显示参考路径，可收起答案自测。背题不计入答题正确率。' :
+    '答题：先完成定位、表型和鉴别追问，再选择诊断；提交后核对本例参考路径。首次提交计入正确率。';
   $('#viewerModality').textContent = c.modality + ' · ' + c.system;
   $('#caseHistory').textContent = c.history;
   $('#activeScan').alt = '病例 ' + String(index + 1).padStart(2, '0') + ' 教学影像';
@@ -541,6 +617,7 @@ function renderAnswerPanel() {
   $('#learningReveal').innerHTML = visible ? knowledgeHTML(c) : '';
   $('#trainingCredit').innerHTML = visible ? creditHTML(c) : '<span>作答后显示完整图片来源及诊断参考资料。</span>';
   $('#openComparison').hidden = !visible || relatedCases(c).length === 0;
+  renderReasoningCoach(c);
   if (currentReportDraft().score !== null) loadReportWorkspace(c);
   const record = attempts[c.id];
   $('#attemptStatus').textContent = record ? '已记录 ' + record.count + ' 次作答 · 错 ' + record.wrong + ' 次 · ' + (isMistake(c) ? '待复习' : '最近答对') : '本例暂无逐题作答记录';
@@ -609,6 +686,7 @@ function updateStats() {
   $('#reportCount').textContent = Object.values(reportDrafts).filter(function(draft) {
     return draft && [draft.location,draft.findings,draft.impression,draft.advice].some(function(value) { return value && value.trim(); });
   }).length;
+  $('#reasoningCount').textContent = Object.values(reasoningDrafts).filter(function(draft) { return draft && draft.completedAt; }).length;
   $('#hintCount').textContent = learningEvents.filter(function(event) { return event.type === 'hint_requested'; }).length;
   $('#dailyCount').textContent = completed.length;
   $('#sideTotal').textContent = cases.length;
@@ -633,7 +711,7 @@ function exportLearningRecord() {
     catalogSize:cases.length,
     favorites:favorites.slice(), completed:completed.slice(), correct:correct,
     reviewed:reviewed.slice(), notes:Object.assign({},notes), findings:Object.assign({},findingDrafts),
-    reports:Object.assign({},reportDrafts), attempts:Object.assign({},attempts), learnerLevel:learnerLevel,
+    reports:Object.assign({},reportDrafts), reasoning:Object.assign({},reasoningDrafts), attempts:Object.assign({},attempts), learnerLevel:learnerLevel,
     events:learningEvents.slice(),
     session:{queue:session.queue.slice(),cursor:session.cursor,mode:session.mode,order:session.order,answers:Object.assign({},session.answers),hints:Object.assign({},session.hints)}
   };
@@ -674,6 +752,17 @@ async function importLearningRecord(file) {
         impression:typeof imported.impression === 'string' ? imported.impression.slice(0,10000) : '',
         advice:typeof imported.advice === 'string' ? imported.advice.slice(0,10000) : '',
         score:Number.isFinite(imported.score) ? Math.max(0,Math.min(100,imported.score)) : null
+      };
+    });
+    if (payload.reasoning && typeof payload.reasoning === 'object') Object.entries(payload.reasoning).forEach(function(entry) {
+      if (!byId.has(entry[0]) || !entry[1] || typeof entry[1] !== 'object') return;
+      const imported = entry[1], existing = currentReasoningDraft(byId.get(entry[0]));
+      const responses = Array.isArray(imported.responses) ? [0,1,2].map(function(index) { return typeof imported.responses[index] === 'string' ? imported.responses[index].slice(0,4000) : existing.responses[index]; }) : existing.responses;
+      const complete = responses.every(function(response) { return response.trim().length >= 6; });
+      reasoningDrafts[entry[0]] = {
+        responses:responses,
+        completedAt:complete && typeof imported.completedAt === 'string' ? imported.completedAt.slice(0,40) : (complete ? existing.completedAt : null),
+        eventRecorded:complete && (imported.eventRecorded === true || existing.eventRecorded)
       };
     });
     if (payload.attempts && typeof payload.attempts === 'object') Object.entries(payload.attempts).forEach(function(entry) {
@@ -718,6 +807,9 @@ async function importLearningRecord(file) {
     Object.entries(reportDrafts).forEach(function(entry) {
       const draft = entry[1];
       if ([draft.location,draft.findings,draft.impression,draft.advice].some(function(value) { return value.trim(); })) save(stablePrefix + '-report-' + entry[0],draft);
+    });
+    Object.entries(reasoningDrafts).forEach(function(entry) {
+      if (entry[1].responses.some(function(value) { return value.trim(); })) save(stablePrefix + '-reasoning-' + entry[0],entry[1]);
     });
     persistSession();
     updateStats(); renderCases(); renderTraining();
@@ -872,6 +964,19 @@ $$('[data-reasoning-step]').forEach(function(button) {
 $('#findingDraft').addEventListener('input', saveFindingDraft);
 $('#requestHint').onclick = requestHint;
 $('#continueDiagnosis').onclick = function() { saveFindingDraft(); setReasoningStep('diagnosis'); };
+$('#reasoningCoach').addEventListener('input', function(e) {
+  if (e.target.id === 'reasoningResponse') saveReasoningResponse(currentCase(),e.target.value);
+});
+$('#reasoningCoach').addEventListener('click', function(e) {
+  const promptButton = e.target.closest('[data-reasoning-prompt]');
+  const moveButton = e.target.closest('[data-coach-move]');
+  if (promptButton) reasoningPromptIndex = Number(promptButton.dataset.reasoningPrompt);
+  else if (moveButton) reasoningPromptIndex = Math.max(0,Math.min(2,reasoningPromptIndex + Number(moveButton.dataset.coachMove)));
+  else if (e.target.closest('#completeReasoning')) { completeReasoningCheckpoint(); return; }
+  else return;
+  renderReasoningCoach(currentCase());
+  $('#reasoningResponse').focus();
+});
 ['#reportLocation','#reportFindings','#reportImpression','#reportAdvice'].forEach(function(selector) {
   $(selector).addEventListener('input',saveReportDraft);
 });
