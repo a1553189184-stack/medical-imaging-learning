@@ -284,6 +284,14 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
 .review-plan-item > b.due-now { color: #a24b32; }
 .review-plan-empty { display: grid; gap: 5px; padding: 16px; border: 1px dashed #ccd8c6; border-radius: 12px; color: #687765; font-size: 13px; line-height: 1.7; }
 .review-plan-empty b { color: #405a3d; }
+.performance-panel { margin: 18px 0; }
+.performance-panel .section-head p { margin: 7px 0 0; max-width: 760px; color: #647462; font-size: 14px; line-height: 1.75; }
+.system-performance { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 11px; margin-top: 18px; }
+.system-performance-item { min-width: 0; padding: 15px; border: 1px solid #d9e3d2; border-radius: 14px; background: #fbfcf8; }
+.system-performance-item span { color: #688060; font-size: 11px; font-weight: 700; letter-spacing: .06em; }
+.system-performance-item h3 { margin: 5px 0; color: #315a38; font-size: 25px; }
+.system-performance-item p { min-height: 36px; margin: 0 0 12px; color: #71806d; font-size: 12px; line-height: 1.55; }
+.system-performance-item .soft-button { width: 100%; padding: 9px 8px; font-size: 12px; }
 .prescription-panel { margin: 18px 0; }
 .prescription-heading { display: flex; justify-content: space-between; align-items: center; gap: 25px; flex-wrap: wrap; }
 .prescription-heading > div:first-child { flex: 1 1 380px; }
@@ -364,6 +372,7 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
 @media (min-width: 1600px) { .case-list { grid-template-columns: repeat(3,minmax(0,1fr)); } }
 @media (min-width: 1450px) { .course-grid { grid-template-columns: repeat(4,minmax(0,1fr)); } }
 @media (max-width: 1100px) {
+  .system-performance { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .dicom-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .queue-discovery { grid-template-columns: 1fr 1fr; }
   .queue-discovery label:first-child { grid-column: 1 / -1; }
@@ -380,6 +389,7 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
   .nav-item, .nav-item.active { font-size: 0; gap: 0; }
 }
 @media (max-width: 680px) {
+  .system-performance { grid-template-columns: minmax(0,1fr); }
   .training-order > label { flex: 1 1 42%; min-width: 0; }
   .training-order select { width: 100%; min-width: 0; }
   .reasoning-steps button { padding: 9px 4px; font-size: 12px; }

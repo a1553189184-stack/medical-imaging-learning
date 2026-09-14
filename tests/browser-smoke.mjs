@@ -103,6 +103,12 @@ try {
   await evaluate("document.querySelector('[data-view=progress]').click()");
   assert.equal(await evaluate("document.querySelector('#dueReviewCount').textContent"),'1');
   assert.match(await evaluate("document.querySelector('#reviewPlanList').textContent"),/最近答错/);
+  assert.match(await evaluate("document.querySelector('#systemPerformance').textContent"),/胸部影像/);
+  assert.match(await evaluate("document.querySelector('#systemPerformance').textContent"),/首答正确 0 \/ 1 · 当前错题 1/);
+  assert.equal(await evaluate("document.querySelector('[data-system-mistakes=胸部]').disabled"),false);
+  await evaluate("document.querySelector('[data-system-mistakes=胸部]').click()");
+  assert.match(await evaluate("document.querySelector('#queueSummary').textContent"),/1 题 · 自定义顺序/);
+  await evaluate("document.querySelector('[data-view=progress]').click()");
   assert.equal(await evaluate("document.querySelector('#startDueReviews').disabled"),false);
   await evaluate("document.querySelector('#startDueReviews').click()");
   assert.match(await evaluate("document.querySelector('#queueSummary').textContent"),/1 题 · 自定义顺序/);

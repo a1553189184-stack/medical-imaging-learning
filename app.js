@@ -575,6 +575,31 @@ function renderReviewPlan() {
     return '<article class="review-plan-item"><div><span>' + esc(item.case.system) + ' · ' + esc(item.case.modality) + '</span><h3>' + esc(diagnosisName(item.case)) + '</h3><p>连续答对 ' + item.record.streak + ' 次 · 当前间隔 ' + item.record.intervalDays + ' 天</p></div><b class="' + (item.record.dueDate <= today ? 'due-now' : '') + '">' + esc(status) + '</b></article>';
   }).join('');
 }
+function firstAnswerEventsByCase() {
+  return learningEvents.filter(function(event) { return event.type === 'answer_submitted' && typeof event.correct === 'boolean'; }).reduce(function(result,event) {
+    const existing = result[event.caseId];
+    if (!existing || event.createdAt < existing.createdAt) result[event.caseId] = event;
+    return result;
+  },{});
+}
+function renderSystemPerformance() {
+  const firstAnswers = firstAnswerEventsByCase();
+  const systems = ['胸部','神经','腹部','骨骼'];
+  $('#systemPerformance').innerHTML = systems.map(function(system) {
+    const systemCases = cases.filter(function(c) { return c.system === system; });
+    const initial = systemCases.map(function(c) { return firstAnswers[c.id]; }).filter(Boolean);
+    const initialCorrect = initial.filter(function(event) { return event.correct; }).length;
+    const currentMistakes = systemCases.filter(isMistake);
+    const accuracy = initial.length ? Math.round(initialCorrect / initial.length * 100) + '%' : '—';
+    const evidence = initial.length ? '首答正确 ' + initialCorrect + ' / ' + initial.length + ' · 当前错题 ' + currentMistakes.length : '暂无逐题首答记录';
+    return '<article class="system-performance-item"><div><span>' + esc(system) + '影像</span><h3>' + accuracy + '</h3><p>' + esc(evidence) + '</p></div><button class="soft-button" data-system-mistakes="' + esc(system) + '"' + (currentMistakes.length ? '' : ' disabled') + '>复习当前错题</button></article>';
+  }).join('');
+}
+function startSystemMistakes(system) {
+  const queue = cases.filter(function(c) { return c.system === system && isMistake(c); }).map(function(c) { return c.id; });
+  if (!queue.length) { notify('该系统当前没有待复习错题。'); return; }
+  startTraining(queue,'quiz','custom');
+}
 let prescriptionGroups = [];
 function hintCountsByCase() {
   return learningEvents.filter(function(event) { return event.type === 'hint_requested'; }).reduce(function(result,event) {
@@ -824,6 +849,7 @@ function updateStats() {
   $('#everWrongCount').textContent = Object.values(attempts).filter(function(item) { return item.wrong > 0; }).length;
   $('#studyWrong').disabled = $('#reviewWrong').disabled = wrong.length === 0;
   renderReviewPlan();
+  renderSystemPerformance();
   renderPrescription();
   $$('[data-catalog-total]').forEach(function(el) { el.textContent = cases.length; });
   $$('[data-system-total]').forEach(function(el) { el.textContent = cases.filter(function(c) { return c.system === el.dataset.systemTotal; }).length; });
@@ -1298,6 +1324,8 @@ document.addEventListener('click', function(e) {
   }
   const prescriptionButton = e.target.closest('[data-prescription-topic]');
   if (prescriptionButton) { e.preventDefault(); startPrescription('quiz',prescriptionButton.dataset.prescriptionTopic); return; }
+  const systemMistakesButton = e.target.closest('[data-system-mistakes]');
+  if (systemMistakesButton) { e.preventDefault(); startSystemMistakes(systemMistakesButton.dataset.systemMistakes); return; }
   const el = e.target.closest('[data-detail],[data-quiz],[data-study],[data-favorite],[data-compare],[data-clear],[data-summary-config]');
   if (!el || el.disabled) return;
   e.preventDefault();
