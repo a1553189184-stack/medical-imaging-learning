@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="learning.css?v=atlas15" />
+  <link rel="stylesheet" href="learning.css?v=atlas16" />
 </head>
 <body>
   <div class="noise"></div>
@@ -175,8 +175,9 @@
       <div class="page-title"><div><span class="eyebrow mint">LOCAL PROGRESS</span><h1>本机学习记录</h1><p>以下数据只来自当前浏览器中的真实操作；清除浏览器数据后会归零。</p></div></div>
       <div class="metric-grid"><article><span>已完成病例</span><strong><span id="solvedCount">0</span><small> / <span data-catalog-total>700</span></small></strong><small>首次提交后计入</small></article><article><span>首次判断正确率</span><strong id="accuracy">—</strong><small>未答题时不显示比例</small></article><article><span>推理检查点</span><strong id="reasoningCount">0</strong><small>完成三项追问</small></article><article><span>已收藏病例</span><strong id="favoriteCount">0</strong><small>当前设备</small></article><article><span>已写笔记</span><strong id="noteCount">0</strong><small>当前设备</small></article><article><span>报告草稿</span><strong id="reportCount">0</strong><small>结构化报告训练</small></article><article><span>提示使用</span><strong id="hintCount">0</strong><small>仅记录次数，不保存输入内容</small></article></div>
       <article class="panel review-panel"><div><span class="eyebrow">REVISIT &amp; UNDERSTAND</span><h2>错题复习</h2><p>待复习 <b id="wrongCount">0</b> 例 · 本次记录以来曾答错 <b id="everWrongCount">0</b> 例</p><small>最近一次答错的病例进入待复习，重练答对后移出。背题不改变错题状态；旧版没有逐题记录的历史错误无法还原。</small></div><div class="review-actions"><button id="studyWrong" class="soft-button">背诵错题</button><button id="reviewWrong" class="primary">重练错题 →</button></div></article>
+      <article class="panel schedule-panel"><div class="schedule-heading"><div><span class="eyebrow">SPACED REVIEW · LOCAL ONLY</span><h2>间隔复习计划</h2><p>每次答题后自动更新：答错今日复习；连续答对依次安排在 1、3、7、14、30 天后复习。复习间隔仅反映这道题的本机作答轨迹，不代表医学能力。</p></div><div class="review-actions"><button id="studyDueReviews" class="soft-button" disabled>背诵今日到期</button><button id="startDueReviews" class="primary" disabled>练习今日到期 →</button></div></div><div class="schedule-metrics"><span>今日到期 <b id="dueReviewCount">0</b></span><span>7 日内 <b id="upcomingReviewCount">0</b></span><span>间隔 ≥14 天 <b id="stableReviewCount">0</b></span></div><div id="reviewPlanList" class="review-plan-list" aria-live="polite"></div></article>
       <article class="panel prescription-panel"><div class="prescription-heading"><div><span class="eyebrow">TRANSPARENT STUDY PRESCRIPTION</span><h2>学习处方</h2><p>根据本机真实学习信号安排复习：最近答错、历史错误、提示使用、报告结构分及未完成的推理检查点。未答题病例不会被标成“薄弱”。</p></div><div class="review-actions"><button id="studyPrescription" class="soft-button" disabled>背诵处方题</button><button id="startPrescription" class="primary" disabled>开始 10 题处方训练 →</button></div></div><div id="prescriptionList" class="prescription-list" aria-live="polite"></div><p class="prescription-method">优先级并非医学能力评分：最近答错权重最高；历史错误、使用两级及以上提示、报告结构分低于 55 分、已作答但未完成三项推理追问依次增加复习优先度。若信号不足 10 例，会先补入同主题、再补入同系统的不同病例巩固，但不会把它们标为薄弱。规则和原始记录都仅保留在此浏览器。</p></article>
-      <article class="panel data-panel"><div><span class="eyebrow">PORTABLE LEARNING RECORD</span><h2>备份与恢复</h2><p>导出收藏、答题记录、错题、背题标记、笔记、推理追问、所见草稿、结构化报告和当前题目列表。导入前会校验版本与病例 ID。</p></div><div class="review-actions"><button id="exportProgress" class="soft-button">导出学习记录</button><button id="importProgress" class="primary">导入学习记录</button><input id="importProgressFile" type="file" accept="application/json,.json" hidden></div></article>
+      <article class="panel data-panel"><div><span class="eyebrow">PORTABLE LEARNING RECORD</span><h2>备份与恢复</h2><p>导出收藏、答题记录、错题、间隔复习计划、背题标记、笔记、推理追问、所见草稿、结构化报告和当前题目列表。导入前会校验版本与病例 ID。</p></div><div class="review-actions"><button id="exportProgress" class="soft-button">导出学习记录</button><button id="importProgress" class="primary">导入学习记录</button><input id="importProgressFile" type="file" accept="application/json,.json" hidden></div></article>
       <article class="panel mastery"><div class="section-head compact"><div><span class="eyebrow">COMPLETION BY SYSTEM</span><h2>各系统完成度</h2></div></div><div class="master-row" data-system="胸部"><b>胸部影像</b><div class="progress"><i style="width:0"></i></div><span>0 / 4</span></div><div class="master-row" data-system="神经"><b>神经影像</b><div class="progress"><i style="width:0"></i></div><span>0 / 3</span></div><div class="master-row" data-system="腹部"><b>腹部影像</b><div class="progress"><i style="width:0"></i></div><span>0 / 2</span></div><div class="master-row" data-system="骨骼"><b>骨骼肌肉</b><div class="progress"><i style="width:0"></i></div><span>0 / 1</span></div></article>
       <p class="source-note">已背 <span id="reviewedCount">0</span> 例。背题记录与答题记录分开，背题不会增加答题数或正确率。</p>
     </section>
@@ -234,6 +235,6 @@
   <script src="dicom-series.js?v=atlas10"></script>
   <script src="medical-reviews.js?v=atlas10"></script>
   <script src="case-packages.js?v=atlas12"></script>
-  <script src="app.js?v=atlas15"></script>
+  <script src="app.js?v=atlas16"></script>
 </body>
 </html>

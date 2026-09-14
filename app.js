@@ -145,6 +145,15 @@ Object.entries(session.answers).forEach(function(entry) {
   if (!attempts[entry[0]]) attempts[entry[0]] = {count:1, wrong:entry[1] === byId.get(entry[0]).answer ? 0 : 1, lastAnswer:entry[1]};
 });
 save(attemptsKey, attempts);
+const reviewPlanKey = stablePrefix + '-review-plan';
+function validReviewPlanRecord(value) {
+  return value && typeof value === 'object' && Number.isInteger(value.streak) && value.streak >= 0 && value.streak <= 100 &&
+    Number.isInteger(value.intervalDays) && value.intervalDays >= 0 && value.intervalDays <= 30 && typeof value.dueDate === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value.dueDate);
+}
+const storedReviewPlan = read(reviewPlanKey, {}), reviewPlan = {};
+if (storedReviewPlan && typeof storedReviewPlan === 'object' && !Array.isArray(storedReviewPlan)) Object.entries(storedReviewPlan).forEach(function(entry) {
+  if (byId.has(entry[0]) && validReviewPlanRecord(entry[1])) reviewPlan[entry[0]] = entry[1];
+});
 const isMistake = function(c) { return Boolean(attempts[c.id] && attempts[c.id].lastAnswer !== c.answer); };
 const mistakeIds = function() { return cases.filter(isMistake).map(function(c) { return c.id; }); };
 let currentView = 'home', detailId = ids[0], selected = null, recallOpen = true, reasoningStep = 'findings', reasoningPromptIndex = 0;
@@ -517,6 +526,55 @@ function shuffle(array) {
   return result;
 }
 function sample(array, count) { return shuffle(array).slice(0, Math.min(count, array.length)); }
+function localDateKey(date) {
+  const value = date || new Date();
+  const local = new Date(value.getTime() - value.getTimezoneOffset() * 60000);
+  return local.toISOString().slice(0,10);
+}
+function addLocalDays(dateKey, days) {
+  const date = new Date(dateKey + 'T12:00:00');
+  date.setDate(date.getDate() + days);
+  return localDateKey(date);
+}
+function scheduleReview(c, isCorrect) {
+  const previous = reviewPlan[c.id] || {streak:0,intervalDays:0,dueDate:localDateKey()};
+  const intervals = [1,3,7,14,30];
+  const streak = isCorrect ? previous.streak + 1 : 0;
+  const intervalDays = isCorrect ? intervals[Math.min(streak - 1,intervals.length - 1)] : 0;
+  reviewPlan[c.id] = {streak:streak,intervalDays:intervalDays,dueDate:addLocalDays(localDateKey(),intervalDays)};
+  save(reviewPlanKey,reviewPlan);
+}
+function dueReviewQueue() {
+  const today = localDateKey();
+  return Object.keys(reviewPlan).filter(function(id) { return reviewPlan[id].dueDate <= today && byId.has(id); }).sort(function(a,b) {
+    const left = reviewPlan[a], right = reviewPlan[b];
+    return Number(isMistake(byId.get(b))) - Number(isMistake(byId.get(a))) || left.dueDate.localeCompare(right.dueDate) || a.localeCompare(b);
+  });
+}
+function reviewDueLabel(record) {
+  const today = localDateKey(), tomorrow = addLocalDays(today,1);
+  if (record.dueDate < today) return '已到期';
+  if (record.dueDate === today) return '今日到期';
+  if (record.dueDate === tomorrow) return '明日复习';
+  return record.dueDate + ' 复习';
+}
+function renderReviewPlan() {
+  const records = Object.entries(reviewPlan).filter(function(entry) { return byId.has(entry[0]); }).map(function(entry) { return {id:entry[0],record:entry[1],case:byId.get(entry[0])}; });
+  const today = localDateKey(), inSevenDays = addLocalDays(today,7), due = dueReviewQueue();
+  $('#dueReviewCount').textContent = due.length;
+  $('#upcomingReviewCount').textContent = records.filter(function(item) { return item.record.dueDate > today && item.record.dueDate <= inSevenDays; }).length;
+  $('#stableReviewCount').textContent = records.filter(function(item) { return item.record.intervalDays >= 14; }).length;
+  $('#studyDueReviews').disabled = $('#startDueReviews').disabled = due.length === 0;
+  const ordered = records.sort(function(a,b) { return a.record.dueDate.localeCompare(b.record.dueDate) || b.record.intervalDays - a.record.intervalDays || a.id.localeCompare(b.id); });
+  if (!ordered.length) {
+    $('#reviewPlanList').innerHTML = '<div class="review-plan-empty"><b>尚未生成复习计划</b><span>从下一次答题开始建立计划；已有旧版答题记录不会被倒推成虚假的复习日期。</span></div>';
+    return;
+  }
+  $('#reviewPlanList').innerHTML = ordered.slice(0,6).map(function(item) {
+    const status = isMistake(item.case) ? '最近答错' : reviewDueLabel(item.record);
+    return '<article class="review-plan-item"><div><span>' + esc(item.case.system) + ' · ' + esc(item.case.modality) + '</span><h3>' + esc(diagnosisName(item.case)) + '</h3><p>连续答对 ' + item.record.streak + ' 次 · 当前间隔 ' + item.record.intervalDays + ' 天</p></div><b class="' + (item.record.dueDate <= today ? 'due-now' : '') + '">' + esc(status) + '</b></article>';
+  }).join('');
+}
 let prescriptionGroups = [];
 function hintCountsByCase() {
   return learningEvents.filter(function(event) { return event.type === 'hint_requested'; }).reduce(function(result,event) {
@@ -702,6 +760,7 @@ function submitAnswer() {
   const previous = attempts[c.id] || {count:0,wrong:0};
   attempts[c.id] = {count:previous.count + 1, wrong:previous.wrong + (selected === c.answer ? 0 : 1), lastAnswer:selected};
   save(attemptsKey, attempts);
+  scheduleReview(c,selected === c.answer);
   recordLearningEvent('answer_submitted',c,{answerIndex:selected,correct:selected === c.answer,hintsUsed:session.hints[c.id] || 0});
   if (!completed.includes(c.id)) {
     if (selected === c.answer) correct++;
@@ -764,6 +823,7 @@ function updateStats() {
   $('#wrongCount').textContent = wrong.length;
   $('#everWrongCount').textContent = Object.values(attempts).filter(function(item) { return item.wrong > 0; }).length;
   $('#studyWrong').disabled = $('#reviewWrong').disabled = wrong.length === 0;
+  renderReviewPlan();
   renderPrescription();
   $$('[data-catalog-total]').forEach(function(el) { el.textContent = cases.length; });
   $$('[data-system-total]').forEach(function(el) { el.textContent = cases.filter(function(c) { return c.system === el.dataset.systemTotal; }).length; });
@@ -780,7 +840,7 @@ function exportLearningRecord() {
     catalogSize:cases.length,
     favorites:favorites.slice(), completed:completed.slice(), correct:correct,
     reviewed:reviewed.slice(), notes:Object.assign({},notes), findings:Object.assign({},findingDrafts),
-    reports:Object.assign({},reportDrafts), reasoning:Object.assign({},reasoningDrafts), attempts:Object.assign({},attempts), learnerLevel:learnerLevel,
+    reports:Object.assign({},reportDrafts), reasoning:Object.assign({},reasoningDrafts), attempts:Object.assign({},attempts), reviewPlan:Object.assign({},reviewPlan), learnerLevel:learnerLevel,
     events:learningEvents.slice(),
     session:{queue:session.queue.slice(),cursor:session.cursor,mode:session.mode,order:session.order,answers:Object.assign({},session.answers),hints:Object.assign({},session.hints)}
   };
@@ -838,6 +898,10 @@ async function importLearningRecord(file) {
       const c = byId.get(entry[0]);
       if (c && validAttemptRecord(entry[1],c) && (!attempts[entry[0]] || entry[1].count >= attempts[entry[0]].count)) attempts[entry[0]] = entry[1];
     });
+    if (payload.reviewPlan && typeof payload.reviewPlan === 'object') Object.entries(payload.reviewPlan).forEach(function(entry) {
+      const current = reviewPlan[entry[0]], imported = entry[1];
+      if (byId.has(entry[0]) && validReviewPlanRecord(imported) && (!current || imported.dueDate < current.dueDate || imported.streak > current.streak)) reviewPlan[entry[0]] = imported;
+    });
     if (Array.isArray(payload.events)) {
       const existingEventIds = new Set(learningEvents.map(function(event) { return event.id; }));
       payload.events.forEach(function(event) {
@@ -869,6 +933,7 @@ async function importLearningRecord(file) {
     save(storagePrefix + '-correct',correct);
     save(storagePrefix + '-reviewed',reviewed);
     save(attemptsKey,attempts);
+    save(reviewPlanKey,reviewPlan);
     save(stablePrefix + '-learner-level',learnerLevel);
     save(stablePrefix + '-learning-events',learningEvents);
     Object.entries(notes).forEach(function(entry) { if (entry[1].trim()) localStorage.setItem(stablePrefix + '-note-' + entry[0],entry[1]); });
@@ -1175,6 +1240,8 @@ $('#studyFiltered').onclick = function() { startTraining(filteredCases().map(fun
 $('#quickTen').onclick = function() { startTraining(sample(filteredCases().map(function(c) { return c.id; }),10), 'quiz','custom'); };
 $('#studyWrong').onclick = function() { startTraining(mistakeIds(), 'study'); };
 $('#reviewWrong').onclick = function() { startTraining(mistakeIds(), 'quiz'); };
+$('#studyDueReviews').onclick = function() { startTraining(dueReviewQueue(), 'study','custom'); };
+$('#startDueReviews').onclick = function() { startTraining(dueReviewQueue(), 'quiz','custom'); };
 $('#studyPrescription').onclick = function() { startPrescription('study'); };
 $('#startPrescription').onclick = function() { startPrescription('quiz'); };
 $('#randomCase').onclick = function() { startTraining(filteredCases().map(function(c) { return c.id; }), 'quiz', 'random'); };

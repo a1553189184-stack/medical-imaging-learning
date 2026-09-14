@@ -101,6 +101,12 @@ try {
   assert.ok(events.some(event=>event.type==='report_scored'));
   assert.ok(events.every(event=>!Object.keys(event).some(key=>/text|image|prompt|note|report/i.test(key))));
   await evaluate("document.querySelector('[data-view=progress]').click()");
+  assert.equal(await evaluate("document.querySelector('#dueReviewCount').textContent"),'1');
+  assert.match(await evaluate("document.querySelector('#reviewPlanList').textContent"),/最近答错/);
+  assert.equal(await evaluate("document.querySelector('#startDueReviews').disabled"),false);
+  await evaluate("document.querySelector('#startDueReviews').click()");
+  assert.match(await evaluate("document.querySelector('#queueSummary').textContent"),/1 题 · 自定义顺序/);
+  await evaluate("document.querySelector('[data-view=progress]').click()");
   assert.match(await evaluate("document.querySelector('#prescriptionList').textContent"),/气胸/);
   assert.equal(await evaluate("document.querySelector('#startPrescription').disabled"),false);
   await evaluate("document.querySelector('#startPrescription').click()");
