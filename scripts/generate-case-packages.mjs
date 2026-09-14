@@ -6,12 +6,12 @@ import { createHash } from 'node:crypto';
 const root = process.cwd();
 const catalogScripts = [
   'cases.js','curriculum.js','expanded-sources.js','additional-groups.js',
-  'next-76-groups.js','next-200-groups.js','next-200-review.js','expanded-cases.js'
+  'next-76-groups.js','next-200-groups.js','next-200-review.js','next-304-groups.js','expanded-cases.js'
 ];
 const source = catalogScripts.map(file => fs.readFileSync(path.join(root,file),'utf8')).join('\n');
 const payload = JSON.parse(vm.runInNewContext(source + '\nJSON.stringify({cases:CASES,curriculum:CURRICULUM})'));
 const lessonById = new Map(payload.curriculum.map(lesson => [lesson.id,lesson]));
-const contentVersion = '2026.09.1';
+const contentVersion = '2026.09.2';
 
 function sha256(value) {
   return createHash('sha256').update(value).digest('hex');

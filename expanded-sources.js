@@ -12,7 +12,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "cfa11b0fafe61302e41eadd39ebd924e129b7b4e",
-    "localSha256": "a64a2df3e32088eaae8d0aaac62a2cc046cfcf12cd0f644ce120662ba9425abd"
+    "localSha256": "a64a2df3e32088eaae8d0aaac62a2cc046cfcf12cd0f644ce120662ba9425abd",
+    "width": 1060,
+    "height": 1227,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pneumothorax-02",
@@ -26,7 +30,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "b005293314e60c857cea878ba3e7e5070ab243c4",
-    "localSha256": "18fd846fe71c5c78a86c7a8998ce60d47a828908effd7e7db68ee26eb342106b"
+    "localSha256": "18fd846fe71c5c78a86c7a8998ce60d47a828908effd7e7db68ee26eb342106b",
+    "width": 962,
+    "height": 1086,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pneumothorax-03",
@@ -40,7 +48,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "originalSha1": "8fa522faddeea7d77c518b8e32146a55b584e3d3",
-    "localSha256": "bcf6af6dc9a17c57fc0c90f0323d9fb75ffdf9a266f0be4259b3d02ff3b3cddc"
+    "localSha256": "bcf6af6dc9a17c57fc0c90f0323d9fb75ffdf9a266f0be4259b3d02ff3b3cddc",
+    "width": 1569,
+    "height": 1579,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pneumothorax-04",
@@ -54,7 +66,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "7c117aebb1cf690a9a162ce06f5f4eb7933270cc",
-    "localSha256": "c782eed7cb85cec9b97e81bf5db0171cb2b21a6c029711485c00b1213f92408c"
+    "localSha256": "c782eed7cb85cec9b97e81bf5db0171cb2b21a6c029711485c00b1213f92408c",
+    "width": 1534,
+    "height": 1971,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pneumothorax-05",
@@ -68,7 +84,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "bcbe6dc87a31dcc96048c2dff7fb3bce1d93af0e",
-    "localSha256": "6dbdb57f1db419c66af163a30a444945e4741bac8fbff06d54cbe34a23bee917"
+    "localSha256": "6dbdb57f1db419c66af163a30a444945e4741bac8fbff06d54cbe34a23bee917",
+    "width": 997,
+    "height": 1122,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pleural-effusion-01",
@@ -82,7 +102,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "9fc85e179edc7ce300e8ba451339784655af465f",
-    "localSha256": "321795e39e19ce9787c14cd86f27e191aaf4f37ec85968a747422becff6f3e25"
+    "localSha256": "321795e39e19ce9787c14cd86f27e191aaf4f37ec85968a747422becff6f3e25",
+    "width": 1140,
+    "height": 1078,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pleural-effusion-02",
@@ -96,7 +120,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "53bc816ce64849bc2932258ae313152d59b82303",
-    "localSha256": "3d0710ef2ff354548c650798d758a9c7b055fafc4bdce863b5d2334b52b223db"
+    "localSha256": "3d0710ef2ff354548c650798d758a9c7b055fafc4bdce863b5d2334b52b223db",
+    "width": 1552,
+    "height": 1110,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pleural-effusion-03",
@@ -110,7 +138,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "c617a9995f6ad7de6a22e159c2cf4e9e0da42eb2",
-    "localSha256": "34d121a34214a9c710128fe4cf9c7d5b60b63f21ab1d7734368af52bb578d027"
+    "localSha256": "34d121a34214a9c710128fe4cf9c7d5b60b63f21ab1d7734368af52bb578d027",
+    "width": 2722,
+    "height": 1389,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pleural-effusion-04",
@@ -124,7 +156,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "09db1cb170051168137c95bd3a3e0efc1f5e9d69",
-    "localSha256": "83558216e8821d8b3dbb491ad09a41e0d8fc937797bc8b25acd678be7086f5e1"
+    "localSha256": "83558216e8821d8b3dbb491ad09a41e0d8fc937797bc8b25acd678be7086f5e1",
+    "width": 910,
+    "height": 1057,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pleural-effusion-05",
@@ -138,7 +174,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 2.5",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
     "originalSha1": "9ba11a487e8f151c2e31256252f859db86298def",
-    "localSha256": "fe8730d4d1791a50384e3921b389f9f9958e7b72870f5757fd29c75aca7953d6"
+    "localSha256": "fe8730d4d1791a50384e3921b389f9f9958e7b72870f5757fd29c75aca7953d6",
+    "width": 829,
+    "height": 705,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pleural-effusion-06",
@@ -152,7 +192,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "1876cb1eae70ac6af0c7c556906dd2d1983f05b6",
-    "localSha256": "777eab0d64e08458c69e47c2ca6cd2a4e865efc75c9dbe909987e7ffabd864a3"
+    "localSha256": "777eab0d64e08458c69e47c2ca6cd2a4e865efc75c9dbe909987e7ffabd864a3",
+    "width": 3072,
+    "height": 2304,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pneumonia-01",
@@ -166,7 +210,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "5d090f07f954985520cf4a2e124022498aacd077",
-    "localSha256": "19bc41ae04664573ee4b8820dcb944b04783ed1d9e80a2d65797204218fbe682"
+    "localSha256": "19bc41ae04664573ee4b8820dcb944b04783ed1d9e80a2d65797204218fbe682",
+    "width": 2926,
+    "height": 2706,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pneumonia-02",
@@ -180,7 +228,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "fd56fafeebcdafa6d44882323b560bba8698fa99",
-    "localSha256": "00b8abcc8e9153f622529fb89eac5ecf1ca03819529a955b429acec2c412e3f2"
+    "localSha256": "00b8abcc8e9153f622529fb89eac5ecf1ca03819529a955b429acec2c412e3f2",
+    "width": 1688,
+    "height": 1037,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pneumonia-03",
@@ -194,7 +246,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "9e715c4c41f130f244f3c7e096f0d2c780bd8653",
-    "localSha256": "eaa47016c643a0a43a6b376b0aec07c8a3928db16c916f8783745bcbc0b349fe"
+    "localSha256": "eaa47016c643a0a43a6b376b0aec07c8a3928db16c916f8783745bcbc0b349fe",
+    "width": 1220,
+    "height": 1141,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pneumonia-04",
@@ -208,7 +264,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "d47877e295ce800f6ac7a300b37e34ae3b39a16d",
-    "localSha256": "471b4f8c36127b34e7fda090e8f16ac360c4624aeb50e6b4c7090f78244e1416"
+    "localSha256": "471b4f8c36127b34e7fda090e8f16ac360c4624aeb50e6b4c7090f78244e1416",
+    "width": 3072,
+    "height": 2304,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pneumonia-05",
@@ -222,7 +282,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "3510c017ee4fc1cfb4a22ad0d24fb46df1928555",
-    "localSha256": "452a0ba156f9aba63712775013506c5a3f905548b483992cbf2a25d8067afc74"
+    "localSha256": "452a0ba156f9aba63712775013506c5a3f905548b483992cbf2a25d8067afc74",
+    "width": 1768,
+    "height": 1396,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pneumonia-06",
@@ -236,7 +300,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "26c25f86b7d87214bb0fe4f1193819e151351dad",
-    "localSha256": "ca414c439ddffb060f406558d03e1c9c37f0f9de225428e3e80f5e79d0dec6fa"
+    "localSha256": "ca414c439ddffb060f406558d03e1c9c37f0f9de225428e3e80f5e79d0dec6fa",
+    "width": 2304,
+    "height": 3072,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pneumonia-07",
@@ -250,7 +318,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.5",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
     "originalSha1": "786e63ec276dce6e04671f236f27742b5c69953a",
-    "localSha256": "284f874d305ad5732e38da4619ce931e213f6f72f43217eecca01f974aca6021"
+    "localSha256": "284f874d305ad5732e38da4619ce931e213f6f72f43217eecca01f974aca6021",
+    "width": 664,
+    "height": 604,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pneumonia-08",
@@ -264,7 +336,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "3dfd871a6474b8ec806ec7b6a6c41481ebc572b3",
-    "localSha256": "5e54048331f6e2007e5c95df9ecee19d78095b417f1ad804d47acc03dcd833ae"
+    "localSha256": "5e54048331f6e2007e5c95df9ecee19d78095b417f1ad804d47acc03dcd833ae",
+    "width": 700,
+    "height": 545,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "chest-pneumonia-09",
@@ -278,7 +354,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "1435417ca8f4cf6d0bb6f9e84ac5b1eeab14a8b7",
-    "localSha256": "1096552fe88296618c2f3e4be15a791e7091908117c55cb2babf08e30dc1909d"
+    "localSha256": "1096552fe88296618c2f3e4be15a791e7091908117c55cb2babf08e30dc1909d",
+    "width": 600,
+    "height": 561,
+    "retrieval": "search",
+    "qualityScore": 21
   },
   {
     "id": "chest-pulmonary-edema-01",
@@ -292,7 +372,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "acff8590fbf3f3b418c5b125982361964943ffba",
-    "localSha256": "5f9d7cc1272a23a9054f24739f8f9c276c3653a749f4de5ff40e9c86aac87e38"
+    "localSha256": "5f9d7cc1272a23a9054f24739f8f9c276c3653a749f4de5ff40e9c86aac87e38",
+    "width": 842,
+    "height": 1002,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pulmonary-edema-02",
@@ -306,7 +390,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "7de8336e477a9247154d12e9ada12f1fde0d3197",
-    "localSha256": "0eea2612448872fdc072837608f3981ca84dafc3c6fc347958d2175fc9134edf"
+    "localSha256": "0eea2612448872fdc072837608f3981ca84dafc3c6fc347958d2175fc9134edf",
+    "width": 1600,
+    "height": 1600,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pulmonary-edema-03",
@@ -320,7 +408,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "a5f7f3919659c28428317b8e7238221f61a4804f",
-    "localSha256": "c324480eace99d79a0807b0e93b67efa4d31f1adf053c8ab9ab10b4767c410be"
+    "localSha256": "c324480eace99d79a0807b0e93b67efa4d31f1adf053c8ab9ab10b4767c410be",
+    "width": 991,
+    "height": 758,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pulmonary-edema-04",
@@ -334,7 +426,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "685df6c8937ed27e3b50e33dd817c530ae3c604e",
-    "localSha256": "8e42847cef6586a3ff24230082be843a1bd0a7997d712fe291d3b8bbaa4ada1d"
+    "localSha256": "8e42847cef6586a3ff24230082be843a1bd0a7997d712fe291d3b8bbaa4ada1d",
+    "width": 950,
+    "height": 862,
+    "retrieval": "category",
+    "qualityScore": 26
   },
   {
     "id": "chest-pulmonary-edema-05",
@@ -348,7 +444,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "590e091bfa22775c1945c0cb5f5e74af67651b44",
-    "localSha256": "8fe82a77c9f92c6108ec0fba5e51694573bf472db9d26dc82aa0fe0e9248d03a"
+    "localSha256": "8fe82a77c9f92c6108ec0fba5e51694573bf472db9d26dc82aa0fe0e9248d03a",
+    "width": 1535,
+    "height": 1519,
+    "retrieval": "category",
+    "qualityScore": 21
   },
   {
     "id": "chest-pulmonary-embolism-01",
@@ -362,7 +462,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "fff1fa944f8c073f0dd961e86f4f0141b8b085bc",
-    "localSha256": "e38dbcc2eeb2cb0b82a64d784eeecb186154ad285a385b0680a388e9c51b29f7"
+    "localSha256": "e38dbcc2eeb2cb0b82a64d784eeecb186154ad285a385b0680a388e9c51b29f7",
+    "width": 1459,
+    "height": 1124,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pulmonary-embolism-02",
@@ -376,7 +480,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "5da47daa06a428bed13adc03c00a1ab9068134c3",
-    "localSha256": "9b3237189301a863848e031c0f7a35164fff6358eec1c03114ef5c1d37a5b3e8"
+    "localSha256": "9b3237189301a863848e031c0f7a35164fff6358eec1c03114ef5c1d37a5b3e8",
+    "width": 2024,
+    "height": 1428,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pulmonary-embolism-03",
@@ -390,7 +498,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "14addd6bc67d789e568af392d7b7c830d9f72c23",
-    "localSha256": "651d9290ec9212d1d58dcba0c80f89fe343e8fa7bdf0b485f519dcdb30fa4e9d"
+    "localSha256": "651d9290ec9212d1d58dcba0c80f89fe343e8fa7bdf0b485f519dcdb30fa4e9d",
+    "width": 843,
+    "height": 613,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pulmonary-embolism-04",
@@ -404,7 +516,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 2.5",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
     "originalSha1": "4ce0e1f3bd15363a6b3dd8a965e3d470e1ce5bce",
-    "localSha256": "2f1865f57ad19e8ecc2ae9b074a09d32714cf4a3852361dfa667907b8f02c626"
+    "localSha256": "2f1865f57ad19e8ecc2ae9b074a09d32714cf4a3852361dfa667907b8f02c626",
+    "width": 960,
+    "height": 720,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-pulmonary-embolism-05",
@@ -418,7 +534,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "52e2be54b52ba7a84ac9698eafaf5822eced25b8",
-    "localSha256": "d607758e0a6c251ee704115c35aeed6a5ef324d1099cf8281731e08ea207dde5"
+    "localSha256": "d607758e0a6c251ee704115c35aeed6a5ef324d1099cf8281731e08ea207dde5",
+    "width": 1050,
+    "height": 1800,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-tuberculosis-01",
@@ -432,7 +552,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "c0b2b917099f9034762007239ea28ec6031a1e21",
-    "localSha256": "4d5d0e777c2567c1d4e064f897be5dfbd539c15406813520b8821cadcedfde89"
+    "localSha256": "4d5d0e777c2567c1d4e064f897be5dfbd539c15406813520b8821cadcedfde89",
+    "width": 1088,
+    "height": 1112,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-tuberculosis-02",
@@ -446,7 +570,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "e50b99d21e341911c2b201beb02587309ddc0182",
-    "localSha256": "62725a9c096a7da007010d20a34c7d59d3c15369ad460c543702ce33ccdb1238"
+    "localSha256": "62725a9c096a7da007010d20a34c7d59d3c15369ad460c543702ce33ccdb1238",
+    "width": 1007,
+    "height": 1109,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-tuberculosis-03",
@@ -460,7 +588,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "993d4e608be5d1f17597051fbbe6dc0f5737ce22",
-    "localSha256": "4d215a75f15d017ebe143ab0c774510b6727ee5868e3c2f40d678721e28a4189"
+    "localSha256": "4d215a75f15d017ebe143ab0c774510b6727ee5868e3c2f40d678721e28a4189",
+    "width": 1555,
+    "height": 1003,
+    "retrieval": "category",
+    "qualityScore": 19
   },
   {
     "id": "chest-atelectasis-01",
@@ -474,7 +606,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "dd7ca06c3f6a48364e365e6b9251aa61a456ab52",
-    "localSha256": "e3d5197a46ff3616f8dfd22385e12b6995d2fbea6390570716a91f3f5206ba78"
+    "localSha256": "e3d5197a46ff3616f8dfd22385e12b6995d2fbea6390570716a91f3f5206ba78",
+    "width": 1280,
+    "height": 960,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-atelectasis-02",
@@ -488,7 +624,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "fb6a10b6d0af76c6f84daab513057570b012e0e7",
-    "localSha256": "87f62e5061b487a0b53978d2d72db1347a934bb03887e0d7d9add7ebc00a5430"
+    "localSha256": "87f62e5061b487a0b53978d2d72db1347a934bb03887e0d7d9add7ebc00a5430",
+    "width": 1040,
+    "height": 960,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-atelectasis-03",
@@ -502,7 +642,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "07a6b09eeaf69e67935ba4717cffc414ddb5ca0d",
-    "localSha256": "59e679450feccaf458584e85f63c5c1481ff462c8d98095ce1cc71841188a3a1"
+    "localSha256": "59e679450feccaf458584e85f63c5c1481ff462c8d98095ce1cc71841188a3a1",
+    "width": 1420,
+    "height": 1334,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-atelectasis-04",
@@ -516,7 +660,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "eb8e89bf61710411c4df309ba42b45fb6290400c",
-    "localSha256": "888a1ca2db5c0451e333186040fc9a20cec8359f1f8c46b26fac3fc84c3ce30e"
+    "localSha256": "888a1ca2db5c0451e333186040fc9a20cec8359f1f8c46b26fac3fc84c3ce30e",
+    "width": 2691,
+    "height": 1229,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-atelectasis-05",
@@ -530,7 +678,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "74cebefe1080eb6bd40ada6906f52c01938ec545",
-    "localSha256": "bb5e93ecd711c4eb0302f30d160f3a2f955251c6348b5eaefa9ce7a0ab85bd55"
+    "localSha256": "bb5e93ecd711c4eb0302f30d160f3a2f955251c6348b5eaefa9ce7a0ab85bd55",
+    "width": 1839,
+    "height": 1406,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-covid-01",
@@ -544,7 +696,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "ede3393c17740db389c14ad0a4268c0146831199",
-    "localSha256": "ad5a8031023e3eb3316526f2601f59f02c3fb64e0a8cd88bee68a50d50afc197"
+    "localSha256": "ad5a8031023e3eb3316526f2601f59f02c3fb64e0a8cd88bee68a50d50afc197",
+    "width": 990,
+    "height": 788,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-covid-02",
@@ -558,7 +714,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "811cbd488c8dfb6baf7af8638f993c88acd381ad",
-    "localSha256": "b530de0eeb5b80c5abb4ce544310ae1163bb3a1bbc704d9cfee656f1880e1c4d"
+    "localSha256": "b530de0eeb5b80c5abb4ce544310ae1163bb3a1bbc704d9cfee656f1880e1c4d",
+    "width": 969,
+    "height": 862,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-covid-03",
@@ -572,7 +732,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "4f6bb813cbff5c20b4b8535f7627ecc55b67c5e1",
-    "localSha256": "389348bf5f8a238daef9cba071341a106e6fc0676d155c3d86e632b460c5cbec"
+    "localSha256": "389348bf5f8a238daef9cba071341a106e6fc0676d155c3d86e632b460c5cbec",
+    "width": 1522,
+    "height": 1609,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-covid-04",
@@ -586,7 +750,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "344c9d6cd059e3f2441ccca8e8d4b7a7b7ab5145",
-    "localSha256": "1df1e895b2212461ed81efae07c998cf1342bbff7059ee887e3f77640eb2cb45"
+    "localSha256": "1df1e895b2212461ed81efae07c998cf1342bbff7059ee887e3f77640eb2cb45",
+    "width": 1144,
+    "height": 1096,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-covid-05",
@@ -600,7 +768,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "75dff219a9efdd8b0623c6637cbbf73ca17b2351",
-    "localSha256": "3549e1768dd8cec52a69f0ba356bff2e9c1449936263f05dfdf4e9c3a97bcee2"
+    "localSha256": "3549e1768dd8cec52a69f0ba356bff2e9c1449936263f05dfdf4e9c3a97bcee2",
+    "width": 1594,
+    "height": 773,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-cardiomegaly-01",
@@ -614,7 +786,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "4e68f08df943db79d5231d8072dbeedc0ddb7c50",
-    "localSha256": "1ce7c46292c8118049eac9c92180eb606bf17abbdccd6f9b9c08b4eadacead7a"
+    "localSha256": "1ce7c46292c8118049eac9c92180eb606bf17abbdccd6f9b9c08b4eadacead7a",
+    "width": 1414,
+    "height": 1771,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-cardiomegaly-02",
@@ -628,7 +804,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "5ec31615569279a051be19fbe3055b9ec04f4927",
-    "localSha256": "8c76924d723709f325c3dbffd2a3803e9f39c6cf529cb715f23f4be05aa752fd"
+    "localSha256": "8c76924d723709f325c3dbffd2a3803e9f39c6cf529cb715f23f4be05aa752fd",
+    "width": 1822,
+    "height": 1524,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-cardiomegaly-03",
@@ -642,7 +822,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "b6e6482ebbc3b02ff1ce185ff9e8fc7f7cc11d38",
-    "localSha256": "dc2f77bbed41530c044c40173b6fd88f649dc1a59fecf51a368bb2ca56ff4b29"
+    "localSha256": "dc2f77bbed41530c044c40173b6fd88f649dc1a59fecf51a368bb2ca56ff4b29",
+    "width": 1060,
+    "height": 960,
+    "retrieval": "category",
+    "qualityScore": 21
   },
   {
     "id": "chest-sarcoidosis-01",
@@ -656,7 +840,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "a1e9ea8fe85fbd5287099125990e9df85cadadf5",
-    "localSha256": "49bb4dbaa87e73b2d19a081a4b9eb178a6443f5580b786535f76b96795847379"
+    "localSha256": "49bb4dbaa87e73b2d19a081a4b9eb178a6443f5580b786535f76b96795847379",
+    "width": 1502,
+    "height": 971,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-sarcoidosis-02",
@@ -670,7 +858,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "4d7887e6f72e60435bf835ce8e85fe4b5d2242b1",
-    "localSha256": "5fc5f6b2eb7d004e26c091befda3e2afea79e218816784de159d4e3bbcf70f05"
+    "localSha256": "5fc5f6b2eb7d004e26c091befda3e2afea79e218816784de159d4e3bbcf70f05",
+    "width": 799,
+    "height": 699,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-sarcoidosis-03",
@@ -684,7 +876,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "e91807350455b9bbdfe63c2c8ea9c639dcab16e3",
-    "localSha256": "0d791ac0c0f2b24168af55fe8ee3e630d89d9e3e2751a19dbc3f102086e68d8d"
+    "localSha256": "0d791ac0c0f2b24168af55fe8ee3e630d89d9e3e2751a19dbc3f102086e68d8d",
+    "width": 2401,
+    "height": 1109,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-sarcoidosis-04",
@@ -698,7 +894,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "2cdd4f2c249f5e0f07964b9f8b43d0c9225d9465",
-    "localSha256": "56ec568c67418b072f1ff6b87c01dd498724cdea7b168a8e4604e608699f835e"
+    "localSha256": "56ec568c67418b072f1ff6b87c01dd498724cdea7b168a8e4604e608699f835e",
+    "width": 1207,
+    "height": 1274,
+    "retrieval": "category",
+    "qualityScore": 26
   },
   {
     "id": "neuro-subdural-01",
@@ -712,7 +912,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "b064d3700331a669b58dbb57e4124fdd22624b3e",
-    "localSha256": "6f54da768d82864fb491029341900a6d9dbdee7f0955348bc5bceac72ada7c61"
+    "localSha256": "6f54da768d82864fb491029341900a6d9dbdee7f0955348bc5bceac72ada7c61",
+    "width": 821,
+    "height": 882,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-subdural-02",
@@ -726,7 +930,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "b933d2acfc6a291a6d0ec45b061025662e3eb7e6",
-    "localSha256": "48f903ad31b2526acc79b70a10729d14f042b0e44d196db05016674dcd7c196c"
+    "localSha256": "48f903ad31b2526acc79b70a10729d14f042b0e44d196db05016674dcd7c196c",
+    "width": 1928,
+    "height": 1121,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-subdural-03",
@@ -740,7 +948,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "56f199b91f1ff0064fad25abfea1f09c06e21497",
-    "localSha256": "077fd15ee8d266d5a32bc2e62f5f86a91d5d41fa5974833edf88e048b0cc1d0e"
+    "localSha256": "077fd15ee8d266d5a32bc2e62f5f86a91d5d41fa5974833edf88e048b0cc1d0e",
+    "width": 3180,
+    "height": 993,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-subdural-04",
@@ -754,7 +966,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "2d477e559b9af3a6d27c68c3bd80028213e34469",
-    "localSha256": "a0bb6d958ac4587072f49781db24a9ea3e9d30b3ea7ec2eeadebd823175aa462"
+    "localSha256": "a0bb6d958ac4587072f49781db24a9ea3e9d30b3ea7ec2eeadebd823175aa462",
+    "width": 1494,
+    "height": 1026,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-subdural-05",
@@ -768,7 +984,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "9e8c3588fa92447f3295324266c404f73a803cba",
-    "localSha256": "21f35cd1d78e7cb8740225c87e5b917b2366fdd55d0b30f14f1fdd3b5f39dc79"
+    "localSha256": "21f35cd1d78e7cb8740225c87e5b917b2366fdd55d0b30f14f1fdd3b5f39dc79",
+    "width": 1159,
+    "height": 1415,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-subdural-06",
@@ -782,7 +1002,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "fe3063f2864a2e3d1eab8abdf0e43a3e87a7f00f",
-    "localSha256": "41e631f75a1f4c9bdc2f82ded90640be70fb82c7072d90d437f7432f803eb6a6"
+    "localSha256": "41e631f75a1f4c9bdc2f82ded90640be70fb82c7072d90d437f7432f803eb6a6",
+    "width": 1309,
+    "height": 1395,
+    "retrieval": "category",
+    "qualityScore": 26
   },
   {
     "id": "neuro-epidural-01",
@@ -796,7 +1020,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "5de1bf51ca52350fd891ef78f3e8e4b74c2321bf",
-    "localSha256": "b40526aa774d8c5a46eaae70a123497d720804ff1ad0920c4fd9e8c0ee91747c"
+    "localSha256": "b40526aa774d8c5a46eaae70a123497d720804ff1ad0920c4fd9e8c0ee91747c",
+    "width": 1484,
+    "height": 823,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-epidural-02",
@@ -810,7 +1038,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "b95edc3a4a84af7874ad4a2129d2b2f60450f12b",
-    "localSha256": "a5d22a11505639b81571f539235c144cdcfe53d53cbfbb57cb023c435007bec4"
+    "localSha256": "a5d22a11505639b81571f539235c144cdcfe53d53cbfbb57cb023c435007bec4",
+    "width": 1898,
+    "height": 1455,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-epidural-03",
@@ -824,7 +1056,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "1d0b60b4b00d2229762d5d8634cf1557342b36fb",
-    "localSha256": "ec2c603b32b60465f216fbc8b99a9eeaa95097befc674acd8ca7509c688332d7"
+    "localSha256": "ec2c603b32b60465f216fbc8b99a9eeaa95097befc674acd8ca7509c688332d7",
+    "width": 1164,
+    "height": 1037,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-epidural-04",
@@ -838,7 +1074,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "0e7a45bd9f295c595bffe11790dfff80337f6269",
-    "localSha256": "2c721c9d1c84a8a9ea28c6789d4d0cf127745f5b9f505defca73ad943bead488"
+    "localSha256": "2c721c9d1c84a8a9ea28c6789d4d0cf127745f5b9f505defca73ad943bead488",
+    "width": 520,
+    "height": 529,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "neuro-epidural-05",
@@ -852,7 +1092,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "9332f81f154fce19e3816b599e4f891bcda07339",
-    "localSha256": "fe34c4636b69ccb9f65cfb016ae701f412cfa075904d0323e18aa4d3be63906b"
+    "localSha256": "fe34c4636b69ccb9f65cfb016ae701f412cfa075904d0323e18aa4d3be63906b",
+    "width": 452,
+    "height": 514,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "neuro-intracerebral-01",
@@ -866,7 +1110,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "9133dfc87aa005267ff14f912b9384a04b844b65",
-    "localSha256": "bbae9c84552849e39af6839f425e599c9127c4bf598e90fb1cd36b051ee13673"
+    "localSha256": "bbae9c84552849e39af6839f425e599c9127c4bf598e90fb1cd36b051ee13673",
+    "width": 2996,
+    "height": 2124,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-intracerebral-02",
@@ -880,7 +1128,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "b2698444cfa8a1fae1e516e3b687e70db50c8c6c",
-    "localSha256": "8bf0c53b536fea70a1123eb268a0947f6cb372c11e163c97148da44ec4c8054e"
+    "localSha256": "8bf0c53b536fea70a1123eb268a0947f6cb372c11e163c97148da44ec4c8054e",
+    "width": 1200,
+    "height": 1484,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-intracerebral-03",
@@ -894,7 +1146,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "b4c24f26660df284713be065909be60fba1fb5d8",
-    "localSha256": "bfe8f92d6717607b11d9cdc63571662a21fbfeb7b3515e35968ce3d1d8e73dc8"
+    "localSha256": "bfe8f92d6717607b11d9cdc63571662a21fbfeb7b3515e35968ce3d1d8e73dc8",
+    "width": 400,
+    "height": 330,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "neuro-intracerebral-04",
@@ -908,7 +1164,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "d6c676993ce7a37fddc8c13030837035f8c2c3ea",
-    "localSha256": "12163a24537122d43c0b83b2ed38f666b45316f77f7bcdb702c2d5df6078ae22"
+    "localSha256": "12163a24537122d43c0b83b2ed38f666b45316f77f7bcdb702c2d5df6078ae22",
+    "width": 512,
+    "height": 512,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "neuro-intracerebral-05",
@@ -922,7 +1182,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "88ea05b8aa240571b1f1ab1c2aa608dbd198d11e",
-    "localSha256": "38bad24e1f13db178f2f68f0116c8224a9228e40972fcfe853eb6983c7ec2492"
+    "localSha256": "38bad24e1f13db178f2f68f0116c8224a9228e40972fcfe853eb6983c7ec2492",
+    "width": 3096,
+    "height": 4128,
+    "retrieval": "category",
+    "qualityScore": 26
   },
   {
     "id": "neuro-intracerebral-06",
@@ -936,7 +1200,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "205b13ca8f59e7eb1908bebee62fbf41833aca0d",
-    "localSha256": "8b2d37b734979ca7199356969d0482d27aa487b751f126d7ed2c53fa33f44f75"
+    "localSha256": "8b2d37b734979ca7199356969d0482d27aa487b751f126d7ed2c53fa33f44f75",
+    "width": 2035,
+    "height": 1323,
+    "retrieval": "category",
+    "qualityScore": 21
   },
   {
     "id": "neuro-subarachnoid-01",
@@ -950,7 +1218,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "428c843bcaf38aa0d4281b36bf7698fb183cf281",
-    "localSha256": "5d97daec03fdccf7727ebd1fd4cd9268ca2093f82578e03cfb98f3cb703178a4"
+    "localSha256": "5d97daec03fdccf7727ebd1fd4cd9268ca2093f82578e03cfb98f3cb703178a4",
+    "width": 2363,
+    "height": 1073,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-subarachnoid-02",
@@ -964,7 +1236,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "23f243f1105a360dd99abcd9f6bab2c5a0ba108c",
-    "localSha256": "f7e6bd4a7e6c03286e7afc9c277ba0ba1eba35bccd58868885607df93f950cbc"
+    "localSha256": "f7e6bd4a7e6c03286e7afc9c277ba0ba1eba35bccd58868885607df93f950cbc",
+    "width": 2254,
+    "height": 2444,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-subarachnoid-03",
@@ -978,7 +1254,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "originalSha1": "2d4949fc1dfb9e77c3396845a3e526f36862a444",
-    "localSha256": "e694b9426412e60325f1d5a07dea445459c21079ec02821b9752a064c1cb00ad"
+    "localSha256": "e694b9426412e60325f1d5a07dea445459c21079ec02821b9752a064c1cb00ad",
+    "width": 695,
+    "height": 905,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-subarachnoid-04",
@@ -992,7 +1272,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "dea5f2a18cc919c542c55235c4183bca7b0c9138",
-    "localSha256": "33fe96aa82a233c58dbeae61cbd659378941989430b5e8d3c2e9a05490c5846e"
+    "localSha256": "33fe96aa82a233c58dbeae61cbd659378941989430b5e8d3c2e9a05490c5846e",
+    "width": 934,
+    "height": 1168,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-subarachnoid-05",
@@ -1006,7 +1290,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "2dffe9f1373885d7e23e96db58f56ce1f1ddf55c",
-    "localSha256": "6f93bee626ba76f9eee80f85d503adceb0e47b0d80e9214599bb9586212ccfdc"
+    "localSha256": "6f93bee626ba76f9eee80f85d503adceb0e47b0d80e9214599bb9586212ccfdc",
+    "width": 776,
+    "height": 904,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-subarachnoid-06",
@@ -1020,7 +1308,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "e585c7a08441f167ae008f221d0a0c073c210a4d",
-    "localSha256": "724d997c2dfb541ec862584706a34dfb8e85ebf9b9223d07ee950ae9e814ac77"
+    "localSha256": "724d997c2dfb541ec862584706a34dfb8e85ebf9b9223d07ee950ae9e814ac77",
+    "width": 1344,
+    "height": 708,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-subarachnoid-07",
@@ -1034,7 +1326,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "originalSha1": "1837bab81a1d1160693921c6f1d2158aa8d01f4c",
-    "localSha256": "4322e65baa26b8a1e4170d46077e84ce237309d5c535e2c0085775a733da2b74"
+    "localSha256": "4322e65baa26b8a1e4170d46077e84ce237309d5c535e2c0085775a733da2b74",
+    "width": 663,
+    "height": 841,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-subarachnoid-08",
@@ -1048,7 +1344,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "1d6d4af0c4786cc0143304be924b412ef1b47624",
-    "localSha256": "4fd2923c287db697f9ea6aabda09155a547be1ec9b82c1163a21e8c36fae0a50"
+    "localSha256": "4fd2923c287db697f9ea6aabda09155a547be1ec9b82c1163a21e8c36fae0a50",
+    "width": 2145,
+    "height": 646,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-infarction-01",
@@ -1062,7 +1362,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "c83b66c2b7fe39c28885839806ceded276010365",
-    "localSha256": "cb9c036870ced18403bac49ef88dbf4e6b1e5279817c4f2be646b4a57dbca2cb"
+    "localSha256": "cb9c036870ced18403bac49ef88dbf4e6b1e5279817c4f2be646b4a57dbca2cb",
+    "width": 2000,
+    "height": 2502,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-infarction-02",
@@ -1076,7 +1380,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "6a7952042a35d3fccccb81f6ad38c87f39720b6a",
-    "localSha256": "399fc5b2fe261cf9f94aec461e62a8281683352cb285bb7ed363833bfbe221f9"
+    "localSha256": "399fc5b2fe261cf9f94aec461e62a8281683352cb285bb7ed363833bfbe221f9",
+    "width": 1087,
+    "height": 643,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-infarction-03",
@@ -1090,7 +1398,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "55c28f56de6036452a03dc62c163e1a26dd04157",
-    "localSha256": "c44bf05e0ccf1ab4db262c8997d78338c3c462cee478991d8449ef9b71b26fab"
+    "localSha256": "c44bf05e0ccf1ab4db262c8997d78338c3c462cee478991d8449ef9b71b26fab",
+    "width": 2311,
+    "height": 1356,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-infarction-04",
@@ -1104,7 +1416,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "6fc8bfacfa2d4d6f8cab3ab4770a0ac65f7a955b",
-    "localSha256": "4ad582e01861152ce2f8503ff2e5f159886c3955763fe95c619c9b4414f0a167"
+    "localSha256": "4ad582e01861152ce2f8503ff2e5f159886c3955763fe95c619c9b4414f0a167",
+    "width": 497,
+    "height": 652,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "neuro-infarction-05",
@@ -1118,7 +1434,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "af2a1c86d50d9b666a94b2e3b7d162418075692e",
-    "localSha256": "b43123332b7cb036888df347227c4ec8c05a8515312c314a162bd8925edd9353"
+    "localSha256": "b43123332b7cb036888df347227c4ec8c05a8515312c314a162bd8925edd9353",
+    "width": 512,
+    "height": 512,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "neuro-meningioma-01",
@@ -1132,7 +1452,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "34bf9e5af13bec1a4b3a4beb4098282230f2952b",
-    "localSha256": "dd427380ab70f1ea40893e88bf053d783271eaec154dc20b5710d5994b7db34b"
+    "localSha256": "dd427380ab70f1ea40893e88bf053d783271eaec154dc20b5710d5994b7db34b",
+    "width": 796,
+    "height": 944,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-meningioma-02",
@@ -1146,7 +1470,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "16f529797ea235570b2ee511a71b8df2b68a28b0",
-    "localSha256": "8e7158809a8e70cb9b497ead796095976ca5d7fcd6ee8d495982091a7eb2ca72"
+    "localSha256": "8e7158809a8e70cb9b497ead796095976ca5d7fcd6ee8d495982091a7eb2ca72",
+    "width": 1530,
+    "height": 1647,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-meningioma-03",
@@ -1160,7 +1488,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "fe0a6bd1143f08c2cf08cc3bb80947f69fc6ad79",
-    "localSha256": "2f27bb4954e7f35624372ae270123e509b322a75efa5628592bdb332b09f9dfb"
+    "localSha256": "2f27bb4954e7f35624372ae270123e509b322a75efa5628592bdb332b09f9dfb",
+    "width": 690,
+    "height": 710,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-meningioma-04",
@@ -1174,7 +1506,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "3beca9cc44d85692384831d0caf4a54464b5caab",
-    "localSha256": "5218692bc16278c2ecec1b89af577c9df40e1f58f118b59fd3b28393e0ea971c"
+    "localSha256": "5218692bc16278c2ecec1b89af577c9df40e1f58f118b59fd3b28393e0ea971c",
+    "width": 733,
+    "height": 665,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-meningioma-05",
@@ -1188,7 +1524,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "b991674bfe8434e3beaaa885b9942b3d1e2d50f4",
-    "localSha256": "e7cb9f9a2ffcaa63eb6ee8220dedc6b731146044550697e20ae475ca4cccfca9"
+    "localSha256": "e7cb9f9a2ffcaa63eb6ee8220dedc6b731146044550697e20ae475ca4cccfca9",
+    "width": 1003,
+    "height": 1095,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-meningioma-06",
@@ -1202,7 +1542,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "5425bd0e0fd8cbe224ab1013365c88551109b2ca",
-    "localSha256": "f031336db7db2ffe734d3341ec18e6b76e798c6a36b925832855c9334672fe3f"
+    "localSha256": "f031336db7db2ffe734d3341ec18e6b76e798c6a36b925832855c9334672fe3f",
+    "width": 438,
+    "height": 424,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "neuro-glioblastoma-01",
@@ -1216,7 +1560,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "4c9dd3648ed89b18c2c54ff01b08e2a7db0cd7bc",
-    "localSha256": "5a8727efea658895bfe928bc8d5320bd768f3cf8bc839f000693edc7b4649d2b"
+    "localSha256": "5a8727efea658895bfe928bc8d5320bd768f3cf8bc839f000693edc7b4649d2b",
+    "width": 650,
+    "height": 650,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-glioblastoma-02",
@@ -1230,7 +1578,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.5",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
     "originalSha1": "0722e6acc847dc886905368061dd1c7d345518d0",
-    "localSha256": "a41cac23a874ad61f0031cf3df66db36a003456393ebcbdedd0f6109ec643ed2"
+    "localSha256": "a41cac23a874ad61f0031cf3df66db36a003456393ebcbdedd0f6109ec643ed2",
+    "width": 974,
+    "height": 947,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "neuro-glioblastoma-03",
@@ -1244,7 +1596,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "6315825c6aa14f6424258472b7ef831e9299b023",
-    "localSha256": "b0e7ae59ebed84825a132ba2aa95bd0bab998357a62ccc8a5314e4fdb3a4e56d"
+    "localSha256": "b0e7ae59ebed84825a132ba2aa95bd0bab998357a62ccc8a5314e4fdb3a4e56d",
+    "width": 497,
+    "height": 512,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "neuro-glioblastoma-04",
@@ -1258,7 +1614,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "27087dac54fd8dced0db4d383c0409bc2ca44da0",
-    "localSha256": "d50e479ef456928d54919ff8cb8604011eecf8aee6f66728a9fe9ab8aef4f201"
+    "localSha256": "d50e479ef456928d54919ff8cb8604011eecf8aee6f66728a9fe9ab8aef4f201",
+    "width": 404,
+    "height": 512,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "neuro-glioblastoma-05",
@@ -1272,7 +1632,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "36d64186a0f1967585cd164fc1be3701dff81394",
-    "localSha256": "5b007f0e8e1f38b8c937d020e3bee56a13005b4e89d5bcf014755536a63d8649"
+    "localSha256": "5b007f0e8e1f38b8c937d020e3bee56a13005b4e89d5bcf014755536a63d8649",
+    "width": 513,
+    "height": 545,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "neuro-glioblastoma-06",
@@ -1286,7 +1650,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "b886073bb1ba11f76f110c4923ecca3c60cf0f54",
-    "localSha256": "1dd98c87151adf3faac2cfa06c1d454139a746151f7308d57e6ae64a33762df5"
+    "localSha256": "1dd98c87151adf3faac2cfa06c1d454139a746151f7308d57e6ae64a33762df5",
+    "width": 1607,
+    "height": 887,
+    "retrieval": "category",
+    "qualityScore": 19
   },
   {
     "id": "neuro-ms-01",
@@ -1300,7 +1668,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "2a82879dbade21e305e1ac2658c2aeea000cc859",
-    "localSha256": "c7b1a6260402559c01e411b507b21fbd1dbb387d153c251e9e74eed46a5d492d"
+    "localSha256": "c7b1a6260402559c01e411b507b21fbd1dbb387d153c251e9e74eed46a5d492d",
+    "width": 1029,
+    "height": 1176,
+    "retrieval": "category",
+    "qualityScore": 21
   },
   {
     "id": "neuro-ms-02",
@@ -1314,7 +1686,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "d24017813b03f54398a2dd9ed59e9ed3cfd3d99a",
-    "localSha256": "014474cfdffbebad9a231108a500a2e37fbf571c386e1b4cc2b418da70c20bdb"
+    "localSha256": "014474cfdffbebad9a231108a500a2e37fbf571c386e1b4cc2b418da70c20bdb",
+    "width": 756,
+    "height": 942,
+    "retrieval": "category",
+    "qualityScore": 16
   },
   {
     "id": "neuro-ms-03",
@@ -1328,7 +1704,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.5",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
     "originalSha1": "7d6b2eedb2f0eaad564641bc2c9e3d7a85dc46f1",
-    "localSha256": "46d98d0105594eee1fc95965720cebb478f0a70d401d65fea3332151233fb7a0"
+    "localSha256": "46d98d0105594eee1fc95965720cebb478f0a70d401d65fea3332151233fb7a0",
+    "width": 437,
+    "height": 521,
+    "retrieval": "category",
+    "qualityScore": 9
   },
   {
     "id": "neuro-nph-01",
@@ -1342,7 +1722,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "0280cca01f49942be9d425cc6be18d9a71e2ec8f",
-    "localSha256": "6091461bf4a1d4534cbf129d468a327aef29ae64443765b3c0912481b8ad87ea"
+    "localSha256": "6091461bf4a1d4534cbf129d468a327aef29ae64443765b3c0912481b8ad87ea",
+    "width": 583,
+    "height": 488,
+    "retrieval": "category",
+    "qualityScore": 33
   },
   {
     "id": "neuro-nph-02",
@@ -1356,7 +1740,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "f9d62a6df689c3db53a5d2c9681fb4354a297d0a",
-    "localSha256": "ae62951f6c3b8897471a92d808210cbe1bf29ff7590976868c89f5b2fda5ae94"
+    "localSha256": "ae62951f6c3b8897471a92d808210cbe1bf29ff7590976868c89f5b2fda5ae94",
+    "width": 670,
+    "height": 570,
+    "retrieval": "search",
+    "qualityScore": 18
   },
   {
     "id": "neuro-metastases-01",
@@ -1370,7 +1758,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "353b88125039ce83528f642e84e24a76694d6089",
-    "localSha256": "30581fd8053b8d6c9d5e7e9a55eba2e7360533f0ac1e80fca8a6fe6eee1ddaa9"
+    "localSha256": "30581fd8053b8d6c9d5e7e9a55eba2e7360533f0ac1e80fca8a6fe6eee1ddaa9",
+    "width": 1349,
+    "height": 1268,
+    "retrieval": "category",
+    "qualityScore": 19
   },
   {
     "id": "neuro-metastases-02",
@@ -1384,7 +1776,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "0142a0e482721290922f5f4c0bcb352a7ce5bd06",
-    "localSha256": "6fe68eeeba9ffadfc2133b3287a02458db549b0965ffb5c19423fde885785e8d"
+    "localSha256": "6fe68eeeba9ffadfc2133b3287a02458db549b0965ffb5c19423fde885785e8d",
+    "width": 1437,
+    "height": 1725,
+    "retrieval": "search",
+    "qualityScore": 13
   },
   {
     "id": "neuro-metastases-03",
@@ -1398,7 +1794,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "703003c8e3dd875aca649bca30b5c935c490fd9a",
-    "localSha256": "c3fcd59c76fde4be28ed2ed63abe5df78b5faf7d1f3db3474df37a8bfc5fdae7"
+    "localSha256": "c3fcd59c76fde4be28ed2ed63abe5df78b5faf7d1f3db3474df37a8bfc5fdae7",
+    "width": 698,
+    "height": 759,
+    "retrieval": "category",
+    "qualityScore": 11
   },
   {
     "id": "abdomen-appendicitis-01",
@@ -1412,7 +1812,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "3d942ac2919d3187c85e6bae16a4b5a59abb7f2a",
-    "localSha256": "50c9e1300811eec86ff45434cd9c7ac45f52114cb36b65d3dbd815f402a213b9"
+    "localSha256": "50c9e1300811eec86ff45434cd9c7ac45f52114cb36b65d3dbd815f402a213b9",
+    "width": 2880,
+    "height": 1352,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "abdomen-appendicitis-02",
@@ -1426,7 +1830,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "c239447fd4e0bad326c4d1f08a8c01d6f42bbc75",
-    "localSha256": "17c5abd1df31d0ba42187cbef0fc0f31b56c7b910a0e1f10b2f233032f50a18e"
+    "localSha256": "17c5abd1df31d0ba42187cbef0fc0f31b56c7b910a0e1f10b2f233032f50a18e",
+    "width": 694,
+    "height": 1024,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "abdomen-appendicitis-03",
@@ -1440,7 +1848,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "6ec7553496b6c3bd77850f374bdf27463c649032",
-    "localSha256": "d03987f07ff6e883f4e0cefecc0e9aeb4e9a5e8b883b6b769611fb6c9cec741a"
+    "localSha256": "d03987f07ff6e883f4e0cefecc0e9aeb4e9a5e8b883b6b769611fb6c9cec741a",
+    "width": 839,
+    "height": 978,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "abdomen-appendicitis-04",
@@ -1454,7 +1866,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "cefd43703ce953af66b6057c7e11691a5a77ef32",
-    "localSha256": "46fe88fa29e7a6635b32a4396f0bd1ce23e24b3220219460de1a018fc2e7c2fd"
+    "localSha256": "46fe88fa29e7a6635b32a4396f0bd1ce23e24b3220219460de1a018fc2e7c2fd",
+    "width": 973,
+    "height": 703,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "abdomen-appendicitis-05",
@@ -1468,7 +1884,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "fc82d9c0e38db423db5b79d4e7e6f730bcbef983",
-    "localSha256": "aa385ec059b96a9f0ac01f93c0513da93a63b2cf0c37487e4669a2863f28930a"
+    "localSha256": "aa385ec059b96a9f0ac01f93c0513da93a63b2cf0c37487e4669a2863f28930a",
+    "width": 1595,
+    "height": 545,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "abdomen-appendicitis-06",
@@ -1482,7 +1902,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "d1ba9a089925efab16f97fb2a68308a542aeb01d",
-    "localSha256": "7a8d5f0ab188ab848e2a9fe0be2c65a614d51fdb27c345036b6eb33b5cdb1d59"
+    "localSha256": "7a8d5f0ab188ab848e2a9fe0be2c65a614d51fdb27c345036b6eb33b5cdb1d59",
+    "width": 961,
+    "height": 756,
+    "retrieval": "category",
+    "qualityScore": 26
   },
   {
     "id": "abdomen-appendicitis-07",
@@ -1496,7 +1920,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "6421087b6b82bf5fc877d0a04961b7f1a8f071eb",
-    "localSha256": "f461acb77c8a11067e344c67eb2b98630650276e9d0b51179ff9408008871cfb"
+    "localSha256": "f461acb77c8a11067e344c67eb2b98630650276e9d0b51179ff9408008871cfb",
+    "width": 1381,
+    "height": 1428,
+    "retrieval": "search",
+    "qualityScore": 23
   },
   {
     "id": "abdomen-appendicitis-08",
@@ -1510,7 +1938,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "b445f5f1ba37a5373032aa0d0190182ec9cafec0",
-    "localSha256": "ee303acdbc1c409669d6e7235418a04d8c53003cfdd3d29b2ba6d713ced880b4"
+    "localSha256": "ee303acdbc1c409669d6e7235418a04d8c53003cfdd3d29b2ba6d713ced880b4",
+    "width": 512,
+    "height": 512,
+    "retrieval": "search",
+    "qualityScore": 21
   },
   {
     "id": "abdomen-appendicitis-09",
@@ -1524,7 +1956,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "db8a625b445d5528d8f76813676f42b474bdac38",
-    "localSha256": "c1070f23f7d813a10d1555d401562c14cfce0355c25fc631ffd61eef56378119"
+    "localSha256": "c1070f23f7d813a10d1555d401562c14cfce0355c25fc631ffd61eef56378119",
+    "width": 1037,
+    "height": 968,
+    "retrieval": "category",
+    "qualityScore": 16
   },
   {
     "id": "abdomen-cholelithiasis-01",
@@ -1538,7 +1974,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "a5ee68b7f51251b0cc792cb3d41ca8c2d16e7a04",
-    "localSha256": "df7adeef52b4cfb867bfbb9ca2330a69f0026532289cb880dd3d1953eb6d1b9a"
+    "localSha256": "df7adeef52b4cfb867bfbb9ca2330a69f0026532289cb880dd3d1953eb6d1b9a",
+    "width": 420,
+    "height": 364,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "abdomen-cholelithiasis-02",
@@ -1552,7 +1992,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "originalSha1": "24eb45053c40c4cecd72e4c157d829c8ebfd06ba",
-    "localSha256": "864afb634e5c4f51a1c82a6d5ccc289f3c7b3002e091746bf4c3a1c57a98191b"
+    "localSha256": "864afb634e5c4f51a1c82a6d5ccc289f3c7b3002e091746bf4c3a1c57a98191b",
+    "width": 800,
+    "height": 588,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "abdomen-cholelithiasis-03",
@@ -1566,7 +2010,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "3a718debf3727001edfffd13deb9e6dab3abc70e",
-    "localSha256": "98a8783011ba3042d5fc89ab3dad2e055884d88859b3d915fb67bfb8f6862846"
+    "localSha256": "98a8783011ba3042d5fc89ab3dad2e055884d88859b3d915fb67bfb8f6862846",
+    "width": 784,
+    "height": 576,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "abdomen-cholelithiasis-04",
@@ -1580,7 +2028,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "originalSha1": "4b53e6e2027e7b6072fe919311c5e035c5a9602f",
-    "localSha256": "1c4cb78ab39c3d13cf4863b355c4bc02cbfaf2795da643e7f0c3ae1f08712641"
+    "localSha256": "1c4cb78ab39c3d13cf4863b355c4bc02cbfaf2795da643e7f0c3ae1f08712641",
+    "width": 1378,
+    "height": 1386,
+    "retrieval": "category",
+    "qualityScore": 21
   },
   {
     "id": "abdomen-cholelithiasis-05",
@@ -1594,7 +2046,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "cdfee5e2dd128c99c8d3476a7aaaac38d02a6c6e",
-    "localSha256": "9154fe777b7ef1b14b9d9de3e96a47fa1cc3bfc0ab3125ec8bb51d960fd7aea2"
+    "localSha256": "9154fe777b7ef1b14b9d9de3e96a47fa1cc3bfc0ab3125ec8bb51d960fd7aea2",
+    "width": 800,
+    "height": 600,
+    "retrieval": "category",
+    "qualityScore": 18
   },
   {
     "id": "abdomen-cholelithiasis-06",
@@ -1608,7 +2064,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "5abc9ab7b02d1970d5b4a976d3598242ca37f8a1",
-    "localSha256": "b789162b7a54d64684abec64ad0cac63255d4a6677254abf7d00d74e44cba825"
+    "localSha256": "b789162b7a54d64684abec64ad0cac63255d4a6677254abf7d00d74e44cba825",
+    "width": 800,
+    "height": 600,
+    "retrieval": "category",
+    "qualityScore": 18
   },
   {
     "id": "abdomen-cholelithiasis-07",
@@ -1622,7 +2082,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "003b401ec693e989a7c5b24bda2ebe2bf69488b6",
-    "localSha256": "75309c65192b5731aa42bd451b6849cd967cfcc03d49f204393033b23ee301db"
+    "localSha256": "75309c65192b5731aa42bd451b6849cd967cfcc03d49f204393033b23ee301db",
+    "width": 800,
+    "height": 600,
+    "retrieval": "category",
+    "qualityScore": 18
   },
   {
     "id": "abdomen-hydronephrosis-01",
@@ -1636,7 +2100,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "5b33e31a16b5dea710bc3108a68e40f84f810e2d",
-    "localSha256": "08b33d75d68b674891f6a8b47795dd5588287f2bc269a789012623f39d1cd162"
+    "localSha256": "08b33d75d68b674891f6a8b47795dd5588287f2bc269a789012623f39d1cd162",
+    "width": 919,
+    "height": 692,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "abdomen-hydronephrosis-02",
@@ -1650,7 +2118,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.5",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
     "originalSha1": "e44bc0e3de71da5238c3ec5f50b2584f47832dad",
-    "localSha256": "01dd5ce6238a21014e68a83bf371c02e72c8efd0fa8e624f2cfe2074d40582b7"
+    "localSha256": "01dd5ce6238a21014e68a83bf371c02e72c8efd0fa8e624f2cfe2074d40582b7",
+    "width": 438,
+    "height": 359,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "abdomen-hydronephrosis-03",
@@ -1664,7 +2136,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "8bc3882751211ff221875cc8677c3837a7a76a14",
-    "localSha256": "625eaad04a01cb998f07deb913c94e13533f846ab8b6e0928dadac3eab15672a"
+    "localSha256": "625eaad04a01cb998f07deb913c94e13533f846ab8b6e0928dadac3eab15672a",
+    "width": 778,
+    "height": 597,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "abdomen-hydronephrosis-04",
@@ -1678,7 +2154,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "7e4516c07e6ec714c992f479eac722408d12dd56",
-    "localSha256": "f6da892afe7e554f0f127d187e47557ada6290a64a7c048eb3e0535db035abe6"
+    "localSha256": "f6da892afe7e554f0f127d187e47557ada6290a64a7c048eb3e0535db035abe6",
+    "width": 8282,
+    "height": 3053,
+    "retrieval": "search",
+    "qualityScore": 23
   },
   {
     "id": "abdomen-hydronephrosis-05",
@@ -1692,7 +2172,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "bcccc713b1c7bc893d0e6dcd02b123e010ba9eb3",
-    "localSha256": "c69b0b188f571f6520ee27140f506170ec37ccf6d9f2cb5b2c802392d565bfd5"
+    "localSha256": "c69b0b188f571f6520ee27140f506170ec37ccf6d9f2cb5b2c802392d565bfd5",
+    "width": 3521,
+    "height": 2538,
+    "retrieval": "search",
+    "qualityScore": 23
   },
   {
     "id": "abdomen-diverticulitis-01",
@@ -1706,7 +2190,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "19f3dc3ad4afd453613517da54dffb11c2bedfae",
-    "localSha256": "1ee2e3c66d42c47a84a27cf9283fef9ecb32dbdc44d8dfeca7b7ced685dea298"
+    "localSha256": "1ee2e3c66d42c47a84a27cf9283fef9ecb32dbdc44d8dfeca7b7ced685dea298",
+    "width": 1036,
+    "height": 716,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "abdomen-diverticulitis-02",
@@ -1720,7 +2208,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "9bfb05a471af11426d60d95c3ff3ad78f8c2936b",
-    "localSha256": "30f55bf3b7ff6c631f4f43927db4e5bbf04d9dbdfa6f524be9f08e68c7a71e34"
+    "localSha256": "30f55bf3b7ff6c631f4f43927db4e5bbf04d9dbdfa6f524be9f08e68c7a71e34",
+    "width": 1092,
+    "height": 834,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "abdomen-diverticulitis-03",
@@ -1734,7 +2226,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "280fa1497e6193620ae11c041f389af5b41a7a7f",
-    "localSha256": "eef911fdfeb609acd3e47ecda70820aa8b2f3aab79353575d27044aa60e9c88b"
+    "localSha256": "eef911fdfeb609acd3e47ecda70820aa8b2f3aab79353575d27044aa60e9c88b",
+    "width": 1046,
+    "height": 850,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "abdomen-diverticulitis-04",
@@ -1748,7 +2244,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "136dabc1efa5b391bed2404a1c021c7d8c2ceff8",
-    "localSha256": "a7a5e4073a13c9e77c5d601864cb4394109fcee543729e7d43e80d9a91482180"
+    "localSha256": "a7a5e4073a13c9e77c5d601864cb4394109fcee543729e7d43e80d9a91482180",
+    "width": 1143,
+    "height": 877,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "abdomen-diverticulitis-05",
@@ -1762,7 +2262,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "5a508691e0baa08266de771f553c06593078e279",
-    "localSha256": "a448d31c3611b8bda8885370eb211c94d4515b3306a5fd592c678e6e788ba7f4"
+    "localSha256": "a448d31c3611b8bda8885370eb211c94d4515b3306a5fd592c678e6e788ba7f4",
+    "width": 1281,
+    "height": 982,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "abdomen-diverticulitis-06",
@@ -1776,7 +2280,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "60a964ff2262fd5520643b791f3798e93ab02685",
-    "localSha256": "34992ab9c48c66ebae7aceec7646eefb1e9d5b604690675e4532dea5de8be020"
+    "localSha256": "34992ab9c48c66ebae7aceec7646eefb1e9d5b604690675e4532dea5de8be020",
+    "width": 1179,
+    "height": 1008,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "abdomen-diverticulitis-07",
@@ -1790,7 +2298,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "4ea7e26a030b1b1eac045f32e02520c486c12451",
-    "localSha256": "34aa3aa857583f9525b930f07967b5405ba51b2c587fc9df618a540e26c9aca3"
+    "localSha256": "34aa3aa857583f9525b930f07967b5405ba51b2c587fc9df618a540e26c9aca3",
+    "width": 1530,
+    "height": 1107,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "abdomen-diverticulitis-08",
@@ -1804,7 +2316,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "79b8f7d62bdf44261cd49886a7390bb85ce68f79",
-    "localSha256": "c62df3d4d3dce633b577f830ddebfa34a1ae58de9136d7cb3b0b91b7ed53061a"
+    "localSha256": "c62df3d4d3dce633b577f830ddebfa34a1ae58de9136d7cb3b0b91b7ed53061a",
+    "width": 1365,
+    "height": 1080,
+    "retrieval": "category",
+    "qualityScore": 26
   },
   {
     "id": "abdomen-hcc-01",
@@ -1818,7 +2334,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "c53a04be6a3b0990526e4a91aa0de4a02f2d914d",
-    "localSha256": "1a42172c0a97922a742891e9649b39a85d7c95d3d7e75a12fb35cf4a6829bf94"
+    "localSha256": "1a42172c0a97922a742891e9649b39a85d7c95d3d7e75a12fb35cf4a6829bf94",
+    "width": 943,
+    "height": 709,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "abdomen-hcc-02",
@@ -1832,7 +2352,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "f0da7083527edabf281400f49b3600340bd8b673",
-    "localSha256": "27655a751b2a57cf4221bc5bf3b94aadd6dda2bc6a93c3cc1af6e3ef2034d4eb"
+    "localSha256": "27655a751b2a57cf4221bc5bf3b94aadd6dda2bc6a93c3cc1af6e3ef2034d4eb",
+    "width": 791,
+    "height": 333,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "abdomen-hcc-03",
@@ -1846,7 +2370,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "6087db924498133e04d442a2e63afadc74c48b76",
-    "localSha256": "28e9b0b9f698635d22c30114e63d7d5e615001082bb94701e67fefce5b526ed4"
+    "localSha256": "28e9b0b9f698635d22c30114e63d7d5e615001082bb94701e67fefce5b526ed4",
+    "width": 2613,
+    "height": 1497,
+    "retrieval": "category",
+    "qualityScore": 21
   },
   {
     "id": "abdomen-hcc-04",
@@ -1860,7 +2388,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "69d031662e7b0e8579c71b64e4668444bf79073e",
-    "localSha256": "848b0686a8284334e42034012973145af0e4460fd3de7a4bfda49181a2b472fe"
+    "localSha256": "848b0686a8284334e42034012973145af0e4460fd3de7a4bfda49181a2b472fe",
+    "width": 3071,
+    "height": 1297,
+    "retrieval": "category",
+    "qualityScore": 21
   },
   {
     "id": "abdomen-aaa-01",
@@ -1874,7 +2406,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "530e8f198f87b10006de2df9148aa89d6b8041b9",
-    "localSha256": "daaadd50aa71801ae6470d83e9f62cc17ace82eb5e81f8203bbaf7f257f74648"
+    "localSha256": "daaadd50aa71801ae6470d83e9f62cc17ace82eb5e81f8203bbaf7f257f74648",
+    "width": 2373,
+    "height": 2289,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "abdomen-aaa-02",
@@ -1888,7 +2424,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "973c4c3f07e84edb5298b620b02f9421467d7507",
-    "localSha256": "597ee385e40c969467cac6c10bcfb896dc3c1ade40f5f1da6028c9cc6efad4f2"
+    "localSha256": "597ee385e40c969467cac6c10bcfb896dc3c1ade40f5f1da6028c9cc6efad4f2",
+    "width": 3069,
+    "height": 2110,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "abdomen-aaa-03",
@@ -1902,7 +2442,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "8e69ce7da99bb91f37aae3b3e943dc8afa1bf6d5",
-    "localSha256": "a614c88f68080e59ae9ef55cf16cfab2618068e32e5613432dcb8ab2bf24fa75"
+    "localSha256": "a614c88f68080e59ae9ef55cf16cfab2618068e32e5613432dcb8ab2bf24fa75",
+    "width": 440,
+    "height": 493,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "abdomen-aaa-04",
@@ -1916,7 +2460,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "9b01dc3e2b40fea68fd6139ff89cff3f083610df",
-    "localSha256": "0da3f0069203e723827dc99e33bb82bbd075400553f3df47c573292794df61d8"
+    "localSha256": "0da3f0069203e723827dc99e33bb82bbd075400553f3df47c573292794df61d8",
+    "width": 460,
+    "height": 900,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "abdomen-aaa-05",
@@ -1930,7 +2478,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "59b353ade0adee0f333cf993a84aced6549b64b4",
-    "localSha256": "7355122429ef772081f5f5094a81216d103d2433e78e6739626ee0c9b7ca7796"
+    "localSha256": "7355122429ef772081f5f5094a81216d103d2433e78e6739626ee0c9b7ca7796",
+    "width": 1144,
+    "height": 965,
+    "retrieval": "category",
+    "qualityScore": 26
   },
   {
     "id": "abdomen-aaa-06",
@@ -1944,7 +2496,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "73542256d70d86a39343dcb31bb38dce41e58d3d",
-    "localSha256": "a543b7dc9add0af08ea8511c59cd19386a2a9b0a06b3f67db4346847d630a74a"
+    "localSha256": "a543b7dc9add0af08ea8511c59cd19386a2a9b0a06b3f67db4346847d630a74a",
+    "width": 1115,
+    "height": 998,
+    "retrieval": "category",
+    "qualityScore": 26
   },
   {
     "id": "abdomen-aaa-07",
@@ -1958,7 +2514,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "33b092fbf2289eabccecd14d9785a42da97290a1",
-    "localSha256": "33619a1adce681cb87150d8b68f87a9b03ff5534d302a06af14b50518a096bac"
+    "localSha256": "33619a1adce681cb87150d8b68f87a9b03ff5534d302a06af14b50518a096bac",
+    "width": 1260,
+    "height": 604,
+    "retrieval": "category",
+    "qualityScore": 21
   },
   {
     "id": "abdomen-renal-cyst-01",
@@ -1972,7 +2532,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "26f037293cd01d388f830feb6e046595dbd57772",
-    "localSha256": "6e09071e5efc45df6e62e8ebb2cf0ac34f087e0db894b91c05646422761426bf"
+    "localSha256": "6e09071e5efc45df6e62e8ebb2cf0ac34f087e0db894b91c05646422761426bf",
+    "width": 960,
+    "height": 660,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "abdomen-renal-cyst-02",
@@ -1986,7 +2550,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "89ba9c80db52a42ddae221e525f0620776104e36",
-    "localSha256": "4f4b680e0bf65745cb3ee8d6553b2133f783527a54191aa2ba0354557f505dae"
+    "localSha256": "4f4b680e0bf65745cb3ee8d6553b2133f783527a54191aa2ba0354557f505dae",
+    "width": 650,
+    "height": 560,
+    "retrieval": "category",
+    "qualityScore": 24
   },
   {
     "id": "abdomen-renal-cyst-03",
@@ -2000,7 +2568,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "9eb2234d900e9336cc4f04857356fd1da9419829",
-    "localSha256": "34658345bb50eaca123955d80f88f16c6228ea31c25f0c2702373e80e05ea4f1"
+    "localSha256": "34658345bb50eaca123955d80f88f16c6228ea31c25f0c2702373e80e05ea4f1",
+    "width": 1552,
+    "height": 970,
+    "retrieval": "search",
+    "qualityScore": 23
   },
   {
     "id": "abdomen-renal-cyst-04",
@@ -2014,7 +2586,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "813f598cb74c1350402e42869e2ac5ecfc896fcf",
-    "localSha256": "ef4d7e4858e3970d827635bd6c24c73e01ecbee9ceb5739f9dc73244965e315c"
+    "localSha256": "ef4d7e4858e3970d827635bd6c24c73e01ecbee9ceb5739f9dc73244965e315c",
+    "width": 650,
+    "height": 560,
+    "retrieval": "category",
+    "qualityScore": 16
   },
   {
     "id": "abdomen-renal-cyst-05",
@@ -2028,7 +2604,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "bf6ce02e4070f0954094e28b074a7e0daab6aafe",
-    "localSha256": "426a9919c7727c2d2af28e99c7743bb8ae04a7da132f4dc5050dba2d23988a3f"
+    "localSha256": "426a9919c7727c2d2af28e99c7743bb8ae04a7da132f4dc5050dba2d23988a3f",
+    "width": 650,
+    "height": 560,
+    "retrieval": "category",
+    "qualityScore": 16
   },
   {
     "id": "abdomen-renal-cyst-06",
@@ -2042,7 +2622,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "d97e3d1262a1394537d5e6ea71c0e8468a4f3efd",
-    "localSha256": "2a748062a266c060c426bf4874930d163d8bda0e38d3a49980b9b5626758f095"
+    "localSha256": "2a748062a266c060c426bf4874930d163d8bda0e38d3a49980b9b5626758f095",
+    "width": 650,
+    "height": 560,
+    "retrieval": "category",
+    "qualityScore": 16
   },
   {
     "id": "abdomen-renal-cyst-07",
@@ -2056,7 +2640,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "dafd1a41ec42cc811c402abbf6e98f46783d78fd",
-    "localSha256": "4923df0c844e1d3672cff0a33ff8c9e3abe649e26a0295f731a39f691a28ec5a"
+    "localSha256": "4923df0c844e1d3672cff0a33ff8c9e3abe649e26a0295f731a39f691a28ec5a",
+    "width": 650,
+    "height": 560,
+    "retrieval": "category",
+    "qualityScore": 16
   },
   {
     "id": "abdomen-renal-cyst-08",
@@ -2070,7 +2658,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "8c20913cad9d036fecc4d47cb6076c6253e2f895",
-    "localSha256": "bbf3237bf126e73dcaf7506cda5455aef5a71deaea83636d2691d5dae5f5c115"
+    "localSha256": "bbf3237bf126e73dcaf7506cda5455aef5a71deaea83636d2691d5dae5f5c115",
+    "width": 650,
+    "height": 560,
+    "retrieval": "category",
+    "qualityScore": 16
   },
   {
     "id": "abdomen-gallbladder-polyp-01",
@@ -2084,7 +2676,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "7ef2be4e8f072378744c493c529af6901149f463",
-    "localSha256": "07bd44e7336b0c81bf41f2899ff75dc62749171bd44ae7bc8951b92270b2d202"
+    "localSha256": "07bd44e7336b0c81bf41f2899ff75dc62749171bd44ae7bc8951b92270b2d202",
+    "width": 773,
+    "height": 579,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "abdomen-gallbladder-polyp-02",
@@ -2098,7 +2694,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "5474d276c878c0c6238a86ffe05f8961722395b5",
-    "localSha256": "7988ef8206ddd008a956b007c8009f81f8421e1e454a99c7ec32885889dbca7c"
+    "localSha256": "7988ef8206ddd008a956b007c8009f81f8421e1e454a99c7ec32885889dbca7c",
+    "width": 793,
+    "height": 896,
+    "retrieval": "category",
+    "qualityScore": 18
   },
   {
     "id": "bone-hip-fracture-01",
@@ -2112,7 +2712,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "04eb5ef1e323111ecd5de31f7ffd083c4c1dd75d",
-    "localSha256": "8bf501536da8049e57793ebcd32b58065f56ae2edc6c06cc1d2d90663b3e6365"
+    "localSha256": "8bf501536da8049e57793ebcd32b58065f56ae2edc6c06cc1d2d90663b3e6365",
+    "width": 1589,
+    "height": 1123,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "bone-hip-fracture-02",
@@ -2126,7 +2730,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "originalSha1": "8f0d463a973a6c151480c2faf2ed4134199451f4",
-    "localSha256": "57fb4ce563a3ff40a567975445d7d7d3712e49e4ef602b2b695d5437dc32c599"
+    "localSha256": "57fb4ce563a3ff40a567975445d7d7d3712e49e4ef602b2b695d5437dc32c599",
+    "width": 1338,
+    "height": 1084,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "bone-hip-fracture-03",
@@ -2140,7 +2748,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "originalSha1": "4f0f82519c01f42885592f2ec0649f69882c112e",
-    "localSha256": "fde24a3b2e2a960257fa165468f4a52bb308216cddb00b44f294864172df4428"
+    "localSha256": "fde24a3b2e2a960257fa165468f4a52bb308216cddb00b44f294864172df4428",
+    "width": 1127,
+    "height": 761,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "bone-hip-fracture-04",
@@ -2154,7 +2766,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "originalSha1": "63621e1531f63eb9e9884166f749319dcd28f2f7",
-    "localSha256": "94e03fd58cb02f017e5ec412d5f8cf2e554f814ac6f43610628579883c3f7070"
+    "localSha256": "94e03fd58cb02f017e5ec412d5f8cf2e554f814ac6f43610628579883c3f7070",
+    "width": 1755,
+    "height": 1047,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "bone-hip-fracture-05",
@@ -2168,7 +2784,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "originalSha1": "1ca65334050ab3f744f855c4a40a8dcf93fa0a6f",
-    "localSha256": "6e4866b048956cce6823bd469e7fa7f519a282305f20b0a66b8fd6fc1f95bb30"
+    "localSha256": "6e4866b048956cce6823bd469e7fa7f519a282305f20b0a66b8fd6fc1f95bb30",
+    "width": 419,
+    "height": 408,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "bone-hip-fracture-06",
@@ -2182,7 +2802,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "8a8bf07a640f4b90f00e359eb629be39faeae60f",
-    "localSha256": "0a84421b7f000924717bfff8935f23ab628e40826607db81f83c0344022d665f"
+    "localSha256": "0a84421b7f000924717bfff8935f23ab628e40826607db81f83c0344022d665f",
+    "width": 531,
+    "height": 594,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "bone-hip-fracture-07",
@@ -2196,7 +2820,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "9689361983bec2e7d2ca6720e2adc2fef9d2d86a",
-    "localSha256": "822873e0907251996d0a962abad175c2383031566f1686859d4f15d44840b2b8"
+    "localSha256": "822873e0907251996d0a962abad175c2383031566f1686859d4f15d44840b2b8",
+    "width": 1397,
+    "height": 1117,
+    "retrieval": "category",
+    "qualityScore": 26
   },
   {
     "id": "bone-hip-fracture-08",
@@ -2210,7 +2838,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "originalSha1": "d240f8e8413b9ca11ab149b99401ae29af74f02e",
-    "localSha256": "a3ac198b4c7954d0bd6e7191078b854b67bb7d604a56e36be6b8bed5ecaf6d31"
+    "localSha256": "a3ac198b4c7954d0bd6e7191078b854b67bb7d604a56e36be6b8bed5ecaf6d31",
+    "width": 1342,
+    "height": 1086,
+    "retrieval": "category",
+    "qualityScore": 26
   },
   {
     "id": "bone-hip-fracture-09",
@@ -2224,7 +2856,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "originalSha1": "bec107bd4de548a83975134b8614c6bb4e3c1374",
-    "localSha256": "194026b80db15ebba71b27f6e7f00c38d18a0c46d4abda4538d8749167af8a1e"
+    "localSha256": "194026b80db15ebba71b27f6e7f00c38d18a0c46d4abda4538d8749167af8a1e",
+    "width": 2367,
+    "height": 1793,
+    "retrieval": "category",
+    "qualityScore": 21
   },
   {
     "id": "bone-ankle-fracture-01",
@@ -2238,7 +2874,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "9acb96f0374f4ca5803d89821e6e45160428bb80",
-    "localSha256": "566096b010d770d5eb3910df4f9bcdca9c850f31ac966d19f8fd8919424cf8b6"
+    "localSha256": "566096b010d770d5eb3910df4f9bcdca9c850f31ac966d19f8fd8919424cf8b6",
+    "width": 682,
+    "height": 846,
+    "retrieval": "search",
+    "qualityScore": 23
   },
   {
     "id": "bone-ankle-fracture-02",
@@ -2252,7 +2892,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "3fcb3c5e4a53adb5df35f94fc0addb96de0d6382",
-    "localSha256": "4f73292f0abc77bcf720efc95f04434f76768bf416c110eca8c95517923003f6"
+    "localSha256": "4f73292f0abc77bcf720efc95f04434f76768bf416c110eca8c95517923003f6",
+    "width": 811,
+    "height": 772,
+    "retrieval": "search",
+    "qualityScore": 13
   },
   {
     "id": "bone-clavicle-fracture-01",
@@ -2266,7 +2910,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "originalSha1": "8ca1fe9bb333533db52da9fac8c1cb12cfc5e3ac",
-    "localSha256": "f8c61aac3badfd20c58e915fee0f596e358f2d3eb8db46a4e77f4713084349c5"
+    "localSha256": "f8c61aac3badfd20c58e915fee0f596e358f2d3eb8db46a4e77f4713084349c5",
+    "width": 1477,
+    "height": 738,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "bone-clavicle-fracture-02",
@@ -2280,7 +2928,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "originalSha1": "135222ef0a85e8a7d2845caa68c9152cf5e30f04",
-    "localSha256": "c6c24bd83e117a419d81fbd61bd46f256634cf2f220af193a00102c8174b467d"
+    "localSha256": "c6c24bd83e117a419d81fbd61bd46f256634cf2f220af193a00102c8174b467d",
+    "width": 1600,
+    "height": 1200,
+    "retrieval": "category",
+    "qualityScore": 26
   },
   {
     "id": "bone-clavicle-fracture-03",
@@ -2294,7 +2946,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "originalSha1": "69338b0c8fc8cd6e41ef186733f5afd369a5bd30",
-    "localSha256": "dde840c03539b55ead70b5aae912966cc07f166e3e203fafb959aa247edb65c6"
+    "localSha256": "dde840c03539b55ead70b5aae912966cc07f166e3e203fafb959aa247edb65c6",
+    "width": 892,
+    "height": 446,
+    "retrieval": "category",
+    "qualityScore": 24
   },
   {
     "id": "bone-clavicle-fracture-04",
@@ -2308,7 +2964,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "9ca28200d1fadede51314d3b460eb9b774146aec",
-    "localSha256": "5bbceac1f4483be61e12d4fcd09edd9eaba73fcd41acab048e45438ad8513fc4"
+    "localSha256": "5bbceac1f4483be61e12d4fcd09edd9eaba73fcd41acab048e45438ad8513fc4",
+    "width": 751,
+    "height": 598,
+    "retrieval": "category",
+    "qualityScore": 24
   },
   {
     "id": "bone-clavicle-fracture-05",
@@ -2322,7 +2982,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "9e299e93c208f393d9528733c33f4f3ddeb9d123",
-    "localSha256": "b941c40661d48b224879de7b037dd6831bb6ee52be6fec923c45a6031976543c"
+    "localSha256": "b941c40661d48b224879de7b037dd6831bb6ee52be6fec923c45a6031976543c",
+    "width": 2054,
+    "height": 1438,
+    "retrieval": "category",
+    "qualityScore": 21
   },
   {
     "id": "bone-clavicle-fracture-06",
@@ -2336,7 +3000,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "b2e02264f90879bb9025aadd16f26aad7eb32c1c",
-    "localSha256": "d56b6e76385fa310f85b30b43d4a07115ae8ffa157cfd0b83b8878df59285a2e"
+    "localSha256": "d56b6e76385fa310f85b30b43d4a07115ae8ffa157cfd0b83b8878df59285a2e",
+    "width": 1915,
+    "height": 991,
+    "retrieval": "category",
+    "qualityScore": 21
   },
   {
     "id": "bone-distal-radius-01",
@@ -2350,7 +3018,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "18b1ee7059c43828a7338c620ec2914a5de5688d",
-    "localSha256": "9314137607287bc5de2aee0536b1407eaaa5c7e4bf3d313250ffff7d7e32510c"
+    "localSha256": "9314137607287bc5de2aee0536b1407eaaa5c7e4bf3d313250ffff7d7e32510c",
+    "width": 2070,
+    "height": 4283,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "bone-distal-radius-02",
@@ -2364,7 +3036,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "94fb8f3d17ff9ac59ea53673dd29109301c86c31",
-    "localSha256": "9b503dae48d633a090280620321a216a0b418813cd35532bee456d69172c8bdc"
+    "localSha256": "9b503dae48d633a090280620321a216a0b418813cd35532bee456d69172c8bdc",
+    "width": 494,
+    "height": 956,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "bone-distal-radius-03",
@@ -2378,7 +3054,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "ab9ba0e518151affc213182f6839016b537a0b21",
-    "localSha256": "21a56578a2c03194a5050ba0f8f2ae220808d95675050e426e6c8e38796a9679"
+    "localSha256": "21a56578a2c03194a5050ba0f8f2ae220808d95675050e426e6c8e38796a9679",
+    "width": 1494,
+    "height": 1513,
+    "retrieval": "category",
+    "qualityScore": 21
   },
   {
     "id": "bone-distal-radius-04",
@@ -2392,7 +3072,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "1b6fc476709562ba3a11144f79c94e36eeb8aef1",
-    "localSha256": "6787e34150b105c0404918f0bfd925a0e575d78190eff207b42eadb637ffcd29"
+    "localSha256": "6787e34150b105c0404918f0bfd925a0e575d78190eff207b42eadb637ffcd29",
+    "width": 611,
+    "height": 1054,
+    "retrieval": "category",
+    "qualityScore": 19
   },
   {
     "id": "bone-distal-radius-05",
@@ -2406,7 +3090,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "2edbadf4b0555213fe7b06676c553626509a42e4",
-    "localSha256": "8a403383b2cb6cdad49d6b10c31a6253c243694235264825199c38f288864032"
+    "localSha256": "8a403383b2cb6cdad49d6b10c31a6253c243694235264825199c38f288864032",
+    "width": 834,
+    "height": 948,
+    "retrieval": "category",
+    "qualityScore": 19
   },
   {
     "id": "bone-distal-radius-06",
@@ -2420,7 +3108,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "4ae0c21514be8400198d964b48d3d5c2a04467f3",
-    "localSha256": "b5d22ad8f1238ffa0b53eb6ace6918f56aff6080ba8f128deeff680a26992572"
+    "localSha256": "b5d22ad8f1238ffa0b53eb6ace6918f56aff6080ba8f128deeff680a26992572",
+    "width": 2304,
+    "height": 3072,
+    "retrieval": "category",
+    "qualityScore": 8
   },
   {
     "id": "bone-shoulder-dislocation-01",
@@ -2434,7 +3126,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "4b7af9b7766eba137a4d0ae442d6edf1a6966edf",
-    "localSha256": "c5167932e35c8f976551cd0043398a1d75e3a010ab77dc92d94b06f3da7aed80"
+    "localSha256": "c5167932e35c8f976551cd0043398a1d75e3a010ab77dc92d94b06f3da7aed80",
+    "width": 2217,
+    "height": 1692,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "bone-shoulder-dislocation-02",
@@ -2448,7 +3144,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "1b0dc8df3d29da6460fcd8935403db6e82535c54",
-    "localSha256": "861678b2f4100b7bba18d5b7acc24643a85e6b88b3394d04db4f7d7e770effdf"
+    "localSha256": "861678b2f4100b7bba18d5b7acc24643a85e6b88b3394d04db4f7d7e770effdf",
+    "width": 1350,
+    "height": 762,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "bone-shoulder-dislocation-03",
@@ -2462,7 +3162,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "4024f9761ae4909d7bd1c9819f5bf5868970c2c4",
-    "localSha256": "c0977617a609ae1b5121f65a42037f95b695b63d508c30d2cd8cec072bd1085d"
+    "localSha256": "c0977617a609ae1b5121f65a42037f95b695b63d508c30d2cd8cec072bd1085d",
+    "width": 824,
+    "height": 1038,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "bone-shoulder-dislocation-04",
@@ -2476,7 +3180,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "7ff15ec88201014de7ce87664b223d974314dc87",
-    "localSha256": "104a3cbf87e7a8b74f90c6a9f82112debe8d367c610e6376bc82af88b72ee3f3"
+    "localSha256": "104a3cbf87e7a8b74f90c6a9f82112debe8d367c610e6376bc82af88b72ee3f3",
+    "width": 1762,
+    "height": 1221,
+    "retrieval": "category",
+    "qualityScore": 26
   },
   {
     "id": "bone-shoulder-dislocation-05",
@@ -2490,7 +3198,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "c6edce49d8caaeb564585c4f36f82fa1a7619e4a",
-    "localSha256": "4d25b530807db95f87ea437c17f734b7c78c0725394af12fe9ae886318d88ced"
+    "localSha256": "4d25b530807db95f87ea437c17f734b7c78c0725394af12fe9ae886318d88ced",
+    "width": 1535,
+    "height": 1976,
+    "retrieval": "category",
+    "qualityScore": 19
   },
   {
     "id": "bone-shoulder-dislocation-06",
@@ -2504,7 +3216,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 2.5",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
     "originalSha1": "ae94ba52c53d27720295365538b67d6cae66ebda",
-    "localSha256": "2c34705d9482acb57dcbab02ec4193157d7eb1ab4d445358894dcfdd51c8e6fa"
+    "localSha256": "2c34705d9482acb57dcbab02ec4193157d7eb1ab4d445358894dcfdd51c8e6fa",
+    "width": 564,
+    "height": 470,
+    "retrieval": "category",
+    "qualityScore": 16
   },
   {
     "id": "bone-osteosarcoma-01",
@@ -2518,7 +3234,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "f68ba2d49ba281e5f580bf1a83d9166144c3ccc6",
-    "localSha256": "dbae365c296a000acc6cca5b173949c731c8fc7738aa9a6412739f096ba3e01e"
+    "localSha256": "dbae365c296a000acc6cca5b173949c731c8fc7738aa9a6412739f096ba3e01e",
+    "width": 800,
+    "height": 918,
+    "retrieval": "category",
+    "qualityScore": 26
   },
   {
     "id": "bone-osteosarcoma-02",
@@ -2532,7 +3252,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "13473e8f79e20b35a11f2f2e3175cc89b715a798",
-    "localSha256": "613a06eee967ed5dec8f77fcdfcba94f4d09198360cab3f6bee7e41c47b15d76"
+    "localSha256": "613a06eee967ed5dec8f77fcdfcba94f4d09198360cab3f6bee7e41c47b15d76",
+    "width": 2173,
+    "height": 2665,
+    "retrieval": "category",
+    "qualityScore": 18
   },
   {
     "id": "bone-rheumatoid-01",
@@ -2546,7 +3270,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "e2e3b3410f6452ae36f8f574e5a6388894c66d89",
-    "localSha256": "09d995b1b7abe9b9d70d1915618dffcb39070c788d4ca01590ee92a8a7a0ac0a"
+    "localSha256": "09d995b1b7abe9b9d70d1915618dffcb39070c788d4ca01590ee92a8a7a0ac0a",
+    "width": 1128,
+    "height": 1921,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "bone-scoliosis-01",
@@ -2560,7 +3288,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "36643e4fbb095e3ec7888687754160f55c46f5a6",
-    "localSha256": "4a612c298708fe5b9323424f0e9202b1d1cb4b62d46e2795a48bbb8eb01d2ae7"
+    "localSha256": "4a612c298708fe5b9323424f0e9202b1d1cb4b62d46e2795a48bbb8eb01d2ae7",
+    "width": 891,
+    "height": 1990,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "bone-scoliosis-02",
@@ -2574,7 +3306,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "1be86d3aea8fe7306c03683f9ed7ec3c35d41c0a",
-    "localSha256": "b46b1c12acc5262f26955fc82714be20405157821ba159b386330b9ec5184ff5"
+    "localSha256": "b46b1c12acc5262f26955fc82714be20405157821ba159b386330b9ec5184ff5",
+    "width": 1296,
+    "height": 1560,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "bone-scoliosis-03",
@@ -2588,7 +3324,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "0da148736d779e88d04395d9557102be37199831",
-    "localSha256": "3dc12262c0b9882f9baec79daeb47429cdda28eda0c1a66be33e2782a228f583"
+    "localSha256": "3dc12262c0b9882f9baec79daeb47429cdda28eda0c1a66be33e2782a228f583",
+    "width": 712,
+    "height": 843,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "bone-scoliosis-04",
@@ -2602,7 +3342,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "b86710e1e0b106ddbd9c5f6de18f40ddb153b0f3",
-    "localSha256": "6a78486c71cc886253082dd7bd2fe44a2889fa909753112a412be3e20ac9d5aa"
+    "localSha256": "6a78486c71cc886253082dd7bd2fe44a2889fa909753112a412be3e20ac9d5aa",
+    "width": 885,
+    "height": 689,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "bone-scoliosis-05",
@@ -2616,7 +3360,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "498af2fea553164831027c923881f199068d973b",
-    "localSha256": "33597d7e4369ad93ccee4a8e0b97d6e42344f7f3f0e04cc4d65e52a53fe973ef"
+    "localSha256": "33597d7e4369ad93ccee4a8e0b97d6e42344f7f3f0e04cc4d65e52a53fe973ef",
+    "width": 814,
+    "height": 768,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "bone-scoliosis-06",
@@ -2630,7 +3378,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "a75c9bba47af17bbcc474412b1272e51d89fa014",
-    "localSha256": "29165e0105f953240d246f6f13c146d5eaea32dcafbe6112af547de7b80830e6"
+    "localSha256": "29165e0105f953240d246f6f13c146d5eaea32dcafbe6112af547de7b80830e6",
+    "width": 1125,
+    "height": 2025,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "bone-scoliosis-07",
@@ -2644,7 +3396,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "b8deb4000c9903bf99fc3e67384cc34f20523b5f",
-    "localSha256": "c167c6aefe1ea6e89fabe81f28d4078d5152813b6d8d4f3e5667f8f22e92b7ad"
+    "localSha256": "c167c6aefe1ea6e89fabe81f28d4078d5152813b6d8d4f3e5667f8f22e92b7ad",
+    "width": 712,
+    "height": 830,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "bone-scoliosis-08",
@@ -2658,7 +3414,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "f5ebd23256b087d8e94dab0f98cad3903e619e10",
-    "localSha256": "47441ffbf90f00bf25d0295916e721070f680c0237a1fa607987e82806239e9d"
+    "localSha256": "47441ffbf90f00bf25d0295916e721070f680c0237a1fa607987e82806239e9d",
+    "width": 1936,
+    "height": 2592,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "bone-scoliosis-09",
@@ -2672,7 +3432,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "caab004288557dc05355f640e130c9c4a8a0c9c6",
-    "localSha256": "8d2f878e7aba8a017e0f93d5aa5f20020d936cca361c669011c720c0caa64f59"
+    "localSha256": "8d2f878e7aba8a017e0f93d5aa5f20020d936cca361c669011c720c0caa64f59",
+    "width": 458,
+    "height": 582,
+    "retrieval": "category",
+    "qualityScore": 27
   },
   {
     "id": "bone-scoliosis-10",
@@ -2686,7 +3450,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "c670342508e616a7602bcda8cc8e550c134230c5",
-    "localSha256": "139a58ad89bf347aa4761af17df22d4f5062d1d51445438f5756aa97ac33d5c2"
+    "localSha256": "139a58ad89bf347aa4761af17df22d4f5062d1d51445438f5756aa97ac33d5c2",
+    "width": 3017,
+    "height": 5051,
+    "retrieval": "category",
+    "qualityScore": 26
   },
   {
     "id": "bone-scoliosis-11",
@@ -2700,7 +3468,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "a477400dbedfe9bbcfe05ce0213be0bdaa67d56a",
-    "localSha256": "5d0961be7232ca0783b590aed7858d733ad1e6ce61302395b407d3ca6d2fad77"
+    "localSha256": "5d0961be7232ca0783b590aed7858d733ad1e6ce61302395b407d3ca6d2fad77",
+    "width": 880,
+    "height": 2140,
+    "retrieval": "category",
+    "qualityScore": 26
   },
   {
     "id": "bone-compression-fracture-01",
@@ -2714,7 +3486,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "f639e44dcf6e359a14d89ec33006203a804f1a2d",
-    "localSha256": "93d273f5a71a905d23cd33616f9934898113e370ab945c8ae8de86d94fbb6082"
+    "localSha256": "93d273f5a71a905d23cd33616f9934898113e370ab945c8ae8de86d94fbb6082",
+    "width": 2304,
+    "height": 3072,
+    "retrieval": "category",
+    "qualityScore": 19
   },
   {
     "id": "bone-compression-fracture-02",
@@ -2728,7 +3504,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "b6c2a974c48d303ed7a6847072d0013de69a9982",
-    "localSha256": "7316356f5e5d12e9828f116fc83c313f4f4413cf6af9a788389bc6cc53925c78"
+    "localSha256": "7316356f5e5d12e9828f116fc83c313f4f4413cf6af9a788389bc6cc53925c78",
+    "width": 612,
+    "height": 934,
+    "retrieval": "category",
+    "qualityScore": 16
   },
   {
     "id": "bone-tibia-fracture-01",
@@ -2742,7 +3522,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "8d1bf11bf93f1126200e2240869006e9bb2484d2",
-    "localSha256": "af628f752b91401a77f8f7dcd18b7857658eaf16ee0c0cd423f13dcd940a05e8"
+    "localSha256": "af628f752b91401a77f8f7dcd18b7857658eaf16ee0c0cd423f13dcd940a05e8",
+    "width": 1636,
+    "height": 2380,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "bone-tibia-fracture-02",
@@ -2756,7 +3540,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "a7dc79f0461c85c638094732cf90f0200db816a5",
-    "localSha256": "ab8ac3e295ad3aa2786295bf13e7061b53bb075726cfb580a07bb0133581854f"
+    "localSha256": "ab8ac3e295ad3aa2786295bf13e7061b53bb075726cfb580a07bb0133581854f",
+    "width": 536,
+    "height": 631,
+    "retrieval": "search",
+    "qualityScore": 21
   },
   {
     "id": "bone-tibia-fracture-03",
@@ -2770,7 +3558,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "e5798a78bc75dd62ebb769cc0bc86480b2e0cdcc",
-    "localSha256": "cf6b78fbf05f81ff2f8fd7a8e1bc7ea9af58b404a7c7df89a67da3583a2599af"
+    "localSha256": "cf6b78fbf05f81ff2f8fd7a8e1bc7ea9af58b404a7c7df89a67da3583a2599af",
+    "width": 556,
+    "height": 631,
+    "retrieval": "search",
+    "qualityScore": 21
   },
   {
     "id": "bone-tibia-fracture-04",
@@ -2784,7 +3576,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "d0276fa0c2a2d8be65f0cad58cced5da08a4f8a7",
-    "localSha256": "3cb416ed63ab0cb45d292524f2cce15944a8e5895ea0d84987c3335b8b276973"
+    "localSha256": "3cb416ed63ab0cb45d292524f2cce15944a8e5895ea0d84987c3335b8b276973",
+    "width": 1427,
+    "height": 949,
+    "retrieval": "category",
+    "qualityScore": 21
   },
   {
     "id": "bone-femur-fracture-01",
@@ -2798,7 +3594,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "260e7819b19e0c27b6130223b169951faaf63693",
-    "localSha256": "84d401269ce2d0f6a2ffc2b7aa37cef75abe9d157addd63e90823d6f1c2a27ba"
+    "localSha256": "84d401269ce2d0f6a2ffc2b7aa37cef75abe9d157addd63e90823d6f1c2a27ba",
+    "width": 1510,
+    "height": 1561,
+    "retrieval": "category",
+    "qualityScore": 29
   },
   {
     "id": "chest-bronchiectasis-01",
@@ -2812,7 +3612,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "9897cce337eaf46ba414a6b620bafce4ac9fa222",
-    "localSha256": "ee7ef9ad7524a02a0d8de7299fa81147443aef1bd03fce76fbeaf6cae4b2b7f9"
+    "localSha256": "ee7ef9ad7524a02a0d8de7299fa81147443aef1bd03fce76fbeaf6cae4b2b7f9",
+    "width": 1302,
+    "height": 958,
+    "retrieval": "curated-file",
+    "qualityScore": 40
   },
   {
     "id": "chest-emphysema-01",
@@ -2826,7 +3630,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "3dde828a175f7e0ffc35d17ebd97b47cfcc08e5f",
-    "localSha256": "0e58a1be3ad7b998bfaeea265ab97b3d05b183a60c95e769f8b7939f42a50a87"
+    "localSha256": "0e58a1be3ad7b998bfaeea265ab97b3d05b183a60c95e769f8b7939f42a50a87",
+    "width": 518,
+    "height": 398,
+    "retrieval": "curated-file",
+    "qualityScore": 40
   },
   {
     "id": "chest-pulmonary-fibrosis-01",
@@ -2840,7 +3648,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "d11380cc66749f42b216346fb50b2b2a9cf578f0",
-    "localSha256": "56251e87b1f9ae3c10c585f171a7559df5c183edebc2d9f26889e0729839a49b"
+    "localSha256": "56251e87b1f9ae3c10c585f171a7559df5c183edebc2d9f26889e0729839a49b",
+    "width": 3435,
+    "height": 2849,
+    "retrieval": "curated-file",
+    "qualityScore": 40
   },
   {
     "id": "chest-pericardial-effusion-01",
@@ -2854,7 +3666,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "702c2cbf02f0ffa41a726d6317a7f400f6a4c2b0",
-    "localSha256": "2593f3a7e52856f654f698b0ebab2e877ef28c8fc7c416903f848ea5a38eb76c"
+    "localSha256": "2593f3a7e52856f654f698b0ebab2e877ef28c8fc7c416903f848ea5a38eb76c",
+    "width": 930,
+    "height": 1007,
+    "retrieval": "curated-file",
+    "qualityScore": 40
   },
   {
     "id": "chest-thymoma-01",
@@ -2868,7 +3684,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "12f107c228046cca8cc153dd03ea50d13680911a",
-    "localSha256": "dc36458d421f29ee5235f2f18f220b2a70027a86d05aa4f0dab4a418b6098353"
+    "localSha256": "dc36458d421f29ee5235f2f18f220b2a70027a86d05aa4f0dab4a418b6098353",
+    "width": 858,
+    "height": 642,
+    "retrieval": "curated-file",
+    "qualityScore": 40
   },
   {
     "id": "chest-aortic-dissection-01",
@@ -2882,7 +3702,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "877730e406d37e6261c79b90f2e7c2e3b9a3141e",
-    "localSha256": "ea2fdec9a59594b0a88a09f96796c151736214a4d0d9c4b2de353c1cb5c29ed3"
+    "localSha256": "ea2fdec9a59594b0a88a09f96796c151736214a4d0d9c4b2de353c1cb5c29ed3",
+    "width": 1947,
+    "height": 734,
+    "retrieval": "curated-file",
+    "qualityScore": 40
   },
   {
     "id": "chest-hiatal-hernia-01",
@@ -2896,7 +3720,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "c7e05369e96a2515e468968e7674e4db3cbecfa2",
-    "localSha256": "6965f8ef7d108c2001f701e62a33e9f7d5f593f408f6e7600070f148a13c8115"
+    "localSha256": "6965f8ef7d108c2001f701e62a33e9f7d5f593f408f6e7600070f148a13c8115",
+    "width": 2312,
+    "height": 1194,
+    "retrieval": "curated-file",
+    "qualityScore": 40
   },
   {
     "id": "chest-pneumomediastinum-01",
@@ -2910,7 +3738,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "6ccdff0ce615e13ce6f801bbed5e3fe4f5a9d7c5",
-    "localSha256": "e7c9a469b550fc0b2c9fec3acc7ba804af1ca443519f8d86cd672690acc91462"
+    "localSha256": "e7c9a469b550fc0b2c9fec3acc7ba804af1ca443519f8d86cd672690acc91462",
+    "width": 1504,
+    "height": 1523,
+    "retrieval": "curated-file",
+    "qualityScore": 40
   },
   {
     "id": "chest-svc-syndrome-01",
@@ -2924,7 +3756,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "06cab131bfd8318ebe2c27ec9659f250bfc60c34",
-    "localSha256": "d239035e80f882fb6cf39c355f983dea0a6c70c9f71291a5a0d0236bac84586f"
+    "localSha256": "d239035e80f882fb6cf39c355f983dea0a6c70c9f71291a5a0d0236bac84586f",
+    "width": 1184,
+    "height": 885,
+    "retrieval": "curated-file",
+    "qualityScore": 40
   },
   {
     "id": "chest-lung-abscess-01",
@@ -2938,7 +3774,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "9cb9b5760e5e87b2381ea914818c3482a2400009",
-    "localSha256": "61aa8833d44ff6be68222a48538b8a907e67d9f0473f8d218fb291e97b652bdc"
+    "localSha256": "61aa8833d44ff6be68222a48538b8a907e67d9f0473f8d218fb291e97b652bdc",
+    "width": 907,
+    "height": 1456,
+    "retrieval": "curated-file",
+    "qualityScore": 40
   },
   {
     "id": "chest-new-lung-adenocarcinoma-01",
@@ -2952,7 +3792,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "8ec38ea69a6b1dff80ab6c638637a7a1410dd394",
-    "localSha256": "466c65caa9072d733f6653761e9f680cafa47fe071243149273634b9885d10bb"
+    "localSha256": "466c65caa9072d733f6653761e9f680cafa47fe071243149273634b9885d10bb",
+    "width": 1344,
+    "height": 1045,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-squamous-lung-cancer-01",
@@ -2966,7 +3810,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "originalSha1": "1bdd66ddd9d0acf97404c5eed5ccc50aa9817233",
-    "localSha256": "bc93565dad7110860d568df7297ccd2f5ccc277fb3e8a92fca209e8585e9d8e2"
+    "localSha256": "bc93565dad7110860d568df7297ccd2f5ccc277fb3e8a92fca209e8585e9d8e2",
+    "width": 512,
+    "height": 455,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-small-cell-lung-cancer-01",
@@ -2980,7 +3828,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "1bb14a1a78d1de99eb3456c4f52609ea131083ba",
-    "localSha256": "227e329052761ad1f1b73d4ccf3ed0d6deeb52ec94c1c573f4b2b571cd6163b1"
+    "localSha256": "227e329052761ad1f1b73d4ccf3ed0d6deeb52ec94c1c573f4b2b571cd6163b1",
+    "width": 400,
+    "height": 300,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-pulmonary-nodule-01",
@@ -2994,7 +3846,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "5193f1c944f6bb0bb9620bf5f7a766a2431d9228",
-    "localSha256": "eeecfe55409e3ff0e49f20bb01ed0580bc273762a32b7a07b2c784b763673bc8"
+    "localSha256": "eeecfe55409e3ff0e49f20bb01ed0580bc273762a32b7a07b2c784b763673bc8",
+    "width": 1188,
+    "height": 1200,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-lung-metastases-01",
@@ -3008,7 +3864,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "428851c5b09e6cf9534c2d18bbead8bd5f078aa3",
-    "localSha256": "8a63116a4f355af0e5e211ee100ed470d3e144ba269bff05eedf3f59c73377ae"
+    "localSha256": "8a63116a4f355af0e5e211ee100ed470d3e144ba269bff05eedf3f59c73377ae",
+    "width": 3072,
+    "height": 2304,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-mesothelioma-01",
@@ -3022,7 +3882,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "5e450053fb502231fbe78eeebf4560af86518a5c",
-    "localSha256": "8a90981ea997f97ab46cdeac3609700729178d78034dec833058cb151e70c4e7"
+    "localSha256": "8a90981ea997f97ab46cdeac3609700729178d78034dec833058cb151e70c4e7",
+    "width": 1024,
+    "height": 1024,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-aspergilloma-01",
@@ -3036,7 +3900,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "originalSha1": "7bb7f81df971a49a0bd360591724cbb0661c4aff",
-    "localSha256": "23b68722fad75e4894d435b7f446b21d6f1bcd35ae4d232e86f4d71e04ac542d"
+    "localSha256": "23b68722fad75e4894d435b7f446b21d6f1bcd35ae4d232e86f4d71e04ac542d",
+    "width": 509,
+    "height": 445,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-invasive-aspergillosis-01",
@@ -3050,7 +3918,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "9fa777620774fd3e2dc2da36944e9e283a93416f",
-    "localSha256": "27db16ce7880bcba563610db5fde4ca1d8c880a94554504a73ba617a933c7310"
+    "localSha256": "27db16ce7880bcba563610db5fde4ca1d8c880a94554504a73ba617a933c7310",
+    "width": 346,
+    "height": 310,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-empyema-01",
@@ -3064,7 +3936,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "originalSha1": "801bc755fff39a797f88380ff745fcaad415d1ba",
-    "localSha256": "139d58ddd64da07074118227aec87086575b46a7ac4563462967e84b5f9d67e0"
+    "localSha256": "139d58ddd64da07074118227aec87086575b46a7ac4563462967e84b5f9d67e0",
+    "width": 650,
+    "height": 418,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-tetralogy-fallot-01",
@@ -3078,7 +3954,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "e4caf97c437d86720a90439819c7782634af9caa",
-    "localSha256": "be67c4617085778c82ffc4733f44b814c31e120cc958bcf40e1219aa8647c9b3"
+    "localSha256": "be67c4617085778c82ffc4733f44b814c31e120cc958bcf40e1219aa8647c9b3",
+    "width": 2204,
+    "height": 2619,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-dextrocardia-01",
@@ -3092,7 +3972,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "d0512df5fbbb9eeeea8f921a46bf9b9d750fdc43",
-    "localSha256": "cf3d8549fd9b93cb1e54675fe831d0f5481fa365caf2f14ee5147e43fd092157"
+    "localSha256": "cf3d8549fd9b93cb1e54675fe831d0f5481fa365caf2f14ee5147e43fd092157",
+    "width": 2067,
+    "height": 2370,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-pulmonary-sequestration-01",
@@ -3106,7 +3990,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "9ee13f6f42d91210065e0bb49aeb686381165397",
-    "localSha256": "f7792015994c70079e944f64872e5c827d138123625eccf817038afa075b403b"
+    "localSha256": "f7792015994c70079e944f64872e5c827d138123625eccf817038afa075b403b",
+    "width": 512,
+    "height": 512,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-morgagni-hernia-01",
@@ -3120,7 +4008,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "a05b9c29d9025756fc4969d71d151ce3524da088",
-    "localSha256": "7dae5a6dfefeddbb8c3ac0c20cbf20ff6fab18d2f2e68593931e65a93f0cd8e3"
+    "localSha256": "7dae5a6dfefeddbb8c3ac0c20cbf20ff6fab18d2f2e68593931e65a93f0cd8e3",
+    "width": 3068,
+    "height": 1648,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-morgagni-hernia-02",
@@ -3134,7 +4026,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "4c6ad1be00a945af353a47755caa5b400d4afb8a",
-    "localSha256": "f968f7252511b788ce391d222c91adf284ca940602f0d8e0c9d4bb2185862fc6"
+    "localSha256": "f968f7252511b788ce391d222c91adf284ca940602f0d8e0c9d4bb2185862fc6",
+    "width": 705,
+    "height": 624,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-bochdalek-hernia-01",
@@ -3148,7 +4044,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "c7720051723c653f787b9d64c5e3d818470d3f09",
-    "localSha256": "6785402e4d0b4ab0b842e76fa14ac1a07dafbbaa9b09a31abc75fe00e9b69c1c"
+    "localSha256": "6785402e4d0b4ab0b842e76fa14ac1a07dafbbaa9b09a31abc75fe00e9b69c1c",
+    "width": 1492,
+    "height": 704,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-pulmonary-contusion-01",
@@ -3162,7 +4062,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "a5601c65ee63324c9b5605e6180de6e120bd398c",
-    "localSha256": "6d54007f6f63cbc4f9d850547a2549deac23bd54f6a03d5869c05f9ee3a5bff0"
+    "localSha256": "6d54007f6f63cbc4f9d850547a2549deac23bd54f6a03d5869c05f9ee3a5bff0",
+    "width": 600,
+    "height": 449,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-pulmonary-contusion-02",
@@ -3176,7 +4080,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "948ad3fc3860b2f129bb3f8fb1777a53556348a9",
-    "localSha256": "addd8011a7def5e1e916efc04bc47001a150a380cc7e6b0d5ac4bdaa37f51f24"
+    "localSha256": "addd8011a7def5e1e916efc04bc47001a150a380cc7e6b0d5ac4bdaa37f51f24",
+    "width": 1892,
+    "height": 1410,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-sternal-fracture-01",
@@ -3190,7 +4098,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "92d2256a023682202486ead64ac1a1aa81608c7a",
-    "localSha256": "69d397c0fec5b8c4945444cbe9fba2f1c7976c27fc2dfd26ea5a2c3915d9661b"
+    "localSha256": "69d397c0fec5b8c4945444cbe9fba2f1c7976c27fc2dfd26ea5a2c3915d9661b",
+    "width": 512,
+    "height": 512,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-pectus-excavatum-01",
@@ -3204,7 +4116,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "originalSha1": "0683177c1b11754d8ed3e9ff8184760bdaa2159f",
-    "localSha256": "a5c728d8f11d0e22018817fce4b17bbfd221f264ea8ee19472b5e953c475d822"
+    "localSha256": "a5c728d8f11d0e22018817fce4b17bbfd221f264ea8ee19472b5e953c475d822",
+    "width": 512,
+    "height": 512,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-pectus-excavatum-02",
@@ -3218,7 +4134,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "73603530ffb9fec749e9ee93a7ef27f6699fbdd8",
-    "localSha256": "bdce23545795274326113dd497cbdcaee2e858c7f0b9365b62694b31669f7ca8"
+    "localSha256": "bdce23545795274326113dd497cbdcaee2e858c7f0b9365b62694b31669f7ca8",
+    "width": 512,
+    "height": 385,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-achalasia-01",
@@ -3232,7 +4152,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "45af2e309037493e2a6db30325556b0ab999197a",
-    "localSha256": "15a2ba4facb170572ecaacd59ca492480db0974087402ad73fe2f883959ce5c7"
+    "localSha256": "15a2ba4facb170572ecaacd59ca492480db0974087402ad73fe2f883959ce5c7",
+    "width": 1587,
+    "height": 2336,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-achalasia-02",
@@ -3246,7 +4170,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "d51ed6c3d9e9607cddc6c839c19e8d09932f6419",
-    "localSha256": "db5eb1ff84e0be57903f55211d239dc18f0846924ee040067fc7d698541ec45c"
+    "localSha256": "db5eb1ff84e0be57903f55211d239dc18f0846924ee040067fc7d698541ec45c",
+    "width": 633,
+    "height": 1108,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-esophageal-cancer-01",
@@ -3260,7 +4188,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "0a3bb5f2fd588b6091e5b12f8ffbb244b9413b05",
-    "localSha256": "9be973bce7a402e4112d2672cdfc3745bd2c528124cfbeb0401e19026f6e3eab"
+    "localSha256": "9be973bce7a402e4112d2672cdfc3745bd2c528124cfbeb0401e19026f6e3eab",
+    "width": 935,
+    "height": 675,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-esophageal-cancer-02",
@@ -3274,7 +4206,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "e7d80ab05efd94d80451d8d974e8e31270a69491",
-    "localSha256": "c2653a341d6e09427a12b6f23d6b5db6a3d293005b7227c6868f0b4434705cf7"
+    "localSha256": "c2653a341d6e09427a12b6f23d6b5db6a3d293005b7227c6868f0b4434705cf7",
+    "width": 1680,
+    "height": 2426,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-new-small-cell-lung-cancer-02",
@@ -3288,7 +4224,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "originalSha1": "cbba9f547c7373465144242e407a28eea07f4d5b",
-    "localSha256": "8cfe5a45f43267bf73a78be6de87776a23643047951ad5cbd1cb71494478b680"
+    "localSha256": "8cfe5a45f43267bf73a78be6de87776a23643047951ad5cbd1cb71494478b680",
+    "width": 512,
+    "height": 439,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-pneumothorax-06",
@@ -3302,7 +4242,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "b68131defe365c98df6ac17ce3f84950625d1db8",
-    "localSha256": "0ddca4f3bc82a02296628e7df6f530a04bb47ece1a0c3314b1302ed015873df1"
+    "localSha256": "0ddca4f3bc82a02296628e7df6f530a04bb47ece1a0c3314b1302ed015873df1",
+    "width": 1317,
+    "height": 1951,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "chest-pneumothorax-07",
@@ -3316,7 +4260,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 2.5",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
     "originalSha1": "f44baaf2b8621d68c3761e3308f519c92b611620",
-    "localSha256": "52f68d51c45e83fb476a1dc26a0f66796709c0051e8584fd52c6c815b5e9edda"
+    "localSha256": "52f68d51c45e83fb476a1dc26a0f66796709c0051e8584fd52c6c815b5e9edda",
+    "width": 877,
+    "height": 807,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "chest-pneumothorax-08",
@@ -3330,7 +4278,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "c59b4b1bdc9a9bba501c33d3038762b3e75d6582",
-    "localSha256": "109bca21f035d665b7fec0cb8fdfc81997fef6094e369b3c06fa5b05afd492d2"
+    "localSha256": "109bca21f035d665b7fec0cb8fdfc81997fef6094e369b3c06fa5b05afd492d2",
+    "width": 1749,
+    "height": 1521,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "chest-pneumothorax-09",
@@ -3344,7 +4296,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "ab9865109693037beb08150dc6fcef27730f8162",
-    "localSha256": "bffeb886ceda55905338820608eddbb074cbcd0bfcb4d55270e9dc05afa3da38"
+    "localSha256": "bffeb886ceda55905338820608eddbb074cbcd0bfcb4d55270e9dc05afa3da38",
+    "width": 1497,
+    "height": 1701,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "chest-pleural-effusion-07",
@@ -3358,7 +4314,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "adc03bfbe894d2c35dd7f336c20c8ad754c65979",
-    "localSha256": "291018e3330c13e29e8767343cd1f7dbbf576ddbe97d39490ea92330e921c2c5"
+    "localSha256": "291018e3330c13e29e8767343cd1f7dbbf576ddbe97d39490ea92330e921c2c5",
+    "width": 2552,
+    "height": 2154,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "chest-pleural-effusion-08",
@@ -3372,7 +4332,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "cabefbee8f7a307a97f80fd46d07c24143d18616",
-    "localSha256": "4fa49da9a714120394fe878a31fe6d7fa5050f5a73e5787632b3565d1613f4ee"
+    "localSha256": "4fa49da9a714120394fe878a31fe6d7fa5050f5a73e5787632b3565d1613f4ee",
+    "width": 1455,
+    "height": 1481,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "chest-pleural-effusion-09",
@@ -3386,7 +4350,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "8932e81afec9f3c1bedaeee2c7a1627fbf3c12ef",
-    "localSha256": "1963fb9fde56924269f02f703f2c194383c8c4f95a01ad1494e169e5c639a0d8"
+    "localSha256": "1963fb9fde56924269f02f703f2c194383c8c4f95a01ad1494e169e5c639a0d8",
+    "width": 1598,
+    "height": 1123,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "chest-pneumonia-10",
@@ -3400,7 +4368,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "034af0a9c6bbd406cc28229f0f2518d3a451b3aa",
-    "localSha256": "ed2b3c4a4e7a7544d611724cd800674ec968b9d87f83d4c3ee5323a0522c9e47"
+    "localSha256": "ed2b3c4a4e7a7544d611724cd800674ec968b9d87f83d4c3ee5323a0522c9e47",
+    "width": 600,
+    "height": 552,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-pneumonia-11",
@@ -3414,7 +4386,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "b480efdaf86e0739285c9dbf7029605794640abd",
-    "localSha256": "92b8f27e881b56843e3ba917e3d12cafb73e0ad8ffd96f9cd74bfbcae62c1b95"
+    "localSha256": "92b8f27e881b56843e3ba917e3d12cafb73e0ad8ffd96f9cd74bfbcae62c1b95",
+    "width": 815,
+    "height": 671,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "chest-pneumonia-12",
@@ -3428,7 +4404,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "5b7d65b0a7f93d496f7ab5949b3755b4c40a57c9",
-    "localSha256": "1584142c42f6fd223404838815537c73c46e0e40503411448f3bee9b2d69786b"
+    "localSha256": "1584142c42f6fd223404838815537c73c46e0e40503411448f3bee9b2d69786b",
+    "width": 1013,
+    "height": 444,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-pneumonia-13",
@@ -3442,7 +4422,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "6e3ac542e0a6ff9c4b659021a884aa7a79a3c98c",
-    "localSha256": "6a91948c5bcccba4d9221a1a630d6e7974b451ed9747db48b2c5a7a1f847a844"
+    "localSha256": "6a91948c5bcccba4d9221a1a630d6e7974b451ed9747db48b2c5a7a1f847a844",
+    "width": 1084,
+    "height": 1154,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "chest-pulmonary-edema-06",
@@ -3456,7 +4440,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "a155676f106772c7e5d070e3acd876c62dc553eb",
-    "localSha256": "48b89c784e977644bd86fc32025bf121024214b7a0b99932f5501343233c57ad"
+    "localSha256": "48b89c784e977644bd86fc32025bf121024214b7a0b99932f5501343233c57ad",
+    "width": 2894,
+    "height": 1246,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "chest-pulmonary-edema-07",
@@ -3470,7 +4458,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "7c151c858748d263bfd136c7eecad72e2089ee21",
-    "localSha256": "f3b474202d95018d6d9f7d2acd500a22e71ae1f1f3dbb6fda9a757bc6aeee48b"
+    "localSha256": "f3b474202d95018d6d9f7d2acd500a22e71ae1f1f3dbb6fda9a757bc6aeee48b",
+    "width": 2272,
+    "height": 1873,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "chest-pulmonary-edema-08",
@@ -3484,7 +4476,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "23b002a8493d5b865c3092787b78ecc3cb4ec808",
-    "localSha256": "872a346eaa8272fff8f9ea31e55e55ad5b680e20057529fce467696a831351b2"
+    "localSha256": "872a346eaa8272fff8f9ea31e55e55ad5b680e20057529fce467696a831351b2",
+    "width": 2415,
+    "height": 1314,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "chest-pulmonary-edema-09",
@@ -3498,7 +4494,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "87c460b4cc90a553213a7a8116c4e5282bf3192e",
-    "localSha256": "401c1246f3df29412a10d22e1e59de25e3d15f7be54c4428e966483fa39d6067"
+    "localSha256": "401c1246f3df29412a10d22e1e59de25e3d15f7be54c4428e966483fa39d6067",
+    "width": 1473,
+    "height": 1121,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "chest-pulmonary-embolism-06",
@@ -3512,7 +4512,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "bd2454650bf2063ba7408c18e686d8848fe99fd8",
-    "localSha256": "249f9d11a8ed3a7e09db8a354678476c8dba95a3f3d69b4e4c2794ce785a6cac"
+    "localSha256": "249f9d11a8ed3a7e09db8a354678476c8dba95a3f3d69b4e4c2794ce785a6cac",
+    "width": 2017,
+    "height": 1456,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "chest-pulmonary-embolism-07",
@@ -3526,7 +4530,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "f6ecf5103bd6f74fd702d4678bed9eb28b8a9823",
-    "localSha256": "4fc3d054ae9a8b64c35776610d66d8ff35749b41d8c72e503464a39d58b39415"
+    "localSha256": "4fc3d054ae9a8b64c35776610d66d8ff35749b41d8c72e503464a39d58b39415",
+    "width": 932,
+    "height": 784,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "chest-pulmonary-embolism-08",
@@ -3540,7 +4548,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "118af5903000ad18c4eeb7cb644a431d065cb328",
-    "localSha256": "943bf0656fdd4f9ff18854656278d8f8b3dabca8c1562d2817093143971e4f57"
+    "localSha256": "943bf0656fdd4f9ff18854656278d8f8b3dabca8c1562d2817093143971e4f57",
+    "width": 2041,
+    "height": 1428,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "chest-pulmonary-embolism-09",
@@ -3554,7 +4566,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "originalSha1": "b7a52852e90adde1560e2114b9b9f570575555db",
-    "localSha256": "9314f5217059b280bb5548fc70d6199684921d0446ce6bcde74f2eedf897b183"
+    "localSha256": "9314f5217059b280bb5548fc70d6199684921d0446ce6bcde74f2eedf897b183",
+    "width": 1454,
+    "height": 999,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "chest-pulmonary-embolism-10",
@@ -3568,7 +4584,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "47ba8b6b6c2beebbd2d36438bd3751eaccf48c11",
-    "localSha256": "762828ecfe49404ebb6f33b5c48d37d412ec141d5de6630b1e3e1fea087f62fb"
+    "localSha256": "762828ecfe49404ebb6f33b5c48d37d412ec141d5de6630b1e3e1fea087f62fb",
+    "width": 1010,
+    "height": 836,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "chest-pulmonary-embolism-11",
@@ -3582,7 +4602,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "d69ad8eb9b99271a279eb2bea8bcd7b40a31f13a",
-    "localSha256": "4151479fa20c9ed0ad9f2476aa3228323d1046e16bf1cfbab8c9f7c1f7e6b8ca"
+    "localSha256": "4151479fa20c9ed0ad9f2476aa3228323d1046e16bf1cfbab8c9f7c1f7e6b8ca",
+    "width": 1512,
+    "height": 1930,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "chest-atelectasis-06",
@@ -3596,7 +4620,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "4c758dd3e4433ac11cd5a6e4c1e4d2919f28ee0c",
-    "localSha256": "88331d91f387d956e0f43682cf0bd2663f850a6c836a953583218689acfd1d93"
+    "localSha256": "88331d91f387d956e0f43682cf0bd2663f850a6c836a953583218689acfd1d93",
+    "width": 928,
+    "height": 956,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "chest-atelectasis-07",
@@ -3610,7 +4638,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "originalSha1": "e2d4e9c69422815f404fb25e5223cc54d593d9f7",
-    "localSha256": "e21813942f198c842ea14cd07dead72a9f72f01dc854ce2064db29b9c35a4f50"
+    "localSha256": "e21813942f198c842ea14cd07dead72a9f72f01dc854ce2064db29b9c35a4f50",
+    "width": 714,
+    "height": 586,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "chest-covid-06",
@@ -3624,7 +4656,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "56978dfdc2e1e5ea790c53ab7cae64cdf0a1d70a",
-    "localSha256": "dd117f7985fc6f0a1a0a641347dfe225f14aaf553417d6dfb4e81d009192c6fb"
+    "localSha256": "dd117f7985fc6f0a1a0a641347dfe225f14aaf553417d6dfb4e81d009192c6fb",
+    "width": 1475,
+    "height": 1368,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "chest-covid-07",
@@ -3638,7 +4674,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "5caee237290ebf7ec92254537f0d5d6f1eb4dc1c",
-    "localSha256": "abfc4a6dfb04e1379fcd0b4a48308850d5764e09240f0cb9d85c578f41a22523"
+    "localSha256": "abfc4a6dfb04e1379fcd0b4a48308850d5764e09240f0cb9d85c578f41a22523",
+    "width": 1421,
+    "height": 1396,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-pituitary-adenoma-01",
@@ -3652,7 +4692,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "35dcae00b7eb005a90de2b8273846fc386d2bd26",
-    "localSha256": "230eed0f7fa94e291da116a46f554d7abb52217320743fb68fa4f578ef5d33f8"
+    "localSha256": "230eed0f7fa94e291da116a46f554d7abb52217320743fb68fa4f578ef5d33f8",
+    "width": 905,
+    "height": 452,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-craniopharyngioma-01",
@@ -3666,7 +4710,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "1a1878cdeeb54de90eb855376a5ccb93fd240edf",
-    "localSha256": "740d55f9544b62f64bdff115c3a2867161edbda5024e1e2f9d714747de9375dc"
+    "localSha256": "740d55f9544b62f64bdff115c3a2867161edbda5024e1e2f9d714747de9375dc",
+    "width": 1200,
+    "height": 1777,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-vestibular-schwannoma-01",
@@ -3680,7 +4728,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "52ae6d93606986423f4f10edc259499945e9289b",
-    "localSha256": "2d4a2041607cc0c4e391d749dddc8cad662121ffd3a453c2163bc21b73e10375"
+    "localSha256": "2d4a2041607cc0c4e391d749dddc8cad662121ffd3a453c2163bc21b73e10375",
+    "width": 1009,
+    "height": 840,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-vestibular-schwannoma-02",
@@ -3694,7 +4746,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "20251698bdfd81e70d8758e7edb4234b23461e9f",
-    "localSha256": "7ead1d85bf6250e4645ed0402db850df23edc322ddf0de1fa6f43a0f4ee0fb5e"
+    "localSha256": "7ead1d85bf6250e4645ed0402db850df23edc322ddf0de1fa6f43a0f4ee0fb5e",
+    "width": 956,
+    "height": 1085,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-cerebral-aneurysm-01",
@@ -3708,7 +4764,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "275bbd0ed533a47c5cb84d7c326be1b9845b1c5d",
-    "localSha256": "bee43d5a947b67035e539fd66b0335ecc5be659b66dcc8d3dedda247ddd99e2e"
+    "localSha256": "bee43d5a947b67035e539fd66b0335ecc5be659b66dcc8d3dedda247ddd99e2e",
+    "width": 1038,
+    "height": 1031,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-cerebral-aneurysm-02",
@@ -3722,7 +4782,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "ea769c5c9f0a5d8aaf4c732aedae0c75590e9f73",
-    "localSha256": "fe1d983c36af147e44cb205a59c13deddf06d74f6d6b9e2d88d084a5fb892d20"
+    "localSha256": "fe1d983c36af147e44cb205a59c13deddf06d74f6d6b9e2d88d084a5fb892d20",
+    "width": 3344,
+    "height": 2756,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-brain-avm-01",
@@ -3736,7 +4800,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "7b7554adb3531b490bfe23203682ed6e86d64323",
-    "localSha256": "be2f27c6244be28ae1f1166949930645324811850ecac7194b9d9995f2172c0c"
+    "localSha256": "be2f27c6244be28ae1f1166949930645324811850ecac7194b9d9995f2172c0c",
+    "width": 890,
+    "height": 1154,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-developmental-venous-anomaly-01",
@@ -3750,7 +4818,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "6ebce6e1948b3bc6bc2b05344b67beda6828c451",
-    "localSha256": "821a01eba5bc62c3442613c15b8e38e86c8b7b343b19b1d9c5e4bc729c685c10"
+    "localSha256": "821a01eba5bc62c3442613c15b8e38e86c8b7b343b19b1d9c5e4bc729c685c10",
+    "width": 1535,
+    "height": 1976,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-venous-sinus-thrombosis-01",
@@ -3764,7 +4836,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "76e3b5c2394f90a024242e78ea83f05dde4c8d05",
-    "localSha256": "d020bf7aa5f43e40801dfe0d79af7fe085cbbf04d070f7f11abb6ca81d2d6219"
+    "localSha256": "d020bf7aa5f43e40801dfe0d79af7fe085cbbf04d070f7f11abb6ca81d2d6219",
+    "width": 707,
+    "height": 700,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-venous-sinus-thrombosis-02",
@@ -3778,7 +4854,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "992f30541f79bca321f7ee54a8466a1db372d479",
-    "localSha256": "b88c13e21a7ede614e665eb6dd4d698fbb5eaf6435887a62c89d4a97c335af7e"
+    "localSha256": "b88c13e21a7ede614e665eb6dd4d698fbb5eaf6435887a62c89d4a97c335af7e",
+    "width": 1031,
+    "height": 1200,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-moyamoya-01",
@@ -3792,7 +4872,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "9d7fb4bbb3c61e5eb5baac50fbd56e330609664e",
-    "localSha256": "a4b221cd91573faa5925d48be8f75de521f7aa6b0a78c696946b7abadc494c4c"
+    "localSha256": "a4b221cd91573faa5925d48be8f75de521f7aa6b0a78c696946b7abadc494c4c",
+    "width": 1068,
+    "height": 659,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-moyamoya-02",
@@ -3806,7 +4890,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "7f7a2d4f3811f3eedc15dac2d3e07cfcabe78127",
-    "localSha256": "903b05a4efed91625a6ea3588b78e21aa049214a77f92b9dad6aee1e56562076"
+    "localSha256": "903b05a4efed91625a6ea3588b78e21aa049214a77f92b9dad6aee1e56562076",
+    "width": 725,
+    "height": 991,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-hydrocephalus-01",
@@ -3820,7 +4908,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "abc8bd95fd1fcf6cc6e8f64a1724aedff34ac587",
-    "localSha256": "5f3bf4bf1b1f8f4b91771f46470f177fd5ce7aaaee45662958c2cbf2e2b93fdf"
+    "localSha256": "5f3bf4bf1b1f8f4b91771f46470f177fd5ce7aaaee45662958c2cbf2e2b93fdf",
+    "width": 5290,
+    "height": 2105,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-hydrocephalus-02",
@@ -3834,7 +4926,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "08755ae90987d4fce5c9f087c5d62c53f14a894f",
-    "localSha256": "02b101c442a95bcc632cb5b97b16f3e3866b128a5844e003b7ae1507462ab30f"
+    "localSha256": "02b101c442a95bcc632cb5b97b16f3e3866b128a5844e003b7ae1507462ab30f",
+    "width": 1043,
+    "height": 610,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-brain-abscess-01",
@@ -3848,7 +4944,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.5",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
     "originalSha1": "007e2f6b900fbb4f99727a9b77293142a5bb9f69",
-    "localSha256": "0b0e959cf438a59e43f31035f327d3a67d18060a97970193daae99e648d78448"
+    "localSha256": "0b0e959cf438a59e43f31035f327d3a67d18060a97970193daae99e648d78448",
+    "width": 1200,
+    "height": 1243,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-brain-abscess-02",
@@ -3862,7 +4962,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "ae5132a753eade7dcc27d10af0cd17ce4ed1e204",
-    "localSha256": "37f33bc2e98d9fab05bdb0188e2347ecd0393eee76cdba4b7ffeb943004b530b"
+    "localSha256": "37f33bc2e98d9fab05bdb0188e2347ecd0393eee76cdba4b7ffeb943004b530b",
+    "width": 781,
+    "height": 960,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-cerebral-toxoplasmosis-01",
@@ -3876,7 +4980,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "e622582b25719c99046134e12882182388cc8416",
-    "localSha256": "3a62a557ebba1566c9d749b3fb28f2f65364889e698bd60f35e47fd1ad6ba297"
+    "localSha256": "3a62a557ebba1566c9d749b3fb28f2f65364889e698bd60f35e47fd1ad6ba297",
+    "width": 697,
+    "height": 873,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-cadasil-01",
@@ -3890,7 +4998,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "4118b8a40fc97fddecb8c39b567afde957774f8c",
-    "localSha256": "07cd1e18e123ca1af7868c78125aea86ba0d60b84251da45eba58b4c982d5776"
+    "localSha256": "07cd1e18e123ca1af7868c78125aea86ba0d60b84251da45eba58b4c982d5776",
+    "width": 1200,
+    "height": 1139,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-cerebral-atrophy-01",
@@ -3904,7 +5016,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "1a91cc378d0fc4a242e979b4e056ef98549d08ab",
-    "localSha256": "307779f0da0ef22ec6d2e7ced31596bd233e14881b8598f8b161fbccb4b2d1b9"
+    "localSha256": "307779f0da0ef22ec6d2e7ced31596bd233e14881b8598f8b161fbccb4b2d1b9",
+    "width": 804,
+    "height": 563,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-huntington-01",
@@ -3918,7 +5034,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "decddd48fa33ba9eeae2a7af161477dc3e0c61ca",
-    "localSha256": "eb5317808db388468dd5f25722b8e1cb2c1b830078d9d6913ea2daeeb85fb738"
+    "localSha256": "eb5317808db388468dd5f25722b8e1cb2c1b830078d9d6913ea2daeeb85fb738",
+    "width": 722,
+    "height": 902,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-oligodendroglioma-01",
@@ -3932,7 +5052,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "4e0c22a042bb04474bc8ea707bd056f6235213a9",
-    "localSha256": "50d2b8519cc68563a09958c3866a33ed94596705ed42cb3469fc406456a49905"
+    "localSha256": "50d2b8519cc68563a09958c3866a33ed94596705ed42cb3469fc406456a49905",
+    "width": 701,
+    "height": 782,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-oligodendroglioma-02",
@@ -3946,7 +5070,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "f2126a6b6e42df96223669e8d757f3d430632194",
-    "localSha256": "d73f93f6e3dd5218b7abf6c9b39658403e6ba4a5b2227b4110395cad4e5eb6ef"
+    "localSha256": "d73f93f6e3dd5218b7abf6c9b39658403e6ba4a5b2227b4110395cad4e5eb6ef",
+    "width": 740,
+    "height": 889,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-astrocytoma-01",
@@ -3960,7 +5088,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "529704b98014548d9ea6d62774b1c580e2f29dca",
-    "localSha256": "e029943da5a56b0424afb53cbfc2196d557a171da3674e1ec7e7e1213a6b05b7"
+    "localSha256": "e029943da5a56b0424afb53cbfc2196d557a171da3674e1ec7e7e1213a6b05b7",
+    "width": 517,
+    "height": 512,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-astrocytoma-02",
@@ -3974,7 +5106,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "originalSha1": "8adca83b8c2356a83791bce1afe4041b9920d189",
-    "localSha256": "d180ba5d3d33a9ac02868c6c1e451cd5e9d77abafeeee1c4c82a86163c5a17c4"
+    "localSha256": "d180ba5d3d33a9ac02868c6c1e451cd5e9d77abafeeee1c4c82a86163c5a17c4",
+    "width": 3360,
+    "height": 2100,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-medulloblastoma-01",
@@ -3988,7 +5124,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "d470f2d5fa22fcf24f44068eff3fd6c5c6214223",
-    "localSha256": "d46f6f2361617c8a7bf96db3d1efc6c681747dd9b2559237b88d5d4a27f7ec9b"
+    "localSha256": "d46f6f2361617c8a7bf96db3d1efc6c681747dd9b2559237b88d5d4a27f7ec9b",
+    "width": 461,
+    "height": 512,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-pineal-tumor-01",
@@ -4002,7 +5142,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "originalSha1": "8ceb995050ad8b60fd9d6910a654dc8be8ccb693",
-    "localSha256": "ad79bee2d47c3c65869a5d40ad5964f4185466f0a9be22c4666adff2ded75647"
+    "localSha256": "ad79bee2d47c3c65869a5d40ad5964f4185466f0a9be22c4666adff2ded75647",
+    "width": 1022,
+    "height": 972,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-pineal-tumor-02",
@@ -4016,7 +5160,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "e09f442d91de57b5999b6a47ef8bf07f3b89d485",
-    "localSha256": "80f1c0e723481e3e9070ef178d36ab55c56bf8efea1c7ede8ad019aa1070ba21"
+    "localSha256": "80f1c0e723481e3e9070ef178d36ab55c56bf8efea1c7ede8ad019aa1070ba21",
+    "width": 742,
+    "height": 880,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-central-neurocytoma-01",
@@ -4030,7 +5178,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "b6e7a526104047680ee6db6390a657d1818d4c19",
-    "localSha256": "80307abd50fcfbca5f3491c95d70cda3e30577de7b6dff175376b63406cec7e3"
+    "localSha256": "80307abd50fcfbca5f3491c95d70cda3e30577de7b6dff175376b63406cec7e3",
+    "width": 512,
+    "height": 512,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-sega-01",
@@ -4044,7 +5196,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "e6a98d644e0a02476c0377deb6b198db717f10bc",
-    "localSha256": "11cd1fbdb178e58164a613f70faff8ce7401c28805dcdd3bf9855456c8aef431"
+    "localSha256": "11cd1fbdb178e58164a613f70faff8ce7401c28805dcdd3bf9855456c8aef431",
+    "width": 387,
+    "height": 512,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-chiari-malformation-01",
@@ -4058,7 +5214,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "75b9f66303f7869d92907f0a55366c8722bee7f5",
-    "localSha256": "c7d33b5048567e8e2fc5117bc041d6706bde928bfbb00000bc93abbdbc2f6bc6"
+    "localSha256": "c7d33b5048567e8e2fc5117bc041d6706bde928bfbb00000bc93abbdbc2f6bc6",
+    "width": 517,
+    "height": 563,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-chiari-malformation-02",
@@ -4072,7 +5232,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "a22a24857160ffa7a95d23a4924af5f61c996eff",
-    "localSha256": "6c3ae57c79aa875eaec4b36708c5a9c7ebd2eb2eb418e158a8cb6ee07fffbd82"
+    "localSha256": "6c3ae57c79aa875eaec4b36708c5a9c7ebd2eb2eb418e158a8cb6ee07fffbd82",
+    "width": 744,
+    "height": 890,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-lissencephaly-01",
@@ -4086,7 +5250,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "2601c07a89847b0ea98fbb7b0527721bdfd1fca7",
-    "localSha256": "33de60a2bc36ee251866dc199977e4a1b04ef7264aa84df8028caaec72558cc8"
+    "localSha256": "33de60a2bc36ee251866dc199977e4a1b04ef7264aa84df8028caaec72558cc8",
+    "width": 1452,
+    "height": 1682,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-polymicrogyria-01",
@@ -4100,7 +5268,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "5c2dfa68ccdc6e9eb05d76274496b04c91767b1f",
-    "localSha256": "69c516d318982d72ad4d0d27609de7ba3dc4566a10507cad982c281fbcb54a7b"
+    "localSha256": "69c516d318982d72ad4d0d27609de7ba3dc4566a10507cad982c281fbcb54a7b",
+    "width": 539,
+    "height": 404,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-sturge-weber-01",
@@ -4114,7 +5286,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "be3686f55ae74832a5f79afa4df5004b2bff6c15",
-    "localSha256": "eff436c7b004bdfbad04f01959d3f4f4b5a3ddf07d1f61679dcc7568a3a5724b"
+    "localSha256": "eff436c7b004bdfbad04f01959d3f4f4b5a3ddf07d1f61679dcc7568a3a5724b",
+    "width": 312,
+    "height": 390,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-rasmussen-encephalitis-01",
@@ -4128,7 +5304,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "25016109914368d653d8dfa1ed1e3502f42f9c22",
-    "localSha256": "de197e68c1369f5ec9b130b062897c01479a8708a7977d3e628f08f4bddcdfb6"
+    "localSha256": "de197e68c1369f5ec9b130b062897c01479a8708a7977d3e628f08f4bddcdfb6",
+    "width": 2418,
+    "height": 1381,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-cervical-disc-herniation-01",
@@ -4142,7 +5322,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "fbc1751ce7b2b129cc9b9a608c92f40505873ed1",
-    "localSha256": "a3710a849e9e1e172fde1fb2228507298b72c1672415843166aa2650de87854d"
+    "localSha256": "a3710a849e9e1e172fde1fb2228507298b72c1672415843166aa2650de87854d",
+    "width": 1024,
+    "height": 1133,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-spinal-epidural-abscess-01",
@@ -4156,7 +5340,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "41fa69b086677325e8d24fdf5a970a7f6fbe7def",
-    "localSha256": "efc65ead24a7219238d1383b0eaaf847d7cd46c5709c479cf646862c32c54223"
+    "localSha256": "efc65ead24a7219238d1383b0eaaf847d7cd46c5709c479cf646862c32c54223",
+    "width": 1183,
+    "height": 1363,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-syringomyelia-01",
@@ -4170,7 +5358,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "4dc6e313e1253b64bcea7165f64a776aa331f4b5",
-    "localSha256": "bf873ebdc8c8da406c19bd5f5a2a6940ab1126e014133bd5760c5301a2153923"
+    "localSha256": "bf873ebdc8c8da406c19bd5f5a2a6940ab1126e014133bd5760c5301a2153923",
+    "width": 612,
+    "height": 508,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-new-venous-sinus-thrombosis-03",
@@ -4184,7 +5376,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "cc01280adfa01851da02f01e92bd5a6a8a4494e4",
-    "localSha256": "e6f1364f7c4fbc3be550671e1b3989357dae9514245aca20fe8c358a2f17d106"
+    "localSha256": "e6f1364f7c4fbc3be550671e1b3989357dae9514245aca20fe8c358a2f17d106",
+    "width": 1623,
+    "height": 967,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-intracerebral-07",
@@ -4198,7 +5394,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "8bcf3eee9bedcc95545997457efb1295a0760a81",
-    "localSha256": "484a06b0a0c5d83ab1cab6e32eb62ae782964555530156818ee15ac7090d6f29"
+    "localSha256": "484a06b0a0c5d83ab1cab6e32eb62ae782964555530156818ee15ac7090d6f29",
+    "width": 854,
+    "height": 1062,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "neuro-intracerebral-08",
@@ -4212,7 +5412,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "c2027f0e834bd10ced3787d31544b4aa2e72ccbe",
-    "localSha256": "53ff0e39dd2fcf00378a9b5702453777091d608be6f9ffdd9ddae8cc624871fb"
+    "localSha256": "53ff0e39dd2fcf00378a9b5702453777091d608be6f9ffdd9ddae8cc624871fb",
+    "width": 2284,
+    "height": 2247,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "neuro-subarachnoid-09",
@@ -4226,7 +5430,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "017a53c99dcf1bdcd1a9de7dd4082984b62b3dce",
-    "localSha256": "78e348e4f36018000edc71a6502ea5653308c0ccd66a28226e81eb40373c9e81"
+    "localSha256": "78e348e4f36018000edc71a6502ea5653308c0ccd66a28226e81eb40373c9e81",
+    "width": 744,
+    "height": 970,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "neuro-subarachnoid-10",
@@ -4240,7 +5448,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "1b9a6f0b7bb7bc8701cafaf2a061f100a2c0ecfb",
-    "localSha256": "48af29b588a77265fcb83ba916119e1cc50b49a88d9da490aa6d46ff17c8aff0"
+    "localSha256": "48af29b588a77265fcb83ba916119e1cc50b49a88d9da490aa6d46ff17c8aff0",
+    "width": 647,
+    "height": 745,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "neuro-subarachnoid-11",
@@ -4254,7 +5466,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "e57449c682613ea71fef4efadc9ed7adfb88c122",
-    "localSha256": "d4a571e200d151f260c8f55d2a2d3d07b565786e8c79b05755d80c32098bcc7f"
+    "localSha256": "d4a571e200d151f260c8f55d2a2d3d07b565786e8c79b05755d80c32098bcc7f",
+    "width": 1531,
+    "height": 673,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "neuro-infarction-06",
@@ -4268,7 +5484,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "386d1a4687c49e10dc303b80f045a705a6914430",
-    "localSha256": "b88c14e6ec5d8d627bf205d22963ac81517d9cfaba4355554da6ced53503d907"
+    "localSha256": "b88c14e6ec5d8d627bf205d22963ac81517d9cfaba4355554da6ced53503d907",
+    "width": 1752,
+    "height": 1118,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "neuro-infarction-07",
@@ -4282,7 +5502,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "12c5c8111dacdb9a984b367c74d39b469b94179e",
-    "localSha256": "71bfd52404dd17af234706668ed9583f072c406a42d6a3728894805789367b56"
+    "localSha256": "71bfd52404dd17af234706668ed9583f072c406a42d6a3728894805789367b56",
+    "width": 426,
+    "height": 522,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "neuro-infarction-08",
@@ -4296,7 +5520,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "f57ff0e305c4859f50acce02deb2dafeca700190",
-    "localSha256": "257f37428eb220e4ccd5416d03c16180970c06acc83eb7f00547800aabb4eb0a"
+    "localSha256": "257f37428eb220e4ccd5416d03c16180970c06acc83eb7f00547800aabb4eb0a",
+    "width": 731,
+    "height": 615,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "neuro-meningioma-07",
@@ -4310,7 +5538,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "fedae0af360877e37667fdd7a7296f039ea3e878",
-    "localSha256": "96fbba76c65e6d3002d58f42abf844e7a34b51162d7f9685a5b986b263e6981e"
+    "localSha256": "96fbba76c65e6d3002d58f42abf844e7a34b51162d7f9685a5b986b263e6981e",
+    "width": 766,
+    "height": 800,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "neuro-glioblastoma-07",
@@ -4324,7 +5556,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "9c09eac2ff3889563ba663bab1621aaa1519b2ef",
-    "localSha256": "6c7045b9dfd567ce4211c171712ef404b55ad9a936749c41580364955f6ff622"
+    "localSha256": "6c7045b9dfd567ce4211c171712ef404b55ad9a936749c41580364955f6ff622",
+    "width": 526,
+    "height": 555,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "neuro-metastases-04",
@@ -4338,7 +5574,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "162ae43794e3ba736f9c5d5dde10f9adde270f97",
-    "localSha256": "bceead906d8ce022ca56cb12a1892238684de40eee10f03cbe23d798c531d198"
+    "localSha256": "bceead906d8ce022ca56cb12a1892238684de40eee10f03cbe23d798c531d198",
+    "width": 493,
+    "height": 551,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-acute-pancreatitis-01",
@@ -4352,7 +5592,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "e419b211008f17b638810094396b1279ff03b9d9",
-    "localSha256": "ecd92488d2a6ebf9aa704080e355091a4eb094066d9f68ca18d860c229568461"
+    "localSha256": "ecd92488d2a6ebf9aa704080e355091a4eb094066d9f68ca18d860c229568461",
+    "width": 1208,
+    "height": 1017,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-chronic-pancreatitis-01",
@@ -4366,7 +5610,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "7535f0e6ff8a605fac276b85ace139d569c392dc",
-    "localSha256": "702302647a6c1350fa6e365dec47ef1119b7e64f40a548dfd460e1789b999b45"
+    "localSha256": "702302647a6c1350fa6e365dec47ef1119b7e64f40a548dfd460e1789b999b45",
+    "width": 1158,
+    "height": 956,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-pancreatic-cancer-01",
@@ -4380,7 +5628,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "371dc0e7aa2f8c913d9c1297937d365e333d6e85",
-    "localSha256": "c0db47fa749220035622b0404ae76b8a3642e614dd79940812debf01a203c4fd"
+    "localSha256": "c0db47fa749220035622b0404ae76b8a3642e614dd79940812debf01a203c4fd",
+    "width": 1395,
+    "height": 1125,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-pancreatic-pseudocyst-01",
@@ -4394,7 +5646,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "5a72a2e6167cd25613e30cba811eadc3c3533e73",
-    "localSha256": "18727e910e641fff375ec11ad498b850965b3215d96c9f9570e476f9dd326e38"
+    "localSha256": "18727e910e641fff375ec11ad498b850965b3215d96c9f9570e476f9dd326e38",
+    "width": 1028,
+    "height": 1303,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-acute-cholecystitis-01",
@@ -4408,7 +5664,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "490caf9c7aa0c9bf7c4dcd5c3ebe435884a90217",
-    "localSha256": "a65635f04a6c82f24bfbf45adc66fa16330a0f9039c7f1e3d4a1dc78eaaaa5b2"
+    "localSha256": "a65635f04a6c82f24bfbf45adc66fa16330a0f9039c7f1e3d4a1dc78eaaaa5b2",
+    "width": 1024,
+    "height": 698,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-choledocholithiasis-01",
@@ -4422,7 +5682,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "4117b61d8b8823bfc147294296db2a1471344bc7",
-    "localSha256": "c14ba9081d748712959bbef3a22e9b36bb2b6fc9955230bfb61a8071113281a4"
+    "localSha256": "c14ba9081d748712959bbef3a22e9b36bb2b6fc9955230bfb61a8071113281a4",
+    "width": 4608,
+    "height": 2429,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-cholangiocarcinoma-01",
@@ -4436,7 +5700,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "d8dcbf6c3d309aefb21ff4e386aaf2434f73cfb6",
-    "localSha256": "f9b4d29bf482449df15ceee7827ffbb2fb6302232ac9bc860be388d54c4b4d44"
+    "localSha256": "f9b4d29bf482449df15ceee7827ffbb2fb6302232ac9bc860be388d54c4b4d44",
+    "width": 792,
+    "height": 327,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-biliary-obstruction-01",
@@ -4450,7 +5718,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "b0e36b73e9c649962666cf42d4c22a486d8c1bc5",
-    "localSha256": "079b7cce6dcd73464b1a22a28e7e6e235ec694e127fca627a8b69fe332d0783f"
+    "localSha256": "079b7cce6dcd73464b1a22a28e7e6e235ec694e127fca627a8b69fe332d0783f",
+    "width": 798,
+    "height": 1066,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-hepatic-steatosis-01",
@@ -4464,7 +5736,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "668308178ae555b1cc1fe10ab5628279e062188e",
-    "localSha256": "0e2ab01783b9a59b0f514b27c6fa81e6442d8464225d202c08adb98e136df407"
+    "localSha256": "0e2ab01783b9a59b0f514b27c6fa81e6442d8464225d202c08adb98e136df407",
+    "width": 1024,
+    "height": 768,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-cirrhosis-01",
@@ -4478,7 +5754,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.5",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
     "originalSha1": "a0fb029a6cf1c6676aa1b78a79ab3623257cc646",
-    "localSha256": "b259d55f50775008ea84449c719cd52c4792a95092dfc399b32f19982d307f3f"
+    "localSha256": "b259d55f50775008ea84449c719cd52c4792a95092dfc399b32f19982d307f3f",
+    "width": 512,
+    "height": 512,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-portal-hypertension-01",
@@ -4492,7 +5772,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "ce15fd2b5ca7aa29e65bce015450a592ed747cd1",
-    "localSha256": "b0f3455bb2518952855f29e0cc63fdb4162ef58a4a97531fe3ae7c1161bfc417"
+    "localSha256": "b0f3455bb2518952855f29e0cc63fdb4162ef58a4a97531fe3ae7c1161bfc417",
+    "width": 998,
+    "height": 844,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-splenomegaly-01",
@@ -4506,7 +5790,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "9f6890c49c4981fb79bbce65eb961fb955602f10",
-    "localSha256": "58e842c069b7636f4dffc1f9c979c1867cdfb617cb50d69acf8fe05c7bff526d"
+    "localSha256": "58e842c069b7636f4dffc1f9c979c1867cdfb617cb50d69acf8fe05c7bff526d",
+    "width": 762,
+    "height": 1191,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-splenic-infarction-01",
@@ -4520,7 +5808,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "6e92f0159f02a79e08cc17d3c570c6921e8a3c67",
-    "localSha256": "845c9d0f2e8403253c6d8a683fd77824287519e01646775e05847890af92d9e3"
+    "localSha256": "845c9d0f2e8403253c6d8a683fd77824287519e01646775e05847890af92d9e3",
+    "width": 940,
+    "height": 668,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-splenic-rupture-01",
@@ -4534,7 +5826,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "91a5a6165aab12946089ce3686752ba4aa63dc01",
-    "localSha256": "3bd4cabedcb31dcde434f20d97145278d11cb769814038aaa20fcb91b61dfc49"
+    "localSha256": "3bd4cabedcb31dcde434f20d97145278d11cb769814038aaa20fcb91b61dfc49",
+    "width": 1343,
+    "height": 941,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-liver-abscess-01",
@@ -4548,7 +5844,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "d058b878132605bca6b72cd8334593584cec84a0",
-    "localSha256": "c7e0ba311d0638f0649da824926248ee9af41d3e632b639ef57fc9762a1a494c"
+    "localSha256": "c7e0ba311d0638f0649da824926248ee9af41d3e632b639ef57fc9762a1a494c",
+    "width": 1536,
+    "height": 698,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-pyelonephritis-01",
@@ -4562,7 +5862,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "9537661861729c40e591edccd5b5cd7cb71f6593",
-    "localSha256": "659440ebc2c780a5d9f7e744c23df0aaf80e781248170659dcedeabcc7eb3c31"
+    "localSha256": "659440ebc2c780a5d9f7e744c23df0aaf80e781248170659dcedeabcc7eb3c31",
+    "width": 1830,
+    "height": 1430,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-renal-cell-carcinoma-01",
@@ -4576,7 +5880,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "ff3530e7e656d17386659608a0367e60544f3081",
-    "localSha256": "0be505a8901acb89b6126a0599b80b9851dbb6edc40f228e4b3df3428cd89a90"
+    "localSha256": "0be505a8901acb89b6126a0599b80b9851dbb6edc40f228e4b3df3428cd89a90",
+    "width": 614,
+    "height": 312,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-renal-angiomyolipoma-01",
@@ -4590,7 +5898,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "e30a8804b314a88300899c02889ae2ae4f2d793a",
-    "localSha256": "f4c99d478f1c1ab7cf13632819099afed70e3795a335dc5ad2070853c28b37be"
+    "localSha256": "f4c99d478f1c1ab7cf13632819099afed70e3795a335dc5ad2070853c28b37be",
+    "width": 1257,
+    "height": 1011,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-polycystic-kidney-01",
@@ -4604,7 +5916,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "b1715e10526850219e8ebcbcd6546258be169aa3",
-    "localSha256": "e08ecf4c16e552c1d43eec1c60c07591447ca13a95ec16bfe4e4bd17f62782e4"
+    "localSha256": "e08ecf4c16e552c1d43eec1c60c07591447ca13a95ec16bfe4e4bd17f62782e4",
+    "width": 729,
+    "height": 729,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-renal-stone-01",
@@ -4618,7 +5934,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "e951971aa92affb2baa175719b4da6686966e219",
-    "localSha256": "2b6b647368fdaa55e2af4fe44ab65069f28d3597f1838d295e0ff616fbffdb46"
+    "localSha256": "2b6b647368fdaa55e2af4fe44ab65069f28d3597f1838d295e0ff616fbffdb46",
+    "width": 373,
+    "height": 456,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-ureteral-stone-01",
@@ -4632,7 +5952,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "9333e7a341b8c76132ab0d39b61167d178dc4a07",
-    "localSha256": "dfa0799bde2df51fb5162aae50729dba9453941011acd5f3282ce52a760dfe5f"
+    "localSha256": "dfa0799bde2df51fb5162aae50729dba9453941011acd5f3282ce52a760dfe5f",
+    "width": 1178,
+    "height": 879,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-bladder-cancer-01",
@@ -4646,7 +5970,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "35aa24dc406244b21357d38258d015752d89fb9e",
-    "localSha256": "13567a114b2c861d69ff1feebd37a766f92c9e758bf8d98edbbbda15b8938c47"
+    "localSha256": "13567a114b2c861d69ff1feebd37a766f92c9e758bf8d98edbbbda15b8938c47",
+    "width": 1016,
+    "height": 782,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-pheochromocytoma-01",
@@ -4660,7 +5988,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "c3882b103c8e8749a7aa8533af165ae207573e40",
-    "localSha256": "eb17006141d6c006dd4de577f9e3f3f2af123642397d0d988b78996bf302ff8e"
+    "localSha256": "eb17006141d6c006dd4de577f9e3f3f2af123642397d0d988b78996bf302ff8e",
+    "width": 512,
+    "height": 410,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-adrenal-myelolipoma-01",
@@ -4674,7 +6006,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "fe1b2db7c732e04820bd87d8f4d2bb47c19c69e6",
-    "localSha256": "40383cec94b85367f6c5b01055772ae9ad6cde56424cb8afdc576b4a415e5ca9"
+    "localSha256": "40383cec94b85367f6c5b01055772ae9ad6cde56424cb8afdc576b4a415e5ca9",
+    "width": 1160,
+    "height": 886,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-small-bowel-obstruction-01",
@@ -4688,7 +6024,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "4f72fa3f45b6f669afed864264070f7c76651bc9",
-    "localSha256": "4bc94d5c373aa183108d602d48da204a2e044159303be2ece798d9b03340c99b"
+    "localSha256": "4bc94d5c373aa183108d602d48da204a2e044159303be2ece798d9b03340c99b",
+    "width": 1097,
+    "height": 909,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-intussusception-01",
@@ -4702,7 +6042,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "a898ae24abb02171166848552d99bda853a2ea4b",
-    "localSha256": "c934121766bfa617f274b0f8b0d0b644556ba9b4a3e50da116cbe995d476edaf"
+    "localSha256": "c934121766bfa617f274b0f8b0d0b644556ba9b4a3e50da116cbe995d476edaf",
+    "width": 4162,
+    "height": 3345,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-bowel-perforation-01",
@@ -4716,7 +6060,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "113026630b18dbbd1dab77d2df6c70fac201920f",
-    "localSha256": "e18ff97eb508b29b5e4e2e65a2b98d6d5f6c00c3460f2ead456b0582f2d9adc8"
+    "localSha256": "e18ff97eb508b29b5e4e2e65a2b98d6d5f6c00c3460f2ead456b0582f2d9adc8",
+    "width": 2842,
+    "height": 3609,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-crohn-disease-01",
@@ -4730,7 +6078,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "e6fe74129d4239455499292512c69d7ebc881c7f",
-    "localSha256": "d060efb30e25e69b4687065b544ffa4e7e881472980f62150e1c0eb41c5ab28f"
+    "localSha256": "d060efb30e25e69b4687065b544ffa4e7e881472980f62150e1c0eb41c5ab28f",
+    "width": 2034,
+    "height": 1418,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-mesenteric-ischemia-01",
@@ -4744,7 +6096,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "5d718557b71e3623e762ba4a75310ee540ef4e7e",
-    "localSha256": "982ef78558812176b1b8dc493ebe26186e9f0a3067b9bdd6cbb9b22c91445d67"
+    "localSha256": "982ef78558812176b1b8dc493ebe26186e9f0a3067b9bdd6cbb9b22c91445d67",
+    "width": 2591,
+    "height": 1427,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-inguinal-hernia-01",
@@ -4758,7 +6114,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "originalSha1": "a95a375667f284ad8c65c454f5300644653c2c4d",
-    "localSha256": "4e96f8e0f6d9e161f4d62aaec8919fe3f503a8497a8ce29d8c2b1ad3cc16a924"
+    "localSha256": "4e96f8e0f6d9e161f4d62aaec8919fe3f503a8497a8ce29d8c2b1ad3cc16a924",
+    "width": 889,
+    "height": 745,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-umbilical-hernia-01",
@@ -4772,7 +6132,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "3a2146eeffcfaf331517f0e9ae1b8a4ad72b7e4d",
-    "localSha256": "e93a6ecb2096ea6e948d6b9db2eafa5bd25ca95ea389b1f3757ce8df02d35f5f"
+    "localSha256": "e93a6ecb2096ea6e948d6b9db2eafa5bd25ca95ea389b1f3757ce8df02d35f5f",
+    "width": 1634,
+    "height": 1329,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-gist-01",
@@ -4786,7 +6150,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "8f9a2f4a13b12c2db128dfde0e24fcbfc6e3e1ac",
-    "localSha256": "8518aae461dc98f3876bec0cd9d4a11e4038b98983721d82aa835bb4a8731f79"
+    "localSha256": "8518aae461dc98f3876bec0cd9d4a11e4038b98983721d82aa835bb4a8731f79",
+    "width": 512,
+    "height": 512,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-colon-cancer-01",
@@ -4800,7 +6168,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "b97dcd3abbe41c57d25aa6b233c29a02ae5179bf",
-    "localSha256": "51f7fed099f6c6f5f7f20d9d5b25466760e2ee5e0d0127428cd8408664100923"
+    "localSha256": "51f7fed099f6c6f5f7f20d9d5b25466760e2ee5e0d0127428cd8408664100923",
+    "width": 1024,
+    "height": 1024,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-ectopic-pregnancy-01",
@@ -4814,7 +6186,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "originalSha1": "5295d19c15e951bf858135846039a81b1d23c087",
-    "localSha256": "fc6321ce0886aa993be23a883687b0f4536f7cffc9b8cd000f6375ac9f713670"
+    "localSha256": "fc6321ce0886aa993be23a883687b0f4536f7cffc9b8cd000f6375ac9f713670",
+    "width": 1600,
+    "height": 690,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-endometrioma-01",
@@ -4828,7 +6204,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "2cf8a68141d4fb06d3650fa482e4679fce17202c",
-    "localSha256": "e79b12d539821d4b569647577797104d1fad34d3ef5f58944bdfe08beb1c848e"
+    "localSha256": "e79b12d539821d4b569647577797104d1fad34d3ef5f58944bdfe08beb1c848e",
+    "width": 590,
+    "height": 415,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-appendicitis-10",
@@ -4842,7 +6222,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "4b8b8cc4e616411924ed410359c7c561ab9e2e98",
-    "localSha256": "9119fbfe404fff6e10490ad7a62f0d6f338f5e7a90a586b0eb53389155a2e0ac"
+    "localSha256": "9119fbfe404fff6e10490ad7a62f0d6f338f5e7a90a586b0eb53389155a2e0ac",
+    "width": 672,
+    "height": 476,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "abdomen-appendicitis-11",
@@ -4856,7 +6240,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "cf2db8bf7567319a22617ee38483bb4cb0c4a820",
-    "localSha256": "cee110d856230b510438cb79ec67e0a58767a322abbdd1f5e0ec7b7d09a685f4"
+    "localSha256": "cee110d856230b510438cb79ec67e0a58767a322abbdd1f5e0ec7b7d09a685f4",
+    "width": 543,
+    "height": 727,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "abdomen-appendicitis-12",
@@ -4870,7 +6258,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "0a603499310462224843051f5d1a0226ad7c7d73",
-    "localSha256": "cf7257f10f4591183cda5f7a5cf61b3618550b5eb8112b54903de7bece47a325"
+    "localSha256": "cf7257f10f4591183cda5f7a5cf61b3618550b5eb8112b54903de7bece47a325",
+    "width": 1300,
+    "height": 895,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-cholelithiasis-08",
@@ -4884,7 +6276,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "originalSha1": "8e36ab8211786b3936520a62cbae39f3a8565fa4",
-    "localSha256": "039f26b9a1f338e51ba5e25c9ff2011a700fe2228ff2aaa4a0b2a337bbbbd2a8"
+    "localSha256": "039f26b9a1f338e51ba5e25c9ff2011a700fe2228ff2aaa4a0b2a337bbbbd2a8",
+    "width": 508,
+    "height": 381,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "abdomen-cholelithiasis-09",
@@ -4898,7 +6294,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "c8cea1ff97fbe6f733e825d773a70853c4b2e6c1",
-    "localSha256": "8bfb2a984fd926e21dae43ce7944004cbc256136826cda1d6e7e04cffda8ea40"
+    "localSha256": "8bfb2a984fd926e21dae43ce7944004cbc256136826cda1d6e7e04cffda8ea40",
+    "width": 3456,
+    "height": 4608,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-cholelithiasis-10",
@@ -4912,7 +6312,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "6af3d165ab91e1ee83e13dfd33daaba97f5e210e",
-    "localSha256": "99568757c02c118c9ab64ea510395c773eac4dc119003b371c7b8a8f124c1b5a"
+    "localSha256": "99568757c02c118c9ab64ea510395c773eac4dc119003b371c7b8a8f124c1b5a",
+    "width": 800,
+    "height": 600,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "abdomen-diverticulitis-09",
@@ -4926,7 +6330,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "d94a2af8f92c55fda906c7388ff269d8c9036015",
-    "localSha256": "40a4ffbff6d76ce703f4554a7dec6e998760e1fa8ded804a1d734943f8253dbd"
+    "localSha256": "40a4ffbff6d76ce703f4554a7dec6e998760e1fa8ded804a1d734943f8253dbd",
+    "width": 1134,
+    "height": 1082,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "abdomen-diverticulitis-10",
@@ -4940,7 +6348,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "666553835523e3dc8fb1510cac1412b5a483c01f",
-    "localSha256": "0b379a74575dc7713972a7ecee40004bddd32346a45f7e7ec53c1b01f0689575"
+    "localSha256": "0b379a74575dc7713972a7ecee40004bddd32346a45f7e7ec53c1b01f0689575",
+    "width": 1072,
+    "height": 1104,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "abdomen-diverticulitis-11",
@@ -4954,7 +6366,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "ede4db4a1c1052ff14d7aa6045d0ec5d393a94f8",
-    "localSha256": "bb05c7e0701fcb670ab8e11be1678c76f7f2b665448baba8e8894d08fbdb6f34"
+    "localSha256": "bb05c7e0701fcb670ab8e11be1678c76f7f2b665448baba8e8894d08fbdb6f34",
+    "width": 1050,
+    "height": 856,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "abdomen-hcc-05",
@@ -4968,7 +6384,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "69f10e1fca6852194185c01344493f03d846cd46",
-    "localSha256": "b01f44bbe6dfc303c27f7a3a97981749988b0a6e1bcd74174a8b3ff096ac0bd6"
+    "localSha256": "b01f44bbe6dfc303c27f7a3a97981749988b0a6e1bcd74174a8b3ff096ac0bd6",
+    "width": 473,
+    "height": 709,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "abdomen-new-chronic-pancreatitis-02",
@@ -4982,7 +6402,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "320fbe2ff3e628d1bb1529824b863f6d52ce6185",
-    "localSha256": "bc751bcd408c731a09f268fd937290579b3a23e4642fcd65da93fb1cdd0633a8"
+    "localSha256": "bc751bcd408c731a09f268fd937290579b3a23e4642fcd65da93fb1cdd0633a8",
+    "width": 1618,
+    "height": 1429,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "abdomen-renal-cyst-09",
@@ -4996,7 +6420,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "d8e96103b970e60e218b8b7f877fe7f18d122957",
-    "localSha256": "b78268e68d9d2a8732d0dbaf5dd7a13ad91a1cb2b8f4b2dfed4b0860c4fe073c"
+    "localSha256": "b78268e68d9d2a8732d0dbaf5dd7a13ad91a1cb2b8f4b2dfed4b0860c4fe073c",
+    "width": 650,
+    "height": 560,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "abdomen-renal-cyst-10",
@@ -5010,7 +6438,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "e7872ef8cea0f43d945837837a78e24c3949917d",
-    "localSha256": "8ef65cecc6bbcb62877b05b892a7b0d488b0e1e5322b68be948582fbbdcd2101"
+    "localSha256": "8ef65cecc6bbcb62877b05b892a7b0d488b0e1e5322b68be948582fbbdcd2101",
+    "width": 650,
+    "height": 560,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "abdomen-renal-cyst-11",
@@ -5024,7 +6456,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "7882c7da65c2db3b516c4badfd7a3968cbbee768",
-    "localSha256": "443db4184ef070fddcb9bc1716465891142b8dbefbcc50730b768111ec6adb81"
+    "localSha256": "443db4184ef070fddcb9bc1716465891142b8dbefbcc50730b768111ec6adb81",
+    "width": 650,
+    "height": 560,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "abdomen-gallbladder-polyp-03",
@@ -5038,7 +6474,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "3a3c239cd6359a2e2fb2159e0dc3150c2167815a",
-    "localSha256": "910a45ef668ada80b2e47eebe326b95362129845687ab1a84562ac14d59aa131"
+    "localSha256": "910a45ef668ada80b2e47eebe326b95362129845687ab1a84562ac14d59aa131",
+    "width": 773,
+    "height": 579,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-new-humerus-fracture-01",
@@ -5052,7 +6492,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "c18950d0c7f1737cfe461a533d4ccaa219e5991c",
-    "localSha256": "6f3eb464d374409f8352736ad513ba7c35bf881926ffbdfe6bf017cc127106fd"
+    "localSha256": "6f3eb464d374409f8352736ad513ba7c35bf881926ffbdfe6bf017cc127106fd",
+    "width": 525,
+    "height": 649,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "bone-new-scaphoid-fracture-01",
@@ -5066,7 +6510,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "f964a934c680032c3b41979cd1fd75e4c556265a",
-    "localSha256": "38d50b80daa5071b8dde6f62b4b975e93c191049916c90c7960da8d93b88169b"
+    "localSha256": "38d50b80daa5071b8dde6f62b4b975e93c191049916c90c7960da8d93b88169b",
+    "width": 357,
+    "height": 512,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "bone-new-scaphoid-fracture-02",
@@ -5080,7 +6528,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "e24acdae597a3b82035be486775d9c1879ecf042",
-    "localSha256": "12df6d7040f2ce4f27c1fc9fff46bda5de47583749996592b6d56d1a20c8e777"
+    "localSha256": "12df6d7040f2ce4f27c1fc9fff46bda5de47583749996592b6d56d1a20c8e777",
+    "width": 600,
+    "height": 505,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "bone-new-metacarpal-fracture-01",
@@ -5094,7 +6546,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "662e0676e0696ab9b70a014dbb010214a2b1cdd2",
-    "localSha256": "de29b589153be8996588d9b641b128a6fb8d4b7ac428e8ba82c5043d08af090f"
+    "localSha256": "de29b589153be8996588d9b641b128a6fb8d4b7ac428e8ba82c5043d08af090f",
+    "width": 960,
+    "height": 720,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "bone-new-elbow-dislocation-01",
@@ -5108,7 +6564,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "5a834b57b7356142565644442881cc67ef0da9c2",
-    "localSha256": "302b515fbe56756e35297ce559813c16fd25b50424d65e1069c578aa4ecf46bd"
+    "localSha256": "302b515fbe56756e35297ce559813c16fd25b50424d65e1069c578aa4ecf46bd",
+    "width": 3024,
+    "height": 2308,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "bone-new-brodie-abscess-01",
@@ -5122,7 +6582,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "4aa427f5f2d0776fe418abf40315bcf0e628043e",
-    "localSha256": "2a3ab2547daa7cf4ae8b19550515b16715610c3c3a8129c5b32b0762b9d6310e"
+    "localSha256": "2a3ab2547daa7cf4ae8b19550515b16715610c3c3a8129c5b32b0762b9d6310e",
+    "width": 644,
+    "height": 1654,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "bone-new-osteochondroma-01",
@@ -5136,7 +6600,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "77024b9262e66657298c18064c34bf303227e912",
-    "localSha256": "10305689937329b21a1356c14cad136a710da8b3619e53e927dc0b28470f742a"
+    "localSha256": "10305689937329b21a1356c14cad136a710da8b3619e53e927dc0b28470f742a",
+    "width": 952,
+    "height": 1494,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "bone-new-osteoid-osteoma-01",
@@ -5150,7 +6618,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "192783ab74cb2a2992677ab4c1877fd9a9f4fff3",
-    "localSha256": "64b8657e181c35cb96b005cc2f0536e3e455fd4778d98cdab917bd19a81ab933"
+    "localSha256": "64b8657e181c35cb96b005cc2f0536e3e455fd4778d98cdab917bd19a81ab933",
+    "width": 512,
+    "height": 444,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "bone-hip-fracture-20",
@@ -5164,7 +6636,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "62b48de1d51d9f443711158f7a89d1ab5f692a57",
-    "localSha256": "25e026ecf0fff9357e6e5bcd22759475e63dee587d8049f05fa7a62720065e4b"
+    "localSha256": "25e026ecf0fff9357e6e5bcd22759475e63dee587d8049f05fa7a62720065e4b",
+    "width": 749,
+    "height": 942,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-new-rickets-01",
@@ -5178,7 +6654,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "cbe7657b51b462834e5d7423fac9ceee4cea9664",
-    "localSha256": "38857994d2f0abb101dfc31cf493280d3aa58c5350eecfa5970dfffffd241c42"
+    "localSha256": "38857994d2f0abb101dfc31cf493280d3aa58c5350eecfa5970dfffffd241c42",
+    "width": 1265,
+    "height": 937,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "bone-new-femoral-head-avn-01",
@@ -5192,7 +6672,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "c6eb00ef055f15ab2502b9cd8b98a1e98972c5d4",
-    "localSha256": "48bb8cecab45a66649f971c5261ecb031c000dae55a59772530ec4325de7a708"
+    "localSha256": "48bb8cecab45a66649f971c5261ecb031c000dae55a59772530ec4325de7a708",
+    "width": 603,
+    "height": 396,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "bone-new-perthes-disease-01",
@@ -5206,7 +6690,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "d2fd41a3369344432647e07b2fda7924fc7388de",
-    "localSha256": "067aaec0ea99df61aaf3aed3820b6f99e91947013a9edd8f117034ab8ab7f216"
+    "localSha256": "067aaec0ea99df61aaf3aed3820b6f99e91947013a9edd8f117034ab8ab7f216",
+    "width": 1017,
+    "height": 656,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "bone-new-hallux-valgus-01",
@@ -5220,7 +6708,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 2.0 de",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
     "originalSha1": "22fc1407f0854705ec3e5f0d993276788830ba6a",
-    "localSha256": "f1e2cd407e77ddc1bb1c3aed613fbc376b19e2cff6dc2803c414a7396157043b"
+    "localSha256": "f1e2cd407e77ddc1bb1c3aed613fbc376b19e2cff6dc2803c414a7396157043b",
+    "width": 2364,
+    "height": 2964,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "bone-new-achilles-rupture-01",
@@ -5234,7 +6726,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "9fb663b8c2bb277c5547bc528a8f089837d9c172",
-    "localSha256": "9307e598e096d8af56ef3cc9589fce616d2e04ab4330da625a4cf17029e2c13a"
+    "localSha256": "9307e598e096d8af56ef3cc9589fce616d2e04ab4330da625a4cf17029e2c13a",
+    "width": 888,
+    "height": 1096,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "bone-new-meniscal-tear-01",
@@ -5248,7 +6744,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "d130fa69380795adc857d928b28c0b0366e96b51",
-    "localSha256": "55362f3bee8c116a892bee661e46b15d20ab1e0568272f5112357e1e9bc87778"
+    "localSha256": "55362f3bee8c116a892bee661e46b15d20ab1e0568272f5112357e1e9bc87778",
+    "width": 304,
+    "height": 308,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "bone-new-rotator-cuff-tear-01",
@@ -5262,7 +6762,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "2e9bb4927529a2dd8b2afebe4e73b993b007bad6",
-    "localSha256": "017798cab0f6583ea6e646b013bdc51c1a6c79ed6b4702d6203316f3e4f4c60b"
+    "localSha256": "017798cab0f6583ea6e646b013bdc51c1a6c79ed6b4702d6203316f3e4f4c60b",
+    "width": 798,
+    "height": 560,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "bone-new-biceps-tendon-rupture-01",
@@ -5276,7 +6780,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "originalSha1": "236f2d0610099a495ef1d38915ce0a35c716e096",
-    "localSha256": "9ed87acb7610360ba497a68c321e5b69d19c06703d4da6ef7a489410cf1f7671"
+    "localSha256": "9ed87acb7610360ba497a68c321e5b69d19c06703d4da6ef7a489410cf1f7671",
+    "width": 1228,
+    "height": 392,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "bone-new-osteoid-osteoma-02",
@@ -5290,7 +6798,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "75ffb8f6a7303a42274ee120d2395b91d784d7e5",
-    "localSha256": "3eac073295c3b2f347edc11cba390f9aca2c44100004f1552d128bec727bda93"
+    "localSha256": "3eac073295c3b2f347edc11cba390f9aca2c44100004f1552d128bec727bda93",
+    "width": 1024,
+    "height": 1024,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "bone-hip-fracture-10",
@@ -5304,7 +6816,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "f9b5ca3c4061d7aa262b4b583682386e80c3e32c",
-    "localSha256": "6fbccff627437fbc0d4e1a47aee548b17bd176ff4b90d6023e700e99cac7d5c0"
+    "localSha256": "6fbccff627437fbc0d4e1a47aee548b17bd176ff4b90d6023e700e99cac7d5c0",
+    "width": 701,
+    "height": 1023,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-hip-fracture-11",
@@ -5318,7 +6834,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "originalSha1": "cc6282da243bf31314ce6743f42ffc68d24be7b6",
-    "localSha256": "507a87af183e8ca06360dcb6feab5943439106661f2a3030ddef2d60cfffa7f4"
+    "localSha256": "507a87af183e8ca06360dcb6feab5943439106661f2a3030ddef2d60cfffa7f4",
+    "width": 2048,
+    "height": 1536,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-hip-fracture-12",
@@ -5332,7 +6852,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "originalSha1": "8481129354c85cb3632a8ddbed353da239fb7c27",
-    "localSha256": "f5d6e9a02f97953f40d3bd2e516642262a6cba1380f822776344a0150452f270"
+    "localSha256": "f5d6e9a02f97953f40d3bd2e516642262a6cba1380f822776344a0150452f270",
+    "width": 2048,
+    "height": 1536,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-hip-fracture-13",
@@ -5346,7 +6870,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "ca144fdde48c220caffbffdd951a5647a54f68da",
-    "localSha256": "eb7f614aa2892ce53aaf13d431fcd621eef5b8cbf6e419342c80aeec6ed5b53e"
+    "localSha256": "eb7f614aa2892ce53aaf13d431fcd621eef5b8cbf6e419342c80aeec6ed5b53e",
+    "width": 534,
+    "height": 472,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-hip-fracture-14",
@@ -5360,7 +6888,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "originalSha1": "c9e3d9a016a2749edc64ad4c4457b65db55b124a",
-    "localSha256": "872e3f2e0b3f2914abef53ab12a8f0547e01fed2a161b5ba2768485b2d58884a"
+    "localSha256": "872e3f2e0b3f2914abef53ab12a8f0547e01fed2a161b5ba2768485b2d58884a",
+    "width": 1509,
+    "height": 895,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-hip-fracture-15",
@@ -5374,7 +6906,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "originalSha1": "2bd7a79b3fa8997c3caca68d9a819e696451fa15",
-    "localSha256": "1c6ca09eee841f93be45471c1a113db70b679ff029f0b8eeccc29d25ed037078"
+    "localSha256": "1c6ca09eee841f93be45471c1a113db70b679ff029f0b8eeccc29d25ed037078",
+    "width": 815,
+    "height": 879,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-hip-fracture-16",
@@ -5388,7 +6924,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "2729061acd7978a45f88aa93bc1fa1c573037e15",
-    "localSha256": "9363d595d2bbe3749eab2569d2a7135c8e06c93bd51e9aa47e37cb7ad918ec82"
+    "localSha256": "9363d595d2bbe3749eab2569d2a7135c8e06c93bd51e9aa47e37cb7ad918ec82",
+    "width": 1518,
+    "height": 1263,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-hip-fracture-17",
@@ -5402,7 +6942,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "65755f449befd1f0923321445d08eee72329e96b",
-    "localSha256": "a6156f81aa2d660def1f7bdbb2c66ac78242baeb0a980ebc862a40434cd8d6d7"
+    "localSha256": "a6156f81aa2d660def1f7bdbb2c66ac78242baeb0a980ebc862a40434cd8d6d7",
+    "width": 661,
+    "height": 1124,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-hip-fracture-18",
@@ -5416,7 +6960,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "152cd3fcdb5b25ce5a89fb16b2aeb08b8039ea9d",
-    "localSha256": "02551f3126eae77965aff512c7ccc3266717008ab72e1655b0bbe45849afce6b"
+    "localSha256": "02551f3126eae77965aff512c7ccc3266717008ab72e1655b0bbe45849afce6b",
+    "width": 1465,
+    "height": 921,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-hip-fracture-19",
@@ -5430,7 +6978,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "a9cae911840bcf5d6fc1c99a459e479f9b7233cd",
-    "localSha256": "74f93b262fefd02c66e6c42c482e829c73b810af623928eda6b576148f5c86b8"
+    "localSha256": "74f93b262fefd02c66e6c42c482e829c73b810af623928eda6b576148f5c86b8",
+    "width": 1434,
+    "height": 1087,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-clavicle-fracture-07",
@@ -5444,7 +6996,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "originalSha1": "553212f7fb4d70baa65c92e235a5c53a64fee293",
-    "localSha256": "90e2181bf6e992b519ded4e6fabc9e84b33d0dc23cff7c950bdf945c5574b220"
+    "localSha256": "90e2181bf6e992b519ded4e6fabc9e84b33d0dc23cff7c950bdf945c5574b220",
+    "width": 1530,
+    "height": 1020,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-clavicle-fracture-08",
@@ -5458,7 +7014,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "originalSha1": "6547a606aed470474ef331b3354a5ee89557a88a",
-    "localSha256": "52317ffbb7920f3a8068f2fba65cbbf70837a56b6b6abcd417d263d3a7882924"
+    "localSha256": "52317ffbb7920f3a8068f2fba65cbbf70837a56b6b6abcd417d263d3a7882924",
+    "width": 2202,
+    "height": 1101,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-clavicle-fracture-09",
@@ -5472,7 +7032,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "originalSha1": "2187597b26dc655d8273e477feb099c1d63478e9",
-    "localSha256": "5d90c865a1e3ab34763e92830cea0969db9ce440ce7e4695df955eda81316fe2"
+    "localSha256": "5d90c865a1e3ab34763e92830cea0969db9ce440ce7e4695df955eda81316fe2",
+    "width": 921,
+    "height": 460,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-clavicle-fracture-10",
@@ -5486,7 +7050,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "6aa3cde4b96dfb8a056fd8438d205426c6ceb6dc",
-    "localSha256": "13ace3cc83befa9160377e4912ee86629cdea20825de587257cb3fd964cfbfeb"
+    "localSha256": "13ace3cc83befa9160377e4912ee86629cdea20825de587257cb3fd964cfbfeb",
+    "width": 578,
+    "height": 307,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-clavicle-fracture-11",
@@ -5500,7 +7068,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "0b6c61e9fb6982e800c5d7a7120687a0afacfd23",
-    "localSha256": "1b84abcb823dceb4ae833c20cfa5e0b4a51002ca47c5ca9add1db28a7ab1eb9f"
+    "localSha256": "1b84abcb823dceb4ae833c20cfa5e0b4a51002ca47c5ca9add1db28a7ab1eb9f",
+    "width": 975,
+    "height": 566,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-clavicle-fracture-12",
@@ -5514,7 +7086,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "c54823cadd090bd584edf822c5169ce2a01eb2fc",
-    "localSha256": "859cce1e63f1f6a95667246bd073c97c43a18f80092292e7ab150d578dd7d5d4"
+    "localSha256": "859cce1e63f1f6a95667246bd073c97c43a18f80092292e7ab150d578dd7d5d4",
+    "width": 1026,
+    "height": 930,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-clavicle-fracture-13",
@@ -5528,7 +7104,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "886ae8ac867e28d2a393d6710f4437a33bd960ec",
-    "localSha256": "9801419e7842882973fc8b425ba577e4dd5be9eaf227130daab06777b602e2b2"
+    "localSha256": "9801419e7842882973fc8b425ba577e4dd5be9eaf227130daab06777b602e2b2",
+    "width": 4608,
+    "height": 3456,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-clavicle-fracture-14",
@@ -5542,7 +7122,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "7167dc875e0d1fc31bbc60393bd23fac6014ea7f",
-    "localSha256": "f3e820ae08a8c069e1e7a7bb23ffb6859ec422958b3bf288d60549aa15d73078"
+    "localSha256": "f3e820ae08a8c069e1e7a7bb23ffb6859ec422958b3bf288d60549aa15d73078",
+    "width": 2048,
+    "height": 1536,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-distal-radius-07",
@@ -5556,7 +7140,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "f6f8dc611bce86598d22dd603580ef47da5d8e2f",
-    "localSha256": "7141156776e4095d55d8c3496f7c4c3b766d9b75516e043e613b7cd03a140740"
+    "localSha256": "7141156776e4095d55d8c3496f7c4c3b766d9b75516e043e613b7cd03a140740",
+    "width": 740,
+    "height": 1122,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-distal-radius-08",
@@ -5570,7 +7158,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "c4258dd120f658db8d68987228b6d668dee6caae",
-    "localSha256": "43c78ce0029aba4574ae22d7ed22deb6ab857b80ccef4f0a980ddedfa465bb2a"
+    "localSha256": "43c78ce0029aba4574ae22d7ed22deb6ab857b80ccef4f0a980ddedfa465bb2a",
+    "width": 2304,
+    "height": 3072,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-distal-radius-09",
@@ -5584,7 +7176,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "172ad3240b8955cd7cbe142ec7618fa474c22aeb",
-    "localSha256": "aa9f7847bdbbe0cd5b3e58c87737dffa8fcbf9ebaa87b8d1fd88d634115e54de"
+    "localSha256": "aa9f7847bdbbe0cd5b3e58c87737dffa8fcbf9ebaa87b8d1fd88d634115e54de",
+    "width": 2392,
+    "height": 1792,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-distal-radius-10",
@@ -5598,7 +7194,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "60e0056707c0493b7ebb35fe9acdb1020bc981f5",
-    "localSha256": "4efec8f7277bb2f1ba1290a34df45335564e24c7622efc3f483cc318f62a0121"
+    "localSha256": "4efec8f7277bb2f1ba1290a34df45335564e24c7622efc3f483cc318f62a0121",
+    "width": 1318,
+    "height": 1068,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-distal-radius-11",
@@ -5612,7 +7212,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "877000c67a0a907bb7cf1a85a000bf30e9f02780",
-    "localSha256": "eeac3e6966ee14e6d667d95de48233bd2843ce6c0defc2a90f60b8d4325d533a"
+    "localSha256": "eeac3e6966ee14e6d667d95de48233bd2843ce6c0defc2a90f60b8d4325d533a",
+    "width": 1140,
+    "height": 1461,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-distal-radius-12",
@@ -5626,7 +7230,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "1fbdf8cb50b08f3d950f75e233a66d8f76a40bcc",
-    "localSha256": "6617e1acd054108a80540d76e4463ba2a4d791806e782e1bdaf821606df9334a"
+    "localSha256": "6617e1acd054108a80540d76e4463ba2a4d791806e782e1bdaf821606df9334a",
+    "width": 3454,
+    "height": 5023,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-shoulder-dislocation-07",
@@ -5640,7 +7248,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "35a9aec2fb857c0f881e7409362c9880238c3bfa",
-    "localSha256": "467d734cba3138a28cb92b2e052fe18ca7daaf81f1bce8c26932d674eac31f59"
+    "localSha256": "467d734cba3138a28cb92b2e052fe18ca7daaf81f1bce8c26932d674eac31f59",
+    "width": 1767,
+    "height": 2295,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-shoulder-dislocation-08",
@@ -5654,7 +7266,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "76ed469dde999426eecbc9c966c67400b752f6f9",
-    "localSha256": "c0cc17d08e6bf28f698457e9f5a567d1680d34663e7dfd5ca624e44e22f290df"
+    "localSha256": "c0cc17d08e6bf28f698457e9f5a567d1680d34663e7dfd5ca624e44e22f290df",
+    "width": 1658,
+    "height": 918,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-shoulder-dislocation-09",
@@ -5668,7 +7284,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "43f77ad4fe18d3afdb111c9e0dcc54299c3fd29e",
-    "localSha256": "a4efa689487c58ed16064ce65a17d8147eaf91d183e06f50266e6bf7bce92557"
+    "localSha256": "a4efa689487c58ed16064ce65a17d8147eaf91d183e06f50266e6bf7bce92557",
+    "width": 784,
+    "height": 1116,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-shoulder-dislocation-10",
@@ -5682,7 +7302,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "originalSha1": "263b697bcb71bb3b76c2264e2bf6a8e45d72d1b3",
-    "localSha256": "75042ffd8da0e0d91d0ae95f6126678f44d819afc2f0e6aa3727b87f1363de78"
+    "localSha256": "75042ffd8da0e0d91d0ae95f6126678f44d819afc2f0e6aa3727b87f1363de78",
+    "width": 600,
+    "height": 1200,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-shoulder-dislocation-11",
@@ -5696,7 +7320,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "b4da496ded9f4a258f2e6d51ac018b0906195fa8",
-    "localSha256": "131cf69ab27bf22b82228af63b2a83374c6b449400d981f5dd0c8a2b8974b3ee"
+    "localSha256": "131cf69ab27bf22b82228af63b2a83374c6b449400d981f5dd0c8a2b8974b3ee",
+    "width": 967,
+    "height": 1073,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-shoulder-dislocation-12",
@@ -5710,7 +7338,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "a19c3923915456076388d0a6f67706da1b317325",
-    "localSha256": "b8c73beb8d551a7af86122a8624b47ec3ead55f69d320e9a7e66866a4294f427"
+    "localSha256": "b8c73beb8d551a7af86122a8624b47ec3ead55f69d320e9a7e66866a4294f427",
+    "width": 1350,
+    "height": 762,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-scoliosis-12",
@@ -5724,7 +7356,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "8fd0d25ae1fc9798301ef2c1ab7cc84b42f69c0b",
-    "localSha256": "a2e952efd0018ebd3e4e203d4e7680de033588e7dde2ef583af9b5330d281977"
+    "localSha256": "a2e952efd0018ebd3e4e203d4e7680de033588e7dde2ef583af9b5330d281977",
+    "width": 429,
+    "height": 663,
+    "retrieval": "category",
+    "qualityScore": null
   },
   {
     "id": "bone-scoliosis-13",
@@ -5738,7 +7374,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "28051fb1ef054e30a57c79983571480135ca4cbc",
-    "localSha256": "7955a78d9185dbd19356174a5af0f979909e520bfe4b426c376713a7cb1af8c0"
+    "localSha256": "7955a78d9185dbd19356174a5af0f979909e520bfe4b426c376713a7cb1af8c0",
+    "width": 611,
+    "height": 492,
+    "retrieval": "search",
+    "qualityScore": null
   },
   {
     "id": "chest-next-ards-01",
@@ -5752,7 +7392,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
     "originalSha1": "723310a7fe087dd5e789a897cbc54d94fbecc22c",
-    "localSha256": "794d16791b7ce7433d0a2c8d6e4e1c4c3bb4d81474d80693d908f830c6c4542f"
+    "localSha256": "794d16791b7ce7433d0a2c8d6e4e1c4c3bb4d81474d80693d908f830c6c4542f",
+    "width": 804,
+    "height": 686,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "chest-next-pneumomediastinum-01",
@@ -5766,7 +7410,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "73a81b4dd5d54f3d4f811312d02a6c144d043431",
-    "localSha256": "fcd8210ec6bee0524e085907c3bd3f126325cdc1ddfb763f0f149fb5d03c10aa"
+    "localSha256": "fcd8210ec6bee0524e085907c3bd3f126325cdc1ddfb763f0f149fb5d03c10aa",
+    "width": 2904,
+    "height": 1528,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "chest-next-silicosis-simple-01",
@@ -5780,7 +7428,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "ce01aa1e31bb3fc2611d9f8c38059b3f6f500966",
-    "localSha256": "8d8c9e9049883780d1d1d8ceb1d9527e7dabaaaaac6da2b52d823a611195789f"
+    "localSha256": "8d8c9e9049883780d1d1d8ceb1d9527e7dabaaaaac6da2b52d823a611195789f",
+    "width": 1516,
+    "height": 1347,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "chest-next-asbestosis-01",
@@ -5794,7 +7446,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 2.5",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
     "originalSha1": "b5cc4d8aa61ced864cf23151373c99613f51dba9",
-    "localSha256": "b3849a42a87551ce111364362de4af64d4f0f5e3d4b07432a5542b2467e83af3"
+    "localSha256": "b3849a42a87551ce111364362de4af64d4f0f5e3d4b07432a5542b2467e83af3",
+    "width": 843,
+    "height": 1024,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "chest-next-pulmonary-hamartoma-01",
@@ -5808,7 +7464,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "originalSha1": "fe442d633d05f1876ac97c22884da63dfb9caea7",
-    "localSha256": "35f80edc0f699638eff339141dc3901be07f1fa8839e3a4149fe8b2aa798363b"
+    "localSha256": "35f80edc0f699638eff339141dc3901be07f1fa8839e3a4149fe8b2aa798363b",
+    "width": 512,
+    "height": 448,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "chest-next-transposition-great-arteries-01",
@@ -5822,7 +7482,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "17fbf1b83823e214f39533157fb739d649286551",
-    "localSha256": "a6c4424a391da27d52c1eb22debd8d53ad8cd221aa87330bb50efd865eec1051"
+    "localSha256": "a6c4424a391da27d52c1eb22debd8d53ad8cd221aa87330bb50efd865eec1051",
+    "width": 564,
+    "height": 684,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "chest-next-alveolar-proteinosis-01",
@@ -5836,7 +7500,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "originalSha1": "0c3131c9ca76242bb25db6ff7602fc38cc5c13aa",
-    "localSha256": "44f84ada82ae1bb6068fa5d2546bb865ba61d5454e4a3fcc1c46e7b781e33c6c"
+    "localSha256": "44f84ada82ae1bb6068fa5d2546bb865ba61d5454e4a3fcc1c46e7b781e33c6c",
+    "width": 648,
+    "height": 703,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "chest-next-organizing-pneumonia-01",
@@ -5850,7 +7518,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "9d50c5d573cb47cd43051cda21021f844c6c07c7",
-    "localSha256": "dad5bc90434f5cc235e4ec43ba1c982646ff6164558ea879591e393927aefea0"
+    "localSha256": "dad5bc90434f5cc235e4ec43ba1c982646ff6164558ea879591e393927aefea0",
+    "width": 736,
+    "height": 543,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "chest-next-blast-lung-01",
@@ -5864,7 +7536,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "3e46c1831cfd381c8bb337585e948ba20b719fdc",
-    "localSha256": "4a5375e1ba201d602f80ba8cc5894a10e1ff5b87a4c8e979c63e4862e989930e"
+    "localSha256": "4a5375e1ba201d602f80ba8cc5894a10e1ff5b87a4c8e979c63e4862e989930e",
+    "width": 648,
+    "height": 468,
+    "retrieval": "curated-replacement",
+    "qualityScore": "manual-source-and-image-match"
   },
   {
     "id": "chest-next-pneumocystis-pneumonia-01",
@@ -5878,7 +7554,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "c5b48983e354be3822638aa57ad41731e8aae4e8",
-    "localSha256": "7def3d42c54e3d0d0b01b4351409611e0f66f84351db162783d9ec9d9961f001"
+    "localSha256": "7def3d42c54e3d0d0b01b4351409611e0f66f84351db162783d9ec9d9961f001",
+    "width": 959,
+    "height": 751,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "chest-next-congenital-diaphragmatic-hernia-01",
@@ -5892,7 +7572,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "e6d6fc20dd55d9228727c5cff6528e67fe2eaa83",
-    "localSha256": "c3389b37c735d684475d29b64b41bac772e81d179bc8ad6246e40864ad1ef7a8"
+    "localSha256": "c3389b37c735d684475d29b64b41bac772e81d179bc8ad6246e40864ad1ef7a8",
+    "width": 825,
+    "height": 985,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "chest-next-hypersensitivity-pneumonitis-01",
@@ -5906,7 +7590,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "c7682850d98239d5afe9230bb48381602a52188f",
-    "localSha256": "5137f77d6ae3a7d90f76367f936e320a77332673746c0c52d8511c50b25ea8e2"
+    "localSha256": "5137f77d6ae3a7d90f76367f936e320a77332673746c0c52d8511c50b25ea8e2",
+    "width": 546,
+    "height": 384,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "chest-next-scimitar-syndrome-01",
@@ -5920,7 +7608,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "ae9f57e61cf641819f5eddd60ff9b67130b40101",
-    "localSha256": "dc9b7ca26350eec25a0a0e1047cacad8a933b5cc783c06fdf4ea9699728dcc52"
+    "localSha256": "dc9b7ca26350eec25a0a0e1047cacad8a933b5cc783c06fdf4ea9699728dcc52",
+    "width": 1157,
+    "height": 861,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "chest-next-tracheobronchial-injury-01",
@@ -5934,7 +7626,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "6c5965b29f8d3f4716260b29735fc669ad240e0f",
-    "localSha256": "96f7f0a06e6a97c8cdfaa9b3a994d70e16bf9b2f37c10357bb9d466ffba589ba"
+    "localSha256": "96f7f0a06e6a97c8cdfaa9b3a994d70e16bf9b2f37c10357bb9d466ffba589ba",
+    "width": 600,
+    "height": 434,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "chest-next-boerhaave-01",
@@ -5948,7 +7644,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "844031a94bf8094d4138998ae30b22bccbc3194f",
-    "localSha256": "bb15c01f3c5dde12272cfe39df7295e91317604f5c084f3870d64d780ce50ac3"
+    "localSha256": "bb15c01f3c5dde12272cfe39df7295e91317604f5c084f3870d64d780ce50ac3",
+    "width": 748,
+    "height": 858,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "chest-next-thoracic-splenosis-01",
@@ -5962,7 +7662,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "originalSha1": "6343b6a131a699de4ccf9b6fd0493dcdfb5f2287",
-    "localSha256": "fc288edc831bd5831c7ac8eeca417802de8c2394daffe8898b71905db611d0a5"
+    "localSha256": "fc288edc831bd5831c7ac8eeca417802de8c2394daffe8898b71905db611d0a5",
+    "width": 512,
+    "height": 442,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "chest-next-tension-pneumothorax-01",
@@ -5976,7 +7680,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "da8fe68c82b50fb9392aecdbdb0b9f5da13f5aa4",
-    "localSha256": "4c51473242d1a82b37e091c34fb0bdc1d85c7c50d85acad08bf13fdd807abb39"
+    "localSha256": "4c51473242d1a82b37e091c34fb0bdc1d85c7c50d85acad08bf13fdd807abb39",
+    "width": 512,
+    "height": 390,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "chest-next-ards-typhus-01",
@@ -5990,7 +7698,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "8c6a71c847e238535cb7c6e86e585e1256cfba52",
-    "localSha256": "13c3b8cf04668b2eadd4b566c1d637a7f44b8d85afbd1ace9d21d5c6b692d380"
+    "localSha256": "13c3b8cf04668b2eadd4b566c1d637a7f44b8d85afbd1ace9d21d5c6b692d380",
+    "width": 507,
+    "height": 491,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "chest-next-silicosis-complicated-01",
@@ -6004,7 +7716,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "a88e70fc40bfe56b8df9af2c1f72f37729fff54a",
-    "localSha256": "6d39bdf67ce5268546f10f100001bbc001f9970267b0eabbdc4ac5b63a148bd2"
+    "localSha256": "6d39bdf67ce5268546f10f100001bbc001f9970267b0eabbdc4ac5b63a148bd2",
+    "width": 848,
+    "height": 696,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "neuro-next-diffuse-axonal-injury-01",
@@ -6018,7 +7734,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "ac454f8523116abc23c645391a97dcd54e513781",
-    "localSha256": "6fc4efd8e9537e748f812c320dd000f9eeba41d1fe0ab380dd6725f04132e395"
+    "localSha256": "6fc4efd8e9537e748f812c320dd000f9eeba41d1fe0ab380dd6725f04132e395",
+    "width": 946,
+    "height": 526,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "neuro-next-pres-01",
@@ -6032,7 +7752,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "fa54b317b82944774b133606410a5ee2d70acf70",
-    "localSha256": "38b3880ce8dcdab6bd4096bcf87206df1563dae4161fdb992627240f9dfc8b15"
+    "localSha256": "38b3880ce8dcdab6bd4096bcf87206df1563dae4161fdb992627240f9dfc8b15",
+    "width": 600,
+    "height": 725,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "neuro-next-central-pontine-myelinolysis-01",
@@ -6046,7 +7770,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "f0eed828909b1ef669cdbc886f2357752aafe765",
-    "localSha256": "0f69eeb8b04d85e59d029580beb19598b71b6b5239edd02fbeea6d0fdc3ac2fd"
+    "localSha256": "0f69eeb8b04d85e59d029580beb19598b71b6b5239edd02fbeea6d0fdc3ac2fd",
+    "width": 722,
+    "height": 903,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "neuro-next-extrapontine-myelinolysis-01",
@@ -6060,7 +7788,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "b61b932ac8b2d150a4fd5e87a793640e3b0f7ec2",
-    "localSha256": "bd60f7fe4848eae79aee417bb3a9ca159cf2f8b352a9f543da7c348db73742c4"
+    "localSha256": "bd60f7fe4848eae79aee417bb3a9ca159cf2f8b352a9f543da7c348db73742c4",
+    "width": 566,
+    "height": 716,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "neuro-next-wernicke-encephalopathy-01",
@@ -6074,7 +7806,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "175fb23f629c12424592f43effbdd51603eb6407",
-    "localSha256": "ad18ce973a79f3be5ccae52aa403efc7a9f3dee177fe36829cf8aa60358a64d7"
+    "localSha256": "ad18ce973a79f3be5ccae52aa403efc7a9f3dee177fe36829cf8aa60358a64d7",
+    "width": 699,
+    "height": 902,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "neuro-next-temporal-arachnoid-cyst-01",
@@ -6088,7 +7824,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "f56a09bf9c0fed79414c9226be635d5098395d6f",
-    "localSha256": "776982e3ac8bc79ab2e55841fa94c47a884a66a6e38cfa8dc6c53ca0897f5271"
+    "localSha256": "776982e3ac8bc79ab2e55841fa94c47a884a66a6e38cfa8dc6c53ca0897f5271",
+    "width": 807,
+    "height": 907,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "neuro-next-intraventricular-arachnoid-cyst-01",
@@ -6102,7 +7842,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "f8f858df6aab96ff87547022efa9cb121192d7f1",
-    "localSha256": "2744a15587c1873fc36c0919dadf33c5e1f206a32566cd6a95a268c0aa831a49"
+    "localSha256": "2744a15587c1873fc36c0919dadf33c5e1f206a32566cd6a95a268c0aa831a49",
+    "width": 2442,
+    "height": 899,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "neuro-next-epidermoid-cyst-01",
@@ -6116,7 +7860,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "1231bf1215cd52c4942ced77ec8f4a2e533a8ff4",
-    "localSha256": "627b3bb86a8850c49478e7161367e523eaf33d9b0d35dafb65cc71ac3205bf72"
+    "localSha256": "627b3bb86a8850c49478e7161367e523eaf33d9b0d35dafb65cc71ac3205bf72",
+    "width": 716,
+    "height": 836,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "neuro-next-ependymoma-01",
@@ -6130,7 +7878,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "0826e7f45eea53214f5fb44f46349872c8072a4b",
-    "localSha256": "549f50ba37071c3e8ee11bab23e2c26038105938605a2a73c070a0bb6b60a1a3"
+    "localSha256": "549f50ba37071c3e8ee11bab23e2c26038105938605a2a73c070a0bb6b60a1a3",
+    "width": 932,
+    "height": 974,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "neuro-next-primary-cns-lymphoma-01",
@@ -6144,7 +7896,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "d38962a1281ec8d03e2ec10f7235edc56278d0d3",
-    "localSha256": "3d9adebb5d4a719c4829b710d746abcda6fba1ca0581ea540f38a72fa093cad8"
+    "localSha256": "3d9adebb5d4a719c4829b710d746abcda6fba1ca0581ea540f38a72fa093cad8",
+    "width": 607,
+    "height": 751,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "neuro-next-dandy-walker-01",
@@ -6158,7 +7914,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "a3caebf561500993ef352f3869c2a9f2750c47d1",
-    "localSha256": "90adebeb9026ed51927c93d6f1726f4352946e48a1a3e1300824fb35d60cc118"
+    "localSha256": "90adebeb9026ed51927c93d6f1726f4352946e48a1a3e1300824fb35d60cc118",
+    "width": 923,
+    "height": 958,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "neuro-next-corpus-callosum-agenesis-01",
@@ -6172,7 +7932,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "0b7a7beea7237bac49a8fc3edded76aa372957e1",
-    "localSha256": "17d2ab7b3245768d48f5f51819ec623731ed87399cf8e65a263d2ab6cf8e263f"
+    "localSha256": "17d2ab7b3245768d48f5f51819ec623731ed87399cf8e65a263d2ab6cf8e263f",
+    "width": 921,
+    "height": 420,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "neuro-next-holoprosencephaly-01",
@@ -6186,7 +7950,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "bb6ff62e47f1d9855ab239c8d3adf0f1dd1f3f83",
-    "localSha256": "cd150d5b07c737ad16d8f710a33a6965ab11e5ddd2687688fed0aa555084b20f"
+    "localSha256": "cd150d5b07c737ad16d8f710a33a6965ab11e5ddd2687688fed0aa555084b20f",
+    "width": 1136,
+    "height": 852,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "neuro-next-subacute-combined-degeneration-01",
@@ -6200,7 +7968,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "342c877b64bc1edc90871b0268bb7b93ee9037b6",
-    "localSha256": "70ca94e689d3c5b96ffd5f44dce7ae97aaa2cfaa53c195200a6c340c38bb7c7d"
+    "localSha256": "70ca94e689d3c5b96ffd5f44dce7ae97aaa2cfaa53c195200a6c340c38bb7c7d",
+    "width": 734,
+    "height": 1017,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "neuro-next-cjd-01",
@@ -6214,7 +7986,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "2e2c5a46c668ec8b6adbfc36fc02ea7953aee806",
-    "localSha256": "71fad3ba91b8d5488279d0175ac241559a3fc508cbb6c4002ffff8e4f03847d7"
+    "localSha256": "71fad3ba91b8d5488279d0175ac241559a3fc508cbb6c4002ffff8e4f03847d7",
+    "width": 316,
+    "height": 344,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "neuro-next-spinal-hemangioblastoma-01",
@@ -6228,7 +8004,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "c831a8c16b09719bb24a6745320c3028e6092c90",
-    "localSha256": "8a92ef20c111a6bc8163631b4796208d4a3e37de46b61b2a3b438cf0082a24b2"
+    "localSha256": "8a92ef20c111a6bc8163631b4796208d4a3e37de46b61b2a3b438cf0082a24b2",
+    "width": 321,
+    "height": 327,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "neuro-next-clival-chordoma-01",
@@ -6242,7 +8022,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "1e85b86854d5afd1d37ca8c4eee40f8889b675f9",
-    "localSha256": "c48c879e16d9377b828eb3d851047eb52708e330a35903139992bf868557baeb"
+    "localSha256": "c48c879e16d9377b828eb3d851047eb52708e330a35903139992bf868557baeb",
+    "width": 654,
+    "height": 638,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "neuro-next-multiple-system-atrophy-01",
@@ -6256,7 +8040,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "6bbf1c52c74cc922836beaea54a129f789e81125",
-    "localSha256": "d327e2533c14a8dad0a7127a5f013cb783258ce8113fc5bf5494b0babb5aca77"
+    "localSha256": "d327e2533c14a8dad0a7127a5f013cb783258ce8113fc5bf5494b0babb5aca77",
+    "width": 940,
+    "height": 844,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "neuro-next-cerebral-amyloid-angiopathy-01",
@@ -6270,7 +8058,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "2feca1032218aa74bc04cbd707a862d192131b49",
-    "localSha256": "23622456a9da542fc896116e0d628abe739610ea2ed64d899ef79847a6eebadc"
+    "localSha256": "23622456a9da542fc896116e0d628abe739610ea2ed64d899ef79847a6eebadc",
+    "width": 1095,
+    "height": 398,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "abdomen-next-focal-nodular-hyperplasia-01",
@@ -6284,7 +8076,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "9c6c6c50728bcd7def984e5045883af5e4530d0a",
-    "localSha256": "c888e48427f6608b847fcca08e3b0b113e711f80738e334e5f5beca1d84fe798"
+    "localSha256": "c888e48427f6608b847fcca08e3b0b113e711f80738e334e5f5beca1d84fe798",
+    "width": 1024,
+    "height": 710,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "abdomen-next-budd-chiari-01",
@@ -6298,7 +8094,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "f02d7e2df5fc74e0405cb9d58ee1d839eef3dcc6",
-    "localSha256": "b9edec683196b3a0623deaa48b4e901a6ff6c7e3fc7613e14056c14d9df4504c"
+    "localSha256": "b9edec683196b3a0623deaa48b4e901a6ff6c7e3fc7613e14056c14d9df4504c",
+    "width": 1146,
+    "height": 914,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "abdomen-next-portal-vein-thrombosis-01",
@@ -6312,7 +8112,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "22a157e472d7699fbf94ccb66ffebc782d0d6d4c",
-    "localSha256": "c43a29259c211cf38f3999cc18cc058c5e31841c3fb05d9ad00e8e9534ec8bcf"
+    "localSha256": "c43a29259c211cf38f3999cc18cc058c5e31841c3fb05d9ad00e8e9534ec8bcf",
+    "width": 1054,
+    "height": 752,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "abdomen-next-hepatic-metastases-01",
@@ -6326,7 +8130,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "04d24fc24d17aeef6c6bb9e140409b9851b71860",
-    "localSha256": "02b1d2d5f735edb8d2945aff1f80169035b7bba046a49daeb3248853ee11fb21"
+    "localSha256": "02b1d2d5f735edb8d2945aff1f80169035b7bba046a49daeb3248853ee11fb21",
+    "width": 3072,
+    "height": 2304,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "abdomen-next-pancreatic-neuroendocrine-01",
@@ -6340,7 +8148,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "bf3041046996172b6aed16347aed6c0603d860ab",
-    "localSha256": "22cceb96a7404dba7ee7c5739ba05c33c75dc65beeb30ce288d8aca1f3c781d5"
+    "localSha256": "22cceb96a7404dba7ee7c5739ba05c33c75dc65beeb30ce288d8aca1f3c781d5",
+    "width": 1531,
+    "height": 754,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "abdomen-next-autoimmune-pancreatitis-01",
@@ -6354,7 +8166,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "834d260a58c3923c07554e81aad1b60d93c8c2a0",
-    "localSha256": "c10b051bf4d1bbb9ae1abb7ce35f76746832e5a29f7474b77e13168d1532cf05"
+    "localSha256": "c10b051bf4d1bbb9ae1abb7ce35f76746832e5a29f7474b77e13168d1532cf05",
+    "width": 600,
+    "height": 450,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "abdomen-next-epiploic-appendagitis-01",
@@ -6368,7 +8184,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "d095e9f9de655c0a9805a1ca36d68966da39cab6",
-    "localSha256": "976120791d0d1c1c5925adec281af942174387f5d6bb003d944e32ecf084fc38"
+    "localSha256": "976120791d0d1c1c5925adec281af942174387f5d6bb003d944e32ecf084fc38",
+    "width": 2830,
+    "height": 779,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "abdomen-next-toxic-megacolon-01",
@@ -6382,7 +8202,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "92fb178cfe8191fa7caaaca661ed2e02356009d4",
-    "localSha256": "5a85ecacb27815f037c8a0053a5e7cece54e935f82509de6228bdabcc61e091f"
+    "localSha256": "5a85ecacb27815f037c8a0053a5e7cece54e935f82509de6228bdabcc61e091f",
+    "width": 931,
+    "height": 1124,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "abdomen-next-cecal-volvulus-01",
@@ -6396,7 +8220,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "d96a43d608dc1b150913fc9f2499c6f08cd59712",
-    "localSha256": "1fb12ee5b4967cfacafde485dfd62b51f97e1ebec9047765a851d3a9ded2cda7"
+    "localSha256": "1fb12ee5b4967cfacafde485dfd62b51f97e1ebec9047765a851d3a9ded2cda7",
+    "width": 1092,
+    "height": 923,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "abdomen-next-sigmoid-volvulus-01",
@@ -6410,7 +8238,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "originalSha1": "1fc04e05a562cfb8c91627f7dadb8117120725e8",
-    "localSha256": "296e801e90e29674788ea2d481b59c5c7afc10264d3b3c38b909b386c3e19737"
+    "localSha256": "296e801e90e29674788ea2d481b59c5c7afc10264d3b3c38b909b386c3e19737",
+    "width": 510,
+    "height": 624,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "abdomen-next-renal-infarction-01",
@@ -6424,7 +8256,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "409c6f3b6ab693dec5225b474c6b0533a28ef7ec",
-    "localSha256": "f2c07bebc8f78751e069d2950e349c363e5ff094bed61bb464125b4878fde258"
+    "localSha256": "f2c07bebc8f78751e069d2950e349c363e5ff094bed61bb464125b4878fde258",
+    "width": 947,
+    "height": 700,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "abdomen-next-adrenal-adenoma-01",
@@ -6438,7 +8274,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "763e839ba8018377b4db016e6fc6fa83ab4061be",
-    "localSha256": "7b08abc0b3bdfba6680b74d98075bce4e9a0955ce45c9e48b21e54b262351f86"
+    "localSha256": "7b08abc0b3bdfba6680b74d98075bce4e9a0955ce45c9e48b21e54b262351f86",
+    "width": 409,
+    "height": 350,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "abdomen-next-uterine-fibroid-01",
@@ -6452,7 +8292,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "originalSha1": "ce456ad34ad62d546366d47a9cb714fcd3b97f46",
-    "localSha256": "a5031ce2b563f679a90c418484fd0c10c711c177fd96b98984a90282d3cecfb9"
+    "localSha256": "a5031ce2b563f679a90c418484fd0c10c711c177fd96b98984a90282d3cecfb9",
+    "width": 500,
+    "height": 306,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "abdomen-next-horseshoe-kidney-01",
@@ -6466,7 +8310,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "bc0b623fa430ffd8d4c86892b78ebff2ca4c3417",
-    "localSha256": "f68bc2711300457fb27f9d6e345cca499765b72a6f172fca873e3668984c9fcf"
+    "localSha256": "f68bc2711300457fb27f9d6e345cca499765b72a6f172fca873e3668984c9fcf",
+    "width": 890,
+    "height": 558,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "abdomen-next-medullary-sponge-kidney-01",
@@ -6480,7 +8328,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "f5d04abb7aae2ced76799eb2554093434eded17e",
-    "localSha256": "88bfa565c5c7280603e7866cc44e8d140533807ec84292fde0e35dc5d98fe003"
+    "localSha256": "88bfa565c5c7280603e7866cc44e8d140533807ec84292fde0e35dc5d98fe003",
+    "width": 600,
+    "height": 454,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "abdomen-next-urachal-cyst-01",
@@ -6494,7 +8346,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "0fddea1543b62c3babd75191599ba833f392a1f1",
-    "localSha256": "ca7c76239a780c5a0e903206c6597dc4e2a1db427c1e74e6af923658722c76c1"
+    "localSha256": "ca7c76239a780c5a0e903206c6597dc4e2a1db427c1e74e6af923658722c76c1",
+    "width": 1254,
+    "height": 1930,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "abdomen-next-nutcracker-syndrome-01",
@@ -6508,7 +8364,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "b19f24a057782b84e2371ac2034291185095e0ef",
-    "localSha256": "f21064529cd87d82014c1b3d535194bed3370e7ff34afad60de8c7aedbac3afd"
+    "localSha256": "f21064529cd87d82014c1b3d535194bed3370e7ff34afad60de8c7aedbac3afd",
+    "width": 1074,
+    "height": 775,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "abdomen-next-nephrocalcinosis-01",
@@ -6522,7 +8382,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "e1ce05fbdf13723efe7331ecda3ab2891409bacb",
-    "localSha256": "61c72e9ba895deeac48fc4285c878b83ebb302befd2761b82a586e19b82bed78"
+    "localSha256": "61c72e9ba895deeac48fc4285c878b83ebb302befd2761b82a586e19b82bed78",
+    "width": 800,
+    "height": 600,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "abdomen-next-gastric-volvulus-01",
@@ -6536,7 +8400,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "1a420a05247c153cc813f0b2566c33a4f0e2113c",
-    "localSha256": "1698dd497a0b208f73cbe0aef19ed6842ffacbc57e97ae9654b5d95cee063447"
+    "localSha256": "1698dd497a0b208f73cbe0aef19ed6842ffacbc57e97ae9654b5d95cee063447",
+    "width": 512,
+    "height": 512,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "bone-next-giant-cell-tumor-01",
@@ -6550,7 +8418,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "a0a5fe85d70fcda2b59ca0167f62dadebb643a08",
-    "localSha256": "f34cd94e590c9708b42c6368254ba0a9688a8cc317f065d649f50432678f619a"
+    "localSha256": "f34cd94e590c9708b42c6368254ba0a9688a8cc317f065d649f50432678f619a",
+    "width": 638,
+    "height": 866,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "bone-next-chondrosarcoma-01",
@@ -6564,7 +8436,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.5",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
     "originalSha1": "9c4edb874af3a0f311986456fabf88893061230b",
-    "localSha256": "30828f3718bea1c86907c2352c3df88ace33ae12308204aba0515b45e14f579c"
+    "localSha256": "30828f3718bea1c86907c2352c3df88ace33ae12308204aba0515b45e14f579c",
+    "width": 453,
+    "height": 223,
+    "retrieval": "curated-replacement",
+    "qualityScore": "manual-source-and-image-match"
   },
   {
     "id": "bone-next-ewing-sarcoma-01",
@@ -6578,7 +8454,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "558f1b554d5e16ad2bcdc72c5c1398b36a936914",
-    "localSha256": "630956df30a875df37bf8073335c2d4074cdb104f96719fd46ed91157be00f7c"
+    "localSha256": "630956df30a875df37bf8073335c2d4074cdb104f96719fd46ed91157be00f7c",
+    "width": 1882,
+    "height": 1800,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "bone-next-enchondroma-01",
@@ -6592,7 +8472,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "304e6a3565db3248d28cbf8a40efea5cf3f3fc54",
-    "localSha256": "b5058de75d475646b82a0a2b8379903ba87e12f059cd58fec87789fe47203f97"
+    "localSha256": "b5058de75d475646b82a0a2b8379903ba87e12f059cd58fec87789fe47203f97",
+    "width": 745,
+    "height": 1397,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "bone-next-fibrous-dysplasia-01",
@@ -6606,7 +8490,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "affef4fb119bd6f9e2130a4abbd5aedc10474ead",
-    "localSha256": "b6d501832293d670f458c54464b541392c8102f6d32bd41c8193ecb0ded16ded"
+    "localSha256": "b6d501832293d670f458c54464b541392c8102f6d32bd41c8193ecb0ded16ded",
+    "width": 1464,
+    "height": 1497,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "bone-next-simple-bone-cyst-01",
@@ -6620,7 +8508,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "75075436361f4d4d56df40ddd48af76694d5a18c",
-    "localSha256": "e9b1ac3155019cc8e6842dbd05832f275dff9652cc8ebce29480968acb50e2f8"
+    "localSha256": "e9b1ac3155019cc8e6842dbd05832f275dff9652cc8ebce29480968acb50e2f8",
+    "width": 586,
+    "height": 454,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "bone-next-aneurysmal-bone-cyst-01",
@@ -6634,7 +8526,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "4d9820f8b92c33d5f0ffdd2e2437fecb47c7cb8b",
-    "localSha256": "bbbfd40591bef28f1de052e19f395e3fcbff838bc9a47497d1252346669c8c8a"
+    "localSha256": "bbbfd40591bef28f1de052e19f395e3fcbff838bc9a47497d1252346669c8c8a",
+    "width": 650,
+    "height": 450,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "bone-next-osteomyelitis-01",
@@ -6648,7 +8544,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "edf6111db864de183cf1a55dc0114def663d113d",
-    "localSha256": "9a1e31670a47f890908101a6091d9f26490bf3919fff43fef03fcb1780430a68"
+    "localSha256": "9a1e31670a47f890908101a6091d9f26490bf3919fff43fef03fcb1780430a68",
+    "width": 600,
+    "height": 598,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "bone-next-septic-arthritis-01",
@@ -6662,7 +8562,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "4eb8462da254ae9e6b09fabb06fc41606c7345a7",
-    "localSha256": "65db4bb74b850bbc3c0756416498232713d24dd1daecb66d05788aca68ea1653"
+    "localSha256": "65db4bb74b850bbc3c0756416498232713d24dd1daecb66d05788aca68ea1653",
+    "width": 359,
+    "height": 359,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "bone-next-gout-01",
@@ -6676,7 +8580,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "e784a589afadad06b69fbd2da6f48a27258859a1",
-    "localSha256": "0e8cc51b6ffc693a03937159f96324dd83ac484901a5f314f77181d8142d9341"
+    "localSha256": "0e8cc51b6ffc693a03937159f96324dd83ac484901a5f314f77181d8142d9341",
+    "width": 1016,
+    "height": 1096,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "bone-next-knee-osteoarthritis-01",
@@ -6690,7 +8598,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "9315cab7157ae9ab35f046f6a6a41062026b6e18",
-    "localSha256": "86a0de33ad45f798126de1e056a9ec2f374bfb15698e0fd0625877886a6ceb07"
+    "localSha256": "86a0de33ad45f798126de1e056a9ec2f374bfb15698e0fd0625877886a6ceb07",
+    "width": 2133,
+    "height": 2652,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "bone-next-ankylosing-spondylitis-01",
@@ -6704,7 +8616,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "fede64b2042f5e3891b2bcfa0d25ea3294e7d542",
-    "localSha256": "e177302c01fa85a1f72983a0e5c598515c11a4fff6343de7f8830a6910464ca9"
+    "localSha256": "e177302c01fa85a1f72983a0e5c598515c11a4fff6343de7f8830a6910464ca9",
+    "width": 452,
+    "height": 712,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "bone-next-psoriatic-arthritis-01",
@@ -6718,7 +8634,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "3693dd7a5702f6ff76a6b34081c82348aa4c7117",
-    "localSha256": "d60f335365d9e76446ae6446a03181472b7050066185efc0bc68f2a68551b044"
+    "localSha256": "d60f335365d9e76446ae6446a03181472b7050066185efc0bc68f2a68551b044",
+    "width": 361,
+    "height": 894,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "bone-next-osteomalacia-01",
@@ -6732,7 +8652,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "f1f949fbf677f60a7f293636caba785d94b44524",
-    "localSha256": "790561aa45dcf82af71ef4e7a91cc21d077e9fa886f603d7ee9848f1f6c1956a"
+    "localSha256": "790561aa45dcf82af71ef4e7a91cc21d077e9fa886f603d7ee9848f1f6c1956a",
+    "width": 650,
+    "height": 965,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "bone-next-scfe-01",
@@ -6746,7 +8670,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "cf28470ebd16f3ff76c9ea1df4c536c6de8457fd",
-    "localSha256": "81d09bb62e0b5f25bd24edab39921f384883a02151e9ea5ce87925e2b8ee7dc2"
+    "localSha256": "81d09bb62e0b5f25bd24edab39921f384883a02151e9ea5ce87925e2b8ee7dc2",
+    "width": 1024,
+    "height": 768,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "bone-next-osgood-schlatter-01",
@@ -6760,7 +8688,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "76128def030dd1a995c2764bead680a435e13dd5",
-    "localSha256": "e91cefa6cd09d4987d1e52f42f77630d02bdce0c35570abefe6fd573364243e4"
+    "localSha256": "e91cefa6cd09d4987d1e52f42f77630d02bdce0c35570abefe6fd573364243e4",
+    "width": 758,
+    "height": 944,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "bone-next-stress-fracture-01",
@@ -6774,7 +8706,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "c8e34e2d9ae3fcf1891a58d528627bedff14a652",
-    "localSha256": "18448dc730e07a0b871a4a42eb87f1340fcc3577a80cb344949f228984216af2"
+    "localSha256": "18448dc730e07a0b871a4a42eb87f1340fcc3577a80cb344949f228984216af2",
+    "width": 600,
+    "height": 530,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "bone-next-crmo-01",
@@ -6788,7 +8724,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "6d2c866c99d8d11fbc3c12a8d0b2949a5fae2057",
-    "localSha256": "ab559103ac7690c6f1709660f98b8f7c938a9b9dc645b5bfd7a0486a344340ea"
+    "localSha256": "ab559103ac7690c6f1709660f98b8f7c938a9b9dc645b5bfd7a0486a344340ea",
+    "width": 1600,
+    "height": 1200,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "bone-next-ollier-disease-01",
@@ -6802,7 +8742,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "c882c7f89b3514c1f888516e369e87c4d6c8641f",
-    "localSha256": "d5dd842c4787e6c551c09a6b89f263d2087335e61eab4ce1c043a75e8a7e6bec"
+    "localSha256": "d5dd842c4787e6c551c09a6b89f263d2087335e61eab4ce1c043a75e8a7e6bec",
+    "width": 2529,
+    "height": 2053,
+    "retrieval": "curated-search",
+    "qualityScore": "manual-source-match"
   },
   {
     "id": "chest-700-01",
@@ -6816,7 +8760,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "38ca4cef5a2f279fea0738e8f50fa107e1fc3131",
-    "localSha256": "9a5ab76185dae360f963ab9fefe4feabe016d140345ca36efcdacbde20fa6cc5"
+    "localSha256": "9a5ab76185dae360f963ab9fefe4feabe016d140345ca36efcdacbde20fa6cc5",
+    "width": 1057,
+    "height": 1123,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-02",
@@ -6830,7 +8778,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "ee9fd7bf223a3afd33b7538714c9d0857432f947",
-    "localSha256": "bd07d84671c7662a03f1ff61adaa0213ec3348c9dec5551d15f22a37f506c4f7"
+    "localSha256": "bd07d84671c7662a03f1ff61adaa0213ec3348c9dec5551d15f22a37f506c4f7",
+    "width": 2528,
+    "height": 1217,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-03",
@@ -6844,7 +8796,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "2f79d26562a4bc94eb8abc91ce5864c6d2ceee42",
-    "localSha256": "7df928574af2cbab3788fd190d16f644fc24eddf5b3607ebd51d9f0b634934de"
+    "localSha256": "7df928574af2cbab3788fd190d16f644fc24eddf5b3607ebd51d9f0b634934de",
+    "width": 1172,
+    "height": 1088,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-04",
@@ -6858,7 +8814,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "1471d143400a765150ffc2940788b819546cd096",
-    "localSha256": "06ba6b9dda068bdcdf4e295879120ea0edb24574d4745525939c4d72c63ab7ab"
+    "localSha256": "06ba6b9dda068bdcdf4e295879120ea0edb24574d4745525939c4d72c63ab7ab",
+    "width": 1343,
+    "height": 1636,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-05",
@@ -6872,7 +8832,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "4398ea43501eaf725aafa43baf191ebbab66fdc3",
-    "localSha256": "562c3e49d5b1b3566651cc83bfcd1619241f62150260216fb769df595c09a94b"
+    "localSha256": "562c3e49d5b1b3566651cc83bfcd1619241f62150260216fb769df595c09a94b",
+    "width": 1599,
+    "height": 1124,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-06",
@@ -6886,7 +8850,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "5721e7c892eb2672b32f57ac3c9740688a9c3a09",
-    "localSha256": "5e9e4e7f888d3c602191ea457e7a62c6b48cb6fe9eef083df9a1f693e6a1a2ba"
+    "localSha256": "5e9e4e7f888d3c602191ea457e7a62c6b48cb6fe9eef083df9a1f693e6a1a2ba",
+    "width": 1293,
+    "height": 1074,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-07",
@@ -6900,7 +8868,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "e83c89078a9006043d10ae2d37c1cf0d6bd055de",
-    "localSha256": "2a061872b11b72d093fd52b4d32cda0435dbe27e6d29213490e8e558fcd496bb"
+    "localSha256": "2a061872b11b72d093fd52b4d32cda0435dbe27e6d29213490e8e558fcd496bb",
+    "width": 2773,
+    "height": 1310,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-08",
@@ -6914,7 +8886,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "fb5148fd2e6e84fdaeff962c4c73129c946e67fa",
-    "localSha256": "f1a6d9f6f23bc97a7bf97b97407baf273e46d412daeb07a710dabbcb15fd9595"
+    "localSha256": "f1a6d9f6f23bc97a7bf97b97407baf273e46d412daeb07a710dabbcb15fd9595",
+    "width": 1113,
+    "height": 888,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-09",
@@ -6928,7 +8904,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "e0ba242137ee1ca2e21fde3138fa88437e3c5711",
-    "localSha256": "3fe88e05e13dd2248d5d560cccd3571ecc3fe3a77c4383ae6ef412d2ad3bdd07"
+    "localSha256": "3fe88e05e13dd2248d5d560cccd3571ecc3fe3a77c4383ae6ef412d2ad3bdd07",
+    "width": 1115,
+    "height": 1000,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-10",
@@ -6942,7 +8922,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "045612f8147b09e607f0b677e9a67ffe41856f38",
-    "localSha256": "0b59072ccae3cd936a60004f22c4213b5c73ffb3f0e66d556302f3efb7559c41"
+    "localSha256": "0b59072ccae3cd936a60004f22c4213b5c73ffb3f0e66d556302f3efb7559c41",
+    "width": 1503,
+    "height": 1791,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-11",
@@ -6956,7 +8940,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "fdb7ca171a459e806a39a50f01e97d124498b5eb",
-    "localSha256": "d73cb2745b951129060982a423554c320026e183a0be82224aafbd2e84a020ac"
+    "localSha256": "d73cb2745b951129060982a423554c320026e183a0be82224aafbd2e84a020ac",
+    "width": 748,
+    "height": 613,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-12",
@@ -6970,7 +8958,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "916b74a04563a750d852e99c73942adb6103212c",
-    "localSha256": "e61fd562d2f00ec2539e3043034a371e6e8c6e1f6f7b1c97479992c117f3b61b"
+    "localSha256": "e61fd562d2f00ec2539e3043034a371e6e8c6e1f6f7b1c97479992c117f3b61b",
+    "width": 2962,
+    "height": 1380,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-13",
@@ -6984,7 +8976,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "b8d638a657dc143a625da57cbd138d0bd21d9181",
-    "localSha256": "03ff1e6d4503bdf414d53a74ae08ecd2e94e90518f4a8c2315799a4a66cd6334"
+    "localSha256": "03ff1e6d4503bdf414d53a74ae08ecd2e94e90518f4a8c2315799a4a66cd6334",
+    "width": 1195,
+    "height": 1177,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-14",
@@ -6998,7 +8994,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "0bd5c3cc3f0e334c2babd269b20746707fbb4953",
-    "localSha256": "7949f63e25e3a04d2e12f1c4bcd8d82e50b4226cd145832a9c31070ba6b23153"
+    "localSha256": "7949f63e25e3a04d2e12f1c4bcd8d82e50b4226cd145832a9c31070ba6b23153",
+    "width": 600,
+    "height": 595,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-15",
@@ -7012,7 +9012,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "b1509d54c8a90fccb56ccf6a2407e79f9f212aef",
-    "localSha256": "5dd1799ed557c4ab1c172039d166e75e355805b7f8e8efb913c8a305f53a180e"
+    "localSha256": "5dd1799ed557c4ab1c172039d166e75e355805b7f8e8efb913c8a305f53a180e",
+    "width": 600,
+    "height": 705,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-16",
@@ -7026,7 +9030,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "originalSha1": "bfccedacc49dd990a0bfb61a5769b9399accb011",
-    "localSha256": "a03ce05bc4e5dc2aece79a3cbf25a08dca0c1c593763dba850f2dfab9f228113"
+    "localSha256": "a03ce05bc4e5dc2aece79a3cbf25a08dca0c1c593763dba850f2dfab9f228113",
+    "width": 3264,
+    "height": 2448,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-17",
@@ -7040,7 +9048,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "717929c78944f061aafb8c5c3737d34f151c7188",
-    "localSha256": "5d646ece83e10d8958682b499f1db880c542f163d3d378dd646ea1887b0206e9"
+    "localSha256": "5d646ece83e10d8958682b499f1db880c542f163d3d378dd646ea1887b0206e9",
+    "width": 756,
+    "height": 603,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-18",
@@ -7054,7 +9066,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "13a0407a373881a145fdbaf5a6708778041ded64",
-    "localSha256": "4177026c79fa8daf1e1af0b8989412c757ef71feaba094930efb093c2aa8e3dc"
+    "localSha256": "4177026c79fa8daf1e1af0b8989412c757ef71feaba094930efb093c2aa8e3dc",
+    "width": 337,
+    "height": 361,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-19",
@@ -7068,7 +9084,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "originalSha1": "a5f274620925ec27110fc5f217292346d390f0f6",
-    "localSha256": "228e338e8b59fc0e3880a2053276e68633ed17a8eaca9c2a4e13aa2a7ae96f50"
+    "localSha256": "228e338e8b59fc0e3880a2053276e68633ed17a8eaca9c2a4e13aa2a7ae96f50",
+    "width": 2376,
+    "height": 3126,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-20",
@@ -7082,7 +9102,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "ace728c5b67968eb997268179e070301e9e6a28d",
-    "localSha256": "a3349d192682561ac974217664c38df4a4cd1b9da1be474dcc0bd7d3f4b08896"
+    "localSha256": "a3349d192682561ac974217664c38df4a4cd1b9da1be474dcc0bd7d3f4b08896",
+    "width": 1126,
+    "height": 962,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-21",
@@ -7096,7 +9120,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "f1e03933340c0a78255c6299c2680a5e2e2834eb",
-    "localSha256": "83ee3fbb4ac97e4abf9fd6759ff4c9186ff391d2c3100847cfae89f22a75ebfa"
+    "localSha256": "83ee3fbb4ac97e4abf9fd6759ff4c9186ff391d2c3100847cfae89f22a75ebfa",
+    "width": 640,
+    "height": 737,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-22",
@@ -7110,7 +9138,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "2f6c56279abd2129cdb4654a4768820501ec7a9d",
-    "localSha256": "5983fad8310b72474fc8c67c58e8525128624250e71cd6592ee3f6289dc47844"
+    "localSha256": "5983fad8310b72474fc8c67c58e8525128624250e71cd6592ee3f6289dc47844",
+    "width": 2304,
+    "height": 3072,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-23",
@@ -7124,7 +9156,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "1e42ff602b8e6d7f2a3a8ebe2fc0f2776fa22921",
-    "localSha256": "17c56aa93e30c015755e06426e0890dd190f36f0ed0f5b4dc47ac86b08a1f1b3"
+    "localSha256": "17c56aa93e30c015755e06426e0890dd190f36f0ed0f5b4dc47ac86b08a1f1b3",
+    "width": 2637,
+    "height": 2299,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-24",
@@ -7138,7 +9174,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "621dd1cbef9bed456e4ca133714d41fa34418edc",
-    "localSha256": "ca837b986268f0ad6649a81fea732284278ea7e6628cb85e5a14bbd6549a7459"
+    "localSha256": "ca837b986268f0ad6649a81fea732284278ea7e6628cb85e5a14bbd6549a7459",
+    "width": 1932,
+    "height": 2428,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-25",
@@ -7152,7 +9192,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "42048754a6a6cb0c6d7d77b0288a93b80a7823ad",
-    "localSha256": "56159b9005ded7ef5fcf8dee330ca97c9f18afe855b29329740d190bb41a5aec"
+    "localSha256": "56159b9005ded7ef5fcf8dee330ca97c9f18afe855b29329740d190bb41a5aec",
+    "width": 960,
+    "height": 1028,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-26",
@@ -7166,7 +9210,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "bf94d518a1a4ce41ed98e3382599bbb9239f9e1b",
-    "localSha256": "47f6fbb26ebc78a97f76b8762b46170b0921f11fa936f40449b4c456e35d3148"
+    "localSha256": "47f6fbb26ebc78a97f76b8762b46170b0921f11fa936f40449b4c456e35d3148",
+    "width": 1596,
+    "height": 1142,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-27",
@@ -7180,7 +9228,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "17299644a39ddef10a8253fd0338b883ebd80108",
-    "localSha256": "becd3979b85dfdc410857eb9a97b68f58e271cc9f61992312e2f3e8a19869510"
+    "localSha256": "becd3979b85dfdc410857eb9a97b68f58e271cc9f61992312e2f3e8a19869510",
+    "width": 1052,
+    "height": 1050,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-28",
@@ -7194,7 +9246,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "f4a8a6fc5ba7d0a91dc2c1572b2027deb6c345dd",
-    "localSha256": "1c38a82939e83b068830436e3b7da57f6b89b4def2320056cd8821d6ab41d762"
+    "localSha256": "1c38a82939e83b068830436e3b7da57f6b89b4def2320056cd8821d6ab41d762",
+    "width": 1450,
+    "height": 1234,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-29",
@@ -7208,7 +9264,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "407134e70ba164ad5c65798188f978139024fa9e",
-    "localSha256": "992368bc02498a3a9dc16c487c7c7d85f6266868a9bca77c6411873d762b2e19"
+    "localSha256": "992368bc02498a3a9dc16c487c7c7d85f6266868a9bca77c6411873d762b2e19",
+    "width": 1086,
+    "height": 1038,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-30",
@@ -7222,7 +9282,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "29b942a2934d42817c23dc36d777c2902d1b3724",
-    "localSha256": "381bb1129484de10b7ca5499b683ad12b1ee32ad58e38aa055e84053c524c587"
+    "localSha256": "381bb1129484de10b7ca5499b683ad12b1ee32ad58e38aa055e84053c524c587",
+    "width": 512,
+    "height": 384,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-31",
@@ -7236,7 +9300,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "0b43bfddac63849bd1f063701d70a9fc1ac61a61",
-    "localSha256": "c8b852f89681979164d7e3023b1f2a7f3f40f53f0c8f4cf9821a57a6b13b18d2"
+    "localSha256": "c8b852f89681979164d7e3023b1f2a7f3f40f53f0c8f4cf9821a57a6b13b18d2",
+    "width": 629,
+    "height": 966,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-32",
@@ -7250,7 +9318,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "7f6a3732f0b5ccd77853780a6e5b1b6e59eaccba",
-    "localSha256": "17bc0258937d508d7e029112cd3d3e9adfab8756578c48a0e5d85665111c709c"
+    "localSha256": "17bc0258937d508d7e029112cd3d3e9adfab8756578c48a0e5d85665111c709c",
+    "width": 938,
+    "height": 955,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-33",
@@ -7264,7 +9336,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "4f26d9a5018c723b6cd62c5736c4ab81348bb1e2",
-    "localSha256": "62a1a421e414e31dea77e3f293db7d91fc045c2367e4c7f8700baf0b629c2b77"
+    "localSha256": "62a1a421e414e31dea77e3f293db7d91fc045c2367e4c7f8700baf0b629c2b77",
+    "width": 1212,
+    "height": 1054,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-34",
@@ -7278,7 +9354,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "251ce35f658107bc609d78791e67771e3d98cafe",
-    "localSha256": "9f1f21ef813725b680c4f4d181f68fd716e696a9a2837a20136a7a98d62e73af"
+    "localSha256": "9f1f21ef813725b680c4f4d181f68fd716e696a9a2837a20136a7a98d62e73af",
+    "width": 305,
+    "height": 278,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-35",
@@ -7292,7 +9372,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "71c0eddef56c539380d5a599716a9ced7112ce2f",
-    "localSha256": "3be88a16ace044511c8899d38d61afde6b55a3912319542905fd610750cfa67f"
+    "localSha256": "3be88a16ace044511c8899d38d61afde6b55a3912319542905fd610750cfa67f",
+    "width": 2040,
+    "height": 2040,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-36",
@@ -7306,7 +9390,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "15b757e1b4809395ee732fcf353a4b1f114ca6f7",
-    "localSha256": "231aa1b80fdac6fd98b7500f045642de0a94e95838faeb84ebcef4a1d67d4f7d"
+    "localSha256": "231aa1b80fdac6fd98b7500f045642de0a94e95838faeb84ebcef4a1d67d4f7d",
+    "width": 1143,
+    "height": 1282,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-37",
@@ -7320,7 +9408,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "a38ac135948f5ad2b24aadb100853c91bdfc684c",
-    "localSha256": "76209b7ca4e07d9f19d03822f6977ec4fb46c720bcf0d4c4cd35ffc5a1e403c5"
+    "localSha256": "76209b7ca4e07d9f19d03822f6977ec4fb46c720bcf0d4c4cd35ffc5a1e403c5",
+    "width": 1221,
+    "height": 1064,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-38",
@@ -7334,7 +9426,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "c132b5218ca9623a90be1d8dfab443d502f769b9",
-    "localSha256": "986fb706cbd513da4b2382658d820b2a3ff53941397798b86b477397796e2973"
+    "localSha256": "986fb706cbd513da4b2382658d820b2a3ff53941397798b86b477397796e2973",
+    "width": 772,
+    "height": 847,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-39",
@@ -7348,7 +9444,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "096a0d473d8e346a9e232be384ebcd7fefc0f1a6",
-    "localSha256": "065a5977c8d9d7e19653dcda65b1ac65192a39ca9a794f27f30dc01f8e5656c2"
+    "localSha256": "065a5977c8d9d7e19653dcda65b1ac65192a39ca9a794f27f30dc01f8e5656c2",
+    "width": 640,
+    "height": 553,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-40",
@@ -7362,7 +9462,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "a26ac62540addac57050bd6f5fb3c339e79a3c62",
-    "localSha256": "662b4db78a22ececba7e2c8d088364d528fb77de9339bb7c63a4f37573ea98c0"
+    "localSha256": "662b4db78a22ececba7e2c8d088364d528fb77de9339bb7c63a4f37573ea98c0",
+    "width": 1194,
+    "height": 1092,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-41",
@@ -7376,7 +9480,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "237a4e95479b342ddcf60d0fb8b3668b37702db9",
-    "localSha256": "8b50e68205d82406f0b12ca661cdf4e3014a742b881fbaa1a386130522f54d23"
+    "localSha256": "8b50e68205d82406f0b12ca661cdf4e3014a742b881fbaa1a386130522f54d23",
+    "width": 1578,
+    "height": 1087,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-42",
@@ -7390,7 +9498,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "f8a5c5bbde2c62bb92fcaf8cf1e889c1729a72bf",
-    "localSha256": "eeb0d6c468260e06922ef02940cb12fcb20a85f0dc422f79d0027f0d051fb0c7"
+    "localSha256": "eeb0d6c468260e06922ef02940cb12fcb20a85f0dc422f79d0027f0d051fb0c7",
+    "width": 308,
+    "height": 292,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-43",
@@ -7404,7 +9516,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "095eea4f98d36d6e3db2f406e46639a413872d11",
-    "localSha256": "d4230603feed51522ede927227b081e7344dbd755754112c1f935c8255565edc"
+    "localSha256": "d4230603feed51522ede927227b081e7344dbd755754112c1f935c8255565edc",
+    "width": 1499,
+    "height": 1311,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-44",
@@ -7418,7 +9534,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "8e7fa8887c678fa0beb612737b7b3fc38453c822",
-    "localSha256": "bbd314c34f389e8c6c6da4b5b377b23e7bce9862461e64ed67c62bb614f25022"
+    "localSha256": "bbd314c34f389e8c6c6da4b5b377b23e7bce9862461e64ed67c62bb614f25022",
+    "width": 2009,
+    "height": 2458,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-45",
@@ -7432,7 +9552,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "62f2e953273b34e7d9496907d34a3e371b4d6a75",
-    "localSha256": "7a3d9e2a1bcc3d2163763cb833e6d21e0bdf4dd79f962389c2a3cc99dccd7092"
+    "localSha256": "7a3d9e2a1bcc3d2163763cb833e6d21e0bdf4dd79f962389c2a3cc99dccd7092",
+    "width": 2132,
+    "height": 1880,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-46",
@@ -7446,7 +9570,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "f90acf717bad74b9525c6ca7a3c511f7610f73cd",
-    "localSha256": "fa9766a2db7cb1baebcaa3ece272bd3a934d32fb851715b47cd72b210cd321f4"
+    "localSha256": "fa9766a2db7cb1baebcaa3ece272bd3a934d32fb851715b47cd72b210cd321f4",
+    "width": 1236,
+    "height": 1047,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-47",
@@ -7460,7 +9588,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "6d2ab1ba7bc5f5580cc4a4a053391592e2aca548",
-    "localSha256": "00f17baafb1b922c22b727d4a9c5eb082d1cd2a312e500d8a465890461473452"
+    "localSha256": "00f17baafb1b922c22b727d4a9c5eb082d1cd2a312e500d8a465890461473452",
+    "width": 2815,
+    "height": 920,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-48",
@@ -7474,7 +9606,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "b68a8474e80ec89556963b99d8e0e2ab69a08fab",
-    "localSha256": "48e9d5f32a716dfeef3eec1c474b884e028ca251a0bf87ffe6ba4edc4343fcbe"
+    "localSha256": "48e9d5f32a716dfeef3eec1c474b884e028ca251a0bf87ffe6ba4edc4343fcbe",
+    "width": 3069,
+    "height": 1555,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-49",
@@ -7488,7 +9624,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "813c99e15fc6a161d544a0575166c2590b099261",
-    "localSha256": "a99c7b93ae8ab5a25e9b5423028b83324a97cd1dbbdb70bfa8665ec4564f303d"
+    "localSha256": "a99c7b93ae8ab5a25e9b5423028b83324a97cd1dbbdb70bfa8665ec4564f303d",
+    "width": 612,
+    "height": 1545,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "chest-700-50",
@@ -7502,7 +9642,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "60816b5ffd3550154e6305a0990a086cf38f9482",
-    "localSha256": "cd64892601d8011220ef61be764e38cdbe54b721f37dade315e27d67fcced36f"
+    "localSha256": "cd64892601d8011220ef61be764e38cdbe54b721f37dade315e27d67fcced36f",
+    "width": 2043,
+    "height": 819,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-01",
@@ -7516,7 +9660,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "79bb64c25c445116821b4fe590a92b037ab7f4e6",
-    "localSha256": "25d1c96b7ecb7f826ef606b33157a7d0f7201bdadadd5663346a303796aae5a9"
+    "localSha256": "25d1c96b7ecb7f826ef606b33157a7d0f7201bdadadd5663346a303796aae5a9",
+    "width": 300,
+    "height": 275,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-02",
@@ -7530,7 +9678,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "645bbeb8f639ba3b89bfe77daf40d7c48a9fdefd",
-    "localSha256": "137574a503a3b607a9b04e250b45e2ed1435c3eba32ff338e4ac86f5ced2bdc3"
+    "localSha256": "137574a503a3b607a9b04e250b45e2ed1435c3eba32ff338e4ac86f5ced2bdc3",
+    "width": 1157,
+    "height": 958,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-03",
@@ -7544,7 +9696,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "e02382610633b321efb7338233441918c824dbfe",
-    "localSha256": "393ed5cdbc9a0384eb4f10c3c5588d5ebc4516f0cfa47462b7657e440a8ce17a"
+    "localSha256": "393ed5cdbc9a0384eb4f10c3c5588d5ebc4516f0cfa47462b7657e440a8ce17a",
+    "width": 2322,
+    "height": 1461,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-04",
@@ -7558,7 +9714,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "dc67b96c337a9f875b275f5202f2b2110fdd2bb5",
-    "localSha256": "e927e39b51ee95a993806bd0c5cfac6f4b0792d64eb7e4f1d26d3a03417c7cf6"
+    "localSha256": "e927e39b51ee95a993806bd0c5cfac6f4b0792d64eb7e4f1d26d3a03417c7cf6",
+    "width": 806,
+    "height": 978,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-05",
@@ -7572,7 +9732,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "25edf7dd5965d49156c40a7b9cae915f206201b0",
-    "localSha256": "13162cf0b70c36b9da6e1b298f164e6cf1a5a5afecf980359b01b4477238cdbd"
+    "localSha256": "13162cf0b70c36b9da6e1b298f164e6cf1a5a5afecf980359b01b4477238cdbd",
+    "width": 1515,
+    "height": 1383,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-06",
@@ -7586,7 +9750,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "206e2cb4c2ae171c57792afe9b69b250968986c9",
-    "localSha256": "ea38e162842376ffdb8abd1eae314199efe0b350caa8bcd9ef3af552aea0be31"
+    "localSha256": "ea38e162842376ffdb8abd1eae314199efe0b350caa8bcd9ef3af552aea0be31",
+    "width": 737,
+    "height": 409,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-07",
@@ -7600,7 +9768,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "ab9c59256cfad58f84419965bfdf2084a402eb10",
-    "localSha256": "181d45a753bfb4f9ceb275c0f29899099fa1ca812e786d28045de33416fb8c43"
+    "localSha256": "181d45a753bfb4f9ceb275c0f29899099fa1ca812e786d28045de33416fb8c43",
+    "width": 600,
+    "height": 521,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-08",
@@ -7614,7 +9786,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "41190e0b82da1c96f0bbf4b47ecbbfbdba5f049a",
-    "localSha256": "633c4eb8fd80bd2d35a8ebbd18625f966f71f1986a93d6375e1f40812571b539"
+    "localSha256": "633c4eb8fd80bd2d35a8ebbd18625f966f71f1986a93d6375e1f40812571b539",
+    "width": 1024,
+    "height": 957,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-09",
@@ -7628,7 +9804,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "75b7b42c804dc8b3bdbe257ae6519c903bc0e209",
-    "localSha256": "2dbd238c7d79a08cdca465e0f1cefc4556656b1b94342d6c2b8b298ae4cd4fec"
+    "localSha256": "2dbd238c7d79a08cdca465e0f1cefc4556656b1b94342d6c2b8b298ae4cd4fec",
+    "width": 3456,
+    "height": 4608,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-10",
@@ -7642,7 +9822,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "43cf862b56d045d16451d7b584ea5122f2b41194",
-    "localSha256": "471ac662e757def2252fdda802d57de7bd5e275397fccb2615a3ece693572a0c"
+    "localSha256": "471ac662e757def2252fdda802d57de7bd5e275397fccb2615a3ece693572a0c",
+    "width": 2164,
+    "height": 1380,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-11",
@@ -7656,7 +9840,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "07c864697f7be0b7d8ae2e914007e4ecc476ed6f",
-    "localSha256": "5a58dacc76654faafbf2a13e26251eb15d51e0767d9e9829bd043b2c017454f1"
+    "localSha256": "5a58dacc76654faafbf2a13e26251eb15d51e0767d9e9829bd043b2c017454f1",
+    "width": 423,
+    "height": 500,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-12",
@@ -7670,7 +9858,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "bc40896302ef9c46ae0e1e3487fba7c2caaf1732",
-    "localSha256": "db66f241f1fc543e9a3564f4deb1b042134d17d1035c3f2af202ffdfab0732b2"
+    "localSha256": "db66f241f1fc543e9a3564f4deb1b042134d17d1035c3f2af202ffdfab0732b2",
+    "width": 1024,
+    "height": 1024,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-13",
@@ -7684,7 +9876,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "546fe7284246e54f81f2608f6ffe16629572edb1",
-    "localSha256": "5fe43dd3e88acf4f08b5e9170f883296caab8a0c2ccb68a3da942829cdcab376"
+    "localSha256": "5fe43dd3e88acf4f08b5e9170f883296caab8a0c2ccb68a3da942829cdcab376",
+    "width": 2043,
+    "height": 1223,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-14",
@@ -7698,7 +9894,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "d421d32e3feed2332f46d82852fd201d0aa6e16d",
-    "localSha256": "96cfef88cd938accbb4bd910fc5cfae9c0a1d106540266f0163ba4634be15318"
+    "localSha256": "96cfef88cd938accbb4bd910fc5cfae9c0a1d106540266f0163ba4634be15318",
+    "width": 512,
+    "height": 555,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-15",
@@ -7712,7 +9912,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "db7b88da3127d15921f2cac40bf657b49b42cdcb",
-    "localSha256": "25a78b9381f68f8e22b5fccf0cdeaf67a1a262adc8aa33e669d96faed80c091b"
+    "localSha256": "25a78b9381f68f8e22b5fccf0cdeaf67a1a262adc8aa33e669d96faed80c091b",
+    "width": 1392,
+    "height": 1124,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-16",
@@ -7726,7 +9930,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "04fd52a1d55b65220f8b12b87b8d37c96d4a353e",
-    "localSha256": "eaa66d505339dfaadfc4f764fd0a9d6224ac3d21ecb35b04cf706575582fc586"
+    "localSha256": "eaa66d505339dfaadfc4f764fd0a9d6224ac3d21ecb35b04cf706575582fc586",
+    "width": 1655,
+    "height": 1430,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-17",
@@ -7740,7 +9948,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "f59c5c9bcf45b15ecaf0714ce39de9b61b0f2a09",
-    "localSha256": "fbcd03c0fba4ff2c771bcfa13ef2572e6aa3fc6b1b3feb428fec4e0846a75b75"
+    "localSha256": "fbcd03c0fba4ff2c771bcfa13ef2572e6aa3fc6b1b3feb428fec4e0846a75b75",
+    "width": 927,
+    "height": 861,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-18",
@@ -7754,7 +9966,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "9d238f8a5f61280c5854a648b6d664761efee6ea",
-    "localSha256": "245b74d7a22cd77db45b2901ce291c3c544b0da6da03cc1223e87294a21e6329"
+    "localSha256": "245b74d7a22cd77db45b2901ce291c3c544b0da6da03cc1223e87294a21e6329",
+    "width": 807,
+    "height": 830,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-19",
@@ -7768,7 +9984,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "57d1c4efe47dcd0e1f08ca39555203561dbdaf7c",
-    "localSha256": "24e5e8fca8f837bb63cd4b43347d0e8a55885efc9d9d387e009c8b8c88b5ae3e"
+    "localSha256": "24e5e8fca8f837bb63cd4b43347d0e8a55885efc9d9d387e009c8b8c88b5ae3e",
+    "width": 556,
+    "height": 435,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-20",
@@ -7782,7 +10002,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "c8fbee2abda728becef094a8f7379f34374ac8ce",
-    "localSha256": "cc08a63cfa56caf24022a0958b801bf132bdf84d139801bd3beb16aca245c17e"
+    "localSha256": "cc08a63cfa56caf24022a0958b801bf132bdf84d139801bd3beb16aca245c17e",
+    "width": 849,
+    "height": 696,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-21",
@@ -7796,7 +10020,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "5e03a9474a30220633264f8c54cc2e984cdc41c7",
-    "localSha256": "8b370cfd8bc7c67b4140f17b5c33ad93d93086c025e5bda095fbaa3a58987f12"
+    "localSha256": "8b370cfd8bc7c67b4140f17b5c33ad93d93086c025e5bda095fbaa3a58987f12",
+    "width": 1334,
+    "height": 1404,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-22",
@@ -7810,7 +10038,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "6fc65ef9189dcec4aa465370d5baa6a81cd2c466",
-    "localSha256": "26a371183a2a77b5174bc4bbc5ec22b724cee7928ef83540d9d2724843b66898"
+    "localSha256": "26a371183a2a77b5174bc4bbc5ec22b724cee7928ef83540d9d2724843b66898",
+    "width": 2000,
+    "height": 1414,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-23",
@@ -7824,7 +10056,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "fe2848f6ea2e2e76c24c659ddfe5ff1b589fdcb6",
-    "localSha256": "354ebcb871cd46f0af74fac4eee5e869b447e39354cb69e438b3f55fdb4c0322"
+    "localSha256": "354ebcb871cd46f0af74fac4eee5e869b447e39354cb69e438b3f55fdb4c0322",
+    "width": 485,
+    "height": 486,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-24",
@@ -7838,7 +10074,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "d7abe11d0fd2c90b077ab65d230b5702dbc6bda5",
-    "localSha256": "0ad0ded9c12a0ceacf7e8c6322333b6ae3de61645b75db1a09f5da9f87c567ec"
+    "localSha256": "0ad0ded9c12a0ceacf7e8c6322333b6ae3de61645b75db1a09f5da9f87c567ec",
+    "width": 1083,
+    "height": 855,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-25",
@@ -7852,7 +10092,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "ecb603e3b54cfa09f59b03db1d99360104c5d02c",
-    "localSha256": "5474ebbb9b84432119062bfc56015f09b491560962a30256c342bf2692d16f07"
+    "localSha256": "5474ebbb9b84432119062bfc56015f09b491560962a30256c342bf2692d16f07",
+    "width": 750,
+    "height": 870,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-26",
@@ -7866,7 +10110,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "86f9cce80d596edb1fe8ed74eb4cb124662dccbd",
-    "localSha256": "20e7dd88a2b6c50e491979c2bf45618ff65a556527985b0e1ebd725c5e59c738"
+    "localSha256": "20e7dd88a2b6c50e491979c2bf45618ff65a556527985b0e1ebd725c5e59c738",
+    "width": 575,
+    "height": 728,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-27",
@@ -7880,7 +10128,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "9b3ec2ef54e48cf61edd5b9da8b3657702ebe23f",
-    "localSha256": "12d85883a4e734869d76b3cd4270b936465751c017f5490ae91918d42a962a32"
+    "localSha256": "12d85883a4e734869d76b3cd4270b936465751c017f5490ae91918d42a962a32",
+    "width": 840,
+    "height": 1072,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-28",
@@ -7894,7 +10146,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "c5be268b98ca1745a47dd80b6204da683785ca14",
-    "localSha256": "3b77201157e24b5d6ba667033e9b47a78fef6258d373b88904af1857701a488c"
+    "localSha256": "3b77201157e24b5d6ba667033e9b47a78fef6258d373b88904af1857701a488c",
+    "width": 838,
+    "height": 940,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-29",
@@ -7908,7 +10164,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "177e55777c2584bb77d3eb5982717e0b6120a4c9",
-    "localSha256": "a1c31ff9c1070306400f1fb82bb9dfafe623ed530ac0dfc603c01a9f1cbe5008"
+    "localSha256": "a1c31ff9c1070306400f1fb82bb9dfafe623ed530ac0dfc603c01a9f1cbe5008",
+    "width": 417,
+    "height": 512,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-30",
@@ -7922,7 +10182,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "0d9659a21f392d8db7b15a4ea0a1bc5657c15689",
-    "localSha256": "a845d9dcfcc2597b51d17905df96aa9a377117e2b01167c4b6ae884e0f4569f7"
+    "localSha256": "a845d9dcfcc2597b51d17905df96aa9a377117e2b01167c4b6ae884e0f4569f7",
+    "width": 424,
+    "height": 512,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-31",
@@ -7936,7 +10200,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "d314cb027e18abc2c247e6386ef45b2ad3782423",
-    "localSha256": "f53c4faa5e4916536316fc6e2647102abbe2eda1871e4da19c029c24ad1a4171"
+    "localSha256": "f53c4faa5e4916536316fc6e2647102abbe2eda1871e4da19c029c24ad1a4171",
+    "width": 1321,
+    "height": 1093,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-32",
@@ -7950,7 +10218,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "e00d1817acb590773c82ef5da767bdbf7ba62dca",
-    "localSha256": "5b95cbf3370b479c208a9e7d79d1860a4602c02b3be0ac3c9cc10bb8a1a108ef"
+    "localSha256": "5b95cbf3370b479c208a9e7d79d1860a4602c02b3be0ac3c9cc10bb8a1a108ef",
+    "width": 512,
+    "height": 512,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-33",
@@ -7964,7 +10236,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "ef59b8f45c21fad9a8c501088e7bd07db1e2e0d2",
-    "localSha256": "d65710a2045341a13a7e4c1f6e4303d1d36b2d5e49fabdaeef011e44df20e1b5"
+    "localSha256": "d65710a2045341a13a7e4c1f6e4303d1d36b2d5e49fabdaeef011e44df20e1b5",
+    "width": 792,
+    "height": 869,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-34",
@@ -7978,7 +10254,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "25b1b0bcd53eb789d51f510c5b84ce2ad8e61b52",
-    "localSha256": "d701c0424beafaffaa7089be0311747ca3d5820e8fdde924402118e03379c9fd"
+    "localSha256": "d701c0424beafaffaa7089be0311747ca3d5820e8fdde924402118e03379c9fd",
+    "width": 887,
+    "height": 1095,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-35",
@@ -7992,7 +10272,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "e3a9c9580db50fa455df9ca117d3eb1c10e0e83b",
-    "localSha256": "5c65275aadf3b334e3c205939767981433f48174bb29be5666a4fa156c289d04"
+    "localSha256": "5c65275aadf3b334e3c205939767981433f48174bb29be5666a4fa156c289d04",
+    "width": 878,
+    "height": 1134,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-36",
@@ -8006,7 +10290,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "dc40724450ef2a6b66fe469d3c9bea2307528663",
-    "localSha256": "a865cfd7e31970a98f47c50dcfeb5d40057ecde440490d64e439bd77c120a63d"
+    "localSha256": "a865cfd7e31970a98f47c50dcfeb5d40057ecde440490d64e439bd77c120a63d",
+    "width": 846,
+    "height": 943,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-37",
@@ -8020,7 +10308,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "296bd216c53305834497f6527f75e360dfbce286",
-    "localSha256": "22b0513c0a25ca5baddcaf3a2b3c05e478ba84b7cdc46f048d102149829aa53e"
+    "localSha256": "22b0513c0a25ca5baddcaf3a2b3c05e478ba84b7cdc46f048d102149829aa53e",
+    "width": 854,
+    "height": 970,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-38",
@@ -8034,7 +10326,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "60d284893b5d53bfa9fb3d8a4885e16ee26cebf9",
-    "localSha256": "2c47e732436ede5a1eec60fb6a4d443a39fcec1ae7e3b3a3d6c8fbfcf2d9e5b9"
+    "localSha256": "2c47e732436ede5a1eec60fb6a4d443a39fcec1ae7e3b3a3d6c8fbfcf2d9e5b9",
+    "width": 2032,
+    "height": 1427,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-39",
@@ -8048,7 +10344,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "fd07613bf2ae4272feb5c7995f94f7555bb179c6",
-    "localSha256": "8ebed8b0f8a7111042c358d6321ebe95233d6847f9b688e706870aec7ac71d53"
+    "localSha256": "8ebed8b0f8a7111042c358d6321ebe95233d6847f9b688e706870aec7ac71d53",
+    "width": 1286,
+    "height": 1215,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-40",
@@ -8062,7 +10362,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "e2354f2bd0d4092f0bb0c4c2fd5fa89e8d62e67c",
-    "localSha256": "fe4924508da0a89451786743fefb4698bc720e5d8a2792bff032083c973d2bcb"
+    "localSha256": "fe4924508da0a89451786743fefb4698bc720e5d8a2792bff032083c973d2bcb",
+    "width": 2672,
+    "height": 1427,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-41",
@@ -8076,7 +10380,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "f6b29b2dc7cdf092e9fe33df2aaeee5592cdd22c",
-    "localSha256": "a3d0b5bc2cbb606abc09bbf9f7c996d0b007ec5fdba008adf79a0eca83f64fe0"
+    "localSha256": "a3d0b5bc2cbb606abc09bbf9f7c996d0b007ec5fdba008adf79a0eca83f64fe0",
+    "width": 478,
+    "height": 512,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-42",
@@ -8090,7 +10398,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "ffa1248f87fa68868abdf44668a044e6761822c7",
-    "localSha256": "d9b44af9ab2a353afa84d3771a49f27f5bd0c71974b047e81f5db9a60749712b"
+    "localSha256": "d9b44af9ab2a353afa84d3771a49f27f5bd0c71974b047e81f5db9a60749712b",
+    "width": 417,
+    "height": 512,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-43",
@@ -8104,7 +10416,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "769469dd08393ae1d0f95bb3cfd269573256a3a6",
-    "localSha256": "6df2fff9e0dfa6e2f08c44580a9e5fd526f3ab7186591ee46f282320d1b21b45"
+    "localSha256": "6df2fff9e0dfa6e2f08c44580a9e5fd526f3ab7186591ee46f282320d1b21b45",
+    "width": 1004,
+    "height": 1090,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-44",
@@ -8118,7 +10434,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "be5e08d14691a9572aa7018dd327e58d4bc777aa",
-    "localSha256": "b3a48062b2eeaff21fd4c53cecf06ff8203d8470753f0f920aa9e130928361e6"
+    "localSha256": "b3a48062b2eeaff21fd4c53cecf06ff8203d8470753f0f920aa9e130928361e6",
+    "width": 2280,
+    "height": 1824,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-45",
@@ -8132,7 +10452,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "2c6244fd46c4d03f1a0ddafc402b03755a5cbfb6",
-    "localSha256": "2be940d8f5e01430ef78a9326506d6806879f794d63acd1f6b008f92114cede1"
+    "localSha256": "2be940d8f5e01430ef78a9326506d6806879f794d63acd1f6b008f92114cede1",
+    "width": 757,
+    "height": 1595,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-46",
@@ -8146,7 +10470,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "39e23b9bc81590b04da86d5687203b8d21250dfc",
-    "localSha256": "3cd3a2936daccd31506816f4677e25b01966baadde23e963d5714cf0158493c4"
+    "localSha256": "3cd3a2936daccd31506816f4677e25b01966baadde23e963d5714cf0158493c4",
+    "width": 906,
+    "height": 511,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-47",
@@ -8160,7 +10488,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "97ae59245bf44ea3d82daffecce1446fbec52a77",
-    "localSha256": "82ffba7405988dfe5e4bc0da03eb2e8fcdb6ce804cd523cfdf444c868944996c"
+    "localSha256": "82ffba7405988dfe5e4bc0da03eb2e8fcdb6ce804cd523cfdf444c868944996c",
+    "width": 788,
+    "height": 998,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-48",
@@ -8174,7 +10506,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "efb31aec8496df7199913ccca72213cdf902c293",
-    "localSha256": "0e7d98db1fa6d9d5643fd1bc51cb123bd51a676fc076cca0d1a3faf763568a94"
+    "localSha256": "0e7d98db1fa6d9d5643fd1bc51cb123bd51a676fc076cca0d1a3faf763568a94",
+    "width": 839,
+    "height": 1057,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-49",
@@ -8188,7 +10524,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "e7e54d0a82177f107b968ed21ffb4eb8718a07b8",
-    "localSha256": "84a0d08a62012a97ab6af0d3f3a8572e41ca9d153ac3136df211fd05fda24d05"
+    "localSha256": "84a0d08a62012a97ab6af0d3f3a8572e41ca9d153ac3136df211fd05fda24d05",
+    "width": 641,
+    "height": 769,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "neuro-700-50",
@@ -8202,7 +10542,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "4416df12151bb89d51df81b5456ffec12705d38f",
-    "localSha256": "03ed42ea3c2d3a7e0cc95b84f535c559d0856b06fe849ef19560f29e43e2a4ae"
+    "localSha256": "03ed42ea3c2d3a7e0cc95b84f535c559d0856b06fe849ef19560f29e43e2a4ae",
+    "width": 501,
+    "height": 512,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-01",
@@ -8216,7 +10560,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "a1004997d81104d60611265202e0024df8f386b2",
-    "localSha256": "7a243fbbddcdc6d89237db5447d7b823d0f905c799b90499228de9d8f517c12f"
+    "localSha256": "7a243fbbddcdc6d89237db5447d7b823d0f905c799b90499228de9d8f517c12f",
+    "width": 472,
+    "height": 554,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-02",
@@ -8230,7 +10578,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "ac674dc16fa2056c5eaa0032decfd6c200222332",
-    "localSha256": "a3bb045bdaad749fdb887b45b3faab40638a1cba47a95ad548f8546bdd74861f"
+    "localSha256": "a3bb045bdaad749fdb887b45b3faab40638a1cba47a95ad548f8546bdd74861f",
+    "width": 2772,
+    "height": 1158,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-03",
@@ -8244,7 +10596,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "55c464bbde0198f7e958511144f44d2d475bb8b8",
-    "localSha256": "01ea5905677fa715addcd954222711c7e42055735489af4de3a170cc20e8fc7c"
+    "localSha256": "01ea5905677fa715addcd954222711c7e42055735489af4de3a170cc20e8fc7c",
+    "width": 2203,
+    "height": 591,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-04",
@@ -8258,7 +10614,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "e3a85b3dbe2145792754b467e7394beca142c42c",
-    "localSha256": "22963a3be587151cd52ba01d6a3985020ace370e10256431d155dac1e9673cb0"
+    "localSha256": "22963a3be587151cd52ba01d6a3985020ace370e10256431d155dac1e9673cb0",
+    "width": 970,
+    "height": 905,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-05",
@@ -8272,7 +10632,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "9ac678200905af3bf376034e63523eae54b580d2",
-    "localSha256": "d166bb3203ed265eee691712849ff2cce734ca1d04b067f6b7589cf061a551f1"
+    "localSha256": "d166bb3203ed265eee691712849ff2cce734ca1d04b067f6b7589cf061a551f1",
+    "width": 668,
+    "height": 1119,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-06",
@@ -8286,7 +10650,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "2387e3b358436ec042aee94fd1dc0d6a9d3dbe6d",
-    "localSha256": "811207750698ed82620d4eab09eaff49a918cf06f2906bec3b401787c2984890"
+    "localSha256": "811207750698ed82620d4eab09eaff49a918cf06f2906bec3b401787c2984890",
+    "width": 709,
+    "height": 1113,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-07",
@@ -8300,7 +10668,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "Public domain",
     "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
     "originalSha1": "35c3ecf30c53d5012aae36a6633f474180141ced",
-    "localSha256": "4acf9b6179c8dee52e648962b699430c5400d30dcc9a7fea412290ef4154f8a6"
+    "localSha256": "4acf9b6179c8dee52e648962b699430c5400d30dcc9a7fea412290ef4154f8a6",
+    "width": 415,
+    "height": 320,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-08",
@@ -8314,7 +10686,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "a86e905846ba6b2b296146c3c408aeac142d9d78",
-    "localSha256": "19a2ef44b4c213d9ab62b3178dfeb34c309ff89db3ef166bfe9485d91b44b9fb"
+    "localSha256": "19a2ef44b4c213d9ab62b3178dfeb34c309ff89db3ef166bfe9485d91b44b9fb",
+    "width": 512,
+    "height": 512,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-09",
@@ -8328,7 +10704,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "90877f94594b532b471ee565dbfafb1fd483456c",
-    "localSha256": "35fd92813481d3bdff4abcb0d934fc0dcadf33bef4c1d0a49acc2b6990157145"
+    "localSha256": "35fd92813481d3bdff4abcb0d934fc0dcadf33bef4c1d0a49acc2b6990157145",
+    "width": 2812,
+    "height": 1586,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-10",
@@ -8342,7 +10722,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "a52bc9d8f8cb159fa039f3ffe7263e213c25eb72",
-    "localSha256": "29db8e25a48d01a189ae1063b6e83312cc78530684fd828b393f8017d878cdc8"
+    "localSha256": "29db8e25a48d01a189ae1063b6e83312cc78530684fd828b393f8017d878cdc8",
+    "width": 1996,
+    "height": 1128,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-11",
@@ -8356,7 +10740,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "d1ad6952f4b4ab7d22c60e3a8cdf28e87d5e7bd7",
-    "localSha256": "0ba80647a4be39a9df7fd259edac99dcdc3b9af809d9daf8b6fdf104c55fbb64"
+    "localSha256": "0ba80647a4be39a9df7fd259edac99dcdc3b9af809d9daf8b6fdf104c55fbb64",
+    "width": 2044,
+    "height": 1429,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-12",
@@ -8370,7 +10758,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "a21ec00fe504625a57fc64667f2583383b28952f",
-    "localSha256": "a1d0ce58411290b303e33a642ac04db36eb3794dd65e61e7cb5353c51d27e2e1"
+    "localSha256": "a1d0ce58411290b303e33a642ac04db36eb3794dd65e61e7cb5353c51d27e2e1",
+    "width": 1000,
+    "height": 1147,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-13",
@@ -8384,7 +10776,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "42bdded17d944bfac8fe96953e075d86153791c4",
-    "localSha256": "2322e86fc1d66398951ed25423e8d850dd13062aeb4e20dbb7e311ec410df2f3"
+    "localSha256": "2322e86fc1d66398951ed25423e8d850dd13062aeb4e20dbb7e311ec410df2f3",
+    "width": 2027,
+    "height": 1950,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-14",
@@ -8398,7 +10794,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "59507101752ac1db825bbd66862970ddcedabd39",
-    "localSha256": "c8cfe23f738c8438b92e19af7cb60b3a7a50ea0b930f826ebac456dd4b5e0881"
+    "localSha256": "c8cfe23f738c8438b92e19af7cb60b3a7a50ea0b930f826ebac456dd4b5e0881",
+    "width": 852,
+    "height": 680,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-15",
@@ -8412,7 +10812,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "7dbe4cc3fa9e56513f2c1dcad23b6618d6b6f36a",
-    "localSha256": "eb02c5deff3a95385d4e55bf167488ab2299c03e5a416623f3a8c4a355ab1083"
+    "localSha256": "eb02c5deff3a95385d4e55bf167488ab2299c03e5a416623f3a8c4a355ab1083",
+    "width": 1390,
+    "height": 1081,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-16",
@@ -8426,7 +10830,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "7c5bcac34de452421d8ee645bd04926c12197784",
-    "localSha256": "979154b187308bfc85f369f655ee3f026afc7e15424eaecc5c89088a3f3aa89e"
+    "localSha256": "979154b187308bfc85f369f655ee3f026afc7e15424eaecc5c89088a3f3aa89e",
+    "width": 1598,
+    "height": 692,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-17",
@@ -8440,7 +10848,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "48a32d961283d58d3596fdf9f09b31176df0c32c",
-    "localSha256": "17ea4bb0a4bca516c106878132293a317848160c077af0197b9b7c5f0f727d1a"
+    "localSha256": "17ea4bb0a4bca516c106878132293a317848160c077af0197b9b7c5f0f727d1a",
+    "width": 740,
+    "height": 562,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-18",
@@ -8454,7 +10866,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "1c637be2d46faf62ec917c92e84c1a6105d5d349",
-    "localSha256": "3e48b3941bea524711bd9a2a827b61cb9a13710ac319f62c80b3404076ddd8a9"
+    "localSha256": "3e48b3941bea524711bd9a2a827b61cb9a13710ac319f62c80b3404076ddd8a9",
+    "width": 1008,
+    "height": 968,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-19",
@@ -8468,7 +10884,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "a0a559ed6d67080641a4511b4a4a9fcb05bc929c",
-    "localSha256": "24b884f44246536ed7c348b2e839f540f5f3dcfae33d2d92871e720f6374afc0"
+    "localSha256": "24b884f44246536ed7c348b2e839f540f5f3dcfae33d2d92871e720f6374afc0",
+    "width": 1265,
+    "height": 1945,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-20",
@@ -8482,7 +10902,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "5189a5d57bdaa68fe28ae0c8df84aff9ffdbbe2b",
-    "localSha256": "e0353e25c33e21233bcb0324dc1ddeb708bc3964b922351bf6eeeb481bcdd6f6"
+    "localSha256": "e0353e25c33e21233bcb0324dc1ddeb708bc3964b922351bf6eeeb481bcdd6f6",
+    "width": 2403,
+    "height": 1110,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-21",
@@ -8496,7 +10920,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "9bd83da05bf97f4e4fd73bf95afefd8e4c08448a",
-    "localSha256": "017ba1abc7c2d75d48b02c799303df78529098f8973e3ae9feab2133060fd0c2"
+    "localSha256": "017ba1abc7c2d75d48b02c799303df78529098f8973e3ae9feab2133060fd0c2",
+    "width": 2486,
+    "height": 2362,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-22",
@@ -8510,7 +10938,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "1c443a37ff5c29adb90cde5e8b6fc58990a91024",
-    "localSha256": "15c7ef2f2356343a64553c80198cd65c8305a094a14d102ffdb191c52bcbb0ed"
+    "localSha256": "15c7ef2f2356343a64553c80198cd65c8305a094a14d102ffdb191c52bcbb0ed",
+    "width": 1577,
+    "height": 1194,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-23",
@@ -8524,7 +10956,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "d8037af4cff850c1e8a0197e0118853002e281ea",
-    "localSha256": "a35d093a20f0298e6bec497da6b797b4f7d8ff9a6f71ef21cd12f8161ffae7b3"
+    "localSha256": "a35d093a20f0298e6bec497da6b797b4f7d8ff9a6f71ef21cd12f8161ffae7b3",
+    "width": 1515,
+    "height": 1794,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-24",
@@ -8538,7 +10974,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "bd1d64a4f864bebc2928bbc852bddafb62a047ea",
-    "localSha256": "bf9829f0c300d2d6bc915f0acc9ab29b39de62b2bb958439d329e1c08f8be755"
+    "localSha256": "bf9829f0c300d2d6bc915f0acc9ab29b39de62b2bb958439d329e1c08f8be755",
+    "width": 1013,
+    "height": 904,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-25",
@@ -8552,7 +10992,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "2a555439df2193c9442a8bc88804c2255a1f9305",
-    "localSha256": "5d15446e61f5e3f28e4c63b2c3a23214f70f3e8e4b4adc1f5bf0da924038c7e4"
+    "localSha256": "5d15446e61f5e3f28e4c63b2c3a23214f70f3e8e4b4adc1f5bf0da924038c7e4",
+    "width": 1526,
+    "height": 595,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-26",
@@ -8566,7 +11010,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "d8638874e20069f51906ce97c4b594783e4cea81",
-    "localSha256": "5c8f2a4c54833929603721fbcfb3bc5145f4f7fe265729b11f1268c0073fd925"
+    "localSha256": "5c8f2a4c54833929603721fbcfb3bc5145f4f7fe265729b11f1268c0073fd925",
+    "width": 1528,
+    "height": 1134,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-27",
@@ -8580,7 +11028,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "76958feef4272b1d6d78030c64c6df5f2817dcf0",
-    "localSha256": "2f0c6b00781692f85b2ad826a9acfdbf9507501d2cec96a8080525a123902315"
+    "localSha256": "2f0c6b00781692f85b2ad826a9acfdbf9507501d2cec96a8080525a123902315",
+    "width": 1795,
+    "height": 1423,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-28",
@@ -8594,7 +11046,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "588adba4f4558fe7ff68343ef2478e806380e27f",
-    "localSha256": "836dfe359dab7489f23fb7b130ba292f2ec3ef10cb9fda85b83c28e968d1d405"
+    "localSha256": "836dfe359dab7489f23fb7b130ba292f2ec3ef10cb9fda85b83c28e968d1d405",
+    "width": 2965,
+    "height": 1196,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-29",
@@ -8608,7 +11064,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "14969e65c83aa0c431931c95ea823373bd1dc4d2",
-    "localSha256": "d05a097b486f6f0321e92db6a8996274b0753ae86597ee4027fa06e35ce30c2e"
+    "localSha256": "d05a097b486f6f0321e92db6a8996274b0753ae86597ee4027fa06e35ce30c2e",
+    "width": 1094,
+    "height": 1012,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-30",
@@ -8622,7 +11082,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "2362fbc1d11a2f949a28d40b793034b236f42b8b",
-    "localSha256": "807d9e039655a56834839aef3826b63662330d699bd48d28732d67808e167923"
+    "localSha256": "807d9e039655a56834839aef3826b63662330d699bd48d28732d67808e167923",
+    "width": 1322,
+    "height": 1118,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-31",
@@ -8636,7 +11100,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "f7c1ca474b627fb1fc02e7473120cc4676522bb9",
-    "localSha256": "b85a825fbbe0f198af922792ccd091bd344027abd285b2332bf96a94936d5960"
+    "localSha256": "b85a825fbbe0f198af922792ccd091bd344027abd285b2332bf96a94936d5960",
+    "width": 1040,
+    "height": 787,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-32",
@@ -8650,7 +11118,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "22038922e6d555766653445af0f1f7fe51f7ef01",
-    "localSha256": "5aca53eca6a606d176ffe553a9dfc602e308e1a32554c67131284a7c8a616e1d"
+    "localSha256": "5aca53eca6a606d176ffe553a9dfc602e308e1a32554c67131284a7c8a616e1d",
+    "width": 1198,
+    "height": 1509,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-33",
@@ -8664,7 +11136,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "595d6831911c9070a19c7b7c81ab7baf62ef6344",
-    "localSha256": "7dbff6fb9101b27f59d54d9477050394894dc7cd88d325236f070a1157a3b617"
+    "localSha256": "7dbff6fb9101b27f59d54d9477050394894dc7cd88d325236f070a1157a3b617",
+    "width": 2009,
+    "height": 989,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-34",
@@ -8678,7 +11154,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "2cb665a8a230ff70b2108d14c0e27b062fcc0202",
-    "localSha256": "e28fc109581b51191d65e0891d43c0b9283b7c31e26bac2d7f470463008bd432"
+    "localSha256": "e28fc109581b51191d65e0891d43c0b9283b7c31e26bac2d7f470463008bd432",
+    "width": 1484,
+    "height": 1221,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-35",
@@ -8692,7 +11172,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "9ff312ba46fd7763ff63720387f6c985c395ab23",
-    "localSha256": "5bd8ecedf430f51f411648f930d3a936ff04376b00df85811831445b95edb210"
+    "localSha256": "5bd8ecedf430f51f411648f930d3a936ff04376b00df85811831445b95edb210",
+    "width": 1416,
+    "height": 1124,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-36",
@@ -8706,7 +11190,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "2e495124f3adf4639783c38775c3b0e3a946e024",
-    "localSha256": "6174f8ef9c1a4192b5fc3558684b116dcefb57abc654c296fd3f7bca683c09ff"
+    "localSha256": "6174f8ef9c1a4192b5fc3558684b116dcefb57abc654c296fd3f7bca683c09ff",
+    "width": 1567,
+    "height": 648,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-37",
@@ -8720,7 +11208,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "3718b3ef4811e1ae233ab2e58e19d657be0221b2",
-    "localSha256": "13a42e40649195e907b231fb8d596d30cd8f9e826bc9461aecb3bf9ddb94a63f"
+    "localSha256": "13a42e40649195e907b231fb8d596d30cd8f9e826bc9461aecb3bf9ddb94a63f",
+    "width": 1602,
+    "height": 654,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-38",
@@ -8734,7 +11226,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "57a055fd07a2f47263652369c5821aa96bf08755",
-    "localSha256": "f1a4fdf203b536e13a34dbca4c4e656b78fbf034b1535fb72aa05a2185222c03"
+    "localSha256": "f1a4fdf203b536e13a34dbca4c4e656b78fbf034b1535fb72aa05a2185222c03",
+    "width": 3069,
+    "height": 1290,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-39",
@@ -8748,7 +11244,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "24db4ca603835a3c7f73dba908767c378884baeb",
-    "localSha256": "a18289a7b9ffe2fb8af371b23b700afc2e26e5a85ba880c211c24c4eeeb1918d"
+    "localSha256": "a18289a7b9ffe2fb8af371b23b700afc2e26e5a85ba880c211c24c4eeeb1918d",
+    "width": 2664,
+    "height": 1033,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-40",
@@ -8762,7 +11262,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "b5716825ccb7f4b73894b8606fe07c3697e9713d",
-    "localSha256": "f534df3dd03f9f38f07a23cc06c887984baaf42b411af40a883a7ac89a1c002c"
+    "localSha256": "f534df3dd03f9f38f07a23cc06c887984baaf42b411af40a883a7ac89a1c002c",
+    "width": 800,
+    "height": 757,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-41",
@@ -8776,7 +11280,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "64294c725a46ef8051d23ee02b2b1c6567781091",
-    "localSha256": "56186e817c4984a361dc1eca26f106831e24e62144453e95ab7eac03f9d26a8b"
+    "localSha256": "56186e817c4984a361dc1eca26f106831e24e62144453e95ab7eac03f9d26a8b",
+    "width": 1536,
+    "height": 2048,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-42",
@@ -8790,7 +11298,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "9f4fd4aba475f48a882ca983048cab10ab1809b0",
-    "localSha256": "06746deed1b3c88333c51fe3066f9d02bbcc2e72f7fdc3f83057ec6d887860c9"
+    "localSha256": "06746deed1b3c88333c51fe3066f9d02bbcc2e72f7fdc3f83057ec6d887860c9",
+    "width": 830,
+    "height": 600,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-43",
@@ -8804,7 +11316,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "43882966eb6823e9ab05a1092170d60925e4f80b",
-    "localSha256": "4c1835ef34d556e87169d5af748d75f15a1f3aaa1ad7034e761d3cd7a5d06885"
+    "localSha256": "4c1835ef34d556e87169d5af748d75f15a1f3aaa1ad7034e761d3cd7a5d06885",
+    "width": 3072,
+    "height": 2304,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-44",
@@ -8818,7 +11334,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "160a59bdd989d4c59fc53288ae9936fbc82b3f84",
-    "localSha256": "07312a91bde0e706416b946350f4e490d6374a10d66d883a911b12423c9550a4"
+    "localSha256": "07312a91bde0e706416b946350f4e490d6374a10d66d883a911b12423c9550a4",
+    "width": 1106,
+    "height": 946,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-45",
@@ -8832,7 +11352,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "3612b165a349ceedd2fc2c8d601146f9c3d4c167",
-    "localSha256": "6b4384d051f8c7902ba559eaa90ca4107270fff60c3bac746ec2c0373d894768"
+    "localSha256": "6b4384d051f8c7902ba559eaa90ca4107270fff60c3bac746ec2c0373d894768",
+    "width": 812,
+    "height": 872,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-46",
@@ -8846,7 +11370,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "c3ec15b0dbc361870537fc4a625f50b0917870dc",
-    "localSha256": "3d43a71306e4e06c0a17050e8745b3c28b511cc6ac5fb32e408466ca71dde978"
+    "localSha256": "3d43a71306e4e06c0a17050e8745b3c28b511cc6ac5fb32e408466ca71dde978",
+    "width": 818,
+    "height": 626,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-47",
@@ -8860,7 +11388,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "5f036bfdce8fa6116ab082a97dfc672e2f4b0683",
-    "localSha256": "94d086c2477db75f3c148e51d26b5b074fe19fd614aae157cf5d840eab5e2aec"
+    "localSha256": "94d086c2477db75f3c148e51d26b5b074fe19fd614aae157cf5d840eab5e2aec",
+    "width": 2043,
+    "height": 1081,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-48",
@@ -8874,7 +11406,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "32b3aa96c0200a4501edc6659407c25e6bdd465f",
-    "localSha256": "cc69e00832c555b1c2f497b23ca8346eba5778d8f1885574fda8f323a278b104"
+    "localSha256": "cc69e00832c555b1c2f497b23ca8346eba5778d8f1885574fda8f323a278b104",
+    "width": 792,
+    "height": 707,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-49",
@@ -8888,7 +11424,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "3db90b5d6262533d1ba9cdb70a66621bd4202575",
-    "localSha256": "57873ebc8ad956294abd0534652f976fe5af711bc98bd08a1264e80773304b82"
+    "localSha256": "57873ebc8ad956294abd0534652f976fe5af711bc98bd08a1264e80773304b82",
+    "width": 1052,
+    "height": 762,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "abdomen-700-50",
@@ -8902,7 +11442,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "14ceeac8daa0f8d4597703edba70b79c351afd56",
-    "localSha256": "789bf545d41263f15cc8933d1c583be83d1515b55c1ab8490c058bbd222d4773"
+    "localSha256": "789bf545d41263f15cc8933d1c583be83d1515b55c1ab8490c058bbd222d4773",
+    "width": 1776,
+    "height": 2328,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-01",
@@ -8916,7 +11460,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "08b963f7d17d8207c88b7def8629e232126ced4a",
-    "localSha256": "c836be6f45caececb359f1ddc731ab93aec404bad7b8aec544dab4ef7721c0e7"
+    "localSha256": "c836be6f45caececb359f1ddc731ab93aec404bad7b8aec544dab4ef7721c0e7",
+    "width": 573,
+    "height": 1496,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-02",
@@ -8930,7 +11478,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "75df1ac7e040a37f5d28c63592aaa3a1a6485d29",
-    "localSha256": "aac92607df06323edfe609979f87761abeb36627209a4328dcc11aed15fde140"
+    "localSha256": "aac92607df06323edfe609979f87761abeb36627209a4328dcc11aed15fde140",
+    "width": 922,
+    "height": 903,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-03",
@@ -8944,7 +11496,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "f96003a7f43af8689584bdc4b697fa18ca4a8d65",
-    "localSha256": "28d9ada2292d52d3e9e8a7d6d57b26926d5100b294c03bf6fad947aa35e73a75"
+    "localSha256": "28d9ada2292d52d3e9e8a7d6d57b26926d5100b294c03bf6fad947aa35e73a75",
+    "width": 1131,
+    "height": 1368,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-04",
@@ -8958,7 +11514,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "a730443425a39e65ab80be7e80fa19ffaaabda1e",
-    "localSha256": "cade7092fa0f31de6d2993aa3c706c4ad9dbd77a5562254b113f3431f9def084"
+    "localSha256": "cade7092fa0f31de6d2993aa3c706c4ad9dbd77a5562254b113f3431f9def084",
+    "width": 1098,
+    "height": 971,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-05",
@@ -8972,7 +11532,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "17ed77759dee6a46b0b3630b2a1d02fed06149a7",
-    "localSha256": "4a1fa994eb8e32513d258d7672163a72a24595509633e86682a20e1ea3c840ff"
+    "localSha256": "4a1fa994eb8e32513d258d7672163a72a24595509633e86682a20e1ea3c840ff",
+    "width": 1057,
+    "height": 1453,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-06",
@@ -8986,7 +11550,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
     "originalSha1": "8fc1f452df6e31df853577d9eff6a176d8c98b1e",
-    "localSha256": "edfa0d129b559aac5c97e9622bf41943fb43d6bc423302c44f3c0825122f7547"
+    "localSha256": "edfa0d129b559aac5c97e9622bf41943fb43d6bc423302c44f3c0825122f7547",
+    "width": 633,
+    "height": 766,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-07",
@@ -9000,7 +11568,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "9151254608c1ee22b42d7defdd688c001c49c935",
-    "localSha256": "c38d3fe7c8e7c01daf8d7e6a3c07a6442c59e95697291762f200fd02b1d9fd8d"
+    "localSha256": "c38d3fe7c8e7c01daf8d7e6a3c07a6442c59e95697291762f200fd02b1d9fd8d",
+    "width": 1231,
+    "height": 892,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-08",
@@ -9014,7 +11586,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "930fb9ebc968e99435e96bf422e2b55fbaac656e",
-    "localSha256": "e22b44ef291e85c519a7d96612dbc5eaeca9b6f2c86655b524343e80bc63b161"
+    "localSha256": "e22b44ef291e85c519a7d96612dbc5eaeca9b6f2c86655b524343e80bc63b161",
+    "width": 1280,
+    "height": 1280,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-09",
@@ -9028,7 +11604,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "c9f9d6c8b6f20baf215cce5b47cf15750f560e6b",
-    "localSha256": "0a3f10ea4ef097f9096d22f8b6e5cc65c49e4e977193132c6a3e87727a71ad66"
+    "localSha256": "0a3f10ea4ef097f9096d22f8b6e5cc65c49e4e977193132c6a3e87727a71ad66",
+    "width": 269,
+    "height": 314,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-10",
@@ -9042,7 +11622,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "b199430c05e5942c1d12bfe5093ff671376212bf",
-    "localSha256": "3f2ef4d210ed1cab16a689d1733bdf7de43fb23e0828a86984ff75ccaaf2bf74"
+    "localSha256": "3f2ef4d210ed1cab16a689d1733bdf7de43fb23e0828a86984ff75ccaaf2bf74",
+    "width": 829,
+    "height": 629,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-11",
@@ -9056,7 +11640,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "ee5f2f74fc9971f82d54f16464061ac8c0e90d0b",
-    "localSha256": "544f94dfe1b136965053935e88ebbc43cacd946d860859e36b4022ffedbe385b"
+    "localSha256": "544f94dfe1b136965053935e88ebbc43cacd946d860859e36b4022ffedbe385b",
+    "width": 1946,
+    "height": 1428,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-12",
@@ -9070,7 +11658,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0 de",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
     "originalSha1": "10d9d9a37d0bcbce29657be6c5d4120f73690aa8",
-    "localSha256": "7da5ab70f315d546def8d7d4f53cf3cabc0cee0f704e4cfdda4ab952aea354c6"
+    "localSha256": "7da5ab70f315d546def8d7d4f53cf3cabc0cee0f704e4cfdda4ab952aea354c6",
+    "width": 795,
+    "height": 1026,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-13",
@@ -9084,7 +11676,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "ceb6f8b9876192e647acf4e9939847c55ccdb81e",
-    "localSha256": "b755ce23b0623a70f2b9a7e96f6b90b19ab0327bb881fcb1135d362f0088d6f1"
+    "localSha256": "b755ce23b0623a70f2b9a7e96f6b90b19ab0327bb881fcb1135d362f0088d6f1",
+    "width": 1342,
+    "height": 1103,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-14",
@@ -9098,7 +11694,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "dc130f1bf988b5d8e5c3c2814bf453c4d656dc18",
-    "localSha256": "1d7a2617afe8131f5827d1f9dc902abd08f83deb587d2a7b7456f1f882ae9f21"
+    "localSha256": "1d7a2617afe8131f5827d1f9dc902abd08f83deb587d2a7b7456f1f882ae9f21",
+    "width": 922,
+    "height": 1095,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-15",
@@ -9112,7 +11712,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "46d566ccfa1826ceb09c47e0eb21dd0191072c56",
-    "localSha256": "c09f4d8d842ffac23fa42b165aad3916f412a955ec1c4e7acab2ae1bc2c75fba"
+    "localSha256": "c09f4d8d842ffac23fa42b165aad3916f412a955ec1c4e7acab2ae1bc2c75fba",
+    "width": 732,
+    "height": 1426,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-16",
@@ -9126,7 +11730,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 2.5",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
     "originalSha1": "2a6906d20a44df0659d561d8adc684962c9af20a",
-    "localSha256": "2c1b57e7c46ab6f881f0bbeaefa273091c229f5e7f0630ee796ebd3dd98af8ca"
+    "localSha256": "2c1b57e7c46ab6f881f0bbeaefa273091c229f5e7f0630ee796ebd3dd98af8ca",
+    "width": 1844,
+    "height": 2408,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-17",
@@ -9140,7 +11748,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 2.5",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
     "originalSha1": "ffb69329b78192c6320c20cac827c446acc342c6",
-    "localSha256": "ea44767135a14a0ac3f7861925590091d38653c4b010814fa8d1b2d5bdd46bd8"
+    "localSha256": "ea44767135a14a0ac3f7861925590091d38653c4b010814fa8d1b2d5bdd46bd8",
+    "width": 1257,
+    "height": 1994,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-18",
@@ -9154,7 +11766,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "b782b98e3ce02bbbcb70a2432cc1bf6b5dc68327",
-    "localSha256": "bb945c0cc9f2531be1ed27b5b0dd4e93f886e37f10d1ea555574bc20050deeb5"
+    "localSha256": "bb945c0cc9f2531be1ed27b5b0dd4e93f886e37f10d1ea555574bc20050deeb5",
+    "width": 1026,
+    "height": 1266,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-19",
@@ -9168,7 +11784,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "0d3d9b85f46eaba79a27887b32d0d841f3b4f27f",
-    "localSha256": "a312199f9907173d8db2bf1f90939b54488696ac0c46b644467849b652231ed6"
+    "localSha256": "a312199f9907173d8db2bf1f90939b54488696ac0c46b644467849b652231ed6",
+    "width": 4059,
+    "height": 1430,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-20",
@@ -9182,7 +11802,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "originalSha1": "27ebaf45b83968a3d0a0dbf4f15426a2607c60f2",
-    "localSha256": "95abd359a76e26a9d60ac3276856ef8ff6f7e91365ea9bf71c15c34992d3ee8e"
+    "localSha256": "95abd359a76e26a9d60ac3276856ef8ff6f7e91365ea9bf71c15c34992d3ee8e",
+    "width": 540,
+    "height": 720,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-21",
@@ -9196,7 +11820,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "57e54222f2ea8187a00af3bb24f29cf0869a995d",
-    "localSha256": "55beca72940f146d47a2e764c5d88d86ffd1d1882f2f5c7e72df72bbeb2f5f15"
+    "localSha256": "55beca72940f146d47a2e764c5d88d86ffd1d1882f2f5c7e72df72bbeb2f5f15",
+    "width": 2052,
+    "height": 1056,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-22",
@@ -9210,7 +11838,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC0",
     "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
     "originalSha1": "99f4b2e2712ecef3fec7d3dfca38137710e00950",
-    "localSha256": "55fd74ff25a2b0fa1b5dd8787a49e919608543a7ca4f708caba32c5e32a21cb3"
+    "localSha256": "55fd74ff25a2b0fa1b5dd8787a49e919608543a7ca4f708caba32c5e32a21cb3",
+    "width": 1087,
+    "height": 886,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-23",
@@ -9224,7 +11856,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "59458dca8008e61e327433996a955a7f9b7be846",
-    "localSha256": "7773962f3c83aa94768c531d9ba3e4da0a237f128f3893b25d4835eb50186d9a"
+    "localSha256": "7773962f3c83aa94768c531d9ba3e4da0a237f128f3893b25d4835eb50186d9a",
+    "width": 2100,
+    "height": 1976,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-24",
@@ -9238,7 +11874,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "b05105a703477edc59133a09ff8e2778a2698c30",
-    "localSha256": "5bf160a0b2d9c90c14af396e494f846878345f14a959089c69bf2c0e64e4f7ea"
+    "localSha256": "5bf160a0b2d9c90c14af396e494f846878345f14a959089c69bf2c0e64e4f7ea",
+    "width": 2604,
+    "height": 3472,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-25",
@@ -9252,7 +11892,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "705005b50cf1d8d5a99122cc0f3b2f4888b4e35a",
-    "localSha256": "79fa54564a876095a0f1efc8d4c3ff7487230d6f1eeb8c6370f38e8e648fd8a6"
+    "localSha256": "79fa54564a876095a0f1efc8d4c3ff7487230d6f1eeb8c6370f38e8e648fd8a6",
+    "width": 2439,
+    "height": 2088,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-26",
@@ -9266,7 +11910,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "8f6973022d4993b6c7fe5a7862ee0ebc36614c9d",
-    "localSha256": "16bc26fcc9bf82347b4936fbef9673d546a380e8fde294c3224f34209946c8de"
+    "localSha256": "16bc26fcc9bf82347b4936fbef9673d546a380e8fde294c3224f34209946c8de",
+    "width": 1516,
+    "height": 1088,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-27",
@@ -9280,7 +11928,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "8242f68d0323ed7f40ca38c5d390d5de0f0737ab",
-    "localSha256": "defed58c6d9f41f1f1d22e3c3d1da0862e076bfad34f9eb2bc73d0b121e13294"
+    "localSha256": "defed58c6d9f41f1f1d22e3c3d1da0862e076bfad34f9eb2bc73d0b121e13294",
+    "width": 709,
+    "height": 819,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-28",
@@ -9294,7 +11946,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "d59c0e91d726d62f97d042df1d9adf8f80f9f741",
-    "localSha256": "e6f146f186eb324c0cc54c0ff38519e1d32529ad668b00daafbee44a2988dbb4"
+    "localSha256": "e6f146f186eb324c0cc54c0ff38519e1d32529ad668b00daafbee44a2988dbb4",
+    "width": 1253,
+    "height": 770,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-29",
@@ -9308,7 +11964,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "62627275e63bda08958dfce8db236e48e4c0ba92",
-    "localSha256": "c2a9b525daf4a73d1f196a01555d541c7d0d560a6e26dec37e673199b44f6865"
+    "localSha256": "c2a9b525daf4a73d1f196a01555d541c7d0d560a6e26dec37e673199b44f6865",
+    "width": 1945,
+    "height": 1116,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-30",
@@ -9322,7 +11982,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "da275aafced318e4c9caf71b77b44e5b865e1d12",
-    "localSha256": "0ba02dc0b3315c407452705b2d4f1b8f575248148dac6497283cccc3fb935bed"
+    "localSha256": "0ba02dc0b3315c407452705b2d4f1b8f575248148dac6497283cccc3fb935bed",
+    "width": 1279,
+    "height": 1808,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-31",
@@ -9336,7 +12000,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
     "originalSha1": "9b4a0eb8fedbd1116908aa762df7f91b2eb6ffab",
-    "localSha256": "87e87faba33ffec047da3cba7e849d46db166b1e2ecc2e367f75a04971056331"
+    "localSha256": "87e87faba33ffec047da3cba7e849d46db166b1e2ecc2e367f75a04971056331",
+    "width": 600,
+    "height": 567,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-32",
@@ -9350,7 +12018,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
     "originalSha1": "3e2972e4c64d6c716812088b348a49b9d3f627f9",
-    "localSha256": "4181a54a4e46685675d20e14e5b71c846a1fab4bfba9d5f992c3d3ce79d2a8b0"
+    "localSha256": "4181a54a4e46685675d20e14e5b71c846a1fab4bfba9d5f992c3d3ce79d2a8b0",
+    "width": 258,
+    "height": 294,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-33",
@@ -9364,7 +12036,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "555c4a20c0ee255dfee86fb5e00d38e7a7ee41ce",
-    "localSha256": "14d8f4e2fa7b6c2370791e6f0d22bd47250cc5205896df53ba4ea5e44abad938"
+    "localSha256": "14d8f4e2fa7b6c2370791e6f0d22bd47250cc5205896df53ba4ea5e44abad938",
+    "width": 640,
+    "height": 469,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-34",
@@ -9378,7 +12054,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "7edb6750661c568d5b65fec59a30b2c9a6cecf1f",
-    "localSha256": "ee0f2421cc271cf560974b5528d892cf2cd13fd6fa4ed7a40d933d9a1ceb549b"
+    "localSha256": "ee0f2421cc271cf560974b5528d892cf2cd13fd6fa4ed7a40d933d9a1ceb549b",
+    "width": 1840,
+    "height": 1348,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-35",
@@ -9392,7 +12072,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "56b3edc33ac50d3ae9ab6000cf687106406c9c2d",
-    "localSha256": "4d3a759fc5b50f559dd2ace4562cab99b138c9006bf17c19b0137808e26e7165"
+    "localSha256": "4d3a759fc5b50f559dd2ace4562cab99b138c9006bf17c19b0137808e26e7165",
+    "width": 3072,
+    "height": 2304,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-36",
@@ -9406,7 +12090,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "21c43d67cb57b2dc711f8d3089a54d0f44746cae",
-    "localSha256": "bade06db3982e474b0aaa88c27ee2412a273cdcdc3e1a0daf2dbc11c97f435dc"
+    "localSha256": "bade06db3982e474b0aaa88c27ee2412a273cdcdc3e1a0daf2dbc11c97f435dc",
+    "width": 2304,
+    "height": 3072,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-37",
@@ -9420,7 +12108,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "5e5c35a528e9edbc45538223b8e30928360dfe51",
-    "localSha256": "177110daeee85bb3a8b386fd25635d2c3a14181de0eefde5cba84aad9abed1bc"
+    "localSha256": "177110daeee85bb3a8b386fd25635d2c3a14181de0eefde5cba84aad9abed1bc",
+    "width": 1809,
+    "height": 990,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-38",
@@ -9434,7 +12126,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "8e17e4f50cbb292f8f95945e4d5a548c2d5e167b",
-    "localSha256": "a62fb6aa68a1f3642ade067e1a799a417cb4516cd5bb8a19342f0b7904379ed2"
+    "localSha256": "a62fb6aa68a1f3642ade067e1a799a417cb4516cd5bb8a19342f0b7904379ed2",
+    "width": 1329,
+    "height": 1029,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-39",
@@ -9448,7 +12144,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY 2.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
     "originalSha1": "7a384509a96119edb2237f83a96c76423d8e60c0",
-    "localSha256": "cfd0db398cb7f316f5a1e5f0a0ee9adeeb021ff635e1ece58406f390cf9e53a6"
+    "localSha256": "cfd0db398cb7f316f5a1e5f0a0ee9adeeb021ff635e1ece58406f390cf9e53a6",
+    "width": 1200,
+    "height": 672,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-40",
@@ -9462,7 +12162,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "03fc4d3537298e8393d294f05829e325703f5851",
-    "localSha256": "efe250e9c1013c372c51469517f9191a3e478c7591ddd43993868777343ace76"
+    "localSha256": "efe250e9c1013c372c51469517f9191a3e478c7591ddd43993868777343ace76",
+    "width": 1974,
+    "height": 615,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-41",
@@ -9476,7 +12180,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "679c16ae08ff0331add3693a94063642e31619e0",
-    "localSha256": "c07154294683da39c254c3ae88d9d10a811483a85c5ae7cf961fa311e4a19a99"
+    "localSha256": "c07154294683da39c254c3ae88d9d10a811483a85c5ae7cf961fa311e4a19a99",
+    "width": 1812,
+    "height": 714,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-42",
@@ -9490,7 +12198,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "7b4d78d3597e711a9c51de56e8120f4e1c6b2395",
-    "localSha256": "247b7397abc88aba4cc667770fc9924ea1126e2d972abdc205611604bb655853"
+    "localSha256": "247b7397abc88aba4cc667770fc9924ea1126e2d972abdc205611604bb655853",
+    "width": 1372,
+    "height": 952,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-43",
@@ -9504,7 +12216,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "80dafcd387a3feb4a757f383ad06d8c900b7af37",
-    "localSha256": "5d61ddec24c777786eb17603d41671d32e8d6192af687bf26926288da8df7849"
+    "localSha256": "5d61ddec24c777786eb17603d41671d32e8d6192af687bf26926288da8df7849",
+    "width": 690,
+    "height": 1094,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-44",
@@ -9518,7 +12234,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "23433d9ad204a3baf27c11d36ffa4120ae4593be",
-    "localSha256": "102022583e452d8b238b3a41c639ce0dcb949b3e25c7793813133ee27950aac3"
+    "localSha256": "102022583e452d8b238b3a41c639ce0dcb949b3e25c7793813133ee27950aac3",
+    "width": 1503,
+    "height": 1086,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-45",
@@ -9532,7 +12252,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "bb0b750f3bc006628c3b67cbc59d78a49b1b6abe",
-    "localSha256": "789b771a49ae743a54bd8c1f422738d5d57ef40e52c587fafcf5c9fb5aaee4f9"
+    "localSha256": "789b771a49ae743a54bd8c1f422738d5d57ef40e52c587fafcf5c9fb5aaee4f9",
+    "width": 1387,
+    "height": 702,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-46",
@@ -9546,7 +12270,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "63343a3541ca7e5155c946c3592c3a4f4e02fea3",
-    "localSha256": "7db5451891c04b8c1f15494ded215b541dbf44e57ce9ccfd5b2989e5f32aa38a"
+    "localSha256": "7db5451891c04b8c1f15494ded215b541dbf44e57ce9ccfd5b2989e5f32aa38a",
+    "width": 3072,
+    "height": 2304,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-47",
@@ -9560,7 +12288,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "1fda2d2a6f0300a4882cdc3f0c23cd3f7f2d108d",
-    "localSha256": "b6bc2f3e9983f6cea8564f19b7695b34eb7ef9c3c413d07d5fe30d3c968fd9e3"
+    "localSha256": "b6bc2f3e9983f6cea8564f19b7695b34eb7ef9c3c413d07d5fe30d3c968fd9e3",
+    "width": 1297,
+    "height": 1017,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-48",
@@ -9574,7 +12306,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
     "originalSha1": "ffd46ef5f52940dce8f89def2e2d25526ca1b176",
-    "localSha256": "23ed0857fc97b019b3a2e9813114faed949edee0743ec30288b121f09f8266e4"
+    "localSha256": "23ed0857fc97b019b3a2e9813114faed949edee0743ec30288b121f09f8266e4",
+    "width": 2403,
+    "height": 1545,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-49",
@@ -9588,7 +12324,11 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "ba880576513a545adf70758fcae2fedb2998c3e7",
-    "localSha256": "30695b2072c293ceebd65e3b90244f3eebdda2d466a08882da31a866c91d255f"
+    "localSha256": "30695b2072c293ceebd65e3b90244f3eebdda2d466a08882da31a866c91d255f",
+    "width": 500,
+    "height": 992,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
   },
   {
     "id": "bone-700-50",
@@ -9602,6 +12342,5786 @@ const EXPANDED_CASE_SOURCES = [
     "license": "CC BY-SA 3.0",
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
     "originalSha1": "df679b517b3e48c8e11d8d382a132372c3ef5cd5",
-    "localSha256": "aff10bc653515565ae34c990a3f0911e0a9b4a0788bf950ad59c28a0572965a8"
+    "localSha256": "aff10bc653515565ae34c990a3f0911e0a9b4a0788bf950ad59c28a0572965a8",
+    "width": 3345,
+    "height": 1557,
+    "retrieval": "curated-search-700",
+    "qualityScore": "source-and-contact-sheet-review"
+  },
+  {
+    "id": "chest-1004-001",
+    "groupKey": "chest-1004-001",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-001.jpg",
+    "sourceTitle": "Radiology 1300334.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Radiology_1300334.JPG",
+    "sourceDescription": "Medical X-rays. Opaque hemithorax, mediastinal shift and scoliosis in a patient with infection superimposed on cystic bronchiectasis",
+    "artist": "Nevit Dilmen ( talk )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "1508b8c8d3d4730b7a5858875870e9a71c79566b",
+    "localSha256": "4ae7b66375a77ff423ed148e1283a161e6c418a883e5ef964bdfb7a6161c5914",
+    "width": 2304,
+    "height": 3072,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-002",
+    "groupKey": "chest-1004-002",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-002.jpg",
+    "sourceTitle": "Adenokarzinom der Lunge im Roentgenbild 63M - CR pa nach Lobektomie - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adenokarzinom_der_Lunge_im_Roentgenbild_63M_-_CR_pa_nach_Lobektomie_-_001.jpg",
+    "sourceDescription": "Z.n. Lobectomy of the right upper lobe for adenocarcinoma of the lung: Consecutive diaphragm cranially distorted; multiple paramediastinal clips; Port catheter from the left (CT).",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "ffa6acfaf7d21b165ce625eb52d93b0f5f8a0402",
+    "localSha256": "0897d463536249bf0ad127787c5b6f5cb7210d4d1436f82bc89c6b6b3eaa1b89",
+    "width": 1151,
+    "height": 1085,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-003",
+    "groupKey": "chest-1004-003",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-003.jpg",
+    "sourceTitle": "Actinomyces meyeri 67jm mit Pleuraempyem - CT WF und LF ax - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Actinomyces_meyeri_67jm_mit_Pleuraempyem_-_CT_WF_und_LF_ax_-_001.jpg",
+    "sourceDescription": "Pulmonary actinomycosis with Actinomyces meyeri in a 67-year-old in computed tomography. Solid formations mimicking a malignant neoplasm in both lungs with cavernization and pleural empyema.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "45faf738563f92a4fe93a06a1f6f108da1b562b2",
+    "localSha256": "2b4cbba08c70816c3c5208c281dea69eaee5948857fa46dc898f22d3bb91f06f",
+    "width": 3000,
+    "height": 2196,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-004",
+    "groupKey": "chest-1004-004",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-004.jpg",
+    "sourceTitle": "Vorhofsseptumdefekt ASD-Verschluss mit Amplatzer Septal Occluder 57W - CR pa und seitlich - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vorhofsseptumdefekt_ASD-Verschluss_mit_Amplatzer_Septal_Occluder_57W_-_CR_pa_und_seitlich_-_001.jpg",
+    "sourceDescription": "Vorhofsseptumdefekt vom Sekundumtyp (ASD II) ASD-Verschluss (mit 32 mm Amplatzer Septal Occluder)",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "bdc511b67fed93dd3895af010478a62fdd484af4",
+    "localSha256": "776bdd002917202cf51bc26adcbff35f3f6073de7d5d36c82685bf48a69ce913",
+    "width": 1528,
+    "height": 1073,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-005",
+    "groupKey": "chest-1004-005",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-005.jpg",
+    "sourceTitle": "Verschluss Ductus arteriosus Botalli mit Clips 60W - CR und CT - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Verschluss_Ductus_arteriosus_Botalli_mit_Clips_60W_-_CR_und_CT_-_001.jpg",
+    "sourceDescription": "Verschluss Ductus arteriosus Botalli mit Clips sichtbar im Röntgenbild und in der Computertomografie zwischen dem Aortenbogen und im Truncus pulmonalis. Inzwischen (Röntgenbilder) auch Z.n. Implantation eines Portkathetersystems.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "0c7c2c525f1dc4ed4b02477a476f098d8ad3441f",
+    "localSha256": "dc45ea770c0b976deb3744795003478e648348b105e91165c580bfd73bfedf41",
+    "width": 4053,
+    "height": 1388,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-006",
+    "groupKey": "chest-1004-006",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-006.png",
+    "sourceTitle": "33-01-Pericarditis calcarea pa.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:33-01-Pericarditis_calcarea_pa.png",
+    "sourceDescription": "Pericarditis calcarea (calcific constrictive pericarditis) on x-ray.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "eba2c8364fe83b96ee09598f8b9070a482b449bb",
+    "localSha256": "f2561161f8f693813372937bbaf7f7d4857367dc98cd0e04bec0c78faf093a3f",
+    "width": 1234,
+    "height": 1082,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-007",
+    "groupKey": "chest-1004-007",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-007.jpg",
+    "sourceTitle": "ZP aneurysma oblouku aorty (29).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ZP_aneurysma_oblouku_aorty_(29).jpg",
+    "sourceDescription": "Radiology",
+    "artist": "Doc. MUDr. Jan Šprindrich CSc.",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "48543f9637168bf9a852cc5c499cab870ed07c32",
+    "localSha256": "d73e4f265b26f8fc27b3b7f644a58417da383af07cb8edc1bb21eada2d84d871",
+    "width": 640,
+    "height": 577,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-008",
+    "groupKey": "chest-1004-008",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-008.jpg",
+    "sourceTitle": "Lung - Barium Aspiration (49260358107).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lung_-_Barium_Aspiration_(49260358107).jpg",
+    "sourceDescription": "Aspirated, crushed barium sulphate crystals in an airway. Barium sulphate is widely used for radiographic diagnosis of lesions in the GI tract. Small and, generally, non-birefringent crystals with smooth edges that are produced by a precipitation technique, are mainly used for studies of the colon. Crushing the naturally occurring compound produces large, birefringent, rhomboidal crystals which have rough edges. Crushed BaSO4 is used primarily for studies of the esophagus and stomach because the rough edges of the particles facilitate mucosal adherence. Small quantities of birefringent, crushed barium sulphate are sometimes added to precipitated commercial suspensions to enhance radiological contrast. This would explain why, in the experience of some, precipitated BaSO4 used for barium enemas exhibits birefringence while, in the experience of most, it does not.",
+    "artist": "Atlas of Medical Foreign Bodies",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "originalSha1": "db2f7c886ada4ff9bd2b64a0fb66e476fe71e5e0",
+    "localSha256": "71a48907c0443a53b6aed7980bd6c88ac1d05a2c09f5e55fe67bfa8a9d4fbf10",
+    "width": 2560,
+    "height": 1920,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-009",
+    "groupKey": "chest-1004-009",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-009.jpg",
+    "sourceTitle": "CHEST IMAGE.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CHEST_IMAGE.jpg",
+    "sourceDescription": "3D Computer rending (from a CT Scan) of an infant with a Congenital Pulmonary Airway Malformation (CPAM) in the Lung. The CPAM is in the lower right hand corner of image with the arteries (red) feeding the malformation and the veins (blue) draining the malformation. This technology is used for pre-surgical planning.",
+    "artist": "Robobbyn",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "originalSha1": "80bd977e0c076e581c39f019bb1706ca365397ab",
+    "localSha256": "874fc5443ee8891d055eece75f2bf685abbf03e91e97402a02f96e343ab68633",
+    "width": 1204,
+    "height": 941,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-010",
+    "groupKey": "chest-1004-010",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-010.png",
+    "sourceTitle": "Apical pneumothorax shown on CT and chest X-ray with left first rib fracture.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apical_pneumothorax_shown_on_CT_and_chest_X-ray_with_left_first_rib_fracture.png",
+    "sourceDescription": "A post trauma patient with apical pneumothorax shown on CT and chest X-ray with left first rib fracture. Lung haematoma is more obvious on CT scan of thorax.",
+    "artist": "Cerevisae",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "506f9dbae0bd4c7b034de808bca842f773896615",
+    "localSha256": "d7f8c6086f7e11f79292dc42ebbf851445a23f744954b114a72a3a5780b2960f",
+    "width": 5984,
+    "height": 2136,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-011",
+    "groupKey": "chest-1004-011",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-011.jpg",
+    "sourceTitle": "Angiomyolipome TubSklerose cor.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Angiomyolipome_TubSklerose_cor.jpg",
+    "sourceDescription": "Computed tomography of the abdomen and pelvis: multiple angiomyolipomas of the kidneys in a patient who also have lymphangioleiomyomatosis of the lungs. Thus, making the case a strong suspicion of tuberous sclerosis.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "b742f4452d4d0ec6fe09ade377cf6cd3ff262446",
+    "localSha256": "8272086b6a495302d50e28ba721beaa3429d394854fb4987904a787e947500a2",
+    "width": 936,
+    "height": 846,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-012",
+    "groupKey": "chest-1004-012",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-012.jpg",
+    "sourceTitle": "Rad 1300156.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rad_1300156.JPG",
+    "sourceDescription": "Medical X-rays Round pneumonia in a 15 year patient with cough and fever.",
+    "artist": "Nevit Dilmen ( talk )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "012e503508ff2193f58dd2bfff035a69f3d6660c",
+    "localSha256": "33506122f13e1b173231bb1e38ac6f64e0cf40ab2dd27364cf206af337e5a45e",
+    "width": 2304,
+    "height": 3072,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-013",
+    "groupKey": "chest-1004-013",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-013.jpg",
+    "sourceTitle": "Pulmonary contusion CT.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pulmonary_contusion_CT.jpg",
+    "sourceDescription": "A CT scan of a patient with a \"partially-cystic, partially fluid-filled structure\" (dark spot near spine on middle-right hand lower portion of image), a rib fracture (lower righthand portion of image), and \"subpleural hemorrhage representing a pulmonary contusion (lighter area near rib fracture in lower right hand portion of image), as described at LearningRadiology.com",
+    "artist": "LearningRadiology.com",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "3192beaf78219320df5985da8424f25e020b09ed",
+    "localSha256": "7e0954b679516ffa88cb34d34ec5b98cea1bbd367e929f21321e76157948d0d6",
+    "width": 853,
+    "height": 627,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-014",
+    "groupKey": "chest-1004-014",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-014.png",
+    "sourceTitle": "57-01-Trichterbrust PA.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:57-01-Trichterbrust_PA.png",
+    "sourceDescription": "Mild form of Pectus excavatum in plain chest X-ray a.p.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "c1c4731c28a14c59df751a3785e0c12f14291de3",
+    "localSha256": "3a7b931a79069ff072785829a709ad5b0fae5272cf3b60063bbdc65c222f69f3",
+    "width": 1004,
+    "height": 1106,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-015",
+    "groupKey": "chest-1004-015",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-015.jpg",
+    "sourceTitle": "Achalasie in Thoraxübersicht.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Achalasie_in_Thorax%C3%BCbersicht.jpg",
+    "sourceDescription": "Achalasia on chest x-ray. The mediastinum is widened due to the dilated esophagus.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "b240fad2580e6f7b1d9aea37690d13b02c08b235",
+    "localSha256": "20118723676c5d809c83972a1058b1c7bb48df5bb75157d7885f81fd7ab31ec2",
+    "width": 2044,
+    "height": 2079,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-016",
+    "groupKey": "chest-1004-016",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-016.jpg",
+    "sourceTitle": "Journal of roentgenology (1918) (14571705347) revised.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Journal_of_roentgenology_(1918)_(14571705347)_revised.jpg",
+    "sourceDescription": "Text Appearing Before Image: a. Female. Age 58. Systolic and presystolic murmur at apex. Thrill present. Mitral stenosis. Pulse 70, regular. Blood pressure S 150 / D 95Wasserman negative. 340 THE JOURNAL OF ROENTGENOLOGY Text Appearing After Image: 7b. Same as 7a but with chambers outlined after frozen sections as illustratedin Norris and Landis (Diseases of the Chest). CRANE —ENLARGEMENT OF THE HEART 341 Discussion De. Hollis E. Potter, Chicago: Mr. Chairman, Gentle-men and Ladies: I am particularly glad to be able to see and hear a man of Dr. Cranes clinical experience in heart lesions present this new method for use in cardiac diag-nosis worked out with such care by Dr. Bardeen. Most of you know that Dr. Cranes daily occupation is that of a medical consultant, who used the ray methods in his work so early and has continued to use them so faithfully that he qualifies in any group of either roentgenologists or clini-cians. Such coordination of purposes makes him a particu-larly competent authority as to the value of any new x-ray method of heart diagnosis. Heretofore we have been satisfied to trace out cardiac outlines and judge from averages whether there was any total enlargement present or any increase in the size of individual cham Note About Images Please note that these images are extracted from scanned page images that may have been digitally enhanced for readability - coloration and appearance of these illustrations may not perfectly resemble the original work.",
+    "artist": "Western Roentgen Society",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+    "originalSha1": "5efacb6e8503d6c8cd937c36162ae7e2d77afe77",
+    "localSha256": "740f12aab90af3008a65f70694f78e7b8a70fe988222ee5ab925ba32edd90419",
+    "width": 1692,
+    "height": 1761,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-017",
+    "groupKey": "chest-1004-017",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-017.jpg",
+    "sourceTitle": "Covid-19-Pneumonie 56M - CR pa - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Covid-19-Pneumonie_56M_-_CR_pa_-_001.jpg",
+    "sourceDescription": "Covid-19-Pneumonie",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "5ebd6afc26098dc6ae364e2204119c7c35586f80",
+    "localSha256": "e399201e7f660f8b9bd39a7d9e015bb074b250d1f4b24be4e2afb3ffeaf8163f",
+    "width": 1276,
+    "height": 1110,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-018",
+    "groupKey": "chest-1004-018",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-018.jpg",
+    "sourceTitle": "Ausgepraegtes Weichteilemphysem nach Anlage einer Thoraxdrainage bei Pneumothorax 76W - CR ap - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ausgepraegtes_Weichteilemphysem_nach_Anlage_einer_Thoraxdrainage_bei_Pneumothorax_76W_-_CR_ap_-_001.jpg",
+    "sourceDescription": "Ausgeprägtes Weichteilemphysem nach Anlage einer Thoraxdrainage bei Pneumothorax. Das Emphysem trat nach Anlage der großlumigen rechtsseitigen Drainage auf und breitete sich auf die Gegenseite und bis nach zervikal aus.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "7c20fe28049ddcd8fb56aab6c60d16c1066e5ce4",
+    "localSha256": "f5630040734fb095421507f8d56fc2dbfa8885574da11cb8e235efa164852e54",
+    "width": 1797,
+    "height": 1454,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-019",
+    "groupKey": "chest-1004-019",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-019.png",
+    "sourceTitle": "A patient with co-infiction of H5N1 and SARS-CoV-2 (1).png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_patient_with_co-infiction_of_H5N1_and_SARS-CoV-2_(1).png",
+    "sourceDescription": "​CT images prior to and after the treatment of the patient with the co-infection of H5N1 and COVID-19. The radiological examination of the patient after admission revealed an air bronchogram, lung consolidation, and bilateral pleural effusion (A and B)",
+    "artist": "Ke Jin, Zixing Dai, Ping Shi, Yuwen Li and Chuanlong Zhu",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "originalSha1": "7cc1cd073013929cbcbfd8f6fa72eb676a17c6d7",
+    "localSha256": "d894b35982bf70bb6e5737ec6a5573ed989e3778ec1da3584f84af4bd0ce4c89",
+    "width": 2008,
+    "height": 757,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-020",
+    "groupKey": "chest-1004-020",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-020.png",
+    "sourceTitle": "16-02-Lungenoedem Verlauf nach 6 Tagen.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:16-02-Lungenoedem_Verlauf_nach_6_Tagen.png",
+    "sourceDescription": "Pulmonary edema after recompensation.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "d29e42a7990c524bc4113852d17b6ca4be815f5f",
+    "localSha256": "dee6570343517ff8e60c4e3df74da690a3f28d841079590c9b638ff0377681d8",
+    "width": 992,
+    "height": 1044,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-021",
+    "groupKey": "chest-1004-021",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-021.png",
+    "sourceTitle": "CT of lung infarction with reverse halo sign.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CT_of_lung_infarction_with_reverse_halo_sign.png",
+    "sourceDescription": "Thorax CT of a 74-year-old man with a long-standing pulmonary embolism (having lasted 3 months) of the artery of the right lower lobe, secondary to a leg fracture, and with long-standing hemoptysis . It shows the embolism, as well as a pulmonary infarction seen as a reverse halo sign . Further information: Reverse halo sign",
+    "artist": "Mikael Häggström , M.D. Author info - Reusing images - Conflicts of interest: None Mikael Häggström , M.D. Consent note : Written informed consent was obtained from the individual, including online publication.",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalSha1": "7674499c26e315709e7f5a35c5e9a449d77b83d4",
+    "localSha256": "17dbbb273fa798f5cabb603c218aa8d1e3942b876cedd413ffec27c947fe5d38",
+    "width": 1194,
+    "height": 982,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-022",
+    "groupKey": "chest-1004-022",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-022.jpg",
+    "sourceTitle": "X-ray of lobar pneumonia.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:X-ray_of_lobar_pneumonia.jpg",
+    "sourceDescription": "Chest radiograph of a 67 year old man, showing lobar pneumonia , affecting the right middle lobe. Culture from the nasopharynx only showed Moraxella catarrhalis , which is probably not the pathogen of the lung.",
+    "artist": "Mikael Häggström , M.D. Author info - Reusing images - Conflicts of interest: None Mikael Häggström , M.D. Consent note : Written informed consent was obtained from the individual, including online publication.",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalSha1": "f8e927b2bfc4246de8c2356b5495818a429afbbe",
+    "localSha256": "125c899ae1b8c9b666d90568aadf186ec5ec094e3e015fba423c182bcb1d51d2",
+    "width": 3027,
+    "height": 2407,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-023",
+    "groupKey": "chest-1004-023",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-023.jpg",
+    "sourceTitle": "Rad 1300167 cr.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rad_1300167_cr.jpg",
+    "sourceDescription": "Medical X-rays Opaque hemithorax, mediastinal shift and scoliosis in a patient with infection superimposed on cystic bronchiectasis",
+    "artist": "Nevit Dilmen ( talk )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "14ccd81a5277a7f920c3980e4b44b5a395c16c31",
+    "localSha256": "0f2678e20463d7c0e84726a7d3378e4ffd5b3100769de28423ba85a90d1cc788",
+    "width": 2304,
+    "height": 2716,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-024",
+    "groupKey": "chest-1004-024",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-024.jpg",
+    "sourceTitle": "Actinomyces meyeri 67jm mit Pleuraempyem - Roe pa und CT WF ax - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Actinomyces_meyeri_67jm_mit_Pleuraempyem_-_Roe_pa_und_CT_WF_ax_-_001.jpg",
+    "sourceDescription": "Pulmonary actinomycosis with Actinomyces meyeri in a 67-year-old in x-ray and computed tomography. Solid lesion mimicking a malignant neoplasm in both lungs with cavernization and pleural empyema.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "debf02d864b17fe77fa2d5e08d94d67321d52310",
+    "localSha256": "7f6808d62378ad4f907c222075c6f6135c23c6bb7f977251d351f6fca60fddd1",
+    "width": 2914,
+    "height": 1323,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-025",
+    "groupKey": "chest-1004-025",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-025.png",
+    "sourceTitle": "33-02-Pericarditis calcarea seitlich.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:33-02-Pericarditis_calcarea_seitlich.png",
+    "sourceDescription": "Pericarditis calcarea (calcific constrictive pericarditis) on x-ray.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "2651d8a0b27d06e9d064e6b86a2029d127d9cb44",
+    "localSha256": "f4ecf785217bbbc782b985f3d2d6c1492eed7a24f8f42676f0e10fb719d7e8e2",
+    "width": 880,
+    "height": 1106,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-026",
+    "groupKey": "chest-1004-026",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-026.jpg",
+    "sourceTitle": "Lung - Barium Aspiration (49259683028).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lung_-_Barium_Aspiration_(49259683028).jpg",
+    "sourceDescription": "Aspirated, crushed barium sulphate (black-appearing material) in an airway and adjacent lung parenchyma. Barium sulphate is widely used for radiographic diagnosis of lesions in the GI tract. Small and, generally, non-birefringent crystals with smooth edges that are produced by a precipitation technique, are mainly used for studies of the colon. Crushing the naturally occurring compound produces large, birefringent, rhomboidal crystals which have rough edges. Crushed BaSO4 is used primarily for studies of the esophagus and stomach because the rough edges of the particles facilitate mucosal adherence. Small quantities of birefringent, crushed barium sulphate are sometimes added to precipitated commercial suspensions to enhance radiological contrast. This would explain why, in the experience of some, precipitated BaSO4 used for barium enemas exhibits birefringence while, in the experience of most, it does not.",
+    "artist": "Atlas of Medical Foreign Bodies",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "originalSha1": "8af1c8024ed0a9e271c7083acf9244f08b318a12",
+    "localSha256": "c43671dc02646b7fc62581b0be1275c96b0d3a6c180b00fbcdef42d136c142ec",
+    "width": 2560,
+    "height": 1920,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-027",
+    "groupKey": "chest-1004-027",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-027.jpg",
+    "sourceTitle": "X-ray of osteogenesis imperfecta type 5 in newborn - Vertebrae and ribs.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:X-ray_of_osteogenesis_imperfecta_type_5_in_newborn_-_Vertebrae_and_ribs.jpg",
+    "sourceDescription": "edit X-rays of a full term neonate boy who was found to have crackles from the chest. Later genetic testing revealed osteogenesis imperfecta type 5. Vertebrae and ribs... ...with multiple rib fractures Right leg, with somewhat deformed long bones (mainly the femur ) with widened metaphyses There is also a cortical fracture on the fibula Left leg. Left arm... ...with a periosteal reaction indicating a fracture. Right arm",
+    "artist": "Mikael Häggström , M.D. Author info - Reusing images - Conflicts of interest: None Mikael Häggström , M.D. Consent note : Written informed consent was obtained from a parent of the individual, including for online publication.",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalSha1": "d84d0e58dd544582d6965d5f5ea39779458f2704",
+    "localSha256": "948fa06d896749b8599b8caaa50bfcfe1c94b40878389e3b126ea48bfeacd1d5",
+    "width": 843,
+    "height": 1919,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-028",
+    "groupKey": "chest-1004-028",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-028.png",
+    "sourceTitle": "57-02-Trichterbrust seitlich.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:57-02-Trichterbrust_seitlich.png",
+    "sourceDescription": "Mild form of Pectus excavatum in plain chest X-ray lateral view.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "0d90af1da5a48e2284cf8539caf6c4b98f12888e",
+    "localSha256": "c25eafcddf0403d7eaee9982253bcaacffc9c94304c795daa57ad2f73841c74e",
+    "width": 720,
+    "height": 954,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-029",
+    "groupKey": "chest-1004-029",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-029.png",
+    "sourceTitle": "Achalasie im Thorax pa 001.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Achalasie_im_Thorax_pa_001.png",
+    "sourceDescription": "Achalasia in chest X-ray.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "25b362efec59287b6676a3094ccf12fb071820cf",
+    "localSha256": "bcc6363c032fdd110148fd6f3db204287ffccab05757293bc75a2543d5db6797",
+    "width": 1479,
+    "height": 1665,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-030",
+    "groupKey": "chest-1004-030",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-030.jpg",
+    "sourceTitle": "Covid-19-Pneumonie 54W - CR pa - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Covid-19-Pneumonie_54W_-_CR_pa_-_001.jpg",
+    "sourceDescription": "Covid-19-Pneumonie",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "1c9e615046423f2afd7fe8fc6808f34b461adf6c",
+    "localSha256": "8c6bfe0138c73e5c36c5eb1df658d5fc763da5e36b6d9e85eb3e283b19b96d65",
+    "width": 1188,
+    "height": 1090,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-031",
+    "groupKey": "chest-1004-031",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-031.jpg",
+    "sourceTitle": "Deep sulcus sign bei Pneumothorax im Liegen 82M - CR ap - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Deep_sulcus_sign_bei_Pneumothorax_im_Liegen_82M_-_CR_ap_-_001.jpg",
+    "sourceDescription": "Deep sulcus sign in der Aufnahme im Liegen bei Pneumothorax links nach diagnostischer Pleurapunktion. In diesem Fall ist auch die Lungengrenze basal gut abgrenzbar.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "0d4142b358b1604a9edb895f0a6ab747dd7d4cb8",
+    "localSha256": "9bb3a1c627d413f4cd79f7d9b3e535018036d6e64f38de72077fab4ec17dc807",
+    "width": 1468,
+    "height": 1439,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-032",
+    "groupKey": "chest-1004-032",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-032.jpg",
+    "sourceTitle": "Pleural effusion - Left lung (7471755836).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pleural_effusion_-_Left_lung_(7471755836).jpg",
+    "sourceDescription": "A massive left pleural effusion displacing the heart and trachea to the right, The cause is pulmonary adenocarcinoma with pleural spread which is obscured by the effusion and cannot be recognized in this radiograph.",
+    "artist": "Yale Rosen from USA",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "originalSha1": "07a8f421aae582de48148126916186b67019c5d0",
+    "localSha256": "5a2b4480a26bb5282db620e9577043a5f576d08dfd34024971e6a310df2e8312",
+    "width": 2500,
+    "height": 2048,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-033",
+    "groupKey": "chest-1004-033",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-033.png",
+    "sourceTitle": "Salt water aspiration syndrome chest x-ray, before treatment.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salt_water_aspiration_syndrome_chest_x-ray,_before_treatment.png",
+    "sourceDescription": "Acute pulmonary edema due to salt water aspiration",
+    "artist": "Dr. Terence McManus",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "251cc674f290037d7c2c4c6101f31ccfbdc4bd06",
+    "localSha256": "e23f13225fd4f21a5b0c59b1c62f03bc2e8cfb37c3eea5c6d44d39ab257f46c5",
+    "width": 480,
+    "height": 480,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-034",
+    "groupKey": "chest-1004-034",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-034.png",
+    "sourceTitle": "InfarctPandLbasilarsegmentsPE.PNG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:InfarctPandLbasilarsegmentsPE.PNG",
+    "sourceDescription": "Infarction of the lung due to a pulmonary embolism",
+    "artist": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "1bc2b09d87ffe1ea778c0cb8eed9ef1a6004c5cc",
+    "localSha256": "5367db15314ab49594ecdb314ea6740dbfaca13f7f26fa27e48f0caab950c8a5",
+    "width": 1094,
+    "height": 838,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-035",
+    "groupKey": "chest-1004-035",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-035.jpg",
+    "sourceTitle": "RLL pneumoniaM.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:RLL_pneumoniaM.jpg",
+    "sourceDescription": "AP CXR showing right lower lobe pneumonia.",
+    "artist": "James Heilman, MD",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "originalSha1": "6166af3becd9dc6d29b9f13eab49ec4faa917264",
+    "localSha256": "ef69d8da6ee07fa7851b21902257263b4900a8b3e1c1e8d2e6819f36c21a1cee",
+    "width": 3072,
+    "height": 2304,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-036",
+    "groupKey": "chest-1004-036",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-036.jpg",
+    "sourceTitle": "Lung - Therapeutic Bronchial Artery Embolization With Spherical Microspheres (49160126541).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lung_-_Therapeutic_Bronchial_Artery_Embolization_With_Spherical_Microspheres_(49160126541).jpg",
+    "sourceDescription": "Therapeutic embolization is a procedure in interventional radiology that is most commonly used to treat arteriovenous malformations hypervascular tumors , including uterine fibroids and hepatoma and symptomatic BPH. A wide variety of agents, both temporary and permanent, are available and each has its own place and use. This image shows spherical microspheres, permanent agents, that are manufactured from synthetic materials that vary in diameter according to the size of the vessels that one is seeking to occlude. This is a case of cystic fibrosis-associated bronchiectasis complicated by hemoptysis that was treated with bronchial artery embolization. Image contributed by Dr. Sanjay Mukhopadhyay - @smlungpathguy",
+    "artist": "Atlas of Medical Foreign Bodies",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "originalSha1": "bf54851b9075ea7804e6096291675b7e9597aa48",
+    "localSha256": "f18ebc6e80b5772175de0781c798b6ae6466afab59e260cf46ac5091b7bfce69",
+    "width": 1916,
+    "height": 952,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-037",
+    "groupKey": "chest-1004-037",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-037.jpg",
+    "sourceTitle": "X-ray of osteogenesis imperfecta type 5 in newborn - left arm.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:X-ray_of_osteogenesis_imperfecta_type_5_in_newborn_-_left_arm.jpg",
+    "sourceDescription": "edit X-rays of a full term neonate boy who was found to have crackles from the chest. Later genetic testing revealed osteogenesis imperfecta type 5. Vertebrae and ribs... ...with multiple rib fractures Right leg, with somewhat deformed long bones (mainly the femur ) with widened metaphyses There is also a cortical fracture on the fibula Left leg. Left arm... ...with a periosteal reaction indicating a fracture. Right arm",
+    "artist": "Mikael Häggström , M.D. Author info - Reusing images - Conflicts of interest: None Mikael Häggström , M.D. Consent note : Written informed consent was obtained from a parent of the individual, including for online publication.",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalSha1": "8d59ebb2dfbed499d530b06e64bca006ea85e92f",
+    "localSha256": "c54698c2533e583e408538cbe6bd94ee7349eb82477fe1176964be3857cbe884",
+    "width": 832,
+    "height": 1440,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-038",
+    "groupKey": "chest-1004-038",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-038.jpg",
+    "sourceTitle": "Haller index t2tra 260 zu 55 mm.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haller_index_t2tra_260_zu_55_mm.jpg",
+    "sourceDescription": "Der Haller-Index zur Quantifizierung einer Trichterbrust (Pectus excavatum) kann auch mit der MRT in axialen Schichten bestimmt werden. Der Normalwert beträgt 2,5. In diesem Beispiel liegt er bei ca. 4,7.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "ff450e5210881959283e7d577b9895256b8a8bbd",
+    "localSha256": "2fea442258de3814ec52d0c45a681a6e55c3b8ba4d5cc4df87340ff9d2600e02",
+    "width": 933,
+    "height": 716,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-039",
+    "groupKey": "chest-1004-039",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-039.jpg",
+    "sourceTitle": "Achalasie im Roentgenbild 59W - CR seitlich - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Achalasie_im_Roentgenbild_59W_-_CR_seitlich_-_001.jpg",
+    "sourceDescription": "Achalasia on x-ray",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "d95cf6f49c3a8b15c678f47c377476cbbbf52e32",
+    "localSha256": "3d4a73bfc81b88bf4b0ce274ce11cbcfe4db53c0fbca192d83835b2e27c65343",
+    "width": 1334,
+    "height": 1786,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-040",
+    "groupKey": "chest-1004-040",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-040.jpg",
+    "sourceTitle": "Covid-19-Pneumonie 59M - CR pa - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Covid-19-Pneumonie_59M_-_CR_pa_-_001.jpg",
+    "sourceDescription": "Covid-19-Pneumonie",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "b7cfa6d32430d834a8a038f7aa9d77b0fad58e0a",
+    "localSha256": "8aabcee4e184ea545641ede0e2b36954dcd2aa68ca411777d404bad72362f890",
+    "width": 1072,
+    "height": 1015,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-041",
+    "groupKey": "chest-1004-041",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-041.jpg",
+    "sourceTitle": "ZP pneumothorax (10).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ZP_pneumothorax_(10).jpg",
+    "sourceDescription": "Radiology",
+    "artist": "Doc. MUDr. Jan Šprindrich CSc.",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "90467ef9f0bba27cfe936656c69dc18a0df7d096",
+    "localSha256": "bc2e7b6d26a77b5711a1ba965f8ba646fe8babd83f650c89d4f1f21a5062ccad",
+    "width": 637,
+    "height": 696,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-042",
+    "groupKey": "chest-1004-042",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-042.jpg",
+    "sourceTitle": "Pleural effusion-Metastatic breast carcinoma Case 166 (5477628658).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pleural_effusion-Metastatic_breast_carcinoma_Case_166_(5477628658).jpg",
+    "sourceDescription": "Pleural effusion-Metastatic breast carcinoma Case 166",
+    "artist": "Yale Rosen from USA",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "originalSha1": "e8fc058c8693d2187f3fa173aab162b10c25c47e",
+    "localSha256": "049427f12bb3790566d481c804e8eccacbc7a970e975743e9e37b936267f6cf2",
+    "width": 2500,
+    "height": 2048,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-043",
+    "groupKey": "chest-1004-043",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-043.png",
+    "sourceTitle": "PE2011.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PE2011.png",
+    "sourceDescription": "A 3D CT reconstruction of a pulmonary embolism",
+    "artist": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "cf3c2a5e784e0c3397d4402d9070ddb473db3b00",
+    "localSha256": "58f053da89f5dd11178c236692b2c2c28db33af01bcb6511e15e1b1d6b6cc788",
+    "width": 1002,
+    "height": 823,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-044",
+    "groupKey": "chest-1004-044",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-044.jpg",
+    "sourceTitle": "PCP CAP CXR.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PCP_CAP_CXR.jpg",
+    "sourceDescription": "AP en:chest x-ray of patient with en:pneumocystis jiroveci pneumonia , showing reticular interstitial markings in all lung fields. Released into public domain on permission of patient.",
+    "artist": "-- Samir धर्म 06:38, 14 January 2007 (UTC)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalSha1": "b2020a67b43a793d20b5701c17948acb0d864ad8",
+    "localSha256": "ff887a9e82fc3bfc67671998424b37e66834b7b77be4f4a32488f2b84094b2d1",
+    "width": 2048,
+    "height": 2500,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-045",
+    "groupKey": "chest-1004-045",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-045.jpg",
+    "sourceTitle": "X-ray of osteogenesis imperfecta type 5 in newborn - right arm.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:X-ray_of_osteogenesis_imperfecta_type_5_in_newborn_-_right_arm.jpg",
+    "sourceDescription": "edit X-rays of a full term neonate boy who was found to have crackles from the chest. Later genetic testing revealed osteogenesis imperfecta type 5. Vertebrae and ribs... ...with multiple rib fractures Right leg, with somewhat deformed long bones (mainly the femur ) with widened metaphyses There is also a cortical fracture on the fibula Left leg. Left arm... ...with a periosteal reaction indicating a fracture. Right arm",
+    "artist": "Mikael Häggström , M.D. Author info - Reusing images - Conflicts of interest: None Mikael Häggström , M.D. Consent note : Written informed consent was obtained from a parent of the individual, including for online publication.",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalSha1": "affe4758cf08f3d3b49bc223ec4187be332d8012",
+    "localSha256": "227ff9ab295a8ee2dfb75394c5beba520bcb953eb80928acc2fb2035bc2ae375",
+    "width": 1269,
+    "height": 935,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-046",
+    "groupKey": "chest-1004-046",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-046.png",
+    "sourceTitle": "Achalasie im Thorax seitlich 001.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Achalasie_im_Thorax_seitlich_001.png",
+    "sourceDescription": "Achalasia in Chest X-ray lateral view.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "fb3eddd03de736bcfbafd3dfa9538d38e88e7494",
+    "localSha256": "ec914fb97be4ed7981b618f54f5203803cdc013450e8c870af8e6c8b783850bb",
+    "width": 1200,
+    "height": 1881,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-047",
+    "groupKey": "chest-1004-047",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-047.jpg",
+    "sourceTitle": "COVID-19 Pneumonie - 82m Roe Thorax ap - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:COVID-19_Pneumonie_-_82m_Roe_Thorax_ap_-_001.jpg",
+    "sourceDescription": "Chest X-ray in COVID-19 pneumonia",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "141a68ea1819158512b9f3095c643cf7e9e3d7fb",
+    "localSha256": "d0d18ea3a88b052eb7610ea8db16ee6ce2e08adb465275dc4eb740368e3921df",
+    "width": 945,
+    "height": 801,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-048",
+    "groupKey": "chest-1004-048",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-048.jpg",
+    "sourceTitle": "PneumoMediastinum2008.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PneumoMediastinum2008.jpg",
+    "sourceDescription": "Pneumomediastinum and right sided pneumothorax post first rib fracture in a mountain biking accident.",
+    "artist": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "284dc087e5307598fe0ff991149f9dcbf1ff1029",
+    "localSha256": "5b36e07891a03b8459c63c83756bbf0e78f534a3749e376c84964a5b9f26e127",
+    "width": 2296,
+    "height": 2077,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-049",
+    "groupKey": "chest-1004-049",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-049.jpg",
+    "sourceTitle": "Bilateral Pleural Effusion.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bilateral_Pleural_Effusion.jpg",
+    "sourceDescription": "Bilateral Pleural Effusion",
+    "artist": "Sara Nabih",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "f5c9fc45d95d7ca7b98029930efb789ff682403f",
+    "localSha256": "98a49de2d869b846456df6db0e528157d9460618e61a8dc758b5350cb6043aed",
+    "width": 1972,
+    "height": 1460,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-050",
+    "groupKey": "chest-1004-050",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-050.png",
+    "sourceTitle": "PELeft.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PELeft.png",
+    "sourceDescription": "Pulmonary embolism in the left lung",
+    "artist": "James Heilman, MD",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "b03bf8055a03d083596415f3cab68a76d407f2b6",
+    "localSha256": "1f12bcab9d43378819b31f8f79f15c74b2792932bd662ee2a79d226728701e13",
+    "width": 904,
+    "height": 691,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-051",
+    "groupKey": "chest-1004-051",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-051.png",
+    "sourceTitle": "04-01-Infiltrat Ausgang - Verlauf.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:04-01-Infiltrat_Ausgang_-_Verlauf.png",
+    "sourceDescription": "Pneumonia acute (left) and after antibiotic therapy (right).",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "92a468f61ab54f72f0e741e828cef9cdde591814",
+    "localSha256": "d183c1c420dbbbe91b7acc2a150b4c6277fa3ac4911b0c0a7035a2484ed70758",
+    "width": 1946,
+    "height": 1006,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-052",
+    "groupKey": "chest-1004-052",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-052.png",
+    "sourceTitle": "56-03-Rippenfrakturen - Thorax Pneu 2 Tage spaeter.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:56-03-Rippenfrakturen_-_Thorax_Pneu_2_Tage_spaeter.png",
+    "sourceDescription": "Seropneumothorax secondary to rib fractures.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "d0fbfcd0fd38d2a8cdf3ce8a6ad6760a16ee24db",
+    "localSha256": "eefbe99c388a53cb220f45f0850d74eb7522fefdf5697d71818315cb43d55a14",
+    "width": 978,
+    "height": 1112,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-053",
+    "groupKey": "chest-1004-053",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-053.png",
+    "sourceTitle": "Achalasie im Breischluck 002.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Achalasie_im_Breischluck_002.png",
+    "sourceDescription": "Achalasia barium swallow.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "f2caff234c92c497a7cf6246971c784edd696237",
+    "localSha256": "401b16d9fac55c6ac0115302ebc6a7a2fb1d5fbdefdc7b81fd7f9186b723be93",
+    "width": 1020,
+    "height": 1818,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-054",
+    "groupKey": "chest-1004-054",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-054.jpg",
+    "sourceTitle": "Spannungspneumothorax links 76W - CR ap - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spannungspneumothorax_links_76W_-_CR_ap_-_001.jpg",
+    "sourceDescription": "Spannungspneumothorax links",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "53bcce8b262e8e2cf025002a1e3d51b5f5027f21",
+    "localSha256": "137fff04d575956677cd0d650a86c309d8c6747e10de74d13d672ff8894b776e",
+    "width": 2972,
+    "height": 1472,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-055",
+    "groupKey": "chest-1004-055",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-055.jpg",
+    "sourceTitle": "Unilateral Pleural Effusion.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Unilateral_Pleural_Effusion.jpg",
+    "sourceDescription": "Unilateral Pleural Effusion",
+    "artist": "Sara Nabih",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "db4420493ba15f8176b03a388df674adbc4865a6",
+    "localSha256": "504b8e8f52b1d65e89edcd9491dec4b3abd764bf9ecdc76f2ddcf4e863db30fb",
+    "width": 1692,
+    "height": 1476,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "chest-1004-056",
+    "groupKey": "chest-1004-056",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-056.jpg",
+    "sourceTitle": "Pulmonary embolism.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pulmonary_embolism.jpg",
+    "sourceDescription": "Chest Spiral CT (with and without contrast agent) showing multiples filling defects of principal branches, due to acute and chronic pulmonary embolism.",
+    "artist": "Walter Serra, Giuseppe De Iaco, Claudio Reverberi and Tiziano Gherli",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalSha1": "b67221e31bf4cbc1c7826770685fc9966a64aa29",
+    "localSha256": "34b1bd4cd13efe51133143582818a6fd5ce5502206023c124ea16cbcabdf7c6f",
+    "width": 922,
+    "height": 670,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "direct-source-label-match-after-perceptual-review"
+  },
+  {
+    "id": "chest-1004-057",
+    "groupKey": "chest-1004-057",
+    "system": "胸部",
+    "image": "assets/images/expanded/chest-1004-057.png",
+    "sourceTitle": "02-02-Infiltrat seitlich.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:02-02-Infiltrat_seitlich.png",
+    "sourceDescription": "Chest X-ray lateral view of pneumonia.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "4b4370c39cd94198e886d54a716ca4aa7a3361bc",
+    "localSha256": "9d15a33d74f0b2df313653cedef2e2cde5ba8d01db8d58291af8d776d76bffc6",
+    "width": 974,
+    "height": 1394,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-001",
+    "groupKey": "neuro-1004-001",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-001.jpg",
+    "sourceTitle": "Craniopharyngioma-t1sagkm-001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Craniopharyngioma-t1sagkm-001.jpg",
+    "sourceDescription": "This image is part of a series which can be scrolled interactively with the mousewheel or mouse dragging. This is done by using Template:Imagestack . The series is found in the category Craniopharyngioma case 001 . Kraniopharyngeom in der Magnetresonanztomographie. Tumor aus Resten der Rathke-Tasche - Ductus craniopharyngeus. Solide und zystische Anteile. Symptomatik in diesem Fall: Akuter Visusverlust rechts T1w sagittal Kontrastmittel",
+    "artist": "Hellerhoff",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "originalSha1": "5dc8dcd4d895e6c28539a25f002a0b60540b00b0",
+    "localSha256": "7ecb3cb6713981b0a9ff6cf968aff5e54ee03246199b23362c348a3121182313",
+    "width": 512,
+    "height": 513,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-002",
+    "groupKey": "neuro-1004-002",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-002.png",
+    "sourceTitle": "001 Arteriovenous Malformation MRT HAEM axial.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:001_Arteriovenous_Malformation_MRT_HAEM_axial.png",
+    "sourceDescription": "Arteriovenous malformation of the brain on MRI HAEM axial",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "4a0b7cdd495fa52cc0cfd2645040a512e8eb6ef5",
+    "localSha256": "24fb71fe2f1aa895f3f5fc6c61adcb42471e98f065e865a299f8ba43b91f5d91",
+    "width": 820,
+    "height": 1090,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-003",
+    "groupKey": "neuro-1004-003",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-003.jpg",
+    "sourceTitle": "Kavernom und DVA 30W - MR und CT - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kavernom_und_DVA_30W_-_MR_und_CT_-_001.jpg",
+    "sourceDescription": "Kavernom und DVA (developmental venous anomaly) rechts frontal in der MRT und CT. Oben T2, DWI, SWI, Unten T1KM sag, axial, CT nativ.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "2e90de8785285283702189954c4f5bd80bfefd7f",
+    "localSha256": "b93f05d27972b0534e696e404b7af94dcbcdad48e585a6e00064c2108c93e623",
+    "width": 2296,
+    "height": 1782,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-004",
+    "groupKey": "neuro-1004-004",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-004.jpg",
+    "sourceTitle": "Diffuse axonal injury- cMRT nach 3 Tagen.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diffuse_axonal_injury-_cMRT_nach_3_Tagen.jpg",
+    "sourceDescription": "Diffuses axonales Schertrauma bei Motorradunfall. Kontrolle in der MRT nach 3 Tagen: Man erkennt die aus der CCT bekannte kleine balkennahe Blutung in der T1w schon nicht mehr. Gut zu sehen allerdings in FLAIR, DWI und am besten in der T2* (Haem).",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "57ae5ad32954b68bc2bf7d38a983ed7d1dcf1031",
+    "localSha256": "8ba522fb0c846745cfef31c98433fbdd71b7ed89ab5d5b6caf36084df2567493",
+    "width": 912,
+    "height": 1004,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-005",
+    "groupKey": "neuro-1004-005",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-005.jpg",
+    "sourceTitle": "Temporale Arachnoidalzyste links MRT T2 axial 01-01.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Temporale_Arachnoidalzyste_links_MRT_T2_axial_01-01.jpg",
+    "sourceDescription": "Arachnoidalzyste links temporal (im Bild rechts) in der Magnetresonanztomographie T2 axial. Nach meiner Erfahrung scheinen die temporalen Arachnoidalzysten häufiger links zu liegen, warum auch immer!",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "85dbe8c9ecca190ad8554475f8c153a6b30a99af",
+    "localSha256": "93533da8736eb5cc6e96408d0652a677b64407b4bb9c5c48ca1a49ab50ceefa9",
+    "width": 947,
+    "height": 1077,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-006",
+    "groupKey": "neuro-1004-006",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-006.jpg",
+    "sourceTitle": "Epidermoidzyste MRT T2 sag.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Epidermoidzyste_MRT_T2_sag.jpg",
+    "sourceDescription": "Intrakranielle Epidermoidzyste der Pinealisregion rechts paramedian. Magentresonanztomographie T2w sagittal: Der Befund zeigt sich nahezu liquorisointens. Aber siehe FLAIR und DWI.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "15f1c88d92b05e3af32efd5226fa6fffe611058e",
+    "localSha256": "e38a85976f8488972c5162f50411387140c79f504a1410ebef27c959c19997c2",
+    "width": 791,
+    "height": 738,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-007",
+    "groupKey": "neuro-1004-007",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-007.jpg",
+    "sourceTitle": "Anaplastisches Ependymom - MRT - T2 axial - 004.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anaplastisches_Ependymom_-_MRT_-_T2_axial_-_004.jpg",
+    "sourceDescription": "This image is part of a series which can be scrolled interactively with the mousewheel or mouse dragging. This is done by using Template:Imagestack . The series is found in the category Anaplastic ependymoma - MRI - case 001 . Anaplastisches Ependymom. MRT in verschiedenen Wichtungen und Ebenen.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "60578b691e91742c0d95320c9383f8bc489f4af3",
+    "localSha256": "d18943b53444bd9312ee17601291bb8a5d89f6ae5dcdcd4b4e1209ffc8b74c50",
+    "width": 501,
+    "height": 512,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-008",
+    "groupKey": "neuro-1004-008",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-008.jpg",
+    "sourceTitle": "Cerebrale Amyloidangiopathie in der suszeptibilitaetsgewichteten MRI 82W - MR SWI axial - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cerebrale_Amyloidangiopathie_in_der_suszeptibilitaetsgewichteten_MRI_82W_-_MR_SWI_axial_-_001.jpg",
+    "sourceDescription": "Cerebrale Amyloidangiopathie in der suszeptibilitätsgewichteten MRI",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "2d02a0575a3a64bd1800e08f68cfbd2dc9d4175f",
+    "localSha256": "31502dc2edda712c50309762fc621e7483a497199b117f5531256e2cce627ca6",
+    "width": 1581,
+    "height": 984,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-009",
+    "groupKey": "neuro-1004-009",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-009.jpg",
+    "sourceTitle": "Chronische Sinusitis sphenoidalis 86M - CT axial - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chronische_Sinusitis_sphenoidalis_86M_-_CT_axial_-_001.jpg",
+    "sourceDescription": "Chronische Sinusitis sphenoidalis links mit partiell nur sehr dünne knöcherner Überdeckung an der Clivus Rückseite, sodass bei entzündlicher Permeation nach intrakraniell eine Meningitis droht. Zusätzlich auch dorsale Ethmoidalzellen links verlegt. Beachte auch die Verdickung der knöchernen Begrenzung der Sinus (vergleiche Gegenseite) als Zeichen der ossären Mitreaktion.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "a5d999829728176459b521b84e34d2d0f2c39366",
+    "localSha256": "3cffd5c6c836e6f951b827832ec30f2a7c74f608997854677e700f7616b20442",
+    "width": 2789,
+    "height": 1373,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-010",
+    "groupKey": "neuro-1004-010",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-010.jpg",
+    "sourceTitle": "Unilateraler Anteriorinfarkt 70M - MR DWI ADC TOF - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Unilateraler_Anteriorinfarkt_70M_-_MR_DWI_ADC_TOF_-_001.jpg",
+    "sourceDescription": "Left anterior cerebral artery infarction. Left image: MRI DWI sequence shows hyperintensity on the infarcted area of the left frontal lobe. Middle image: MRI ADC sequence showing hypointensity on the infarcted area , confirming the presence of restricted diffusion. Right image: MR angiography using time of flight (TOF) technique to map the distribution of cerebral vessels. It shows the left anterior cerebral artery is more hypointense than right cerebral artery, confirming blockage of the left anterior cerebral artery, causing the infarction.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "6c1b808aefd1ad4b0dc3618391f6196ebfe89bfd",
+    "localSha256": "c89a1e1dae4d560ccc52501ad9e5ab28756273b3dbc689dae59dfc3befbe469a",
+    "width": 2038,
+    "height": 848,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-011",
+    "groupKey": "neuro-1004-011",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-011.jpg",
+    "sourceTitle": "Empty Sella als zufaelliger Nebenbefund 88W - MR FLAIR sag und T1 KM cor - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Empty_Sella_als_zufaelliger_Nebenbefund_88W_-_MR_FLAIR_sag_und_T1_KM_cor_-_001.jpg",
+    "sourceDescription": "Empty Sella als zufälliger Nebenbefund. Die Hypophyse ist am Boden der Sella zusammengedrückt. Man erkennt noch gut den Hypophysenstiel.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "059d9b4cc97c1de32bb57568dd9cd088eba8c5af",
+    "localSha256": "25f316c88dc1264c1bdc2f02551bb4810ddfb5b8c150691ee5076b01f934fefc",
+    "width": 2668,
+    "height": 1476,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-012",
+    "groupKey": "neuro-1004-012",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-012.jpg",
+    "sourceTitle": "Partiell randstaendig verkalkte Pinealiszyste 29W - CT - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Partiell_randstaendig_verkalkte_Pinealiszyste_29W_-_CT_-_001.jpg",
+    "sourceDescription": "Partiell randständig verkalkte Pinealiszyste: CT axial, koronar und sagittal.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "6ef69f0d52722c7d3c4fb912c0999e9920a9d0c9",
+    "localSha256": "1e05ae5dce81e561cfd052b34a98cc308d601e1c5b6325fe267bd51d5f68549b",
+    "width": 3346,
+    "height": 1318,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-013",
+    "groupKey": "neuro-1004-013",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-013.jpg",
+    "sourceTitle": "Zystisches Schwannom des Kleinhirnbrueckenwinkels 70W - MR - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zystisches_Schwannom_des_Kleinhirnbrueckenwinkels_70W_-_MR_-_001.jpg",
+    "sourceDescription": "Zystisches Schwannom des Kleinhirnbrückenwinkels (operativ bestätigt; Akustikus oder Vestibularis). Oben T2, DWI, T2 sagittal. Unten SWI, T1 KM axial und sagittal. Mehrzystisches Erscheinnungsbild mit septaler Kontrastmittelaufnahme. Zeichen der Einblutung (T2 Sediment, SWI) bei Z.n. Sturz.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "357f3edb4dfbf140dcc922f55d288b7c920b5042",
+    "localSha256": "8caba68667775966036fee0c7d0070c6372b39eaff42c4ea7cd39e4d3a75f416",
+    "width": 1581,
+    "height": 1106,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-014",
+    "groupKey": "neuro-1004-014",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-014.jpg",
+    "sourceTitle": "Foramen magnum Stenose bei Achondroplasie 11woW - MR T2 - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Foramen_magnum_Stenose_bei_Achondroplasie_11woW_-_MR_T2_-_001.jpg",
+    "sourceDescription": "Hochgradige Stenose des Foramen magnum bei Chondroplasie mit Ausbildung eines Hydrocephalus. Kinking der Medulla oblongata, jedoch noch keine Myelopathie.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "d6ad38c67b5f70be68c4b7bb2deff39f4b9ba28d",
+    "localSha256": "58f8414f94f18bf310656ff0877ab87e8e00f353fa6dc1700ae25c117d9c8593",
+    "width": 3156,
+    "height": 1264,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-015",
+    "groupKey": "neuro-1004-015",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-015.jpg",
+    "sourceTitle": "Pilozytisches Astrozytom WHO I vom linken Optikus - MRT - T1 coronar mit KM - 007.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pilozytisches_Astrozytom_WHO_I_vom_linken_Optikus_-_MRT_-_T1_coronar_mit_KM_-_007.jpg",
+    "sourceDescription": "This image is part of a series which can be scrolled interactively with the mousewheel or mouse dragging. This is done by using Template:Imagestack . The series is found in the category Pilocytic astrocytoma - MRI - case 001 . Pilozytisches Astrozytom WHO Grad I vom linken Nervus opticus ausgehend. MRT in verschiedenen Wichtungen und Ebenen.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "1b68bcb576374dc01798b8dca6ac17f54c8f1ad3",
+    "localSha256": "afccd21a2ec587e5080283da942aab58840ac5b111e8699a3d86ca9f4f9958d4",
+    "width": 506,
+    "height": 512,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-016",
+    "groupKey": "neuro-1004-016",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-016.jpg",
+    "sourceTitle": "Pulsationsartefakte im Liquor 5W - MR T2 - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pulsationsartefakte_im_Liquor_5W_-_MR_T2_-_001.jpg",
+    "sourceDescription": "Ausgeprägte Pulsationsartefakte im Liquor bei einem Mädchen mit Chiari I Malformation und basilärer Impression. Links T2 sagittal mit signalarmen Bändern vor dem Myelon, rechts 2 Schichten axial T2 mit nahezu schwarzem Signal des Liquors um die Medulla oblongata.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "1b3760141759ce97f070163f39ab7e83c76c4a16",
+    "localSha256": "439e3d59967f79cbefccb24bc258b0bc38823f9310b804e129bad35c03f57877",
+    "width": 2283,
+    "height": 1932,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-017",
+    "groupKey": "neuro-1004-017",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-017.jpg",
+    "sourceTitle": "Ausgedehnte Sinusthrombose in der nativen Computertomografie 24W - CT nativ - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ausgedehnte_Sinusthrombose_in_der_nativen_Computertomografie_24W_-_CT_nativ_-_001.jpg",
+    "sourceDescription": "Ausgedehnte Sinusthrombose in der nativen Computertomografie: Wie beim \"dense artery sign\" zeigt sich das Thrombusmaterial hyperdens. Betroffen sind sowohl der Sinus sagittalis superior, wie auch der Sinus rectus und die tiefen Hirnvenen.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "3242c79e237ab31266c5073cd598efe6df1137b7",
+    "localSha256": "8d8d109bfd72e95b08fe7ab76df20d00be6926faa82ac79be80c0ebe171d487c",
+    "width": 1619,
+    "height": 1394,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-018",
+    "groupKey": "neuro-1004-018",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-018.jpg",
+    "sourceTitle": "MRI brain tumor.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:MRI_brain_tumor.jpg",
+    "sourceDescription": "Space-occupying lesion correlating with left temporo-parietal metastatic infiltration associated with peritumoral edema . Brain MRI , same lesion seen by CT scan : File:CT brain tumor.jpg .",
+    "artist": "Bobjgalindo",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "4ce1d517b4485ced8ad25b9e62f5e763921452b3",
+    "localSha256": "c52e6203c5f059e7451c1c632a1dd0b42d1305f1ef51c2e93b0259cd0ef4021a",
+    "width": 1839,
+    "height": 1737,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-019",
+    "groupKey": "neuro-1004-019",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-019.jpg",
+    "sourceTitle": "EpiduralHematoma.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:EpiduralHematoma.jpg",
+    "sourceDescription": "Epidural hematoma on the persons left (images right) with an associated skull fracture. Also has some bleeding on the persons right.",
+    "artist": "James Heilman, MD",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "6e3d295d4ed2a0d1acac1def37d40e25557b6aa8",
+    "localSha256": "3613fce57f62dd3c8173bc1c00b4040a63a7d02c1947db32f9db0623079d53d6",
+    "width": 784,
+    "height": 963,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-020",
+    "groupKey": "neuro-1004-020",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-020.jpg",
+    "sourceTitle": "Subdurales Haematom MRT T1 nativ cor.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Subdurales_Haematom_MRT_T1_nativ_cor.jpg",
+    "sourceDescription": "Subdurales Hämatom in der MRT, hier T1 ohne Kontrastmittel coronar.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "7dcc1322adbee60f3d906fe806a6840e4d8c4936",
+    "localSha256": "f7fbca98bd00437b184793d3b87f8a44639228ee069df7f2e98bbbbcf93539ff",
+    "width": 912,
+    "height": 924,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-021",
+    "groupKey": "neuro-1004-021",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-021.png",
+    "sourceTitle": "MRI brain of extra-axial lesion at right frontal lobe with perilesional oedema.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:MRI_brain_of_extra-axial_lesion_at_right_frontal_lobe_with_perilesional_oedema.png",
+    "sourceDescription": "MRI Brain of extra-axial lesion at right frontal lobe with perilesional oedema. Left image: T1 weighted post gadolinium administration shows enhanced extra-axial mass with dural tail sign. Right image: T2 weighted image shows high signal intensity surrounding the lesion which signifies perilesional oedema. Meningioma is the most common differential diagnosis of this lesion.",
+    "artist": "Cerevisae",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "625b5e37c671cfe47dfe77eaef3905e0835788fe",
+    "localSha256": "d0e40ad014a8331679d36850ba6f4800f98e0309051578d17fd6c31aaa49c4dc",
+    "width": 6912,
+    "height": 4608,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-022",
+    "groupKey": "neuro-1004-022",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-022.jpg",
+    "sourceTitle": "Glioblastoma - MR sagittal with contrast.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Glioblastoma_-_MR_sagittal_with_contrast.jpg",
+    "sourceDescription": "Gliobastoma (astrocytoma) WHO grade IV - MRI sagittal view, post contrast. 15 year old boy.",
+    "artist": "Christaras A",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "originalSha1": "fa6e6e63ac4847e75f9b0669fbd6646fb21e64cb",
+    "localSha256": "a990bc42718eaeb98a625de28c68479ab097a551f6d917125bb440dcd63f1c36",
+    "width": 974,
+    "height": 954,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-023",
+    "groupKey": "neuro-1004-023",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-023.png",
+    "sourceTitle": "Frontale Kontusionsblutung MRT T1 01.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Frontale_Kontusionsblutung_MRT_T1_01.png",
+    "sourceDescription": "MRI-scan (T1) of a frontal intracerebral hemorrhage on the right (left image side) as a contre coup.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "8f00a718246daaecb872408ff9740f1e35c9f968",
+    "localSha256": "2d94dc0433c24ab10d895e26d50a2885cb63bc037c20e353a058a27626b707a6",
+    "width": 728,
+    "height": 802,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-024",
+    "groupKey": "neuro-1004-024",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-024.jpg",
+    "sourceTitle": "POCITKWojder.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:POCITKWojder.jpg",
+    "sourceDescription": "POCI- posterior circulation cerebral infarct",
+    "artist": "Wojder",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "originalSha1": "b749cd02e774960611acd648bfc8612da24d5280",
+    "localSha256": "2895b03cbccd38e1dd42c831362b472b4815b481792317e03112ebc79fcedfe1",
+    "width": 503,
+    "height": 565,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-025",
+    "groupKey": "neuro-1004-025",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-025.png",
+    "sourceTitle": "SAB in der MRT T1.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:SAB_in_der_MRT_T1.png",
+    "sourceDescription": "Subarachnoidale Blutung hyperintens in der MRT: Coronar T1",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "f0d3f86f3f34a37c68a52fcae88da853674b8d85",
+    "localSha256": "ea3ef7caba1a8a2b5fcf08d90b745ebeb6cf82c24ec9865a3a961e6f7fe49fe3",
+    "width": 848,
+    "height": 916,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-026",
+    "groupKey": "neuro-1004-026",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-026.jpg",
+    "sourceTitle": "Craniopharyngioma-t1sagkm-002.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Craniopharyngioma-t1sagkm-002.jpg",
+    "sourceDescription": "This image is part of a series which can be scrolled interactively with the mousewheel or mouse dragging. This is done by using Template:Imagestack . The series is found in the category Craniopharyngioma case 001 . Kraniopharyngeom in der Magnetresonanztomographie. Tumor aus Resten der Rathke-Tasche - Ductus craniopharyngeus. Solide und zystische Anteile. Symptomatik in diesem Fall: Akuter Visusverlust rechts T1w sagittal Kontrastmittel",
+    "artist": "Hellerhoff",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "originalSha1": "6ad36b44ee3fd4c00ee401d0441e3cdbf04dd927",
+    "localSha256": "ab4b87763f06c3f8d0b3718ab460c5c9a9183bae4e8ad4b28648283ba5f288b1",
+    "width": 512,
+    "height": 513,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-027",
+    "groupKey": "neuro-1004-027",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-027.png",
+    "sourceTitle": "001 Arteriovenous Malformation MRT T1KM axial.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:001_Arteriovenous_Malformation_MRT_T1KM_axial.png",
+    "sourceDescription": "Arteriovenous malformation of the brain on MRI T1 KM axial",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "79eb96e05227f166310167878e802c9d0fede83c",
+    "localSha256": "b44beb4784b7accb0abb12bbaf40cd54f54fd0619ac90f076b787a48bf0942e3",
+    "width": 824,
+    "height": 1072,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-028",
+    "groupKey": "neuro-1004-028",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-028.jpg",
+    "sourceTitle": "Developmental venous anomaly Kleinhirn 73W - MR T1 axial KM - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Developmental_venous_anomaly_Kleinhirn_73W_-_MR_T1_axial_KM_-_001.jpg",
+    "sourceDescription": "Developmental venous anomaly Kleinhirn",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "b9a8ee9dfb92ac50f9b114cb66074e9ec635c347",
+    "localSha256": "19f3a6a15095213b12faa97c1292186f1cf0f0106aeff1199674accd2b1750d1",
+    "width": 991,
+    "height": 1124,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-029",
+    "groupKey": "neuro-1004-029",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-029.jpg",
+    "sourceTitle": "Temporale Arachnoidalzyste links MRT T2 axial 01-02.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Temporale_Arachnoidalzyste_links_MRT_T2_axial_01-02.jpg",
+    "sourceDescription": "Arachnoidalzyste links temporal (im Bild rechts) in der Magnetresonanztomographie T2 axial. Nach meiner Erfahrung scheinen die temporalen Arachnoidalzysten häufiger links zu liegen, warum auch immer!",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "aea5834bcc58ffdc9800b2a78570c6f5f6750492",
+    "localSha256": "4c55623a374b3c3c0c1255f8d1c00a4642db13c83f2e8b5c9034fdb1e0cb4a7b",
+    "width": 921,
+    "height": 1062,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-030",
+    "groupKey": "neuro-1004-030",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-030.jpg",
+    "sourceTitle": "Epidermoidzyste MRT T1KM cor.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Epidermoidzyste_MRT_T1KM_cor.jpg",
+    "sourceDescription": "Intrakranielle Epidermoidzyste der Pinealisregion rechts paramedian. Magentresonanztomographie T1w coronar nach Kontrastmittel: Keine KM-Aufnahme",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "d62d5cfb23e0a1d5d70df2983428ee61e206a564",
+    "localSha256": "988903185f95df41ce4e931f3f5dc8ecc0d0bdd41ee6cbc7cb0f4e88856cdfff",
+    "width": 684,
+    "height": 841,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-031",
+    "groupKey": "neuro-1004-031",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-031.jpg",
+    "sourceTitle": "Anaplastisches Ependymom - MRT - T2 axial - 010.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anaplastisches_Ependymom_-_MRT_-_T2_axial_-_010.jpg",
+    "sourceDescription": "This image is part of a series which can be scrolled interactively with the mousewheel or mouse dragging. This is done by using Template:Imagestack . The series is found in the category Anaplastic ependymoma - MRI - case 001 . Anaplastisches Ependymom. MRT in verschiedenen Wichtungen und Ebenen.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "dd4d72cd06fcff0883586c8fe3015fb2f49204ee",
+    "localSha256": "3aaf1fc344517060a3c30852e7e28f7343df558f350eab6c846629eaeafe4ed1",
+    "width": 501,
+    "height": 512,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-032",
+    "groupKey": "neuro-1004-032",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-032.jpg",
+    "sourceTitle": "Empty Sella MRT T2 sag 002.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Empty_Sella_MRT_T2_sag_002.jpg",
+    "sourceDescription": "Empty sella in der Magnetresonanztomographie als Zufallsbefund. T2 sagittal",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "1041d590a96ad97f8ff0fb925bf64b1fe5ce6824",
+    "localSha256": "935963efdc195a40a0c7e1af49106895b7a3f63127a8590cbf032fb229281983",
+    "width": 960,
+    "height": 998,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-033",
+    "groupKey": "neuro-1004-033",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-033.png",
+    "sourceTitle": "Tornwald Zyste MRT FLAIR sag.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tornwald_Zyste_MRT_FLAIR_sag.png",
+    "sourceDescription": "Tornwaldt's cyst in sagittal MRI (FLAIR). The cyst appears hyperintense in the midline of the nasopharynx. In this case there is also a cyst of the pinealis gland showing a signal intensity slightly higher than the CSF.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "573ea6250d4af46daf412629b725e998adc1f60d",
+    "localSha256": "f5a7b690fcf92305f68e47e413319fe866e5af005bb676ed88225a905d5a662b",
+    "width": 1198,
+    "height": 1509,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-034",
+    "groupKey": "neuro-1004-034",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-034.jpg",
+    "sourceTitle": "Akustikus-Schwannon rechts MRT T2 axial 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Akustikus-Schwannon_rechts_MRT_T2_axial_001.jpg",
+    "sourceDescription": "Schwannoma at the cerebellopontine angle on the right side of the patient (left in the image) in the MRI T2 axial.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "7f59c7fde8e0a314205f540a5fef837282abeea1",
+    "localSha256": "23545bb0f119b3d62f3764c1cc5ce21f1c20ce6777bd4e583498e680708267e3",
+    "width": 889,
+    "height": 1027,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-035",
+    "groupKey": "neuro-1004-035",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-035.jpg",
+    "sourceTitle": "Pilozytisches Astrozytom WHO I vom linken Optikus - MRT - T1 coronar mit KM - 020.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pilozytisches_Astrozytom_WHO_I_vom_linken_Optikus_-_MRT_-_T1_coronar_mit_KM_-_020.jpg",
+    "sourceDescription": "This image is part of a series which can be scrolled interactively with the mousewheel or mouse dragging. This is done by using Template:Imagestack . The series is found in the category Pilocytic astrocytoma - MRI - case 001 . Pilozytisches Astrozytom WHO Grad I vom linken Nervus opticus ausgehend. MRT in verschiedenen Wichtungen und Ebenen.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "605ed6c49a1bbf72a2f46dcf8e4954faa32d25a0",
+    "localSha256": "e422309d25d1a42b0622ceccfb23abc8848c421ea2a1f052fbc5eab5cee94984",
+    "width": 506,
+    "height": 512,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-036",
+    "groupKey": "neuro-1004-036",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-036.jpg",
+    "sourceTitle": "Chiari-1 nach Erweiterungsplastik 56M - CT sagittal WF KF und Volumenrendering - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chiari-1_nach_Erweiterungsplastik_56M_-_CT_sagittal_WF_KF_und_Volumenrendering_-_001.jpg",
+    "sourceDescription": "Computertomographie sagittal im Hirnfenster und Knochenfenster sowie als Volumenrendering bei Zustand nach Erweiterungsplastik am Foramen magnum mit Resektion des hinteren Atlasbogens bei Chiari-1 Malformation.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "af8349afd8316960affbf60e91af9a26fd9e80ee",
+    "localSha256": "82f9327dab347e96f5559fca9383a77b3dc00b550589a6bc603974ccef7f8f34",
+    "width": 2349,
+    "height": 738,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-037",
+    "groupKey": "neuro-1004-037",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-037.png",
+    "sourceTitle": "Brain MRI 143335 rgbca.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brain_MRI_143335_rgbca.png",
+    "sourceDescription": "Brain MRI of 39YO man with lung cancer metastasis",
+    "artist": "Nevit Dilmen ( talk )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "1fe94666e039ca8361bae42ebf93b5d01e62c2e7",
+    "localSha256": "ab972cf92c05ce4b1d17ea6f201bd833a8a3a4164b8007ae587fb2e81a28ec7e",
+    "width": 533,
+    "height": 566,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-038",
+    "groupKey": "neuro-1004-038",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-038.png",
+    "sourceTitle": "Subduralandherniation.PNG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Subduralandherniation.PNG",
+    "sourceDescription": "Large left sided frontal parietal subdural hematoma with associated midline shift",
+    "artist": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "da86d03e22343cdc284ed9c5d96b5c37ba3e182a",
+    "localSha256": "4271232873a2cbfdae3293666a5867f742e53e4699dcfb298a3cbed6683dfbc1",
+    "width": 774,
+    "height": 965,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-039",
+    "groupKey": "neuro-1004-039",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-039.jpg",
+    "sourceTitle": "Meningioma of the sagittal sinus.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meningioma_of_the_sagittal_sinus.jpg",
+    "sourceDescription": "MRI imaging with contrast of a meningioma tumor detected in a 52-year-old woman. The tumor grew in all directions, was accompanied by a large hyperostosis, wrapped around a vital vein in the brain. Postoperative examination showed the benign nature of the tumor.",
+    "artist": "RASPBERRY VIBE",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalSha1": "4c5158e4decabc526a8bc31c2ff604dd3362c21f",
+    "localSha256": "b9e29f45c3fab933e40fa15e43183908f1a885c508e715ab2e3c4b6d6e3fa69e",
+    "width": 2000,
+    "height": 1152,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-040",
+    "groupKey": "neuro-1004-040",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-040.jpg",
+    "sourceTitle": "RM saggitale dopo rimozione glioblastoma.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:RM_saggitale_dopo_rimozione_glioblastoma.jpg",
+    "sourceDescription": "RM saggitale dopo rimozione glioblastoma",
+    "artist": "Llorenzi",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "1dfc3731453bbb930d80a613ce2886c14b9fb5f2",
+    "localSha256": "1befab6991d7b2f7878ec7b1f4ef4d1566e8a0e27907f0ac0efbbea361a8d31a",
+    "width": 512,
+    "height": 512,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-041",
+    "groupKey": "neuro-1004-041",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-041.jpg",
+    "sourceTitle": "MRI Stroke cerebllum.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:MRI_Stroke_cerebllum.jpg",
+    "sourceDescription": "Head MRI showing deep intracerebral hemorrhage due to bleeding within the cerebellum, approximately 30 hours old: same patient as TAC craneo ECV.jpg , Head MRI stroke.JPG and Head CT stroke.jpg .",
+    "artist": "Bobjgalindo",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "773c4088debcb1bc361724e7d22db4402f400789",
+    "localSha256": "9c61dc4b5748402d8dab492cdef8cc90fa5fa1931477deff7bc7f83fc090cbff",
+    "width": 2174,
+    "height": 2061,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-042",
+    "groupKey": "neuro-1004-042",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-042.png",
+    "sourceTitle": "SAB in der MRT FLAIR 02.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:SAB_in_der_MRT_FLAIR_02.png",
+    "sourceDescription": "Subarachnoidale Blutung hyperintens in der MRT: Coronar FLAIR",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "0e4f0c9147e4b2258d73784303bc42bf02f25417",
+    "localSha256": "1ccb37c25878fd43525a1284b9ce0e2059d8ceacd343b12da7059f144ea465ae",
+    "width": 762,
+    "height": 846,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-043",
+    "groupKey": "neuro-1004-043",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-043.jpg",
+    "sourceTitle": "Craniopharyngioma-t1sagkm-003.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Craniopharyngioma-t1sagkm-003.jpg",
+    "sourceDescription": "This image is part of a series which can be scrolled interactively with the mousewheel or mouse dragging. This is done by using Template:Imagestack . The series is found in the category Craniopharyngioma case 001 . Kraniopharyngeom in der Magnetresonanztomographie. Tumor aus Resten der Rathke-Tasche - Ductus craniopharyngeus. Solide und zystische Anteile. Symptomatik in diesem Fall: Akuter Visusverlust rechts T1w sagittal Kontrastmittel",
+    "artist": "Hellerhoff",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "originalSha1": "0d0f7beccd751e7ec0e488eefc556091632cd197",
+    "localSha256": "cd7b1935cb421e2c74726a0fc40c6472ee818f6d3471f7e6cc23cc3da2ca73b5",
+    "width": 512,
+    "height": 513,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-044",
+    "groupKey": "neuro-1004-044",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-044.png",
+    "sourceTitle": "001 Arteriovenous Malformation MRT T1KM coronar.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:001_Arteriovenous_Malformation_MRT_T1KM_coronar.png",
+    "sourceDescription": "Arteriovenous malformation of the brain in MRI T1 KM coronal",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "f8e7030e14f0f5a162632131afa5ab3f300b7021",
+    "localSha256": "6f9ef1037efc3b7d8837b4ef051414729270210504cb5b7d5b93d58c27f425d9",
+    "width": 820,
+    "height": 932,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-045",
+    "groupKey": "neuro-1004-045",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-045.jpg",
+    "sourceTitle": "Developmental venous anomaly MRT axial T1KM 05-02.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Developmental_venous_anomaly_MRT_axial_T1KM_05-02.jpg",
+    "sourceDescription": "Developmental Venous Anomaly (DVA) am Tentorium in der MRT T1 mit Kontrastmittel axial.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "6f13c9df4d6c8377f3dc2f62b37cb1c1e44a9f3d",
+    "localSha256": "32299a9d0bffa1bdaf4881c6850db301acf17f679ec588eb35add3b812c4bd99",
+    "width": 925,
+    "height": 1128,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-046",
+    "groupKey": "neuro-1004-046",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-046.jpg",
+    "sourceTitle": "Temporale Arachnoidalzyste links MRT T2 axial 01-03.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Temporale_Arachnoidalzyste_links_MRT_T2_axial_01-03.jpg",
+    "sourceDescription": "Arachnoidalzyste links temporal (im Bild rechts) in der Magnetresonanztomographie T2 axial. Nach meiner Erfahrung scheinen die temporalen Arachnoidalzysten häufiger links zu liegen, warum auch immer!",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "e1fb54589e1b2a0e5613bedeb92d60ae6c3af170",
+    "localSha256": "917fa5a629bdfeaee8dad6f3d5e60dc60de7e1ed243e4485ca63c94ca6075239",
+    "width": 917,
+    "height": 1057,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-047",
+    "groupKey": "neuro-1004-047",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-047.jpg",
+    "sourceTitle": "Epidermoidzyste MRT T1KM ax.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Epidermoidzyste_MRT_T1KM_ax.jpg",
+    "sourceDescription": "Intrakranielle Epidermoidzyste der Pinealisregion rechts paramedian. Magentresonanztomographie T1w axial nach Kontrastmittel: Keine KM-Aufnahme",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "6344409a55e96b03f879059a157cc71fb9bfa6ce",
+    "localSha256": "a68187f37de7eb6fbf8bf281390010efaf06cf518c5a7b49a710d323d33b88d4",
+    "width": 647,
+    "height": 781,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-048",
+    "groupKey": "neuro-1004-048",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-048.jpg",
+    "sourceTitle": "Empty Sella MRT T2 ax 002.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Empty_Sella_MRT_T2_ax_002.jpg",
+    "sourceDescription": "Empty sella in der Magnetresonanztomographie als Zufallsbefund. T2 axial",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "270ca9e8f494d292dfed5946af4234bbc5dd1258",
+    "localSha256": "52c88012081354350bfdf361cfaa17866d3bc4b872be099e72e2f4b027ee8146",
+    "width": 896,
+    "height": 1067,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-049",
+    "groupKey": "neuro-1004-049",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-049.jpg",
+    "sourceTitle": "Verkalkte Corpus pineale Zyste sagittal.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Verkalkte_Corpus_pineale_Zyste_sagittal.jpg",
+    "sourceDescription": "Calcified cyst of pineal gland in CT. Sagittal MPR.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "8ccaf2997bcc65556d9754c7cd89c3de70ac50e6",
+    "localSha256": "e1828242155599698e4850aea8c5f328db71030cf82f52d26e6c75d846e9bd5a",
+    "width": 1262,
+    "height": 910,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-050",
+    "groupKey": "neuro-1004-050",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-050.jpg",
+    "sourceTitle": "Akustikus-Schwannon rechts MRT T1KM coronar 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Akustikus-Schwannon_rechts_MRT_T1KM_coronar_001.jpg",
+    "sourceDescription": "Schwannoma at the cerebellopontine angle on the right side of the patient (left in the image) in the MRI T1KM coronal.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "3eac095f3950f04377702234f05e56c456b58048",
+    "localSha256": "5eaa70bbb655ab2c01cda002899d9fa4e375aea9a218b8e6cba37f999118f9b8",
+    "width": 880,
+    "height": 1015,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-051",
+    "groupKey": "neuro-1004-051",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-051.jpg",
+    "sourceTitle": "Pilozytisches Astrozytom WHO I vom linken Optikus - MRT - T1 coronar mit KM - 026.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pilozytisches_Astrozytom_WHO_I_vom_linken_Optikus_-_MRT_-_T1_coronar_mit_KM_-_026.jpg",
+    "sourceDescription": "This image is part of a series which can be scrolled interactively with the mousewheel or mouse dragging. This is done by using Template:Imagestack . The series is found in the category Pilocytic astrocytoma - MRI - case 001 . Pilozytisches Astrozytom WHO Grad I vom linken Nervus opticus ausgehend. MRT in verschiedenen Wichtungen und Ebenen.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "bcf5f7c9f880e746ac5ece9026a7a9ea9bab201f",
+    "localSha256": "5dc8702ba69c0b1672dcfebba051e2d671ad6f1d9c13c2cdc64d46c002c0baa9",
+    "width": 506,
+    "height": 512,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-052",
+    "groupKey": "neuro-1004-052",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-052.jpg",
+    "sourceTitle": "Chiari-1-Malformation 13W - MR T2 axial - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chiari-1-Malformation_13W_-_MR_T2_axial_-_001.jpg",
+    "sourceDescription": "Chiari-1 Malformation bei einer 13-jährigen in der Magnetresonanztomographie: T2 axial",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "28b6032eaedd4ba536cd9ae260ce046be4ec8a9f",
+    "localSha256": "fd4b59b5dc3ae46939282d9c01fcb3e0919181b84a404edfe6a77d595ffd62d8",
+    "width": 839,
+    "height": 974,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-053",
+    "groupKey": "neuro-1004-053",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-053.png",
+    "sourceTitle": "Brain MRI 143335 rgbcb ce.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brain_MRI_143335_rgbcb_ce.png",
+    "sourceDescription": "Brain MRI of 39YO man with lung cancer metastasis",
+    "artist": "Nevit Dilmen ( talk )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "a7167831eef56cf3e1fa45c4c303d1521250aa45",
+    "localSha256": "b41c54bd557b0296e46efccf1ee0b42f240444776f28d9a4ac19263767319568",
+    "width": 533,
+    "height": 566,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-054",
+    "groupKey": "neuro-1004-054",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-054.png",
+    "sourceTitle": "BilateralSubDur.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BilateralSubDur.png",
+    "sourceDescription": "A bilateral subdural bleed",
+    "artist": "James Heilman, MD",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "334070442aee86f5882edee956e960a133bec62e",
+    "localSha256": "b0b99ef2a229056c40867f177bf7655c867df813b639b1d66e0045ccf44f7413",
+    "width": 821,
+    "height": 882,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-055",
+    "groupKey": "neuro-1004-055",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-055.jpg",
+    "sourceTitle": "Meningioma of the sagittal sinus isolated.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meningioma_of_the_sagittal_sinus_isolated.jpg",
+    "sourceDescription": "MRI imaging with contrast of a meningioma tumor detected in a 52-year-old woman. The tumor grew in all directions, was accompanied by a large hyperostosis, wrapped around a vital vein in the brain. Postoperative examination showed the benign nature of the tumor. The part of image: https://commons.wikimedia.org/wiki/File:Meningioma_of_the_sagittal_sinus.jpg",
+    "artist": "RASPBERRY VIBE",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalSha1": "882ba23b94abbf478e3830291ad7a6d8d7059737",
+    "localSha256": "cd48263497a7a232dd57c256639facf2da8d9458b288fe35f46104a47f0dcd6e",
+    "width": 2000,
+    "height": 1146,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-056",
+    "groupKey": "neuro-1004-056",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-056.jpg",
+    "sourceTitle": "TAC craneo ECV.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:TAC_craneo_ECV.jpg",
+    "sourceDescription": "Head CT showing deep intracerebral hemorrhage due to bleeding within the cerebellum, approximately 30 hours old, in a 68 year old male patient with a stroke. Same patient as Head MRI stroke.JPG and Head CT stroke.jpg .",
+    "artist": "Bobjgalindo",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "81573d3f93080956c9892bea381a2abf83e8cfff",
+    "localSha256": "a7a19f05902ff8a3250100ad7cfb4473b742d4d5521a38f2fc7912a804439ec2",
+    "width": 2043,
+    "height": 2080,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-057",
+    "groupKey": "neuro-1004-057",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-057.png",
+    "sourceTitle": "SAB in der MRT FLAIR.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:SAB_in_der_MRT_FLAIR.png",
+    "sourceDescription": "Subarachnoidale Blutung hyperintens in der MRT: Coronar FLAIR",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "7a4e1a5eefe3dc10184fe8b561b20eaeac8ffce0",
+    "localSha256": "378adaa888444e5e272c9312fb49fb20e3bcfcd781bbfd1f4007d82a03119919",
+    "width": 738,
+    "height": 800,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-058",
+    "groupKey": "neuro-1004-058",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-058.jpg",
+    "sourceTitle": "Craniopharyngioma-t1sagkm-004.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Craniopharyngioma-t1sagkm-004.jpg",
+    "sourceDescription": "This image is part of a series which can be scrolled interactively with the mousewheel or mouse dragging. This is done by using Template:Imagestack . The series is found in the category Craniopharyngioma case 001 . Kraniopharyngeom in der Magnetresonanztomographie. Tumor aus Resten der Rathke-Tasche - Ductus craniopharyngeus. Solide und zystische Anteile. Symptomatik in diesem Fall: Akuter Visusverlust rechts T1w sagittal Kontrastmittel",
+    "artist": "Hellerhoff",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "originalSha1": "73c4c072f43b65f2007f7252b4bb469de679877d",
+    "localSha256": "07223cbc3f47f6c212c5ed50bf386ed607abe47c9a1c02614fb0ae9352bcfe0d",
+    "width": 512,
+    "height": 513,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-059",
+    "groupKey": "neuro-1004-059",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-059.jpg",
+    "sourceTitle": "Developmental venous anomaly MRT axial T1KM 05-01.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Developmental_venous_anomaly_MRT_axial_T1KM_05-01.jpg",
+    "sourceDescription": "Developmental Venous Anomaly (DVA) am Tentorium in der MRT T1 mit Kontrastmittel axial.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "c1a652e0d1dd779c48974d0cbe3505649b8a8d81",
+    "localSha256": "6fc730661cb189605400af9bb9b2214af2b0689bf249b044e81fa1a557b5e901",
+    "width": 925,
+    "height": 1128,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-060",
+    "groupKey": "neuro-1004-060",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-060.jpg",
+    "sourceTitle": "Temporale Arachnoidalzyste links MRT T1 axial 01.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Temporale_Arachnoidalzyste_links_MRT_T1_axial_01.jpg",
+    "sourceDescription": "Arachnoidalzyste links temporal (im Bild rechts) in der Magnetresonanztomographie T1KM axial. Nach meiner Erfahrung scheinen die temporalen Arachnoidalzysten häufiger links zu liegen, warum auch immer!",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "4284881c8cb32000e916aec89b82a0b35d30ece4",
+    "localSha256": "15dba4f46f328bcd5b9d98031ff6ba7cffe2b516ac0c0a38e268a4cff923928e",
+    "width": 921,
+    "height": 1047,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-061",
+    "groupKey": "neuro-1004-061",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-061.jpg",
+    "sourceTitle": "Epidermoidzyste MRT T1 ax.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Epidermoidzyste_MRT_T1_ax.jpg",
+    "sourceDescription": "Intrakranielle Epidermoidzyste der Pinealisregion rechts paramedian. Magentresonanztomographie T1w axial nativ: Der Befund zeigt sich mit intermediärem bis hypointensem Signal.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "b15d24ff3cec82b50110850348778b4b9494a3c8",
+    "localSha256": "a57fe9b612877b7b51cbfff7efe2c88ffdc187d09854c27c89b2b69bf852529e",
+    "width": 645,
+    "height": 772,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-062",
+    "groupKey": "neuro-1004-062",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-062.jpg",
+    "sourceTitle": "Empty Sella MRT T2 ax 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Empty_Sella_MRT_T2_ax_001.jpg",
+    "sourceDescription": "Empty sella in der Magnetresonanztomographie als Zufallsbefund. T2 axial",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "f4c6358083b9497cfb064e5f43eecf0a6e61b379",
+    "localSha256": "50da04bc6f17f9df9648f507d29f4bbca6bde2df2ac3814c956f22b5c44e8a09",
+    "width": 821,
+    "height": 990,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-063",
+    "groupKey": "neuro-1004-063",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-063.jpg",
+    "sourceTitle": "Verkalkte Corpus pineale Zyste axial.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Verkalkte_Corpus_pineale_Zyste_axial.jpg",
+    "sourceDescription": "Calcified cyst of pineal gland in CT.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "96a695cef336f3aa8b6e6a5ed54c02cb2ba2d68b",
+    "localSha256": "707c05401e76a11b2fb13387dcbb0a59f0e0ed1e498cf43b92d99465d2767b34",
+    "width": 888,
+    "height": 994,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-064",
+    "groupKey": "neuro-1004-064",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-064.jpg",
+    "sourceTitle": "Zystisches Schwannom des Kleinhirnbrueckenwinkels 70W - CT nativ axial - 002.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zystisches_Schwannom_des_Kleinhirnbrueckenwinkels_70W_-_CT_nativ_axial_-_002.jpg",
+    "sourceDescription": "Zystisches Schwannom des Kleinhirnbrückenwinkels (Acusticus oder Vestibularis). Oben T2, DWI, T2 sagittal. Unten SWI, T1 KM axial und sagittal. Mehrzystisches Erscheinnungsbild mit septaler Kontrastmittelaufnahme. Zeichen der Einblutung (T2 Sediment, SWI) bei Z.n. Sturz.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "15e2b70d84a430e046416c0f183098e621cbaeb8",
+    "localSha256": "7c7215df9baacb209efb0d34e997860faf350307f0fcf01e7e49fe810b35d2b7",
+    "width": 682,
+    "height": 810,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-065",
+    "groupKey": "neuro-1004-065",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-065.jpg",
+    "sourceTitle": "Pilozytisches Astrozytom WHO I vom linken Optikus - MRT - T1 coronar mit KM - 038.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pilozytisches_Astrozytom_WHO_I_vom_linken_Optikus_-_MRT_-_T1_coronar_mit_KM_-_038.jpg",
+    "sourceDescription": "This image is part of a series which can be scrolled interactively with the mousewheel or mouse dragging. This is done by using Template:Imagestack . The series is found in the category Pilocytic astrocytoma - MRI - case 001 . Pilozytisches Astrozytom WHO Grad I vom linken Nervus opticus ausgehend. MRT in verschiedenen Wichtungen und Ebenen.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "e9fd114280ae496e807ed154568022b5c429d79f",
+    "localSha256": "e98d0f8cf51800eadffdd71caf86adbc688ee959d7831dddae147ffc3ef18c22",
+    "width": 506,
+    "height": 512,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-066",
+    "groupKey": "neuro-1004-066",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-066.jpg",
+    "sourceTitle": "Chiari-1-Malformation 13W - MR IR coronar - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chiari-1-Malformation_13W_-_MR_IR_coronar_-_001.jpg",
+    "sourceDescription": "Chiari-1 Malformation bei einer 13-jährigen in der Magnetresonanztomographie: Inversion recovery coronar",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "026078e5fa4f5b06f9a39363a19033a1b2174ed2",
+    "localSha256": "7d98bb384dcd8d824303338ff90ac8020f34b1c799e32c4d6e2ba37da8fb061a",
+    "width": 839,
+    "height": 974,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-067",
+    "groupKey": "neuro-1004-067",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-067.png",
+    "sourceTitle": "Brain MRI 143335 sub.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brain_MRI_143335_sub.png",
+    "sourceDescription": "Brain MRI of 39YO man with lung cancer metastasis, T1 CE - T1 difference (Abs (a-b))",
+    "artist": "Nevit Dilmen ( talk )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "319076665090a33ccf369bf13e2e8263473c3b6f",
+    "localSha256": "2750de56978ca382353c80ed1a53bcfff7fc3caf613b299b04b62b787bde63cc",
+    "width": 530,
+    "height": 564,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-068",
+    "groupKey": "neuro-1004-068",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-068.jpg",
+    "sourceTitle": "Tumor Meningioma1.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tumor_Meningioma1.JPG",
+    "sourceDescription": "Meningioma, MRI T1 with contrast, axial",
+    "artist": "Tdvorak",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "947dad8e7348ba38346a48e245a0857d85b419c2",
+    "localSha256": "152564c9118669ef4f52aed62d6cf536b41b5c5756ee2a25721b6add14870cdc",
+    "width": 584,
+    "height": 704,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-069",
+    "groupKey": "neuro-1004-069",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-069.jpg",
+    "sourceTitle": "SAH1.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:SAH1.JPG",
+    "sourceDescription": "A subarachnoid hemorrhage.",
+    "artist": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "9f304ecf09bc0c4c8e6f93d7015f30c5f707dc3d",
+    "localSha256": "3d32ba11ee6a5b276369de1ecdf428cbef1e33e7ddd26b23368e5fa660e1503b",
+    "width": 2998,
+    "height": 3639,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-070",
+    "groupKey": "neuro-1004-070",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-070.jpg",
+    "sourceTitle": "Craniopharyngioma-t1sagkm-005.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Craniopharyngioma-t1sagkm-005.jpg",
+    "sourceDescription": "This image is part of a series which can be scrolled interactively with the mousewheel or mouse dragging. This is done by using Template:Imagestack . The series is found in the category Craniopharyngioma case 001 . Kraniopharyngeom in der Magnetresonanztomographie. Tumor aus Resten der Rathke-Tasche - Ductus craniopharyngeus. Solide und zystische Anteile. Symptomatik in diesem Fall: Akuter Visusverlust rechts T1w sagittal Kontrastmittel",
+    "artist": "Hellerhoff",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "originalSha1": "e82a37a4dbaaa60d447739f8494ad95296828b53",
+    "localSha256": "477a676d8d1252285943c14ebcd9f94eb475a29ce07cf3e576407b3fce7fde9b",
+    "width": 512,
+    "height": 513,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-071",
+    "groupKey": "neuro-1004-071",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-071.jpg",
+    "sourceTitle": "Developmental Venous Anomaly MRT T1KM coronar 02.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Developmental_Venous_Anomaly_MRT_T1KM_coronar_02.jpg",
+    "sourceDescription": "Developmental Venous Anomaly (DVA) in der MRT T1 mit Kontrastmittel coronar.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "1eb81e02516b13d194c1474b54d98f8583f5da4d",
+    "localSha256": "af8ff69b1298ba49804b3e83739102fcfdc95689cbd65fa5b5f97d132c292fe3",
+    "width": 937,
+    "height": 1113,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-072",
+    "groupKey": "neuro-1004-072",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-072.jpg",
+    "sourceTitle": "Temporale Arachnoidalzyste links MRT T2 axial 01-04.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Temporale_Arachnoidalzyste_links_MRT_T2_axial_01-04.jpg",
+    "sourceDescription": "Arachnoidalzyste links temporal (im Bild rechts) in der Magnetresonanztomographie T2 axial. Nach meiner Erfahrung scheinen die temporalen Arachnoidalzysten häufiger links zu liegen, warum auch immer!",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "e1bf502b2f179f59b41b590bc046c5fb6f1c2d6e",
+    "localSha256": "3d5728792ae8588c17d3b492a343b55b4465a31ca9801d86ae65d83d6bc29a39",
+    "width": 891,
+    "height": 1021,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-073",
+    "groupKey": "neuro-1004-073",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-073.jpg",
+    "sourceTitle": "Epidermoidzyste MRT T2 ax.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Epidermoidzyste_MRT_T2_ax.jpg",
+    "sourceDescription": "Intrakranielle Epidermoidzyste der Pinealisregion rechts paramedian. Magentresonanztomographie T2w axial: Der Befund zeigt sich nahezu liquorisointens. Aber siehe FLAIR und DWI.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "6872eefb9840ae6013e0b9ebb2cc67b891a986f8",
+    "localSha256": "4f40f5160a712a0e04ada6956d79ae25a3b48460fe0fe54cd619b8bb37592573",
+    "width": 645,
+    "height": 766,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-074",
+    "groupKey": "neuro-1004-074",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-074.jpg",
+    "sourceTitle": "Empty Sella MRT FLAIR sag 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Empty_Sella_MRT_FLAIR_sag_001.jpg",
+    "sourceDescription": "Empty sella in der Magnetresonanztomographie als Zufallsbefund. FLAIR sagittal",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "6d57651d4e1993e7cc9d9cd8996a1dff0914f1d5",
+    "localSha256": "c7bb95454e1cdc30cb5bfb8d973543b2f48d98ab8e7dbdbfd43183b5c034074f",
+    "width": 921,
+    "height": 748,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-075",
+    "groupKey": "neuro-1004-075",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-075.jpg",
+    "sourceTitle": "Pilozytisches Astrozytom WHO I vom linken Optikus - MRT - T1 coronar mit KM - 041.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pilozytisches_Astrozytom_WHO_I_vom_linken_Optikus_-_MRT_-_T1_coronar_mit_KM_-_041.jpg",
+    "sourceDescription": "This image is part of a series which can be scrolled interactively with the mousewheel or mouse dragging. This is done by using Template:Imagestack . The series is found in the category Pilocytic astrocytoma - MRI - case 001 . Pilozytisches Astrozytom WHO Grad I vom linken Nervus opticus ausgehend. MRT in verschiedenen Wichtungen und Ebenen.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "94024ba2d86a7afeffc01e6b449c5bf6ebf0cb44",
+    "localSha256": "402f27e78a121d276afbb99fa955974bdd8cd24aac77b5fd098ff2ffbb79c208",
+    "width": 506,
+    "height": 512,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-076",
+    "groupKey": "neuro-1004-076",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-076.jpg",
+    "sourceTitle": "Chiari-1-Malformation 13W - MR T2 sagittal - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chiari-1-Malformation_13W_-_MR_T2_sagittal_-_001.jpg",
+    "sourceDescription": "Chiari-1 Malformation bei einer 13-jährigen in der Magnetresonanztomographie: T2 sagittal",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "e366a0b1537a3fcffab6b8f678f66cf51d39308f",
+    "localSha256": "5910961ff7b985b53a1dca12d20a226faf618611265605a351303f070a953fbf",
+    "width": 839,
+    "height": 838,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "direct-source-label-match-after-perceptual-review"
+  },
+  {
+    "id": "neuro-1004-077",
+    "groupKey": "neuro-1004-077",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-077.png",
+    "sourceTitle": "Brain MRI 141752-Pd.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brain_MRI_141752-Pd.png",
+    "sourceDescription": "Brain MRI of 39YO man with lung cancer metastasis",
+    "artist": "Nevit Dilmen ( talk )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "21a6dece2d2eda4275c7c064bff2b5c2471123bb",
+    "localSha256": "e9dc4d651fd8f03ba755545840b2f89e00d0bb041bd1f4140434db2f4aa36822",
+    "width": 494,
+    "height": 543,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "neuro-1004-078",
+    "groupKey": "neuro-1004-078",
+    "system": "神经",
+    "image": "assets/images/expanded/neuro-1004-078.jpg",
+    "sourceTitle": "Tumor Meningioma2.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tumor_Meningioma2.JPG",
+    "sourceDescription": "Meningioma, MRI T1 with contrast, coronal",
+    "artist": "Tdvorak",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "dceb33b989412b133c5a8157ad3ed6316a17c431",
+    "localSha256": "0c9f6c899a63ba195c49f8aa0cbf4a8018b05c3bbc63c5c19562cdc6ed14c4ca",
+    "width": 563,
+    "height": 644,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-001",
+    "groupKey": "abdomen-1004-001",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-001.png",
+    "sourceTitle": "Acquired hepatocerebral degeneration MRI T1ax.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acquired_hepatocerebral_degeneration_MRI_T1ax.png",
+    "sourceDescription": "Acquired hepatocerebral degeneration on MRI (T1 axial) with marked hyperintensity in the globus pallidum in a patient with liver cirrhosis.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "c5d21c5128516a8ebfa782c980610503ed258384",
+    "localSha256": "0e1728d9885552e7f05c4d29bdf862ecf17f9c077cdf5d769cebfbddd8a59b02",
+    "width": 896,
+    "height": 1002,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-002",
+    "groupKey": "abdomen-1004-002",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-002.jpg",
+    "sourceTitle": "Oesophagusvarizen 01.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oesophagusvarizen_01.jpg",
+    "sourceDescription": "Ösophagusvarizen bei Leberzirrhose mit portaler Hypertension. Computertomographie axial.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "39072ec93eb4368cf09208785723399aee1e9a3f",
+    "localSha256": "31750f11fe7f112ff62f010137a79652b6afceaee23d56f87a29cbfefc3c0c91",
+    "width": 1016,
+    "height": 802,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-003",
+    "groupKey": "abdomen-1004-003",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-003.jpg",
+    "sourceTitle": "Kavernoese Transformation der Pfortader 73W - CT KM pv - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kavernoese_Transformation_der_Pfortader_73W_-_CT_KM_pv_-_001.jpg",
+    "sourceDescription": "Cavernous transformation of the portal vein due to portal vein thrombosis. There is also associated splenomegaly.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "b1a88791a6a4e97deb2f5dd5d9437e9b094bef3a",
+    "localSha256": "239f6d8aa01e9481f4c12bb0f3baea0f3ef74595dd152bd90a2c1ff387770a62",
+    "width": 2031,
+    "height": 901,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-004",
+    "groupKey": "abdomen-1004-004",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-004.png",
+    "sourceTitle": "Angiomyolipom Niere rechts CT coronor.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Angiomyolipom_Niere_rechts_CT_coronor.png",
+    "sourceDescription": "Renal angiomyolipoma: Hypointens (fat isodens) lesion of right kidney in CT.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "5d737428d43035a7bb9218c479e2ca6be92ab854",
+    "localSha256": "1240f21f1e350fe3ab8ab78051d78f05bf68b704903e7f741d4cdab12ea5ab58",
+    "width": 1503,
+    "height": 1281,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-005",
+    "groupKey": "abdomen-1004-005",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-005.jpg",
+    "sourceTitle": "Medical X-Ray imaging UEI07 nevit.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Medical_X-Ray_imaging_UEI07_nevit.jpg",
+    "sourceDescription": "KUB Radiograph, Roentgenogram or Medical X-ray image. Showing a large staghorn calculus involving the major calyces on left and separate renal caliceal stones on right. May not be to scale.",
+    "artist": "Nevit Dilmen ( talk )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "54c0fc01779a584c8771a115a8ee336a9498162b",
+    "localSha256": "be904c847439105f6706739d61baa06a3890954b985a44ce4a29e3014d11e348",
+    "width": 2035,
+    "height": 2486,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-006",
+    "groupKey": "abdomen-1004-006",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-006.png",
+    "sourceTitle": "Myelolipom rechts CT axial.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Myelolipom_rechts_CT_axial.png",
+    "sourceDescription": "Myelolipoma of right adrenal gland in Computertomography.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "46342ff38a1fd8129a1aaadbf60ffcd6167c6699",
+    "localSha256": "e4d33734c8bc18a08afb56d746bd3bcc0f23bd84050326d0a12854ed9759ab4f",
+    "width": 1130,
+    "height": 890,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-007",
+    "groupKey": "abdomen-1004-007",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-007.jpg",
+    "sourceTitle": "Duenndarmileus bei inkarzerierter Schenkelhernie mit Gangraen 70W - CT KM pv - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Duenndarmileus_bei_inkarzerierter_Schenkelhernie_mit_Gangraen_70W_-_CT_KM_pv_-_001.jpg",
+    "sourceDescription": "Dünndarmileus bei inkarzerierter Schenkelhernie mit Gangrän: Gaseinschlüsse im Bruchsack neben der inkarzerierten Schlinge als Hinweis auf zumindest Permeation, wenn nicht Perforation. Intraoperativ zeigte sich der Darm gangränös geschädigt.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "5ffeb4a565ad06467cc3b110368de8d9a61373e7",
+    "localSha256": "71f074294307e7d8f6df5be95ba938f94efb3d31ce19f7bf9106469aac1b44bf",
+    "width": 1521,
+    "height": 1062,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-008",
+    "groupKey": "abdomen-1004-008",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-008.jpg",
+    "sourceTitle": "Morbus Crohn MR-Enteroklyse 35M - MR - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Morbus_Crohn_MR-Enteroklyse_35M_-_MR_-_001.jpg",
+    "sourceDescription": "MR-Enteroklyse: Morbus Crohn mit Manifestation im terminalen Ileum. Oben DWI axial, T2 FS coronar, unten zwei Schichten T1 FS KM coronar. Links unten ist besonders gut der Bereich der Ileozökalklappe sichtbar.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "576fd408797550efb01a01c76b2e773962631bde",
+    "localSha256": "b17a5cad2a4597bacc4e97f28401c37c9dc8a7892ec7c545d5bf346b1c92a531",
+    "width": 2026,
+    "height": 2010,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-009",
+    "groupKey": "abdomen-1004-009",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-009.jpg",
+    "sourceTitle": "Inkarzerierte Inguinalhernie links mit Ileus 94M - CT - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Inkarzerierte_Inguinalhernie_links_mit_Ileus_94M_-_CT_-_001.jpg",
+    "sourceDescription": "Inkarzerierte Inguinalhernie links mit Ileus.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "44112515e3c6827868aa4e87e6cc247656977a64",
+    "localSha256": "7f0de7bf9c1640d01fc9d4bf099919eb70cabe057601bba0f35a9d94314693f0",
+    "width": 2017,
+    "height": 1298,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-010",
+    "groupKey": "abdomen-1004-010",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-010.jpg",
+    "sourceTitle": "Gastrointestinaler Stromatumor des Jejunums 84M - CT - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gastrointestinaler_Stromatumor_des_Jejunums_84M_-_CT_-_001.jpg",
+    "sourceDescription": "Gastrointestinaler Stromatumor des Jejunums in der Computertomografie (oben arteriell axial und koronar, unten portalvenös axial) und intraoperativer Situs. Der stark vaskularisierte Tumor befand sich außen an der Darmwand. Beachte auch die punktförmige Verkalkung.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "68b3c2236433f9b2ea973f4ff27edd07417209ba",
+    "localSha256": "db889cf3bb13ed64650b58b86d3f4794a8ff4ef5a3f3451a6b52f69ef63b7e97",
+    "width": 1996,
+    "height": 1429,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-011",
+    "groupKey": "abdomen-1004-011",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-011.png",
+    "sourceTitle": "Pfortaderthrombose 01 006.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pfortaderthrombose_01_006.png",
+    "sourceDescription": "Portal vein thrombosis in computertomography.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "595149a86c5f44290be2e9ae4c38bb139b4022e0",
+    "localSha256": "25472d731aee19f8fb9fefe7cde5eb0b773d8bfeb94543361d9d1bca7024679d",
+    "width": 1084,
+    "height": 1370,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-012",
+    "groupKey": "abdomen-1004-012",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-012.jpg",
+    "sourceTitle": "MANEC Leberfiliae 49jm.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:MANEC_Leberfiliae_49jm.jpg",
+    "sourceDescription": "Hepatic metastases from a gastric mixed adenoneuroendocrine carcinoma (MANEC).",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "7095ec7f07b97a5e298196fb64460bd6351f612b",
+    "localSha256": "62cd8402a0add589a26dbb75a8e4809b8b25e726f19bafeebace18840fa5419a",
+    "width": 4396,
+    "height": 1280,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-013",
+    "groupKey": "abdomen-1004-013",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-013.jpg",
+    "sourceTitle": "Autoimmune Pankreatitis und Cholangitis - Verlauf 74M - MR - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Autoimmune_Pankreatitis_und_Cholangitis_-_Verlauf_74M_-_MR_-_001.jpg",
+    "sourceDescription": "Autoimmune Pankreatitis und Cholangitis im Verlauf: Oben Ausgangsbefund, unten Kontrolle nach Therapie (2 Monate). Von links nach rechts axial T2-SPIR, koronar T2 SPAIR, MRCP. Vor Therapie ist das Pancreas ödematös, wurstförmig aufgetrieben. Der Pankreasgang ist nahezu komplett verschwollen. Es findet sich eine deutliche Einengung der Gallenwege im Bereich der Hepatikusgabel mit intrahepatischer Cholestase. Nach Therapie Normalisierung des Pankreasparenchyms und weitgehend normalisierte Darstellung des Pankreasgangs. Auch die Enge in der Hepatikusgabel mit der Cholestase ist kaum noch erkennbar.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "639a5063a96322b02271ae5eae7c5fac9e8f141b",
+    "localSha256": "4b5203339d35e1d83beabf308ecd266470901a7b82c581a30fe8ce0651023f25",
+    "width": 2300,
+    "height": 1916,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-014",
+    "groupKey": "abdomen-1004-014",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-014.png",
+    "sourceTitle": "Appendicitis epiploica CT sagittal.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Appendicitis_epiploica_CT_sagittal.png",
+    "sourceDescription": "Epiploic appendagitis in computertomography sagittal view.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "b6d82bbb70c6e3ab499546752d93677188bda4c4",
+    "localSha256": "ebcb8f2df7a7ef60e0616c2be89c034820ab240a24fd6387085e1e7eebbccb09",
+    "width": 1268,
+    "height": 2028,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-015",
+    "groupKey": "abdomen-1004-015",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-015.jpg",
+    "sourceTitle": "Sigmavolvulus mit Whirlpool Sign 24M - CT coronar - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sigmavolvulus_mit_Whirlpool_Sign_24M_-_CT_coronar_-_001.jpg",
+    "sourceDescription": "Sigmavolvulus mit Whirlpool Sign in der Computertomografie koronar.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "607c3cad3ddfadf1a39bc7aafe9c952eb65e0bdd",
+    "localSha256": "04f77c1caef1400e3c8e95c5ea8ab8a57705d2b8e261c305b8089add78c1d3cd",
+    "width": 1032,
+    "height": 1420,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-016",
+    "groupKey": "abdomen-1004-016",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-016.jpg",
+    "sourceTitle": "Adenom der rechten Nebenniere - in phase out of phase 55W - MR T1 ip op axial - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adenom_der_rechten_Nebenniere_-_in_phase_out_of_phase_55W_-_MR_T1_ip_op_axial_-_001.jpg",
+    "sourceDescription": "Adenoma of the right adrenal gland - in phase (top) and out of phase (bottom). The right adrenal gland between the liver and spine shows an oval mass, which appears with significantly lower signal intensity in the T1-in-phase and in the T1-out-of-phase. The upper pole of the kidney is cut on the left.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "f3086e72899a9f94f62c6e9ca5b3d773a774c679",
+    "localSha256": "443d7749d576c99ddfc7c146f757dc19db0188a7e6cfed368b3b2fcefb4badaf",
+    "width": 687,
+    "height": 747,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-017",
+    "groupKey": "abdomen-1004-017",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-017.jpg",
+    "sourceTitle": "Hufeisenniere 03 - CT - coronar - 018.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hufeisenniere_03_-_CT_-_coronar_-_018.jpg",
+    "sourceDescription": "This image is part of a series which can be scrolled interactively with the mousewheel or mouse dragging. This is done by using Template:Imagestack . The series is found in the category Horseshoe kidney - CT - case 003 . Hufeisenniere in der Computertomographie.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "dd8b6f95e1e51e3331417d48243da8e991722fe8",
+    "localSha256": "003f264e1d69ae67f2d9d65d523345678e6db8cd20b07b53429ab4b16e8faa1c",
+    "width": 486,
+    "height": 512,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-018",
+    "groupKey": "abdomen-1004-018",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-018.jpg",
+    "sourceTitle": "Wilkie-Syndrom 19jm - Roe LS und ap - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wilkie-Syndrom_19jm_-_Roe_LS_und_ap_-_001.jpg",
+    "sourceDescription": "Wilkie-Syndrom (Arteria-mesenterica-superior-Syndrom) bei einem jungen Mann. Röntgenbild in linker Seitenlage und a.p.; man erkennt den massiven Rückstau in Magen und proximales Duodenum.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "528806cbde420bd9a985493130096b41eb5010e0",
+    "localSha256": "411d6e99375da5369240b6407a13e946b5ea4fe77ea3a376983675dc1c1951a7",
+    "width": 2812,
+    "height": 1586,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-019",
+    "groupKey": "abdomen-1004-019",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-019.jpg",
+    "sourceTitle": "Meckel-Divertikel mit akut-entzuendlichen Veraenderungen 80W - CT coronar KM pv - 002.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meckel-Divertikel_mit_akut-entzuendlichen_Veraenderungen_80W_-_CT_coronar_KM_pv_-_002.jpg",
+    "sourceDescription": "Meckel-Divertikel mit akut-entzündlichen Veränderungen in der Computertomografie, koronare Schichten.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "1653a0e4ab682fdef3b98bb9c422ed98892488d6",
+    "localSha256": "5658f46d3bc0fa788810ce0a7a201586094d6be1b5754d9b28210524806bdb37",
+    "width": 2044,
+    "height": 1429,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-020",
+    "groupKey": "abdomen-1004-020",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-020.jpg",
+    "sourceTitle": "Pneumatosis Intestinalis CT.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pneumatosis_Intestinalis_CT.JPG",
+    "sourceDescription": "Coronal reformatted MDCT image showing extensive pneumatosis intestinalis in the left upper quadrant small bowel. The pneumatosis is more cystic and nodular in the small bowel in the midline and the the right of midline.",
+    "artist": "Jto410",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "cfb9e8b6a920cd143b0e9104250a9a2a6755ae90",
+    "localSha256": "b81b5a37111e36f775f2f35e9889048e91cef0c75ca4b2289dfe36a321aaf1a6",
+    "width": 2016,
+    "height": 2106,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-021",
+    "groupKey": "abdomen-1004-021",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-021.jpg",
+    "sourceTitle": "Gallbladder polyps 111203734.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gallbladder_polyps_111203734.jpg",
+    "sourceDescription": "Gall bladder polyps, 3-7mm",
+    "artist": "Nevit Dilmen ( talk )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "9c4a656aa382c95837aa905b1749cd4d45763fe0",
+    "localSha256": "ed8914b011194ba037b6f566da6ba7836e5783b45ec64d64b2a8c42f53cd400d",
+    "width": 773,
+    "height": 579,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-022",
+    "groupKey": "abdomen-1004-022",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-022.jpg",
+    "sourceTitle": "Ultrasonography of hydronephrosis with dilated anechoic pelvis and calyces, along with cortical atrophy.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ultrasonography_of_hydronephrosis_with_dilated_anechoic_pelvis_and_calyces,_along_with_cortical_atrophy.jpg",
+    "sourceDescription": "Hydronephrosis with dilated anechoic pelvis and calyces, along with cortical atrophy. The width of a calyx is measured on the US image in the longitudinal scan plane, and illustrated by ‘+’ and a dashed line. For context, see en:Renal ultrasonography",
+    "artist": "Kristoffer Lindskov Hansen, Michael Bachmann Nielsen and Caroline Ewertsen",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "originalSha1": "a87be26c8e0db46d6ff17a5b5c7c7c77040f7b6d",
+    "localSha256": "ccde2daf74b0e826625bd0a4eedb3750eebb178da524510805a6fcfc82f5bec1",
+    "width": 1006,
+    "height": 741,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-023",
+    "groupKey": "abdomen-1004-023",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-023.jpg",
+    "sourceTitle": "Bauchaortenaneurysma in der Abdomenuebersichtsaufnahme 96W - CR ap und CT - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bauchaortenaneurysma_in_der_Abdomenuebersichtsaufnahme_96W_-_CR_ap_und_CT_-_001.jpg",
+    "sourceDescription": "Bauchaortenaneurysma in der Abdomenübersichtsaufnahme und in der koronaren rekonstruierten Computertomografie. In der Übersichtsaufnahme ist der Befund im wesentlich durch die Verkalkungen der Aortenwand erkennbar.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "4bd4f68329b86aee0d17d7e255ed2d30579ddb73",
+    "localSha256": "6efdced34cac35f95f34e0d2a4fa9692462e757b20fc4b3af163319bcd3db30b",
+    "width": 2856,
+    "height": 1842,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-024",
+    "groupKey": "abdomen-1004-024",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-024.png",
+    "sourceTitle": "03-Sigmadivertikulitis CT cor 001 Kleiner Abszess.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:03-Sigmadivertikulitis_CT_cor_001_Kleiner_Abszess.png",
+    "sourceDescription": "Sigmoid diverticulitis in computed tomography (coronary reconstructed). Perforation with small abscess.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "7a890f567cbd7c44c0347f1b4334959606676edc",
+    "localSha256": "1813315dc25a33cc2404c2865956bcc9ba11203f694cff02293e35a7191c068e",
+    "width": 1026,
+    "height": 1012,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-025",
+    "groupKey": "abdomen-1004-025",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-025.jpg",
+    "sourceTitle": "Ultrasound image showing hypoechoic renal cortical cyst at the upper pole of the left kidney.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ultrasound_image_showing_hypoechoic_renal_cortical_cyst_at_the_upper_pole_of_the_left_kidney.jpg",
+    "sourceDescription": "Ultrasound image showing hypoechoic renal cortical cyst at the upper pole of the left kidney",
+    "artist": "Cerevisae",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "7c367ec5e7a6be9787c6456e273a08f6c2210998",
+    "localSha256": "36560fafcbce1c8f6793c27184ba89c36d5ed8987c07e7fea620628dcdd2e493",
+    "width": 4608,
+    "height": 3456,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-026",
+    "groupKey": "abdomen-1004-026",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-026.png",
+    "sourceTitle": "Acquired hepatocerebral degeneration MRI T1cor.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acquired_hepatocerebral_degeneration_MRI_T1cor.png",
+    "sourceDescription": "Acquired hepatocerebral degeneration on MRI (T1 coronar) with marked hyperintensity in the globus pallidum in a patient with liver cirrhosis.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "463d7c264592a94df053681ad48cd1b8c1e9f61d",
+    "localSha256": "e3f91043173f6d873d5ea19d9ac38700611fc3d56ad348360ac658c13f99af0d",
+    "width": 752,
+    "height": 848,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-027",
+    "groupKey": "abdomen-1004-027",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-027.png",
+    "sourceTitle": "Myelolipom rechts CT coronar.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Myelolipom_rechts_CT_coronar.png",
+    "sourceDescription": "Myelolipoma of right adrenal gland in Computertomography.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "e537c8243944d5ed71b47929d19e9853e41ec0bd",
+    "localSha256": "5d1fcd7ff7cdf52e9fae4688c617804206b071196e6d558787bab66d6283044e",
+    "width": 836,
+    "height": 996,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-028",
+    "groupKey": "abdomen-1004-028",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-028.jpg",
+    "sourceTitle": "Duenndarmstenose Morbus Crohn KM-Passage 005.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Duenndarmstenose_Morbus_Crohn_KM-Passage_005.jpg",
+    "sourceDescription": "Fixierte Stenose des Dünndarms bei Morbus Crohn. Enteroklysma im Doppelkontrast.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "b7c55a0f6a68684d6c2960385567d55062e9c683",
+    "localSha256": "6bbd4e1a473f3f8f04f8f5b4c44869421d1b7ea9991db59eb4a3286ddd88b995",
+    "width": 978,
+    "height": 924,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-029",
+    "groupKey": "abdomen-1004-029",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-029.jpg",
+    "sourceTitle": "Anteile der Harnblase in Leistenhernie rechts 67M - CT - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anteile_der_Harnblase_in_Leistenhernie_rechts_67M_-_CT_-_001.jpg",
+    "sourceDescription": "Parts of the urinary bladder in an inguinal hernia on the right. Left 3 layers axial, right 2 layers sagittal.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "6d00a5ee0e4c99c50e675f1de3e7c611879b2d46",
+    "localSha256": "4c7526a739963cd5536572305501f6dea668e75221459911d274f7236f49754c",
+    "width": 1433,
+    "height": 1431,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-030",
+    "groupKey": "abdomen-1004-030",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-030.jpg",
+    "sourceTitle": "Grosser eingebluteter extra- gastrointestinaler Stromatumor 69W - MR - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grosser_eingebluteter_extra-_gastrointestinaler_Stromatumor_69W_-_MR_-_001.jpg",
+    "sourceDescription": "Großer, eingebluteter, extra- gastrointestinaler Stromatumor mit Ursprung wohl aus dem Omentum majus. MRT links oben T2-SPIR, links unten T1-SPAIR, rechts T1 FatSat KM oben axial unten koronar.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "c7d411aaf3ab74ecd72e709c6eade9800a4a4765",
+    "localSha256": "c064baef9d6a0278844afea2f381070a8704826a7b329621adeba80cbdeb0fa3",
+    "width": 2003,
+    "height": 1403,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-031",
+    "groupKey": "abdomen-1004-031",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-031.png",
+    "sourceTitle": "Pfortaderthrombose 01 005.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pfortaderthrombose_01_005.png",
+    "sourceDescription": "Portal vein thrombosis in computertomography.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "090364183434a5e2af0428fed850865e0baf886e",
+    "localSha256": "1bd262f2f4837b9c759aeccffcc26dbd1b3cbe623e9a68ac288533c02060bc38",
+    "width": 1078,
+    "height": 1332,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-032",
+    "groupKey": "abdomen-1004-032",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-032.png",
+    "sourceTitle": "Appendicitis epiploica CT axial.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Appendicitis_epiploica_CT_axial.png",
+    "sourceDescription": "Epiploic appendagitis in computertomography.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "8f5764db19122a17e8f3e9abc7a413c7599b25f7",
+    "localSha256": "60c03a812461d2981900727a02235573094034c78a8f8203632e26566b7cc1a7",
+    "width": 1866,
+    "height": 1292,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-033",
+    "groupKey": "abdomen-1004-033",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-033.jpg",
+    "sourceTitle": "Sigmavolvulus mit Whirlpool Sign 24M - CT coronar - 002.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sigmavolvulus_mit_Whirlpool_Sign_24M_-_CT_coronar_-_002.jpg",
+    "sourceDescription": "Sigmavolvulus mit Whirlpool Sign in der Computertomografie koronar.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "deb2f51be6c19ed6c54704efc288ebea7c62a120",
+    "localSha256": "6d81837f39c244448e967168feebc71516111807565590479d5b98a1508f65f8",
+    "width": 1032,
+    "height": 1420,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-034",
+    "groupKey": "abdomen-1004-034",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-034.jpg",
+    "sourceTitle": "Hufeisenniere 04 - CT - coronar - 010.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hufeisenniere_04_-_CT_-_coronar_-_010.jpg",
+    "sourceDescription": "This image is part of a series which can be scrolled interactively with the mousewheel or mouse dragging. This is done by using Template:Imagestack . The series is found in the category Horseshoe kidney - CT - case 004 . Hufeisenniere in der Computertomographie.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "8af04a7abd87342bae5d26b20e19b8a9ee57a8cd",
+    "localSha256": "2326c37d90e4b07fabf0e737ac26c2cca51e663d5c6cfacf58b8920739de8e9c",
+    "width": 486,
+    "height": 512,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-035",
+    "groupKey": "abdomen-1004-035",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-035.jpg",
+    "sourceTitle": "Wilkie-Syndrom 19jm - CT cor und parasag - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wilkie-Syndrom_19jm_-_CT_cor_und_parasag_-_001.jpg",
+    "sourceDescription": "Wilkie-Syndrom (Arteria-mesenterica-superior-Syndrom) bei einem jungen Mann. CT coronar und parasagittal. Man erkennt im parasagittalen Bild gut den sehr engen Winkel zwischen Aorta und Arteria mesenterica superior.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "c5151fab9c6af44b8e549327232e4c898d9abec9",
+    "localSha256": "e94491ca10a353b53c1c4ae3bc8975f54032879f50f4e97c1014b4be87355b1f",
+    "width": 2745,
+    "height": 1529,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-036",
+    "groupKey": "abdomen-1004-036",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-036.jpg",
+    "sourceTitle": "Meckel-Divertikel mit akut-entzuendlichen Veraenderungen 80W - CT coronar KM pv - 003.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meckel-Divertikel_mit_akut-entzuendlichen_Veraenderungen_80W_-_CT_coronar_KM_pv_-_003.jpg",
+    "sourceDescription": "Meckel-Divertikel mit akut-entzündlichen Veränderungen in der Computertomografie, koronare Schichten.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "57ee972d5ce6ae9fbe5b486c99887c793c0da6a3",
+    "localSha256": "8b25e563a7bc90db9c460dbe31a1ac9cebe63c7112241d15ee174a725eb3474b",
+    "width": 2044,
+    "height": 1429,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-037",
+    "groupKey": "abdomen-1004-037",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-037.jpg",
+    "sourceTitle": "Pseudopneumatosis intestinalis des Colon ascendens bei Koprostase und Meteorismus 69M - CT axial - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pseudopneumatosis_intestinalis_des_Colon_ascendens_bei_Koprostase_und_Meteorismus_69M_-_CT_axial_-_001.jpg",
+    "sourceDescription": "Pseudopneumatosis intestinalis des Colon ascendens bei Koprostase und Meteorismus: Die Gasperlen entlang des stuhligen Darminhaltes finden sich nur neben dem Stuhl und nicht in der Darmwand ventral. Bei einer echten Pneumatosis intestinalis wären diese Bereiche ventral nicht von der Gasansammlung in der Darmwand ausgespart.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "d2b4ad770c3445359e1d46f7d351e80d24eaa7a5",
+    "localSha256": "3773452e1e38634c7202dc2614ee40260a06f8c6580c06958d2cead60f5dad73",
+    "width": 2029,
+    "height": 1420,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-038",
+    "groupKey": "abdomen-1004-038",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-038.jpg",
+    "sourceTitle": "Ultrasonography of hydronephrosis with dilated anechoic pelvis and calyces, along with cortical atrophy - measurement.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ultrasonography_of_hydronephrosis_with_dilated_anechoic_pelvis_and_calyces,_along_with_cortical_atrophy_-_measurement.jpg",
+    "sourceDescription": "Same patient as in File:Ultrasonography of hydronephrosis with dilated anechoic pelvis and calyces, along with cortical atrophy.jpg with measurement of the pelvis dilation in the transverse scan plane illustrated on the US image with ‘+’ and a dashed line. For context, see en:Renal ultrasonography",
+    "artist": "Kristoffer Lindskov Hansen, Michael Bachmann Nielsen and Caroline Ewertsen",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "originalSha1": "d89adf0d1307178da45aeaee79b5aa0fe071da06",
+    "localSha256": "d1cd29d2574682316045c71a23835f631e307223ffb0855a15ad108921f847f7",
+    "width": 1005,
+    "height": 741,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-039",
+    "groupKey": "abdomen-1004-039",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-039.jpg",
+    "sourceTitle": "Aneurysma.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aneurysma.jpg",
+    "sourceDescription": "Kontrastmittelverstärktes CT, axialer Schnitt auf Höhe der Gabelung der linken Leistenarterie (art. iliaca communis links) von presse03 . Erstellt am 25. Mai 2011",
+    "artist": "presse03",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "f39a1199855385f29d59db479f6b5a9165dea1c1",
+    "localSha256": "8ba14775ce451fa1d7edb5e20ac1cfeb8c6fe70fbb0292b56db77719e96f75e5",
+    "width": 2156,
+    "height": 1605,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-040",
+    "groupKey": "abdomen-1004-040",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-040.jpg",
+    "sourceTitle": "Renal cyst ultrasound 3.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Renal_cyst_ultrasound_3.jpg",
+    "sourceDescription": "Renal cyst as seen on abdominal ultrasound. Device: GE Logiq E10",
+    "artist": "Ptrump16",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "96120f85e125f675c02ab121caa5c838aa82d45d",
+    "localSha256": "03c7e6da279e364e9014461ebc46dc3dcd69cf06ed2f93e95f3f42653e08efa1",
+    "width": 1552,
+    "height": 970,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-041",
+    "groupKey": "abdomen-1004-041",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-041.jpg",
+    "sourceTitle": "Duenndarmstenose Morbus Crohn KM-Passage 006.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Duenndarmstenose_Morbus_Crohn_KM-Passage_006.jpg",
+    "sourceDescription": "Fixierte Stenose des Dünndarms bei Morbus Crohn. Enteroklysma im Doppelkontrast.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "046b21914092ee44c84e5793a1453bb50b142460",
+    "localSha256": "c399bf74d846efa0fceeb8c77608385b858e5852f4f6886c2f7625d6fa78f189",
+    "width": 926,
+    "height": 886,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-042",
+    "groupKey": "abdomen-1004-042",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-042.jpg",
+    "sourceTitle": "Inkarzerierte Schenkelhernie rechts mit Ileus 81W - CT - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Inkarzerierte_Schenkelhernie_rechts_mit_Ileus_81W_-_CT_-_001.jpg",
+    "sourceDescription": "Incarcerated femoral hernia at the right inguinal region, complicated with ileus: In the right upper and middle abdomen there are dilated small bowel loops as well as the collapsed bowels. The incarcerated small bowel loop passes through the vascular lacuna (space beneath the inguinal ligament that allow the passage of femoral vessels, lymph vessels, and lymph nodes). The incarcerated hernia lies anteriorly on the pectineus muscle.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "53767af216d0ac6052933771e448e98c48393810",
+    "localSha256": "5e650f128b07c08a16de30bdf7666e74aa9c8a9493e0cbf98dfde6a9a48b17c8",
+    "width": 1596,
+    "height": 1023,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-043",
+    "groupKey": "abdomen-1004-043",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-043.jpg",
+    "sourceTitle": "GIST des Jejunums mit Rezidiv mesenterial und peritoneal 6979M - CT - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:GIST_des_Jejunums_mit_Rezidiv_mesenterial_und_peritoneal_6979M_-_CT_-_001.jpg",
+    "sourceDescription": "Gastrointestinaler Stromatumor des Jejunums mit Rezidiv mesenterial und peritoneal: Oben Ausgangssituation mit dem umschriebenen Tumor (beachte auch die kleine Verkalkung), unten Situation nach ca. 10 Jahren mit ausgedehnter peritonealer und mesenterialer Aussaat. Deutlich verschlechterter Allgemeinzustand mit Anasarka.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "acc353d80af445f01304efbbb75043bc23b03dba",
+    "localSha256": "0374ad9e013a8674568dae6c7b6dbd71872224178e3fd40c86414d18658c1103",
+    "width": 1828,
+    "height": 1423,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-044",
+    "groupKey": "abdomen-1004-044",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-044.png",
+    "sourceTitle": "Pfortaderthrombose 01 004.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pfortaderthrombose_01_004.png",
+    "sourceDescription": "Portal vein thrombosis in computertomography.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "9498dccf262e6422cf2e1af57968abc5aee5dc99",
+    "localSha256": "9e23aeee054ace2543ba7b2d57357b17d0a4c8324f60bc0759747cc5abe0c611",
+    "width": 1052,
+    "height": 840,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-045",
+    "groupKey": "abdomen-1004-045",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-045.png",
+    "sourceTitle": "Appendicitis epiploica CT axial 5mm.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Appendicitis_epiploica_CT_axial_5mm.png",
+    "sourceDescription": "Epiploic appendagitis in computertomography.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "40143cb7269eaae9197346763658cb52bdae62b3",
+    "localSha256": "00c87227fa9375725f5bcb9cfe0124a32fe9216ad26b80997505e9243295607b",
+    "width": 1118,
+    "height": 904,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-046",
+    "groupKey": "abdomen-1004-046",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-046.jpg",
+    "sourceTitle": "Sigmavolvulus mit Whirlpool Sign 24M - CT coronar - 003.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sigmavolvulus_mit_Whirlpool_Sign_24M_-_CT_coronar_-_003.jpg",
+    "sourceDescription": "Sigmavolvulus mit Whirlpool Sign in der Computertomografie koronar.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "05b4c51dfdc6442f2e71ffd75e5a15bd661b4537",
+    "localSha256": "6769522ab7bb751c3d0bbbb02d9f1d4b3cefd3de18b0445b0afa881f6c820828",
+    "width": 1032,
+    "height": 1420,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-047",
+    "groupKey": "abdomen-1004-047",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-047.jpg",
+    "sourceTitle": "Hufeisenniere 04 - CT - coronar - 016.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hufeisenniere_04_-_CT_-_coronar_-_016.jpg",
+    "sourceDescription": "This image is part of a series which can be scrolled interactively with the mousewheel or mouse dragging. This is done by using Template:Imagestack . The series is found in the category Horseshoe kidney - CT - case 004 . Hufeisenniere in der Computertomographie.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "4fa2826a25899d95598755a46f2862715cb1a39d",
+    "localSha256": "5262c70f9da72a1529bcd7b6638d2f4276e593ce15c808754775d462b77aad77",
+    "width": 486,
+    "height": 512,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-048",
+    "groupKey": "abdomen-1004-048",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-048.jpg",
+    "sourceTitle": "Meckel-Divertikel mit akut-entzuendlichen Veraenderungen 80W - CT coronar KM pv - 004.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meckel-Divertikel_mit_akut-entzuendlichen_Veraenderungen_80W_-_CT_coronar_KM_pv_-_004.jpg",
+    "sourceDescription": "Meckel-Divertikel mit akut-entzündlichen Veränderungen in der Computertomografie, koronare Schichten.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "b4afe8ba0256ef1d8cbb109d5da0ce9c5cbda422",
+    "localSha256": "2a940d3cc3623268288ec5a45297eb0f687e83559bb63883d3d4efe380a1e103",
+    "width": 2044,
+    "height": 1429,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-049",
+    "groupKey": "abdomen-1004-049",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-049.jpg",
+    "sourceTitle": "Darmischaemie mit Pneumatosis und portalvenoesem Gas 86M - CT - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Darmischaemie_mit_Pneumatosis_und_portalvenoesem_Gas_86M_-_CT_-_001.jpg",
+    "sourceDescription": "Darmischämie mit Pneumatosis und portalvenösem Gas. Die Befund sind am besten im Lungenfenster zu sehen.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "b4fc6e717336b9f6b85796b34027e24785e8bed4",
+    "localSha256": "a718b105212dc18b884c0009a3e26567b3f5d9a2ae40e14e3f954ffccbcbd1ff",
+    "width": 1531,
+    "height": 1523,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-050",
+    "groupKey": "abdomen-1004-050",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-050.jpg",
+    "sourceTitle": "Sagital aaa.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sagital_aaa.JPG",
+    "sourceDescription": "This is an example of bolus tracking in the use of imaging an abdominal aortic aneurysm (AAA).",
+    "artist": "Glitzy queen00 at English Wikipedia",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+    "originalSha1": "4e9f1bef180a853a152d19fce72ea5d08e38a57a",
+    "localSha256": "264d98cdb64d58183021dd5b2f31b4cf1048129ad180d4982a223b69b91fcb09",
+    "width": 519,
+    "height": 918,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-051",
+    "groupKey": "abdomen-1004-051",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-051.jpg",
+    "sourceTitle": "Renal cyst ultrasound.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Renal_cyst_ultrasound.jpg",
+    "sourceDescription": "Renal cyst as seen on abdominal ultrasound. Device: GE Logiq E10",
+    "artist": "Ptrump16",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "3fa0e495be7187dac733b0765ed61689f64460c4",
+    "localSha256": "2e145ad98068fef64a87eb55c2e0cc049d5e44461f0f1634159ddf0817878799",
+    "width": 1552,
+    "height": 970,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-052",
+    "groupKey": "abdomen-1004-052",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-052.jpg",
+    "sourceTitle": "Morbus Crohn MR-Sellink T2FS cor.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Morbus_Crohn_MR-Sellink_T2FS_cor.jpg",
+    "sourceDescription": "MR-Enteroklyse (MR-Sellink) bei Morbus Crohn mit langstreckigem Befall des terminalen Ileums, T2w FS",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "01a046cabf3ef512b9e88aadffff9edd0bc78cee",
+    "localSha256": "b5f3ace8f313addfb61f26c974d87f045fd8f14acbf272fe17de27b23647bdfa",
+    "width": 753,
+    "height": 923,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-053",
+    "groupKey": "abdomen-1004-053",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-053.jpg",
+    "sourceTitle": "Grosser eingebluteter extra- gastrointestinaler Stromatumor 69W - CT - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grosser_eingebluteter_extra-_gastrointestinaler_Stromatumor_69W_-_CT_-_001.jpg",
+    "sourceDescription": "Großer, eingebluteter, extra- gastrointestinaler Stromatumor mit Ursprung wohl aus dem Omentum majus. Computertomografie links ateriell, rechts portalvenös, oberen axial, unten koronar.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "467edc52acec348cd35ea0bdc485ff547628dfe4",
+    "localSha256": "ac5bbaa648aa8f55d2cbacbe7c07b23882d99a7136762e86d687e59cd9661c86",
+    "width": 1695,
+    "height": 1165,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-054",
+    "groupKey": "abdomen-1004-054",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-054.png",
+    "sourceTitle": "Pfortaderthrombose 01 001.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pfortaderthrombose_01_001.png",
+    "sourceDescription": "Portal vein thrombosis in computertomography.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "baa7a470172158786c22cc32088c12a33ff2ca8e",
+    "localSha256": "4fca42b43b2b43dc17d41b566739a5000d2197e1754a3c79879d9c5bdf20c689",
+    "width": 1062,
+    "height": 832,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-055",
+    "groupKey": "abdomen-1004-055",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-055.jpg",
+    "sourceTitle": "Appendicitis epiploica.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Appendicitis_epiploica.jpg",
+    "sourceDescription": "Appendicitis epiploica in computer tomography: The surrounding fat is inflammed.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "36b2ba234d44ab3f3cea3202c9c698adc68fdcce",
+    "localSha256": "6d8c8a55c92ef1d4ec6a52adcd3f922188d8f0ae7f9d48dadd20a4d48cfc5519",
+    "width": 1182,
+    "height": 709,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-056",
+    "groupKey": "abdomen-1004-056",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-056.jpg",
+    "sourceTitle": "Sigmavolvulus mit Whirlpool Sign 24M - CT coronar - 004.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sigmavolvulus_mit_Whirlpool_Sign_24M_-_CT_coronar_-_004.jpg",
+    "sourceDescription": "Sigmavolvulus mit Whirlpool Sign in der Computertomografie koronar.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "21af5bac7cb9139c8a76cb2b3a1fa404734f0e58",
+    "localSha256": "ea00c17ee6239a08a9b132603779744aa2e7b847a18324f020a20769a843ae24",
+    "width": 1032,
+    "height": 1420,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-057",
+    "groupKey": "abdomen-1004-057",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-057.jpg",
+    "sourceTitle": "Hufeisenniere 04 - CT - coronar - 017.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hufeisenniere_04_-_CT_-_coronar_-_017.jpg",
+    "sourceDescription": "This image is part of a series which can be scrolled interactively with the mousewheel or mouse dragging. This is done by using Template:Imagestack . The series is found in the category Horseshoe kidney - CT - case 004 . Hufeisenniere in der Computertomographie.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "b42c7e14e30a571092079eaa11a99a3e830b6963",
+    "localSha256": "5315a81270afc50c0b2a30766de1fa2ade4255acb57886fa19377f4819ac54a7",
+    "width": 486,
+    "height": 512,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-058",
+    "groupKey": "abdomen-1004-058",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-058.jpg",
+    "sourceTitle": "Meckel-Divertikel mit akut-entzuendlichen Veraenderungen 80W - CT coronar KM pv - 005.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meckel-Divertikel_mit_akut-entzuendlichen_Veraenderungen_80W_-_CT_coronar_KM_pv_-_005.jpg",
+    "sourceDescription": "Meckel-Divertikel mit akut-entzündlichen Veränderungen in der Computertomografie, koronare Schichten.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "02284a89abc4010ae6c0848ccce0c992a721f2f0",
+    "localSha256": "085b3dd737a1d85ac5e5e68951b5587052a8de349c1bfaa6ded730d74658df0b",
+    "width": 2044,
+    "height": 1429,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-059",
+    "groupKey": "abdomen-1004-059",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-059.jpg",
+    "sourceTitle": "Pneumatosis intestinalis CT LF Darmischaemie cor.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pneumatosis_intestinalis_CT_LF_Darmischaemie_cor.jpg",
+    "sourceDescription": "Pneumatosis intestinalis in der Computertomographie bei Darmischämie. Lungenfenster zur besseren Darstellung der Gaseinlagerungen in die Darmwände. Coronare Rekonstruktion.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "09bb2632db385eba4ad76701ed03e05121746f09",
+    "localSha256": "df0e07fd71b1f7ec21007ed88e49e4da087b1c3892a9c80d39bc2258161e6497",
+    "width": 1598,
+    "height": 1141,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-060",
+    "groupKey": "abdomen-1004-060",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-060.jpg",
+    "sourceTitle": "Endovasc.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Endovasc.jpg",
+    "sourceDescription": "Abdominal aortic endoprosthesis, CT scan",
+    "artist": "Dr Haudebourg",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+    "originalSha1": "30941fd267006e2e94d648e8556622d127bf0a64",
+    "localSha256": "560296fa7d101fdf118fab85df10567999e76b661f8e7e911c8eca96918bad41",
+    "width": 512,
+    "height": 512,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-061",
+    "groupKey": "abdomen-1004-061",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-061.jpg",
+    "sourceTitle": "Simple cyst with posterior enhancement.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Simple_cyst_with_posterior_enhancement.jpg",
+    "sourceDescription": "Simple cyst with posterior enhancement in an adult kidney. Measurement of kidney length on the US image is illustrated by ‘+’ and a dashed line. For context, see en:Renal ultrasonography",
+    "artist": "Kristoffer Lindskov Hansen, Michael Bachmann Nielsen and Caroline Ewertsen",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "originalSha1": "2854b47bfe37ec869fdbe543918bbe826468c7d5",
+    "localSha256": "6889f11110629cceeb372c1664c9d36847158cd52ccb2b2c87484cc091b67c80",
+    "width": 1008,
+    "height": 728,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-062",
+    "groupKey": "abdomen-1004-062",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-062.jpg",
+    "sourceTitle": "Morbus Crohn Oesophagus - 36m - CT cor - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Morbus_Crohn_Oesophagus_-_36m_-_CT_cor_-_001.jpg",
+    "sourceDescription": "Ausgedehnter Befall des Ösophagus bei Morbus Crohn. Man erkennt die destruierte Kontur des Ösophagus mit Fistelungen auch noch subdiaphragmal.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "56510ec82cd0d5ec781dca1afffa31a1d9b5a61a",
+    "localSha256": "593ac853e0f3085dfaab07e592388a82e5a8c23c80516edd4e61400208d2c7b0",
+    "width": 822,
+    "height": 819,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-063",
+    "groupKey": "abdomen-1004-063",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-063.jpg",
+    "sourceTitle": "Mehrfokaler mesenterialer gastrointestinaler Stromatumor 64M - CT - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mehrfokaler_mesenterialer_gastrointestinaler_Stromatumor_64M_-_CT_-_001.jpg",
+    "sourceDescription": "Mehrfokaler mesenterialer gastrointestinaler Stromatumor: Computertomografie links 3 Schichten axial, rechts koronar und sagittal.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "a1291040b7c6ae435483fff31b3fb835207bb730",
+    "localSha256": "885876315722ae46095a29f0f9544f32c85e5bdc3272b7052acba98467820ee6",
+    "width": 1307,
+    "height": 1430,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-064",
+    "groupKey": "abdomen-1004-064",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-064.png",
+    "sourceTitle": "Pfortaderthrombose 01 003.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pfortaderthrombose_01_003.png",
+    "sourceDescription": "Portal vein thrombosis in computertomography.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "cf611f3afe48d6e0824fc21efb29a9fa6ee7dbe8",
+    "localSha256": "626a745f76a5540508ae6e7f44b58086e4d3c77da978506b5605cd47030c0b98",
+    "width": 1062,
+    "height": 832,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-065",
+    "groupKey": "abdomen-1004-065",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-065.png",
+    "sourceTitle": "Appendicitis epiploica 70jw - Sono - 001.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Appendicitis_epiploica_70jw_-_Sono_-_001.png",
+    "sourceDescription": "Appendicitis epiploica in sonography. Surgically confirmed: torsion of the appendix epiploica.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "0bf111b916e9d14c4ebcd53ea85dc4a7a921c7da",
+    "localSha256": "e7b920805ca0895ff076b93643bf43803ec53112c7ffa5ddb8c8edb334c3cdf9",
+    "width": 1368,
+    "height": 563,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-066",
+    "groupKey": "abdomen-1004-066",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-066.jpg",
+    "sourceTitle": "Sigmavolvulus mit Whirlpool Sign 24M - CT coronar - 005.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sigmavolvulus_mit_Whirlpool_Sign_24M_-_CT_coronar_-_005.jpg",
+    "sourceDescription": "Sigmavolvulus mit Whirlpool Sign in der Computertomografie koronar.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "baddde5035d1ef39a430c0f9f0a70e1f52bea10c",
+    "localSha256": "05335a5be6020f84a82b2915007554b2e741291d0509d835076d4e67ba9bfba1",
+    "width": 1032,
+    "height": 1420,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-067",
+    "groupKey": "abdomen-1004-067",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-067.jpg",
+    "sourceTitle": "Hufeisenniere 06 - CT - coronar - 002.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hufeisenniere_06_-_CT_-_coronar_-_002.jpg",
+    "sourceDescription": "This image is part of a series which can be scrolled interactively with the mousewheel or mouse dragging. This is done by using Template:Imagestack . The series is found in the category Horseshoe kidney - CT - case 006 . Hufeisenniere in der Computertomographie. Zusätzlich findet sich eine kleiner, partieller Milzinfarkt.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "2af123418d80ddf68a015807322b5c47696ae26d",
+    "localSha256": "a4972809c3dac49aa77d1f5c3f9306c1481f1e9c27075a88bd8af04f9d7658ac",
+    "width": 480,
+    "height": 512,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-068",
+    "groupKey": "abdomen-1004-068",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-068.jpg",
+    "sourceTitle": "Meckel-Divertikel mit akut-entzuendlichen Veraenderungen 80W - CT coronar KM pv - 006.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meckel-Divertikel_mit_akut-entzuendlichen_Veraenderungen_80W_-_CT_coronar_KM_pv_-_006.jpg",
+    "sourceDescription": "Meckel-Divertikel mit akut-entzündlichen Veränderungen in der Computertomografie, koronare Schichten.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "6d034d3059d078fab20ccc6435968ad064842314",
+    "localSha256": "7742d81df4f8a74c758487f68574d023e5711ae5ee2c1651b2b1bed5e78b5ff3",
+    "width": 2044,
+    "height": 1429,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-069",
+    "groupKey": "abdomen-1004-069",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-069.jpg",
+    "sourceTitle": "Pneumatosis intestinalis und hepatis bei NEC 0W - CR ap - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pneumatosis_intestinalis_und_hepatis_bei_NEC_0W_-_CR_ap_-_001.jpg",
+    "sourceDescription": "Pneumatosis intestinalis und hepatis bei nekrotisierender Enterokolitis",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "ab5eb5151c471a44c033e47010c9554019f192c1",
+    "localSha256": "cb038906e0c5dfe5e15929127216d1cfb2430aaa54a7d7e862d6021be52ef41f",
+    "width": 1208,
+    "height": 968,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-070",
+    "groupKey": "abdomen-1004-070",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-070.jpg",
+    "sourceTitle": "Renal cell carcinoma with both cystic and solid components.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Renal_cell_carcinoma_with_both_cystic_and_solid_components.jpg",
+    "sourceDescription": "Renal cell carcinoma with both cystic and solid components located in the cortex. Measurement of tumor on the US image is illustrated by ‘+’ and a dashed line. For context, see en:Renal ultrasonography",
+    "artist": "Kristoffer Lindskov Hansen, Michael Bachmann Nielsen and Caroline Ewertsen",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "originalSha1": "00ba8f70ea740b4501cbfb92ea43b33d6fe06380",
+    "localSha256": "ca16e7a6e319bb3e2edc90f73b74b4de1def840cc69df02292d0f6ea02d35828",
+    "width": 918,
+    "height": 610,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-071",
+    "groupKey": "abdomen-1004-071",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-071.png",
+    "sourceTitle": "Appendicitis epiploica CT coronar 2.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Appendicitis_epiploica_CT_coronar_2.png",
+    "sourceDescription": "Epiploic appendagitis in computertomography coronal view.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "a74134d7a8c21c5fd7e5c687803ba1eca3bbe16e",
+    "localSha256": "7548c5091e43ab33a13ff07c9a00d9c16a68cc7e5f2bd4d7af177a34ea2c1aa0",
+    "width": 780,
+    "height": 964,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-072",
+    "groupKey": "abdomen-1004-072",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-072.png",
+    "sourceTitle": "Appendicitis epiploica CT sagittal 2.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Appendicitis_epiploica_CT_sagittal_2.png",
+    "sourceDescription": "Epiploic appendagitis in computertomography sagittal view.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "cd5863372606ff990682b6ce5415aee688a91dcb",
+    "localSha256": "0f830382070768309e0767633a5f8fee1f770d39b97bca4e6daa3d9f33326ff3",
+    "width": 672,
+    "height": 834,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-073",
+    "groupKey": "abdomen-1004-073",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-073.jpg",
+    "sourceTitle": "Appendicitis (CT angiogram) (Radiopaedia 154713-127660 Axial 244).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Appendicitis_(CT_angiogram)_(Radiopaedia_154713-127660_Axial_244).jpg",
+    "sourceDescription": "Radiopaedia case ID: 154713 Study ID: 127660 Image ID: 59891292 Plane projection: Axial Modality: System: Gastrointestinal Author location: Atlanta, United States",
+    "artist": "Stefan Tigges",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+    "originalSha1": "08d22a76bd4cb44b4adc53f028fba4f72b67b180",
+    "localSha256": "5f7d8ca032008855f661f5cceccfd03b1d31b6fb78e5fe6420a67171d79a382f",
+    "width": 740,
+    "height": 699,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-074",
+    "groupKey": "abdomen-1004-074",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-074.jpg",
+    "sourceTitle": "Appendicitis (CT angiogram) (Radiopaedia 154713-127660 Axial 222).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Appendicitis_(CT_angiogram)_(Radiopaedia_154713-127660_Axial_222).jpg",
+    "sourceDescription": "Radiopaedia case ID: 154713 Study ID: 127660 Image ID: 59891314 Plane projection: Axial Modality: System: Gastrointestinal Author location: Atlanta, United States",
+    "artist": "Stefan Tigges",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+    "originalSha1": "a1b97d650fad37e797b741f2ea91f9e6cfa167ad",
+    "localSha256": "f2b32733a70ff087e51cf12459c60a908295e372393ea2532063e505b3e2cdf2",
+    "width": 740,
+    "height": 699,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "abdomen-1004-075",
+    "groupKey": "abdomen-1004-075",
+    "system": "腹部",
+    "image": "assets/images/expanded/abdomen-1004-075.jpg",
+    "sourceTitle": "Appendicitis (CT angiogram) (Radiopaedia 154713-127660 Axial 214).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Appendicitis_(CT_angiogram)_(Radiopaedia_154713-127660_Axial_214).jpg",
+    "sourceDescription": "Radiopaedia case ID: 154713 Study ID: 127660 Image ID: 59891322 Plane projection: Axial Modality: System: Gastrointestinal Author location: Atlanta, United States",
+    "artist": "Stefan Tigges",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+    "originalSha1": "c69f99cec9c4abf7ff35c199da8872d474117c2c",
+    "localSha256": "ee5fe045ade3aa81f9b718e231eebb9e25adcb2f770e6f2f90c3d150b732aa8e",
+    "width": 740,
+    "height": 699,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-001",
+    "groupKey": "bone-1004-001",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-001.jpg",
+    "sourceTitle": "Postarthritische Ankylosen - Roe HWS.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Postarthritische_Ankylosen_-_Roe_HWS.jpg",
+    "sourceDescription": "Ankylosen der Halswirbelsäule bei einer ca. 40-jährigen Frau. Anamnestisch traten Beschwerden in der späten Jugend auf, so dass am ehesten von einer abgelaufenen juvenilen Arthritis auszugehen ist. Das Bild wäre auch passend. Aktuell keine Beschwerden, die auf eine aktive Arthritis hindeuten. Die Versteifung schließt das Hinterhaupt und das Atlantoaxiale Gelenk mit ein. Nebenbefundlich Halsrippe rechts.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "347be16723f208d1248da50d2f2a053ab3c709ca",
+    "localSha256": "fe24b1872325a3ae4f65eb2b6dcafc8991910a63343f3b51004dacc86724ab1c",
+    "width": 2116,
+    "height": 1928,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-002",
+    "groupKey": "bone-1004-002",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-002.jpg",
+    "sourceTitle": "Abrissfraktur des Trochanter major rechts mit Versorgung 83W - CR - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abrissfraktur_des_Trochanter_major_rechts_mit_Versorgung_83W_-_CR_-_001.jpg",
+    "sourceDescription": "Avulsion fracture of the greater trochanter of the right side, accident photograph on the left, postoperative image on the right after treatment with a hook plate.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "7240702b029b3e99d00a47a09736333f63ce593d",
+    "localSha256": "206d51931fa544aa37098a0f64abb5db8fc297e2c260aec5f5788eba1051f71e",
+    "width": 1951,
+    "height": 1314,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-003",
+    "groupKey": "bone-1004-003",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-003.jpg",
+    "sourceTitle": "Humerus fracture 1300272.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Humerus_fracture_1300272.JPG",
+    "sourceDescription": "Medical X-rays",
+    "artist": "Nevit Dilmen ( talk )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "39fe7a8b20661d0aa6de0068f40799336501c4cd",
+    "localSha256": "c111c8640cc078b6e6e69b70b93210613d8c32dc33ce6c4845fb1a09276247d7",
+    "width": 2304,
+    "height": 3072,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-004",
+    "groupKey": "bone-1004-004",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-004.jpg",
+    "sourceTitle": "Medical X-Ray imaging FKJ04 nevit.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Medical_X-Ray_imaging_FKJ04_nevit.jpg",
+    "sourceDescription": "Medical X-ray showing logitudinal fracture of 2. metacarpal bone.",
+    "artist": "Nevit Dilmen ( talk )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "5063037170e38c3852e1692107c3b9836211ddec",
+    "localSha256": "438b876075afaac9436e7712ee3ba86b2e6a683f3d97e9b462653f84e15d07b0",
+    "width": 2486,
+    "height": 1974,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-005",
+    "groupKey": "bone-1004-005",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-005.jpg",
+    "sourceTitle": "Rad 1300119.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rad_1300119.JPG",
+    "sourceDescription": "Medical X-rays. Broadening of epiphysis with erlenmayer flask deformity. Commonly seen in rickets.",
+    "artist": "Nevit Dilmen ( talk )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "eeabb5679426551e53aed90920271590e6187046",
+    "localSha256": "4f6b3675664cb493f61a10bc548429bcfd38d7731ddbb5c1e1d5d4dac7c448f4",
+    "width": 2304,
+    "height": 3072,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-006",
+    "groupKey": "bone-1004-006",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-006.jpg",
+    "sourceTitle": "Hallux valgus und Digitus superductus W - CR ap und CT Volumen Rendering - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hallux_valgus_und_Digitus_superductus_W_-_CR_ap_und_CT_Volumen_Rendering_-_001.jpg",
+    "sourceDescription": "Hallux valgus und Digitus superductus.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "40cc35039c749f44f6841dd16c17fadd5c943404",
+    "localSha256": "bb70da50dfc9c004a32b311329ab1e62fe5ee39b6f01106ec5a16fbf85917cdf",
+    "width": 1315,
+    "height": 1342,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-007",
+    "groupKey": "bone-1004-007",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-007.jpg",
+    "sourceTitle": "Ossifikationen im Ansatz der Achillessehne 66M - CR seitlich - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ossifikationen_im_Ansatz_der_Achillessehne_66M_-_CR_seitlich_-_001.jpg",
+    "sourceDescription": "Ossification at the insertion of the Achilles tendon, presumably due to old trauma/old partial rupture.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "c6cc206a4c66702122883c2d525f1a188a2a5a62",
+    "localSha256": "25f729a0aadc88b3e1e73060712f18aac4dd83caffbae6a8c75057a67eabf9b5",
+    "width": 1278,
+    "height": 1286,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-008",
+    "groupKey": "bone-1004-008",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-008.jpg",
+    "sourceTitle": "Rot cuff tear x-ray.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rot_cuff_tear_x-ray.jpg",
+    "sourceDescription": "x-ray of rotator cuff tear",
+    "artist": "Micaela E.",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+    "originalSha1": "30cf47662b1efafd7ef21db5a56df76b5e3db728",
+    "localSha256": "b523438cdbd495319a32e6163eaa899a08102e0cefe0dd131ca18b7472937dd4",
+    "width": 911,
+    "height": 1416,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-009",
+    "groupKey": "bone-1004-009",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-009.jpg",
+    "sourceTitle": "Morbus Ollier Humerus Roentgen.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Morbus_Ollier_Humerus_Roentgen.jpg",
+    "sourceDescription": "X-ray showing enchondromas localized in the humerus of a 37 year old patient affected with Ollier disease",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "4ecfd5354bc82afcf671f0ecf7f5a3ea806305b9",
+    "localSha256": "12a80f2af40d6bde973a58f3a4c435ca6bacd469631878be3ff446767f0a8730",
+    "width": 1333,
+    "height": 2525,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-010",
+    "groupKey": "bone-1004-010",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-010.jpg",
+    "sourceTitle": "Chalk-Stick-Fraktur bei Morbus Bechterew LWK 1 81W - CT sagittal - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chalk-Stick-Fraktur_bei_Morbus_Bechterew_LWK_1_81W_-_CT_sagittal_-_001.jpg",
+    "sourceDescription": "Chalk stick fracture of ankylosing spondylitis at the level of L1 vertebrae.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "4a7800f11ae09300ba922c03cd896830263b7dec",
+    "localSha256": "f642f1ca9925e68b0ade17d5ac2e40498f228c5a93da0682e421cb689489cb3e",
+    "width": 1039,
+    "height": 1771,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-011",
+    "groupKey": "bone-1004-011",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-011.jpg",
+    "sourceTitle": "Restzustand nach Morbus Osgood-Schlatter 46W - CR seitlich - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Restzustand_nach_Morbus_Osgood-Schlatter_46W_-_CR_seitlich_-_001.jpg",
+    "sourceDescription": "Restzustand nach Morbus Osgood-Schlatter",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "0e9a88add274dd268ad1a9cf920da5eedc0e34f4",
+    "localSha256": "aa7c86eaad50d9e1321f8c9a606cd9154c16b70a830e93e966706db4994d5fda",
+    "width": 1154,
+    "height": 1782,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-012",
+    "groupKey": "bone-1004-012",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-012.jpg",
+    "sourceTitle": "Femurfraktur unter Bisphosphonattherapie 57W - CT Topo Volumen Rendering postoperatives Roentgen - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Femurfraktur_unter_Bisphosphonattherapie_57W_-_CT_Topo_Volumen_Rendering_postoperatives_Roentgen_-_001.jpg",
+    "sourceDescription": "Right femoral shaft fracture during bisphosphonate therapy for breast cancer: There is a short, transverse fracture of proximal shaft fracture with pre-existing thickening of the outer cortex. This signifies a previous stress fracture that has not yet been displaced which is later being displaced by more than the shaft width. The pre-existing fissure and thickening can best be seen after bone fixation (right image). There is also a left proximal femoral fracture with intramedullary nail already inserted. Images from left to right: computed tomography topogram of the pelvis and bilateral femur, volume rendering of the right femur, and postoperative X-ray of the right femur after bone fixation.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "e5ab994acf299224a89674d7b17337f5ab6a38ae",
+    "localSha256": "3d21774ddd49f1df1e7ce3d7c7be414ef21724a5b27eb49f0d5fbef56a6406f9",
+    "width": 1731,
+    "height": 1100,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-013",
+    "groupKey": "bone-1004-013",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-013.jpg",
+    "sourceTitle": "Ausgedehntes extraossaeres Rezidiv eines multiple Myeloms 71W - CT - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ausgedehntes_extraossaeres_Rezidiv_eines_multiple_Myeloms_71W_-_CT_-_001.jpg",
+    "sourceDescription": "Ausgedehntes, extraossäres Rezidiv eines multiplen Myeloms pleural und pelvin.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "44cc82059c396e30439b2bc82f1ec08a4de3e5e4",
+    "localSha256": "765b6ce3562955d1dfe27612a1f4af15ad7fa37df20850bcda0fcc29225ef92f",
+    "width": 1688,
+    "height": 1402,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-014",
+    "groupKey": "bone-1004-014",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-014.png",
+    "sourceTitle": "ScleroticmetastaticdiseasePelvis.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ScleroticmetastaticdiseasePelvis.png",
+    "sourceDescription": "Sclerosis of the bones of the pelvis due to prostate cancer metastases",
+    "artist": "James Heilman, MD",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "d2b0fd89d3dcc315801296494337dbd7acd5a308",
+    "localSha256": "de1da4b1ffa53d50d4d60e96bda2b6afe138a67e364c271b384258cc9c2ebe77",
+    "width": 941,
+    "height": 809,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-015",
+    "groupKey": "bone-1004-015",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-015.png",
+    "sourceTitle": "Morbus Paget Becken1.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Morbus_Paget_Becken1.png",
+    "sourceDescription": "Paget's disease of bone in left pelvis shown in CT. Notice the seeds in the prostate after brachytherapy.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "de84572bc08f782465b1eac2353c0740a5401ba8",
+    "localSha256": "546ba3f4dceb710da87275930cbae410ef9e98fed03a65d5a093ca29286898a1",
+    "width": 1496,
+    "height": 1044,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-016",
+    "groupKey": "bone-1004-016",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-016.jpg",
+    "sourceTitle": "Osteopetrosis-4.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Osteopetrosis-4.jpg",
+    "sourceDescription": "Sandwich vertebrae.",
+    "artist": "Dr Maulik S Patel",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "originalSha1": "2c124960699269b43ebeee7a280fd863b14c3a43",
+    "localSha256": "8ec38b8d3b53946f1b53c0d6e27838ac41701c6f38ddd32b0ff67cbc99d7a159",
+    "width": 843,
+    "height": 1024,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-017",
+    "groupKey": "bone-1004-017",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-017.jpg",
+    "sourceTitle": "Melorheostosis Bone Disease (27874857608).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Melorheostosis_Bone_Disease_(27874857608).jpg",
+    "sourceDescription": "An x-ray image of a patient with melorheostosis shows excess bone formation, likened to dripping candle wax. Researchers at the National Institutes of Health worked with 15 patients from around the world to uncover a genetic basis of the rare bone disease. The results, appearing in Nature Communications, offer potential treatment targets for this rare disease, provide important clues about bone development, and may lead to insights about fracture healing and osteoporosis. Read more: &lt;a href=\" https://www.nih.gov/news-events/news-releases/nih-researchers-crack-mystery-behind-rare-bone-disorder \" rel=\"nofollow\"&gt;www.nih.gov/news-events/news-releases/nih-researchers-cra...&lt;/a&gt; Credit: National Institutes of Health",
+    "artist": "NIH Image Gallery from Bethesda, Maryland, USA",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+    "originalSha1": "db4f3a8ec689fb0ccc5f6ebad6fa324fe8a7698a",
+    "localSha256": "e1aa68f96ea3ea195279c8b68648891303e253987ef5cf1441df4ca88be1a9b3",
+    "width": 1157,
+    "height": 907,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-018",
+    "groupKey": "bone-1004-018",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-018.jpg",
+    "sourceTitle": "Rad 1606 Nevit Osteopoikilosis.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rad_1606_Nevit_Osteopoikilosis.jpg",
+    "sourceDescription": "Osteopoikilosis",
+    "artist": "Nevit Dilmen ( talk )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "6030507588da7f3f4da6e2e4f99155c992d35904",
+    "localSha256": "2d01d20789cdc490fdfc8d175fd56d38df17a864e53cf146b5db1e63b58d2bec",
+    "width": 2486,
+    "height": 1974,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-019",
+    "groupKey": "bone-1004-019",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-019.jpg",
+    "sourceTitle": "X ray for osteogenesis imperfecta.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:X_ray_for_osteogenesis_imperfecta.jpg",
+    "sourceDescription": "Infant with multiple fractures and bowing of long bones",
+    "artist": "Ali zeki",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "originalSha1": "10b137f1b3cb3914e844df90405903a3400d96b8",
+    "localSha256": "10e8e6ef01984e5ff225268f722fb1b85aa6e7436032cc7b594868771f091e20",
+    "width": 3024,
+    "height": 4032,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-020",
+    "groupKey": "bone-1004-020",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-020.jpg",
+    "sourceTitle": "Cleidocranial dysplasia teeth.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cleidocranial_dysplasia_teeth.jpg",
+    "sourceDescription": "Panoramic view of the jaws showing multiple unerupted supernumerary teeth mimicking premolar, missing gonial angles and underdeveloped maxillary sinuses.",
+    "artist": "see below",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalSha1": "0776fb5f170665e78d08dc4d305055a336aa28c8",
+    "localSha256": "88e22ac5316267ccff6d51dcffa3a189a4ac23424dd04edbbce2436f62b2668d",
+    "width": 1145,
+    "height": 537,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-021",
+    "groupKey": "bone-1004-021",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-021.jpg",
+    "sourceTitle": "12891 2022 5502 Fig1 HTML.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:12891_2022_5502_Fig1_HTML.jpg",
+    "sourceDescription": "Charcot neuroarthropathy in hands after cervical central cord syndrome: six months after spinal cord injury, painless swellings and degenerative changes of both proximal and distal interphalangeal joints at X-ray of the hands",
+    "artist": "Wenting Wang, Anni Tong, Nan Liu, Fin Biering-Soerensen, Shuai Tong",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "originalSha1": "6b6a84ae36fe4d6c9c9f3dbad6dd627c29467013",
+    "localSha256": "f614964b659eefa28c90d042e0f108d55974ad28a307a2037560eeb760f248a4",
+    "width": 595,
+    "height": 726,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-022",
+    "groupKey": "bone-1004-022",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-022.jpg",
+    "sourceTitle": "Boxers fracture-lateral xray.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boxers_fracture-lateral_xray.JPG",
+    "sourceDescription": "Lateral left hand x-ray showing fracture at the neck of the fifth metacarpal bone , commonly refered to as a Boxer's fracture . This x-ray was taken in Maracay, Venezuela. This is the same patient as File:Boxers fracture.JPG .",
+    "artist": "Roberto J. Galindo",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "a4d2f2e691746b2593cddda266702adb418494d6",
+    "localSha256": "49e7713d2248475ae008e90c9b56c07c7f9cfe8c64dfc945baccaef55511f3f0",
+    "width": 2604,
+    "height": 3472,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-023",
+    "groupKey": "bone-1004-023",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-023.jpg",
+    "sourceTitle": "Bennet's fracture X-ray (2).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bennet%27s_fracture_X-ray_(2).jpg",
+    "sourceDescription": "S-ray 24 days after surgery of Bennet's fracture basis MTC primi manus 1. sin (S62.20) which was treated by alignement of a fracture and inside fixation by two titanium screws MS",
+    "artist": "I would appreciate being notified if you use my work outside Wikimedia. Do not copy this image illegally by ignoring the terms of the license below, as it is not in the public domain. If you would like special permission to use, license, or purchase the image please contact me to negotiate terms. More of my work can be found in my personal gallery .",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "987acdc9fb95b8c206889df24003307e73d36d06",
+    "localSha256": "c916ced02f1ee95d071bcc8110c961280d5ce510f673374a4acc4fd89d03bcee",
+    "width": 1691,
+    "height": 3102,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-024",
+    "groupKey": "bone-1004-024",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-024.jpg",
+    "sourceTitle": "Rolando-Fraktur 37M - CR - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rolando-Fraktur_37M_-_CR_-_001.jpg",
+    "sourceDescription": "Rolando-Fraktur: Im wesentlich dreiteilige Fraktur der Basis des Metacarpale I mit Gelenkbeteiligung im carpometacarpalen Gelenk.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "76709a87b94739cc00968fc6622fc8f9d9fe83bf",
+    "localSha256": "de3e524404bc6f8088c65467ac9826628a426bdfd4bac23c9e006f57bbc3172b",
+    "width": 2004,
+    "height": 1408,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-025",
+    "groupKey": "bone-1004-025",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-025.png",
+    "sourceTitle": "MalletFinger.PNG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:MalletFinger.PNG",
+    "sourceDescription": "A fracture of the distal phalanx resulting in a mallet finger.",
+    "artist": "James Heilman, MD",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "8f624c46d5cb739c3c70c5bc31dea5b570b5726d",
+    "localSha256": "f85bbbd5441292c34a9f83849a476870bc5b29578a352f884b6987b59c708bde",
+    "width": 576,
+    "height": 836,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-026",
+    "groupKey": "bone-1004-026",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-026.jpg",
+    "sourceTitle": "Okkulte Tibiakopffraktur.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Okkulte_Tibiakopffraktur.jpg",
+    "sourceDescription": "Occulte fracture of tibia. Indirect fracture-signs.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "5dbe677d00fa7feba1c7dae1b4cb458c08d0e71d",
+    "localSha256": "9f2f6e1e6dc68ca52f9c5f95892727bcd303b9a230205840d465948aca3d18c7",
+    "width": 1251,
+    "height": 1044,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-027",
+    "groupKey": "bone-1004-027",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-027.jpg",
+    "sourceTitle": "Lisfranc fracture.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lisfranc_fracture.jpg",
+    "sourceDescription": "Traumatic Lisfranc fracture with fractures of the 2nd to 4th distal metatarsals.",
+    "artist": "James Heilman, MD",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "originalSha1": "940efe20cbd02772bda2fe46da27812942d040af",
+    "localSha256": "0d5d84f4c5d6def4584ff2ac05ede3be8a348da1be4373ebe164d3904f4488f8",
+    "width": 1534,
+    "height": 2858,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-028",
+    "groupKey": "bone-1004-028",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-028.jpg",
+    "sourceTitle": "Fracture tibia+fibula réduite.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fracture_tibia%2Bfibula_r%C3%A9duite.jpg",
+    "sourceDescription": "Ici, un tibia et une fibula fracturés sur un chiot, avec une grosse esquille, après réduction. La réparation a été faite avec un pansement de Robert-Jones, qui a grosso-modo les mêmes indications qu'une résine. Une chirurgie aurait été plus indiquée mais les gens n'en avaient pas les moyens.",
+    "artist": "Fourrure ( http://www.boulesdefourrure.fr )",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "originalSha1": "a5be83d1d76c4b0a72399af021ac7ad80112f059",
+    "localSha256": "761e599d97bf0e0841e34bb393cc33d43fbdfa5478ede87c36fff0f312108c01",
+    "width": 3264,
+    "height": 2448,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-029",
+    "groupKey": "bone-1004-029",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-029.jpg",
+    "sourceTitle": "Calcaneal fragment - lateral.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Calcaneal_fragment_-_lateral.jpg",
+    "sourceDescription": "X-ray of the ankle of a 97 year old man who escaped from a retirement home on a powered wheelchair but drove into a ditch, resulting in a gash on his left lower leg. The image shows a 2 x 1 cm long posterior fragment, presumably from the calcaneus . It looks corticalized, indicating it was caused by an injury far earlier in life.",
+    "artist": "Mikael Häggström",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalSha1": "d7ce99b6cdbc9dbeadbc5ec800c2d1bc1cfb94f0",
+    "localSha256": "06375c4d62f3fd5f1cc6a9b1e0d5f2bfe68c5e46161a3e9a43f13dca2a22b8a6",
+    "width": 1301,
+    "height": 1033,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-030",
+    "groupKey": "bone-1004-030",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-030.jpg",
+    "sourceTitle": "Aitken-I-Fraktur der distalen Tibia 11W - CR und CT - 001 - Thurstan Holland fragment.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aitken-I-Fraktur_der_distalen_Tibia_11W_-_CR_und_CT_-_001_-_Thurstan_Holland_fragment.jpg",
+    "sourceDescription": "Salter-Harris II (Aitken-I-Fraktur) der distalen Tibia mit Hervorhebung des metaphysären Fragments, welches mit der Epiphyse verbunden bleibt, so genanntes Thurstan Holland-Fragment.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "61f35ebec56d26304951ce5082971470ce51e26d",
+    "localSha256": "8f5da02feaa078423c8df9563b3d845947feccb41f988ffaf55ecbf5c92326a3",
+    "width": 1840,
+    "height": 675,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-031",
+    "groupKey": "bone-1004-031",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-031.jpg",
+    "sourceTitle": "Osteogenic sarcoma2.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Osteogenic_sarcoma2.jpg",
+    "sourceDescription": "Metastatic osteosarcoma",
+    "artist": "Scott Dulebohn, MD, S Bhimji MD",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "originalSha1": "e4ffc6ff320f138c2f3f6a03a156e02d60ca45ab",
+    "localSha256": "5c02d9940b01059bdb22fd677b4f5d969eff59100c6011044550ff0db3c420d0",
+    "width": 800,
+    "height": 801,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-032",
+    "groupKey": "bone-1004-032",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-032.jpg",
+    "sourceTitle": "Thoracic Spine CT Scan Imaging Navi Mumbai.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thoracic_Spine_CT_Scan_Imaging_Navi_Mumbai.jpg",
+    "sourceDescription": "Diagnostic Thoracic Spine CT Scan – Mid-Back Imaging, Navi Mumbai. A high-definition CT scan of the thoracic spine (mid-back) used to evaluate vertebrae T1–T12 for fractures, disc issues, or structural abnormalities in Navi Mumbai.",
+    "artist": "Goleisureintl",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "originalSha1": "f7f4727e2120aab70d8bed276656cb0a702261a3",
+    "localSha256": "a3e5fdc6d95bb2fb5811d3b269bd88854c8ad258792dd8e9f046ac313fbf822d",
+    "width": 1300,
+    "height": 510,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-033",
+    "groupKey": "bone-1004-033",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-033.jpg",
+    "sourceTitle": "Transscaphoid perilunate fracture-dislocation - 39jm - CT sagittal - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Transscaphoid_perilunate_fracture-dislocation_-_39jm_-_CT_sagittal_-_001.jpg",
+    "sourceDescription": "Perilunäre Luxation mit Luxation des Kapitatum nach dorsal und Fraktur durch des Scaphoid mit Versatz des distalen Endes ebenfalls nach dorsal. CT sagittal: A zeigt das hinter dem Lunatum stehende Kapitatum, B das proximale Fragment des Scaphoids, C das distale.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "1b1b8c61418bce2c1475b6ba25c0be7920fff4a2",
+    "localSha256": "58c626e5631a261bf481261e940f893ea4fdca19f327dcaf8749fbd3d59c094e",
+    "width": 3372,
+    "height": 1882,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-034",
+    "groupKey": "bone-1004-034",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-034.png",
+    "sourceTitle": "Osteoidosteom Kontrastmitteldynamik.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Osteoidosteom_Kontrastmitteldynamik.png",
+    "sourceDescription": "Osteoidosteom der Tibia in der Computertomographie (rechts Knochenfenster nativ, links Kontrastmitteldynamik). Man erkennt den kortikalen Defekt und die umgebende Sklerose. In der KM-Dynamik zeigt die untere Kurve den Dichteanstieg in der Arterie nach KM-Gabe, die oberste Kurve den parallel dazu verlaufenden Anstieg im Osteoidosteom.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "1eb214f6b574db5e40e61448fe470577ac41e71d",
+    "localSha256": "3ee2d7d4ef922b1d61bb6e2f5d92b364fc1a02a25f8d2284132d4759239eb6a6",
+    "width": 1459,
+    "height": 773,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-035",
+    "groupKey": "bone-1004-035",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-035.jpg",
+    "sourceTitle": "Tubercule de Tillaux Chaput bei Unterschenkelfraktur 64W - CT axial Volumen Rendering CR - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tubercule_de_Tillaux_Chaput_bei_Unterschenkelfraktur_64W_-_CT_axial_Volumen_Rendering_CR_-_001.jpg",
+    "sourceDescription": "Tubercule de Tillaux Chaput als Zusatzverletzung im Sinne eines ossären Ausrisses des vorderen Anteils der tibiofibularen Syndesmose bei Unterschenkelfraktur.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "2a2542d38ef57440c4c461ad731f29ef08a5dbbc",
+    "localSha256": "59d34f8b12446c01c0148a7061b5e55d64da9096b5af71c6f456b96ef9463f33",
+    "width": 1782,
+    "height": 1447,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-036",
+    "groupKey": "bone-1004-036",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-036.jpg",
+    "sourceTitle": "Aitken I- Salter-Harris- II Fraktur des distalen Radius 9M - CR 2 Ebenen - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aitken_I-_Salter-Harris-_II_Fraktur_des_distalen_Radius_9M_-_CR_2_Ebenen_-_001.jpg",
+    "sourceDescription": "Aitken I- Salter-Harris- II fracture of the distal radius",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "dbea92126e0d1a70f9174f3f877e8d4c2f23c243",
+    "localSha256": "fd033cd1fdcc8c2d1bed19e6d89bd27f2126ab4007fd8a4843a41abacf497f76",
+    "width": 1478,
+    "height": 1312,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-037",
+    "groupKey": "bone-1004-037",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-037.png",
+    "sourceTitle": "44-01-Nebenbefund Schulter-TEP-Luxation links.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:44-01-Nebenbefund_Schulter-TEP-Luxation_links.png",
+    "sourceDescription": "Additional finding in the chest x-ray: dislocation of the shoulder prosthesis on the left shoulder.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "48b3fe0b9b60f8d83bad22fbaa130739062b90c8",
+    "localSha256": "7a6f90877392f001948bae178572465a63f7103d50c303a50267dc051f7a2940",
+    "width": 1272,
+    "height": 1014,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-038",
+    "groupKey": "bone-1004-038",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-038.jpg",
+    "sourceTitle": "Different scoliosis patterns radiological and clinical highresolution.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Different_scoliosis_patterns_radiological_and_clinical_highresolution.jpg",
+    "sourceDescription": "Different scoliosis patterns: Similar Cobb angles clinically may look different depending on curve pattern. All patients on this figure have a Cobb angle of 40 degrees.",
+    "artist": "Weiss HR, Goodall D",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalSha1": "1420b2e32524cbf370170d72172b3ff117230fdb",
+    "localSha256": "681163a6aa604f0d03b629a396ea3017aaf42eef4ff823d820dc38fa8ed04604",
+    "width": 15496,
+    "height": 10952,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-039",
+    "groupKey": "bone-1004-039",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-039.jpg",
+    "sourceTitle": "Repair-of-fracture-to-right-acetabulum.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Repair-of-fracture-to-right-acetabulum.jpg",
+    "sourceDescription": "Repair-of-fracture-to-right-acetabulum",
+    "artist": "Wikimedia Commons contributor",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "originalSha1": "9d989d2d371d0d6f02ba746a3d42c571ff4d1519",
+    "localSha256": "19f3b13aee2d34ef4551e4192ea0845031d8c9f0d6c649bf85af8446c5fc1739",
+    "width": 4280,
+    "height": 3520,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-040",
+    "groupKey": "bone-1004-040",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-040.jpg",
+    "sourceTitle": "Abriss Trochanter major - Krallenplatte mit Cerclagen 78M - CR ap - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abriss_Trochanter_major_-_Krallenplatte_mit_Cerclagen_78M_-_CR_ap_-_001.jpg",
+    "sourceDescription": "Avulsion of greater trochanter. Postoperatively after refixation using a claw plate with cerclages.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "9f16b66b2870ccca45aa3e8e354e84b4ac549e37",
+    "localSha256": "0d415b84ee4bf6492e9d348125ba5525513a18ed6684f9054d37e8342bd609ae",
+    "width": 1446,
+    "height": 918,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-041",
+    "groupKey": "bone-1004-041",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-041.jpg",
+    "sourceTitle": "Humerus fracture 1300273.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Humerus_fracture_1300273.JPG",
+    "sourceDescription": "Medical X-rays",
+    "artist": "Nevit Dilmen ( talk )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "84a4ba71a613b8b5a8a6ab74359928f9b3643f01",
+    "localSha256": "f3b2ca90c30f25f005ab2ad97f90447d23efcaefe2ae6c6dc08bc976024facd1",
+    "width": 3072,
+    "height": 2304,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-042",
+    "groupKey": "bone-1004-042",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-042.jpg",
+    "sourceTitle": "Lunotriquetrale Koalition 74W - CR ap - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lunotriquetrale_Koalition_74W_-_CR_ap_-_001.jpg",
+    "sourceDescription": "Incidental finding of lunotriquetral coalition (fusion of lunate and triquetral bones) when evaluating a fracture of the base of fifth metacarpal bone.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "1f54d2aea6995f0d19c788098fbcaf97375fbc3b",
+    "localSha256": "c432426d74577a3e503526c981df7c24972516dca40119bfead13d7944a6af7b",
+    "width": 1473,
+    "height": 1305,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-043",
+    "groupKey": "bone-1004-043",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-043.jpg",
+    "sourceTitle": "Krallenzehe D2 bei Hallux valgus 64jw - Roe seitlich - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Krallenzehe_D2_bei_Hallux_valgus_64jw_-_Roe_seitlich_-_001.jpg",
+    "sourceDescription": "Röntgenbild im streng seitlichen Strahlengang im Stehen von einer Krallenzehe bei D2 mit deutlich überstrecktem Grundgelenk. Die Zehenspitze liegt nicht mehr dem Boden auf. Die 64-jährigen Patientin litt auch an einem Hallux valgus.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "d47bdf6d4db9358d98c8fb87391fe211efd3fd30",
+    "localSha256": "c47989204a66b4b83561fc8599dd5f51e5b6bc713be37816fbaf16c4495aeea7",
+    "width": 1535,
+    "height": 900,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-044",
+    "groupKey": "bone-1004-044",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-044.jpg",
+    "sourceTitle": "InSpace-Balloon Effekt im Roentgenbild 80W - CR ap - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:InSpace-Balloon_Effekt_im_Roentgenbild_80W_-_CR_ap_-_001.jpg",
+    "sourceDescription": "InSpace-Balloon Effekt im Röntgenbild: Wenn bei fortgeschrittenem Defekt der Rotatorenmanschette eine andere Behandlung (z.B. auch Prothese) nicht möglich ist, kann dieses Kissen unter dem Acromion athroskopisch implantiert werden. Dadurch wird der Hochstand des Humeruskopfes vermindert und dieser besser zentriert, was den gesamten Bewegungsablauf verbessern kann. Links präoperativ mit dem Humeruskopf unmittelbar am Acromion, rechts postoperativ (noch mit Verband).",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "3caf55f2dc5b71b578b23c8884af8acaf17fb7d1",
+    "localSha256": "3c915358868f292738ae4ae9df76152c20e87f47e8c972757d3a2faee7542c92",
+    "width": 1262,
+    "height": 884,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-045",
+    "groupKey": "bone-1004-045",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-045.png",
+    "sourceTitle": "Morbus Ollier Radius Roentgen.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Morbus_Ollier_Radius_Roentgen.png",
+    "sourceDescription": "X-ray showing enchondromas localized in the lower part of the radius of a 37 year old patient affected with Ollier disease",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "a69470e0fdc7563f99d760a4424349f70f3164a7",
+    "localSha256": "a5bfe3ed57ebb9daad7f80d3b066dcdb8b3d97c6f927e44b6824cb8980290a1e",
+    "width": 1341,
+    "height": 1720,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-046",
+    "groupKey": "bone-1004-046",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-046.jpg",
+    "sourceTitle": "Costovertebrale Ankylose bei Morbus Bechterew CT.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Costovertebrale_Ankylose_bei_Morbus_Bechterew_CT.jpg",
+    "sourceDescription": "Ankylose des Costovertebralgelenks bei ankylosierender Spondylitis (Morbus Bechterew) in der Computertomographie.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "73d633e5bef2bb1466ad2ad40dc6c648ac7e52e5",
+    "localSha256": "562490f075e6dfe8d08392abb999aa21e7dbf544b1806063b031bfd45e4d4c3e",
+    "width": 526,
+    "height": 578,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-047",
+    "groupKey": "bone-1004-047",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-047.jpg",
+    "sourceTitle": "Residuum bei Zn Morbus Osgood-Schlatter 24W - CR seitlich - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Residuum_bei_Zn_Morbus_Osgood-Schlatter_24W_-_CR_seitlich_-_001.jpg",
+    "sourceDescription": "Residuum bei Z.n. Morbus Osgood-Schlatter: Ausgelöstes großes Ossikel aus der Tuberositas tibiae.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "35d4249a15509d9f75aae2ee314a760e2991c576",
+    "localSha256": "fab0190c9d13fa3a5b4d6edd2dd2e5853799ceaf886e6bd3674c41946a6dfe19",
+    "width": 936,
+    "height": 1412,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-048",
+    "groupKey": "bone-1004-048",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-048.jpg",
+    "sourceTitle": "X-ray of occult metaphyseal stress fracture of the tibia.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:X-ray_of_occult_metaphyseal_stress_fracture_of_the_tibia.jpg",
+    "sourceDescription": "X-ray of occult metaphyseal stress fracture of the tibia. For context, see Occult fracture",
+    "artist": "Mohamed Jarraya, Daichi Hayashi, Frank W. Roemer, Michel D. Crema, Luis Diaz, Jane Conlin, Monica D. Marra, Nabil Jomaah and Ali Guermazi",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "originalSha1": "80f8d2924b2c2cd6cce47458221cb6b634391600",
+    "localSha256": "af355792a9b637725643e91941c10dfb8bd2bc626239b2230e6adcd20a5570c2",
+    "width": 555,
+    "height": 631,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-049",
+    "groupKey": "bone-1004-049",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-049.png",
+    "sourceTitle": "Morbus Paget Becken3.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Morbus_Paget_Becken3.png",
+    "sourceDescription": "Paget's disease of bone in left pelvis shown in CT. Notice the seeds in the prostate after brachytherapy.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "e675ab1977678b7b70e1b020f56190761b97a938",
+    "localSha256": "35e765fae76ac7f64e74a5a793de33c8ef92f6a1736237b050b2182fef1311af",
+    "width": 1521,
+    "height": 966,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-050",
+    "groupKey": "bone-1004-050",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-050.jpg",
+    "sourceTitle": "Osteopoikilose HG ap und seitlich.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Osteopoikilose_HG_ap_und_seitlich.jpg",
+    "sourceDescription": "Osteopoikilosis",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "2e50327e8c8ed70d8fe57505bf8927e17a786f47",
+    "localSha256": "865e9b0537cfd7a0fec553e6a3d7a302b169102bc9cba7406d6bd28311e4f4ec",
+    "width": 1462,
+    "height": 1407,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-051",
+    "groupKey": "bone-1004-051",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-051.jpg",
+    "sourceTitle": "Osteogenesis imperfecta Roentgenaufnahmen bei einem Neugeborenen 0W - CR - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Osteogenesis_imperfecta_Roentgenaufnahmen_bei_einem_Neugeborenen_0W_-_CR_-_001.jpg",
+    "sourceDescription": "Osteogenesis imperfecta Röntgenaufnahmen bei einem Neugeborenen mit multiplen Rippenfrakturen, Frakturen der Extremitäten inklusive der Clavicula beidseits.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "cc9e61e36876880ef1863c12537b41902bad79eb",
+    "localSha256": "d504360d98525a7c6ef6a441ccfb1d04177ab9fad272e4ba7e44631d2206556c",
+    "width": 1897,
+    "height": 1395,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-052",
+    "groupKey": "bone-1004-052",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-052.jpg",
+    "sourceTitle": "Cleidocranial2.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cleidocranial2.jpg",
+    "sourceDescription": "Lateral skull radiograph showing open skull sutures, large fontanels, multiple wormian bones and underdeveloped paranasal sinuses.",
+    "artist": "see below",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "originalSha1": "db1ffacd3252763dd517027dc33adec9218ebc5a",
+    "localSha256": "f3ecaf7187698e2844f7a7dad351767f6458088f6e78b44947d974ac52048206",
+    "width": 802,
+    "height": 704,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-053",
+    "groupKey": "bone-1004-053",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-053.jpg",
+    "sourceTitle": "Boxer-Fraktur Mittelhandknochen 5 subkapital 35M - CR - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boxer-Fraktur_Mittelhandknochen_5_subkapital_35M_-_CR_-_001.jpg",
+    "sourceDescription": "Boxer-Fraktur Mittelhandknochen 5 subkapital mit Abkippung nach volar und Verkürzung",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "9518761330f1785a44d78c578e32a75f42aaf2b8",
+    "localSha256": "37b9d0ebfff6aa0191266677b75c734082e375631e67d3f50d78c4ae8bdb1466",
+    "width": 1456,
+    "height": 1122,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-054",
+    "groupKey": "bone-1004-054",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-054.jpg",
+    "sourceTitle": "Bennet's Fracture of the 1st Metacarpal.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bennet%27s_Fracture_of_the_1st_Metacarpal.jpg",
+    "sourceDescription": "Bennet's Fracture of the 1st Metacarpal. X-Ray 24 days after surgery of Bennet's fracture base MTC 1 which was treated by alignment of a fracture and internal fixation by two titanium screws. This is an edited version of the source image made for use in the \"Anatomist\" iOS and Android app and shared here under the terms of the source image's Share Alike Creative Commons license.",
+    "artist": "Pavel Ševela",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "3f8ef03a22b9364803d4bd177b37ae3aea78c5e7",
+    "localSha256": "e52497cb238b32a4817cd70f1a156c14ad2266102fb9f39f99add9119e08aad6",
+    "width": 1691,
+    "height": 3102,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-055",
+    "groupKey": "bone-1004-055",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-055.jpg",
+    "sourceTitle": "Rolandofraktur CT VR.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rolandofraktur_CT_VR.jpg",
+    "sourceDescription": "Basistrümmerfraktur des ersten Mittelhandknochens mit Gelenkbeteiligung: Rolando-Fraktur. Hier Computertomographie als Volumenrendering rekonstruiert.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "ceee1ad3b11cd262cd557a878f48eedd321e8e4d",
+    "localSha256": "67a9fced3867c249ffb249e071fdba452e07e16f740bf8951995a29f57cbac91",
+    "width": 958,
+    "height": 1092,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-056",
+    "groupKey": "bone-1004-056",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-056.jpg",
+    "sourceTitle": "Subtle tibia fracture - X-ray.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Subtle_tibia_fracture_-_X-ray.jpg",
+    "sourceDescription": "Subtle tibia fracture - X-ray. For context, see Occult fracture",
+    "artist": "Mohamed Jarraya, Daichi Hayashi, Frank W. Roemer, Michel D. Crema, Luis Diaz, Jane Conlin, Monica D. Marra, Nabil Jomaah and Ali Guermazi",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "originalSha1": "91f1675f5b831c3477e5783a68f57a8b69a99472",
+    "localSha256": "f94e79d2b55b01b19aaf80b94ba4f41797fbcfa04187ec4bf086b1076e4dc4a2",
+    "width": 483,
+    "height": 631,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-057",
+    "groupKey": "bone-1004-057",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-057.jpg",
+    "sourceTitle": "Lisfranc-Luxationsfraktur 55M - CR seitlich und CT sagittal - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lisfranc-Luxationsfraktur_55M_-_CR_seitlich_und_CT_sagittal_-_001.jpg",
+    "sourceDescription": "Lisfranc-Luxationsfraktur: oben Computertomografie sagittal unten konventionelles Röntgenbild. Man erkennt die Stufenbildung von Metatarsale zum Tarsus. In den anderen Rekonstruktion sind multiple vor allem plantare Kleinfragmente an der Lisfranc-Linie zu sehen.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "2d9a1743bf3acc919d8a2f7d104f483d26691980",
+    "localSha256": "25fd3dfd661c3618ac27a06fb96f45cd7072fbe23b3b43208f51e10ab3160b35",
+    "width": 1430,
+    "height": 1323,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-058",
+    "groupKey": "bone-1004-058",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-058.jpg",
+    "sourceTitle": "Fracture tibia+fibula.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fracture_tibia%2Bfibula.jpg",
+    "sourceDescription": "Ici, un tibia et une fibula fracturés sur un chiot, avec une grosse esquille, avant réduction. La réparation a été faite avec un pansement de Robert-Jones, qui a grosso-modo les mêmes indications qu'une résine. Une chirurgie aurait été plus indiquée mais les gens n'en avaient pas les moyens.",
+    "artist": "Fourrure ( http://www.boulesdefourrure.fr )",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "originalSha1": "3940d8b41779095327b0f5d42c7b8e3eefe3b851",
+    "localSha256": "1c1774823ac5922f764508bfc085ff3ae713581f82b5b56ae731dfedbfc49c67",
+    "width": 3264,
+    "height": 2448,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-059",
+    "groupKey": "bone-1004-059",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-059.jpg",
+    "sourceTitle": "Calcaneal fragment - anteroposterior.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Calcaneal_fragment_-_anteroposterior.jpg",
+    "sourceDescription": "X-ray of the ankle of a 97 year old man who escaped from a retirement home on a powered wheelchair but drove into a ditch, resulting in a gash on his left lower leg. The image shows a 2 x 1 cm long fragment posterior to the medial malleolus , presumably from the calcaneus . It looks corticalized, indicating it was caused by an injury far earlier in life.",
+    "artist": "Mikael Häggström",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "originalSha1": "4bab333c8767204da9b3dd81fa35eafc329aeb36",
+    "localSha256": "6c798ff3ecdf233a548c94604513e269f1dde381320db1571312cb337d851184",
+    "width": 947,
+    "height": 1100,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-060",
+    "groupKey": "bone-1004-060",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-060.jpg",
+    "sourceTitle": "Radiographs and CT images of a 12-year-old boy.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Radiographs_and_CT_images_of_a_12-year-old_boy.jpg",
+    "sourceDescription": "Figure 2. (A) Radiographs and CT images of a 12-year-old boy. The anteroposterior view shows a tibial epiphyseal fracture on the left side. (B) Lateral view showing that the fracture line crosses the epiphyseal plate (Salter–Harris type IV fracture). (C) Radiograph taken after 90 days of follow-up showing the growth arrest line. Formation of the medial bone bridge also can be seen. (D) Lateral view showing the bone bridge in the front of the epiphysis. (E) CT scan of bilateral ankle joints showing that the growth arrest line of the healthy side is parallel to the epiphysis, whereas the growth arrest line of the affected side forms an angle with the epiphysis. The apex of the angle is at the medial bone bridge.",
+    "artist": "Wang S, Zheng S, Liu Q, Wang C, Liu M and Su L",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "originalSha1": "3cd6df9da152c6332302b60db54dd0b66e9f91f1",
+    "localSha256": "a092912c2f00b6d4a2455e225bb51e3cdb4aef61a303d09fefec2edea847cbdf",
+    "width": 813,
+    "height": 1360,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-061",
+    "groupKey": "bone-1004-061",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-061.jpg",
+    "sourceTitle": "Osteosarcome humain.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Osteosarcome_humain.jpg",
+    "sourceDescription": "osteosarcoma and prothesis",
+    "artist": "Unknown author Unknown author",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "originalSha1": "bc69c52fa5a90d06bca204463ba723fecadc79d4",
+    "localSha256": "c561f20333783c7b62458376002f8a6d85b171a238d942a2877bb6c6eec57763",
+    "width": 999,
+    "height": 568,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-062",
+    "groupKey": "bone-1004-062",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-062.jpg",
+    "sourceTitle": "Transscaphoid perilunate fracture-dislocation - 39jm - CT Volumen Rendering - 001 - 01.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Transscaphoid_perilunate_fracture-dislocation_-_39jm_-_CT_Volumen_Rendering_-_001_-_01.jpg",
+    "sourceDescription": "Perilunäre Luxation mit Luxation des Kapitatum nach dorsal und Fraktur durch des Scaphoid mit Versatz des distalen Endes ebenfalls nach dorsal. CT-Rekonstruktion Volumen Rendering.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "1d21b664cc4b2dd0cfd9ec8a643e98af0babf3a8",
+    "localSha256": "c9ef397445160285f87e5b8c50215eb4a9c2592df334506390ec597594687712",
+    "width": 1090,
+    "height": 1364,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-063",
+    "groupKey": "bone-1004-063",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-063.jpg",
+    "sourceTitle": "Knoecherner Ausriss der vorderen tibiofibularen Syndesmose 80W - CT axial - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Knoecherner_Ausriss_der_vorderen_tibiofibularen_Syndesmose_80W_-_CT_axial_-_001.jpg",
+    "sourceDescription": "Bony avulsion of the anterior tibiofibular syndesmosis - known as Tillaux fracture of the anterior (Chaput) tubercle of tibia. There is another undisplaced fracture of the posterior (Volkmann's) tubercle of tibia radiating into the tibiofibular syndesmosis.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "29ee947d40240ba6ad5f049845b883784a9dd13b",
+    "localSha256": "7b95e4b01dcafb4a80736dda3c17985d506de5c1cd60aab6633bd3c7c0666458",
+    "width": 1410,
+    "height": 1557,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-064",
+    "groupKey": "bone-1004-064",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-064.jpg",
+    "sourceTitle": "Ulnar impaction nach distaler Radiusfraktur 83jw - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ulnar_impaction_nach_distaler_Radiusfraktur_83jw_-_001.jpg",
+    "sourceDescription": "Ulnare Impaktation mit Sklerosierungen (Pfeile) im Lunatum und Triquetrum nach distaler, in (verkürzter) Fehlstellung verheilter Radiusfraktur und entsprechendem Ulnavorschub.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "93de6f6fa775ac973a6fad052ea862052af1f588",
+    "localSha256": "b4ee78c3a756b0bba68be2a3b7b7f544d2d6c431fbe2019a33871984cc75bda2",
+    "width": 1089,
+    "height": 1347,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-065",
+    "groupKey": "bone-1004-065",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-065.jpg",
+    "sourceTitle": "Schulterluxation links ap 02.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Schulterluxation_links_ap_02.jpg",
+    "sourceDescription": "Typische Schulterluxation nach vorne unten.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "c0c2eb674058834b3fd473e759a8e6bfc88658f2",
+    "localSha256": "2f66e5c9720f7409fab716c3bbf664013a80e2b9c617dccd4402d2691eda51b4",
+    "width": 671,
+    "height": 987,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "direct-source-label-match-after-perceptual-review"
+  },
+  {
+    "id": "bone-1004-066",
+    "groupKey": "bone-1004-066",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-066.jpg",
+    "sourceTitle": "Xray femur.JPG",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xray_femur.JPG",
+    "sourceDescription": "An X-Ray of a fractured femur, held up to the sky. Nepal",
+    "artist": "User:Tannim101",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "originalSha1": "a0a482fd16ebfbe2c81aed14e67f8642b4d689b7",
+    "localSha256": "41ab5598a7276a4fce2b1068c26505243d12ae5e0fa27ef46a2f14ec548fa6e5",
+    "width": 1712,
+    "height": 2400,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-067",
+    "groupKey": "bone-1004-067",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-067.jpg",
+    "sourceTitle": "Alte nicht konsolidierte Fraktur des Condylus radialis humeri 73M - CR ap und seitlich - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alte_nicht_konsolidierte_Fraktur_des_Condylus_radialis_humeri_73M_-_CR_ap_und_seitlich_-_001.jpg",
+    "sourceDescription": "Alte, nicht konsolidierte Fraktur des Condylus radialis humeri. Das abgerundete Fragment des Condylus radialis humeri liegt pseudarthrotisch dem Humerus an. Die Fraktur stammt noch aus der Kindheit des jetzt über 70-Jährigen.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "f83a0fe1ae591bb914065969dc88e35591159c28",
+    "localSha256": "a7b280368cc7849c35c6646970ac27553041b00c915c53e79f3f35617439207f",
+    "width": 2914,
+    "height": 1664,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-068",
+    "groupKey": "bone-1004-068",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-068.png",
+    "sourceTitle": "Boxerfraktur.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boxerfraktur.png",
+    "sourceDescription": "Boxer's fracture of fifth metacarpal bone. In this case not by boxing against something or someone, but by a similar trauma.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "7d6902b5e4ac401495f51bf59682113f41688a89",
+    "localSha256": "033aaf3547c6117e3eb70dc10dc8fedb2ee5e79b8ccf8bf60c28d42d6005e44d",
+    "width": 780,
+    "height": 1104,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-069",
+    "groupKey": "bone-1004-069",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-069.jpg",
+    "sourceTitle": "Hallux rigidus ohne Hallux valgus 66M - CR - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hallux_rigidus_ohne_Hallux_valgus_66M_-_CR_-_001.jpg",
+    "sourceDescription": "Hallux rigidus ohne Hallux valgus",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "6a841f5ac89aabffce7d35b2c4f663a54d75180a",
+    "localSha256": "c0dda06f8114798176e6d9f5ae86e8bea635cc34b1147a4560d3445a89208ab3",
+    "width": 902,
+    "height": 1422,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-070",
+    "groupKey": "bone-1004-070",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-070.jpg",
+    "sourceTitle": "Patte-Klassifikation der Sehnenretraktion bei Rotatorenmanschettenruptur.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Patte-Klassifikation_der_Sehnenretraktion_bei_Rotatorenmanschettenruptur.jpg",
+    "sourceDescription": "Patte-Klassifikation der Sehnenretraktion bei Rotatorenmanschettenruptur: Stadium 1: Der Sehnenstumpf des Supratspinatus findet sich noch in der Nähe des Ansatzes am Humerus. Stadium 2: Der Sehnenstumpf des Supratspinatus findet sich über dem Humeruskopf. Stadium 3: Der Sehnenstumpf des Supratspinatus findet sich über dem Glenoid oder proximal davon.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "9759d738caa32f7e2a401eb85b6dc239e15c054d",
+    "localSha256": "9eaab908fe93f4a24574eec8d9eca8075347628d7d6ffc984586415a76513528",
+    "width": 876,
+    "height": 815,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-071",
+    "groupKey": "bone-1004-071",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-071.jpg",
+    "sourceTitle": "Occult stress fracture of the talus on 1 month follow-up X-ray.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Occult_stress_fracture_of_the_talus_on_1_month_follow-up_X-ray.jpg",
+    "sourceDescription": "Occult stress fracture of the talus on 1 month follow-up X-ray. For context, see Occult fracture",
+    "artist": "Mohamed Jarraya, Daichi Hayashi, Frank W. Roemer, Michel D. Crema, Luis Diaz, Jane Conlin, Monica D. Marra, Nabil Jomaah and Ali Guermazi",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "originalSha1": "d1358943fb8883a7f62feacd4a1f2ee5a6c4320b",
+    "localSha256": "f25b36e97b9dd31219559c3f75b73f65d1f325505674dbf1ffd026cecbab555c",
+    "width": 600,
+    "height": 574,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-072",
+    "groupKey": "bone-1004-072",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-072.png",
+    "sourceTitle": "Morbus Paget Becken2.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Morbus_Paget_Becken2.png",
+    "sourceDescription": "Paget's disease of bone in left pelvis shown in CT. Notice the seeds in the prostate after brachytherapy.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "8f583c4af4dac454ae9eae20443aeb79b0d132fd",
+    "localSha256": "af3f49cb933e4ceacc33e7da47e67849b66e9848d15cfc7cc544c8b373d505ee",
+    "width": 1430,
+    "height": 1020,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-073",
+    "groupKey": "bone-1004-073",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-073.png",
+    "sourceTitle": "Osteopoikilosis.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Osteopoikilosis.png",
+    "sourceDescription": "Osteopoikilosis",
+    "artist": "James Heilman, MD",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "bbaddd3e72e603f6da74adbf2909092c04078f1e",
+    "localSha256": "9ea86a16fe0e4081104b6cc41aff07a18cc2b716c73ced7f56c917e7c6981127",
+    "width": 1001,
+    "height": 755,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-074",
+    "groupKey": "bone-1004-074",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-074.png",
+    "sourceTitle": "Osteogenesis imperfecta X-ray (clinically type IV) of left forearm.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Osteogenesis_imperfecta_X-ray_(clinically_type_IV)_of_left_forearm.png",
+    "sourceDescription": "X-ray of a 24-year-old American man, who had suffered more than one hundred bone fractures in his lifetime, and received a childhood clinical diagnosis of type IVB OI. Genetic diagnosis in 2018 identified a previously uncatalogued pathogenic variant in the gene which encodes proα2(I) chains of type I procollagen, COL1A2, at exon 19, substitution c.974G&gt;A. Due to childhood neglect and poverty, subject never received surgery to implant intramedullary rods. Malunions are evident as the humerus and femur were broken in adolescence but orthopedic care did not follow. Severe scoliosis, as well as kyphosis, are also evident. The unavoidably low contrast in the film is due to a combination of subject's obesity and low bone mineral density (BMD). Subject's BMD Z-score was -4.1 according to results of a dual-energy X-ray absorptiometry (DXA) scan also done in 2018. This X-ray is of the left forearm and also shows most of the left upper arm and part of the left hand.",
+    "artist": "Unknown radiologist",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/Commons:Public_domain",
+    "originalSha1": "8dcade015ccbaf89059367a5b35d4b5ce081867f",
+    "localSha256": "2e34701acc6f3deae6ccb35b8a0f5fd0c6369aa7f51b18e577e50de71cedc2be",
+    "width": 1344,
+    "height": 1550,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-075",
+    "groupKey": "bone-1004-075",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-075.jpg",
+    "sourceTitle": "Typische Boxerfraktur 22M - CR - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Typische_Boxerfraktur_22M_-_CR_-_001.jpg",
+    "sourceDescription": "Typische Boxerfraktur in diesem Fall nicht durch Boxen, sondern durch einen Sturz auf die Hand.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "8b8c67258d7cf362d5ea2a5810d19a99e4d8b7a8",
+    "localSha256": "7751486f22615da912f8188e717df2118955f8d0e72543dbdd775d28a6e92542",
+    "width": 1485,
+    "height": 892,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-076",
+    "groupKey": "bone-1004-076",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-076.jpg",
+    "sourceTitle": "Bennet's fracture X-ray (3).jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bennet%27s_fracture_X-ray_(3).jpg",
+    "sourceDescription": "S-ray 24 days after surgery of Bennet's fracture basis MTC primi manus 1. sin (S62.20) which was treated by alignement of a fracture and inside fixation by two titanium screws MS",
+    "artist": "I would appreciate being notified if you use my work outside Wikimedia. Do not copy this image illegally by ignoring the terms of the license below, as it is not in the public domain. If you would like special permission to use, license, or purchase the image please contact me to negotiate terms. More of my work can be found in my personal gallery .",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "f651fc1e3379efa90451c0548ef2791b9f40c44f",
+    "localSha256": "050c2b5bae34f9778469df837f6c6ab128b34a0bc20438cdd3c83e66bda5ccec",
+    "width": 1594,
+    "height": 2885,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-077",
+    "groupKey": "bone-1004-077",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-077.jpg",
+    "sourceTitle": "Rolandofraktur Roe ap.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rolandofraktur_Roe_ap.jpg",
+    "sourceDescription": "Basistrümmerfraktur des ersten Mittelhandknochens mit Gelenkbeteiligung: Rolando-Fraktur.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "924835b298fa23cca67c0832c79b4e535c871007",
+    "localSha256": "ecbab5884233bb67bb7c921fdc559ecbf24feab442dcda83607a83fe89641a32",
+    "width": 696,
+    "height": 1088,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-078",
+    "groupKey": "bone-1004-078",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-078.jpg",
+    "sourceTitle": "Radiografía plantar.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Radiograf%C3%ADa_plantar.jpg",
+    "sourceDescription": "Oblique foot radiograph. Note the collinear relationship at the adjacent tarsometatarsal joints, indicative of a Lisfranc ligament dislocation.",
+    "artist": "Wukich, Dekarlos and Dial",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "originalSha1": "de001b7a71ad1c28af3da1f6b6bd5e95350d6bb7",
+    "localSha256": "ce24ce9d0c7d833349cfed72e45914613dbb9d697ec6368f711d14907209c11c",
+    "width": 750,
+    "height": 1605,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-079",
+    "groupKey": "bone-1004-079",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-079.jpg",
+    "sourceTitle": "Pseudo-Jones-Fraktur 19M - CR schraeg - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pseudo-Jones-Fraktur_19M_-_CR_schraeg_-_001.jpg",
+    "sourceDescription": "Pseudo-Jones-Fraktur an der Basis Metatarsale 5. Die Fraktur strahlt in die tarsometatarsale Gelenkfläche ein. Eine echte Jones-Fraktur würde distal davon verlaufen und sie betrifft höchstens das intermetatarsale Gelenk.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "01b7aa81c3c06a4fcd566a4a7caf1a9f3528a5ff",
+    "localSha256": "ef13f49f1ddf3e9475e6054e7a166c88ec8e2d9e1bf8b8c902a9154eb9450839",
+    "width": 1534,
+    "height": 1971,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-080",
+    "groupKey": "bone-1004-080",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-080.png",
+    "sourceTitle": "Intraoseous calcaneal nail C-Nail - rtg.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Intraoseous_calcaneal_nail_C-Nail_-_rtg.png",
+    "sourceDescription": "Aplikace intraoseálního hřebu při osteosyntéze zlomenin calcanea (C-Nail)",
+    "artist": "Fry72 Karel Frydrýšek",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "eca9e3b21c6bd1400e3f2029e058b6acd5915d6f",
+    "localSha256": "8c3a72925326de63244021ef4f4a775136edfe00e8a9c164924692b8ed57d94a",
+    "width": 734,
+    "height": 520,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-081",
+    "groupKey": "bone-1004-081",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-081.jpg",
+    "sourceTitle": "Transscaphoid perilunate fracture-dislocation - 39jm - CT Volumen Rendering - 001 - 02.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Transscaphoid_perilunate_fracture-dislocation_-_39jm_-_CT_Volumen_Rendering_-_001_-_02.jpg",
+    "sourceDescription": "Perilunäre Luxation mit Luxation des Kapitatum nach dorsal und Fraktur durch des Scaphoid mit Versatz des distalen Endes ebenfalls nach dorsal. CT-Rekonstruktion Volumen Rendering.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "52e270c2af8875e936f0972619461cda3114ce1f",
+    "localSha256": "870b401e4d12292cced504ffd35b33b55ce5475fdf3822a3e7e94210740a000b",
+    "width": 1090,
+    "height": 1364,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-082",
+    "groupKey": "bone-1004-082",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-082.jpg",
+    "sourceTitle": "Tubercule de Tillaux Chaput 56M - CT - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tubercule_de_Tillaux_Chaput_56M_-_CT_-_001.jpg",
+    "sourceDescription": "Tubercule de Tillaux Chaput: Knöcherner Ausriss des vorderen Anteils der distalen tibiofibularen Syndesmose aus der Tibia.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "189c0531c164325218d42cd8dd539147a702dca1",
+    "localSha256": "d64207a1276f93ef3ec9db991f7083a8f8784005fc8f1f20e1be2bb58e5a4f70",
+    "width": 1851,
+    "height": 1148,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-083",
+    "groupKey": "bone-1004-083",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-083.jpg",
+    "sourceTitle": "Chauffeur-Fraktur mit geringer Dislokation 57M - CT cor und Volumen - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chauffeur-Fraktur_mit_geringer_Dislokation_57M_-_CT_cor_und_Volumen_-_001.jpg",
+    "sourceDescription": "Chauffeur-Fraktur mit geringer Dislokation",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "03b8f2495314a586b22eabaff068626976da45cf",
+    "localSha256": "8e707189fcba28c32f674a79e0922cba455b898e39ba9195455f5d036cb9e613",
+    "width": 1309,
+    "height": 825,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-084",
+    "groupKey": "bone-1004-084",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-084.png",
+    "sourceTitle": "44-04-Schulter-TEP nach Reposition.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:44-04-Schulter-TEP_nach_Reposition.png",
+    "sourceDescription": "After reduction of the dislocation of the left shoulder prosthesis.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "feaf3fcedeaba6ce7741ea41e75b4f6f20e948ce",
+    "localSha256": "9899f5ae686af2b49dac6d5c86337ab4f23a570faf47bde53a65920636b033c5",
+    "width": 768,
+    "height": 958,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-085",
+    "groupKey": "bone-1004-085",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-085.jpg",
+    "sourceTitle": "Negative John Thomas sign.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Negative_John_Thomas_sign.jpg",
+    "sourceDescription": "Negative \" John Thomas sign \" or \"Throckmorton sign\" displayed by a patient who sustained a femoral neck fracture on the left. This radiography sign occurs when the patient's penis points away from the injured side. Notice that \"John Thomas sign\" is joke, even though this image is not(!) a fake.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "f49cafe29a3b279ed8dc766a364c743de478aed6",
+    "localSha256": "8e759cc7cb41e600792e5d5db9022faaf879e22dd24acd253de69f70545ac753",
+    "width": 1364,
+    "height": 958,
+    "retrieval": "diagnosis-category",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-086",
+    "groupKey": "bone-1004-086",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-086.jpg",
+    "sourceTitle": "RFID-Label in Roentgenaufnahme bei Humerusfraktur 95M - CR ap - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:RFID-Label_in_Roentgenaufnahme_bei_Humerusfraktur_95M_-_CR_ap_-_001.jpg",
+    "sourceDescription": "RFID-Label in Röntgenaufnahme bei Humerusfraktur versehentlich mit aufgenommen.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "da1bda2c4a1a0fd78864222dff963d503f4c1979",
+    "localSha256": "05158d27b3155548120da01d9dbb023539f0a897ba34981c779074784c046aff",
+    "width": 1535,
+    "height": 1972,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-087",
+    "groupKey": "bone-1004-087",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-087.png",
+    "sourceTitle": "Boxerfraktur mit K-Draht.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boxerfraktur_mit_K-Draht.png",
+    "sourceDescription": "Boxer's fracture of fifth metacarpal bone. In this case not by boxing against something or someone, but by a similar trauma. This X-ray showes the osteosynthesis .",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "1ada09b6101ad6d256c726aad6ea762147a6a4cf",
+    "localSha256": "709168c6bf8ee43fc9f39c27caeb051d094a4686a65f378c5683d66ab29da40b",
+    "width": 678,
+    "height": 1084,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-088",
+    "groupKey": "bone-1004-088",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-088.jpg",
+    "sourceTitle": "Hallux valgus und Digitus superductus 53W - CR - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hallux_valgus_und_Digitus_superductus_53W_-_CR_-_001.jpg",
+    "sourceDescription": "Hallux valgus und Digitus superductus",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "cc9ef0709baf096cb9c11f038050b004303a3b85",
+    "localSha256": "03e79539639eea81491ca063afa12a552ded4c6d4766e71ea428c8340b84fe36",
+    "width": 1109,
+    "height": 1135,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-089",
+    "groupKey": "bone-1004-089",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-089.jpg",
+    "sourceTitle": "Neoartikulation zum Akromion bei Laesion der Rotatorenmanschette 94W - CR ap - 001.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Neoartikulation_zum_Akromion_bei_Laesion_der_Rotatorenmanschette_94W_-_CR_ap_-_001.jpg",
+    "sourceDescription": "Neoartikulation zum Akromion bei Läsion der Rotatorenmanschette mit entsprechendem Hochstand des Humeruskopfes. English : Neo-articulation to the acromion with a lesion of the rotator cuff with a corresponding elevation of the humeral head.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "3b8006011cad3fcf696f02e0822b583bfdf8ff78",
+    "localSha256": "e18dcc9ae0bf0209f3b4ee60d7b15324297577e4c789c47b72a8910cb0b88abb",
+    "width": 787,
+    "height": 755,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-090",
+    "groupKey": "bone-1004-090",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-090.png",
+    "sourceTitle": "Neck Fracture of the Fourth Metacarpal Bone.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Neck_Fracture_of_the_Fourth_Metacarpal_Bone.png",
+    "sourceDescription": "Neck Fracture of the Fourth Metacarpal Bone commonly know as a boxer's fracture",
+    "artist": "Louis Philippe Lessard",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "20fe28fa050931c20facf73bf18d3a1e39f10e4c",
+    "localSha256": "0b3800d922f9b75f670d11f2da9109bcede4d82c2fecbfe4a7b093be22031434",
+    "width": 854,
+    "height": 1295,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-091",
+    "groupKey": "bone-1004-091",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-091.png",
+    "sourceTitle": "BennettFracWhole.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BennettFracWhole.png",
+    "sourceDescription": "Bennett's fracture",
+    "artist": "James Heilman, MD",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "originalSha1": "7588bb483cc91d3704d207e6976b2860f039d21f",
+    "localSha256": "f46823252d05b998f6da290605eb366ac619c419a7662ce8a005e78dba1224ea",
+    "width": 589,
+    "height": 1201,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-092",
+    "groupKey": "bone-1004-092",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-092.jpg",
+    "sourceTitle": "Cropped version of Jonesfracture.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cropped_version_of_Jonesfracture.jpg",
+    "sourceDescription": "This is a retouched picture, which means that it has been digitally altered from its original version. Modifications: cropped. The original can be viewed here: Jonesfracture.jpg. Modifications made by MdScottis. Original author Lucien Monfils",
+    "artist": "Mdscottis",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "8997387213143d121307f0c4734c27d83b4264b8",
+    "localSha256": "708b765e752419e7b693bdc22acc37e7cab517aaa10d6e80bc2e6d5fdc254ff8",
+    "width": 1098,
+    "height": 1146,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-093",
+    "groupKey": "bone-1004-093",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-093.jpg",
+    "sourceTitle": "T1 MRI of calcaneal fracture.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:T1_MRI_of_calcaneal_fracture.jpg",
+    "sourceDescription": "T1 MRI of calcaneal fracture. For context, see Occult fracture",
+    "artist": "Mohamed Jarraya, Daichi Hayashi, Frank W. Roemer, Michel D. Crema, Luis Diaz, Jane Conlin, Monica D. Marra, Nabil Jomaah and Ali Guermazi",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "originalSha1": "549751fedc365d0544f80248b879fe10839be9e9",
+    "localSha256": "a8fc1c14155d356253d84cf06ededf5f6e6e80cd576b59a8a2c4aaf2f5dc0bfa",
+    "width": 600,
+    "height": 567,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
+  },
+  {
+    "id": "bone-1004-094",
+    "groupKey": "bone-1004-094",
+    "system": "骨骼",
+    "image": "assets/images/expanded/bone-1004-094.jpg",
+    "sourceTitle": "Transscaphoid perilunate fracture-dislocation - 39jm - CT Volumen Rendering - 001 - 03.jpg",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Transscaphoid_perilunate_fracture-dislocation_-_39jm_-_CT_Volumen_Rendering_-_001_-_03.jpg",
+    "sourceDescription": "Perilunäre Luxation mit Luxation des Kapitatum nach dorsal und Fraktur durch des Scaphoid mit Versatz des distalen Endes ebenfalls nach dorsal. CT-Rekonstruktion Volumen Rendering.",
+    "artist": "Hellerhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "originalSha1": "30a28207efa7e8d63766151d685648131ae45e3b",
+    "localSha256": "dcaa64e5ea1784e4b0f3616197f2fbfd023e03f59cd8bb61e8f56896739be8d3",
+    "width": 1090,
+    "height": 1364,
+    "retrieval": "topic-search",
+    "qualityScore": "diagnosis-linked-source-and-contact-sheet-review",
+    "sourceAudit": "source-label-matches-topic"
   }
 ];

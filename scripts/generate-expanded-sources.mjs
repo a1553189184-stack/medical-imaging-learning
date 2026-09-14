@@ -3,7 +3,7 @@ import path from 'node:path';
 
 const ROOT = path.resolve(import.meta.dirname,'..');
 const manifest = JSON.parse(await fs.readFile(path.join(ROOT,'data','expanded-case-sources.json'),'utf8'));
-const fields = ['id','groupKey','system','image','sourceTitle','sourceUrl','sourceDescription','artist','license','licenseUrl','originalSha1','localSha256'];
+const fields = ['id','groupKey','system','image','sourceTitle','sourceUrl','sourceDescription','artist','license','licenseUrl','originalSha1','localSha256','width','height','retrieval','qualityScore','sourceAudit'];
 const records = manifest.records.map(record => {
   const picked = Object.fromEntries(fields.map(field => [field,record[field]]));
   if (!picked.licenseUrl && picked.license === 'Public domain') {
