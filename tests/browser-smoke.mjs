@@ -6,6 +6,7 @@ import path from 'node:path';
 import { spawn } from 'node:child_process';
 
 const siteUrl = process.env.SITE_URL || 'http://127.0.0.1:4173/?view=viewer&case=0&mode=quiz';
+const siteOrigin = new URL(siteUrl).origin;
 const chromeCandidates = process.platform === 'win32' ? [
   'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
   'C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe'
@@ -34,7 +35,7 @@ try {
   for(let attempt=0;attempt<50;attempt++) {
     try {
       const targets = await fetch(`http://127.0.0.1:${port}/json/list`).then(response => response.json());
-      target = targets.find(item => item.type==='page' && item.url.startsWith('http://127.0.0.1:4173/'));
+      target = targets.find(item => item.type==='page' && item.url.startsWith(siteOrigin));
       if(target) break;
     } catch {}
     await delay(100);
