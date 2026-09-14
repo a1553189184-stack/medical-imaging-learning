@@ -5,7 +5,7 @@
 ## 功能
 
 - 病例图谱：700 个真实开放影像病例（胸部 185、神经 173、腹部 172、骨骼 170），包含 X 线、CT / CTPA、MRI、超声和骨显像。每例有中英文名称、影像征象、分步骤诊断方法、阅片技巧、鉴别诊断与易错点、报告表达练习、记忆线索和参考资料。依据独立来源说明进一步拆分疾病与影像亚型，四系统教学主题分别达到胸部 113、神经 111、腹部 115、骨骼 126 个。
-- DICOM 序列阅片：20 个来自 NCI Imaging Data Commons 的去标识独立检查，四系统各 5 个。通过 OHIF 与 IDC 只读 DICOMweb 打开真实序列，支持专业查看器提供的层面滚动、窗宽窗位、缩放、测量和分割显示；集合名称不作为逐图诊断。
+- DICOM 序列阅片：20 个来自 NCI Imaging Data Commons 的去标识独立检查，四系统各 5 个。站内 Cornerstone3D 工作台支持真实层面滚动、窗宽窗位、平移、缩放、长度测量和序列切换；OHIF 保留为完整备用查看器。集合名称不作为逐图诊断。
 - 组合筛选：系统、影像类型、难度、学习状态及收藏；支持搜索疾病名称与征象，并将当前筛选结果直接用于背题或答题。
 - 答题模式：单选诊断题，提交后显示正确答案与完整解析；提交前隐藏标题和跳题菜单中的诊断名称。
 - 背题模式：直接对照选项、参考答案、诊断方法和技巧；可收起答案进行回忆，也可独立标记“已背”。
@@ -42,13 +42,13 @@ DICOM 试验区的 20 个 Study UID、集合 DOI、模态和许可见 [DICOM_SOU
 
 原有 14 例的年龄、症状等临床情境是教学编写，不是原图患者病历；扩展的 686 例不补造病史，只训练来源能够支持的影像征象。单张图的局限在每例中单独说明；图片中的箭头和测量标记来自原始文件。图谱中的征象概括与训练答案不能替代完整序列、病史、体检或临床诊断。
 
-700 例静态题库本身不托管 DICOM，因此题库内的“对比度”只调整图片显示，不能提供真实窗宽窗位、校准长度或 HU。真实调窗、层面滚动与测量仅在单独的 DICOM 序列试验区中由 OHIF 对 IDC 原始检查完成。
+700 例静态题库本身不托管 DICOM，因此题库内的“对比度”只调整图片显示，不能提供真实窗宽窗位、校准长度或 HU。真实调窗、层面滚动与测量仅在单独的 DICOM 序列试验区中由 Cornerstone3D 或 OHIF 对 IDC 原始检查完成。
 
 所有记录默认保存在当前浏览器的 `localStorage`，不会自动跨设备同步。可以在“学习进度”导出 JSON，并在另一设备导入合并。清除站点数据前应先导出备份；浏览器禁止存储时只能临时使用。不要在笔记中录入可识别患者身份的信息。
 
 ## 运行
 
-无需构建。可在目录中启动本地静态服务器：
+日常访问无需构建，可在目录中启动本地静态服务器：
 
 ```bash
 python -m http.server 4173 --bind 127.0.0.1
@@ -56,12 +56,22 @@ python -m http.server 4173 --bind 127.0.0.1
 
 浏览器打开 `http://127.0.0.1:4173/`。公开版本通过 GitHub Pages 部署；旧的 `?case=4` 链接仍可进入训练，`?view=cases` 打开图谱，`?view=caseDetail&case=4` 打开详情。
 
+若修改 `src/cornerstone-viewer.js`，需先安装锁定依赖并重新生成浏览器资源：
+
+```bash
+npm ci
+npm run build:viewer
+```
+
+影像引擎仅在用户点击“站内打开序列”后加载，不影响图谱和训练首页的初始下载。
+
 ## 文件组织
 
 - `cases.js`：影像文件、题目、诊断选项及基础解析。
 - `curriculum.js`：按稳定病例 ID 关联的诊断方法、技巧、记忆线索、影像限制及参考资料。
 - `expanded-sources.js`、`expanded-cases.js`、`additional-groups.js`、`next-76-groups.js`、`next-200-groups.js`、`next-200-review.js`：扩展 686 例的来源记录与按疾病编写、复核的教学内容。
-- `dicom-series.js`、`idc-dicomweb.json`、`DICOM_SOURCES.md`：20 个 IDC 检查及 OHIF 的只读 DICOMweb 配置和来源说明。
+- `dicom-series.js`、`idc-dicomweb.json`、`DICOM_SOURCES.md`：20 个 IDC 检查及 Cornerstone3D / OHIF 共用的只读 DICOMweb 配置和来源说明。
+- `src/cornerstone-viewer.js`、`vite.config.mjs`、`assets/cornerstone/`：站内 DICOM 工作台源代码、锁定构建配置和发布资源。
 - `medical-reviews.js`、`MEDICAL_REVIEW.md`：临床专家签名审校登记与逐例审校规范；未登记的病例不会显示“医学已审”。
 - `case-packages.js`：自动生成的700例版本化完整性清单，关联病例内容、教学计划与影像 SHA-256。
 - `scripts/generate-case-packages.mjs`：病例包生成器；修改病例、课程或图片后必须重新运行。
@@ -94,7 +104,13 @@ node tests/browser-smoke.mjs
 联网核对 20 个 DICOM Study UID：
 
 ```bash
-node scripts/audit-dicom-studies.mjs
+npm run audit:dicom
+```
+
+启动本地静态服务器后，验证真实 IDC CT 多层序列、Cornerstone3D 渲染、测量工具和移动端宽度：
+
+```bash
+npm run test:dicom
 ```
 
 ## 开源设计参考
@@ -107,4 +123,4 @@ node scripts/audit-dicom-studies.mjs
 - [Anatria3D](https://github.com/Nurkan1/Anatria-3D)：本地优先学习记录、资产来源分层和未来影像—解剖联动方向
 - [RadGame](https://github.com/siavashraissi/RadGame)：病例驱动、游戏化反馈的影像教学方式
 
-本站原创实现教学流程和数据结构，不复制其他项目的界面、病例或文字。当前 DICOM 试验区通过公开 OHIF Viewer 与 IDC DICOMweb 打开独立检查；Cornerstone3D 的站内嵌入仍作为下一阶段。本站仅用于教学，不用于临床诊断。
+本站原创实现教学流程和数据结构，不复制其他项目的界面、病例或文字。当前 DICOM 试验区以 Cornerstone3D 按需读取 IDC 原始检查，并保留公开 OHIF Viewer 作为完整备用入口。本站仅用于教学，不用于临床诊断。

@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="learning.css?v=atlas12" />
+  <link rel="stylesheet" href="learning.css?v=atlas13" />
 </head>
 <body>
   <div class="noise"></div>
@@ -163,8 +163,8 @@
     </section>
 
     <section class="view" id="dicom">
-      <div class="page-title"><div><span class="eyebrow mint">REAL DICOM WORKBENCH</span><h1>DICOM 序列阅片试验区</h1><p>20 个来自 NCI Imaging Data Commons 的去标识真实检查，在 OHIF 中滚动层面、调窗、缩放与测量。</p></div><span class="case-total"><span>20</span> <small>个独立检查</small></span></div>
-      <article class="panel dicom-guide"><div><h2>开始前请注意</h2><p>这里展示的是公开数据集中的完整检查，不是本站静态题目的“补充层面”。集合名称只说明数据来源背景，不等同于对当前每一幅图像的独立诊断。</p></div><div><b>真实 DICOM</b><span>由 IDC 只读 DICOMweb 提供</span><b>专业工具</b><span>OHIF Viewer · 新窗口打开</span></div></article>
+      <div class="page-title"><div><span class="eyebrow mint">REAL DICOM WORKBENCH</span><h1>DICOM 序列阅片试验区</h1><p>20 个来自 NCI Imaging Data Commons 的去标识真实检查，可直接在本站滚动层面、调窗、缩放与测量。</p></div><span class="case-total"><span>20</span> <small>个独立检查</small></span></div>
+      <article class="panel dicom-guide"><div><h2>开始前请注意</h2><p>这里展示的是公开数据集中的完整检查，不是本站静态题目的“补充层面”。集合名称只说明数据来源背景，不等同于对当前每一幅图像的独立诊断。</p></div><div><b>站内工作台</b><span>Cornerstone3D · 快速阅片</span><b>完整备用</b><span>OHIF Viewer · 新窗口打开</span></div></article>
       <div class="dicom-filters" role="group" aria-label="DICOM 系统筛选"><button class="active" data-dicom-filter="all">全部</button><button data-dicom-filter="胸部">胸部</button><button data-dicom-filter="神经">神经</button><button data-dicom-filter="腹部">腹部</button><button data-dicom-filter="骨骼">骨骼肌肉</button></div>
       <div class="dicom-grid" id="dicomList"></div>
       <p class="source-note">首次打开需从 IDC 下载检查数据，速度受检查体积与公网状态影响。数据使用须遵循对应集合许可、DOI 引用要求与 IDC 数据政策。</p>
@@ -194,6 +194,32 @@
     <div class="compare-grid"><figure id="comparePrimary"></figure><figure id="compareSecondary"></figure></div>
     <div id="compareChoices" class="compare-choices" aria-label="选择对照病例"></div>
   </dialog>
+  <dialog id="cornerstoneDialog" class="cornerstone-dialog" aria-labelledby="cornerstoneTitle">
+    <div class="cornerstone-shell">
+      <header class="cornerstone-head">
+        <div><span class="eyebrow mint">CORNERSTONE3D · READ ONLY</span><h2 id="cornerstoneTitle">DICOM 序列</h2><p id="cornerstoneStudyMeta"></p></div>
+        <button id="closeCornerstone" class="cornerstone-close" aria-label="关闭 DICOM 工作台">关闭</button>
+      </header>
+      <div class="cornerstone-controls" aria-label="DICOM 阅片工具栏">
+        <div class="cornerstone-tools" role="group" aria-label="鼠标左键工具">
+          <button class="active" data-cs-tool="window" aria-pressed="true">调窗</button>
+          <button data-cs-tool="pan" aria-pressed="false">平移</button>
+          <button data-cs-tool="zoom" aria-pressed="false">缩放</button>
+          <button data-cs-tool="length" aria-pressed="false">长度</button>
+        </div>
+        <label>序列<select id="cornerstoneSeries" aria-label="选择 DICOM 序列" disabled><option>等待检查信息…</option></select></label>
+        <div class="cornerstone-actions"><button data-cs-action="reset">复位</button><button data-cs-action="clear">清除测量</button></div>
+      </div>
+      <div class="cornerstone-stage">
+        <div id="cornerstoneViewport" tabindex="0" aria-label="DICOM 影像显示区域"></div>
+        <div class="cornerstone-overlay top-left"><b id="cornerstonePosition">— / —</b><span id="cornerstoneVoi">W/L 自动</span></div>
+        <div class="cornerstone-overlay bottom-left">滚轮：切层 · 左键：当前工具 · 右键：平移 · 中键：缩放</div>
+        <div id="cornerstoneStatus" class="cornerstone-status" role="status" aria-live="polite">准备载入…</div>
+        <div id="cornerstoneError" class="cornerstone-error" role="alert" hidden><b>暂时无法显示</b><p></p><button id="retryCornerstone">重试</button><a id="cornerstoneOhif" target="_blank" rel="noopener">改用 OHIF ↗</a></div>
+      </div>
+      <footer class="cornerstone-foot"><span>影像由 IDC 只读 DICOMweb 按需传输；集合名称仅表示来源背景。</span><span>试验功能仅供教学，不用于临床诊断。</span></footer>
+    </div>
+  </dialog>
   <div id="notice" role="status" aria-live="polite"></div>
   <script src="cases.js?v=atlas10"></script>
   <script src="curriculum.js?v=atlas10"></script>
@@ -206,6 +232,6 @@
   <script src="dicom-series.js?v=atlas10"></script>
   <script src="medical-reviews.js?v=atlas10"></script>
   <script src="case-packages.js?v=atlas12"></script>
-  <script src="app.js?v=atlas12"></script>
+  <script src="app.js?v=atlas13"></script>
 </body>
 </html>

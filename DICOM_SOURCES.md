@@ -1,6 +1,6 @@
 # DICOM 序列来源
 
-序列阅片试验区使用 NCI Imaging Data Commons（IDC）索引中的 20 个去标识检查。网页不复制这些 DICOM 文件，而是把经过核对的 `StudyInstanceUID` 交给 OHIF Viewer，并通过 IDC 只读 DICOMweb 代理按需加载。
+序列阅片试验区使用 NCI Imaging Data Commons（IDC）索引中的 20 个去标识检查。网页不复制这些 DICOM 文件，而是把经过核对的 `StudyInstanceUID` 交给站内 Cornerstone3D 工作台或 OHIF Viewer，并通过 IDC 只读 DICOMweb 代理按需加载。
 
 集合名称用于说明数据来源背景，不等同于对检查中每一幅图像的独立诊断。每个集合都必须按照其 DOI 页面、许可和 [IDC/TCIA 数据使用政策](https://www.cancerimagingarchive.net/data-usage-policies-and-restrictions/)引用。
 
@@ -19,4 +19,4 @@
 | 骨骼 | `spine_mets_ct_seg` | 2 | CT / SEG | [10.7937/kh36-ds04](https://doi.org/10.7937/kh36-ds04) | CC BY 4.0 |
 | 骨骼 | `cmb_mml` | 1 | MRI | [10.7937/szkb-sw39](https://doi.org/10.7937/szkb-sw39) | CC BY 4.0 |
 
-逐检查的匿名受试者编号、体积、Study UID 和模态保存在 `dicom-series.js`。发布前可运行 `node scripts/audit-dicom-studies.mjs`，确认 20 个 UID 仍能由 IDC DICOMweb 查询。
+逐检查的匿名受试者编号、体积、Study UID 和模态保存在 `dicom-series.js`。发布前可运行 `npm run audit:dicom`，确认每个检查都仍有可查询的诊断影像序列与实例；`npm run test:dicom` 会进一步在真实浏览器中打开一个多层 CT 序列并验证 Cornerstone3D 渲染和工具状态。

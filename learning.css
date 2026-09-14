@@ -263,9 +263,36 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
 .dicom-card dt { color: #7a8876; }
 .dicom-card dd { margin: 0; text-align: right; overflow-wrap: anywhere; }
 .dicom-links { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin: 16px 0 12px; }
-.dicom-links .primary { text-decoration: none; font-size: 13px; padding: 10px 14px; }
-.dicom-links > a:not(.primary) { color: #3d6845; font-size: 12px; }
+.dicom-links .primary { text-decoration: none; font-size: 13px; padding: 10px 14px; margin: 0; }
+.dicom-links > a { color: #3d6845; font-size: 12px; }
 .dicom-card > small { color: #7b8879; }
+.dialog-open { overflow: hidden; }
+.cornerstone-dialog { width: min(1500px,calc(100vw - 28px)); height: min(940px,calc(100dvh - 28px)); max-width: none; max-height: none; border: 0; padding: 0; border-radius: 20px; background: #07100e; color: #ecf4ef; overflow: hidden; }
+.cornerstone-dialog::backdrop { background: #07100ed9; backdrop-filter: blur(6px); }
+.cornerstone-shell { height: 100%; display: grid; grid-template-rows: auto auto minmax(0,1fr) auto; }
+.cornerstone-head { height: auto; min-height: 76px; padding: 14px 20px; border-bottom: 1px solid #27352f; background: #0e1c18; }
+.cornerstone-head h2 { margin: 3px 0; font-size: 19px; }
+.cornerstone-head p { margin: 0; color: #8da099; font-size: 11px; }
+.cornerstone-close,.cornerstone-controls button,.cornerstone-error button { border: 1px solid #405149; border-radius: 9px; background: #15241f; color: #dce8e2; padding: 9px 12px; cursor: pointer; }
+.cornerstone-close { margin-left: auto; }
+.cornerstone-controls { min-height: 58px; display: flex; align-items: center; gap: 14px; padding: 9px 16px; border-bottom: 1px solid #27352f; background: #0b1613; }
+.cornerstone-tools,.cornerstone-actions { display: flex; gap: 6px; }
+.cornerstone-tools button.active { color: #162f26; background: var(--mint); border-color: var(--mint); font-weight: 700; }
+.cornerstone-controls label { min-width: 210px; flex: 1; display: flex; align-items: center; gap: 8px; color: #91a39c; font-size: 11px; white-space: nowrap; }
+.cornerstone-controls select { width: 100%; min-width: 0; border: 1px solid #405149; border-radius: 9px; background: #15241f; color: #e7f0eb; padding: 9px; }
+.cornerstone-stage { position: relative; min-height: 0; overflow: hidden; background: #030504; }
+#cornerstoneViewport { position: absolute; inset: 0; outline: 0; touch-action: none; }
+.cornerstone-overlay { position: absolute; z-index: 3; pointer-events: none; color: #d4e2dc; text-shadow: 0 1px 2px #000; font: 11px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace; }
+.cornerstone-overlay span,.cornerstone-overlay b { display: block; }
+.cornerstone-overlay.top-left { top: 14px; left: 16px; }
+.cornerstone-overlay.bottom-left { bottom: 13px; left: 16px; color: #99aaa3; }
+.cornerstone-status,.cornerstone-error { position: absolute; z-index: 5; left: 50%; top: 50%; transform: translate(-50%,-50%); border: 1px solid #384942; border-radius: 14px; background: #10201be8; padding: 16px 20px; color: #dbe8e2; text-align: center; box-shadow: 0 14px 45px #0008; }
+.cornerstone-status::before { content: ""; display: inline-block; width: 12px; height: 12px; margin-right: 9px; border: 2px solid #65766f; border-top-color: var(--mint); border-radius: 50%; animation: cs-spin .8s linear infinite; vertical-align: -2px; }
+@keyframes cs-spin { to { transform: rotate(360deg); } }
+.cornerstone-error { width: min(440px,calc(100% - 30px)); }
+.cornerstone-error p { color: #b7c6c0; font-size: 13px; line-height: 1.6; }
+.cornerstone-error a { color: var(--mint); margin-left: 12px; font-size: 12px; }
+.cornerstone-foot { min-height: 42px; display: flex; justify-content: space-between; gap: 12px; align-items: center; padding: 9px 16px; border-top: 1px solid #27352f; background: #0e1c18; color: #788b84; font-size: 10px; }
 .data-panel { display: flex; justify-content: space-between; gap: 28px; align-items: center; margin-top: 18px; }
 .data-panel h2 { margin: 6px 0; }
 .data-panel p { margin: 0; color: #6d7969; max-width: 700px; }
@@ -312,6 +339,14 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
   .dicom-guide { grid-template-columns: 1fr; }
   .dicom-guide > div:last-child { border-left: 0; border-top: 1px solid #dce5d6; padding: 16px 0 0; }
   .dicom-grid { grid-template-columns: minmax(0,1fr); }
+  .cornerstone-dialog { width: 100vw; height: 100dvh; border-radius: 0; }
+  .cornerstone-controls { align-items: stretch; flex-wrap: wrap; }
+  .cornerstone-tools { width: 100%; display: grid; grid-template-columns: repeat(4,1fr); }
+  .cornerstone-controls label { min-width: 0; width: 100%; }
+  .cornerstone-actions { margin-left: auto; }
+  .cornerstone-overlay.bottom-left { display: none; }
+  .cornerstone-foot { display: block; }
+  .cornerstone-foot span { display: block; }
   header { padding: 0 16px; gap: 10px; height: 72px; }
   .header-actions { display: none; }
   .menu { flex-shrink: 0; }

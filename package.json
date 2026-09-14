@@ -1,0 +1,34 @@
+{
+  "name": "medical-imaging-learning",
+  "version": "1.0.0",
+  "private": true,
+  "description": "一个面向医学影像学习者的静态教学网站，无需登录或安装。访问 [公开网站](https://a1553189184-stack.github.io/medical-imaging-learning/)。",
+  "scripts": {
+    "build:viewer": "vite build",
+    "test": "node tests/catalog.test.cjs",
+    "test:browser": "node tests/browser-smoke.mjs",
+    "test:dicom": "node tests/dicom-browser-smoke.mjs",
+    "audit:dicom": "node scripts/audit-dicom-pilot.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a1553189184-stack/medical-imaging-learning.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/a1553189184-stack/medical-imaging-learning/issues"
+  },
+  "homepage": "https://github.com/a1553189184-stack/medical-imaging-learning#readme",
+  "dependencies": {
+    "@cornerstonejs/core": "5.8.2",
+    "@cornerstonejs/dicom-image-loader": "5.8.2",
+    "@cornerstonejs/tools": "5.8.2",
+    "events": "3.3.0"
+  },
+  "devDependencies": {
+    "vite": "6.4.3"
+  }
+}

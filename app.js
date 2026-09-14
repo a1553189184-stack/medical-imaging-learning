@@ -140,6 +140,7 @@ let currentView = 'home', detailId = ids[0], selected = null, recallOpen = true,
 let atlasSystem = 'all', atlasLimit = 48, noticeTimer, draftRows = [], draftSelected = new Set(), dicomSystem = 'all';
 let tool = 'contrast', zoom = 1, contrast = 1, inverted = false, imageMarks = [];
 let comparePrimaryId = ids[0], compareSecondaryId = null;
+let cornerstoneModulePromise = null;
 const currentCase = function() { return byId.get(session.queue[session.cursor]); };
 const hasAnswer = function(c) { return Object.prototype.hasOwnProperty.call(session.answers, c.id); };
 const persistSession = function() { save(sessionKey, session); };
@@ -383,13 +384,14 @@ function ohifUrl(study) {
   url.searchParams.set('studyInstanceUIDs', study.uid);
   return url.href;
 }
+window.medicalImagingOhifUrl = ohifUrl;
 function renderDicomStudies() {
   const studies = DICOM_STUDIES.filter(function(study) { return dicomSystem === 'all' || study.system === dicomSystem; });
   $('#dicomList').innerHTML = studies.map(function(study) {
     return '<article class="dicom-card"><div class="dicom-card-top"><span>' + esc(study.system) + '</span><b>' + esc(study.modality) + '</b></div>' +
       '<h2>' + esc(study.title) + '</h2><p>IDC 集合 <code>' + esc(study.collection) + '</code></p>' +
       '<dl><div><dt>匿名编号</dt><dd>' + esc(study.subject) + '</dd></div><div><dt>解剖范围</dt><dd>' + esc(study.body) + '</dd></div><div><dt>检查体积</dt><dd>约 ' + study.size + ' MB</dd></div></dl>' +
-      '<div class="dicom-links"><a class="primary" href="' + esc(ohifUrl(study)) + '" target="_blank" rel="noopener">在 OHIF 打开序列 ↗</a><a href="https://doi.org/' + esc(study.doi) + '" target="_blank" rel="noopener">数据集 DOI</a></div>' +
+      '<div class="dicom-links"><button class="primary" data-dicom-open="' + esc(study.uid) + '">站内打开序列</button><a href="' + esc(ohifUrl(study)) + '" target="_blank" rel="noopener">OHIF 备用 ↗</a><a href="https://doi.org/' + esc(study.doi) + '" target="_blank" rel="noopener">数据集 DOI</a></div>' +
       '<small>' + esc(study.license) + ' · Study UID 已核对</small></article>';
   }).join('');
 }
@@ -1031,6 +1033,26 @@ $$('[data-library-system]').forEach(function(el) {
   el.onkeydown = function(e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openSystem(); } };
 });
 document.addEventListener('click', function(e) {
+  const dicomButton = e.target.closest('[data-dicom-open]');
+  if (dicomButton) {
+    const study = DICOM_STUDIES.find(function(item) { return item.uid === dicomButton.dataset.dicomOpen; });
+    if (!study) return;
+    dicomButton.disabled = true;
+    dicomButton.textContent = '正在启动…';
+    cornerstoneModulePromise = cornerstoneModulePromise || import('./assets/cornerstone/viewer.js?v=atlas13');
+    cornerstoneModulePromise.then(function() {
+      window.CornerstonePilot.open(study);
+    }).catch(function(error) {
+      cornerstoneModulePromise = null;
+      console.error('Cornerstone viewer module failed to load',error);
+      window.cornerstoneModuleError = error && error.stack ? error.stack : String(error);
+      notify('影像引擎载入失败，请刷新后重试或使用 OHIF 备用入口。');
+    }).finally(function() {
+      dicomButton.disabled = false;
+      dicomButton.textContent = '站内打开序列';
+    });
+    return;
+  }
   const el = e.target.closest('[data-detail],[data-quiz],[data-study],[data-favorite],[data-compare],[data-clear],[data-summary-config]');
   if (!el || el.disabled) return;
   e.preventDefault();
@@ -1043,7 +1065,7 @@ document.addEventListener('click', function(e) {
   else openQueue();
 });
 document.addEventListener('keydown', function(e) {
-  if ($('#queueDialog').open || $('#compareDialog').open) return;
+  if ($('#queueDialog').open || $('#compareDialog').open || $('#cornerstoneDialog').open) return;
   if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); $('#globalSearch').focus(); return; }
   if (currentView !== 'viewer' || e.target.matches('input,textarea,select') || e.ctrlKey || e.metaKey || e.altKey) return;
   if (e.key === 'ArrowRight') { e.preventDefault(); moveQuestion(1); }
