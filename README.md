@@ -2,6 +2,8 @@
 
 一个面向医学影像学习者的静态教学网站，无需登录或安装。访问 [公开网站](https://a1553189184-stack.github.io/medical-imaging-learning/)。
 
+项目也可按 [DEPLOYMENT.md](DEPLOYMENT.md) 部署为带 Vercel Serverless API 的动态 Web 应用；SEO 所需的 sitemap、robots、canonical URL 和结构化数据已包含在仓库中。
+
 ## 功能
 
 - 病例图谱：1,114 个开放影像教学病例（胸部 285、神经 261、腹部 260、骨骼 308），包含 X 线、CT / CTPA、MRI、超声和骨显像。每例有中英文名称、影像征象核对清单、分步骤诊断方法、鉴别诊断、易错点、报告表达练习和参考资料。最新一批从 502 张候选中最终保留 178 张：剔除来源提及目标病种但图片展示其他病变的候选，以及同一检查的相邻层面；静态截屏未显示目标病灶时也不作为独立病例。
@@ -87,6 +89,7 @@ npm run build:viewer
 - `app.js`：筛选、详情、训练模式、选题排序、本地记录与影像交互。
 - `auth.js`、`auth-config.js`：Supabase Auth 登录外壳与公开浏览器配置；空配置时安全降级为访客模式。
 - `AUTH_SETUP.md`、`supabase/learning-backups.sql`：OAuth 重定向配置与可选学习记录云备份的最小权限数据库策略。
+- `api/`、`vercel.json`、`DEPLOYMENT.md`：Vercel Serverless API、动态托管安全头与正式域名／搜索引擎收录说明。
 - `index.html`、`styles.css`、`learning.css`：页面结构及响应式样式。
 - `assets/images/`：原始开放影像，许可不因网站发布而改变。
 - `assets/thumbnails/`：病例图谱专用轻量 WebP 缩略图，由 `scripts/generate-thumbnails.py` 从原图生成。

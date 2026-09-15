@@ -45,6 +45,23 @@ test('account integration is safe by default and includes isolated cloud-backup 
   assert.match(setup,/service_role/i);
 });
 
+test('public search discovery and serverless deployment artifacts are present', () => {
+  const page = fs.readFileSync(path.join(root,'index.html'),'utf8');
+  const robots = fs.readFileSync(path.join(root,'robots.txt'),'utf8');
+  const sitemap = fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
+  const deployment = fs.readFileSync(path.join(root,'DEPLOYMENT.md'),'utf8');
+  const health = fs.readFileSync(path.join(root,'api','health.js'),'utf8');
+  const status = fs.readFileSync(path.join(root,'api','site-status.js'),'utf8');
+  assert.match(page,/<link rel="canonical" href="https:\/\/a1553189184-stack\.github\.io\/medical-imaging-learning\/"/);
+  assert.match(page,/application\/ld\+json/);
+  assert.match(robots,/Allow: \//);
+  assert.match(robots,/Sitemap: https:\/\/a1553189184-stack\.github\.io\/medical-imaging-learning\/sitemap\.xml/);
+  assert.match(sitemap,/<loc>https:\/\/a1553189184-stack\.github\.io\/medical-imaging-learning\/<\/loc>/);
+  assert.match(health,/timestamp: new Date\(\)\.toISOString\(\)/);
+  assert.match(status,/PUBLIC_SITE_URL/);
+  assert.match(deployment,/Google Search Console/);
+});
+
 test('catalog has 1,114 cases after study-level deduplication', () => {
   assert.equal(cases.length,1114);
   assert.equal(expanded.length,1100);
