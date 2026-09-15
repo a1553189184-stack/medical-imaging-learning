@@ -11,7 +11,7 @@ const catalogScripts = [
 const source = catalogScripts.map(file => fs.readFileSync(path.join(root,file),'utf8')).join('\n');
 const payload = JSON.parse(vm.runInNewContext(source + '\nJSON.stringify({cases:CASES,curriculum:CURRICULUM})'));
 const lessonById = new Map(payload.curriculum.map(lesson => [lesson.id,lesson]));
-const contentVersion = '2026.09.4';
+const contentVersion = '2026.09.10';
 
 function sha256(value) {
   return createHash('sha256').update(value).digest('hex');

@@ -176,7 +176,7 @@ function updateLocation() {
   if (currentView !== 'home') url.searchParams.set('view', currentView);
   if (currentView === 'viewer' || currentView === 'caseDetail') {
     const c = currentView === 'viewer' ? currentCase() : byId.get(detailId);
-    url.searchParams.set('case', cases.indexOf(c));
+    url.searchParams.set('caseId', c.id);
     if (currentView === 'viewer') url.searchParams.set('mode', session.mode);
   }
   history.replaceState(null, '', url);
@@ -207,7 +207,7 @@ function filteredCases() {
     const level = $('#levelFilter').value;
     const status = $('#statusFilter').value;
     return (atlasSystem === 'all' || c.system === atlasSystem || (atlasSystem === 'favorite' && favorites.includes(c.id))) &&
-      (modality === 'all' || c.modality === modality || (modality === 'CT' && c.modality === 'CTPA')) &&
+      (modality === 'all' || c.modality === modality || (modality === 'CT' && ['CTA','CTPA'].includes(c.modality)) || (modality === 'MRI' && c.modality === 'MRA')) &&
       (level === 'all' || c.level === level) &&
       (status === 'all' || (status === 'completed' && completed.includes(c.id)) ||
         (status === 'unanswered' && !completed.includes(c.id)) || (status === 'reviewed' && reviewed.includes(c.id)) || (status === 'mistakes' && isMistake(c))) &&
@@ -450,11 +450,11 @@ function renderCases() {
   $('#caseList').innerHTML = visible.map(function(c) {
     const i = cases.indexOf(c), isFav = favorites.includes(c.id);
     return '<article class="atlas-card" data-id="' + c.id + '">' +
-      '<a href="?view=caseDetail&amp;case=' + i + '" data-detail="' + c.id + '" class="atlas-photo" aria-label="查看' + esc(c.title) + '详情">' +
+      '<a href="?view=caseDetail&amp;caseId=' + encodeURIComponent(c.id) + '" data-detail="' + c.id + '" class="atlas-photo" aria-label="查看' + esc(c.title) + '详情">' +
       '<img src="' + thumbFor(c) + '" alt="' + esc(c.title) + '" loading="lazy" decoding="async"><span>' + esc(c.modality) + '</span></a>' +
       '<div class="atlas-card-body"><div class="atlas-card-meta"><span>' + c.system + ' · ' + c.level + '</span>' +
       '<button class="bookmark" data-favorite="' + c.id + '" aria-label="' + (isFav ? '取消收藏' : '收藏') + esc(c.title) + '" aria-pressed="' + isFav + '">' + (isFav ? '★' : '☆') + '</button></div>' +
-      '<h2><a href="?view=caseDetail&amp;case=' + i + '" data-detail="' + c.id + '">' + esc(c.title) + '</a></h2><p class="english-name">' + esc(c.english) + '</p>' +
+      '<h2><a href="?view=caseDetail&amp;caseId=' + encodeURIComponent(c.id) + '" data-detail="' + c.id + '">' + esc(c.title) + '</a></h2><p class="english-name">' + esc(c.english) + '</p>' +
       tags(c) + '<p class="atlas-clue"><b>诊断要点</b>' + esc(c.recall) + '</p>' +
       '<div class="case-status">' + (completed.includes(c.id) ? '<span>已答题</span>' : '<span>未答题</span>') + (reviewed.includes(c.id) ? '<span>已背题</span>' : '') + (isMistake(c) ? '<span class="needs-review">待复习错题</span>' : '') + '</div>' +
       '<div class="card-buttons"><button class="soft-button" data-detail="' + c.id + '">诊断方法与详情</button><button class="soft-button" data-study="' + c.id + '">背题</button><button class="soft-button" data-quiz="' + c.id + '">答题</button></div></div></article>';
@@ -1350,13 +1350,19 @@ document.addEventListener('keydown', function(e) {
 function route() {
   const params = new URLSearchParams(location.search), raw = params.get('case');
   const index = raw !== null && /^\d+$/.test(raw) ? Number(raw) : -1;
-  const requested = cases[index];
+  const stableId = params.get('caseId') || (index>=0 ? LEGACY_CASE_IDS[index] : null);
+  const requested = stableId ? byId.get(stableId) : null;
   if (requested) {
     if (params.get('view') === 'caseDetail') { showDetail(requested.id); return; }
     if (!session.queue.includes(requested.id)) session.queue = ids.slice();
     session.cursor = session.queue.indexOf(requested.id);
     if (['quiz','study'].includes(params.get('mode'))) session.mode = params.get('mode');
     renderTraining(); showView('viewer'); return;
+  }
+  if (stableId && !requested) {
+    renderTraining(); showView('cases');
+    notify('此旧链接指向的病例已因质量复核下架，请在病例图谱中选择其他病例。');
+    return;
   }
   renderTraining();
   showView(['home','cases','viewer','dicom','progress'].includes(params.get('view')) ? params.get('view') : 'home');

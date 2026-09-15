@@ -7,7 +7,7 @@ import path from 'node:path';
 // neighbouring slices are intentionally excluded.
 const representatives = {
   chest: [2, 3, 4, 5, 9, 10, 11, 12, 14, 20, 22, 25, 26, 28, 29, 30, 32, 33, 34, 37, 38, 40, 42, 43, 44, 47, 48, 52, 54, 61, 63, 64, 66, 69, 70, 73, 74, 76, 77, 82, 86, 89, 90, 92, 99, 100, 103, 106],
-  neuro: [1, 3, 5, 8, 9, 10, 13, 14, 15, 16, 18, 19, 20, 22, 23, 24, 25, 27, 29, 30, 32, 33, 35, 37, 38, 46, 48, 52, 55, 58, 61, 67, 71, 75, 84, 86, 95, 104, 132],
+  neuro: [1, 3, 5, 8, 9, 10, 13, 14, 15, 16, 18, 19, 20, 22, 23, 24, 25, 27, 29, 30, 32, 33, 37, 38, 46, 48, 52, 55, 58, 61, 67, 71, 84, 86, 95, 104, 132],
   abdomen: [3, 4, 6, 7, 8, 9, 10, 11, 14, 15, 16, 18, 21, 22, 23, 24, 27, 29, 31, 32, 35, 37, 39, 40, 45, 48, 49, 55, 59, 64, 66, 71, 72, 73, 75, 80, 82, 84, 88, 90, 108],
   bone: [2, 3, 4, 5, 11, 12, 14, 17, 21, 22, 23, 24, 26, 27, 30, 31, 32, 33, 34, 35, 36, 41, 46, 49, 50, 51, 56, 58, 59, 60, 65, 66, 69, 70, 72, 73, 74, 77, 84, 85, 89, 91, 93, 94, 99, 101, 104, 108, 109, 112, 114, 125],
 };
@@ -34,8 +34,9 @@ function inferredModality(record, fallback) {
     ['MRI', /\b(mri|mrt|magnetic resonance|mr t1|mr t2|t1.?weighted|t2.?weighted|flair|dwi)\b/i],
     ['US', /\b(ultrasound|ultrasonography|sonography|sonogram|echography|fibroscan|us scan|us image)\b/i],
     ['CT', /\b(ct|computed tomography|computer tomography|ctpa|tac craneo)\b/i],
-    ['X-RAY', /\b(x.?ray|cxr|radiograph|roentgen|roentgenbild|breischluck|cr pa|cr ap|roe pa|roe ap|röntgen)\b/i],
+    ['X-RAY', /\b(x.?ray|cxr|radiograph|roentgen|roentgenbild|breischluck|roe|röntgen)\b/i],
   ];
+  if (/(?:^|[\s-])CR(?:[\s-]|\.)/.test(title)) return 'X-RAY';
   for (const text of terms) {
     for (const [modality, pattern] of tests) if (pattern.test(text)) return modality;
   }
@@ -57,7 +58,9 @@ manifest.records = manifest.records.filter(record => {
   const modality = inferredModality(record, group.modality);
   group.modality = modality;
   group.tags = [...new Set(group.tags.filter(tag => !['CT', 'CTPA', 'MRI', 'US', 'X-RAY'].includes(tag)).concat(modality))];
-  group.basis = `公开来源将本影像描述为“${record.sourceTitle}”。病例说明：${record.sourceDescription}。本图作为“${group.title.split('（公开病例')[0]}”的单例阅片训练材料；教学要点是核对清单，不代替对原图的独立判读。`;
+  if (!['bone-1506-027', 'neuro-1506-025'].includes(record.id)) {
+    group.basis = `公开来源将本影像描述为“${record.sourceTitle}”。病例说明：${record.sourceDescription}。本图作为“${group.title.split('（公开病例')[0]}”的单例阅片训练材料；教学要点是核对清单，不代替对原图的独立判读。`;
+  }
   record.qualityScore = 'source-title-checked-and-one-image-per-study';
   record.sourceAudit = 'manual-curation-after-perceptual-and-study-review';
   return true;
@@ -66,10 +69,10 @@ manifest.records = manifest.records.filter(record => {
 manifest.count = manifest.records.length;
 manifest.expansion1506.count = selected.size;
 delete manifest.expansion1506.minimumPerSystem;
-manifest.expansion1506.requestedTarget = manifest.expansion1506.target;
+manifest.expansion1506.requestedTarget = manifest.expansion1506.requestedTarget || manifest.expansion1506.target;
 delete manifest.expansion1506.target;
 manifest.expansion1506.bySystem = Object.fromEntries(Object.entries(representatives).map(([system, numbers]) => [{chest: '胸部', neuro: '神经', abdomen: '腹部', bone: '骨骼'}[system], numbers.length]));
-manifest.expansion1506.qualityGate = 'Only source-consistent representative study images retained; incidental mentions, misleading images and same-study slices excluded.';
+manifest.expansion1506.qualityGate = manifest.expansion1506.qualityGate || 'Only source-consistent representative study images retained; incidental mentions, misleading images and same-study slices excluded.';
 manifest.generatedAt = new Date().toISOString();
 
 const selection = JSON.parse(fs.readFileSync(selectionPath, 'utf8'));

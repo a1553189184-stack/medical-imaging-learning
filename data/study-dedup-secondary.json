@@ -1,0 +1,24 @@
+{
+  "removed": [
+    {
+      "id": "abdomen-next-budd-chiari-01",
+      "sourceTitle": "Buddchiari.PNG",
+      "image": "assets/images/expanded/abdomen-next-budd-chiari-01.png"
+    },
+    {
+      "id": "neuro-1004-061",
+      "sourceTitle": "Epidermoidzyste MRT T1 ax.jpg",
+      "image": "assets/images/expanded/neuro-1004-061.jpg"
+    },
+    {
+      "id": "chest-1004-023",
+      "sourceTitle": "Rad 1300167 cr.jpg",
+      "image": "assets/images/expanded/chest-1004-023.jpg"
+    }
+  ],
+  "retained": [
+    "abdomen-1506-024",
+    "neuro-1004-047",
+    "chest-1004-001"
+  ]
+}

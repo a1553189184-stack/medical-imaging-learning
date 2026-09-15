@@ -271,6 +271,17 @@ const EXPANDED_METHOD_START = {
   '腹部':'先确认器官、切面、增强时相或超声方向，再从病灶位置、形态、内部和周围反应四方面描述。',
   '骨骼':'先确认侧别、投照与覆盖范围，至少联合两个正交方向检查骨皮质、小梁、关节对位和软组织。'
 };
+function expandedMethodStart(system, modality) {
+  if (modality === 'X-RAY') return EXPANDED_METHOD_START[system];
+  if (modality === 'CT' || modality === 'CTPA') {
+    return '先确认本张 CT 图像的方向、解剖覆盖范围、窗位及是否使用对比剂，再按' + ({'胸部':'气道、肺、胸膜、心纵隔和骨骼','神经':'脑实质、脑外间隙、脑室脑池和骨质','腹部':'器官、肠管、血管和周围脂肪','骨骼':'骨皮质、关节面和软组织'}[system]) + '逐项检查；单张图不能代替完整层面。';
+  }
+  if (modality === 'MRI') return '先确认本张 MRI 图像的序列和方向，再定位异常信号、周围结构与占位效应；未显示的其他序列不能按已检查处理。';
+  if (modality === 'MRA') return '先确认这是 MR 血管成像及其投影方向，再检查血管走行、狭窄或侧支；MIP 静态图不能代替完整原始层面。';
+  if (modality === 'DSA') return '先确认数字减影血管造影的投影方向和所示造影时相，再检查供血动脉、侧支和血管病变；单帧不能代表完整动态检查。';
+  if (modality === 'US') return '先确认超声图像的器官、切面和探头方向，再描述回声、边界和声影；静态图不能替代动态扫查。';
+  return '先确认本图检查类型、切面、覆盖范围和来源说明，再进行系统性阅片。';
+}
 
 // Additional diagnosis groups are generated from the manually reviewed second
 // expansion batch before source records are converted into cases.
@@ -408,12 +419,62 @@ const SPECIALIZED_GROUP_BY_ID = {
 };
 
 function expandedModality(source, fallback) {
-  const text = (source.sourceTitle + ' ' + source.sourceDescription).toLocaleLowerCase();
-  if (/mri|mrt|magnetic resonance|\brm\b/.test(text)) return 'MRI';
-  if (/ultrasound|ultrasonograph|sonograf|\bus\b/.test(text)) return 'US';
-  if (/ctpa|pulmonary embol/.test(text) && fallback === 'CTPA') return 'CTPA';
-  if (/computed tomography|\bct\b|cta/.test(text)) return 'CT';
+  // File title identifies the displayed image more reliably than a description
+  // that may mention a different modality used elsewhere in the same workup.
+  const title = source.sourceTitle;
+  const titleMatches = [
+    ['MRA', /\b(?:mra|mr angiograph\w*)\b/i],
+    ['DSA', /\b(?:dsa|digital subtraction angiograph\w*)\b/i],
+    ['CTPA', /\bctpa\b/i],
+    ['CTA', /\bcta\b/i],
+    ['MRI', /\b(?:mri|mrt|magnetic resonance|mr[- ]?(?:t1|t2)|flair|dwi)\b/i],
+    ['US', /\b(?:ultrasound|ultrasonograph\w*|sonograph\w*|sonogram|echograph\w*)\b/i],
+    ['CT', /\b(?:ct|computed tomography|computer tomography|tac craneo)\b/i],
+    ['X-RAY', /\b(?:x[ -]?ray\w*|cxr|radiograph\w*|roentgen\w*|r[oö]ntgen\w*|breischluck|roe)\b/i]
+  ].filter(function(entry) { return entry[1].test(title); }).map(function(entry) { return entry[0]; });
+  if (/(?:^|[\s-])CR(?:[\s-]|\.)/.test(title) && !titleMatches.includes('X-RAY')) titleMatches.push('X-RAY');
+  if (titleMatches.length === 1) return titleMatches[0];
+  if (titleMatches.length > 1) return fallback;
+  const description = source.sourceDescription;
+  if (/\b(?:dsa|digital subtraction angiograph\w*)\b/i.test(description)) return 'DSA';
+  if (/\b(?:mra|mr angiograph\w*)\b/i.test(description)) return 'MRA';
+  if (/\b(?:ctpa|pulmonary ct angiograph\w*)\b/i.test(description)) return 'CTPA';
+  if (/\b(?:cta|ct angiograph\w*)\b/i.test(description)) return 'CTA';
+  if (/\b(?:mri|mrt|magnetic resonance)\b/i.test(description) && fallback === 'MRI') return 'MRI';
+  if (/\b(?:ultrasound|ultrasonograph\w*|sonograph\w*)\b/i.test(description) && fallback === 'US') return 'US';
+  if (/\b(?:computed tomography|ct scan)\b/i.test(description) && (fallback === 'CT' || fallback === 'CTPA' || fallback === 'CTA')) return 'CT';
+  if (/\b(?:x[ -]?ray\w*|radiograph\w*|roentgen\w*|r[oö]ntgen\w*)\b/i.test(description) && fallback === 'CT') return 'X-RAY';
   return fallback;
+}
+
+function correctedTeachingMethod(source, group, modality) {
+  if (source.id.includes('-1506-') && modality === 'X-RAY' && /多个MRI序列/.test(group.method)) {
+    return '先核对本张 X 线片的投照、覆盖范围和解剖位置，再沿骨皮质、关节面与软组织识别异常；其他检查不能当作本图所见。';
+  }
+  return group.method;
+}
+
+function correctedNextStep(source, group) {
+  if (source.id.includes('-1506-') && /规范骨肿瘤评估/.test(group.next) && !/肿瘤|瘤/.test(group.title)) {
+    return '结合症状、损伤机制、既往影像及完整检查确认病变；是否补充 CT 或 MRI 应由具体临床问题决定。';
+  }
+  return group.next;
+}
+function expandedMixedModalities(source) {
+  return /(\b(?:MR|MRI|MRT)\b.{0,15}\bCT\b|\bCT\b.{0,15}\b(?:MR|MRI|MRT)\b|\bUS\b.{0,15}\bCT\b|\bCT\b.{0,15}\bUS\b|\bRoe\b.{0,15}\bMR\b)/i.test(source.sourceTitle);
+}
+function expandedSigns(source, group) {
+  if (source.id === 'neuro-new-moyamoya-01') return [
+    '先把左侧患者 MRA 与右侧健康对照图区分，不能当作同一患者双侧',
+    '在患者图上检查颈内动脉终末段、前中动脉及侧支血管显示',
+    'MIP 投影需要结合原始层面；对照图不能写入患者报告'
+  ];
+  if (source.id === 'neuro-new-moyamoya-02') return [
+    '确认这是右侧颈内动脉数字减影血管造影的单帧',
+    '检查颈内动脉终末段、大脑前中动脉与侧支血管',
+    '单帧不支持判断完整造影时相、狭窄程度或疾病分期'
+  ];
+  return group.signs;
 }
 
 const expandedSequence = {};
@@ -421,20 +482,22 @@ EXPANDED_CASE_SOURCES.forEach(function(source,index) {
   const teachingKey = SPECIALIZED_GROUP_BY_ID[source.id] || source.groupKey;
   const group = EXPANDED_GROUPS[teachingKey];
   if (!group) throw new Error('Missing teaching group: ' + source.groupKey);
-  const sequence = (expandedSequence[teachingKey] || 0) + 1;
-  expandedSequence[teachingKey] = sequence;
+  const diagnosis = group.title.replace(/（公开病例\s*\d+）/g,'');
+  const sequence = (expandedSequence[diagnosis] || 0) + 1;
+  expandedSequence[diagnosis] = sequence;
   const answer = index % 4;
   const options = group.distractors.slice();
-  options.splice(answer,0,group.title);
+  options.splice(answer,0,diagnosis);
   const modality = expandedModality(source,group.modality);
-  const title = group.title + ' · 开放病例 ' + String(sequence).padStart(2,'0');
+  const signs = expandedSigns(source,group);
+  const title = diagnosis + ' · 开放病例 ' + String(sequence).padStart(2,'0');
   CASES.push({
     system:source.system, modality:modality, title:title,
     history:'公开来源未提供可核验的完整临床病史；本例只训练影像征象识别，不根据网页补造症状。',
     image:source.image, level:group.level, answer:answer, options:options,
-    findings:group.signs, explain:group.basis, differential:group.differential,
+    findings:signs, explain:group.basis.replace(/（公开病例\s*\d+）/g,''), differential:group.differential,
     pearl:group.pearl,
-    report:modality + '图像显示' + group.signs[0] + '；并应' + group.signs[1] + '。结合本图公开来源标签，考虑“' + group.title + '”。建议结合完整检查与临床资料确认。',
+    report:'公开来源将此影像标注为“' + diagnosis + '”。报告练习应先在原图确认' + signs[0] + '，再核对' + signs[1] + '；未见完整序列和病史时，不应把教学核对项写成已证实的影像所见。',
     source:'Wikimedia Commons · ' + source.artist, license:source.license,
     licenseUrl:source.licenseUrl, sourceUrl:source.sourceUrl,
     sourceFile:source.sourceTitle, sourceEvidence:source.sourceDescription,
@@ -442,14 +505,14 @@ EXPANDED_CASE_SOURCES.forEach(function(source,index) {
   });
   CURRICULUM.push({
     id:source.id, english:group.english,
-    tags:group.tags,
+    tags:group.tags.filter(function(tag) { return !['CT','CTA','CTPA','MRI','MRA','DSA','US','X-RAY','骨显像'].includes(tag); }).concat(modality,expandedMixedModalities(source) ? ['多模态拼图'] : []),
     methods:[
-      ['确认检查与质量',EXPANDED_METHOD_START[source.system]],
-      ['定位并识别',group.method],
-      ['鉴别与下一步',group.next]
+      ['确认检查与质量',expandedMethodStart(source.system,modality)],
+      ['定位并识别',correctedTeachingMethod(source,group,modality)],
+      ['鉴别与下一步',correctedNextStep(source,group)]
     ],
     tips:group.tips, pitfalls:group.pitfalls, recall:group.recall,
-    limitation:'这是来源提供的单张或拼图式静态影像，不含完整DICOM序列、可校准像素间距和完整病史。诊断名称依据来源说明；本页不能替代放射科正式阅片或临床诊疗。',
+    limitation:'这是来源提供的单张或拼图式静态影像，不含完整DICOM序列、可校准像素间距和完整病史。诊断名称依据来源说明；本页不能替代放射科正式阅片或临床诊疗。' + (expandedMixedModalities(source) ? ' 文件名提示包含多种检查类型；上方类型仅为主要教学分类，拼图各面板须分别辨认。' : '') + (source.id === 'neuro-new-moyamoya-01' ? ' 本图右半是健康对照，不是患者的另一侧血管。' : ''),
     refs:[EXPANDED_REFS[group.ref],EXPANDED_REFS.acr].filter(function(ref,index,items){
       return index === items.findIndex(function(item){ return item[1] === ref[1]; });
     })

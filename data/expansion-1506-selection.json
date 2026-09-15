@@ -1129,29 +1129,6 @@
       "sourceAudit": "manual-curation-after-perceptual-and-study-review"
     },
     {
-      "id": "neuro-1506-035",
-      "groupKey": "neuro-1506-035",
-      "system": "神经",
-      "image": "assets/images/expanded/neuro-1506-035.jpg",
-      "sourceTitle": "Developmental Venous Anomaly MRT T1KM axial 03.jpg",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Developmental_Venous_Anomaly_MRT_T1KM_axial_03.jpg",
-      "sourceDescription": "Developmental Venous Anomaly (DVA) in der MRT T1 mit Kontrastmittel axial. Drainagevene am Ventrikel.",
-      "artist": "Hellerhoff",
-      "credit": "Own work",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Developmental_Venous_Anomaly_MRT_T1KM_axial_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "originalSha1": "511447e35a1be4d5d4c0d48844cbfcfbd2d79fc2",
-      "localSha256": "bedf7d59f432af6ce334beaf8af256b0d98e64eb2a871704b08d8aec53e6a16b",
-      "localBytes": 72945,
-      "width": 893,
-      "height": 966,
-      "mime": "image/jpeg",
-      "retrieval": "strict-diagnosis-search",
-      "qualityScore": "source-title-checked-and-one-image-per-study",
-      "sourceAudit": "manual-curation-after-perceptual-and-study-review"
-    },
-    {
       "id": "neuro-1506-037",
       "groupKey": "neuro-1506-037",
       "system": "神经",
@@ -3245,29 +3222,6 @@
       "sourceAudit": "manual-curation-after-perceptual-and-study-review"
     },
     {
-      "id": "neuro-1506-075",
-      "groupKey": "neuro-1506-075",
-      "system": "神经",
-      "image": "assets/images/expanded/neuro-1506-075.png",
-      "sourceTitle": "SAB bei Aneurysma 03.png",
-      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SAB_bei_Aneurysma_03.png",
-      "sourceDescription": "Subarachnoidale Blutung in der Computertomographie bei Aneurysmaruptur.",
-      "artist": "Hellerhoff",
-      "credit": "Own work",
-      "license": "CC BY-SA 3.0",
-      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
-      "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/SAB_bei_Aneurysma_03.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
-      "originalSha1": "5921a1177c62560af52795d7da029cb4459acb1d",
-      "localSha256": "26c3724fdecc3fb8b95d9b95f9f060b50e6185a6b4689bf657eebf3c6c715788",
-      "localBytes": 386634,
-      "width": 890,
-      "height": 1024,
-      "mime": "image/png",
-      "retrieval": "strict-diagnosis-search",
-      "qualityScore": "source-title-checked-and-one-image-per-study",
-      "sourceAudit": "manual-curation-after-perceptual-and-study-review"
-    },
-    {
       "id": "abdomen-1506-075",
       "groupKey": "abdomen-1506-075",
       "system": "腹部",
@@ -4466,5 +4420,5 @@
     "bone-1506-131",
     "bone-1506-132"
   ],
-  "qualityGate": "Only source-consistent representative study images retained; incidental mentions, misleading images and same-study slices excluded."
+  "qualityGate": "A single representative source image per strict study-title cluster; source checks do not constitute radiologist approval."
 }

@@ -69,9 +69,9 @@ try {
     if((await evaluate("document.querySelector('#viewerIndex')?.textContent || ''")).includes('病例编号')) break;
     await delay(100);
   }
-  assert.equal(await evaluate('CASES.length'),1184);
-  assert.equal(await evaluate('CASE_PACKAGES.length'),1184);
-  assert.equal(await evaluate("document.querySelector('#caseTotal').textContent"),'1184');
+  assert.equal(await evaluate('CASES.length'),1114);
+  assert.equal(await evaluate('CASE_PACKAGES.length'),1114);
+  assert.equal(await evaluate("document.querySelector('#caseTotal').textContent"),'1114');
   assert.equal(await evaluate("document.querySelector('#activeScan').complete && document.querySelector('#activeScan').naturalWidth > 0"),true);
   assert.equal(await evaluate("new Promise(resolve => { const image = new Image(); image.onload = () => resolve(image.naturalWidth > 0); image.onerror = () => resolve(false); image.src = CASES.at(-1).image; })"),true);
   assert.equal(await evaluate("document.querySelector('#findingsPane').hidden"),false);
@@ -123,6 +123,20 @@ try {
   await evaluate("document.querySelector('#startPrescription').click()");
   assert.match(await evaluate("document.querySelector('#queueSummary').textContent"),/自定义顺序/);
   assert.match(await evaluate("document.querySelector('#queueSummary').textContent"),/10 题/);
+  await evaluate("history.pushState(null,'','?view=caseDetail&caseId=bone-1506-089');dispatchEvent(new PopStateEvent('popstate'))");
+  assert.match(await evaluate("document.querySelector('#detailContent h1').textContent"),/拇外翻/);
+  assert.match(await evaluate("document.querySelector('#detailContent .eyebrow').textContent"),/X-RAY/);
+  await evaluate("history.pushState(null,'','?view=caseDetail&case='+LEGACY_CASE_IDS.indexOf('bone-1506-089'));dispatchEvent(new PopStateEvent('popstate'))");
+  assert.match(await evaluate("location.search"),/caseId=bone-1506-089/);
+  await evaluate("history.pushState(null,'','?view=caseDetail&case='+LEGACY_CASE_IDS.indexOf('chest-1004-037'));dispatchEvent(new PopStateEvent('popstate'))");
+  assert.match(await evaluate("document.querySelector('#notice').textContent"),/质量复核下架/);
+  assert.equal(await evaluate("document.querySelector('#cases').classList.contains('active')"),true);
+  await evaluate("document.querySelector('#modalityFilter').value='DSA';document.querySelector('#modalityFilter').dispatchEvent(new Event('change'))");
+  assert.equal(await evaluate("filteredCases().some(c=>c.modality==='DSA') && filteredCases().every(c=>c.modality==='DSA')"),true);
+  await evaluate("document.querySelector('#modalityFilter').value='MRI';document.querySelector('#modalityFilter').dispatchEvent(new Event('change'))");
+  assert.equal(await evaluate("filteredCases().some(c=>c.modality==='MRA')"),true);
+  await evaluate("document.querySelector('#modalityFilter').value='骨显像';document.querySelector('#modalityFilter').dispatchEvent(new Event('change'))");
+  assert.equal(await evaluate("filteredCases().some(c=>c.modality==='骨显像')"),true);
   await command('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});
   assert.equal(await evaluate("document.documentElement.scrollWidth <= window.innerWidth"),true);
   assert.deepEqual(runtimeErrors,[]);

@@ -12,6 +12,7 @@ const data = vm.runInNewContext(source + '\nJSON.stringify({cases:CASES,curricul
 const {cases,curriculum,sources} = JSON.parse(data);
 const dicomStudies = JSON.parse(vm.runInNewContext(fs.readFileSync(path.join(root,'dicom-series.js'),'utf8') + '\nJSON.stringify(DICOM_STUDIES)'));
 const medicalReviews = JSON.parse(vm.runInNewContext(fs.readFileSync(path.join(root,'medical-reviews.js'),'utf8') + '\nJSON.stringify(MEDICAL_REVIEWS)'));
+const legacyCaseIds = JSON.parse(vm.runInNewContext(fs.readFileSync(path.join(root,'legacy-case-ids.js'),'utf8') + '\nJSON.stringify(LEGACY_CASE_IDS)'));
 const casePackages = JSON.parse(vm.runInNewContext(fs.readFileSync(path.join(root,'case-packages.js'),'utf8') + '\nJSON.stringify(CASE_PACKAGES)'));
 const getId = c => path.basename(c.image,path.extname(c.image));
 const expanded = cases.filter(c => c.image.startsWith('assets/images/expanded/'));
@@ -23,49 +24,42 @@ const canonical = value => {
   return JSON.stringify(value);
 };
 
-test('catalog has 1,184 cases with a curated 180-case expansion', () => {
-  assert.equal(cases.length,1184);
-  assert.equal(expanded.length,1170);
+test('catalog has 1,114 cases after study-level deduplication', () => {
+  assert.equal(cases.length,1114);
+  assert.equal(expanded.length,1100);
   const totals = Object.fromEntries(['胸部','神经','腹部','骨骼'].map(system => [system,cases.filter(c => c.system===system).length]));
-  assert.deepEqual(totals,{胸部:290,神经:290,腹部:288,骨骼:316});
-  assert.deepEqual(Object.fromEntries(Object.keys(totals).map(system=>[system,expanded.filter(c=>c.system===system).length])),{胸部:284,神经:286,腹部:285,骨骼:315});
+  assert.deepEqual(totals,{胸部:285,神经:261,腹部:260,骨骼:308});
+  assert.deepEqual(Object.fromEntries(Object.keys(totals).map(system=>[system,expanded.filter(c=>c.system===system).length])),{胸部:279,神经:257,腹部:257,骨骼:307});
   const latest = sources.filter(record=>latestChestIds.includes(record.id));
   assert.equal(latest.length,10);
   assert.equal(new Set(latest.map(record=>record.groupKey)).size,10);
   assert.ok(latestChestIds.every(id=>cases.some(c=>getId(c)===id && c.system==='胸部')));
-  const secondBatch=sources.slice(210,410);
-  assert.equal(secondBatch.length,200);
-  assert.deepEqual(Object.fromEntries(Object.keys(totals).map(system=>[system,secondBatch.filter(c=>c.system===system).length])),{胸部:50,神经:50,腹部:50,骨骼:50});
-  const finalBatch=sources.slice(410,486);
-  assert.equal(finalBatch.length,76);
-  assert.deepEqual(Object.fromEntries(Object.keys(totals).map(system=>[system,finalBatch.filter(c=>c.system===system).length])),{胸部:19,神经:19,腹部:19,骨骼:19});
-  assert.equal(new Set(finalBatch.map(record=>record.groupKey)).size,76);
-  assert.equal(new Set(finalBatch.map(record=>record.sourceTitle)).size,76);
-  assert.equal(new Set(cases.filter(c=>finalBatch.some(record=>record.id===getId(c))).map(c=>c.title.split(' · 开放病例')[0])).size,76);
+  const finalBatch=sources.filter(record=>record.qualityScore==='manual-source-match'||record.qualityScore==='manual-source-and-image-match');
+  assert.equal(finalBatch.length,75);
+  assert.deepEqual(Object.fromEntries(Object.keys(totals).map(system=>[system,finalBatch.filter(c=>c.system===system).length])),{胸部:19,神经:19,腹部:18,骨骼:19});
+  assert.equal(new Set(finalBatch.map(record=>record.groupKey)).size,75);
+  assert.equal(new Set(finalBatch.map(record=>record.sourceTitle)).size,75);
   assert.ok(finalBatch.every(record=>!/histolog|histopath|micrograph|gross pathology|autopsy|specimen|cells or tissue/i.test(`${record.sourceTitle} ${record.sourceDescription}`)));
-  const expansion700=sources.slice(486,686);
-  assert.equal(expansion700.length,200);
-  assert.deepEqual(Object.fromEntries(Object.keys(totals).map(system=>[system,expansion700.filter(c=>c.system===system).length])),{胸部:50,神经:50,腹部:50,骨骼:50});
-  assert.equal(new Set(expansion700.map(record=>record.groupKey)).size,200);
-  assert.equal(new Set(expansion700.map(record=>record.sourceTitle)).size,200);
+  const expansion700=sources.filter(record=>record.qualityScore==='source-and-contact-sheet-review');
+  assert.equal(expansion700.length,189);
+  assert.equal(new Set(expansion700.map(record=>record.groupKey)).size,189);
+  assert.equal(new Set(expansion700.map(record=>record.sourceTitle)).size,189);
   const expansion700Cases=cases.filter(c=>expansion700.some(record=>record.id===getId(c)));
-  assert.equal(new Set(expansion700Cases.map(c=>c.title.split(' · 开放病例')[0])).size,200);
+  assert.equal(expansion700Cases.length,189);
   assert.ok(expansion700Cases.every(c=>c.findings.length>=3 && !c.findings.some(item=>item.startsWith('识别与'))));
   assert.ok(expansion700.every(record=>!/histolog|histopath|micrograph|gross pathology|autopsy|specimen|cells or tissue/i.test(`${record.sourceTitle} ${record.sourceDescription}`)));
-  const expansion1004=sources.slice(686,990);
-  assert.equal(expansion1004.length,304);
-  assert.deepEqual(Object.fromEntries(Object.keys(totals).map(system=>[system,expansion1004.filter(c=>c.system===system).length])),{胸部:57,神经:78,腹部:75,骨骼:94});
-  assert.equal(new Set(expansion1004.map(record=>record.groupKey)).size,304);
-  assert.equal(new Set(expansion1004.map(record=>record.sourceTitle)).size,304);
-  assert.ok(expansion1004.every(record=>record.qualityScore==='diagnosis-linked-source-and-contact-sheet-review'));
+  const expansion1004=sources.filter(record=>record.qualityScore==='diagnosis-linked-source-and-contact-sheet-review');
+  assert.equal(expansion1004.length,252);
+  assert.equal(new Set(expansion1004.map(record=>record.groupKey)).size,252);
+  assert.equal(new Set(expansion1004.map(record=>record.sourceTitle)).size,252);
   assert.ok(expansion1004.every(record=>record.sourceAudit==='source-label-matches-topic'||record.sourceAudit==='direct-source-label-match-after-perceptual-review'));
   assert.ok(expansion1004.every(record=>record.width>=480 && record.height>=480 && record.sourceDescription.length>=8));
   assert.ok(expansion1004.every(record=>!/annotation|annotated|diagram|scheme|drawing|histolog|histopath|micrograph|gross pathology|autopsy|specimen|cytology|cells or tissue|veterinary|\bdog\b|\bcat\b|operative photograph|surgery photo/i.test(`${record.sourceTitle} ${record.sourceDescription}`)));
-  const expansionCurated=sources.slice(990);
-  assert.equal(expansionCurated.length,180);
-  assert.deepEqual(Object.fromEntries(Object.keys(totals).map(system=>[system,expansionCurated.filter(c=>c.system===system).length])),{胸部:48,神经:39,腹部:41,骨骼:52});
-  assert.equal(new Set(expansionCurated.map(record=>record.sourceUrl)).size,180);
-  assert.equal(new Set(expansionCurated.map(record=>record.localSha256)).size,180);
+  const expansionCurated=sources.filter(record=>record.id.includes('-1506-'));
+  assert.equal(expansionCurated.length,178);
+  assert.deepEqual(Object.fromEntries(Object.keys(totals).map(system=>[system,expansionCurated.filter(c=>c.system===system).length])),{胸部:48,神经:37,腹部:41,骨骼:52});
+  assert.equal(new Set(expansionCurated.map(record=>record.sourceUrl)).size,178);
+  assert.equal(new Set(expansionCurated.map(record=>record.localSha256)).size,178);
   assert.ok(expansionCurated.every(record=>record.qualityScore==='source-title-checked-and-one-image-per-study' && record.sourceAudit==='manual-curation-after-perceptual-and-study-review'));
   assert.ok(expansionCurated.every(record=>record.width>=480 && record.height>=480 && record.sourceDescription.length>=8));
   assert.ok(!expansionCurated.some(record=>/Hautfalten|parastomal hernia|xanthogranulomatous pyelonephritis cd68|Radiopaedia 154713-127660/i.test(record.sourceTitle)));
@@ -74,8 +68,45 @@ test('catalog has 1,184 cases with a curated 180-case expansion', () => {
 test('bone cases are split into source-supported teaching subtypes', () => {
   const diagnosis = c => c.title.split(' · 开放病例')[0];
   const diversity = Object.fromEntries(['胸部','神经','腹部','骨骼'].map(system=>[system,new Set(cases.filter(c=>c.system===system).map(diagnosis)).size]));
-  assert.ok(Object.values(diversity).every(count=>count>=170));
+  assert.deepEqual(diversity,{胸部:113,神经:104,腹部:114,骨骼:129});
   for(const title of ['股骨颈骨折（Garden III）','转子间股骨骨折','肩关节后脱位','儿童桡骨青枝骨折','Tillaux 骨折']) assert.ok(cases.some(c=>diagnosis(c)===title),title);
+});
+
+test('semantic audit corrections do not regress', () => {
+  assert.equal(new Set(cases.map(item=>item.title)).size,cases.length,'display titles must be unique');
+  assert.ok(cases.every(item=>!/（公开病例\s*\d+）/.test(item.title)),'batch counters must not impersonate case identity');
+  const byId = new Map(cases.map(item=>[getId(item),item]));
+  assert.equal(byId.get('bone-1506-089').modality,'X-RAY');
+  assert.equal(byId.get('bone-1506-049').modality,'X-RAY');
+  assert.equal(byId.get('neuro-new-moyamoya-01').modality,'MRA');
+  assert.equal(byId.get('neuro-new-moyamoya-02').modality,'DSA');
+  assert.equal(byId.get('neuro-new-cerebral-aneurysm-01').modality,'CT');
+  assert.equal(byId.get('chest-700-34').modality,'X-RAY');
+  assert.equal(byId.get('chest-1004-001').modality,'X-RAY');
+  assert.match(byId.get('chest-1004-001').title,/左侧半胸不透明影/);
+  assert.ok(!/印戒征|支气管内径/.test(byId.get('chest-1004-001').findings[0]));
+  assert.match(byId.get('bone-1506-027').title,/术后内固定/);
+  assert.match(byId.get('neuro-1506-025').title,/治疗前后/);
+  for(const id of ['chest-1004-037','chest-1004-045','chest-1004-023','abdomen-next-budd-chiari-01','neuro-1004-061']) assert.ok(!byId.has(id),`${id} is excluded after review`);
+  assert.equal(legacyCaseIds.length,1184);
+  assert.equal(new Set(legacyCaseIds).size,1184);
+  assert.ok(legacyCaseIds.includes('chest-1004-037'));
+  assert.ok(legacyCaseIds.includes('chest-1004-045'));
+  const lessonById = new Map(curriculum.map(item=>[item.id,item]));
+  for(const source of sources) {
+    const item=byId.get(source.id);
+    const lesson=lessonById.get(source.id);
+    const modalityTags=lesson.tags.filter(tag=>['CT','CTA','CTPA','MRI','MRA','DSA','US','X-RAY','骨显像'].includes(tag));
+    assert.deepEqual(modalityTags,[item.modality],`${source.id} modality tag must match its image`);
+    if(item.modality!=='X-RAY' && item.system==='胸部') assert.ok(!/投照体位|曝光质量/.test(lesson.methods[0][1]),`${source.id} chest first step`);
+    if(item.modality!=='X-RAY' && item.system==='骨骼') assert.ok(!/至少联合两个正交方向/.test(lesson.methods[0][1]),`${source.id} bone first step`);
+  }
+  for(const source of sources.filter(item=>item.id.includes('-1506-'))) {
+    const item=byId.get(source.id);
+    const lesson=lessonById.get(source.id);
+    if(item.modality==='X-RAY') assert.ok(!/多个MRI序列/.test(lesson.methods[1][1]),`${source.id} X-ray method`);
+    if(!/肿瘤|瘤/.test(item.title)) assert.ok(!/规范骨肿瘤评估/.test(lesson.methods[2][1]),`${source.id} next step`);
+  }
 });
 
 test('case metadata, diagnosis content and local images match one-to-one', () => {
@@ -106,15 +137,15 @@ test('case metadata, diagnosis content and local images match one-to-one', () =>
 
 test('expanded image sources are complete, distinct and cryptographically verified', () => {
   const manifest = JSON.parse(fs.readFileSync(path.join(root,'data','expanded-case-sources.json'),'utf8'));
-  assert.equal(manifest.count,1170);
-  assert.equal(manifest.records.length,1170);
-  assert.equal(sources.length,1170);
-  assert.ok(manifest.records.slice(410,486).every(record=>record.qualityScore==='manual-source-match'||record.qualityScore==='manual-source-and-image-match'));
-  assert.ok(manifest.records.slice(486,686).every(record=>record.qualityScore==='source-and-contact-sheet-review'));
-  assert.ok(manifest.records.slice(686,990).every(record=>record.qualityScore==='diagnosis-linked-source-and-contact-sheet-review'));
-  assert.ok(manifest.records.slice(990).every(record=>record.qualityScore==='source-title-checked-and-one-image-per-study'));
+  assert.equal(manifest.count,1100);
+  assert.equal(manifest.records.length,1100);
+  assert.equal(sources.length,1100);
+  assert.equal(manifest.expansion1506.count,178);
+  assert.deepEqual(manifest.expansion1506.bySystem,{胸部:48,神经:37,腹部:41,骨骼:52});
+  const strictStudyKey = title => title.toLocaleLowerCase().replace(/\.(?:jpe?g|png)$/i,'').replace(/\s+rgbc[a-z](?: ce)?$/i,'').replace(/[ -]\d{1,4}$/,'').replace(/\s+/g,' ').trim();
+  assert.equal(new Set(sources.map(record=>strictStudyKey(record.sourceTitle))).size,sources.length,'one image per strict source study stem');
   for(const key of ['id','image','sourceUrl','originalSha1','localSha256']) {
-    assert.equal(new Set(sources.map(record=>record[key])).size,1170,`${key} must be unique`);
+    assert.equal(new Set(sources.map(record=>record[key])).size,1100,`${key} must be unique`);
   }
   const sourceById = new Map(sources.map(record=>[record.id,record]));
   for(const c of expanded) {
@@ -152,8 +183,8 @@ test('every atlas image has a lightweight WebP thumbnail', () => {
 });
 
 test('all cases have deterministic versioned packages covering content, lesson and image bytes', () => {
-  assert.equal(casePackages.length,1184);
-  assert.equal(new Set(casePackages.map(record=>record.id)).size,1184);
+  assert.equal(casePackages.length,1114);
+  assert.equal(new Set(casePackages.map(record=>record.id)).size,1114);
   const packageById = new Map(casePackages.map(record=>[record.id,record]));
   const lessonById = new Map(curriculum.map(lesson=>[lesson.id,lesson]));
   for(const item of cases) {

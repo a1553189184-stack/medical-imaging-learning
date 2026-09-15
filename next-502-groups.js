@@ -1678,8 +1678,8 @@ const NEXT_502_GROUPS = {
     "limitation": "此公开静态图只支持来源文字与可见征象的学习；诊断、范围及管理仍需完整检查和临床信息确认。"
   },
   "neuro-1506-025": {
-    "title": "星形细胞瘤（公开病例 132）",
-    "english": "Astrocytoma",
+    "title": "间变性星形细胞瘤治疗前后影像",
+    "english": "Anaplastic astrocytoma longitudinal MRI montage",
     "modality": "MRI",
     "level": "中级",
     "distractors": [
@@ -1695,13 +1695,13 @@ const NEXT_502_GROUPS = {
       "MRI"
     ],
     "signs": [
-      "确认星形细胞瘤的主要影像异常与原始来源描述一致",
+      "按图中 A–F 面板区分初诊、术后和后续复发或治疗反应，不将其误作六个独立患者",
       "按脑实质、脑外间隙、脑室脑池、血管和骨质顺序评估位置、信号及占位效应",
       "检查病变范围、邻近结构受累和需要紧急处理的并发征象"
     ],
     "basis": "公开来源将本影像描述为“Anaplastic astrocytoma.jpg”。病例说明：MRI of brain. (A) Initial MRI on February 16, 2005, shows a tumor in the right and left frontal lobe as well as the right thalamus. (B) MRI after surgery, radiation and chemotherapy. The tumor has completely disappeared except for slight enhancement adjacent to the surgical margin. (C) Recurrence of the thalamic tumor despite maintenance chemotherapy on November 16, 2005. (D) Increase in size of the thalamic tumor two months after stereotactic radiotherapy. (E) After 6 cycles of TMZ therapy, the thalamic lesion enlarged, and the patient developed dysarthria and hemiparesis. (F) After 2 courses of treatment with interferon-beta and TMZ, the tumor shows a partial response.。本图作为“星形细胞瘤”的单例阅片训练材料；教学要点是核对清单，不代替对原图的独立判读。",
     "differential": "需与急性脑梗死、脑内出血、脑膜瘤等结合病变中心、形态、分布及完整序列鉴别。",
-    "pearl": "先完成解剖定位和征象描述，再提出星形细胞瘤；来源标签不能替代临床综合诊断。",
+    "pearl": "这是同一病例不同时点的 MRI 拼图；病理亚型依据来源，不应仅凭单个面板推断。",
     "method": "先确认序列或窗位，再判断病变位于脑内、脑外或血管，并用相邻层面和多序列核对",
     "next": "结合神经定位、起病过程和完整MRI/CT序列，按需进行增强、血管成像或病理评估",
     "tips": [
@@ -1714,7 +1714,7 @@ const NEXT_502_GROUPS = {
     ],
     "recall": "定位 → 核对星形细胞瘤核心征象 → 评估范围与并发症 → 完整检查确认。",
     "ref": "acr",
-    "limitation": "此公开静态图只支持来源文字与可见征象的学习；诊断、范围及管理仍需完整检查和临床信息确认。"
+    "limitation": "此图包含同一患者治疗前后六个时点的 MRI 面板，不是单次完整 DICOM 检查。各面板日期、治疗和病理亚型依据公开来源；判断进展仍须原始序列及临床资料。"
   },
   "neuro-1506-027": {
     "title": "脑弓形虫病（公开病例 132）",
@@ -3668,8 +3668,8 @@ const NEXT_502_GROUPS = {
     "limitation": "此公开静态图只支持来源文字与可见征象的学习；诊断、范围及管理仍需完整检查和临床信息确认。"
   },
   "bone-1506-027": {
-    "title": "拇外翻（公开病例 132）",
-    "english": "Hallux valgus",
+    "title": "拇外翻术后内固定影像",
+    "english": "Postoperative hallux valgus fixation radiograph",
     "modality": "X-RAY",
     "level": "中级",
     "distractors": [
@@ -3678,22 +3678,22 @@ const NEXT_502_GROUPS = {
       "骨与软组织感染"
     ],
     "tags": [
-      "拇外翻",
+      "拇外翻术后",
       "解剖定位",
       "对位",
       "公开来源核验",
       "X-RAY"
     ],
     "signs": [
-      "确认拇外翻的主要影像异常与原始来源描述一致",
+      "识别第一跖骨术后内固定螺钉及骨性对位",
       "沿骨皮质、小梁、关节面和软组织逐项观察，并确认病变部位、范围及对位关系",
       "检查病变范围、邻近结构受累和需要紧急处理的并发征象"
     ],
-    "basis": "公开来源将本影像描述为“Hallux valgus or bunion radiographie radiography.jpg”。病例说明：Radiography after surgery of Hallux valgus in a patient (about 24 years old)。本图作为“拇外翻”的单例阅片训练材料；教学要点是核对清单，不代替对原图的独立判读。",
+    "basis": "公开来源明确说明这是拇外翻术后的足部 X 线片。图中可见第一跖骨区域的内固定螺钉；它不能作为未经治疗的拇外翻原始征象示例。阅片应描述内固定位置、骨性对位，并结合术前片及临床资料评价疗效。",
     "differential": "需与关节脱位、退行性关节病、骨与软组织感染等结合病变中心、形态、分布及完整序列鉴别。",
-    "pearl": "先完成解剖定位和征象描述，再提出拇外翻；来源标签不能替代临床综合诊断。",
-    "method": "至少结合两个正交方向或多个MRI序列，定位异常后分析边界、基质、骨膜反应和软组织",
-    "next": "结合年龄、损伤或症状背景与完整检查，必要时补充CT、MRI或规范骨肿瘤评估",
+    "pearl": "术后片的主要训练目标是描述固定器械与对位，不能直接按术前拇外翻片解释。",
+    "method": "先确认这是足部术后 X 线片，再定位第一跖骨内固定及骨性对位；单一投照不宜测量拇外翻角。",
+    "next": "与术前及既往术后片比较，并结合临床症状决定是否需要进一步检查。",
     "tips": [
       "先独立描述可见征象，再查看来源诊断，避免标签先入为主。",
       "在相邻层面或正交投照确认异常，避免把单层伪影当病变。"
@@ -3702,7 +3702,7 @@ const NEXT_502_GROUPS = {
       "静态图片不能替代完整DICOM序列、测量和增强时相评价。",
       "不得根据未公开信息推断病理分级、病因或治疗方案。"
     ],
-    "recall": "定位 → 核对拇外翻核心征象 → 评估范围与并发症 → 完整检查确认。",
+    "recall": "确认术后状态 → 内固定位置 → 骨性对位 → 与既往片比较。",
     "ref": "acr",
     "limitation": "此公开静态图只支持来源文字与可见征象的学习；诊断、范围及管理仍需完整检查和临床信息确认。"
   },
@@ -4060,7 +4060,7 @@ const NEXT_502_GROUPS = {
   "bone-1506-049": {
     "title": "桡骨远端骨折（公开病例 049）",
     "english": "Distal radius fracture",
-    "modality": "CT",
+    "modality": "X-RAY",
     "level": "中级",
     "distractors": [
       "舟骨骨折",
@@ -4072,7 +4072,7 @@ const NEXT_502_GROUPS = {
       "桡骨短缩",
       "关节面",
       "公开来源核验",
-      "CT"
+      "X-RAY"
     ],
     "signs": [
       "寻找桡骨远端皮质和小梁中断",
@@ -6127,7 +6127,7 @@ const NEXT_502_GROUPS = {
   "bone-1506-089": {
     "title": "拇外翻（公开病例 132）",
     "english": "Hallux valgus",
-    "modality": "CT",
+    "modality": "X-RAY",
     "level": "中级",
     "distractors": [
       "关节脱位",
@@ -6139,7 +6139,7 @@ const NEXT_502_GROUPS = {
       "解剖定位",
       "对位",
       "公开来源核验",
-      "CT"
+      "X-RAY"
     ],
     "signs": [
       "确认拇外翻的主要影像异常与原始来源描述一致",
