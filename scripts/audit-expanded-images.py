@@ -73,11 +73,18 @@ for system in ["胸部", "神经", "腹部", "骨骼"]:
         sheet.save(out_dir / f"{records.index(page[0]):03d}-{system}-{page_number // 25 + 1}.jpg", quality=90)
 
 report = {"count": len(records), "decodeErrors": errors, "nearDuplicates": near}
+latest_ids = {record["id"] for record in records if "-1506-" in record["id"]}
+latest_near = [
+    item for item in near
+    if item["distance"] <= 1 and (item["left"] in latest_ids or item["right"] in latest_ids)
+]
+report["latestExpansion"] = {"ids": len(latest_ids), "nearDuplicateAtDistance1OrLess": latest_near}
 (out_dir / "report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
-# Keep a stable, compact review set for the most recent 200-case expansion.
+# Keep a dedicated contact-sheet set for the most recent extension, rather than
+# mixing it with legacy images that have already completed review.
 for system in ["胸部", "神经", "腹部", "骨骼"]:
-    group = [record for record in records[-200:] if record["system"] == system]
+    group = [record for record in records if record["id"] in latest_ids and record["system"] == system]
     for page_number in range(0, len(group), 25):
         page = group[page_number : page_number + 25]
         sheet = Image.new("RGB", (1200, 1025), "#161a1d")
@@ -92,9 +99,12 @@ for system in ["胸部", "神经", "腹部", "骨骼"]:
                 tile.paste(image, ((224 - image.width) // 2, (165 - image.height) // 2))
                 sheet.paste(tile, (x + 8, y + 8))
             draw.text((x + 8, y + 178), record["id"], fill="white", font=font)
-        sheet.save(out_dir / f"review-700-{system}-{page_number // 25 + 1}.jpg", quality=92)
+        sheet.save(out_dir / f"review-1506-{system}-{page_number // 25 + 1}.jpg", quality=92)
 print(json.dumps({"count": len(records), "errors": len(errors), "nearDuplicatePairs": len(near)}, ensure_ascii=False))
 for item in near[:80]:
     print(f"dHash {item['distance']}: {item['left']} <> {item['right']}")
+if latest_near:
+    print(f"new expansion has {len(latest_near)} perceptual duplicates at distance <= 1")
+    raise SystemExit(3)
 if errors:
     raise SystemExit(2)

@@ -69,6 +69,11 @@ try {
     if((await evaluate("document.querySelector('#viewerIndex')?.textContent || ''")).includes('病例编号')) break;
     await delay(100);
   }
+  assert.equal(await evaluate('CASES.length'),1184);
+  assert.equal(await evaluate('CASE_PACKAGES.length'),1184);
+  assert.equal(await evaluate("document.querySelector('#caseTotal').textContent"),'1184');
+  assert.equal(await evaluate("document.querySelector('#activeScan').complete && document.querySelector('#activeScan').naturalWidth > 0"),true);
+  assert.equal(await evaluate("new Promise(resolve => { const image = new Image(); image.onload = () => resolve(image.naturalWidth > 0); image.onerror = () => resolve(false); image.src = CASES.at(-1).image; })"),true);
   assert.equal(await evaluate("document.querySelector('#findingsPane').hidden"),false);
   assert.equal(await evaluate("document.querySelector('#hintPanel').hidden"),true);
   await evaluate("document.querySelector('#requestHint').click()");
