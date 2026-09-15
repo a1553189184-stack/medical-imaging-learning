@@ -137,6 +137,12 @@ try {
   assert.equal(await evaluate("filteredCases().some(c=>c.modality==='MRA')"),true);
   await evaluate("document.querySelector('#modalityFilter').value='骨显像';document.querySelector('#modalityFilter').dispatchEvent(new Event('change'))");
   assert.equal(await evaluate("filteredCases().some(c=>c.modality==='骨显像')"),true);
+  assert.equal(await evaluate("window.ImageLabAuth && window.ImageLabAuth.enabled"),false);
+  await evaluate("document.querySelector('.auth-open').click()");
+  assert.equal(await evaluate("document.querySelector('#authDialog').open"),true);
+  assert.match(await evaluate("document.querySelector('#authMessage').textContent"),/尚未配置/);
+  await evaluate("document.querySelector('#closeAuth').click()");
+  assert.equal(await evaluate("document.querySelector('#authDialog').open"),false);
   await command('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});
   assert.equal(await evaluate("document.documentElement.scrollWidth <= window.innerWidth"),true);
   assert.deepEqual(runtimeErrors,[]);

@@ -24,6 +24,27 @@ const canonical = value => {
   return JSON.stringify(value);
 };
 
+test('account integration is safe by default and includes isolated cloud-backup policy', () => {
+  const config = fs.readFileSync(path.join(root,'auth-config.js'),'utf8');
+  const auth = fs.readFileSync(path.join(root,'auth.js'),'utf8');
+  const page = fs.readFileSync(path.join(root,'index.html'),'utf8');
+  const setup = fs.readFileSync(path.join(root,'AUTH_SETUP.md'),'utf8');
+  const policy = fs.readFileSync(path.join(root,'supabase','learning-backups.sql'),'utf8');
+  assert.match(config,/supabaseUrl:\s*''/);
+  assert.match(config,/supabasePublishableKey:\s*''/);
+  assert.doesNotMatch(config,/service_role_[A-Za-z0-9._-]{20,}|sb_secret_[A-Za-z0-9._-]{20,}/);
+  assert.match(auth,/signInWithOtp/);
+  assert.match(auth,/signInWithOAuth/);
+  assert.match(auth,/provider:\s*'github'/);
+  assert.match(auth,/cloudBackupEnabled/);
+  assert.match(page,/id="authDialog"/);
+  assert.match(page,/auth-config\.js/);
+  assert.match(policy,/enable row level security/i);
+  assert.match(policy,/revoke all on table public\.learning_backups from anon/i);
+  assert.match(policy,/auth\.uid\(\)/i);
+  assert.match(setup,/service_role/i);
+});
+
 test('catalog has 1,114 cases after study-level deduplication', () => {
   assert.equal(cases.length,1114);
   assert.equal(expanded.length,1100);

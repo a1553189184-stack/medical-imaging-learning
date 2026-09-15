@@ -29,14 +29,15 @@
       <div class="progress"><i id="sideProgress" style="width:0"></i></div>
       <p>仅统计当前浏览器实际完成的病例，不代表任何真实身份。</p>
     </div>
-    <div class="privacy-label"><span>◉</span><div><b>访客模式</b><small>数据仅保存在此设备</small></div></div>
+    <button class="privacy-label auth-open" type="button"><span>◉</span><div><b>登录以跨设备学习</b><small>邮箱链接或 GitHub 授权</small></div></button>
+    <button class="privacy-label auth-account" type="button" hidden>我的账户</button>
   </aside>
 
   <main>
     <header>
       <button class="menu" aria-label="展开菜单">☰</button>
       <div class="search"><span>⌕</span><input id="globalSearch" placeholder="搜索疾病、征象或解剖部位…" /><kbd>⌘ K</kbd></div>
-      <div class="header-actions"><span class="local-mode">访客模式 · 无账号</span></div>
+      <div class="header-actions"><span id="authStatusBadge" class="local-mode">访客模式 · 本机保存</span><button class="auth-open auth-login-button" type="button">登录</button><button class="auth-account auth-login-button" type="button" hidden>我的账户</button></div>
     </header>
 
     <section class="view active" id="home">
@@ -230,6 +231,20 @@
       <footer class="cornerstone-foot"><span>影像由 IDC 只读 DICOMweb 按需传输；集合名称仅表示来源背景。</span><span>试验功能仅供教学，不用于临床诊断。</span></footer>
     </div>
   </dialog>
+  <dialog id="authDialog" class="auth-dialog" aria-labelledby="authTitle">
+    <div class="dialog-head"><div><span class="eyebrow">ACCOUNT · OPTIONAL</span><h2 id="authTitle">登录影研社</h2></div><button id="closeAuth" class="soft-button" type="button" aria-label="关闭登录窗口">关闭</button></div>
+    <p class="auth-intro">登录用于识别你的学习账户。邮箱认证由 Supabase 发送安全链接；本站不创建或保存密码。未登录仍可使用全部病例与本机学习记录。</p>
+    <div class="auth-card">
+      <label for="authEmail">邮箱地址<input id="authEmail" type="email" autocomplete="email" inputmode="email" placeholder="name@example.com"></label>
+      <button id="authMagicLink" class="primary full" type="button">发送登录链接</button>
+      <div class="auth-divider"><span>或</span></div>
+      <button id="authGitHub" class="soft-button auth-github" type="button">使用 GitHub 登录</button>
+    </div>
+    <p id="authMessage" class="auth-message" role="status" aria-live="polite"></p>
+    <div class="auth-signed-in"><span>当前账户</span><b id="authUserLabel">本机访客模式</b></div>
+    <div class="auth-actions"><button id="authSync" class="soft-button" type="button" hidden>同步本机学习记录</button><button id="authRestore" class="soft-button" type="button" hidden>恢复云端备份</button><button id="authSignOut" class="soft-button" type="button">退出登录</button></div>
+    <p class="auth-privacy">云端同步默认关闭；启用后仅在你主动点击同步时上传学习记录。请勿在笔记中记录患者身份信息。</p>
+  </dialog>
   <div id="notice" role="status" aria-live="polite"></div>
   <script src="cases.js?v=atlas29"></script>
   <script src="curriculum.js?v=atlas29"></script>
@@ -246,5 +261,7 @@
   <script src="medical-reviews.js?v=atlas10"></script>
   <script src="case-packages.js?v=atlas29"></script>
   <script src="app.js?v=atlas29"></script>
+  <script src="auth-config.js?v=auth1"></script>
+  <script src="auth.js?v=auth1"></script>
 </body>
 </html>
