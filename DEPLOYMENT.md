@@ -2,7 +2,7 @@
 
 ## 当前生产站点
 
-动态生产站点为 `https://b-opal-eight.vercel.app/`，由 Vercel 静态前端与 Serverless Functions 共同提供。GitHub Pages 的 `https://a1553189184-stack.github.io/medical-imaging-learning/` 保留为镜像访问入口，但不应作为搜索收录的规范 URL。项目已提供 `robots.txt`、`sitemap.xml`、canonical URL 和结构化数据；收录不是即时动作，也无法由网站代码保证排名。
+动态生产站点为 `https://yingyan-image-lab.vercel.app/`，由 Vercel 静态前端与 Serverless Functions 共同提供。GitHub Pages 的 `https://a1553189184-stack.github.io/medical-imaging-learning/` 保留为镜像访问入口，但不应作为搜索收录的规范 URL。项目已提供 `robots.txt`、`sitemap.xml`、canonical URL 和结构化数据；收录不是即时动作，也无法由网站代码保证排名。
 
 ## 升级为动态 Web 应用
 

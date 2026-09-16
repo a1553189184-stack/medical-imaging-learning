@@ -52,11 +52,11 @@ test('public search discovery and serverless deployment artifacts are present', 
   const deployment = fs.readFileSync(path.join(root,'DEPLOYMENT.md'),'utf8');
   const health = fs.readFileSync(path.join(root,'api','health.js'),'utf8');
   const status = fs.readFileSync(path.join(root,'api','site-status.js'),'utf8');
-  assert.match(page,/<link rel="canonical" href="https:\/\/b-opal-eight\.vercel\.app\/"/);
+  assert.match(page,/<link rel="canonical" href="https:\/\/yingyan-image-lab\.vercel\.app\/"/);
   assert.match(page,/application\/ld\+json/);
   assert.match(robots,/Allow: \//);
-  assert.match(robots,/Sitemap: https:\/\/b-opal-eight\.vercel\.app\/sitemap\.xml/);
-  assert.match(sitemap,/<loc>https:\/\/b-opal-eight\.vercel\.app\/<\/loc>/);
+  assert.match(robots,/Sitemap: https:\/\/yingyan-image-lab\.vercel\.app\/sitemap\.xml/);
+  assert.match(sitemap,/<loc>https:\/\/yingyan-image-lab\.vercel\.app\/<\/loc>/);
   assert.match(health,/timestamp: new Date\(\)\.toISOString\(\)/);
   assert.match(status,/PUBLIC_SITE_URL/);
   assert.match(deployment,/Google Search Console/);
