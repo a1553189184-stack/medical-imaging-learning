@@ -10,5 +10,5 @@ window.IMAGE_LAB_AUTH_CONFIG = {
   supabaseUrl: 'https://okwrhzftrjzrqlhqlykw.supabase.co',
   supabasePublishableKey: 'sb_publishable_LlGIFZut68b7rGOmNhBK_g_MaZrNQtj',
   githubProviderEnabled: false,
-  cloudBackupEnabled: false
+  cloudBackupEnabled: true
 };

@@ -32,6 +32,7 @@ test('account integration exposes only publishable configuration and has isolate
   const policy = fs.readFileSync(path.join(root,'supabase','learning-backups.sql'),'utf8');
   assert.match(config,/supabaseUrl:\s*'https:\/\/[a-z0-9-]+\.supabase\.co'/i);
   assert.match(config,/supabasePublishableKey:\s*'sb_publishable_[A-Za-z0-9_-]+'/);
+  assert.match(config,/cloudBackupEnabled:\s*true/);
   assert.doesNotMatch(config,/service_role_[A-Za-z0-9._-]{20,}|sb_secret_[A-Za-z0-9._-]{20,}/);
   assert.match(auth,/signInWithOtp/);
   assert.match(auth,/signInWithOAuth/);
