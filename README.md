@@ -1,6 +1,6 @@
 # 影研社（Image Lab）
 
-一个面向医学影像学习者的静态教学网站，无需登录或安装。访问 [公开网站](https://a1553189184-stack.github.io/medical-imaging-learning/)。
+一个面向医学影像学习者的 Web 教学平台，无需登录或安装。访问 [动态公开网站](https://b-opal-eight.vercel.app/)。GitHub Pages 版本保留为镜像访问入口。
 
 项目也可按 [DEPLOYMENT.md](DEPLOYMENT.md) 部署为带 Vercel Serverless API 的动态 Web 应用；SEO 所需的 sitemap、robots、canonical URL 和结构化数据已包含在仓库中。
 

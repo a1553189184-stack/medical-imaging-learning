@@ -5,6 +5,7 @@
   "description": "一个面向医学影像学习者的静态教学网站，无需登录或安装。访问 [公开网站](https://a1553189184-stack.github.io/medical-imaging-learning/)。",
   "scripts": {
     "build:viewer": "vite build",
+    "build:web": "npm run build:viewer && node scripts/prepare-vercel-output.mjs",
     "test": "node tests/catalog.test.cjs",
     "test:browser": "node tests/browser-smoke.mjs",
     "test:dicom": "node tests/dicom-browser-smoke.mjs",

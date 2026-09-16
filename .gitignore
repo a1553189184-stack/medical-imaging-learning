@@ -1,7 +1,10 @@
 work/
 outputs/
 node_modules/
+dist/
 data/commons-candidates.json
 data/selected-case-sources.json
 .DS_Store
 Thumbs.db
+
+.vercel

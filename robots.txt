@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://a1553189184-stack.github.io/medical-imaging-learning/sitemap.xml
+Sitemap: https://b-opal-eight.vercel.app/sitemap.xml

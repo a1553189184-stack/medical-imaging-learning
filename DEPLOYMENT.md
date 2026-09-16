@@ -1,8 +1,8 @@
 # 生产部署与搜索收录
 
-## 当前公开站点
+## 当前生产站点
 
-GitHub Pages 仍在 `https://a1553189184-stack.github.io/medical-imaging-learning/` 提供公开访问。项目新增 `robots.txt`、`sitemap.xml`、canonical URL 和结构化数据，搜索引擎可以发现和抓取首页。收录不是即时动作，也无法由网站代码保证排名。
+动态生产站点为 `https://b-opal-eight.vercel.app/`，由 Vercel 静态前端与 Serverless Functions 共同提供。GitHub Pages 的 `https://a1553189184-stack.github.io/medical-imaging-learning/` 保留为镜像访问入口，但不应作为搜索收录的规范 URL。项目已提供 `robots.txt`、`sitemap.xml`、canonical URL 和结构化数据；收录不是即时动作，也无法由网站代码保证排名。
 
 ## 升级为动态 Web 应用
 
@@ -11,12 +11,12 @@ GitHub Pages 仍在 `https://a1553189184-stack.github.io/medical-imaging-learnin
 - `/api/health`：不缓存的运行状态；
 - `/api/site-status`：当前部署 URL、站点地图与运行时间。
 
-在 Vercel 导入 GitHub 仓库 `a1553189184-stack/medical-imaging-learning`，选择 Production 部署。不要设置构建命令；根目录的 `index.html` 会作为前端入口，`api/*.js` 自动作为 Node Serverless Functions 部署。
+在 Vercel 导入 GitHub 仓库 `a1553189184-stack/medical-imaging-learning`，选择 Production 部署。构建命令为 `npm run build:web`，输出目录为 `dist`；它会构建 Cornerstone3D 资源并将完整静态前端输出到 `dist`，`api/*.js` 自动作为 Node Serverless Functions 部署。
 
 部署生成的 `https://<project>.vercel.app` 可以立即用于 API 验收。生产正式域名建议绑定自己的域名，例如 `www.yingyanshe.cn`；绑定后：
 
 1. 在 Vercel 按提示添加 DNS 记录。
-2. 把 `index.html`、`robots.txt`、`sitemap.xml` 和 `PUBLIC_SITE_URL` 中的 GitHub Pages 地址统一替换为正式 HTTPS 域名。
+2. 把 `index.html`、`robots.txt`、`sitemap.xml` 和 `PUBLIC_SITE_URL` 中的 Vercel 地址统一替换为正式 HTTPS 域名。
 3. 在 Supabase Auth 的 Site URL / Redirect URLs 中加入正式域名及 `/**`。
 4. 在 Google Search Console 与 Bing Webmaster Tools 通过 DNS 验证域名并提交 `https://<正式域名>/sitemap.xml`。
 
