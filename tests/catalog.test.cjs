@@ -24,14 +24,14 @@ const canonical = value => {
   return JSON.stringify(value);
 };
 
-test('account integration is safe by default and includes isolated cloud-backup policy', () => {
+test('account integration exposes only publishable configuration and has isolated cloud-backup policy', () => {
   const config = fs.readFileSync(path.join(root,'auth-config.js'),'utf8');
   const auth = fs.readFileSync(path.join(root,'auth.js'),'utf8');
   const page = fs.readFileSync(path.join(root,'index.html'),'utf8');
   const setup = fs.readFileSync(path.join(root,'AUTH_SETUP.md'),'utf8');
   const policy = fs.readFileSync(path.join(root,'supabase','learning-backups.sql'),'utf8');
-  assert.match(config,/supabaseUrl:\s*''/);
-  assert.match(config,/supabasePublishableKey:\s*''/);
+  assert.match(config,/supabaseUrl:\s*'https:\/\/[a-z0-9-]+\.supabase\.co'/i);
+  assert.match(config,/supabasePublishableKey:\s*'sb_publishable_[A-Za-z0-9_-]+'/);
   assert.doesNotMatch(config,/service_role_[A-Za-z0-9._-]{20,}|sb_secret_[A-Za-z0-9._-]{20,}/);
   assert.match(auth,/signInWithOtp/);
   assert.match(auth,/signInWithOAuth/);

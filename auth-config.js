@@ -7,7 +7,8 @@
  * AUTH_SETUP.md. Leaving either value blank keeps the site in local guest mode.
  */
 window.IMAGE_LAB_AUTH_CONFIG = {
-  supabaseUrl: '',
-  supabasePublishableKey: '',
+  supabaseUrl: 'https://okwrhzftrjzrqlhqlykw.supabase.co',
+  supabasePublishableKey: 'sb_publishable_LlGIFZut68b7rGOmNhBK_g_MaZrNQtj',
+  githubProviderEnabled: false,
   cloudBackupEnabled: false
 };

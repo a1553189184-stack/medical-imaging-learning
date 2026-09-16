@@ -2,6 +2,8 @@
 window.IMAGE_LAB_AUTH_CONFIG = {
   supabaseUrl: 'https://YOUR_PROJECT_REF.supabase.co',
   supabasePublishableKey: 'sb_publishable_YOUR_PUBLIC_KEY',
+  // Set true only after enabling GitHub in Supabase Authentication > Providers.
+  githubProviderEnabled: false,
   // Set true only after running supabase/learning-backups.sql in the SQL editor.
   cloudBackupEnabled: false
 };

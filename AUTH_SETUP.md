@@ -13,18 +13,18 @@
 
 在 **Authentication → URL Configuration** 设置：
 
-- Site URL：`https://a1553189184-stack.github.io/medical-imaging-learning/`
-- Redirect URLs：`https://a1553189184-stack.github.io/medical-imaging-learning/**`
+- Site URL：`https://yingyan-image-lab.vercel.app/`
+- Redirect URLs：`https://yingyan-image-lab.vercel.app/**`
 - 本地测试另加：`http://127.0.0.1:4173/**`
 
 在 **Authentication → Providers** 启用 Email。页面采用邮件登录链接，不收集或存储密码。
 
 若启用 GitHub，在 GitHub 注册 OAuth App：
 
-- Homepage URL：`https://a1553189184-stack.github.io/medical-imaging-learning/`
+- Homepage URL：`https://yingyan-image-lab.vercel.app/`
 - Authorization callback URL：`https://<你的-project-ref>.supabase.co/auth/v1/callback`
 
-将 GitHub OAuth App 的 Client ID 和 Client Secret 仅填入 Supabase 的 GitHub provider 设置。不要填写到 `auth-config.js`。
+将 GitHub OAuth App 的 Client ID 和 Client Secret 仅填入 Supabase 的 GitHub provider 设置。不要填写到 `auth-config.js`。确认 GitHub provider 已启用后，再将 `auth-config.js` 的 `githubProviderEnabled` 改为 `true` 并重新部署。
 
 ## 3. 可选：跨设备学习记录
 

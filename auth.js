@@ -5,6 +5,7 @@
   const config = window.IMAGE_LAB_AUTH_CONFIG || {};
   const url = typeof config.supabaseUrl === 'string' ? config.supabaseUrl.trim() : '';
   const key = typeof config.supabasePublishableKey === 'string' ? config.supabasePublishableKey.trim() : '';
+  const githubEnabled = config.githubProviderEnabled === true;
   const enabled = /^https:\/\/[a-z0-9-]+\.supabase\.co$/i.test(url) && key.length > 20;
   const $ = function (selector) { return document.querySelector(selector); };
   const $$ = function (selector) { return Array.from(document.querySelectorAll(selector)); };
@@ -15,6 +16,8 @@
   const badge = $('#authStatusBadge');
   const syncButton = $('#authSync');
   const restoreButton = $('#authRestore');
+  const githubButton = $('#authGitHub');
+  const authDivider = $('.auth-divider');
   let client = null;
   let currentUser = null;
 
@@ -42,6 +45,8 @@
     if (badge) badge.textContent = currentUser ? '已登录 · 云端账户' : (enabled ? '访客模式 · 可登录' : '访客模式 · 本机保存');
     if (syncButton) syncButton.hidden = !currentUser || !config.cloudBackupEnabled;
     if (restoreButton) restoreButton.hidden = !currentUser || !config.cloudBackupEnabled;
+    if (githubButton) githubButton.hidden = !githubEnabled;
+    if (authDivider) authDivider.hidden = !githubEnabled;
     const signOutButton = $('#authSignOut');
     if (signOutButton) signOutButton.hidden = !currentUser;
     if (currentUser && dialog && dialog.open) setMessage('已登录为 ' + name + '。');
@@ -124,7 +129,7 @@
   $$('.auth-account').forEach(function (button) { button.addEventListener('click', showDialog); });
   $('#closeAuth') && $('#closeAuth').addEventListener('click', closeDialog);
   $('#authMagicLink') && $('#authMagicLink').addEventListener('click', function () { sendMagicLink().catch(function (error) { setMessage(error.message || '无法发送登录链接。', 'error'); }); });
-  $('#authGitHub') && $('#authGitHub').addEventListener('click', function () { signInGitHub().catch(function (error) { setMessage(error.message || '无法开始 GitHub 登录。', 'error'); }); });
+  githubButton && githubButton.addEventListener('click', function () { signInGitHub().catch(function (error) { setMessage(error.message || '无法开始 GitHub 登录。', 'error'); }); });
   $('#authSignOut') && $('#authSignOut').addEventListener('click', function () { signOut().catch(function (error) { setMessage(error.message || '退出失败。', 'error'); }); });
   syncButton && syncButton.addEventListener('click', function () { syncNow().catch(function (error) { setMessage(error.message || '同步失败。请检查云端数据表与权限策略。', 'error'); }); });
   restoreButton && restoreButton.addEventListener('click', function () { restoreNow().catch(function (error) { setMessage(error.message || '恢复失败。请检查云端数据表与权限策略。', 'error'); }); });
