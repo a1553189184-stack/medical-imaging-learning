@@ -31,6 +31,7 @@
       <button class="nav-item" data-view="cases"><span>▦</span>病例图谱</button>
       <button class="nav-item" data-view="viewer"><span>◫</span>阅片训练</button>
       <button class="nav-item" data-view="dicom"><span>▤</span>DICOM 序列</button>
+      <button class="nav-item" data-view="mylibrary"><span>★</span>我的影像库</button>
       <button class="nav-item" data-view="progress"><span>↗</span>学习进度</button>
     </nav>
     <div class="side-card">
@@ -193,7 +194,66 @@
       <article class="panel mastery"><div class="section-head compact"><div><span class="eyebrow">COMPLETION BY SYSTEM</span><h2>各系统完成度</h2></div></div><div class="master-row" data-system="胸部"><b>胸部影像</b><div class="progress"><i style="width:0"></i></div><span>0 / 4</span></div><div class="master-row" data-system="神经"><b>神经影像</b><div class="progress"><i style="width:0"></i></div><span>0 / 3</span></div><div class="master-row" data-system="腹部"><b>腹部影像</b><div class="progress"><i style="width:0"></i></div><span>0 / 2</span></div><div class="master-row" data-system="骨骼"><b>骨骼肌肉</b><div class="progress"><i style="width:0"></i></div><span>0 / 1</span></div></article>
       <p class="source-note">已背 <span id="reviewedCount">0</span> 例。背题记录与答题记录分开，背题不会增加答题数或正确率。</p>
     </section>
+
+    <section class="view" id="mylibrary">
+      <div class="page-title"><div><span class="eyebrow mint">MY IMAGE LIBRARY</span><h1>我的影像库</h1><p>导入你自己的 DICOM 文件，建立个人病例库，配知识卡片与每日学习计划。参考知影 App 的模式：先复习，再学习。</p></div>
+        <button id="libImportBtn" class="primary" type="button">导入 DICOM 文件</button>
+        <input id="libDicomFileInput" type="file" accept=".dcm,application/dicom" multiple hidden />
+      </div>
+
+      <div class="metric-grid">
+        <article><span>我的病例</span><strong><span id="libCaseCount">0</span><small>例</small></strong><small>本机 IndexedDB 保存</small></article>
+        <article><span>知识卡片</span><strong><span id="libCardCount">0</span><small>张</small></strong><small>正面问题 / 背面要点</small></article>
+        <article><span>今日到期复习</span><strong id="libDueCount">0</strong><small>张待复习</small></article>
+        <article><span>今日新卡</span><strong id="libNewCount">0</strong><small>张未学</small></article>
+      </div>
+
+      <article class="panel lib-plan">
+        <div class="lib-plan-head">
+          <div><span class="eyebrow">DAILY PLAN · 先复习再学习</span><h2>今日学习计划</h2></div>
+          <div class="lib-plan-controls">
+            <label>每日新卡<input id="libDailyNew" type="number" min="1" max="100" value="10" /></label>
+            <label>每日复习<input id="libDailyReview" type="number" min="1" max="200" value="20" /></label>
+          </div>
+        </div>
+        <div class="lib-plan-status">
+          <span>新卡进度 <b id="libTodayNew">0 / 10</b></span>
+          <span>复习进度 <b id="libTodayReview">0 / 20</b></span>
+        </div>
+        <div class="review-actions">
+          <button id="libStartReview" class="soft-button">开始复习到期卡片 →</button>
+          <button id="libStartNew" class="primary">学习新卡片 →</button>
+        </div>
+      </article>
+
+      <article class="panel">
+        <div class="section-head compact"><div><span class="eyebrow">PERSONAL CASES</span><h2>我的病例列表</h2></div></div>
+        <div id="myCaseList" class="lib-list"></div>
+      </article>
+
+      <p class="source-note">所有文件、笔记、卡片与学习记录仅保存在当前浏览器（IndexedDB / localStorage），不会上传到本站。请勿导入包含患者身份信息的影像，或导入前先完成脱敏。</p>
+    </section>
   </main>
+
+  <dialog id="cardDialog" class="card-dialog" aria-labelledby="cardTitle">
+    <div class="dialog-head"><div><span class="eyebrow">FLASHCARD · SPACED REPETITION</span><h2 id="cardTitle">知识卡片</h2></div><button id="closeCardDialog" class="soft-button" aria-label="关闭卡片学习">关闭</button></div>
+    <div class="card-stage">
+      <div id="cardProgress" class="card-progress"></div>
+      <div id="cardFaceWrap">
+        <div id="cardFront" class="card-face card-front"></div>
+        <div id="cardBack" class="card-face card-back" hidden></div>
+      </div>
+      <div class="card-actions">
+        <button id="cardReveal" class="primary">显示答案</button>
+        <div id="cardGradeRow" class="card-grade-row" hidden>
+          <button data-grade="again" class="soft-button">忘记</button>
+          <button data-grade="hard" class="soft-button">困难</button>
+          <button data-grade="good" class="soft-button">认识</button>
+          <button data-grade="easy" class="soft-button">很熟</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
   <dialog id="queueDialog" aria-labelledby="queueTitle">
     <div class="dialog-head"><div><span class="eyebrow">YOUR STUDY LIST</span><h2 id="queueTitle">选择题目与顺序</h2></div><button id="closeQueue" class="soft-button" aria-label="关闭题目设置">关闭</button></div>
     <p>搜索或按病种筛选后批量抽题；也可拖动已选病例，或用箭头精确调整顺序。</p>
@@ -271,6 +331,7 @@
   <script src="medical-reviews.js?v=atlas10"></script>
   <script src="case-packages.js?v=atlas29"></script>
   <script src="app.js?v=atlas29"></script>
+  <script src="mylibrary.js?v=mylib1"></script>
   <script src="auth-config.js?v=auth1"></script>
   <script src="auth.js?v=auth1"></script>
 </body>

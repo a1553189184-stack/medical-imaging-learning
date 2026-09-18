@@ -326,7 +326,9 @@ async function open(study) {
   currentStudy = study;
   dialog.querySelector('#cornerstoneTitle').textContent = study.title;
   dialog.querySelector('#cornerstoneStudyMeta').textContent = `${study.system} · ${study.modality} · IDC ${study.collection} · ${study.subject}`;
-  dialog.querySelector('#cornerstoneOhif').href = window.medicalImagingOhifUrl(study);
+  const ohifLink = dialog.querySelector('#cornerstoneOhif');
+  ohifLink.hidden = false;
+  ohifLink.href = window.medicalImagingOhifUrl(study);
   if (!dialog.open) dialog.showModal();
   document.body.classList.add('dialog-open');
   try {
@@ -348,6 +350,47 @@ async function open(study) {
     const preferred = series.find(isDiagnosticSeries) || series[0];
     seriesSelect.value = dicomValue(preferred, '0020000E');
     await loadSeries(seriesSelect.value);
+  } catch (error) {
+    showError(error);
+  }
+}
+
+async function openLocalFiles(files, options = {}) {
+  const fileList = Array.from(files || []).filter(file => file && file.name);
+  if (!fileList.length) throw new Error('未选择任何 DICOM 文件');
+  resetDiscussion();
+  const title = options.title || '本地 DICOM 检查';
+  currentStudy = {
+    title,
+    system: options.system || '本地导入',
+    modality: options.modality || 'DICOM',
+    collection: '本地文件',
+    subject: '本机'
+  };
+  dialog.querySelector('#cornerstoneTitle').textContent = title;
+  dialog.querySelector('#cornerstoneStudyMeta').textContent = `${currentStudy.system} · ${currentStudy.modality} · 共 ${fileList.length} 个本地文件`;
+  const ohifLink = dialog.querySelector('#cornerstoneOhif');
+  ohifLink.hidden = true;
+  ohifLink.removeAttribute('href');
+  if (!dialog.open) dialog.showModal();
+  document.body.classList.add('dialog-open');
+  try {
+    await ensureInitialized();
+    renderingEngine.resize(true, false);
+    setStatus('正在载入本地 DICOM 文件…');
+    // 用 wadouri fileManager 把 File 对象包装成 imageId
+    const imageIds = fileList.map(file => dicomImageLoader.wadouri.fileManager.add(file));
+    if (!imageIds.length) throw new Error('本地文件未能注册到影像加载器');
+    seriesSelect.innerHTML = `<option>本地序列（${imageIds.length} 帧）</option>`;
+    seriesSelect.disabled = true;
+    await withTimeout(
+      viewport.setStack(imageIds, Math.floor((imageIds.length - 1) / 2)),
+      60000,
+      '本地影像载入超时'
+    );
+    viewport.render();
+    updateOverlay();
+    status.hidden = true;
   } catch (error) {
     showError(error);
   }
@@ -404,4 +447,4 @@ window.addEventListener('resize', () => {
   if (initialized && dialog.open) renderingEngine.resize(true, false);
 });
 
-window.CornerstonePilot = { open, close };
+window.CornerstonePilot = { open, close, openLocalFiles };

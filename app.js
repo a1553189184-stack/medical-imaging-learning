@@ -182,7 +182,7 @@ function updateLocation() {
   history.replaceState(null, '', url);
 }
 function showView(view, updateUrl = true) {
-  if (!['home','cases','caseDetail','viewer','dicom','progress'].includes(view)) view = 'home';
+  if (!['home','cases','caseDetail','viewer','dicom','mylibrary','progress'].includes(view)) view = 'home';
   currentView = view;
   $$('.view').forEach(function(el) { el.classList.toggle('active', el.id === view); });
   $$('.nav-item').forEach(function(el) {
@@ -195,6 +195,7 @@ function showView(view, updateUrl = true) {
   if (view === 'cases') renderCases();
   if (view === 'dicom') renderDicomStudies();
   if (view === 'progress') updateStats();
+  if (view === 'mylibrary' && window.__myLib) window.__myLib.render();
   if (updateUrl) updateLocation();
   window.scrollTo(0, 0);
 }
