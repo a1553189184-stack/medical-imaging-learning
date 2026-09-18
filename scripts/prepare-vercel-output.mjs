@@ -15,7 +15,7 @@ await cp(join(root, 'assets'), join(output, 'assets'), { recursive: true });
 for (const entry of rootEntries) {
   if (!entry.isFile()) continue;
   const extension = extname(entry.name).toLowerCase();
-  if (!['.html', '.js', '.css', '.svg', '.txt', '.xml'].includes(extension)) continue;
+  if (!['.html', '.js', '.css', '.svg', '.txt', '.xml', '.json', '.png', '.jpg', '.jpeg', '.webp', '.ico', '.woff', '.woff2'].includes(extension)) continue;
   await cp(join(root, entry.name), join(output, entry.name));
 }
 
