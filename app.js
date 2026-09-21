@@ -184,7 +184,7 @@ function updateLocation() {
   history.replaceState(null, '', url);
 }
 function showView(view, updateUrl = true) {
-  if (!['home','cases','caseDetail','viewer','dicom','diseaseLibrary','mylibrary','progress'].includes(view)) view = 'home';
+  if (!['home','cases','caseDetail','viewer','dicom','diseaseLibrary','sop','mylibrary','progress'].includes(view)) view = 'home';
   currentView = view;
   $$('.view').forEach(function(el) { el.classList.toggle('active', el.id === view); });
   $$('.nav-item').forEach(function(el) {
@@ -197,6 +197,7 @@ function showView(view, updateUrl = true) {
   if (view === 'cases') renderCases();
   if (view === 'dicom') renderDicomStudies();
   if (view === 'diseaseLibrary') renderDiseaseLibrary();
+  if (view === 'sop' && window.SopCenter) window.SopCenter.render();
   if (view === 'progress') updateStats();
   if (view === 'mylibrary' && window.__myLib) window.__myLib.render();
   if (updateUrl) updateLocation();
@@ -1516,7 +1517,7 @@ function route() {
     return;
   }
   renderTraining();
-  showView(['home','cases','viewer','dicom','progress'].includes(params.get('view')) ? params.get('view') : 'home');
+  showView(['home','cases','viewer','dicom','diseaseLibrary','sop','mylibrary','progress'].includes(params.get('view')) ? params.get('view') : 'home');
 }
 window.addEventListener('popstate',route);
 updateStats();

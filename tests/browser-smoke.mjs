@@ -183,6 +183,13 @@ try {
   }
   assert.match(await evaluate("document.querySelector('#diseaseLibraryStatus').textContent"),/颈部共 6 个分类、25 个疾病条目/);
   assert.equal(await evaluate("document.querySelector('#diseaseLibraryCategory').options.length"),7);
+  await evaluate("location.href='?view=sop'");
+  for(let attempt=0;attempt<50;attempt++) {
+    if(await evaluate("document.querySelectorAll('[data-sop-protocol]').length === 16")) break;
+    await delay(100);
+  }
+  assert.equal(await evaluate("document.querySelectorAll('[data-sop-protocol]').length"),16);
+  assert.match(await evaluate("document.querySelector('#sopContent').textContent"),/胸部 PA/);
   await command('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});
   assert.equal(await evaluate("document.documentElement.scrollWidth <= window.innerWidth"),true);
   assert.deepEqual(runtimeErrors,[]);

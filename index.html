@@ -30,6 +30,7 @@
       <button class="nav-item active" data-view="home"><span>⌂</span>学习首页</button>
       <button class="nav-item" data-view="cases"><span>▦</span>病例图谱</button>
       <button class="nav-item" data-view="diseaseLibrary"><span>⌕</span>疾病索引</button>
+      <button class="nav-item" data-view="sop"><span>◎</span>摄影 SOP</button>
       <button class="nav-item" data-view="viewer"><span>◫</span>阅片训练</button>
       <button class="nav-item" data-view="dicom"><span>▤</span>DICOM 序列</button>
       <button class="nav-item" data-view="mylibrary"><span>★</span>我的影像库</button>
@@ -212,6 +213,13 @@
       <p class="source-note">内容来源：影研社授权内容库。内容用于医学影像教学，不替代临床诊断；未显示影像的条目代表原分类内容未提供可核验的本地关联图，不使用无关图片填充。</p>
     </section>
 
+    <section class="view sop-view" id="sop">
+      <div class="page-title sop-title"><div><span class="eyebrow mint">RADIOGRAPHY WORKFLOW</span><h1>标准化摄影 SOP</h1><p>把摆位、中心线、参数、成片验收与重拍复盘连成一个可执行的质量闭环。</p></div><div class="sop-overview"><div><strong id="sopProtocolCount">16</strong><span>标准项目</span></div><div><strong>6</strong><span>解剖系统</span></div><div><strong id="sopLocalCount">0</strong><span>本院参数</span></div></div></div>
+      <nav class="sop-tabs" id="sopTabs" aria-label="摄影 SOP 功能"><button class="active" data-sop-tab="library">SOP 库</button><button data-sop-tab="workflow">标准流程</button><button data-sop-tab="local">本院参数</button><button data-sop-tab="qc">质控复盘</button></nav>
+      <div id="sopContent" aria-live="polite"></div>
+      <p class="source-note sop-references">参考框架：<a href="https://www.acr.org/-/media/ACR/Files/Practice-Parameters/rad-digital.pdf" target="_blank" rel="noopener noreferrer">ACR–AAPM–SIIM–SPR 数字摄影实践参数</a>、<a href="https://www.aapm.org/pubs/reports/detail.asp?docid=111" target="_blank" rel="noopener noreferrer">AAPM TG-116</a> 与 <a href="https://www.aapm.org/pubs/reports/detail.asp?docid=176" target="_blank" rel="noopener noreferrer">AAPM TG-232</a>。成人 DR 参数为常见起始范围，必须优先采用本院、本设备经验证的技术表与 AEC 协议；创伤、儿童、孕期及不能配合患者需按实际情况调整。</p>
+    </section>
+
     <section class="view" id="mylibrary">
       <div class="page-title"><div><span class="eyebrow mint">MY IMAGE LIBRARY</span><h1>我的影像库</h1><p>导入你自己的 DICOM 文件，建立个人病例库，配知识卡片与每日学习计划。</p></div>
         <button id="libImportBtn" class="primary" type="button">导入 DICOM 文件</button>
@@ -368,7 +376,9 @@
   <script src="dicom-series.js?v=atlas10"></script>
   <script src="medical-reviews.js?v=atlas10"></script>
   <script src="case-packages.js?v=atlas29"></script>
+  <script src="sop-data.js?v=sop1"></script>
   <script src="app.js?v=library7"></script>
+  <script src="sop.js?v=sop1"></script>
   <script src="mylibrary.js?v=mylib2"></script>
   <script src="auth-config.js?v=auth1"></script>
   <script src="auth.js?v=auth1"></script>

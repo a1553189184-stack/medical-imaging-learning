@@ -293,6 +293,26 @@ test('advanced study controls and stable-record migration are wired', () => {
   assert.match(html,/不同公开病例/);
 });
 
+test('radiography SOP is complete, structured and locally auditable', () => {
+  const html = fs.readFileSync(path.join(root,'index.html'),'utf8');
+  const sopSource = fs.readFileSync(path.join(root,'sop-data.js'),'utf8');
+  const sop = JSON.parse(vm.runInNewContext(sopSource + '\nJSON.stringify({protocols:SOP_PROTOCOLS,reasons:SOP_REJECT_REASONS,workflow:SOP_WORKFLOW})'));
+  assert.equal(sop.protocols.length,16);
+  assert.equal(new Set(sop.protocols.map(item=>item.id)).size,16);
+  assert.equal(new Set(sop.protocols.map(item=>item.sys)).size,6);
+  assert.equal(sop.workflow.length,6);
+  assert.ok(sop.reasons.length >= 10);
+  for(const item of sop.protocols) {
+    for(const field of ['id','sys','name','view','position','landmark','cr','sid','tech','aec','collimation','breath']) assert.ok(item[field],`${item.id}.${field}`);
+    assert.ok(item.criteria.length >= 5,`${item.id}.criteria`);
+    assert.ok(item.errors.length >= 5,`${item.id}.errors`);
+  }
+  assert.match(html,/data-view="sop"/);
+  assert.match(html,/id="sopContent"/);
+  assert.match(html,/sop-data\.js/);
+  assert.match(html,/sop\.js/);
+});
+
 test('medical-review registry cannot silently mark unknown cases approved', () => {
   const knownIds = new Set(cases.map(getId));
   for(const [id,review] of Object.entries(medicalReviews)) {
