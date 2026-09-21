@@ -147,6 +147,21 @@ try {
   assert.match(await evaluate("document.querySelector('#authMessage').textContent"),/邮箱登录链接/);
   await evaluate("document.querySelector('#closeAuth').click()");
   assert.equal(await evaluate("document.querySelector('#authDialog').open"),false);
+  await evaluate(`localStorage.setItem('yys-mylib-v1-cases', JSON.stringify([{
+    id:'qa-local-case', title:'浏览器验收用去标识本地病例', system:'胸部', modality:'CT', note:'', fileCount:3, createdAt:'2026-09-21T00:00:00.000Z'
+  }])); location.href='?view=mylibrary&qa=structured-card'`);
+  for(let attempt=0;attempt<50;attempt++) {
+    if((await evaluate("document.querySelector('#myCaseList')?.textContent || ''")).includes('浏览器验收用去标识本地病例')) break;
+    await delay(100);
+  }
+  assert.match(await evaluate("document.querySelector('#myCaseList').textContent"),/浏览器验收用去标识本地病例/);
+  await evaluate("document.querySelector('[data-lib-card=qa-local-case]').click()");
+  assert.equal(await evaluate("document.querySelector('#knowledgeCardDialog').open"),true);
+  assert.match(await evaluate("document.querySelector('#knowledgeCardForm').textContent"),/影像表现/);
+  await evaluate("document.querySelector('#knowledgeFront').value='本例的核心影像表现是什么？';document.querySelector('#knowledgeImaging').value='局灶性异常影像表现。';document.querySelector('#knowledgeDifferential').value='需结合完整序列鉴别。';document.querySelector('#knowledgeCardForm').dispatchEvent(new Event('submit',{bubbles:true,cancelable:true}))");
+  assert.equal(await evaluate("document.querySelector('#knowledgeCardDialog').open"),false);
+  assert.equal(await evaluate("JSON.parse(localStorage.getItem('yys-mylib-v1-cards')).length"),1);
+  assert.equal(await evaluate("JSON.parse(localStorage.getItem('yys-mylib-v1-cards'))[0].modules.length"),2);
   await command('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});
   assert.equal(await evaluate("document.documentElement.scrollWidth <= window.innerWidth"),true);
   assert.deepEqual(runtimeErrors,[]);

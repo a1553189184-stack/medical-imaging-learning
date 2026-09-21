@@ -539,7 +539,19 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
 .card-front { background: rgba(122,216,192,0.06); }
 .card-back { background: rgba(255,200,120,0.06); margin-top: 10px; }
 .card-face p { margin: 0; font-size: 16px; line-height: 1.6; }
+.card-face section { padding: 11px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.card-face section:last-child { border-bottom: 0; }
+.card-face section b { display: block; margin-bottom: 4px; color: #f1d499; font-size: 13px; }
 .card-actions { margin-top: 16px; display: flex; flex-direction: column; gap: 10px; }
 .card-grade-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
 .card-grade-row button { padding: 10px 8px; }
+.knowledge-card-dialog { max-width: 720px; max-height: min(92dvh, 900px); overflow: auto; }
+.card-case-label { margin: 4px 0 0; color: var(--muted, #9aa); font-size: 13px; }
+.knowledge-card-form { display: grid; gap: 13px; padding: 20px; }
+.knowledge-card-intro { margin: 0; color: var(--muted, #9aa); font-size: 13px; line-height: 1.6; }
+.knowledge-card-form label { display: grid; gap: 6px; color: var(--ink, #fff); font-size: 14px; font-weight: 700; }
+.knowledge-card-form input, .knowledge-card-form textarea { width: 100%; border: 1px solid rgba(255,255,255,0.16); border-radius: 9px; padding: 10px 12px; background: rgba(0,0,0,0.2); color: inherit; font: inherit; font-weight: 400; line-height: 1.5; }
+.knowledge-card-form textarea { min-height: 78px; resize: vertical; }
+.knowledge-card-footer { position: static; margin: 2px 0 0; padding: 12px 0 0; border-top: 1px solid rgba(255,255,255,0.1); }
+.knowledge-card-footer span { color: var(--muted, #9aa); font-size: 12px; }
 @media (max-width: 640px) { .card-grade-row { grid-template-columns: repeat(2, 1fr); } }

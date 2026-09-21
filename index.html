@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="learning.css?v=mylib1" />
+  <link rel="stylesheet" href="learning.css?v=mylib2" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"影研社","alternateName":"Image Lab","url":"https://yingyan-image-lab.vercel.app/","description":"面向医学影像学习者的开放病例与交互式训练平台","inLanguage":"zh-CN","isAccessibleForFree":true}</script>
 </head>
 <body>
@@ -254,6 +254,22 @@
       </div>
     </div>
   </dialog>
+  <dialog id="knowledgeCardDialog" class="card-dialog knowledge-card-dialog" aria-labelledby="knowledgeCardTitle">
+    <div class="dialog-head"><div><span class="eyebrow">STRUCTURED CASE CARD</span><h2 id="knowledgeCardTitle">结构化病例学习卡</h2><p id="knowledgeCardCase" class="card-case-label"></p></div><button id="closeKnowledgeCard" class="soft-button" type="button" aria-label="关闭结构化病例学习卡">关闭</button></div>
+    <form id="knowledgeCardForm" class="knowledge-card-form">
+      <p class="knowledge-card-intro">按模块记录本例。内容仅保存于当前浏览器；不要填写患者姓名、病案号或其他可识别信息。</p>
+      <label>复习问题<input id="knowledgeFront" name="front" maxlength="500" required placeholder="例如：本例最有诊断价值的影像征象是什么？"></label>
+      <label>影像表现<textarea id="knowledgeImaging" name="imaging" maxlength="2000" placeholder="位置、形态、密度/信号、强化或分布"></textarea></label>
+      <label>关键征象<textarea id="knowledgeSigns" name="signs" maxlength="1600" placeholder="最能支持或排除诊断的征象"></textarea></label>
+      <label>诊断标准 / 阈值<textarea id="knowledgeCriteria" name="criteria" maxlength="1600" placeholder="适用时填写标准、分级或必要条件"></textarea></label>
+      <label>鉴别诊断<textarea id="knowledgeDifferential" name="differential" maxlength="2000" placeholder="易混淆疾病及区分点"></textarea></label>
+      <label>检查与序列策略<textarea id="knowledgeExam" name="exam" maxlength="1600" placeholder="首选检查、关键序列或进一步评估方向"></textarea></label>
+      <label>易错点<textarea id="knowledgePitfalls" name="pitfalls" maxlength="1600" placeholder="本例最容易遗漏或误判的地方"></textarea></label>
+      <label>学习性处理 / 随访要点<textarea id="knowledgeManagement" name="management" maxlength="1600" placeholder="仅记录学习资料中的原则；不替代临床决策"></textarea></label>
+      <label>记忆线索<textarea id="knowledgeMnemonic" name="mnemonic" maxlength="1200" placeholder="自己的口诀、联想或简明总结"></textarea></label>
+      <div class="dialog-footer knowledge-card-footer"><span>保存后会生成一张可间隔复习的知识卡。</span><button class="primary" type="submit">保存学习卡</button></div>
+    </form>
+  </dialog>
   <dialog id="queueDialog" aria-labelledby="queueTitle">
     <div class="dialog-head"><div><span class="eyebrow">YOUR STUDY LIST</span><h2 id="queueTitle">选择题目与顺序</h2></div><button id="closeQueue" class="soft-button" aria-label="关闭题目设置">关闭</button></div>
     <p>搜索或按病种筛选后批量抽题；也可拖动已选病例，或用箭头精确调整顺序。</p>
@@ -330,8 +346,8 @@
   <script src="dicom-series.js?v=atlas10"></script>
   <script src="medical-reviews.js?v=atlas10"></script>
   <script src="case-packages.js?v=atlas29"></script>
-  <script src="app.js?v=mylib1"></script>
-  <script src="mylibrary.js?v=mylib1"></script>
+  <script src="app.js?v=mylib2"></script>
+  <script src="mylibrary.js?v=mylib2"></script>
   <script src="auth-config.js?v=auth1"></script>
   <script src="auth.js?v=auth1"></script>
 </body>

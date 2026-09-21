@@ -6,6 +6,11 @@
 const LIB_PREFIX = 'yys-mylib-v1';
 const LIB_DB_NAME = 'yys-mylib-db';
 const LIB_STORE = 'files';
+const CARD_MODULES = Object.freeze([
+  ['imaging', '影像表现'], ['signs', '关键征象'], ['criteria', '诊断标准 / 阈值'],
+  ['differential', '鉴别诊断'], ['exam', '检查与序列策略'], ['pitfalls', '易错点'],
+  ['management', '学习性处理 / 随访要点'], ['mnemonic', '记忆线索']
+]);
 
 const lib = function (s) { return document.querySelector(s); };
 const lib$$ = function (s) { return Array.from(document.querySelectorAll(s)); };
@@ -95,7 +100,12 @@ function sanitizeCard(card) {
     grade: ['again', 'hard', 'good', 'easy'].includes(card.grade) ? card.grade : 'again',
     due: typeof card.due === 'string' ? card.due.slice(0, 40) : new Date().toISOString(),
     lapses: Math.max(0, Number(card.lapses) || 0),
-    createdAt: typeof card.createdAt === 'string' ? card.createdAt.slice(0, 40) : new Date().toISOString()
+    createdAt: typeof card.createdAt === 'string' ? card.createdAt.slice(0, 40) : new Date().toISOString(),
+    modules: Array.isArray(card.modules) ? card.modules.map(function (module) {
+      if (!module || typeof module !== 'object') return null;
+      const type = CARD_MODULES.some(function (entry) { return entry[0] === module.type; }) ? module.type : 'imaging';
+      return { type: type, text: typeof module.text === 'string' ? module.text.slice(0, 2000) : '' };
+    }).filter(Boolean) : []
   };
 }
 
@@ -215,25 +225,56 @@ function deleteCase(caseId) {
   renderMyLibrary();
 }
 
-// ---------- 新增知识卡片 ----------
-function addCardForCase(caseId) {
-  const front = prompt('卡片正面（问题/提示）：', '这个病例的关键影像征象是什么？');
-  if (front === null) return;
-  const back = prompt('卡片背面（答案/要点）：', '');
-  if (back === null) return;
-  const card = {
-    id: libUid(),
-    caseId: caseId,
-    front: front.trim(),
-    back: back.trim(),
-    grade: 'again',
-    due: new Date().toISOString(),
-    lapses: 0,
-    createdAt: new Date().toISOString()
-  };
-  myCards.push(card);
+// ---------- 结构化知识卡片 ----------
+let editingCardId = null;
+let editingCaseId = null;
+function moduleText(card, type) {
+  const found = (card && Array.isArray(card.modules) ? card.modules : []).find(function (module) { return module.type === type; });
+  return found ? found.text : '';
+}
+function structuredBack(card) {
+  const modules = (card.modules || []).filter(function (module) { return module.text.trim(); });
+  if (!modules.length) return card.back || '（未填写学习要点）';
+  return modules.map(function (module) {
+    const label = CARD_MODULES.find(function (entry) { return entry[0] === module.type; });
+    return (label ? label[1] : '学习要点') + '：' + module.text;
+  }).join('\n\n');
+}
+function openKnowledgeCardEditor(caseId, cardId) {
+  const dialog = lib('#knowledgeCardDialog');
+  const record = myCases.find(function (item) { return item.id === caseId; });
+  if (!dialog || !record) return;
+  const card = cardId ? myCards.find(function (item) { return item.id === cardId; }) : null;
+  editingCardId = card ? card.id : null;
+  editingCaseId = record.id;
+  lib('#knowledgeCardCase').textContent = record.title + ' · ' + record.system + ' / ' + record.modality;
+  lib('#knowledgeFront').value = card ? card.front : '本例最有诊断价值的影像征象是什么？';
+  CARD_MODULES.forEach(function (entry) {
+    const element = lib('#knowledge' + entry[0].slice(0, 1).toUpperCase() + entry[0].slice(1));
+    if (element) element.value = moduleText(card, entry[0]);
+  });
+  if (!dialog.open) dialog.showModal();
+}
+function saveKnowledgeCard(event) {
+  event.preventDefault();
+  const record = myCases.find(function (item) { return item.id === editingCaseId; });
+  if (!record) return;
+  const front = lib('#knowledgeFront').value.trim();
+  if (!front) { libToast('请先填写复习问题'); return; }
+  const modules = CARD_MODULES.map(function (entry) {
+    const element = lib('#knowledge' + entry[0].slice(0, 1).toUpperCase() + entry[0].slice(1));
+    return { type: entry[0], text: (element ? element.value : '').trim() };
+  }).filter(function (module) { return module.text; });
+  const existing = editingCardId ? myCards.find(function (item) { return item.id === editingCardId; }) : null;
+  const card = existing || { id: libUid(), caseId: record.id, grade: 'again', due: new Date().toISOString(), lapses: 0, createdAt: new Date().toISOString() };
+  card.front = front;
+  card.modules = modules;
+  card.back = structuredBack(card);
+  if (!existing) myCards.push(card);
   libPersist();
   renderMyLibrary();
+  lib('#knowledgeCardDialog').close();
+  libToast(existing ? '学习卡已更新' : '已创建结构化学习卡');
 }
 
 // ---------- 间隔重复（SM-2 简化） ----------
@@ -316,7 +357,11 @@ function renderCurrentCard() {
   }
   const caseRec = myCases.find(function (c) { return c.id === card.caseId; });
   frontEl.innerHTML = '<span class="eyebrow">' + libEsc(caseRec ? caseRec.title : '独立卡片') + '</span><p>' + libEsc(card.front) + '</p>';
-  backEl.innerHTML = '<p>' + libEsc(card.back || '（无背面内容）') + '</p>';
+  const moduleBlocks = (card.modules || []).filter(function (module) { return module.text.trim(); }).map(function (module) {
+    const label = CARD_MODULES.find(function (entry) { return entry[0] === module.type; });
+    return '<section><b>' + libEsc(label ? label[1] : '学习要点') + '</b><p>' + libEsc(module.text) + '</p></section>';
+  }).join('');
+  backEl.innerHTML = moduleBlocks || '<p>' + libEsc(card.back || '（无背面内容）') + '</p>';
   backEl.hidden = true;
   progressEl.textContent = (sessionIdx + 1) + ' / ' + sessionCards.length;
   revealBtn.hidden = false;
@@ -368,7 +413,7 @@ function renderMyLibrary() {
         (c.note ? '<p class="lib-note">' + libEsc(c.note) + '</p>' : '') +
         '<div class="lib-card-actions">' +
           '<button class="soft-button" data-lib-open="' + c.id + '">打开阅片</button>' +
-          '<button class="soft-button" data-lib-card="' + c.id + '">+ 知识卡片</button>' +
+          '<button class="soft-button" data-lib-card="' + c.id + '">+ 结构化学习卡</button>' +
           '<button class="soft-button" data-lib-edit-note="' + c.id + '">编辑笔记</button>' +
           '<button class="soft-button" data-lib-delete="' + c.id + '">删除</button>' +
         '</div>' +
@@ -418,6 +463,10 @@ function bindLibrary() {
   // 关闭卡片对话框
   const closeCard = lib('#closeCardDialog');
   if (closeCard) closeCard.addEventListener('click', closeCardDialog);
+  const closeKnowledgeCard = lib('#closeKnowledgeCard');
+  if (closeKnowledgeCard) closeKnowledgeCard.addEventListener('click', function () { lib('#knowledgeCardDialog').close(); });
+  const knowledgeCardForm = lib('#knowledgeCardForm');
+  if (knowledgeCardForm) knowledgeCardForm.addEventListener('submit', saveKnowledgeCard);
   // 病例操作（事件委托）
   document.addEventListener('click', function (e) {
     const openBtn = e.target.closest('[data-lib-open]');
@@ -427,7 +476,7 @@ function bindLibrary() {
       return;
     }
     const cardBtn = e.target.closest('[data-lib-card]');
-    if (cardBtn) { addCardForCase(cardBtn.dataset.libCard); return; }
+    if (cardBtn) { openKnowledgeCardEditor(cardBtn.dataset.libCard); return; }
     const noteBtn = e.target.closest('[data-lib-edit-note]');
     if (noteBtn) {
       const rec = myCases.find(function (c) { return c.id === noteBtn.dataset.libEditNote; });
@@ -465,4 +514,4 @@ if (document.readyState !== 'loading') {
   bindLibrary();
   renderMyLibrary();
 }
-window.__myLib = { render: renderMyLibrary };
+window.__myLib = { render: renderMyLibrary, openKnowledgeCardEditor: openKnowledgeCardEditor };
