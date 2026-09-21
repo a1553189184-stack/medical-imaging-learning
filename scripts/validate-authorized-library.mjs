@@ -32,7 +32,8 @@ for (const system of manifest.systems) {
     for (const image of record.images || []) {
       if (image.src) imagePaths.add(image.src);
       const authorizedAsset = image.src?.startsWith(`assets/authorized/${system.key}/`);
-      const auditedAtlasAsset = image.src?.startsWith('assets/images/') && image.relation === '同系统、同诊断名称的已审计病例图谱' && image.sourceUrl && image.license;
+      const auditedRelations = new Set(['同系统、同诊断名称的已审计病例图谱','同系统、诊断名称包含该疾病名称的已审计病例图谱']);
+      const auditedAtlasAsset = image.src?.startsWith('assets/images/') && auditedRelations.has(image.relation) && image.sourceUrl && image.license;
       if (!authorizedAsset && !auditedAtlasAsset) errors.push(`${system.name}/${record.name}: 未满足来源审计要求的图片 ${image.src || '(空)'}`);
       else if (!fs.existsSync(path.join(root, image.src))) errors.push(`${system.name}/${record.name}: 图片不存在 ${image.src}`);
     }

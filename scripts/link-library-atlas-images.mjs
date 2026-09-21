@@ -13,6 +13,8 @@ const sourceById = new Map(sources.map(item => [item.id,item]));
 const idFromImage = image => path.basename(image,path.extname(image));
 const diagnosis = title => title.replace(/\s*·\s*开放病例\s*\d+$/,'').trim();
 const normalize = value => String(value || '').replace(/[\s·•]/g,'').replace(/[（(][^）)]*开放病例[^）)]*[）)]/g,'').toLocaleLowerCase('zh-CN');
+const isSpecificKey = key => key.length >= 3 && !/^(感染|炎症|肿瘤|外伤|骨折|转移|转移瘤|出血|梗阻|畸形|囊肿|结节)$/.test(key);
+const isSafeContainedMatch = (recordKey,caseKey) => caseKey.includes(recordKey) && !(recordKey === '皮样囊肿' && caseKey.includes('表皮样囊肿'));
 let linkedRecords = 0;
 let linkedImages = 0;
 
@@ -38,7 +40,11 @@ for (const system of manifest.systems) {
 
   const linkedIds = new Set();
   for (const [key,records] of recordsByName) {
-    const matches = casesByDiagnosis.get(key) || [];
+    const exactMatches = casesByDiagnosis.get(key) || [];
+    const containedMatches = exactMatches.length || !isSpecificKey(key) ? [] : Array.from(casesByDiagnosis.entries())
+      .filter(([caseKey]) => isSafeContainedMatch(key,caseKey))
+      .flatMap(([,items]) => items);
+    const matches = exactMatches.length ? exactMatches : containedMatches;
     if (records.length !== 1 || !matches.length || records[0].images?.length || linkedIds.has(records[0].id)) continue;
     const record = records[0];
     const selected = matches.slice(0,3);
@@ -54,7 +60,7 @@ for (const system of manifest.systems) {
         sourceUrl: item.sourceUrl || audited?.sourceUrl || '',
         license: item.license || audited?.license || '',
         licenseUrl: audited?.licenseUrl || '',
-        relation: '同系统、同诊断名称的已审计病例图谱'
+        relation: exactMatches.length ? '同系统、同诊断名称的已审计病例图谱' : '同系统、诊断名称包含该疾病名称的已审计病例图谱'
       };
     });
     record.imageCount = record.images.length;
@@ -76,7 +82,7 @@ manifest.totals = {
   categories: manifest.systems.reduce((sum,item) => sum + item.categoryCount,0),
   records: manifest.systems.reduce((sum,item) => sum + item.recordCount,0),
   images: manifest.systems.reduce((sum,item) => sum + item.imageCount,0),
-  coveredRecords: manifest.systems.reduce((sum,item) => sum + item.coveredRecordCount,0)
+  coveredRecords: manifest.systems.reduce((sum,item) => sum + (item.coveredRecordCount || 0),0)
 };
 fs.writeFileSync(manifestPath,JSON.stringify(manifest));
 
