@@ -171,8 +171,18 @@ try {
   assert.ok(await evaluate("document.querySelectorAll('.disease-library-card').length"));
   await evaluate("document.querySelector('#diseaseLibrarySearch').value='胆囊结石';document.querySelector('#diseaseLibrarySearch').dispatchEvent(new Event('input',{bubbles:true}))");
   assert.match(await evaluate("document.querySelector('#diseaseLibraryStatus').textContent"),/当前匹配/);
-  assert.equal(await evaluate("document.querySelectorAll('.disease-library-preview').length"),1);
-  assert.match(await evaluate("document.querySelector('.disease-library-gallery').textContent"),/查看已核验关联影像/);
+  assert.ok(await evaluate("document.querySelectorAll('.disease-library-preview').length"));
+  await evaluate("Array.from(document.querySelectorAll('.disease-library-card')).find(card=>card.querySelector('.disease-library-preview')).querySelector('[data-library-record]').click()");
+  assert.equal(await evaluate("document.querySelector('#diseaseLibraryDialog').open"),true);
+  assert.match(await evaluate("document.querySelector('#diseaseLibraryDialogBody').textContent"),/影像表现与诊断要点/);
+  assert.ok(await evaluate("document.querySelectorAll('#diseaseLibraryDialogBody .disease-detail-gallery img').length"));
+  await evaluate("document.querySelector('#closeDiseaseLibraryDialog').click();document.querySelector('#diseaseLibrarySearch').value='';document.querySelector('#diseaseLibrarySystem').value='neck';document.querySelector('#diseaseLibrarySystem').dispatchEvent(new Event('change',{bubbles:true}))");
+  for(let attempt=0;attempt<80;attempt++) {
+    if((await evaluate("document.querySelector('#diseaseLibraryStatus')?.textContent || ''")).includes('颈部共')) break;
+    await delay(100);
+  }
+  assert.match(await evaluate("document.querySelector('#diseaseLibraryStatus').textContent"),/颈部共 6 个分类、25 个疾病条目/);
+  assert.equal(await evaluate("document.querySelector('#diseaseLibraryCategory').options.length"),7);
   await command('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});
   assert.equal(await evaluate("document.documentElement.scrollWidth <= window.innerWidth"),true);
   assert.deepEqual(runtimeErrors,[]);

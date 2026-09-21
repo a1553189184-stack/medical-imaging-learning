@@ -6,7 +6,7 @@
   "scripts": {
     "build:viewer": "vite build",
     "build:web": "npm run build:viewer && node scripts/prepare-vercel-output.mjs",
-    "test": "node tests/catalog.test.cjs",
+    "test": "node tests/catalog.test.cjs && node scripts/validate-authorized-library.mjs",
     "test:browser": "node tests/browser-smoke.mjs",
     "test:dicom": "node tests/dicom-browser-smoke.mjs",
     "audit:dicom": "node scripts/audit-dicom-pilot.mjs"

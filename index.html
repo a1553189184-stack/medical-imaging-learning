@@ -19,7 +19,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="learning.css?v=mylib3" />
+  <link rel="stylesheet" href="learning.css?v=library4" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"影研社","alternateName":"Image Lab","url":"https://yingyan-image-lab.vercel.app/","description":"面向医学影像学习者的开放病例与交互式训练平台","inLanguage":"zh-CN","isAccessibleForFree":true}</script>
 </head>
 <body>
@@ -197,12 +197,18 @@
     </section>
 
     <section class="view" id="diseaseLibrary">
-      <div class="page-title"><div><span class="eyebrow mint">AUTHORIZED CONTENT LIBRARY</span><h1>腹部疾病索引</h1><p>按解剖系统和疾病组浏览授权导入的学习目录；该索引用于定位学习主题，不将目录名称当作个体影像诊断。</p></div></div>
-      <article class="panel disease-library-controls"><label>搜索疾病<input id="diseaseLibrarySearch" type="search" placeholder="疾病名称、分类或疾病组"></label><label>分类<select id="diseaseLibraryCategory"><option value="all">全部分类</option></select></label></article>
+      <div class="page-title"><div><span class="eyebrow mint">AUTHORIZED CONTENT LIBRARY</span><h1>影像疾病分类库</h1><p>按系统、分类和疾病组逐层学习；疾病详情保留诊断要点、影像表现、鉴别诊断、报告提示、参考资料及已关联影像。</p></div></div>
+      <article class="panel disease-library-controls">
+        <label>系统<select id="diseaseLibrarySystem" aria-label="选择解剖系统"></select></label>
+        <label>分类<select id="diseaseLibraryCategory"><option value="all">全部分类</option></select></label>
+        <label>疾病组<select id="diseaseLibraryGroup"><option value="all">全部疾病组</option></select></label>
+        <label class="disease-library-search">搜索疾病<input id="diseaseLibrarySearch" type="search" placeholder="名称、英文名、征象或鉴别诊断"></label>
+      </article>
+      <div id="diseaseLibraryTrail" class="disease-library-trail" aria-live="polite"></div>
       <p id="diseaseLibraryStatus" class="source-note" aria-live="polite">正在加载授权疾病索引…</p>
       <div id="diseaseLibraryResults" class="disease-library-results"></div>
       <button id="loadMoreDiseaseLibrary" class="soft-button" hidden>加载更多</button>
-      <p class="source-note">内容来源：影研社授权内容库。该目录只作教学检索；没有对应完整病例影像时，请在图谱或公开文献中进一步学习。</p>
+      <p class="source-note">内容来源：影研社授权内容库。内容用于医学影像教学，不替代临床诊断；未显示影像的条目代表原分类内容未提供可核验的本地关联图，不使用无关图片填充。</p>
     </section>
 
     <section class="view" id="mylibrary">
@@ -327,6 +333,11 @@
       <footer class="cornerstone-foot"><span>影像由 IDC 只读 DICOMweb 按需传输；集合名称仅表示来源背景。</span><span>试验功能仅供教学，不用于临床诊断。</span></footer>
     </div>
   </dialog>
+
+  <dialog id="diseaseLibraryDialog" class="disease-library-dialog" aria-labelledby="diseaseLibraryDialogTitle">
+    <div class="dialog-head"><div><span id="diseaseLibraryDialogPath" class="eyebrow mint">疾病分类库</span><h2 id="diseaseLibraryDialogTitle">疾病详情</h2><p id="diseaseLibraryDialogEnglish"></p></div><button id="closeDiseaseLibraryDialog" class="soft-button" aria-label="关闭疾病详情">关闭</button></div>
+    <div id="diseaseLibraryDialogBody" class="disease-library-detail"></div>
+  </dialog>
   <dialog id="authDialog" class="auth-dialog" aria-labelledby="authTitle">
     <div class="dialog-head"><div><span class="eyebrow">ACCOUNT · OPTIONAL</span><h2 id="authTitle">登录影研社</h2></div><button id="closeAuth" class="soft-button" type="button" aria-label="关闭登录窗口">关闭</button></div>
     <p class="auth-intro">登录用于识别你的学习账户。邮箱认证由 Supabase 发送安全链接；本站不创建或保存密码。未登录仍可使用全部病例与本机学习记录。</p>
@@ -356,7 +367,7 @@
   <script src="dicom-series.js?v=atlas10"></script>
   <script src="medical-reviews.js?v=atlas10"></script>
   <script src="case-packages.js?v=atlas29"></script>
-  <script src="app.js?v=mylib3"></script>
+  <script src="app.js?v=library4"></script>
   <script src="mylibrary.js?v=mylib2"></script>
   <script src="auth-config.js?v=auth1"></script>
   <script src="auth.js?v=auth1"></script>
