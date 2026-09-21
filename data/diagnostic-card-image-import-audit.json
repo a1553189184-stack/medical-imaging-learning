@@ -1,0 +1,341 @@
+{
+  "generatedAt": "2026-09-21T15:35:15.453Z",
+  "systems": [
+    "chest"
+  ],
+  "limit": 20,
+  "attached": 6,
+  "records": [
+    {
+      "system": "chest",
+      "id": "chest-nodule-tumor-part-solid-nodule",
+      "name": "部分实性结节",
+      "status": "attached",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:CT_of_part_solid_lung_nodule.png",
+      "sourceTitle": "File:CT of part solid lung nodule.png"
+    },
+    {
+      "system": "chest",
+      "id": "chest-nodule-tumor-cystic-or-cavitary-nodule",
+      "name": "囊性气腔相关肺癌",
+      "status": "no-high-confidence-match"
+    },
+    {
+      "system": "chest",
+      "id": "chest-nodule-tumor-pulmonary-neuroendocrine-tumor",
+      "name": "肺类癌（典型/不典型）",
+      "status": "no-high-confidence-match"
+    },
+    {
+      "system": "chest",
+      "id": "chest-nodule-tumor-invasive-mucinous-adenocarcinoma",
+      "name": "浸润性黏液腺癌",
+      "status": "no-high-confidence-match"
+    },
+    {
+      "system": "chest",
+      "id": "chest-nodule-tumor-sarcomatoid-carcinoma",
+      "name": "肺肉瘤样癌",
+      "status": "no-high-confidence-match"
+    },
+    {
+      "system": "chest",
+      "id": "chest-nodule-tumor-pulmonary-lymphoma",
+      "name": "肺淋巴瘤",
+      "status": "no-high-confidence-match"
+    },
+    {
+      "system": "chest",
+      "id": "chest-ild-ctd-ild",
+      "name": "结缔组织病相关ILD",
+      "status": "no-high-confidence-match"
+    },
+    {
+      "system": "chest",
+      "id": "chest-ild-fibrotic-hypersensitivity-pneumonitis",
+      "name": "纤维化性过敏性肺炎",
+      "status": "no-high-confidence-match"
+    },
+    {
+      "system": "chest",
+      "id": "chest-ild-radiation-pneumonitis-fibrosis",
+      "name": "放射性肺损伤",
+      "status": "no-high-confidence-match"
+    },
+    {
+      "system": "chest",
+      "id": "chest-ild-plch",
+      "name": "肺朗格汉斯组织细胞增生症",
+      "status": "no-high-confidence-match"
+    },
+    {
+      "system": "chest",
+      "id": "chest-ild-lam",
+      "name": "淋巴管平滑肌瘤病",
+      "status": "attached",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lymphangioleiomyomatose_-_CT_axial_LF.jpg",
+      "sourceTitle": "File:Lymphangioleiomyomatose - CT axial LF.jpg"
+    },
+    {
+      "system": "chest",
+      "id": "chest-ild-lip",
+      "name": "淋巴细胞间质性肺炎",
+      "status": "no-high-confidence-match"
+    },
+    {
+      "system": "chest",
+      "id": "chest-ild-talcosis-hard-metal-lung-disease",
+      "name": "滑石肺/硬金属肺病",
+      "status": "no-high-confidence-match"
+    },
+    {
+      "system": "chest",
+      "id": "chest-infection-viral-pneumonia",
+      "name": "病毒性肺炎",
+      "status": "search-error",
+      "error": "Commons 429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-infection-aspiration-pneumonia",
+      "name": "吸入性肺炎",
+      "status": "search-error",
+      "error": "Commons 429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-infection-lung-abscess-necrotizing-pneumonia",
+      "name": "肺脓肿与坏死性肺炎",
+      "status": "attached",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pulmonaryabs.png",
+      "sourceTitle": "File:Pulmonaryabs.png"
+    },
+    {
+      "system": "chest",
+      "id": "chest-infection-septic-pulmonary-emboli",
+      "name": "脓毒性肺栓塞",
+      "status": "search-error",
+      "error": "Commons 429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-infection-ntm-lung-disease",
+      "name": "非结核分枝杆菌肺病",
+      "status": "search-error",
+      "error": "Commons 429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-infection-invasive-aspergillosis",
+      "name": "侵袭性曲霉菌病",
+      "status": "search-error",
+      "error": "Commons 429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-infection-chronic-aspergillosis-aspergilloma",
+      "name": "慢性肺曲霉病（曲菌球型）",
+      "status": "download-error",
+      "error": "429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-infection-diffuse-alveolar-hemorrhage",
+      "name": "弥漫性肺泡出血",
+      "status": "search-error",
+      "error": "Commons 429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-airway-abpa",
+      "name": "变应性支气管肺曲霉病",
+      "status": "search-error",
+      "error": "Commons 429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-airway-tracheobronchomalacia",
+      "name": "气管支气管软化",
+      "status": "search-error",
+      "error": "Commons 429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-airway-tracheobronchial-stenosis",
+      "name": "气管支气管狭窄",
+      "status": "search-error",
+      "error": "Commons 429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-airway-asthma-related-airway-changes",
+      "name": "哮喘相关气道改变",
+      "status": "search-error",
+      "error": "Commons 429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-airway-copd-emphysema",
+      "name": "肺气肿（COPD影像表型）",
+      "status": "attached",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Emphysema_CT.JPG",
+      "sourceTitle": "File:Emphysema CT.JPG"
+    },
+    {
+      "system": "chest",
+      "id": "chest-airway-bullous-disease",
+      "name": "肺大疱与气胸风险",
+      "status": "attached",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bullus_emphasemaCT.png",
+      "sourceTitle": "File:Bullus emphasemaCT.png"
+    },
+    {
+      "system": "chest",
+      "id": "chest-pleura-wall-hemothorax",
+      "name": "血胸",
+      "status": "search-error",
+      "error": "Commons 429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-pleura-wall-pleural-metastasis",
+      "name": "胸膜转移",
+      "status": "search-error",
+      "error": "Commons 429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-pleura-wall-diaphragmatic-hernia",
+      "name": "膈疝",
+      "status": "download-error",
+      "error": "429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-pleura-wall-diaphragm-paralysis-eventration",
+      "name": "膈肌麻痹与膈膨升",
+      "status": "search-error",
+      "error": "Commons 429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-pleura-wall-pleural-plaques",
+      "name": "胸膜斑",
+      "status": "attached",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Asbestosis_and_cryptococcosis_-_Pleural_plaques_-_CT_scan_Case_194_(5999300496).jpg",
+      "sourceTitle": "File:Asbestosis and cryptococcosis - Pleural plaques - CT scan Case 194 (5999300496).jpg"
+    },
+    {
+      "system": "chest",
+      "id": "chest-vascular-pulmonary-avm",
+      "name": "肺动静脉畸形（PAVM）",
+      "status": "search-error",
+      "error": "Commons 429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-vascular-pulmonary-infarction",
+      "name": "肺梗死",
+      "status": "download-error",
+      "error": "429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-vascular-pvod",
+      "name": "肺静脉闭塞病",
+      "status": "search-error",
+      "error": "Commons 429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-vascular-ards-diffuse-alveolar-damage",
+      "name": "ARDS（急性呼吸窘迫综合征）",
+      "status": "search-error",
+      "error": "Commons 429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-vascular-inhalation-injury",
+      "name": "吸入性损伤",
+      "status": "search-error",
+      "error": "Commons 429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-mediastinum-mediastinal-germ-cell-tumor",
+      "name": "纵隔生殖细胞肿瘤",
+      "status": "search-error",
+      "error": "Commons 429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-mediastinum-substernal-goiter",
+      "name": "胸骨后甲状腺肿",
+      "status": "search-error",
+      "error": "Commons 429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-mediastinum-anterior-mediastinal-lymphoma",
+      "name": "前纵隔淋巴瘤",
+      "status": "no-high-confidence-match"
+    },
+    {
+      "system": "chest",
+      "id": "chest-mediastinum-mediastinal-lymphadenopathy",
+      "name": "纵隔淋巴结肿大",
+      "status": "no-high-confidence-match"
+    },
+    {
+      "system": "chest",
+      "id": "chest-congenital-pulmonary-hypoplasia-agenesis",
+      "name": "肺不发育与肺发育不全",
+      "status": "no-high-confidence-match"
+    },
+    {
+      "system": "chest",
+      "id": "chest-congenital-congenital-lobar-overinflation",
+      "name": "先天性肺叶过度充气",
+      "status": "no-high-confidence-match"
+    },
+    {
+      "system": "chest",
+      "id": "chest-congenital-papvr",
+      "name": "部分性肺静脉异位连接（PAPVC）",
+      "status": "no-high-confidence-match"
+    },
+    {
+      "system": "chest",
+      "id": "chest-congenital-lung-transplant-complications",
+      "name": "肺移植术后并发症",
+      "status": "no-high-confidence-match"
+    },
+    {
+      "system": "chest",
+      "id": "chest-congenital-post-radiotherapy-change",
+      "name": "胸部放疗后肺损伤",
+      "status": "no-high-confidence-match"
+    },
+    {
+      "system": "chest",
+      "id": "chest-congenital-round-atelectasis",
+      "name": "圆形肺不张",
+      "status": "search-error",
+      "error": "Commons 429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-nodule-tumor-pulmonary-chondroma",
+      "name": "肺软骨瘤（Carney三联征相关）",
+      "status": "search-error",
+      "error": "Commons 429"
+    },
+    {
+      "system": "chest",
+      "id": "chest-pneumoconiosis-chronic-beryllium-disease",
+      "name": "慢性铍病（铍肺）",
+      "status": "search-error",
+      "error": "Commons 429"
+    }
+  ]
+}

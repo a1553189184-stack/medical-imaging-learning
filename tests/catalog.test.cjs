@@ -313,6 +313,21 @@ test('radiography SOP is complete, structured and locally auditable', () => {
   assert.match(html,/sop\.js/);
 });
 
+test('network-sourced diagnostic card images retain exact provenance', () => {
+  const chest = JSON.parse(fs.readFileSync(path.join(root,'library-data','authorized-chest-library.json'),'utf8'));
+  const imported = chest.records.flatMap(record => (record.images || []).filter(image => image.src?.includes('/web-search/')).map(image => ({record,image})));
+  assert.equal(imported.length,6);
+  for(const {record,image} of imported) {
+    assert.ok(fs.existsSync(path.join(root,image.src)),record.id);
+    assert.match(image.sourceUrl,/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/);
+    assert.match(image.originalUrl,/^https:\/\/upload\.wikimedia\.org\//);
+    assert.match(image.license,/^(CC BY|CC BY-SA)/);
+    assert.match(image.originalSha1,/^[a-f0-9]{40}$/);
+    assert.match(image.localSha256,/^[a-f0-9]{64}$/);
+    assert.ok(image.sourceDescription && image.relation && image.type);
+  }
+});
+
 test('medical-review registry cannot silently mark unknown cases approved', () => {
   const knownIds = new Set(cases.map(getId));
   for(const [id,review] of Object.entries(medicalReviews)) {
