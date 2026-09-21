@@ -157,6 +157,7 @@ if (storedReviewPlan && typeof storedReviewPlan === 'object' && !Array.isArray(s
 const isMistake = function(c) { return Boolean(attempts[c.id] && attempts[c.id].lastAnswer !== c.answer); };
 const mistakeIds = function() { return cases.filter(isMistake).map(function(c) { return c.id; }); };
 let currentView = 'home', detailId = ids[0], selected = null, recallOpen = true, reasoningStep = 'findings', reasoningPromptIndex = 0;
+let authorizedDiseaseLibrary = null, diseaseLibraryLimit = 60, diseaseLibraryLoading = null;
 let atlasSystem = 'all', atlasLimit = 48, noticeTimer, draftRows = [], draftSelected = new Set(), dicomSystem = 'all';
 let tool = 'contrast', zoom = 1, contrast = 1, inverted = false, imageMarks = [];
 let comparePrimaryId = ids[0], compareSecondaryId = null;
@@ -182,7 +183,7 @@ function updateLocation() {
   history.replaceState(null, '', url);
 }
 function showView(view, updateUrl = true) {
-  if (!['home','cases','caseDetail','viewer','dicom','mylibrary','progress'].includes(view)) view = 'home';
+  if (!['home','cases','caseDetail','viewer','dicom','diseaseLibrary','mylibrary','progress'].includes(view)) view = 'home';
   currentView = view;
   $$('.view').forEach(function(el) { el.classList.toggle('active', el.id === view); });
   $$('.nav-item').forEach(function(el) {
@@ -194,10 +195,56 @@ function showView(view, updateUrl = true) {
   $('.menu').setAttribute('aria-expanded','false');
   if (view === 'cases') renderCases();
   if (view === 'dicom') renderDicomStudies();
+  if (view === 'diseaseLibrary') renderDiseaseLibrary();
   if (view === 'progress') updateStats();
   if (view === 'mylibrary' && window.__myLib) window.__myLib.render();
   if (updateUrl) updateLocation();
   window.scrollTo(0, 0);
+}
+function loadAuthorizedDiseaseLibrary() {
+  if (authorizedDiseaseLibrary) return Promise.resolve(authorizedDiseaseLibrary);
+  if (!diseaseLibraryLoading) {
+    diseaseLibraryLoading = fetch('library-data/authorized-abdomen-index.json')
+      .then(function(response) { if (!response.ok) throw new Error('授权疾病索引暂不可用'); return response.json(); })
+      .then(function(data) {
+        if (!data || !Array.isArray(data.records) || !Array.isArray(data.categories)) throw new Error('授权疾病索引格式无效');
+        authorizedDiseaseLibrary = data;
+        return data;
+      });
+  }
+  return diseaseLibraryLoading;
+}
+function renderDiseaseLibrary() {
+  const target = $('#diseaseLibraryResults');
+  const status = $('#diseaseLibraryStatus');
+  if (!target || !status) return;
+  status.textContent = '正在加载授权疾病索引…';
+  loadAuthorizedDiseaseLibrary().then(function(data) {
+    const categorySelect = $('#diseaseLibraryCategory');
+    if (categorySelect.options.length === 1) {
+      data.categories.forEach(function(category) {
+        const option = document.createElement('option');
+        option.value = category.name;
+        option.textContent = category.name;
+        categorySelect.appendChild(option);
+      });
+    }
+    const query = $('#diseaseLibrarySearch').value.trim().toLocaleLowerCase();
+    const category = categorySelect.value;
+    const matches = data.records.filter(function(record) {
+      const text = [record.name,record.nameEn,record.category,record.group,record.brief].join(' ').toLocaleLowerCase();
+      return (category === 'all' || record.category === category) && (!query || text.includes(query));
+    });
+    const shown = matches.slice(0,diseaseLibraryLimit);
+    status.textContent = '腹部疾病索引共 ' + data.records.length + ' 项；当前匹配 ' + matches.length + ' 项。';
+    target.innerHTML = shown.map(function(record) {
+      return '<article class="disease-library-card"><div><span>' + esc(record.category) + ' · ' + esc(record.group) + '</span><h2>' + esc(record.name) + '</h2>' + (record.nameEn ? '<p>' + esc(record.nameEn) + '</p>' : '') + (record.brief ? '<p class="disease-library-brief">' + esc(record.brief) + '</p>' : '') + '</div><small>' + (record.imageCount ? '原内容库含 ' + record.imageCount + ' 项影像素材' : '目录条目') + '</small></article>';
+    }).join('') || '<div class="empty-state"><b>没有符合条件的疾病</b><p>尝试缩短关键词或切换分类。</p></div>';
+    $('#loadMoreDiseaseLibrary').hidden = shown.length >= matches.length;
+  }).catch(function(error) {
+    status.textContent = '授权疾病索引加载失败：' + error.message;
+    target.innerHTML = '';
+  });
 }
 function filteredCases() {
   const query = $('#globalSearch').value.trim().toLocaleLowerCase();
@@ -1261,6 +1308,9 @@ $$('.filters button').forEach(function(b) { b.onclick = function() {
 }; });
 ['#modalityFilter','#levelFilter','#statusFilter'].forEach(function(s) { $(s).onchange = function() { atlasLimit = 48; renderCases(); }; });
 $('#globalSearch').oninput = function() { atlasLimit = 48; showView('cases'); };
+$('#diseaseLibrarySearch').oninput = function() { diseaseLibraryLimit = 60; renderDiseaseLibrary(); };
+$('#diseaseLibraryCategory').onchange = function() { diseaseLibraryLimit = 60; renderDiseaseLibrary(); };
+$('#loadMoreDiseaseLibrary').onclick = function() { diseaseLibraryLimit += 60; renderDiseaseLibrary(); };
 $('#loadMoreCases').onclick = function() { atlasLimit += 48; renderCases(); };
 $('#quizFiltered').onclick = function() { startTraining(filteredCases().map(function(c) { return c.id; }), 'quiz'); };
 $('#studyFiltered').onclick = function() { startTraining(filteredCases().map(function(c) { return c.id; }), 'study'); };

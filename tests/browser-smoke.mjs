@@ -162,6 +162,15 @@ try {
   assert.equal(await evaluate("document.querySelector('#knowledgeCardDialog').open"),false);
   assert.equal(await evaluate("JSON.parse(localStorage.getItem('yys-mylib-v1-cards')).length"),1);
   assert.equal(await evaluate("JSON.parse(localStorage.getItem('yys-mylib-v1-cards'))[0].modules.length"),2);
+  await evaluate("document.querySelector('[data-view=diseaseLibrary]').click()");
+  for(let attempt=0;attempt<80;attempt++) {
+    if((await evaluate("document.querySelector('#diseaseLibraryStatus')?.textContent || ''")).includes('760')) break;
+    await delay(100);
+  }
+  assert.match(await evaluate("document.querySelector('#diseaseLibraryStatus').textContent"),/760/);
+  assert.ok(await evaluate("document.querySelectorAll('.disease-library-card').length"));
+  await evaluate("document.querySelector('#diseaseLibrarySearch').value='胰腺';document.querySelector('#diseaseLibrarySearch').dispatchEvent(new Event('input',{bubbles:true}))");
+  assert.match(await evaluate("document.querySelector('#diseaseLibraryStatus').textContent"),/当前匹配/);
   await command('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});
   assert.equal(await evaluate("document.documentElement.scrollWidth <= window.innerWidth"),true);
   assert.deepEqual(runtimeErrors,[]);

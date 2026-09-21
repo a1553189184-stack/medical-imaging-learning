@@ -11,6 +11,7 @@ const rootEntries = await readdir(root, { withFileTypes: true });
 await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
 await cp(join(root, 'assets'), join(output, 'assets'), { recursive: true });
+await cp(join(root, 'library-data'), join(output, 'library-data'), { recursive: true });
 
 for (const entry of rootEntries) {
   if (!entry.isFile()) continue;

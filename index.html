@@ -29,6 +29,7 @@
     <nav aria-label="主导航">
       <button class="nav-item active" data-view="home"><span>⌂</span>学习首页</button>
       <button class="nav-item" data-view="cases"><span>▦</span>病例图谱</button>
+      <button class="nav-item" data-view="diseaseLibrary"><span>⌕</span>疾病索引</button>
       <button class="nav-item" data-view="viewer"><span>◫</span>阅片训练</button>
       <button class="nav-item" data-view="dicom"><span>▤</span>DICOM 序列</button>
       <button class="nav-item" data-view="mylibrary"><span>★</span>我的影像库</button>
@@ -193,6 +194,15 @@
       <article class="panel data-panel"><div><span class="eyebrow">PORTABLE LEARNING RECORD</span><h2>备份与恢复</h2><p>导出收藏、答题记录、错题、间隔复习计划、背题标记、笔记、推理追问、所见草稿、结构化报告和当前题目列表。导入前会校验版本与病例 ID。</p></div><div class="review-actions"><button id="exportProgress" class="soft-button">导出学习记录</button><button id="importProgress" class="primary">导入学习记录</button><input id="importProgressFile" type="file" accept="application/json,.json" hidden></div></article>
       <article class="panel mastery"><div class="section-head compact"><div><span class="eyebrow">COMPLETION BY SYSTEM</span><h2>各系统完成度</h2></div></div><div class="master-row" data-system="胸部"><b>胸部影像</b><div class="progress"><i style="width:0"></i></div><span>0 / 4</span></div><div class="master-row" data-system="神经"><b>神经影像</b><div class="progress"><i style="width:0"></i></div><span>0 / 3</span></div><div class="master-row" data-system="腹部"><b>腹部影像</b><div class="progress"><i style="width:0"></i></div><span>0 / 2</span></div><div class="master-row" data-system="骨骼"><b>骨骼肌肉</b><div class="progress"><i style="width:0"></i></div><span>0 / 1</span></div></article>
       <p class="source-note">已背 <span id="reviewedCount">0</span> 例。背题记录与答题记录分开，背题不会增加答题数或正确率。</p>
+    </section>
+
+    <section class="view" id="diseaseLibrary">
+      <div class="page-title"><div><span class="eyebrow mint">AUTHORIZED CONTENT LIBRARY</span><h1>腹部疾病索引</h1><p>按解剖系统和疾病组浏览授权导入的学习目录；该索引用于定位学习主题，不将目录名称当作个体影像诊断。</p></div></div>
+      <article class="panel disease-library-controls"><label>搜索疾病<input id="diseaseLibrarySearch" type="search" placeholder="疾病名称、分类或疾病组"></label><label>分类<select id="diseaseLibraryCategory"><option value="all">全部分类</option></select></label></article>
+      <p id="diseaseLibraryStatus" class="source-note" aria-live="polite">正在加载授权疾病索引…</p>
+      <div id="diseaseLibraryResults" class="disease-library-results"></div>
+      <button id="loadMoreDiseaseLibrary" class="soft-button" hidden>加载更多</button>
+      <p class="source-note">内容来源：影研社授权内容库。该目录只作教学检索；没有对应完整病例影像时，请在图谱或公开文献中进一步学习。</p>
     </section>
 
     <section class="view" id="mylibrary">
