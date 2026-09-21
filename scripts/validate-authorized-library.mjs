@@ -31,7 +31,9 @@ for (const system of manifest.systems) {
     else names.set(normalizedName, record.id);
     for (const image of record.images || []) {
       if (image.src) imagePaths.add(image.src);
-      if (!image.src?.startsWith(`assets/authorized/${system.key}/`)) errors.push(`${system.name}/${record.name}: 非授权目录图片 ${image.src || '(空)'}`);
+      const authorizedAsset = image.src?.startsWith(`assets/authorized/${system.key}/`);
+      const auditedAtlasAsset = image.src?.startsWith('assets/images/') && image.relation === '同系统、同诊断名称的已审计病例图谱' && image.sourceUrl && image.license;
+      if (!authorizedAsset && !auditedAtlasAsset) errors.push(`${system.name}/${record.name}: 未满足来源审计要求的图片 ${image.src || '(空)'}`);
       else if (!fs.existsSync(path.join(root, image.src))) errors.push(`${system.name}/${record.name}: 图片不存在 ${image.src}`);
     }
   }

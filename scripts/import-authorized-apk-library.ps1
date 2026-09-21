@@ -7,15 +7,15 @@ $ErrorActionPreference = 'Stop'
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 
 $systems = @(
-  [ordered]@{ key='abdomen'; file='abdomen_data.js'; variable='ABDOMEN_DATA'; name='腹部' },
-  [ordered]@{ key='chest'; file='chest_data.js'; variable='CHEST_DATA'; name='胸部' },
+  [ordered]@{ key='abdomen'; file='abdomen_data.js'; variable='ABDOMEN_DATA'; name='腹部'; supplements=@([ordered]@{file='abdomen_images_20260904.js'; images='IMAGE_GROUPS'; kind='groups'; new='NEW_DISEASES'}) },
+  [ordered]@{ key='chest'; file='chest_data.js'; variable='CHEST_DATA'; name='胸部'; supplements=@([ordered]@{file='chest_images_20260828.js'; images='IMAGE_ROWS'; kind='rows'; new='NEW_DISEASE'},[ordered]@{file='chest_images_20260904.js'; images='IMAGE_GROUPS'; kind='groups'; new='NEW_DISEASES'}) },
   [ordered]@{ key='maxillofacial'; file='maxillofacial_data.js'; variable='MAXILLOFACIAL_DATA'; name='颌面' },
   [ordered]@{ key='msk'; file='msk_data.js'; variable='MSK_DATA'; name='骨肌' },
   [ordered]@{ key='neck'; file='neck_data.js'; variable='NECK_DATA'; name='颈部' },
-  [ordered]@{ key='ns'; file='ns_data.js'; variable='NS_DATA'; name='神经' },
+  [ordered]@{ key='ns'; file='ns_data.js'; variable='NS_DATA'; name='神经'; supplements=@([ordered]@{file='ns_image_additions_20260905.js'; images='targetPayload'; kind='payload'}) },
   [ordered]@{ key='oral'; file='oral_data.js'; variable='ORAL_DATA'; name='口腔' },
   [ordered]@{ key='otology'; file='otology_data.js'; variable='OTOLOGY_DATA'; name='耳科' },
-  [ordered]@{ key='pelvis'; file='pelvis_data.js'; variable='PELVIS_DATA'; name='盆腔' }
+  [ordered]@{ key='pelvis'; file='pelvis_data.js'; variable='PELVIS_DATA'; name='盆腔'; supplements=@([ordered]@{file='pelvis_images_20260904.js'; images='IMAGE_GROUPS'; kind='groups'; new='NEW_DISEASES'}) }
 )
 
 function Get-ObjectValues($value) {
@@ -46,6 +46,32 @@ function Merge-Record($summary, $detail) {
     foreach ($property in $source.PSObject.Properties) { $merged[$property.Name] = $property.Value }
   }
   return $merged
+}
+
+function Get-JsonLiteral([string]$source, [string]$variableName) {
+  if (-not $variableName) { return $null }
+  $match = [regex]::Match($source, '\b(?:const|let|var)\s+' + [regex]::Escape($variableName) + '\s*=\s*')
+  if (-not $match.Success) { return $null }
+  $start = $match.Index + $match.Length
+  $open = $source[$start]
+  $close = if ($open -eq '{') { '}' } elseif ($open -eq '[') { ']' } else { throw "$variableName 不是 JSON 对象或数组" }
+  $depth = 0; $inString = $false; $escaped = $false
+  for ($index = $start; $index -lt $source.Length; $index++) {
+    $character = $source[$index]
+    if ($inString) {
+      if ($escaped) { $escaped = $false }
+      elseif ($character -eq '\') { $escaped = $true }
+      elseif ($character -eq '"') { $inString = $false }
+      continue
+    }
+    if ($character -eq '"') { $inString = $true; continue }
+    if ($character -eq $open) { $depth++ }
+    elseif ($character -eq $close) {
+      $depth--
+      if ($depth -eq 0) { return $source.Substring($start,$index-$start+1) }
+    }
+  }
+  throw "无法完整解析 $variableName"
 }
 
 function Convert-Images($images, $systemKey, $zip, $imageImports, $missingImages) {
@@ -87,7 +113,37 @@ try {
     $payload = ($source -replace $prefix, '').Trim().TrimEnd(';').Trim()
     $catalog = $payload | ConvertFrom-Json -Depth 100
 
-    $detailValues = Get-ObjectValues $catalog.diseases
+    $supplementalImages = @{}
+    $supplementalDiseases = [Collections.Generic.List[object]]::new()
+    foreach ($supplement in @($system.supplements)) {
+      if (-not $supplement) { continue }
+      $supplementEntry = $zip.GetEntry('assets/public/' + $supplement.file)
+      if (-not $supplementEntry) { throw "APK 中未找到补充分类数据：$($supplement.file)" }
+      $supplementReader = [IO.StreamReader]::new($supplementEntry.Open())
+      try { $supplementSource = $supplementReader.ReadToEnd() } finally { $supplementReader.Dispose() }
+      $newLiteral = Get-JsonLiteral $supplementSource $supplement.new
+      if ($newLiteral) {
+        $newData = $newLiteral | ConvertFrom-Json -Depth 100
+        if ($newData -is [array]) { foreach ($newDisease in $newData) { $supplementalDiseases.Add($newDisease) } }
+        else { $supplementalDiseases.Add($newData) }
+      }
+      $imageLiteral = Get-JsonLiteral $supplementSource $supplement.images
+      if (-not $imageLiteral) { continue }
+      $imageData = $imageLiteral | ConvertFrom-Json -Depth 100
+      if ($supplement.kind -eq 'groups') {
+        foreach ($property in $imageData.PSObject.Properties) { $supplementalImages[$property.Name] = @($property.Value) }
+      } elseif ($supplement.kind -eq 'rows') {
+        foreach ($row in @($imageData)) {
+          $diseaseId = [string]$row.diseaseId
+          if (-not $supplementalImages.ContainsKey($diseaseId)) { $supplementalImages[$diseaseId] = @() }
+          $supplementalImages[$diseaseId] = @($supplementalImages[$diseaseId]) + @($row)
+        }
+      } elseif ($supplement.kind -eq 'payload') {
+        foreach ($item in @($imageData)) { $supplementalImages[[string]$item.id] = @($item.images) }
+      }
+    }
+
+    $detailValues = @(Get-ObjectValues $catalog.diseases) + @($supplementalDiseases | ForEach-Object { $_ })
     $detailIndex = @{}
     foreach ($detail in $detailValues) {
       $detailId = Get-Text $detail @('id','proposedId')
@@ -136,7 +192,10 @@ try {
           $record['category'] = $categoryName
           $record['groupId'] = $groupId
           $record['groupName'] = $groupName
-          $mappedImages = Convert-Images $record['images'] $system.key $zip $imageImports $missingImages
+          $recordImages = @($record['images'])
+          if ($supplementalImages.ContainsKey($recordId)) { $recordImages += @($supplementalImages[$recordId]) }
+          $recordImages = @($recordImages | Group-Object { [string]$_.src } | ForEach-Object { $_.Group[0] })
+          $mappedImages = Convert-Images $recordImages $system.key $zip $imageImports $missingImages
           $record['images'] = @($mappedImages)
           $record['imageCount'] = @($mappedImages).Count
           $records.Add([pscustomobject]$record)
@@ -175,10 +234,14 @@ try {
         $category = [pscustomobject][ordered]@{ id=$categoryId; name=$categoryName; nameEn=''; description=''; standard=''; count=0; groups=@() }
         $categories.Add($category)
       }
-      $groupId = $categoryId + '-supplemental'
-      $group = @($category.groups | Where-Object { $_.id -eq $groupId }) | Select-Object -First 1
+      $rawGroupId = Get-Text $detail @('groupId')
+      $preferredGroupId = if ($rawGroupId) { $categoryId + '--' + $rawGroupId } else { '' }
+      $group = if ($preferredGroupId) { @($category.groups | Where-Object { $_.id -eq $preferredGroupId }) | Select-Object -First 1 } else { $null }
+      $groupId = if ($group) { $preferredGroupId } else { $categoryId + '-supplemental' }
+      if (-not $group) { $group = @($category.groups | Where-Object { $_.id -eq $groupId }) | Select-Object -First 1 }
       if (-not $group) {
-        $group = [pscustomobject][ordered]@{ id=$groupId; name='补充条目'; description=''; standard=''; count=0 }
+        $supplementalGroupName = Get-Text $detail @('groupName') '补充条目'
+        $group = [pscustomobject][ordered]@{ id=$groupId; name=$supplementalGroupName; description=''; standard=''; count=0 }
         $category.groups = @($category.groups) + @($group)
       }
       $record = Merge-Record $null $detail
@@ -186,8 +249,11 @@ try {
       $record['categoryId'] = $category.id
       $record['category'] = $category.name
       $record['groupId'] = $groupId
-      $record['groupName'] = '补充条目'
-      $mappedImages = Convert-Images $record['images'] $system.key $zip $imageImports $missingImages
+      $record['groupName'] = $group.name
+      $recordImages = @($record['images'])
+      if ($supplementalImages.ContainsKey($recordId)) { $recordImages += @($supplementalImages[$recordId]) }
+      $recordImages = @($recordImages | Group-Object { [string]$_.src } | ForEach-Object { $_.Group[0] })
+      $mappedImages = Convert-Images $recordImages $system.key $zip $imageImports $missingImages
       $record['images'] = @($mappedImages)
       $record['imageCount'] = @($mappedImages).Count
       $records.Add([pscustomobject]$record)
@@ -196,7 +262,7 @@ try {
       $category.count++
     }
 
-    if ($missingImages.Count) { throw "$($system.name)存在 $($missingImages.Count) 个缺失的显式关联影像：$($missingImages[0])" }
+    if ($missingImages.Count) { Write-Warning "$($system.name)有 $($missingImages.Count) 个补充脚本引用的资源未随 APK 打包，已跳过，首项：$($missingImages[0])" }
 
     foreach ($sourcePath in $imageImports.Keys) {
       $imageEntry = $zip.GetEntry('assets/public/' + $sourcePath)

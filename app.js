@@ -157,6 +157,7 @@ if (storedReviewPlan && typeof storedReviewPlan === 'object' && !Array.isArray(s
 const isMistake = function(c) { return Boolean(attempts[c.id] && attempts[c.id].lastAnswer !== c.answer); };
 const mistakeIds = function() { return cases.filter(isMistake).map(function(c) { return c.id; }); };
 let currentView = 'home', detailId = ids[0], selected = null, recallOpen = true, reasoningStep = 'findings', reasoningPromptIndex = 0;
+const AUTHORIZED_LIBRARY_VERSION = '20260921b';
 let authorizedDiseaseManifest = null, authorizedDiseaseLibraries = {}, diseaseLibraryLimit = 60, diseaseLibraryLoading = {}, diseaseLibrarySystem = 'abdomen';
 let atlasSystem = 'all', atlasLimit = 48, noticeTimer, draftRows = [], draftSelected = new Set(), dicomSystem = 'all';
 let tool = 'contrast', zoom = 1, contrast = 1, inverted = false, imageMarks = [];
@@ -203,7 +204,7 @@ function showView(view, updateUrl = true) {
 }
 function loadAuthorizedDiseaseManifest() {
   if (authorizedDiseaseManifest) return Promise.resolve(authorizedDiseaseManifest);
-  return fetch('library-data/authorized-library-manifest.json')
+  return fetch('library-data/authorized-library-manifest.json?v=' + AUTHORIZED_LIBRARY_VERSION)
     .then(function(response) { if (!response.ok) throw new Error('授权分类清单暂不可用'); return response.json(); })
     .then(function(data) {
       if (!data || !Array.isArray(data.systems)) throw new Error('授权分类清单格式无效');
@@ -217,7 +218,7 @@ function loadAuthorizedDiseaseLibrary(systemKey) {
     diseaseLibraryLoading[systemKey] = loadAuthorizedDiseaseManifest().then(function(manifest) {
       const system = manifest.systems.find(function(item) { return item.key === systemKey; });
       if (!system) throw new Error('未找到所选系统');
-      return fetch(system.file).then(function(response) { if (!response.ok) throw new Error(system.name + '分类内容暂不可用'); return response.json(); });
+      return fetch(system.file + '?v=' + AUTHORIZED_LIBRARY_VERSION).then(function(response) { if (!response.ok) throw new Error(system.name + '分类内容暂不可用'); return response.json(); });
     }).then(function(data) {
       if (!data || !Array.isArray(data.records) || !Array.isArray(data.categories)) throw new Error('授权分类内容格式无效');
       authorizedDiseaseLibraries[systemKey] = data;
@@ -266,7 +267,8 @@ function openDiseaseLibraryRecord(recordId) {
   $('#diseaseLibraryDialogEnglish').textContent = record.nameEn || '';
   const gallery = images.length ? '<section class="disease-detail-section"><h3>关联影像（' + images.length + '）</h3><div class="disease-detail-gallery">' + images.map(function(image) {
     const caption = image.caption || image.type || record.name;
-    return '<figure><img loading="lazy" src="' + esc(image.src) + '" alt="' + esc(caption) + '"><figcaption>' + esc([image.type,image.caption].filter(Boolean).join(' · ') || record.name) + '</figcaption></figure>';
+    const source = image.sourceUrl ? '<br><a href="' + esc(image.sourceUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(image.source || '查看影像来源') + '</a>' + (image.license ? ' · ' + esc(image.license) : '') : '';
+    return '<figure><img loading="lazy" src="' + esc(image.src) + '" alt="' + esc(caption) + '"><figcaption>' + esc([image.type,image.caption].filter(Boolean).join(' · ') || record.name) + source + '</figcaption></figure>';
   }).join('') + '</div></section>' : '';
   $('#diseaseLibraryDialogBody').innerHTML =
     (meta.length ? '<div class="disease-detail-meta">' + Array.from(new Set(meta)).map(function(item) { return '<span>' + esc(item) + '</span>'; }).join('') + '</div>' : '') +
@@ -317,7 +319,8 @@ function renderDiseaseLibrary() {
     const shown = matches.slice(0,diseaseLibraryLimit);
     const selectedGroup = availableGroups.find(function(item) { return item.id === groupId; });
     $('#diseaseLibraryTrail').innerHTML = '<span>' + esc(data.system) + '</span><b>›</b><span>' + esc(selectedCategory ? selectedCategory.name : '全部分类') + '</span><b>›</b><span>' + esc(selectedGroup ? selectedGroup.name : '全部疾病组') + '</span>';
-    status.textContent = data.system + '共 ' + data.categoryCount + ' 个分类、' + data.recordCount + ' 个疾病条目、' + data.imageCount + ' 张本地关联影像；当前匹配 ' + matches.length + ' 项。全库共 ' + manifest.totals.records + ' 项。';
+    const covered = data.coveredRecordCount == null ? data.records.filter(function(record) { return record.images && record.images.length; }).length : data.coveredRecordCount;
+    status.textContent = data.system + '共 ' + data.categoryCount + ' 个分类、' + data.recordCount + ' 个疾病条目，其中 ' + covered + ' 项已有病例配图（' + data.imageCount + ' 张）；当前匹配 ' + matches.length + ' 项。全库共 ' + manifest.totals.records + ' 项。';
     target.innerHTML = shown.map(function(record) {
       const images = Array.isArray(record.images) ? record.images : [];
       const preview = images.length ? '<img class="disease-library-preview" loading="lazy" src="' + esc(images[0].src) + '" alt="' + esc(images[0].caption || images[0].type || record.name) + '">' : '';
