@@ -600,3 +600,53 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
 @media (max-width: 640px) { .card-grade-row { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 900px) { .disease-library-controls { grid-template-columns: repeat(2,minmax(0,1fr)); } .disease-library-search { grid-column: 1 / -1; } }
 @media (max-width: 520px) { .disease-library-controls { grid-template-columns: 1fr; } .disease-library-search { grid-column: auto; } .disease-library-card { grid-template-columns: 82px minmax(0, 1fr); } .disease-library-preview { width: 82px; height: 82px; flex-basis: 82px; } .disease-library-card > small { grid-column: 1 / -1; } .disease-library-dialog .dialog-head, .disease-library-detail { padding: 14px; } }
+
+/* ===== 疾病分类库：临床参考工作台 ===== */
+.visually-hidden { position: absolute !important; width: 1px !important; height: 1px !important; padding: 0 !important; margin: -1px !important; overflow: hidden !important; clip: rect(0,0,0,0) !important; white-space: nowrap !important; border: 0 !important; }
+.disease-library-title { display: flex; align-items: end; justify-content: space-between; gap: 28px; margin-bottom: 22px; }
+.disease-library-title h1 { max-width: 760px; }
+.disease-library-title p { max-width: 680px; }
+.disease-library-overview { display: grid; grid-template-columns: repeat(3,auto); gap: 1px; flex: 0 0 auto; overflow: hidden; border: 1px solid rgba(20,63,53,.12); border-radius: 14px; background: rgba(20,63,53,.12); box-shadow: 0 10px 30px rgba(20,63,53,.06); }
+.disease-library-overview div { min-width: 94px; padding: 13px 16px; background: rgba(255,255,255,.82); }
+.disease-library-overview strong { display: block; color: #173f35; font-size: 21px; line-height: 1.1; }
+.disease-library-overview span { display: block; margin-top: 5px; color: #718079; font-size: 12px; }
+.disease-library-systems { display: grid; grid-template-columns: repeat(9,minmax(76px,1fr)); gap: 8px; margin-bottom: 14px; padding: 8px; border: 1px solid rgba(20,63,53,.1); border-radius: 15px; background: rgba(255,255,255,.62); box-shadow: 0 8px 28px rgba(20,63,53,.04); }
+.disease-library-system { min-height: 58px; padding: 9px 8px; border: 1px solid transparent; border-radius: 11px; background: transparent; color: #566861; cursor: pointer; font: inherit; transition: background .18s,border-color .18s,transform .18s; }
+.disease-library-system b { display: block; color: #243a34; font-size: 14px; }
+.disease-library-system small { display: block; margin-top: 3px; color: #87948f; font-size: 11px; }
+.disease-library-system:hover { transform: translateY(-1px); background: rgba(91,157,128,.08); }
+.disease-library-system.active { border-color: #2f715e; background: #173f35; box-shadow: 0 7px 18px rgba(23,63,53,.18); }
+.disease-library-system.active b { color: #fff; }
+.disease-library-system.active small { color: #bfe2d3; }
+.disease-library-controls { grid-template-columns: minmax(280px,1.7fr) minmax(180px,.7fr) minmax(180px,.7fr); padding: 16px; border-radius: 15px; box-shadow: 0 8px 28px rgba(20,63,53,.05); }
+.disease-library-controls label { color: #60726a; font-size: 12px; font-weight: 700; }
+.disease-library-controls input, .disease-library-controls select { width: 100%; min-width: 0; min-height: 46px; border-color: rgba(20,63,53,.13); border-radius: 10px; background: #f4f7f5; color: #263b35; font-size: 14px; }
+.disease-library-controls input:focus, .disease-library-controls select:focus { outline: 2px solid rgba(47,113,94,.25); border-color: #2f715e; }
+.disease-library-search { grid-column: auto; }
+.disease-library-trail { margin: 14px 2px 8px; }
+.disease-library-trail span { border-color: rgba(47,113,94,.14); background: rgba(47,113,94,.07); color: #316955; }
+.disease-library-results-head { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; margin: 18px 2px 12px; border-bottom: 1px solid rgba(20,63,53,.1); padding-bottom: 11px; }
+.disease-library-results-head h2 { margin: 0; color: #193a31; font-size: 20px; }
+.disease-library-results-head p { margin: 0; color: #718079; font-size: 12px; text-align: right; }
+.disease-library-results { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; }
+.disease-library-card { position: relative; display: flex; flex-direction: column; min-height: 330px; padding: 0; overflow: hidden; border-color: rgba(20,63,53,.11); border-radius: 15px; background: rgba(255,255,255,.85); box-shadow: 0 8px 26px rgba(20,63,53,.055); transition: transform .2s,box-shadow .2s,border-color .2s; }
+.disease-library-card:hover { transform: translateY(-3px); border-color: rgba(47,113,94,.3); background: #fff; box-shadow: 0 15px 36px rgba(20,63,53,.1); }
+.disease-library-media { position: relative; height: 150px; overflow: hidden; background: #102a24; }
+.disease-library-preview { width: 100%; height: 100%; object-fit: cover; border: 0; border-radius: 0; filter: saturate(.82) contrast(1.03); }
+.disease-library-media::after { content: ''; position: absolute; inset: auto 0 0; height: 45%; background: linear-gradient(transparent,rgba(9,27,22,.42)); pointer-events: none; }
+.disease-library-placeholder { display: grid; place-items: center; height: 150px; background: radial-gradient(circle at 78% 22%,rgba(174,224,201,.18),transparent 28%),linear-gradient(135deg,#163c32,#235344); color: #d6eee3; }
+.disease-library-placeholder b { display: grid; place-items: center; width: 54px; height: 54px; border: 1px solid rgba(255,255,255,.22); border-radius: 50%; font-size: 22px; }
+.disease-library-placeholder span { position: absolute; bottom: 13px; z-index: 1; font-size: 11px; color: #b9d6ca; letter-spacing: .08em; }
+.disease-library-copy { padding: 17px 17px 8px; }
+.disease-library-card span { color: #658077; font-size: 11px; font-weight: 700; letter-spacing: .02em; }
+.disease-library-card h2 { margin: 8px 0 4px; color: #183c32; font-size: 18px; line-height: 1.35; }
+.disease-library-card p { color: #73817c; font-size: 12px; }
+.disease-library-card .disease-library-brief { display: -webkit-box; min-height: 58px; margin-top: 9px; overflow: hidden; -webkit-line-clamp: 3; -webkit-box-orient: vertical; color: #53645e; font-size: 13px; }
+.disease-library-card > small { margin: auto 17px 0; padding-top: 7px; color: #718079; }
+.disease-library-card .disease-library-open { align-self: stretch; justify-self: auto; margin: 12px 17px 17px; border-color: rgba(47,113,94,.18); background: rgba(47,113,94,.07); color: #245c4b; }
+.disease-library-card .disease-library-open:hover { background: #173f35; color: #fff; }
+.disease-detail-gallery figcaption a { color: #74bea0; text-decoration: none; }
+.disease-detail-gallery figcaption a:hover { text-decoration: underline; }
+@media (max-width: 1100px) { .disease-library-systems { grid-template-columns: repeat(5,1fr); } .disease-library-results { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 760px) { .disease-library-title { display: grid; } .disease-library-overview { width: 100%; grid-template-columns: repeat(3,1fr); } .disease-library-overview div { min-width: 0; } .disease-library-systems { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; } .disease-library-system { min-width: 92px; scroll-snap-align: start; } .disease-library-controls { grid-template-columns: 1fr 1fr; } .disease-library-search { grid-column: 1 / -1; } .disease-library-results-head { display: block; } .disease-library-results-head p { margin-top: 6px; text-align: left; } }
+@media (max-width: 520px) { .disease-library-overview strong { font-size: 18px; } .disease-library-overview div { padding: 11px; } .disease-library-controls { grid-template-columns: 1fr; } .disease-library-search { grid-column: auto; } .disease-library-results { grid-template-columns: 1fr; } .disease-library-card { display: flex; min-height: 0; } .disease-library-media,.disease-library-placeholder { height: 170px; } .disease-library-preview { width: 100%; height: 100%; } .disease-library-card > small { grid-column: auto; } }

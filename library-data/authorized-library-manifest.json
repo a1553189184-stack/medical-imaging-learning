@@ -1,1 +1,93 @@
-{"schemaVersion":2,"importedAt":"2026-09-21T08:33:20.2659723Z","apkSha256":"cb409b680f030b30e17915b161ed1fb716e774e1cf1ef8e6179df5d4a53d691d","totals":{"systems":9,"categories":114,"records":2767,"images":1452,"coveredRecords":null},"systems":[{"key":"abdomen","name":"腹部","file":"library-data/authorized-abdomen-library.json","categoryCount":19,"recordCount":764,"imageCount":125,"coveredRecordCount":31},{"key":"chest","name":"胸部","file":"library-data/authorized-chest-library.json","categoryCount":18,"recordCount":110,"imageCount":322,"coveredRecordCount":58},{"key":"maxillofacial","name":"颌面","file":"library-data/authorized-maxillofacial-library.json","categoryCount":5,"recordCount":88,"imageCount":0},{"key":"msk","name":"骨肌","file":"library-data/authorized-msk-library.json","categoryCount":20,"recordCount":688,"imageCount":368,"coveredRecordCount":86},{"key":"neck","name":"颈部","file":"library-data/authorized-neck-library.json","categoryCount":6,"recordCount":25,"imageCount":50},{"key":"ns","name":"神经","file":"library-data/authorized-ns-library.json","categoryCount":18,"recordCount":561,"imageCount":178,"coveredRecordCount":40},{"key":"oral","name":"口腔","file":"library-data/authorized-oral-library.json","categoryCount":12,"recordCount":135,"imageCount":206},{"key":"otology","name":"耳科","file":"library-data/authorized-otology-library.json","categoryCount":4,"recordCount":67,"imageCount":0},{"key":"pelvis","name":"盆腔","file":"library-data/authorized-pelvis-library.json","categoryCount":12,"recordCount":329,"imageCount":203}]}
+{
+  "schemaVersion": 2,
+  "importedAt": "2026-09-21T08:33:20.2659723Z",
+  "apkSha256": "cb409b680f030b30e17915b161ed1fb716e774e1cf1ef8e6179df5d4a53d691d",
+  "totals": {
+    "systems": 9,
+    "categories": 114,
+    "records": 2767,
+    "images": 1452,
+    "coveredRecords": 274
+  },
+  "systems": [
+    {
+      "key": "abdomen",
+      "name": "腹部",
+      "file": "library-data/authorized-abdomen-library.json",
+      "categoryCount": 19,
+      "recordCount": 764,
+      "imageCount": 125,
+      "coveredRecordCount": 31
+    },
+    {
+      "key": "chest",
+      "name": "胸部",
+      "file": "library-data/authorized-chest-library.json",
+      "categoryCount": 18,
+      "recordCount": 110,
+      "imageCount": 322,
+      "coveredRecordCount": 58
+    },
+    {
+      "key": "maxillofacial",
+      "name": "颌面",
+      "file": "library-data/authorized-maxillofacial-library.json",
+      "categoryCount": 5,
+      "recordCount": 88,
+      "imageCount": 0
+    },
+    {
+      "key": "msk",
+      "name": "骨肌",
+      "file": "library-data/authorized-msk-library.json",
+      "categoryCount": 20,
+      "recordCount": 688,
+      "imageCount": 368,
+      "coveredRecordCount": 86
+    },
+    {
+      "key": "neck",
+      "name": "颈部",
+      "file": "library-data/authorized-neck-library.json",
+      "categoryCount": 6,
+      "recordCount": 25,
+      "imageCount": 50,
+      "coveredRecordCount": 6
+    },
+    {
+      "key": "ns",
+      "name": "神经",
+      "file": "library-data/authorized-ns-library.json",
+      "categoryCount": 18,
+      "recordCount": 561,
+      "imageCount": 178,
+      "coveredRecordCount": 40
+    },
+    {
+      "key": "oral",
+      "name": "口腔",
+      "file": "library-data/authorized-oral-library.json",
+      "categoryCount": 12,
+      "recordCount": 135,
+      "imageCount": 206,
+      "coveredRecordCount": 36
+    },
+    {
+      "key": "otology",
+      "name": "耳科",
+      "file": "library-data/authorized-otology-library.json",
+      "categoryCount": 4,
+      "recordCount": 67,
+      "imageCount": 0
+    },
+    {
+      "key": "pelvis",
+      "name": "盆腔",
+      "file": "library-data/authorized-pelvis-library.json",
+      "categoryCount": 12,
+      "recordCount": 329,
+      "imageCount": 203,
+      "coveredRecordCount": 17
+    }
+  ]
+}

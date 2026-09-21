@@ -292,6 +292,13 @@ function renderDiseaseLibrary() {
       systemSelect.innerHTML = manifest.systems.map(function(system) { return '<option value="' + esc(system.key) + '">' + esc(system.name) + '（' + system.recordCount + '）</option>'; }).join('');
       systemSelect.value = diseaseLibrarySystem;
     }
+    const systemNav = $('#diseaseLibrarySystems');
+    systemNav.innerHTML = manifest.systems.map(function(system) {
+      return '<button class="disease-library-system' + (system.key === diseaseLibrarySystem ? ' active' : '') + '" data-library-system-key="' + esc(system.key) + '"><b>' + esc(system.name) + '</b><small>' + system.recordCount + ' 项</small></button>';
+    }).join('');
+    var coveredTotal = manifest.totals.coveredRecords;
+    if (!Number.isFinite(coveredTotal)) coveredTotal = manifest.systems.reduce(function (sum, item) { return sum + (item.coveredRecordCount || 0); }, 0);
+    $('#diseaseLibraryOverview').innerHTML = '<div><strong>' + manifest.totals.records + '</strong><span>疾病条目</span></div><div><strong>' + manifest.totals.categories + '</strong><span>专业分类</span></div><div><strong>' + coveredTotal + '</strong><span>已有配图</span></div>';
     return loadAuthorizedDiseaseLibrary(diseaseLibrarySystem).then(function(data) { return { manifest:manifest, data:data }; });
   }).then(function(result) {
     const manifest = result.manifest, data = result.data;
@@ -323,8 +330,8 @@ function renderDiseaseLibrary() {
     status.textContent = data.system + '共 ' + data.categoryCount + ' 个分类、' + data.recordCount + ' 个疾病条目，其中 ' + covered + ' 项已有病例配图（' + data.imageCount + ' 张）；当前匹配 ' + matches.length + ' 项。全库共 ' + manifest.totals.records + ' 项。';
     target.innerHTML = shown.map(function(record) {
       const images = Array.isArray(record.images) ? record.images : [];
-      const preview = images.length ? '<img class="disease-library-preview" loading="lazy" src="' + esc(images[0].src) + '" alt="' + esc(images[0].caption || images[0].type || record.name) + '">' : '';
-      return '<article class="disease-library-card">' + preview + '<div class="disease-library-copy"><span>' + esc(record.category) + ' · ' + esc(record.groupName || '未分组') + '</span><h2>' + esc(record.name) + '</h2>' + (record.nameEn ? '<p>' + esc(record.nameEn) + '</p>' : '') + '<p class="disease-library-brief">' + esc(librarySummary(record)) + '</p></div><small>' + (images.length ? '关联影像 ' + images.length + ' 张' : '完整文字条目') + '</small><button class="soft-button disease-library-open" data-library-record="' + esc(record.id) + '">查看诊断详情</button></article>';
+      const media = images.length ? '<div class="disease-library-media"><img class="disease-library-preview" loading="lazy" src="' + esc(images[0].src) + '" alt="' + esc(images[0].caption || images[0].type || record.name) + '"></div>' : '<div class="disease-library-placeholder"><b>' + esc((record.name || '影').slice(0,1)) + '</b><span>影像待核验补充</span></div>';
+      return '<article class="disease-library-card">' + media + '<div class="disease-library-copy"><span>' + esc(record.category) + ' · ' + esc(record.groupName || '未分组') + '</span><h2>' + esc(record.name) + '</h2>' + (record.nameEn ? '<p>' + esc(record.nameEn) + '</p>' : '') + '<p class="disease-library-brief">' + esc(librarySummary(record)) + '</p></div><small>' + (images.length ? '已核验病例影像 · ' + images.length + ' 张' : '完整诊断知识条目') + '</small><button class="soft-button disease-library-open" data-library-record="' + esc(record.id) + '">打开诊断卡片</button></article>';
     }).join('') || '<div class="empty-state"><b>没有符合条件的疾病</b><p>尝试缩短关键词，或切换系统、分类和疾病组。</p></div>';
     $('#loadMoreDiseaseLibrary').hidden = shown.length >= matches.length;
   }).catch(function(error) {
@@ -1442,6 +1449,8 @@ $$('[data-library-system]').forEach(function(el) {
   el.onkeydown = function(e) { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openSystem(); } };
 });
 document.addEventListener('click', function(e) {
+  const librarySystemButton = e.target.closest('[data-library-system-key]');
+  if (librarySystemButton) { e.preventDefault(); diseaseLibrarySystem = librarySystemButton.dataset.librarySystemKey; $('#diseaseLibrarySystem').value = diseaseLibrarySystem; diseaseLibraryLimit = 60; $('#diseaseLibraryCategory').dataset.system = ''; $('#diseaseLibraryGroup').dataset.scope = ''; renderDiseaseLibrary(); return; }
   const libraryRecordButton = e.target.closest('[data-library-record]');
   if (libraryRecordButton) { e.preventDefault(); openDiseaseLibraryRecord(libraryRecordButton.dataset.libraryRecord); return; }
   const dicomButton = e.target.closest('[data-dicom-open]');
