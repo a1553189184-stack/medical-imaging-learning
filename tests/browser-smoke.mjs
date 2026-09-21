@@ -169,8 +169,10 @@ try {
   }
   assert.match(await evaluate("document.querySelector('#diseaseLibraryStatus').textContent"),/760/);
   assert.ok(await evaluate("document.querySelectorAll('.disease-library-card').length"));
-  await evaluate("document.querySelector('#diseaseLibrarySearch').value='胰腺';document.querySelector('#diseaseLibrarySearch').dispatchEvent(new Event('input',{bubbles:true}))");
+  await evaluate("document.querySelector('#diseaseLibrarySearch').value='胆囊结石';document.querySelector('#diseaseLibrarySearch').dispatchEvent(new Event('input',{bubbles:true}))");
   assert.match(await evaluate("document.querySelector('#diseaseLibraryStatus').textContent"),/当前匹配/);
+  assert.equal(await evaluate("document.querySelectorAll('.disease-library-preview').length"),1);
+  assert.match(await evaluate("document.querySelector('.disease-library-gallery').textContent"),/查看已核验关联影像/);
   await command('Emulation.setDeviceMetricsOverride',{width:390,height:844,deviceScaleFactor:1,mobile:true});
   assert.equal(await evaluate("document.documentElement.scrollWidth <= window.innerWidth"),true);
   assert.deepEqual(runtimeErrors,[]);

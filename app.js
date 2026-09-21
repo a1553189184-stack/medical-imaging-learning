@@ -238,7 +238,10 @@ function renderDiseaseLibrary() {
     const shown = matches.slice(0,diseaseLibraryLimit);
     status.textContent = '腹部疾病索引共 ' + data.records.length + ' 项；当前匹配 ' + matches.length + ' 项。';
     target.innerHTML = shown.map(function(record) {
-      return '<article class="disease-library-card"><div><span>' + esc(record.category) + ' · ' + esc(record.group) + '</span><h2>' + esc(record.name) + '</h2>' + (record.nameEn ? '<p>' + esc(record.nameEn) + '</p>' : '') + (record.brief ? '<p class="disease-library-brief">' + esc(record.brief) + '</p>' : '') + '</div><small>' + (record.imageCount ? '原内容库含 ' + record.imageCount + ' 项影像素材' : '目录条目') + '</small></article>';
+      const images = Array.isArray(record.images) ? record.images : [];
+      const gallery = images.length ? '<details class="disease-library-gallery"><summary>查看已核验关联影像（' + images.length + '）</summary><div>' + images.map(function(image) { return '<figure><img loading="lazy" src="' + esc(image.src) + '" alt="' + esc(image.caption || record.name) + '"><figcaption>' + esc(image.type || '医学影像') + ' · ' + esc(image.caption || record.name) + '</figcaption></figure>'; }).join('') + '</div></details>' : '';
+      const preview = images.length ? '<img class="disease-library-preview" loading="lazy" src="' + esc(images[0].src) + '" alt="' + esc(images[0].caption || record.name) + '">' : '';
+      return '<article class="disease-library-card">' + preview + '<div class="disease-library-copy"><span>' + esc(record.category) + ' · ' + esc(record.group) + '</span><h2>' + esc(record.name) + '</h2>' + (record.nameEn ? '<p>' + esc(record.nameEn) + '</p>' : '') + (record.brief ? '<p class="disease-library-brief">' + esc(record.brief) + '</p>' : '') + gallery + '</div><small>' + (images.length ? '已核验关联 ' + images.length + ' 张影像' : '目录条目') + '</small></article>';
     }).join('') || '<div class="empty-state"><b>没有符合条件的疾病</b><p>尝试缩短关键词或切换分类。</p></div>';
     $('#loadMoreDiseaseLibrary').hidden = shown.length >= matches.length;
   }).catch(function(error) {
