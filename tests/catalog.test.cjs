@@ -328,6 +328,24 @@ test('network-sourced diagnostic card images retain exact provenance', () => {
   }
 });
 
+test('owner-authorized APK topic images stay directly mapped and locally available', () => {
+  const manifest = JSON.parse(fs.readFileSync(path.join(root,'library-data','authorized-library-manifest.json'),'utf8'));
+  const msk = JSON.parse(fs.readFileSync(path.join(root,'library-data','authorized-msk-library.json'),'utf8'));
+  const integration = manifest.latestImageIntegration;
+  assert.equal(integration.apkSha256,'21b64ec119d2080a2fb7b01235215161ea3d849ab7238b50bba9a5001ba927c8');
+  assert.equal(integration.addedImages,38);
+  assert.equal(Object.keys(integration.importedByRecord).length,10);
+  const imported = msk.records.flatMap(record => (record.images || []).filter(image => image.src?.includes('/disease-topics/20260912/')).map(image => ({record,image})));
+  assert.equal(imported.length,38);
+  assert.equal(new Set(imported.map(({image}) => image.src)).size,34);
+  for(const {record,image} of imported) {
+    assert.ok(fs.existsSync(path.join(root,image.src)),record.id);
+    assert.equal(image.type,'教学图解');
+    assert.match(image.source,/所有者授权/);
+    assert.match(image.relation,new RegExp(record.name.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')));
+  }
+});
+
 test('medical-review registry cannot silently mark unknown cases approved', () => {
   const knownIds = new Set(cases.map(getId));
   for(const [id,review] of Object.entries(medicalReviews)) {
