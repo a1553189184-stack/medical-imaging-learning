@@ -157,7 +157,7 @@ if (storedReviewPlan && typeof storedReviewPlan === 'object' && !Array.isArray(s
 const isMistake = function(c) { return Boolean(attempts[c.id] && attempts[c.id].lastAnswer !== c.answer); };
 const mistakeIds = function() { return cases.filter(isMistake).map(function(c) { return c.id; }); };
 let currentView = 'home', detailId = ids[0], selected = null, recallOpen = true, reasoningStep = 'findings', reasoningPromptIndex = 0;
-const AUTHORIZED_LIBRARY_VERSION = '20260922b';
+const AUTHORIZED_LIBRARY_VERSION = '20260922c';
 let authorizedDiseaseManifest = null, authorizedDiseaseLibraries = {}, diseaseLibraryLimit = 60, diseaseLibraryLoading = {}, diseaseLibrarySystem = 'abdomen';
 let atlasSystem = 'all', atlasLimit = 48, noticeTimer, draftRows = [], draftSelected = new Set(), dicomSystem = 'all';
 let tool = 'contrast', zoom = 1, contrast = 1, inverted = false, imageMarks = [];
@@ -323,12 +323,20 @@ function renderDiseaseLibrary() {
     const matches = data.records.filter(function(record) {
       if (!record._searchText) record._searchText = JSON.stringify(record).toLocaleLowerCase();
       return (categoryId === 'all' || record.categoryId === categoryId) && (groupId === 'all' || record.groupId === groupId) && (!query || record._searchText.includes(query));
+    }).map(function(record,index) {
+      return { record:record, index:index };
+    }).sort(function(a,b) {
+      const aHasImages = Array.isArray(a.record.images) && a.record.images.length > 0;
+      const bHasImages = Array.isArray(b.record.images) && b.record.images.length > 0;
+      return Number(bHasImages) - Number(aHasImages) || a.index - b.index;
+    }).map(function(item) {
+      return item.record;
     });
     const shown = matches.slice(0,diseaseLibraryLimit);
     const selectedGroup = availableGroups.find(function(item) { return item.id === groupId; });
     $('#diseaseLibraryTrail').innerHTML = '<span>' + esc(data.system) + '</span><b>›</b><span>' + esc(selectedCategory ? selectedCategory.name : '全部分类') + '</span><b>›</b><span>' + esc(selectedGroup ? selectedGroup.name : '全部疾病组') + '</span>';
     const covered = data.coveredRecordCount == null ? data.records.filter(function(record) { return record.images && record.images.length; }).length : data.coveredRecordCount;
-    status.textContent = data.system + '共 ' + data.categoryCount + ' 个分类、' + data.recordCount + ' 个疾病条目，其中 ' + covered + ' 项已有病例配图（' + data.imageCount + ' 张）；当前匹配 ' + matches.length + ' 项。全库共 ' + manifest.totals.records + ' 项。';
+    status.textContent = data.system + '共 ' + data.categoryCount + ' 个分类、' + data.recordCount + ' 个疾病条目，其中 ' + covered + ' 项已有病例配图（' + data.imageCount + ' 张）；当前匹配 ' + matches.length + ' 项，已按配图优先排列。全库共 ' + manifest.totals.records + ' 项。';
     target.innerHTML = shown.map(function(record) {
       const images = Array.isArray(record.images) ? record.images : [];
       const media = images.length ? '<div class="disease-library-media"><img class="disease-library-preview" loading="lazy" src="' + esc(images[0].src) + '" alt="' + esc(images[0].caption || images[0].type || record.name) + '"></div>' : '<div class="disease-library-placeholder"><b>' + esc((record.name || '影').slice(0,1)) + '</b><span>影像待核验补充</span></div>';
