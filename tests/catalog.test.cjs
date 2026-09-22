@@ -410,6 +410,25 @@ test('second reviewed image batch keeps subtype provenance and anatomy constrain
   assert.equal(linked,27);
 });
 
+test('third reviewed image batch preserves synonym and spectrum boundaries', () => {
+  const manifest = JSON.parse(fs.readFileSync(path.join(root,'library-data','authorized-library-manifest.json'),'utf8'));
+  const run = manifest.latestReviewedCaseImageLinkBatch3;
+  assert.equal(run.recordCount,8);
+  assert.equal(run.imageReferenceCount,14);
+  let linked = 0;
+  for(const system of manifest.systems) {
+    const library = JSON.parse(fs.readFileSync(path.join(root,system.file),'utf8'));
+    for(const record of library.records) for(const image of record.images || []) {
+      if(image.verificationStatus !== 'reviewed-spectrum-or-subtype-match-batch3') continue;
+      linked += 1;
+      assert.ok(fs.existsSync(path.join(root,image.src)),`${record.id}: ${image.src}`);
+      assert.ok(image.source && image.sourceUrl && image.license && image.type,record.id);
+      assert.ok(image.relation.includes(record.name),record.id);
+    }
+  }
+  assert.equal(linked,14);
+});
+
 test('medical-review registry cannot silently mark unknown cases approved', () => {
   const knownIds = new Set(cases.map(getId));
   for(const [id,review] of Object.entries(medicalReviews)) {
