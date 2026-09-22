@@ -6,6 +6,7 @@ const ROOT = path.resolve(import.meta.dirname, '..');
 const API = 'https://commons.wikimedia.org/w/api.php';
 const TARGET_SYSTEMS = new Set((process.env.IMAGE_SYSTEMS || 'chest,neck').split(','));
 const LIMIT = Number(process.env.IMAGE_LIMIT || 40);
+const CURATED_ONLY = process.env.CURATED_ONLY === '1';
 const CURATED = new Map([
   ['chest-nodule-tumor-part-solid-nodule', { title: 'File:CT of part solid lung nodule.png', modality: 'CT', note: '轴位肺窗同时显示磨玻璃与实性成分。' }],
   ['chest-ild-lam', { title: 'File:Lymphangioleiomyomatose - CT axial LF.jpg', modality: 'CT', note: '双肺弥漫、均匀分布的多发薄壁囊腔。' }],
@@ -15,7 +16,12 @@ const CURATED = new Map([
   ['chest-infection-chronic-aspergillosis-aspergilloma', { title: 'File:Aspergilloma CT scan (5390986264).jpg', modality: 'CT', note: '肺曲菌球 CT 表现。' }],
   ['chest-pleura-wall-diaphragmatic-hernia', { title: 'File:PMC2739847 1749-7922-4-32-2.png', modality: 'CT', note: '左侧膈肌破裂后肠管疝入胸腔的轴位 CT。' }],
   ['chest-pleura-wall-pleural-plaques', { title: 'File:Asbestosis and cryptococcosis - Pleural plaques - CT scan Case 194 (5999300496).jpg', modality: 'CT', note: '多发钙化胸膜斑；原病例同时存在肺隐球菌病。' }],
-  ['chest-vascular-pulmonary-infarction', { title: 'File:CT of lung infarction with reverse halo sign.png', modality: 'CT', note: '肺栓塞相关肺梗死，呈反晕征。' }]
+  ['chest-vascular-pulmonary-infarction', { title: 'File:CT of lung infarction with reverse halo sign.png', modality: 'CT', note: '肺栓塞相关肺梗死，呈反晕征。' }],
+  ['thyroid-papillary-ca', { title: 'File:Papillary thyroid carcinoma on CT, PET CT and ultrasonography.jpg', modality: 'US/CT/PET-CT', note: '文件页明确标注甲状腺乳头状癌，并同时展示超声、CT与PET-CT。' }],
+  ['sialolithiasis', { title: 'File:Sialolithiasis vor allem linke Glandula submandibularis 85W - CT KM - 001.jpg', modality: 'CT', note: '增强CT及容积重建显示双侧颌下腺及腮腺涎石，以左侧颌下腺为主。' }],
+  ['acquired-middle-ear-cholesteatoma', { title: 'File:Cholesteatom CT serie 1.jpg', modality: 'CT', note: '文件说明明确为中耳上鼓室胆脂瘤CT。' }],
+  ['external-auditory-canal-cholesteatoma', { title: 'File:Cholesteatom CT Sagittal KF.jpg', modality: 'CT', note: '文件说明明确为左侧外耳道胆脂瘤伴局灶骨侵蚀。' }],
+  ['neck-temporal-bone-otosclerosis', { title: 'File:Xray of otosclerosis.jpg', modality: 'CT', note: 'Commons文件分类及标题明确为耳硬化症CT影像。' }]
 ]);
 const manifestPath = path.join(ROOT, 'library-data', 'authorized-library-manifest.json');
 const manifest = JSON.parse(await fs.readFile(manifestPath, 'utf8'));
@@ -147,7 +153,7 @@ for (const system of manifest.systems.filter(item => TARGET_SYSTEMS.has(item.key
       if (curated) {
         const exact = await exactFile(curated);
         if (exact) candidates.push(exact);
-      } else {
+      } else if (!CURATED_ONLY) {
         for (const modality of modalities) candidates.push(...await search(record, modality));
       }
     } catch (error) { audit.push({ system: system.key, id: record.id, name: record.name, status: 'search-error', error: error.message }); continue; }
@@ -184,6 +190,16 @@ for (const system of manifest.systems.filter(item => TARGET_SYSTEMS.has(item.key
 }
 manifest.totals.images = manifest.systems.reduce((sum, item) => sum + item.imageCount, 0);
 manifest.totals.coveredRecords = manifest.systems.reduce((sum, item) => sum + item.coveredRecordCount, 0);
+const curatedImported = [];
+for (const system of manifest.systems.filter(item => TARGET_SYSTEMS.has(item.key))) {
+  const data = JSON.parse(await fs.readFile(path.join(ROOT, system.file), 'utf8'));
+  for (const record of data.records) {
+    const image = (record.images || []).find(item => String(item.src || '').includes('/web-search/'));
+    if (CURATED.has(record.id) && image) curatedImported.push({ system: system.key, recordId: record.id, recordName: record.name, src: image.src, sourceUrl: image.sourceUrl, license: image.license, originalSha1: image.originalSha1, localSha256: image.localSha256 });
+  }
+}
+if (CURATED_ONLY) manifest.latestCuratedCommonsImageImport = { importedAt: new Date().toISOString(), recordCount: curatedImported.length, rule: '逐文件核对Commons说明、诊断、解剖部位、模态、许可与本地哈希', records: curatedImported };
 await fs.writeFile(manifestPath, JSON.stringify(manifest));
-await fs.writeFile(path.join(ROOT, 'data', 'diagnostic-card-image-import-audit.json'), JSON.stringify({ generatedAt: new Date().toISOString(), systems: [...TARGET_SYSTEMS], limit: LIMIT, attached, records: audit }, null, 2) + '\n');
+const auditRecords = CURATED_ONLY ? curatedImported.map(item => ({ ...item, status: 'attached-curated' })) : audit;
+await fs.writeFile(path.join(ROOT, 'data', 'diagnostic-card-image-import-audit.json'), JSON.stringify({ generatedAt: new Date().toISOString(), systems: [...TARGET_SYSTEMS], limit: LIMIT, attached: CURATED_ONLY ? curatedImported.length : attached, records: auditRecords }, null, 2) + '\n');
 console.log(`Attached ${attached} high-confidence diagnostic-card images.`);

@@ -328,6 +328,25 @@ test('network-sourced diagnostic card images retain exact provenance', () => {
   }
 });
 
+test('curated neck and otology Commons images are cryptographically auditable', () => {
+  const crypto = require('node:crypto');
+  const manifest = JSON.parse(fs.readFileSync(path.join(root,'library-data','authorized-library-manifest.json'),'utf8'));
+  const run = manifest.latestCuratedCommonsImageImport;
+  assert.equal(run.recordCount,5);
+  assert.equal(run.records.length,5);
+  const expected = new Set(['thyroid-papillary-ca','sialolithiasis','external-auditory-canal-cholesteatoma','acquired-middle-ear-cholesteatoma','neck-temporal-bone-otosclerosis']);
+  for(const item of run.records) {
+    assert.ok(expected.delete(item.recordId),item.recordId);
+    assert.match(item.sourceUrl,/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/);
+    assert.match(item.license,/^(CC0|Public domain|CC BY|CC BY-SA)/);
+    assert.match(item.originalSha1,/^[a-f0-9]{40}$/);
+    assert.match(item.localSha256,/^[a-f0-9]{64}$/);
+    const bytes = fs.readFileSync(path.join(root,item.src));
+    assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),item.localSha256);
+  }
+  assert.equal(expected.size,0);
+});
+
 test('owner-authorized APK topic images stay directly mapped and locally available', () => {
   const manifest = JSON.parse(fs.readFileSync(path.join(root,'library-data','authorized-library-manifest.json'),'utf8'));
   const msk = JSON.parse(fs.readFileSync(path.join(root,'library-data','authorized-msk-library.json'),'utf8'));
