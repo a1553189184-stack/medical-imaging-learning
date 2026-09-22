@@ -35,8 +35,10 @@ for (const system of manifest.systems) {
       const auditedRelations = new Set(['同系统、同诊断名称的已审计病例图谱','同系统、诊断名称包含该疾病名称的已审计病例图谱']);
       const exactNameAudit = image.verificationStatus === 'exact-name-and-modality-reviewed'
         && image.relation?.includes(record.name);
+      const reviewedSubtypeAudit = image.verificationStatus === 'reviewed-spectrum-or-subtype-match'
+        && image.relation?.includes(record.name);
       const auditedAtlasAsset = image.src?.startsWith('assets/images/')
-        && (auditedRelations.has(image.relation) || exactNameAudit)
+        && (auditedRelations.has(image.relation) || exactNameAudit || reviewedSubtypeAudit)
         && image.source && image.sourceUrl && image.license && image.type;
       if (!authorizedAsset && !auditedAtlasAsset) errors.push(`${system.name}/${record.name}: 未满足来源审计要求的图片 ${image.src || '(空)'}`);
       else if (!fs.existsSync(path.join(root, image.src))) errors.push(`${system.name}/${record.name}: 图片不存在 ${image.src}`);
