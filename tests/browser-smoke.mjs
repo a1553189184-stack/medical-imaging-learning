@@ -171,6 +171,9 @@ try {
   assert.ok(await evaluate("document.querySelectorAll('.disease-library-card').length"));
   assert.equal(await evaluate("(()=>{let emptySeen=false;return Array.from(document.querySelectorAll('.disease-library-card')).every(card=>{const hasImage=Boolean(card.querySelector('.disease-library-preview'));if(!hasImage)emptySeen=true;return !(emptySeen&&hasImage)})})()"),true);
   assert.match(await evaluate("document.querySelector('#diseaseLibraryStatus').textContent"),/按配图优先排列/);
+  assert.equal(await evaluate("document.querySelector('.disease-library-preview').loading"),'eager');
+  assert.equal(await evaluate("getComputedStyle(document.querySelector('.disease-library-preview')).objectFit"),'contain');
+  assert.ok(await evaluate("document.querySelector('.disease-library-preview').complete && document.querySelector('.disease-library-preview').naturalWidth > 0"));
   await evaluate("document.querySelector('#diseaseLibrarySearch').value='胆囊结石';document.querySelector('#diseaseLibrarySearch').dispatchEvent(new Event('input',{bubbles:true}))");
   assert.match(await evaluate("document.querySelector('#diseaseLibraryStatus').textContent"),/当前匹配/);
   assert.ok(await evaluate("document.querySelectorAll('.disease-library-preview').length"));

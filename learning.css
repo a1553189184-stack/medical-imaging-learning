@@ -631,9 +631,9 @@ select { border: 1px solid #cdd5cb; border-radius: 9px; padding: 9px 28px 9px 11
 .disease-library-results { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; }
 .disease-library-card { position: relative; display: flex; flex-direction: column; min-height: 330px; padding: 0; overflow: hidden; border-color: rgba(20,63,53,.11); border-radius: 15px; background: rgba(255,255,255,.85); box-shadow: 0 8px 26px rgba(20,63,53,.055); transition: transform .2s,box-shadow .2s,border-color .2s; }
 .disease-library-card:hover { transform: translateY(-3px); border-color: rgba(47,113,94,.3); background: #fff; box-shadow: 0 15px 36px rgba(20,63,53,.1); }
-.disease-library-media { position: relative; height: 150px; overflow: hidden; background: #102a24; }
-.disease-library-preview { width: 100%; height: 100%; object-fit: cover; border: 0; border-radius: 0; filter: saturate(.82) contrast(1.03); }
-.disease-library-media::after { content: ''; position: absolute; inset: auto 0 0; height: 45%; background: linear-gradient(transparent,rgba(9,27,22,.42)); pointer-events: none; }
+.disease-library-media { position: relative; display: grid; place-items: center; height: 170px; overflow: hidden; background: #e8eeeb; }
+.disease-library-preview { width: 100%; height: 100%; object-fit: contain; object-position: center; border: 0; border-radius: 0; background: #e8eeeb; filter: none; }
+.disease-library-media::after { content: none; }
 .disease-library-placeholder { display: grid; place-items: center; height: 150px; background: radial-gradient(circle at 78% 22%,rgba(174,224,201,.18),transparent 28%),linear-gradient(135deg,#163c32,#235344); color: #d6eee3; }
 .disease-library-placeholder b { display: grid; place-items: center; width: 54px; height: 54px; border: 1px solid rgba(255,255,255,.22); border-radius: 50%; font-size: 22px; }
 .disease-library-placeholder span { position: absolute; bottom: 13px; z-index: 1; font-size: 11px; color: #b9d6ca; letter-spacing: .08em; }
