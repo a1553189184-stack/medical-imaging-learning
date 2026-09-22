@@ -37,8 +37,10 @@ for (const system of manifest.systems) {
         && image.relation?.includes(record.name);
       const reviewedSubtypeAudit = image.verificationStatus === 'reviewed-spectrum-or-subtype-match'
         && image.relation?.includes(record.name);
+      const reviewedSubtypeAuditBatch2 = image.verificationStatus === 'reviewed-spectrum-or-subtype-match-batch2'
+        && image.relation?.includes(record.name);
       const auditedAtlasAsset = image.src?.startsWith('assets/images/')
-        && (auditedRelations.has(image.relation) || exactNameAudit || reviewedSubtypeAudit)
+        && (auditedRelations.has(image.relation) || exactNameAudit || reviewedSubtypeAudit || reviewedSubtypeAuditBatch2)
         && image.source && image.sourceUrl && image.license && image.type;
       if (!authorizedAsset && !auditedAtlasAsset) errors.push(`${system.name}/${record.name}: 未满足来源审计要求的图片 ${image.src || '(空)'}`);
       else if (!fs.existsSync(path.join(root, image.src))) errors.push(`${system.name}/${record.name}: 图片不存在 ${image.src}`);
