@@ -173,6 +173,10 @@ try {
   assert.match(await evaluate("document.querySelector('#diseaseLibraryStatus').textContent"),/按配图优先排列/);
   assert.equal(await evaluate("document.querySelector('.disease-library-preview').loading"),'eager');
   assert.equal(await evaluate("getComputedStyle(document.querySelector('.disease-library-preview')).objectFit"),'contain');
+  for(let attempt=0;attempt<30;attempt++) {
+    if(await evaluate("document.querySelector('.disease-library-preview').complete && document.querySelector('.disease-library-preview').naturalWidth > 0")) break;
+    await delay(100);
+  }
   assert.ok(await evaluate("document.querySelector('.disease-library-preview').complete && document.querySelector('.disease-library-preview').naturalWidth > 0"));
   await evaluate("document.querySelector('#diseaseLibrarySearch').value='胆囊结石';document.querySelector('#diseaseLibrarySearch').dispatchEvent(new Event('input',{bubbles:true}))");
   assert.match(await evaluate("document.querySelector('#diseaseLibraryStatus').textContent"),/当前匹配/);
