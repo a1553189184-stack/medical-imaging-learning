@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="影研社——面向医学影像学习者的交互式病例训练平台" />
+  <meta name="description" content="影研社——提供医学影像学习路径、开放病例图谱、结构化阅片训练与 DICOM 序列学习。" />
   <meta name="robots" content="index,follow,max-image-preview:large" />
   <link rel="canonical" href="https://yingyan-image-lab.vercel.app/" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="zh_CN" />
   <meta property="og:site_name" content="影研社" />
   <meta property="og:title" content="影研社 · 医学影像学习平台" />
-  <meta property="og:description" content="开放医学影像病例图谱、阅片训练与 DICOM 序列学习。" />
+  <meta property="og:description" content="从成像基础和正常解剖，逐步练习分系统阅片、鉴别诊断与报告表达。" />
   <meta property="og:url" content="https://yingyan-image-lab.vercel.app/" />
   <meta name="twitter:card" content="summary" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
@@ -19,8 +19,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="learning.css?v=images2" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"影研社","alternateName":"Image Lab","url":"https://yingyan-image-lab.vercel.app/","description":"面向医学影像学习者的开放病例与交互式训练平台","inLanguage":"zh-CN","isAccessibleForFree":true}</script>
+  <link rel="stylesheet" href="learning.css?v=route1" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"影研社","alternateName":"Image Lab","url":"https://yingyan-image-lab.vercel.app/","description":"医学影像学习路径、开放病例图谱、结构化阅片训练与 DICOM 序列学习","inLanguage":"zh-CN","isAccessibleForFree":true}</script>
 </head>
 <body>
   <div class="noise"></div>
@@ -74,6 +74,17 @@
         <article class="course-card green" data-library-system="腹部" tabindex="0" role="button"><div class="card-top"><span>CT / MRI / US</span><b><span data-system-total="腹部">172</span> 例</b></div><img class="mini-scan" src="assets/images/liver-hemangioma.jpg" alt="肝血管瘤增强 MRI"><div class="course-copy"><small>腹部</small><h3>腹部影像</h3><p>急腹症 · 肝胆 · 泌尿<br>115 个教学主题</p></div></article>
         <article class="course-card blue" data-library-system="骨骼" tabindex="0" role="button"><div class="card-top"><span>X-RAY / MRI</span><b><span data-system-total="骨骼">170</span> 例</b></div><img class="mini-scan" src="assets/images/colles-fracture.jpg" alt="桡骨远端骨折 X 光片"><div class="course-copy"><small>骨骼</small><h3>骨骼肌肉影像</h3><p>骨折 · 脱位 · 骨肿瘤<br>126 个教学主题</p></div></article>
       </div>
+      <section class="learning-route" aria-labelledby="learningRouteTitle">
+        <div class="route-heading"><div><span class="eyebrow">A PRACTICAL STUDY ROUTE</span><h2 id="learningRouteTitle">把影像学成一套方法</h2><p>从检查方法与正常解剖出发，逐步练到分系统识别、鉴别诊断和结构化表达。</p></div><span class="route-mark">影研社 · 教材导学</span></div>
+        <div class="route-grid">
+          <article class="route-step"><span class="route-number">01</span><div><h3>先看懂检查</h3><p>认识 X 线、CT、MRI 与超声各自能回答的问题，再核对投照体位、序列和图像质量。</p><button class="text-btn" data-go="sop">从摄影规范开始 →</button></div></article>
+          <article class="route-step"><span class="route-number">02</span><div><h3>建立正常解剖</h3><p>按层面和空间关系辨认器官、间隙与骨性标志；先定位，再讨论异常。</p><button class="text-btn" data-go="cases">进入病例图谱 →</button></div></article>
+          <article class="route-step"><span class="route-number">03</span><div><h3>按系统读病变</h3><p>依次练习胸部、腹部、神经与骨肌影像，记录部位、形态、密度或信号、分布及伴随征象。</p><button class="text-btn" data-go="diseaseLibrary">按疾病主题查阅 →</button></div></article>
+          <article class="route-step"><span class="route-number">04</span><div><h3>从征象走向鉴别</h3><p>先写客观所见，再提出诊断假设；用关键支持点、反证和必要的进一步检查比较鉴别。</p><button class="text-btn" data-go="viewer">开始分步阅片 →</button></div></article>
+          <article class="route-step"><span class="route-number">05</span><div><h3>练习报告与复习</h3><p>把定位、所见、印象与建议写完整；按错题和间隔复习回看容易混淆的征象。</p><button class="text-btn" data-go="progress">查看学习进度 →</button></div></article>
+        </div>
+        <p class="route-source">导学框架参考你提供的《医学影像诊断学》第 5 版及胸部、腹部、骨肌读片图谱和《医学影像解剖图谱》的主题编排，由影研社重新组织为学习路径；病例图像、原文和图表仍以各自授权来源为准。</p>
+      </section>
       <div class="lower-grid">
         <article class="panel"><div class="section-head compact"><div><span class="eyebrow">GET STARTED</span><h2>从一例开始</h2></div><span class="tag">教学情境</span></div><div class="daily-case"><div class="case-icon">67<small>岁</small></div><div><b>突发胸痛伴血压下降</b><p>教学设定 · 胸部 X 线</p></div><button class="round" data-open-case="0" aria-label="开始第一例训练">→</button></div></article>
         <article class="panel catalog-summary"><div><span class="eyebrow">CURRICULUM</span><h2>病例库构成</h2></div><strong><span data-catalog-total>1114</span><small>例</small></strong><div class="catalog-breakdown"><span>胸部 <b data-system-total="胸部">285</b></span><span>神经 <b data-system-total="神经">261</b></span><span>腹部 <b data-system-total="腹部">260</b></span><span>骨骼 <b data-system-total="骨骼">308</b></span></div><p>数量由当前题库自动计算，公开影像均附来源。</p></article>
