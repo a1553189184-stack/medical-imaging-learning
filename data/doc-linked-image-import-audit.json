@@ -1,0 +1,146 @@
+{
+  "article": "https://insightsimaging.springeropen.com/articles/10.1186/s13244-023-01517-3",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "figures": [
+    {
+      "figure": 2,
+      "recordIds": [
+        "abdomen-v2-0010",
+        "abdomen-v2-0202"
+      ],
+      "caption": "PBC：门周晕征，T2WI及门静脉期",
+      "src": "assets/authorized/abdomen/doc-linked/pmc10600092-fig2.png",
+      "sourceUrl": "https://insightsimaging.springeropen.com/articles/10.1186/s13244-023-01517-3/figures/2",
+      "license": "CC BY 4.0",
+      "sha256": "50f3bb4980c30a2b99a032634493dc44ac66adcc0355d14d382556d27a1f41dc",
+      "bytes": 266900
+    },
+    {
+      "figure": 3,
+      "recordIds": [
+        "abdomen-v2-0010",
+        "abdomen-v2-0202"
+      ],
+      "caption": "PBC：门周水肿，T2WI及增强CT",
+      "src": "assets/authorized/abdomen/doc-linked/pmc10600092-fig3.png",
+      "sourceUrl": "https://insightsimaging.springeropen.com/articles/10.1186/s13244-023-01517-3/figures/3",
+      "license": "CC BY 4.0",
+      "sha256": "af53fa42b37629df698ff105ea580d1ab4e5d520a38b559367c07fb9cf878111",
+      "bytes": 248214
+    },
+    {
+      "figure": 4,
+      "recordIds": [
+        "abdomen-v2-0010",
+        "abdomen-v2-0202"
+      ],
+      "caption": "PBC：肝内小胆管不规则扩张",
+      "src": "assets/authorized/abdomen/doc-linked/pmc10600092-fig4.png",
+      "sourceUrl": "https://insightsimaging.springeropen.com/articles/10.1186/s13244-023-01517-3/figures/4",
+      "license": "CC BY 4.0",
+      "sha256": "a6cb885b298a4c66147ba4200d78cb9f86178de7b6ccebbfe20714cf3d85f7c6",
+      "bytes": 152013
+    },
+    {
+      "figure": 5,
+      "recordIds": [
+        "abdomen-v2-0010",
+        "abdomen-v2-0202"
+      ],
+      "caption": "PBC：超声弹性成像评估肝硬度",
+      "src": "assets/authorized/abdomen/doc-linked/pmc10600092-fig5.png",
+      "sourceUrl": "https://insightsimaging.springeropen.com/articles/10.1186/s13244-023-01517-3/figures/5",
+      "license": "CC BY 4.0",
+      "sha256": "305286d9768f672dd88fb88224f0553fb10a08a5afcfbfb02f53b513545ff685",
+      "bytes": 995657
+    },
+    {
+      "figure": 6,
+      "recordIds": [
+        "abdomen-v2-0010",
+        "abdomen-v2-0202"
+      ],
+      "caption": "PBC I–II期：肝脏MRI多序列影像",
+      "src": "assets/authorized/abdomen/doc-linked/pmc10600092-fig6.png",
+      "sourceUrl": "https://insightsimaging.springeropen.com/articles/10.1186/s13244-023-01517-3/figures/6",
+      "license": "CC BY 4.0",
+      "sha256": "1872a5c649ecc92f41387fc9ad94d8863ff9cd7cae5a84b5727cfbef8fe6e933",
+      "bytes": 471230
+    },
+    {
+      "figure": 7,
+      "recordIds": [
+        "abdomen-v2-0010",
+        "abdomen-v2-0202"
+      ],
+      "caption": "PBC II–III期：肝脏MRI多序列影像",
+      "src": "assets/authorized/abdomen/doc-linked/pmc10600092-fig7.png",
+      "sourceUrl": "https://insightsimaging.springeropen.com/articles/10.1186/s13244-023-01517-3/figures/7",
+      "license": "CC BY 4.0",
+      "sha256": "1ccb39dd0bc0e9e7490541a5e1475146fb6b707ccdd444ac0dc98146299d4b0e",
+      "bytes": 565056
+    },
+    {
+      "figure": 8,
+      "recordIds": [
+        "abdomen-v2-0010",
+        "abdomen-v2-0202"
+      ],
+      "caption": "PBC IV期：肝表面结节及门周异常信号",
+      "src": "assets/authorized/abdomen/doc-linked/pmc10600092-fig8.png",
+      "sourceUrl": "https://insightsimaging.springeropen.com/articles/10.1186/s13244-023-01517-3/figures/8",
+      "license": "CC BY 4.0",
+      "sha256": "aa67405ed9589bff2a0588a0a7f4744a3cea1134ab60889ba43127035d1b07df",
+      "bytes": 386502
+    },
+    {
+      "figure": 9,
+      "recordIds": [
+        "abdomen-v2-0011",
+        "abdomen-v2-0199"
+      ],
+      "caption": "PSC：胆管节段狭窄与囊状扩张",
+      "src": "assets/authorized/abdomen/doc-linked/pmc10600092-fig9.png",
+      "sourceUrl": "https://insightsimaging.springeropen.com/articles/10.1186/s13244-023-01517-3/figures/9",
+      "license": "CC BY 4.0",
+      "sha256": "f0e2bdd312f0a622fb5e2eb945e220b7afdf213870a56e0a2ef77584f0213c83",
+      "bytes": 483713
+    },
+    {
+      "figure": 10,
+      "recordIds": [
+        "abdomen-v2-0200"
+      ],
+      "caption": "IgG4相关硬化性胆管炎：胆管壁增厚及狭窄",
+      "src": "assets/authorized/abdomen/doc-linked/pmc10600092-fig10.png",
+      "sourceUrl": "https://insightsimaging.springeropen.com/articles/10.1186/s13244-023-01517-3/figures/10",
+      "license": "CC BY 4.0",
+      "sha256": "6a1c82918b4f689cae75081becf8f01fef8ad2f561d8346ef1c1051c15c232eb",
+      "bytes": 501698
+    },
+    {
+      "figure": 11,
+      "recordIds": [
+        "abdomen-v2-0187"
+      ],
+      "caption": "肝内胆管结石：胆管内低信号结石及胆管扩张",
+      "src": "assets/authorized/abdomen/doc-linked/pmc10600092-fig11.png",
+      "sourceUrl": "https://insightsimaging.springeropen.com/articles/10.1186/s13244-023-01517-3/figures/11",
+      "license": "CC BY 4.0",
+      "sha256": "5d974d5cc335ff8c10aae7d6e6c883c642db23a5dd472f13adb7b739e4b2e737",
+      "bytes": 137585
+    },
+    {
+      "figure": 12,
+      "recordIds": [
+        "abdomen-v2-0248"
+      ],
+      "caption": "肝门部胆管癌：肝门肿块及胆管截断",
+      "src": "assets/authorized/abdomen/doc-linked/pmc10600092-fig12.png",
+      "sourceUrl": "https://insightsimaging.springeropen.com/articles/10.1186/s13244-023-01517-3/figures/12",
+      "license": "CC BY 4.0",
+      "sha256": "b1899b3fcd6557554900ca55d9e4ee8b02607226074b96257fafbb59665ae65e",
+      "bytes": 202462
+    }
+  ]
+}

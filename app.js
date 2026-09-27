@@ -157,7 +157,7 @@ if (storedReviewPlan && typeof storedReviewPlan === 'object' && !Array.isArray(s
 const isMistake = function(c) { return Boolean(attempts[c.id] && attempts[c.id].lastAnswer !== c.answer); };
 const mistakeIds = function() { return cases.filter(isMistake).map(function(c) { return c.id; }); };
 let currentView = 'home', detailId = ids[0], selected = null, recallOpen = true, reasoningStep = 'findings', reasoningPromptIndex = 0;
-const AUTHORIZED_LIBRARY_VERSION = '20260927links1';
+const AUTHORIZED_LIBRARY_VERSION = '20260927docfig1';
 let authorizedDiseaseManifest = null, authorizedDiseaseLibraries = {}, diseaseLibraryLimit = 60, diseaseLibraryLoading = {}, diseaseLibrarySystem = 'abdomen';
 let atlasSystem = 'all', atlasLimit = 48, noticeTimer, draftRows = [], draftSelected = new Set(), dicomSystem = 'all';
 let tool = 'contrast', zoom = 1, contrast = 1, inverted = false, imageMarks = [];
@@ -279,7 +279,8 @@ function openDiseaseLibraryRecord(recordId) {
   $('#diseaseLibraryDialogEnglish').textContent = record.nameEn || '';
   const gallery = images.length ? '<section class="disease-detail-section"><h3>关联影像（' + images.length + '）</h3><div class="disease-detail-gallery">' + images.map(function(image) {
     const caption = image.caption || image.type || record.name;
-    const source = image.sourceUrl ? '<br><a href="' + esc(image.sourceUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(image.source || '查看影像来源') + '</a>' + (image.license ? ' · ' + esc(image.license) : '') : '';
+    const license = image.license ? ' · ' + (image.licenseUrl ? '<a href="' + esc(image.licenseUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(image.license) + '</a>' : esc(image.license)) : '';
+    const source = image.sourceUrl ? '<br><a href="' + esc(image.sourceUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(image.source || '查看影像来源') + '</a>' + license : '';
     return '<figure><img loading="lazy" src="' + esc(image.src) + '" alt="' + esc(caption) + '"><figcaption>' + esc([image.type,image.caption].filter(Boolean).join(' · ') || record.name) + source + '</figcaption></figure>';
   }).join('') + '</div></section>' : '';
   const externalGallery = externalImageLinks.length ? '<section class="disease-detail-section"><h3>已核对的原站影像</h3><p>以下链接打开原站病例或论文图版。影像版权归原站及作者所有，站内未转载这些图片。</p><ul class="disease-external-image-links">' + externalImageLinks.map(function(item) {
