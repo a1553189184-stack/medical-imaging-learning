@@ -1,0 +1,181 @@
+{
+  "articles": {
+    "diagnostics-15-02970": {
+      "pmc": "PMC12691237",
+      "doi": "10.3390/diagnostics15232970",
+      "author": "Tregobov et al.",
+      "title": "Unveiling Primary Bone Tumors of the Spine: A Review of Essential Imaging Clues"
+    },
+    "diagnostics-13-02665": {
+      "pmc": "PMC10453603",
+      "doi": "10.3390/diagnostics13162665",
+      "author": "Shimanuki et al.",
+      "title": "Imaging of Temporal Bone Mass Lesions: A Pictorial Review"
+    },
+    "tomography-09-00170": {
+      "pmc": "PMC10747582",
+      "doi": "10.3390/tomography9060170",
+      "author": "Kloth et al.",
+      "title": "Imaging of Pathologies of the Temporal Bone and Middle Ear: Inflammatory Diseases, Their Mimics and Potential Complications—Pictorial Review"
+    }
+  },
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "items": [
+    {
+      "system": "msk",
+      "recordId": "b3",
+      "name": "软骨母细胞瘤（曾用名：Codman肿瘤）",
+      "figure": 8,
+      "diagnosis": "Chondroblastoma of the sacrum",
+      "src": "assets/authorized/msk/open-review/diagnostics-15-02970-fig8.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12691237/figure/diagnostics-15-02970-f008/",
+      "license": "CC BY 4.0",
+      "localSha256": "2361bcfe1b621997b65ff55d361cab9745eca34923bbe98c5d6e11cb40503da4",
+      "bytes": 1937123
+    },
+    {
+      "system": "msk",
+      "recordId": "b46",
+      "name": "良性脊索细胞瘤",
+      "figure": 10,
+      "diagnosis": "Benign notochordal cell tumors in S3/S4",
+      "src": "assets/authorized/msk/open-review/diagnostics-15-02970-fig10.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12691237/figure/diagnostics-15-02970-f010/",
+      "license": "CC BY 4.0",
+      "localSha256": "3e25fcffd698dedbed131d5f3dca4a709a6d2f3cd811f6bc7d3f2caecfe06fe2",
+      "bytes": 742476
+    },
+    {
+      "system": "msk",
+      "recordId": "b45",
+      "name": "脊索瘤",
+      "figure": 11,
+      "diagnosis": "Chordoma of the cervical spine",
+      "src": "assets/authorized/msk/open-review/diagnostics-15-02970-fig11.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12691237/figure/diagnostics-15-02970-f011/",
+      "license": "CC BY 4.0",
+      "localSha256": "fbef6b631e51fb1be75bbad5fa2cfdd5e34ab98f70d9d4c60cbdbb55e9deff7a",
+      "bytes": 688253
+    },
+    {
+      "system": "msk",
+      "recordId": "b34",
+      "name": "浆细胞瘤",
+      "figure": 12,
+      "diagnosis": "Plasmacytoma of the lumbar vertebrae",
+      "src": "assets/authorized/msk/open-review/diagnostics-15-02970-fig12.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12691237/figure/diagnostics-15-02970-f012/",
+      "license": "CC BY 4.0",
+      "localSha256": "e05419d779b205138b88ae53f35277cdc2187a502e58a1ad2a9a38710c0f4b1c",
+      "bytes": 1303869
+    },
+    {
+      "system": "msk",
+      "recordId": "zymsk-0158",
+      "name": "骨尤文肉瘤",
+      "figure": 24,
+      "diagnosis": "Ewing's sarcoma of the spine",
+      "src": "assets/authorized/msk/open-review/diagnostics-15-02970-fig24.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12691237/figure/diagnostics-15-02970-f024/",
+      "license": "CC BY 4.0",
+      "localSha256": "c8a697ea923173d79dea2229942003b45b23860d181308aacf94584dc4d047f8",
+      "bytes": 1072937
+    },
+    {
+      "system": "ns",
+      "recordId": "ns-cranial-nerve-facial-schwannoma",
+      "name": "面神经鞘瘤",
+      "figure": 1,
+      "diagnosis": "Facial nerve schwannoma of the temporal bone",
+      "src": "assets/authorized/ns/open-review/diagnostics-13-02665-fig1.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10453603/figure/diagnostics-13-02665-f001/",
+      "license": "CC BY 4.0",
+      "localSha256": "890725c424de1084f37bdef1001084cc409811ee3f89fda00cb68df7312edb3c",
+      "bytes": 1177546
+    },
+    {
+      "system": "otology",
+      "recordId": "jugular-paraganglioma",
+      "name": "颈静脉球瘤",
+      "figure": 2,
+      "diagnosis": "Jugular paraganglioma (glomus jugulare)",
+      "src": "assets/authorized/otology/open-review/diagnostics-13-02665-fig2.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10453603/figure/diagnostics-13-02665-f002/",
+      "license": "CC BY 4.0",
+      "localSha256": "2586790e2f49143bdbedbfa96f684352c2f4519a0713634e3cc86587a82d8b83",
+      "bytes": 730240
+    },
+    {
+      "system": "otology",
+      "recordId": "temporal-bone-cholesterol-granuloma",
+      "name": "胆固醇肉芽肿",
+      "figure": 3,
+      "diagnosis": "Cholesterol granuloma of the temporal bone",
+      "src": "assets/authorized/otology/open-review/diagnostics-13-02665-fig3.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10453603/figure/diagnostics-13-02665-f003/",
+      "license": "CC BY 4.0",
+      "localSha256": "5b31050dd4235593610e6ddbeaee537b24b8ab0cec491b1c3cb4898055eb340f",
+      "bytes": 834547
+    },
+    {
+      "system": "otology",
+      "recordId": "external-auditory-canal-squamous-cell-carcinoma",
+      "name": "外耳道鳞状细胞癌",
+      "figure": 1,
+      "diagnosis": "Squamous cell carcinoma of the external auditory canal",
+      "src": "assets/authorized/otology/open-review/tomography-09-00170-fig1.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10747582/figure/tomography-09-00170-f001/",
+      "license": "CC BY 4.0",
+      "localSha256": "f5ecc04ab9a670a0643b7823442d83199ac3c174a58901f3ac553c4c4a65dfc0",
+      "bytes": 607257
+    },
+    {
+      "system": "otology",
+      "recordId": "external-auditory-canal-exostoses",
+      "name": "外耳道骨疣",
+      "figure": 5,
+      "diagnosis": "Bilateral external auditory canal exostoses",
+      "src": "assets/authorized/otology/open-review/tomography-09-00170-fig5.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10747582/figure/tomography-09-00170-f005/",
+      "license": "CC BY 4.0",
+      "localSha256": "5210bfdcef4c22df1690e09f0d244a9d12a9b4ec79b4eab957bdb14ba52ffbc1",
+      "bytes": 561696
+    },
+    {
+      "system": "otology",
+      "recordId": "tympanosclerosis",
+      "name": "鼓室硬化症",
+      "figure": 12,
+      "diagnosis": "Tympanosclerosis",
+      "src": "assets/authorized/otology/open-review/tomography-09-00170-fig12.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10747582/figure/tomography-09-00170-f012/",
+      "license": "CC BY 4.0",
+      "localSha256": "8ed068afe213c5afa7f94965d3a329839078503d6042cdd26d706d24b9add7d9",
+      "bytes": 667306
+    },
+    {
+      "system": "otology",
+      "recordId": "petrous-apex-cholesterol-granuloma",
+      "name": "岩尖胆固醇肉芽肿",
+      "figure": 17,
+      "diagnosis": "Cholesterol granuloma of the petrous apex",
+      "src": "assets/authorized/otology/open-review/tomography-09-00170-fig17.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10747582/figure/tomography-09-00170-f017/",
+      "license": "CC BY 4.0",
+      "localSha256": "32a4e3754d6b7d56386ee8f69cb9ceda7e6f5db2e4a0a585eb410cb8754143a4",
+      "bytes": 858823
+    },
+    {
+      "system": "otology",
+      "recordId": "petrous-apicitis",
+      "name": "岩尖炎",
+      "figure": 18,
+      "diagnosis": "Inflammation of the petrous apex and skull base",
+      "src": "assets/authorized/otology/open-review/tomography-09-00170-fig18.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10747582/figure/tomography-09-00170-f018/",
+      "license": "CC BY 4.0",
+      "localSha256": "dc77b55b0f26b340eaef8e2fcd4f129df3ee7f3406ff12e68c24f0a481f83c22",
+      "bytes": 761733
+    }
+  ]
+}
