@@ -17,6 +17,18 @@
       "doi": "10.3390/tomography9060170",
       "author": "Kloth et al.",
       "title": "Imaging of Pathologies of the Temporal Bone and Middle Ear: Inflammatory Diseases, Their Mimics and Potential Complications—Pictorial Review"
+    },
+    "medicina-60-01766": {
+      "pmc": "PMC11596154",
+      "doi": "10.3390/medicina60111766",
+      "author": "Hong et al.",
+      "title": "Pictorial Review of Rare Pancreatic Tumors and Tumor-like Lesions: Radiologic–Pathologic Correlation"
+    },
+    "diagnostics-13-02719": {
+      "pmc": "PMC10453474",
+      "doi": "10.3390/diagnostics13162719",
+      "author": "Veron Sanchez et al.",
+      "title": "Rare Solid Pancreatic Lesions on Cross-Sectional Imaging"
     }
   },
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -176,6 +188,174 @@
       "license": "CC BY 4.0",
       "localSha256": "dc77b55b0f26b340eaef8e2fcd4f129df3ee7f3406ff12e68c24f0a481f83c22",
       "bytes": 761733
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-pancreas-colloid-carcinoma",
+      "name": "胶样癌",
+      "figure": 1,
+      "diagnosis": "Colloid carcinoma of the pancreas",
+      "src": "assets/authorized/abdomen/open-review/medicina-60-01766-fig1.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11596154/figure/medicina-60-01766-f001/",
+      "license": "CC BY 4.0",
+      "localSha256": "6226b06d711f99e6001da46226881bacd8fc3973ad57295d020093a7838285ce",
+      "bytes": 3623087
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-pancreas-acinar-cell-carcinoma",
+      "name": "腺泡细胞癌",
+      "figure": 2,
+      "diagnosis": "Pancreatic acinar cell carcinoma",
+      "src": "assets/authorized/abdomen/open-review/medicina-60-01766-fig2.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11596154/figure/medicina-60-01766-f002/",
+      "license": "CC BY 4.0",
+      "localSha256": "1b25dd5806aaf774333066caa19c122e06da4c4cdf0c69a473505945baf0e19f",
+      "bytes": 2171240
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-pancreas-pancreatoblastoma",
+      "name": "胰母细胞瘤（好发于儿童）",
+      "figure": 3,
+      "diagnosis": "Pancreatoblastoma",
+      "src": "assets/authorized/abdomen/open-review/medicina-60-01766-fig3.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11596154/figure/medicina-60-01766-f003/",
+      "license": "CC BY 4.0",
+      "localSha256": "f796980874bd069b01e8daed9776b5ac75187524c841fd313241734bddc65949",
+      "bytes": 3375812
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-pancreas-pancreatic-leiomyosarcoma",
+      "name": "平滑肌肉瘤",
+      "figure": 4,
+      "diagnosis": "Primary pancreatic leiomyosarcoma",
+      "src": "assets/authorized/abdomen/open-review/medicina-60-01766-fig4.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11596154/figure/medicina-60-01766-f004/",
+      "license": "CC BY 4.0",
+      "localSha256": "6a981c5491fe3bff6f897fc3a6d4de12693e9eed859e6c09a7882cbfa995c635",
+      "bytes": 2991182
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-pancreas-primary-pancreatic-lymphoma",
+      "name": "胰腺原发性淋巴瘤",
+      "figure": 5,
+      "diagnosis": "Primary pancreatic lymphoma",
+      "src": "assets/authorized/abdomen/open-review/medicina-60-01766-fig5.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11596154/figure/medicina-60-01766-f005/",
+      "license": "CC BY 4.0",
+      "localSha256": "5c389cdb9ad449a5098b1407a3abe7d03b97842e817aa975a5385f71d15691a9",
+      "bytes": 2952125
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-v2-0135",
+      "name": "胰腺错构瘤",
+      "figure": 6,
+      "diagnosis": "Pancreatic hamartoma",
+      "src": "assets/authorized/abdomen/open-review/medicina-60-01766-fig6.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11596154/figure/medicina-60-01766-f006/",
+      "license": "CC BY 4.0",
+      "localSha256": "86ddca2da01c2b1c893416d21a85e5e3cf28412c71c34c702bb08d46588fe6d0",
+      "bytes": 3388439
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-pancreas-intrapancreatic-accessory-spleen",
+      "name": "胰腺内副脾",
+      "figure": 1,
+      "diagnosis": "Intrapancreatic accessory spleen",
+      "src": "assets/authorized/abdomen/open-review/diagnostics-13-02719-fig1.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10453474/figure/diagnostics-13-02719-f001/",
+      "license": "CC BY 4.0",
+      "localSha256": "18d09c42c10563ae6cfdeec5533c93f6c1071cc9505308c0a18528b33093b85e",
+      "bytes": 3226172
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-pancreas-pancreatic-tuberculosis",
+      "name": "胰腺结核",
+      "figure": 2,
+      "diagnosis": "Primary pancreatic tuberculosis",
+      "src": "assets/authorized/abdomen/open-review/diagnostics-13-02719-fig2.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10453474/figure/diagnostics-13-02719-f002/",
+      "license": "CC BY 4.0",
+      "localSha256": "d984b84e0d5a71c0c031798a576651ac407ca0c95b2f4d4461354be41a2a7bb2",
+      "bytes": 2763632
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-biliary-pancreas-spleen-solid-pseudopapillary-neoplasm",
+      "name": "实性假乳头状肿瘤（SPN）",
+      "figure": 4,
+      "diagnosis": "Pancreatic solid pseudopapillary tumor",
+      "src": "assets/authorized/abdomen/open-review/diagnostics-13-02719-fig4.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10453474/figure/diagnostics-13-02719-f004/",
+      "license": "CC BY 4.0",
+      "localSha256": "65bd9c0298c2643cff5415cabfcce5774fa0a0aad9703286840e5f178c15a37e",
+      "bytes": 1449741
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-pancreas-pancreatic-schwannoma",
+      "name": "神经鞘瘤",
+      "figure": 6,
+      "diagnosis": "Pancreatic schwannoma",
+      "src": "assets/authorized/abdomen/open-review/diagnostics-13-02719-fig6.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10453474/figure/diagnostics-13-02719-f006/",
+      "license": "CC BY 4.0",
+      "localSha256": "43fbb33551e14ef1dbc002209886b44a42e7db6cd3d061aca8811217c781be72",
+      "bytes": 1951344
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-pancreas-pancreatic-solitary-fibrous-tumor",
+      "name": "孤立性纤维瘤",
+      "figure": 8,
+      "diagnosis": "Malignant pancreatic solitary fibrous tumor",
+      "src": "assets/authorized/abdomen/open-review/diagnostics-13-02719-fig8.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10453474/figure/diagnostics-13-02719-f008/",
+      "license": "CC BY 4.0",
+      "localSha256": "054f0693fcbb9909cef3f708e967615dc048385b06982c54578897894b135798",
+      "bytes": 2526204
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-pancreas-undifferentiated-carcinoma-with-osteoclast-like-giant-cells",
+      "name": "伴破骨细胞样巨细胞的未分化癌",
+      "figure": 11,
+      "diagnosis": "Undifferentiated carcinoma with osteoclast-like giant cells",
+      "src": "assets/authorized/abdomen/open-review/diagnostics-13-02719-fig11.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10453474/figure/diagnostics-13-02719-f011/",
+      "license": "CC BY 4.0",
+      "localSha256": "f0aec8b581d236a6071708aa48adf0e152a7c973a10459bdd56e050ad019d09b",
+      "bytes": 2028076
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-pancreas-pancreatic-adenosquamous-carcinoma",
+      "name": "胰腺腺鳞癌",
+      "figure": 12,
+      "diagnosis": "Pancreatic adenosquamous carcinoma",
+      "src": "assets/authorized/abdomen/open-review/diagnostics-13-02719-fig12.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10453474/figure/diagnostics-13-02719-f012/",
+      "license": "CC BY 4.0",
+      "localSha256": "506339ee813cfef992fb2dd4ff9cf0c8857008ec28f9003a6062e7e922e9b0dc",
+      "bytes": 1724372
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-pancreas-pancreatic-metastases",
+      "name": "胰腺转移瘤",
+      "figure": 20,
+      "diagnosis": "Pancreatic metastasis from renal cell carcinoma",
+      "src": "assets/authorized/abdomen/open-review/diagnostics-13-02719-fig20.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10453474/figure/diagnostics-13-02719-f020/",
+      "license": "CC BY 4.0",
+      "localSha256": "bb6d82fbcb00c7c15b57c26262362be5ce2fc86da1d7e4dcb065e717b147bd44",
+      "bytes": 2959488
     }
   ]
 }
