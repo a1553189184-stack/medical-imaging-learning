@@ -6,6 +6,7 @@ const ROOT = path.resolve(import.meta.dirname, '..');
 const API = 'https://commons.wikimedia.org/w/api.php';
 const TARGET_SYSTEMS = new Set((process.env.IMAGE_SYSTEMS || 'chest,neck').split(','));
 const LIMIT = Number(process.env.IMAGE_LIMIT || 40);
+const PER_SYSTEM_LIMIT = Number(process.env.IMAGE_LIMIT_PER_SYSTEM || 0);
 const CURATED_ONLY = process.env.CURATED_ONLY === '1';
 const CURATED = new Map([
   ['chest-nodule-tumor-part-solid-nodule', { title: 'File:CT of part solid lung nodule.png', modality: 'CT', note: '轴位肺窗同时显示磨玻璃与实性成分。' }],
@@ -21,7 +22,22 @@ const CURATED = new Map([
   ['sialolithiasis', { title: 'File:Sialolithiasis vor allem linke Glandula submandibularis 85W - CT KM - 001.jpg', modality: 'CT', note: '增强CT及容积重建显示双侧颌下腺及腮腺涎石，以左侧颌下腺为主。' }],
   ['acquired-middle-ear-cholesteatoma', { title: 'File:Cholesteatom CT serie 1.jpg', modality: 'CT', note: '文件说明明确为中耳上鼓室胆脂瘤CT。' }],
   ['external-auditory-canal-cholesteatoma', { title: 'File:Cholesteatom CT Sagittal KF.jpg', modality: 'CT', note: '文件说明明确为左侧外耳道胆脂瘤伴局灶骨侵蚀。' }],
-  ['neck-temporal-bone-otosclerosis', { title: 'File:Xray of otosclerosis.jpg', modality: 'CT', note: 'Commons文件分类及标题明确为耳硬化症CT影像。' }]
+  ['neck-temporal-bone-otosclerosis', { title: 'File:Xray of otosclerosis.jpg', modality: 'CT', note: 'Commons文件分类及标题明确为耳硬化症CT影像。' }],
+  ['abdomen-liver-focal-nodular-hyperplasia', { title: 'File:Focal nodular hyperplasia liver 0521104420468.jpg', modality: 'US', note: 'Commons标题与图像说明均明确为肝局灶性结节性增生超声。' }],
+  ['abdomen-v2-0391', { title: 'File:Epiploic Appendagitis .jpg', modality: 'CT', note: 'Commons文件标题明确为肠脂垂炎，说明为腹部CT。' }],
+  ['f14', { title: 'File:SalterHarris2010.JPG', modality: 'X-RAY', note: '踝部Salter-Harris III型骨折，作为踝关节骨折亚型影像示例。' }],
+  ['f17', { title: 'File:ScaphoidFrac2.png', modality: 'X-RAY', note: 'Commons文件标题及说明明确为舟状骨骨折。' }],
+  ['ns-metastasis-brain-parenchymal-metastasis', { title: 'File:Brain MRI 141752 T1.png', modality: 'MRI', note: '脑MRI显示肺癌脑转移，作为脑实质转移瘤影像示例。' }],
+  ['abdomen-v2-0123', { title: 'File:Chronische Pankreatitis mit multiplen kleinen Verkalkungen 54M - CT KM arteriell - 001.jpg', modality: 'CT', note: '文件说明明确为慢性胰腺炎伴多发小钙化的增强CT。' }],
+  ['abdomen-renal-adrenal-adrenal-myelolipoma', { title: 'File:Myelolipom rechts CT axial.png', modality: 'CT', note: '图像说明明确为右侧肾上腺髓脂肪瘤CT。' }],
+  ['abdomen-v2-0738', { title: 'File:NutCracker2.PNG', modality: 'CT', note: '图像说明明确为左肾静脉血栓伴扩张。' }],
+  ['abdomen-v2-0767', { title: 'File:Ureterocele bei Doppelniere links - CT ax und cor.jpg', modality: 'CT', note: '文件标题与说明明确为重复肾背景下输尿管膨出的轴位及冠状位CT。' }],
+  ['zymsk-0112', { title: 'File:Melorheostosis Bone Disease (27874857608).jpg', modality: 'X-RAY', note: '图像说明明确为流注性骨肥厚的X线表现。' }],
+  ['zymsk-0033', { title: 'File:Boxers fracture.JPG', modality: 'X-RAY', note: '左手第五掌骨颈骨折，符合拳击者骨折的典型部位。' }],
+  ['abdomen-v2-1005', { title: 'File:Pfortaderthrombose002.png', modality: 'CT', note: '文件标题与说明明确为门静脉血栓的CT影像。' }],
+  ['abdomen-v2-0417', { title: 'File:GIST des Oesophagus - CT axial - 001.jpg', modality: 'CT', note: '食管胃肠道间质瘤轴位CT，解剖部位与来源描述一致。' }],
+  ['zymsk-0234', { title: 'File:Neoartikulation Humerus-Acromion bei Rotatorenmanschettendefekt.jpg', modality: 'X-RAY', note: '慢性肩袖缺损伴肱骨头上移及假关节形成，作为肩袖撕裂关节病影像示例。' }],
+  ['zymsk-0241', { title: 'File:Bizepssehnenruptur distal MRT PDW FS.jpg', modality: 'MRI', note: '文件标题与说明明确为肱二头肌远端腱断裂MRI。' }]
 ]);
 const manifestPath = path.join(ROOT, 'library-data', 'authorized-library-manifest.json');
 const manifest = JSON.parse(await fs.readFile(manifestPath, 'utf8'));
@@ -74,7 +90,7 @@ for (const system of manifest.systems) {
 const plain = value => String(value || '').replace(/<br\s*\/?>/gi, ' ').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/gi, ' ').replace(/&amp;/gi, '&').replace(/\s+/g, ' ').trim();
 const normalized = value => plain(value).toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 const reject = /histopath|histolog|microscop|\bmag\b|magnification|oxyphil|cytolog|biopsy|stain|tumou?r cells|gross specimen|gross pathology|excision|resection|diagram|illustration|drawing|surgery|operative|clinical photograph|patient photograph|cadaver|autopsy|veterinary|canine|feline|dog |cat |rabbit|mouse |rat /i;
-const allowed = /^(CC0|Public domain|PD|CC BY|CC BY-SA)/i;
+const allowed = /^(?:CC0(?:\s|$)|Public domain$|PD$|CC BY(?:-SA)?(?:\s|$))/i;
 const modalityTerms = {
   CT: /\b(ct|computed tomography|hrct|tomogram)\b/i,
   MRI: /\b(mri|magnetic resonance|t1|t2|flair|dwi)\b/i,
@@ -144,8 +160,9 @@ const audit = [];
 for (const system of manifest.systems.filter(item => TARGET_SYSTEMS.has(item.key))) {
   const filePath = path.join(ROOT, system.file);
   const data = JSON.parse(await fs.readFile(filePath, 'utf8'));
+  let systemAttached = 0;
   for (const record of data.records) {
-    if (attached >= LIMIT || record.images?.length) continue;
+    if ((PER_SYSTEM_LIMIT ? systemAttached >= PER_SYSTEM_LIMIT : attached >= LIMIT) || record.images?.length) continue;
     let candidates = [];
     const modalities = modalitiesFor(record);
     try {
@@ -178,7 +195,7 @@ for (const system of manifest.systems.filter(item => TARGET_SYSTEMS.has(item.key
       localSha256: crypto.createHash('sha256').update(bytes).digest('hex')
     }];
     record.imageCount = 1;
-    used.add(selected.sourceUrl); used.add(relative); attached += 1;
+    used.add(selected.sourceUrl); used.add(relative); attached += 1; systemAttached += 1;
     audit.push({ system: system.key, id: record.id, name: record.name, status: 'attached', sourceUrl: selected.sourceUrl, sourceTitle: selected.title });
     console.log(`${attached}/${LIMIT} ${system.name} · ${record.name} <- ${selected.title}`);
     await new Promise(resolve => setTimeout(resolve, 250));

@@ -1,0 +1,86 @@
+{
+  "importedAt": "2026-09-27T05:34:32.196Z",
+  "recordCount": 8,
+  "records": [
+    {
+      "system": "msk",
+      "id": "f14",
+      "name": "踝关节骨折",
+      "source": "SalterHarris2010.JPG",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:SalterHarris2010.JPG",
+      "license": "CC BY-SA 3.0",
+      "src": "assets/authorized/msk/web-search/f14.jpg",
+      "description": "An Xray of the left ankle showing a SalterHarris type III fracture of medial malleolus."
+    },
+    {
+      "system": "msk",
+      "id": "f17",
+      "name": "舟状骨骨折",
+      "source": "ScaphoidFrac2.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:ScaphoidFrac2.png",
+      "license": "CC BY-SA 4.0",
+      "src": "assets/authorized/msk/web-search/f17.png",
+      "description": "Scaphoid fracture"
+    },
+    {
+      "system": "ns",
+      "id": "ns-metastasis-brain-parenchymal-metastasis",
+      "name": "脑实质转移瘤",
+      "source": "Brain MRI 141752 T1.png",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brain_MRI_141752_T1.png",
+      "license": "CC BY-SA 3.0",
+      "src": "assets/authorized/ns/web-search/ns-metastasis-brain-parenchymal-metastasis.png",
+      "description": "Brain MRI of 39YO man with lung cancer metastasis"
+    },
+    {
+      "system": "abdomen",
+      "id": "abdomen-renal-adrenal-adrenal-myelolipoma",
+      "name": "髓脂肪瘤",
+      "source": "Myelolipom der Nebenniere CT.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Myelolipom_der_Nebenniere_CT.jpg",
+      "license": "CC BY-SA 3.0",
+      "src": "assets/authorized/abdomen/web-search/abdomen-renal-adrenal-adrenal-myelolipoma.jpg",
+      "description": "Myelolipom der linken Nebenniere (Pfeile). Die Pfeilspitze zeigt auf die normale rechte Nebenniere."
+    },
+    {
+      "system": "abdomen",
+      "id": "abdomen-v2-0738",
+      "name": "肾静脉血栓",
+      "source": "NutCracker2.PNG",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:NutCracker2.PNG",
+      "license": "CC BY-SA 3.0",
+      "src": "assets/authorized/abdomen/web-search/abdomen-v2-0738.png",
+      "description": "Thrombosis in the left renal vein associated with dilation."
+    },
+    {
+      "system": "msk",
+      "id": "zymsk-0112",
+      "name": "流注性骨肥厚",
+      "source": "Melorheostosis Bone Disease (27874857608).jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Melorheostosis_Bone_Disease_(27874857608).jpg",
+      "license": "Public domain",
+      "src": "assets/authorized/msk/web-search/zymsk-0112.jpg",
+      "description": "An x-ray image of a patient with melorheostosis shows excess bone formation, likened to dripping candle wax. Researchers at the National Institutes of Health worked with 15 patients from around the world to uncover a genetic basis of the rare bone disease. The results, appearing in Nature Communications, offer potential treatment targets for this rare disease, provide important clues about bone development, and may lead to insights about fracture healing and osteoporosis. Read more: &lt;a href=\" https://www.nih.gov/news-events/news-releases/nih-researchers-crack-mystery-behind-rare-bone-disorder \" rel=\"nofollow\"&gt;www.nih.gov/news-events/news-releases/nih-researchers-cra...&lt;/a&gt; Credit: National Institutes of Health"
+    },
+    {
+      "system": "msk",
+      "id": "zymsk-0241",
+      "name": "肱二头肌远端腱撕裂",
+      "source": "Bizepssehnenruptur distal MRT PDW FS.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bizepssehnenruptur_distal_MRT_PDW_FS.jpg",
+      "license": "CC BY-SA 3.0",
+      "src": "assets/authorized/msk/web-search/zymsk-0241.jpg",
+      "description": "Tear of the distal biceps tendon on the radius approach (arrow). The tendon stump is pulled through the muscle to the top (thin arrow)."
+    },
+    {
+      "system": "msk",
+      "id": "zymsk-0234",
+      "name": "肩袖撕裂关节病",
+      "source": "Neoartikulation Humerus-Acromion bei Rotatorenmanschettendefekt.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Neoartikulation_Humerus-Acromion_bei_Rotatorenmanschettendefekt.jpg",
+      "license": "CC BY-SA 3.0",
+      "src": "assets/authorized/msk/web-search/zymsk-0234.jpg",
+      "description": "Alte Läsion der Rotatorenmanschette mit praktisch aufgehobenem Subacromialraum, Humeruskopfhochstand und Ausbildung eines Pseudogelenks / Neogelenks zwischen Humeruskopf und Acromion. Kein seltener Befund."
+    }
+  ]
+}
