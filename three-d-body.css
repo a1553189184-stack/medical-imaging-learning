@@ -1,0 +1,20 @@
+#threeDBody .page-title { margin-bottom: 28px; }
+.three-d-body-layout { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(270px, .8fr); gap: 18px; align-items: stretch; }
+.three-d-body-main, .three-d-body-guide { border: 1px solid var(--line); border-radius: 22px; padding: clamp(24px, 4vw, 42px); }
+.three-d-body-main { background: linear-gradient(135deg, #102620, #1c3e32); color: #f7fbf8; min-height: 360px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
+.three-d-body-kicker { color: #a6d6bf; font-size: 11px; letter-spacing: .12em; }
+.three-d-body-main h2 { max-width: 11em; margin: 18px 0 12px; font-size: clamp(28px, 3.5vw, 42px); line-height: 1.2; }
+.three-d-body-main > p:not(.three-d-body-note) { max-width: 38em; color: #d9e8df; line-height: 1.8; }
+.three-d-body-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+.three-d-body-link { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; margin-top: 0; text-decoration: none; }
+.three-d-body-actions .soft-button { min-height: 44px; }
+.three-d-body-note { margin: 24px 0 0; max-width: 54em; color: #b2c9bb; font-size: 11px; line-height: 1.7; }
+.three-d-body-guide { background: #fff; }
+.three-d-body-guide h2 { margin: 0 0 20px; font-size: 20px; }
+.three-d-body-guide ol { margin: 0 0 22px; padding: 0; list-style: none; counter-reset: body-step; }
+.three-d-body-guide li { display: grid; grid-template-columns: 32px 1fr; gap: 2px 12px; margin: 18px 0; counter-increment: body-step; }
+.three-d-body-guide li::before { content: counter(body-step, decimal-leading-zero); grid-row: span 2; color: #4c8a6a; font-weight: 700; }
+.three-d-body-guide li b { font-size: 13px; }
+.three-d-body-guide li span { color: var(--muted); font-size: 12px; line-height: 1.6; }
+@media (max-width: 860px) { .three-d-body-layout { grid-template-columns: 1fr; } }
+@media (max-width: 680px) { .three-d-body-main, .three-d-body-guide { padding: 24px; } .three-d-body-actions { align-items: stretch; flex-direction: column; width: 100%; } .three-d-body-actions > * { width: 100%; } }

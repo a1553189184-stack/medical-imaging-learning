@@ -184,7 +184,7 @@ function updateLocation() {
   history.replaceState(null, '', url);
 }
 function showView(view, updateUrl = true) {
-  if (!['home','cases','caseDetail','viewer','dicom','diseaseLibrary','sop','mylibrary','progress'].includes(view)) view = 'home';
+  if (!['home','cases','caseDetail','viewer','dicom','diseaseLibrary','threeDBody','sop','mylibrary','progress'].includes(view)) view = 'home';
   currentView = view;
   $$('.view').forEach(function(el) { el.classList.toggle('active', el.id === view); });
   $$('.nav-item').forEach(function(el) {
@@ -1527,7 +1527,7 @@ function route() {
     return;
   }
   renderTraining();
-  showView(['home','cases','viewer','dicom','diseaseLibrary','sop','mylibrary','progress'].includes(params.get('view')) ? params.get('view') : 'home');
+  showView(['home','cases','viewer','dicom','diseaseLibrary','threeDBody','sop','mylibrary','progress'].includes(params.get('view')) ? params.get('view') : 'home');
 }
 window.addEventListener('popstate',route);
 updateStats();

@@ -20,6 +20,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="learning.css?v=route1" />
+  <link rel="stylesheet" href="three-d-body.css?v=1" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"影研社","alternateName":"Image Lab","url":"https://yingyan-image-lab.vercel.app/","description":"医学影像学习路径、开放病例图谱、结构化阅片训练与 DICOM 序列学习","inLanguage":"zh-CN","isAccessibleForFree":true}</script>
 </head>
 <body>
@@ -30,6 +31,7 @@
       <button class="nav-item active" data-view="home"><span>⌂</span>学习首页</button>
       <button class="nav-item" data-view="cases"><span>▦</span>病例图谱</button>
       <button class="nav-item" data-view="diseaseLibrary"><span>⌕</span>疾病索引</button>
+      <button class="nav-item" data-view="threeDBody"><span>◈</span>3DBody 解剖</button>
       <button class="nav-item" data-view="sop"><span>◎</span>摄影 SOP</button>
       <button class="nav-item" data-view="viewer"><span>◫</span>阅片训练</button>
       <button class="nav-item" data-view="dicom"><span>▤</span>DICOM 序列</button>
@@ -78,7 +80,7 @@
         <div class="route-heading"><div><span class="eyebrow">A PRACTICAL STUDY ROUTE</span><h2 id="learningRouteTitle">把影像学成一套方法</h2><p>从检查方法与正常解剖出发，逐步练到分系统识别、鉴别诊断和结构化表达。</p></div><span class="route-mark">影研社 · 教材导学</span></div>
         <div class="route-grid">
           <article class="route-step"><span class="route-number">01</span><div><h3>先看懂检查</h3><p>认识 X 线、CT、MRI 与超声各自能回答的问题，再核对投照体位、序列和图像质量。</p><button class="text-btn" data-go="sop">从摄影规范开始 →</button></div></article>
-          <article class="route-step"><span class="route-number">02</span><div><h3>建立正常解剖</h3><p>按层面和空间关系辨认器官、间隙与骨性标志；先定位，再讨论异常。</p><button class="text-btn" data-go="cases">进入病例图谱 →</button></div></article>
+          <article class="route-step"><span class="route-number">02</span><div><h3>建立正常解剖</h3><p>按层面和空间关系辨认器官、间隙与骨性标志；先定位，再讨论异常。</p><button class="text-btn" data-go="threeDBody">使用 3DBody 解剖 →</button></div></article>
           <article class="route-step"><span class="route-number">03</span><div><h3>按系统读病变</h3><p>依次练习胸部、腹部、神经与骨肌影像，记录部位、形态、密度或信号、分布及伴随征象。</p><button class="text-btn" data-go="diseaseLibrary">按疾病主题查阅 →</button></div></article>
           <article class="route-step"><span class="route-number">04</span><div><h3>从征象走向鉴别</h3><p>先写客观所见，再提出诊断假设；用关键支持点、反证和必要的进一步检查比较鉴别。</p><button class="text-btn" data-go="viewer">开始分步阅片 →</button></div></article>
           <article class="route-step"><span class="route-number">05</span><div><h3>练习报告与复习</h3><p>把定位、所见、印象与建议写完整；按错题和间隔复习回看容易混淆的征象。</p><button class="text-btn" data-go="progress">查看学习进度 →</button></div></article>
@@ -206,6 +208,31 @@
       <article class="panel data-panel"><div><span class="eyebrow">PORTABLE LEARNING RECORD</span><h2>备份与恢复</h2><p>导出收藏、答题记录、错题、间隔复习计划、背题标记、笔记、推理追问、所见草稿、结构化报告和当前题目列表。导入前会校验版本与病例 ID。</p></div><div class="review-actions"><button id="exportProgress" class="soft-button">导出学习记录</button><button id="importProgress" class="primary">导入学习记录</button><input id="importProgressFile" type="file" accept="application/json,.json" hidden></div></article>
       <article class="panel mastery"><div class="section-head compact"><div><span class="eyebrow">COMPLETION BY SYSTEM</span><h2>各系统完成度</h2></div></div><div class="master-row" data-system="胸部"><b>胸部影像</b><div class="progress"><i style="width:0"></i></div><span>0 / 4</span></div><div class="master-row" data-system="神经"><b>神经影像</b><div class="progress"><i style="width:0"></i></div><span>0 / 3</span></div><div class="master-row" data-system="腹部"><b>腹部影像</b><div class="progress"><i style="width:0"></i></div><span>0 / 2</span></div><div class="master-row" data-system="骨骼"><b>骨骼肌肉</b><div class="progress"><i style="width:0"></i></div><span>0 / 1</span></div></article>
       <p class="source-note">已背 <span id="reviewedCount">0</span> 例。背题记录与答题记录分开，背题不会增加答题数或正确率。</p>
+    </section>
+
+    <section class="view" id="threeDBody">
+      <div class="page-title"><div><span class="eyebrow mint">3D ANATOMY</span><h1>3DBody 解剖</h1><p>先在立体模型中建立空间关系，再回到影像中辨认断层结构。</p></div></div>
+      <div class="three-d-body-layout">
+        <div class="three-d-body-main">
+          <span class="three-d-body-kicker">外部解剖学习工具</span>
+          <h2>从三维结构回到二维影像</h2>
+          <p>在 3DBody 官方平台旋转、分层观察人体结构；完成解剖定位后，可回到影研社按系统浏览病例或疾病条目。</p>
+          <div class="three-d-body-actions">
+            <a class="primary three-d-body-link" href="https://www.3dbody.com/anatomy/" target="_blank" rel="noopener noreferrer">打开 3DBody 官方平台 ↗</a>
+            <button class="soft-button" type="button" data-go="diseaseLibrary">返回疾病索引</button>
+          </div>
+          <p class="three-d-body-note">3DBody 由第三人体（上海）数字科技有限公司提供，部分内容可能需要登录或安装其应用。本站不会获取你的 3DBody 账号信息。</p>
+        </div>
+        <aside class="three-d-body-guide" aria-label="解剖与影像对照步骤">
+          <h2>建议这样练习</h2>
+          <ol>
+            <li><b>立体定位</b><span>先辨认器官、骨性标志和相邻结构。</span></li>
+            <li><b>观察层面</b><span>想象轴位、冠状位和矢状位的切面。</span></li>
+            <li><b>回到影像</b><span>在影研社病例中核对同一部位的真实影像。</span></li>
+          </ol>
+          <button class="text-btn" type="button" data-go="cases">进入病例图谱 →</button>
+        </aside>
+      </div>
     </section>
 
     <section class="view" id="diseaseLibrary">
