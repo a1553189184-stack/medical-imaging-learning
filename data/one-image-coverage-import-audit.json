@@ -29,6 +29,12 @@
       "doi": "10.3390/diagnostics13162719",
       "author": "Veron Sanchez et al.",
       "title": "Rare Solid Pancreatic Lesions on Cross-Sectional Imaging"
+    },
+    "diagnostics-16-02462": {
+      "pmc": "PMC13465229",
+      "doi": "10.3390/diagnostics16152462",
+      "author": "Teja et al.",
+      "title": "Common and Uncommon Splenic Lesions: A Review"
     }
   },
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -356,6 +362,78 @@
       "license": "CC BY 4.0",
       "localSha256": "bb6d82fbcb00c7c15b57c26262362be5ce2fc86da1d7e4dcb065e717b147bd44",
       "bytes": 2959488
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-v2-0277",
+      "name": "脾脏上皮性真性囊肿",
+      "figure": 1,
+      "diagnosis": "Splenic epithelial cyst",
+      "src": "assets/authorized/abdomen/open-review/diagnostics-16-02462-fig001.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13465229/figure/diagnostics-16-02462-f001/",
+      "license": "CC BY 4.0",
+      "localSha256": "13b528c2ed7e490bc131654df3c8a01cc2fa19fd1e44acd9e5fcb93983b848af",
+      "bytes": 294723
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-v2-0276",
+      "name": "脾脏假性囊肿（创伤后、炎性后继发）",
+      "figure": 2,
+      "diagnosis": "Splenic pseudocyst after pancreatitis",
+      "src": "assets/authorized/abdomen/open-review/diagnostics-16-02462-fig002.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13465229/figure/diagnostics-16-02462-f002/",
+      "license": "CC BY 4.0",
+      "localSha256": "13e0268c545c0dea6a93db5028d9fa5434af147dabbfa3130a821c403429237b",
+      "bytes": 446409
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-spleen-echinococcosis",
+      "name": "脾棘球蚴病（脾包虫病）",
+      "figure": 3,
+      "diagnosis": "Splenic echinococcosis",
+      "src": "assets/authorized/abdomen/open-review/diagnostics-16-02462-fig003.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13465229/figure/diagnostics-16-02462-f003/",
+      "license": "CC BY 4.0",
+      "localSha256": "2f4c5c2901b5fbd43ead4c788106cbf5c11dabe919b8a1e7945be5d227f04902",
+      "bytes": 402014
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-v2-0324",
+      "name": "脾脏淋巴管瘤",
+      "figure": 5,
+      "diagnosis": "Splenic lymphangioma",
+      "src": "assets/authorized/abdomen/open-review/diagnostics-16-02462-fig005.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13465229/figure/diagnostics-16-02462-f005/",
+      "license": "CC BY 4.0",
+      "localSha256": "6065bb41387903daf940329c7919bd69c50f2593dc4e059f99d0c55b7500be41",
+      "bytes": 332879
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-v2-0274",
+      "name": "硬化性血管瘤样结节转化（SANT）",
+      "figure": 6,
+      "diagnosis": "Sclerosing angiomatoid nodular transformation of the spleen",
+      "src": "assets/authorized/abdomen/open-review/diagnostics-16-02462-fig006b.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13465229/figure/diagnostics-16-02462-f006/",
+      "license": "CC BY 4.0",
+      "localSha256": "41e45ce873c6f0e12cd53053cf733f0cf7867a2042ba6437f9773dfdf371dcd0",
+      "bytes": 185316
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-v2-0272",
+      "name": "脾脏错构瘤",
+      "figure": 8,
+      "diagnosis": "Splenic hamartoma",
+      "src": "assets/authorized/abdomen/open-review/diagnostics-16-02462-fig008b.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13465229/figure/diagnostics-16-02462-f008/",
+      "license": "CC BY 4.0",
+      "localSha256": "a9a52c081ca40a34630ab3b5416fbe918e3257db33de3095f328cf464aa79afd",
+      "bytes": 110873
     }
   ]
 }
