@@ -20,7 +20,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="learning.css?v=route1" />
-  <link rel="stylesheet" href="three-d-body.css?v=2" />
+  <link rel="stylesheet" href="three-d-body.css?v=3" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"影研社","alternateName":"Image Lab","url":"https://yingyan-image-lab.vercel.app/","description":"医学影像学习路径、开放病例图谱、结构化阅片训练与 DICOM 序列学习","inLanguage":"zh-CN","isAccessibleForFree":true}</script>
 </head>
 <body>
@@ -219,17 +219,19 @@
       <div class="anatomy-panel active" id="anatomyPanelModel" role="tabpanel" aria-labelledby="anatomyTabModel">
         <div class="anatomy-workspace">
           <div class="anatomy-canvas-wrap">
-            <div class="anatomy-stage-top"><span>成人参考人体 · 正常解剖</span><button id="anatomyReset" type="button">重置视角</button></div>
-            <div id="anatomyStage" role="img" aria-label="可旋转和缩放的三维人体解剖模型"><p id="anatomyLoading" role="status">正在载入三维模型…</p></div>
+            <div class="anatomy-stage-top"><span>成人参考人体 · 正常解剖</span><div class="anatomy-view-buttons" aria-label="观察方向"><button type="button" data-anatomy-view="front">正面</button><button type="button" data-anatomy-view="back">背面</button><button type="button" data-anatomy-view="side">侧面</button><button id="anatomyReset" type="button">重置视角</button></div></div>
+            <div id="anatomyStage" role="img" aria-label="可旋转和缩放的三维人体解剖模型"><p id="anatomyLoading" role="status">正在载入三维模型…</p><div id="anatomyHover" class="anatomy-hover" role="tooltip" hidden></div></div>
             <div class="anatomy-stage-bottom"><span>拖动旋转 · 滚轮缩放 · 点击选择结构</span><span>BodyParts3D 4.0</span></div>
           </div>
           <aside class="anatomy-controls" aria-label="三维结构控制">
-            <div class="anatomy-control-head"><span class="eyebrow mint">STRUCTURES</span><h2>结构图层</h2><p>选择系统，定位单个结构。</p></div>
-            <label class="anatomy-search-label">检索结构<input id="anatomySearch" type="search" placeholder="中文或英文名称"></label>
+            <div class="anatomy-control-head"><span class="eyebrow mint">STRUCTURES</span><h2>结构图层</h2><p>按系统显示，再逐个查看结构。</p></div>
+            <div class="anatomy-presets" aria-label="图层预设"><button type="button" data-anatomy-preset="all">整体</button><button type="button" data-anatomy-preset="skeletal">骨架</button><button type="button" data-anatomy-preset="organs">脏器与血管</button></div>
             <div id="anatomySystems" class="anatomy-systems" aria-label="解剖系统"></div>
             <label class="anatomy-skin-toggle"><input id="anatomySkin" type="checkbox" checked> 显示半透明体表</label>
-            <div id="anatomyStructureList" class="anatomy-structure-list" aria-label="结构列表"></div>
             <div id="anatomySelection" class="anatomy-selection" aria-live="polite"><b>选择一个结构</b><span>可在模型中点击，也可从列表选择。</span></div>
+            <div class="anatomy-part-actions" aria-label="所选结构操作"><button id="anatomyIsolate" type="button" disabled>单独显示</button><button id="anatomyHide" type="button" disabled>隐藏</button><button id="anatomyTranslucent" type="button" disabled>半透明</button><button id="anatomyRestore" type="button">恢复全部</button></div>
+            <label class="anatomy-search-label">检索结构<input id="anatomySearch" type="search" placeholder="中文或英文名称"></label>
+            <div id="anatomyStructureList" class="anatomy-structure-list" aria-label="结构列表"></div>
           </aside>
         </div>
       </div>
@@ -248,6 +250,7 @@
             <span class="eyebrow mint">SECTION BY SECTION</span><h2>逐层浏览</h2>
             <p id="anatomySliceDescription">拖动滑块或在影像上使用滚轮，观察结构沿身体轴向的变化。</p>
             <div class="anatomy-slice-nav"><button id="anatomySlicePrev" type="button" aria-label="上一层">← 上一层</button><input id="anatomySliceRange" type="range" min="0" max="138" value="75" aria-label="断层层面"><button id="anatomySliceNext" type="button" aria-label="下一层">下一层 →</button></div>
+            <button id="anatomySlicePlay" class="anatomy-slice-play" type="button" aria-pressed="false">▶ 连续播放</button>
             <p id="anatomySlicePosition" class="anatomy-slice-position">第 76 / 139 层</p>
             <h3>定位层面</h3><div id="anatomyLandmarks" class="anatomy-landmarks"></div>
             <p class="anatomy-slice-help">点击层面快速定位。滚轮逐层切换；滑块可连续浏览。影像来自独立的公开教学样本，与左侧三维模型并非同一受检者。</p>
@@ -437,7 +440,7 @@
   <script src="medical-reviews.js?v=atlas10"></script>
   <script src="case-packages.js?v=atlas29"></script>
   <script src="sop-data.js?v=sop1"></script>
-  <script src="app.js?v=anatomy2"></script>
+  <script src="app.js?v=anatomy3"></script>
   <script src="sop.js?v=sop1"></script>
   <script src="mylibrary.js?v=mylib2"></script>
   <script src="auth-config.js?v=auth1"></script>

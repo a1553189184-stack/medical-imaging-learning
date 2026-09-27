@@ -56,11 +56,15 @@ let sliceReady = false;
 let scene, camera, renderer, controls, meshes = [], metadata, partRecords = [];
 let activeSystems = new Set(Object.keys(systems));
 let selectedId = null;
+let isolatedId = null;
+const hiddenParts = new Set(), translucentParts = new Set();
+let playback = null;
 let dataset = 'chest', windowName = 'soft', sliceIndex = 75, zoom = 1, panX = 0, panY = 0;
 const modelTarget = new THREE.Vector3(0, .86, 0);
 
 function selectTab(which) {
   const model = which === 'model';
+  if (model) stopPlayback();
   $('#anatomyPanelModel').hidden = !model;
   $('#anatomyPanelSlices').hidden = model;
   $$('.anatomy-panel').forEach(panel => panel.classList.toggle('active', panel.id === (model ? 'anatomyPanelModel' : 'anatomyPanelSlices')));
@@ -84,8 +88,27 @@ function resize() {
 }
 
 function updateModelVisibility() {
-  for (const mesh of meshes) mesh.visible = mesh.userData.system === 'integumentary' ? $('#anatomySkin').checked : activeSystems.has(mesh.userData.system);
+  for (const mesh of meshes) {
+    const {id, system} = mesh.userData;
+    const skin = system === 'integumentary';
+    mesh.visible = !hiddenParts.has(id) && (!isolatedId || id === isolatedId) && (skin ? $('#anatomySkin').checked : activeSystems.has(system));
+    const translucent = skin || translucentParts.has(id);
+    if (mesh.material.transparent !== translucent) {mesh.material.transparent = translucent;mesh.material.needsUpdate = true;}
+    mesh.material.opacity = skin ? .13 : translucent ? .22 : 1;
+    mesh.material.depthWrite = !translucent;
+  }
   renderStructureList();
+}
+
+function refreshPresets() {
+  $$('#threeDBody [data-anatomy-preset]').forEach(button => {
+    const value = button.dataset.anatomyPreset;
+    const active = value === 'all' ? activeSystems.size === Object.keys(systems).length :
+      value === 'skeletal' ? activeSystems.size === 1 && activeSystems.has('skeletal') :
+      activeSystems.size === Object.keys(systems).length - 1 && !activeSystems.has('skeletal');
+    button.classList.toggle('active', active);
+    button.setAttribute('aria-pressed', String(active));
+  });
 }
 
 function renderSystemButtons() {
@@ -100,10 +123,12 @@ function renderSystemButtons() {
       if (activeSystems.has(key)) activeSystems.delete(key); else activeSystems.add(key);
       button.classList.toggle('active', activeSystems.has(key));
       button.setAttribute('aria-pressed', String(activeSystems.has(key)));
+      refreshPresets();
       updateModelVisibility();
     };
     target.append(button);
   }
+  refreshPresets();
 }
 
 function renderStructureList() {
@@ -117,14 +142,18 @@ function renderStructureList() {
     button.className = selectedId === part.id ? 'active' : '';
     button.textContent = chineseName(part.name);
     const small = document.createElement('small'); small.textContent = part.name; button.append(small);
+    if (hiddenParts.has(part.id)) {button.classList.add('is-hidden');button.title='当前已隐藏，点击可重新显示';}
+    if (isolatedId === part.id) button.classList.add('is-isolated');
     button.onclick = () => selectPart(part.id, true);
     target.append(button);
   }
 }
 
 function selectPart(id, focus) {
+  if (id && isolatedId && isolatedId !== id) {isolatedId = null; updateModelVisibility();}
   selectedId = id;
   const part = partRecords.find(item => item.id === id);
+  if (part && hiddenParts.delete(id)) updateModelVisibility();
   for (const mesh of meshes) mesh.material.emissive.set(mesh.userData.id === id ? '#2a9b77' : '#000000');
   const box = $('#anatomySelection');
   box.replaceChildren();
@@ -143,6 +172,13 @@ function selectPart(id, focus) {
     const detail = document.createElement('span'); detail.textContent = '可在模型中点击，也可从列表选择。';
     box.append(title, detail);
   }
+  $('#anatomyIsolate').disabled = !part;
+  $('#anatomyHide').disabled = !part;
+  $('#anatomyTranslucent').disabled = !part;
+  $('#anatomyIsolate').textContent = isolatedId === id ? '退出单独显示' : '单独显示';
+  $('#anatomyTranslucent').textContent = translucentParts.has(id) ? '恢复不透明' : '半透明';
+  $('#anatomyIsolate').setAttribute('aria-pressed', String(Boolean(part && isolatedId === id)));
+  $('#anatomyTranslucent').setAttribute('aria-pressed', String(Boolean(part && translucentParts.has(id))));
   renderStructureList();
 }
 
@@ -183,16 +219,46 @@ async function initModel() {
     $('#anatomySearch').oninput = renderStructureList;
     $('#anatomySkin').onchange = updateModelVisibility;
     $('#anatomyReset').onclick = () => {controls.target.copy(modelTarget); camera.position.set(.7,1.02,2.25); controls.update(); selectPart(null,false);};
-    let down = null;
-    renderer.domElement.addEventListener('pointerdown', event => {down = [event.clientX,event.clientY];});
-    renderer.domElement.addEventListener('pointerup', event => {
-      if (!down || Math.hypot(event.clientX-down[0],event.clientY-down[1]) > 5) return;
+    $$('#threeDBody [data-anatomy-view]').forEach(button => button.onclick = () => {
+      controls.target.copy(modelTarget);
+      const view = button.dataset.anatomyView;
+      camera.position.set(...(view === 'back' ? [0,.86,-2.35] : view === 'side' ? [2.35,.86,0] : [0,.86,2.35]));
+      controls.update();
+    });
+    $$('#threeDBody [data-anatomy-preset]').forEach(button => button.onclick = () => {
+      const preset = button.dataset.anatomyPreset;
+      activeSystems = new Set(preset === 'skeletal' ? ['skeletal'] : Object.keys(systems).filter(key => preset !== 'organs' || key !== 'skeletal'));
+      isolatedId = null;
+      $('#anatomySkin').checked = preset === 'all';
+      renderSystemButtons(); updateModelVisibility(); selectPart(null,false);
+    });
+    $('#anatomyIsolate').onclick = () => {if (!selectedId) return; isolatedId = isolatedId === selectedId ? null : selectedId; updateModelVisibility(); selectPart(selectedId,false);};
+    $('#anatomyHide').onclick = () => {if (!selectedId) return; hiddenParts.add(selectedId); isolatedId = null; updateModelVisibility(); selectPart(null,false);};
+    $('#anatomyTranslucent').onclick = () => {if (!selectedId) return; if (translucentParts.has(selectedId)) translucentParts.delete(selectedId); else translucentParts.add(selectedId); updateModelVisibility(); selectPart(selectedId,false);};
+    $('#anatomyRestore').onclick = () => {hiddenParts.clear();translucentParts.clear();isolatedId=null;activeSystems=new Set(Object.keys(systems));$('#anatomySkin').checked=true;renderSystemButtons();updateModelVisibility();selectPart(null,false);};
+    const ray = new THREE.Raycaster();
+    const hitPart = event => {
       const rect = renderer.domElement.getBoundingClientRect();
       const pointer = new THREE.Vector2((event.clientX-rect.left)/rect.width*2-1,-(event.clientY-rect.top)/rect.height*2+1);
-      const ray = new THREE.Raycaster(); ray.setFromCamera(pointer,camera);
-      const hit = ray.intersectObjects(meshes.filter(mesh => mesh.visible && mesh.userData.system !== 'integumentary'),false)[0];
-      if (hit) selectPart(hit.object.userData.id,false);
+      ray.setFromCamera(pointer,camera);
+      return ray.intersectObjects(meshes.filter(mesh => mesh.visible && mesh.userData.system !== 'integumentary'),false)[0]?.object.userData.id;
+    };
+    let down = null;
+    const hover = $('#anatomyHover');
+    renderer.domElement.addEventListener('pointerdown', event => {down = [event.clientX,event.clientY]; hover.hidden = true;});
+    renderer.domElement.addEventListener('pointermove', event => {
+      if (down || event.buttons) {hover.hidden=true;return;}
+      const id = hitPart(event);
+      const part = partRecords.find(item => item.id === id);
+      hover.hidden = !part;
+      if (part) {hover.textContent = `${chineseName(part.name)} · ${part.name}`; hover.style.left = `${event.offsetX+14}px`; hover.style.top = `${event.offsetY+14}px`;}
+    });
+    renderer.domElement.addEventListener('pointerleave', () => {hover.hidden=true;down=null;});
+    renderer.domElement.addEventListener('pointerup', event => {
+      if (!down) return;
+      const clicked = Math.hypot(event.clientX-down[0],event.clientY-down[1]) <= 5;
       down = null;
+      if (clicked) {const id=hitPart(event);if (id) selectPart(id,false);}
     });
     new ResizeObserver(resize).observe($('#anatomyStage'));
     resize(); loading.hidden = true;
@@ -204,10 +270,16 @@ async function initModel() {
 function updateZoom() {
   $('#anatomySliceImage').style.transform = `translate(${panX}px, ${panY}px) scale(${zoom})`;
 }
+function stopPlayback() {
+  if (playback) {clearInterval(playback);playback=null;}
+  const button=$('#anatomySlicePlay');
+  if (button) {button.textContent='▶ 连续播放';button.setAttribute('aria-pressed','false');}
+}
 function showSlice() {
   if (!metadata) return;
   const info = metadata[dataset];
   sliceIndex = Math.max(0, Math.min(info.count - 1, sliceIndex));
+  if (playback && sliceIndex === info.count - 1) stopPlayback();
   const view = dataset === 'chest' ? windowName : 'sagittal';
   const src = asset(`slices/${dataset}/${view}/${String(sliceIndex).padStart(3,'0')}.webp`);
   const image = $('#anatomySliceImage');
@@ -236,6 +308,7 @@ function renderLandmarks() {
   }
 }
 function setDataset(name) {
+  stopPlayback();
   dataset=name; sliceIndex=name==='chest'?75:65; windowName='soft'; zoom=1;panX=0;panY=0;updateZoom();
   $$('#threeDBody [data-anatomy-dataset]').forEach(button=>button.classList.toggle('active',button.dataset.anatomyDataset===name));
   $('#anatomyWindowGroup').hidden=name!=='chest';
@@ -254,6 +327,15 @@ async function initSlices() {
     $('#anatomySliceRange').oninput=event=>{sliceIndex=Number(event.target.value);showSlice();};
     $('#anatomySlicePrev').onclick=()=>{sliceIndex--;showSlice();};
     $('#anatomySliceNext').onclick=()=>{sliceIndex++;showSlice();};
+    $('#anatomySlicePlay').onclick=()=>{
+      if (playback) {stopPlayback();return;}
+      if (sliceIndex >= metadata[dataset].count-1) sliceIndex=0;
+      playback=setInterval(()=>{sliceIndex++;showSlice();},360);
+      $('#anatomySlicePlay').textContent='Ⅱ 暂停播放';
+      $('#anatomySlicePlay').setAttribute('aria-pressed','true');
+      showSlice();
+    };
+    document.addEventListener('visibilitychange',()=>{if(document.hidden)stopPlayback();});
     $('#anatomyZoomIn').onclick=()=>{zoom=Math.min(3,zoom+.25);updateZoom();};
     $('#anatomyZoomOut').onclick=()=>{zoom=Math.max(1,zoom-.25);if(zoom===1){panX=0;panY=0;}updateZoom();};
     $('#anatomyZoomReset').onclick=()=>{zoom=1;panX=0;panY=0;updateZoom();};
