@@ -20,7 +20,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="learning.css?v=route1" />
-  <link rel="stylesheet" href="three-d-body.css?v=1" />
+  <link rel="stylesheet" href="three-d-body.css?v=2" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"影研社","alternateName":"Image Lab","url":"https://yingyan-image-lab.vercel.app/","description":"医学影像学习路径、开放病例图谱、结构化阅片训练与 DICOM 序列学习","inLanguage":"zh-CN","isAccessibleForFree":true}</script>
 </head>
 <body>
@@ -31,7 +31,7 @@
       <button class="nav-item active" data-view="home"><span>⌂</span>学习首页</button>
       <button class="nav-item" data-view="cases"><span>▦</span>病例图谱</button>
       <button class="nav-item" data-view="diseaseLibrary"><span>⌕</span>疾病索引</button>
-      <button class="nav-item" data-view="threeDBody"><span>◈</span>3DBody 解剖</button>
+      <button class="nav-item" data-view="threeDBody"><span>◈</span>3D 人体解剖</button>
       <button class="nav-item" data-view="sop"><span>◎</span>摄影 SOP</button>
       <button class="nav-item" data-view="viewer"><span>◫</span>阅片训练</button>
       <button class="nav-item" data-view="dicom"><span>▤</span>DICOM 序列</button>
@@ -80,7 +80,7 @@
         <div class="route-heading"><div><span class="eyebrow">A PRACTICAL STUDY ROUTE</span><h2 id="learningRouteTitle">把影像学成一套方法</h2><p>从检查方法与正常解剖出发，逐步练到分系统识别、鉴别诊断和结构化表达。</p></div><span class="route-mark">影研社 · 教材导学</span></div>
         <div class="route-grid">
           <article class="route-step"><span class="route-number">01</span><div><h3>先看懂检查</h3><p>认识 X 线、CT、MRI 与超声各自能回答的问题，再核对投照体位、序列和图像质量。</p><button class="text-btn" data-go="sop">从摄影规范开始 →</button></div></article>
-          <article class="route-step"><span class="route-number">02</span><div><h3>建立正常解剖</h3><p>按层面和空间关系辨认器官、间隙与骨性标志；先定位，再讨论异常。</p><button class="text-btn" data-go="threeDBody">使用 3DBody 解剖 →</button></div></article>
+          <article class="route-step"><span class="route-number">02</span><div><h3>建立正常解剖</h3><p>按层面和空间关系辨认器官、间隙与骨性标志；先定位，再讨论异常。</p><button class="text-btn" data-go="threeDBody">打开 3D 人体与断层 →</button></div></article>
           <article class="route-step"><span class="route-number">03</span><div><h3>按系统读病变</h3><p>依次练习胸部、腹部、神经与骨肌影像，记录部位、形态、密度或信号、分布及伴随征象。</p><button class="text-btn" data-go="diseaseLibrary">按疾病主题查阅 →</button></div></article>
           <article class="route-step"><span class="route-number">04</span><div><h3>从征象走向鉴别</h3><p>先写客观所见，再提出诊断假设；用关键支持点、反证和必要的进一步检查比较鉴别。</p><button class="text-btn" data-go="viewer">开始分步阅片 →</button></div></article>
           <article class="route-step"><span class="route-number">05</span><div><h3>练习报告与复习</h3><p>把定位、所见、印象与建议写完整；按错题和间隔复习回看容易混淆的征象。</p><button class="text-btn" data-go="progress">查看学习进度 →</button></div></article>
@@ -211,28 +211,50 @@
     </section>
 
     <section class="view" id="threeDBody">
-      <div class="page-title"><div><span class="eyebrow mint">3D ANATOMY</span><h1>3DBody 解剖</h1><p>先在立体模型中建立空间关系，再回到影像中辨认断层结构。</p></div></div>
-      <div class="three-d-body-layout">
-        <div class="three-d-body-main">
-          <span class="three-d-body-kicker">外部解剖学习工具</span>
-          <h2>从三维结构回到二维影像</h2>
-          <p>在 3DBody 官方平台旋转、分层观察人体结构；完成解剖定位后，可回到影研社按系统浏览病例或疾病条目。</p>
-          <div class="three-d-body-actions">
-            <a class="primary three-d-body-link" href="https://www.3dbody.com/anatomy/" target="_blank" rel="noopener noreferrer">打开 3DBody 官方平台 ↗</a>
-            <button class="soft-button" type="button" data-go="diseaseLibrary">返回疾病索引</button>
-          </div>
-          <p class="three-d-body-note">3DBody 由第三人体（上海）数字科技有限公司提供，部分内容可能需要登录或安装其应用。本站不会获取你的 3DBody 账号信息。</p>
-        </div>
-        <aside class="three-d-body-guide" aria-label="解剖与影像对照步骤">
-          <h2>建议这样练习</h2>
-          <ol>
-            <li><b>立体定位</b><span>先辨认器官、骨性标志和相邻结构。</span></li>
-            <li><b>观察层面</b><span>想象轴位、冠状位和矢状位的切面。</span></li>
-            <li><b>回到影像</b><span>在影研社病例中核对同一部位的真实影像。</span></li>
-          </ol>
-          <button class="text-btn" type="button" data-go="cases">进入病例图谱 →</button>
-        </aside>
+      <div class="page-title anatomy-heading"><div><span class="eyebrow mint">IMAGE LAB · ANATOMY STUDIO</span><h1>3D 人体与断层解剖</h1><p>旋转人体、辨认结构，再逐层观察真实 CT 与 MRI 教学影像。</p></div><span class="anatomy-count">129 个三维结构 · 269 个断层层面</span></div>
+      <div class="anatomy-tabs" role="tablist" aria-label="解剖学习模式">
+        <button class="active" id="anatomyTabModel" type="button" role="tab" aria-selected="true" aria-controls="anatomyPanelModel">三维人体</button>
+        <button id="anatomyTabSlices" type="button" role="tab" aria-selected="false" aria-controls="anatomyPanelSlices">逐层断层</button>
       </div>
+      <div class="anatomy-panel active" id="anatomyPanelModel" role="tabpanel" aria-labelledby="anatomyTabModel">
+        <div class="anatomy-workspace">
+          <div class="anatomy-canvas-wrap">
+            <div class="anatomy-stage-top"><span>成人参考人体 · 正常解剖</span><button id="anatomyReset" type="button">重置视角</button></div>
+            <div id="anatomyStage" role="img" aria-label="可旋转和缩放的三维人体解剖模型"><p id="anatomyLoading" role="status">正在载入三维模型…</p></div>
+            <div class="anatomy-stage-bottom"><span>拖动旋转 · 滚轮缩放 · 点击选择结构</span><span>BodyParts3D 4.0</span></div>
+          </div>
+          <aside class="anatomy-controls" aria-label="三维结构控制">
+            <div class="anatomy-control-head"><span class="eyebrow mint">STRUCTURES</span><h2>结构图层</h2><p>选择系统，定位单个结构。</p></div>
+            <label class="anatomy-search-label">检索结构<input id="anatomySearch" type="search" placeholder="中文或英文名称"></label>
+            <div id="anatomySystems" class="anatomy-systems" aria-label="解剖系统"></div>
+            <label class="anatomy-skin-toggle"><input id="anatomySkin" type="checkbox" checked> 显示半透明体表</label>
+            <div id="anatomyStructureList" class="anatomy-structure-list" aria-label="结构列表"></div>
+            <div id="anatomySelection" class="anatomy-selection" aria-live="polite"><b>选择一个结构</b><span>可在模型中点击，也可从列表选择。</span></div>
+          </aside>
+        </div>
+      </div>
+      <div class="anatomy-panel" id="anatomyPanelSlices" role="tabpanel" aria-labelledby="anatomyTabSlices" hidden>
+        <div class="anatomy-slice-toolbar">
+          <div class="anatomy-datasets" aria-label="选择断层数据"><button class="active" type="button" data-anatomy-dataset="chest">胸部 CT · 139 层</button><button type="button" data-anatomy-dataset="head">头部 MRI · 130 层</button></div>
+          <div id="anatomyWindowGroup" class="anatomy-windows" aria-label="CT 窗位"><button class="active" type="button" data-anatomy-window="soft">软组织窗</button><button type="button" data-anatomy-window="lung">肺窗</button></div>
+        </div>
+        <div class="anatomy-slice-workspace">
+          <div class="anatomy-image-column">
+            <div class="anatomy-image-top"><span id="anatomySliceTitle">胸部 CT · 轴位</span><span id="anatomySliceCounter">— / 139</span></div>
+            <div id="anatomySliceStage" class="anatomy-slice-stage" tabindex="0" aria-label="逐层断层影像，可使用滚轮切层"><img id="anatomySliceImage" alt="胸部 CT 断层影像"><span id="anatomySliceStatus" role="status">正在载入断层影像…</span></div>
+            <div class="anatomy-image-bottom"><span id="anatomyOrientation">轴位 · 图像左侧为受检者右侧</span><div><button id="anatomyZoomOut" type="button" aria-label="缩小影像">−</button><button id="anatomyZoomReset" type="button" aria-label="还原影像">1:1</button><button id="anatomyZoomIn" type="button" aria-label="放大影像">＋</button></div></div>
+          </div>
+          <aside class="anatomy-slice-controls">
+            <span class="eyebrow mint">SECTION BY SECTION</span><h2>逐层浏览</h2>
+            <p id="anatomySliceDescription">拖动滑块或在影像上使用滚轮，观察结构沿身体轴向的变化。</p>
+            <div class="anatomy-slice-nav"><button id="anatomySlicePrev" type="button" aria-label="上一层">← 上一层</button><input id="anatomySliceRange" type="range" min="0" max="138" value="75" aria-label="断层层面"><button id="anatomySliceNext" type="button" aria-label="下一层">下一层 →</button></div>
+            <p id="anatomySlicePosition" class="anatomy-slice-position">第 76 / 139 层</p>
+            <h3>定位层面</h3><div id="anatomyLandmarks" class="anatomy-landmarks"></div>
+            <p class="anatomy-slice-help">点击层面快速定位。滚轮逐层切换；滑块可连续浏览。影像来自独立的公开教学样本，与左侧三维模型并非同一受检者。</p>
+          </aside>
+        </div>
+      </div>
+      <details class="anatomy-sources"><summary>数据来源与使用范围</summary><p>三维模型节选自 <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html" target="_blank" rel="noopener noreferrer">BodyParts3D 4.0</a>：BodyParts3D, © The Database Center for Life Science licensed under <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>。网页几何数据以 <a href="https://github.com/ashemag/human-atlas" target="_blank" rel="noopener noreferrer">Human Atlas</a> 的开放转换结果为中间来源，影研社选取并重打包 129 个结构。断层影像来自 <a href="https://www.slicer.org/wiki/SampleData" target="_blank" rel="noopener noreferrer">3D Slicer SampleData</a> 的 CTChest 和 MRHead，经窗位映射及 WebP 转换。所附扫描图谱仅用于确定学习范围，未复制其图片。此模块用于正常解剖教学，不用于诊断。</p></details>
     </section>
 
     <section class="view" id="diseaseLibrary">
@@ -415,7 +437,7 @@
   <script src="medical-reviews.js?v=atlas10"></script>
   <script src="case-packages.js?v=atlas29"></script>
   <script src="sop-data.js?v=sop1"></script>
-  <script src="app.js?v=imagecards9"></script>
+  <script src="app.js?v=anatomy2"></script>
   <script src="sop.js?v=sop1"></script>
   <script src="mylibrary.js?v=mylib2"></script>
   <script src="auth-config.js?v=auth1"></script>

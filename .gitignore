@@ -2,6 +2,7 @@ work/
 outputs/
 node_modules/
 dist/
+assets/anatomy/runtime/
 data/commons-candidates.json
 data/selected-case-sources.json
 .DS_Store

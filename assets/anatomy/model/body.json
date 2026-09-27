@@ -1,0 +1,2846 @@
+{
+  "version": "BodyParts3D 4.0",
+  "reference": "adult male",
+  "license": "CC BY 4.0",
+  "attribution": "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International",
+  "parts": [
+    {
+      "id": "FJ1758",
+      "name": "White matter of left cerebral hemisphere",
+      "system": "nervous",
+      "bounds": [
+        [
+          0.0029686499999999998,
+          1.6000212,
+          -0.100682724
+        ],
+        [
+          0.062458,
+          1.7010512,
+          0.062423000000000006
+        ]
+      ],
+      "vertexCount": 7153,
+      "indexCount": 31740,
+      "positions": 0,
+      "normals": 85836,
+      "indices": 128756
+    },
+    {
+      "id": "FJ1769",
+      "name": "Medulla oblongata",
+      "system": "nervous",
+      "bounds": [
+        [
+          -0.00065468,
+          1.5426112,
+          -0.0487604
+        ],
+        [
+          0.012713100000000001,
+          1.5838911999999998,
+          -0.015560500000000005
+        ]
+      ],
+      "vertexCount": 755,
+      "indexCount": 3978,
+      "positions": 255716,
+      "normals": 264776,
+      "indices": 269308
+    },
+    {
+      "id": "FJ1770",
+      "name": "Midbrain",
+      "system": "nervous",
+      "bounds": [
+        [
+          -0.0006561129999999999,
+          1.6066012,
+          -0.03341910000000001
+        ],
+        [
+          0.0140111,
+          1.6236312,
+          -0.004074100000000011
+        ]
+      ],
+      "vertexCount": 1271,
+      "indexCount": 4596,
+      "positions": 285220,
+      "normals": 300472,
+      "indices": 308100
+    },
+    {
+      "id": "FJ1775",
+      "name": "Pons",
+      "system": "nervous",
+      "bounds": [
+        [
+          -0.000655189,
+          1.5801812,
+          -0.037419400000000005
+        ],
+        [
+          0.0204466,
+          1.6088012,
+          -0.0030134000000000133
+        ]
+      ],
+      "vertexCount": 1802,
+      "indexCount": 8454,
+      "positions": 326484,
+      "normals": 348108,
+      "indices": 358920
+    },
+    {
+      "id": "FJ1781",
+      "name": "Cerebellum",
+      "system": "nervous",
+      "bounds": [
+        [
+          -0.000648386,
+          1.5653712,
+          -0.0878257
+        ],
+        [
+          0.0526099,
+          1.6186212,
+          -0.0315525
+        ]
+      ],
+      "vertexCount": 2725,
+      "indexCount": 15714,
+      "positions": 392736,
+      "normals": 425436,
+      "indices": 441788
+    },
+    {
+      "id": "FJ1806",
+      "name": "White matter of right cerebral hemisphere",
+      "system": "nervous",
+      "bounds": [
+        [
+          -0.06379370000000001,
+          1.6000312,
+          -0.100628044
+        ],
+        [
+          -0.0044517,
+          1.7011112,
+          0.06253899999999998
+        ]
+      ],
+      "vertexCount": 7200,
+      "indexCount": 32262,
+      "positions": 504644,
+      "normals": 591044,
+      "indices": 634244
+    },
+    {
+      "id": "FJ1817",
+      "name": "Midbrain",
+      "system": "nervous",
+      "bounds": [
+        [
+          -0.015322200000000001,
+          1.6066012,
+          -0.033414200000000005
+        ],
+        [
+          -0.0006381480000000001,
+          1.6236412,
+          -0.004048300000000005
+        ]
+      ],
+      "vertexCount": 1187,
+      "indexCount": 4284,
+      "positions": 763292,
+      "normals": 777536,
+      "indices": 784660
+    },
+    {
+      "id": "FJ1822",
+      "name": "Pons",
+      "system": "nervous",
+      "bounds": [
+        [
+          -0.0217505,
+          1.5801812,
+          -0.03741850000000001
+        ],
+        [
+          -0.000576263,
+          1.6087912,
+          -0.003017800000000001
+        ]
+      ],
+      "vertexCount": 2197,
+      "indexCount": 9114,
+      "positions": 801796,
+      "normals": 828160,
+      "indices": 841344
+    },
+    {
+      "id": "FJ1830",
+      "name": "Cerebellum",
+      "system": "nervous",
+      "bounds": [
+        [
+          -0.0539299,
+          1.5653512,
+          -0.08782140000000001
+        ],
+        [
+          -0.000650293,
+          1.6186112,
+          -0.031533900000000004
+        ]
+      ],
+      "vertexCount": 2781,
+      "indexCount": 15762,
+      "positions": 877800,
+      "normals": 911172,
+      "indices": 927860
+    },
+    {
+      "id": "FJ1831",
+      "name": "Medulla oblongata",
+      "system": "nervous",
+      "bounds": [
+        [
+          -0.0140204,
+          1.5426112,
+          -0.0487609
+        ],
+        [
+          -0.000632494,
+          1.5838911999999998,
+          -0.015561900000000004
+        ]
+      ],
+      "vertexCount": 817,
+      "indexCount": 4176,
+      "positions": 990908,
+      "normals": 1000712,
+      "indices": 1005616
+    },
+    {
+      "id": "FJ1895",
+      "name": "Pancreas",
+      "system": "digestive",
+      "bounds": [
+        [
+          -0.047904800000000004,
+          1.0824712,
+          -0.004587999999999995
+        ],
+        [
+          0.07267440000000001,
+          1.1562111999999998,
+          0.046378999999999976
+        ]
+      ],
+      "vertexCount": 1276,
+      "indexCount": 7602,
+      "positions": 1022320,
+      "normals": 1037632,
+      "indices": 1045288
+    },
+    {
+      "id": "FJ1931",
+      "name": "Descending thoracic aorta",
+      "system": "arterial",
+      "bounds": [
+        [
+          0.00159329,
+          1.2069712,
+          -0.0458826
+        ],
+        [
+          0.0299512,
+          1.3778512,
+          -0.00021390000000000298
+        ]
+      ],
+      "vertexCount": 300,
+      "indexCount": 1506,
+      "positions": 1075696,
+      "normals": 1079296,
+      "indices": 1081096
+    },
+    {
+      "id": "FJ1932",
+      "name": "Abdominal aorta",
+      "system": "arterial",
+      "bounds": [
+        [
+          -0.000902874,
+          1.0268022,
+          -0.017523899999999995
+        ],
+        [
+          0.0200548,
+          1.2140212000000001,
+          0.032776
+        ]
+      ],
+      "vertexCount": 286,
+      "indexCount": 1494,
+      "positions": 1087120,
+      "normals": 1090552,
+      "indices": 1092268
+    },
+    {
+      "id": "FJ2422",
+      "name": "Cavity of left ventricle",
+      "system": "cardiac",
+      "bounds": [
+        [
+          0.0064674500000000005,
+          1.2621812,
+          -0.013598399999999997
+        ],
+        [
+          0.07024630000000001,
+          1.3296611999999999,
+          0.05852199999999999
+        ]
+      ],
+      "vertexCount": 749,
+      "indexCount": 4404,
+      "positions": 1098244,
+      "normals": 1107232,
+      "indices": 1111728
+    },
+    {
+      "id": "FJ2423",
+      "name": "Cavity of right ventricle",
+      "system": "cardiac",
+      "bounds": [
+        [
+          -0.0188458,
+          1.2575912,
+          0.015194999999999986
+        ],
+        [
+          0.052663400000000006,
+          1.3381412,
+          0.07341800000000001
+        ]
+      ],
+      "vertexCount": 817,
+      "indexCount": 4830,
+      "positions": 1129344,
+      "normals": 1139148,
+      "indices": 1144052
+    },
+    {
+      "id": "FJ2428",
+      "name": "Wall of ventricle",
+      "system": "cardiac",
+      "bounds": [
+        [
+          -0.0230179,
+          1.2523012,
+          -0.016882300000000003
+        ],
+        [
+          0.0791396,
+          1.3440312,
+          0.07660499999999998
+        ]
+      ],
+      "vertexCount": 5903,
+      "indexCount": 24708,
+      "positions": 1163372,
+      "normals": 1234208,
+      "indices": 1269628
+    },
+    {
+      "id": "FJ2438",
+      "name": "Wall of left atrium",
+      "system": "cardiac",
+      "bounds": [
+        [
+          -0.0228801,
+          1.2775412,
+          -0.029829599999999998
+        ],
+        [
+          0.0632392,
+          1.3505112000000001,
+          0.051151
+        ]
+      ],
+      "vertexCount": 2414,
+      "indexCount": 12270,
+      "positions": 1368460,
+      "normals": 1397428,
+      "indices": 1411912
+    },
+    {
+      "id": "FJ2439",
+      "name": "Wall of right atrium",
+      "system": "cardiac",
+      "bounds": [
+        [
+          -0.0363037,
+          1.2611911999999998,
+          -0.0036550000000000055
+        ],
+        [
+          0.006777910000000001,
+          1.3576112,
+          0.062645
+        ]
+      ],
+      "vertexCount": 2545,
+      "indexCount": 11736,
+      "positions": 1460992,
+      "normals": 1491532,
+      "indices": 1506804
+    },
+    {
+      "id": "FJ2450",
+      "name": "Left main bronchus",
+      "system": "respiratory",
+      "bounds": [
+        [
+          0.00042119600000000004,
+          1.2989312,
+          -0.03899860000000001
+        ],
+        [
+          0.07234739999999999,
+          1.3748212,
+          -0.006616500000000011
+        ]
+      ],
+      "vertexCount": 1500,
+      "indexCount": 7782,
+      "positions": 1553748,
+      "normals": 1571748,
+      "indices": 1580748
+    },
+    {
+      "id": "FJ2539",
+      "name": "Right main bronchus proper",
+      "system": "respiratory",
+      "bounds": [
+        [
+          -0.0504191,
+          1.2821411999999999,
+          -0.038671300000000006
+        ],
+        [
+          -0.000377242,
+          1.3761112,
+          -0.0015072000000000002
+        ]
+      ],
+      "vertexCount": 1444,
+      "indexCount": 7038,
+      "positions": 1611876,
+      "normals": 1629204,
+      "indices": 1637868
+    },
+    {
+      "id": "FJ2541",
+      "name": "Trachea",
+      "system": "respiratory",
+      "bounds": [
+        [
+          -0.013124100000000001,
+          1.3632011999999998,
+          -0.022634
+        ],
+        [
+          0.012814500000000001,
+          1.4735512,
+          0.010131000000000001
+        ]
+      ],
+      "vertexCount": 1172,
+      "indexCount": 6588,
+      "positions": 1666020,
+      "normals": 1680084,
+      "indices": 1687116
+    },
+    {
+      "id": "FJ2563",
+      "name": "Esophagus",
+      "system": "digestive",
+      "bounds": [
+        [
+          -0.00881063,
+          1.1941012,
+          -0.03361270000000001
+        ],
+        [
+          0.0236032,
+          1.4685012000000002,
+          0.024263999999999994
+        ]
+      ],
+      "vertexCount": 173,
+      "indexCount": 888,
+      "positions": 1713468,
+      "normals": 1715544,
+      "indices": 1716584
+    },
+    {
+      "id": "FJ2564",
+      "name": "Stomach",
+      "system": "digestive",
+      "bounds": [
+        [
+          -0.0289516,
+          1.1179912,
+          -0.018520099999999998
+        ],
+        [
+          0.105524,
+          1.2350012000000001,
+          0.09437000000000001
+        ]
+      ],
+      "vertexCount": 852,
+      "indexCount": 5058,
+      "positions": 1720136,
+      "normals": 1730360,
+      "indices": 1735472
+    },
+    {
+      "id": "FJ2565",
+      "name": "Appendix",
+      "system": "digestive",
+      "bounds": [
+        [
+          -0.08842359999999999,
+          0.9436982,
+          -0.018215300000000004
+        ],
+        [
+          -0.0188631,
+          0.9617672,
+          0.020790000000000003
+        ]
+      ],
+      "vertexCount": 241,
+      "indexCount": 1308,
+      "positions": 1755704,
+      "normals": 1758596,
+      "indices": 1760044
+    },
+    {
+      "id": "FJ2566",
+      "name": "Ascending colon",
+      "system": "digestive",
+      "bounds": [
+        [
+          -0.126783,
+          0.9464632000000001,
+          -0.009269600000000003
+        ],
+        [
+          -0.0638983,
+          1.1321212,
+          0.04557
+        ]
+      ],
+      "vertexCount": 1176,
+      "indexCount": 6336,
+      "positions": 1765276,
+      "normals": 1779388,
+      "indices": 1786444
+    },
+    {
+      "id": "FJ2567",
+      "name": "Descending colon",
+      "system": "digestive",
+      "bounds": [
+        [
+          -0.0179165,
+          0.9004322000000001,
+          -0.04971880000000001
+        ],
+        [
+          0.117482,
+          1.1394212,
+          0.04182499999999997
+        ]
+      ],
+      "vertexCount": 1572,
+      "indexCount": 8532,
+      "positions": 1811788,
+      "normals": 1830652,
+      "indices": 1840084
+    },
+    {
+      "id": "FJ2571",
+      "name": "Rectum",
+      "system": "digestive",
+      "bounds": [
+        [
+          -0.0262148,
+          0.8354382,
+          -0.08871920000000001
+        ],
+        [
+          0.035431700000000003,
+          0.9520282000000001,
+          -0.026421200000000006
+        ]
+      ],
+      "vertexCount": 823,
+      "indexCount": 4614,
+      "positions": 1874212,
+      "normals": 1884088,
+      "indices": 1889028
+    },
+    {
+      "id": "FJ2572",
+      "name": "Transverse colon",
+      "system": "digestive",
+      "bounds": [
+        [
+          -0.08875060000000001,
+          1.0715532,
+          0.006834000000000007
+        ],
+        [
+          0.0966096,
+          1.1428412,
+          0.09693100000000002
+        ]
+      ],
+      "vertexCount": 1350,
+      "indexCount": 7248,
+      "positions": 1907484,
+      "normals": 1923684,
+      "indices": 1931784
+    },
+    {
+      "id": "FJ2573",
+      "name": "Duodenum",
+      "system": "digestive",
+      "bounds": [
+        [
+          -0.06562430000000001,
+          1.0637202000000001,
+          0.0038929999999999937
+        ],
+        [
+          0.032329500000000004,
+          1.1552212,
+          0.056924
+        ]
+      ],
+      "vertexCount": 883,
+      "indexCount": 5034,
+      "positions": 1960776,
+      "normals": 1971372,
+      "indices": 1976672
+    },
+    {
+      "id": "FJ2810",
+      "name": "Skin",
+      "system": "integumentary",
+      "bounds": [
+        [
+          -0.33411900000000005,
+          1.3877787807814457e-17,
+          -0.1452476
+        ],
+        [
+          0.332825,
+          1.7194711999999999,
+          0.146783
+        ]
+      ],
+      "vertexCount": 22902,
+      "indexCount": 134232,
+      "positions": 1996808,
+      "normals": 2271632,
+      "indices": 2409044
+    },
+    {
+      "id": "FJ2816",
+      "name": "Caudate lobe of liver",
+      "system": "digestive",
+      "bounds": [
+        [
+          -0.033826999999999996,
+          1.1718511999999999,
+          0.004528000000000004
+        ],
+        [
+          0.0112576,
+          1.2466612,
+          0.040356
+        ]
+      ],
+      "vertexCount": 600,
+      "indexCount": 3528,
+      "positions": 2945972,
+      "normals": 2953172,
+      "indices": 2956772
+    },
+    {
+      "id": "FJ2817",
+      "name": "Gallbladder",
+      "system": "digestive",
+      "bounds": [
+        [
+          -0.0632817,
+          1.1291811999999999,
+          0.03015100000000001
+        ],
+        [
+          -0.0268404,
+          1.1695912,
+          0.07855999999999999
+        ]
+      ],
+      "vertexCount": 649,
+      "indexCount": 3876,
+      "positions": 2970884,
+      "normals": 2978672,
+      "indices": 2982568
+    },
+    {
+      "id": "FJ3144",
+      "name": "Left ureter",
+      "system": "urinary",
+      "bounds": [
+        [
+          0.0232688,
+          0.8961502,
+          -0.038389000000000006
+        ],
+        [
+          0.07937659999999999,
+          1.1506812,
+          0.019751000000000005
+        ]
+      ],
+      "vertexCount": 441,
+      "indexCount": 2280,
+      "positions": 2998072,
+      "normals": 3003364,
+      "indices": 3006012
+    },
+    {
+      "id": "FJ3145",
+      "name": "Left kidney",
+      "system": "urinary",
+      "bounds": [
+        [
+          0.0328399,
+          1.0626052000000001,
+          -0.0404086
+        ],
+        [
+          0.09038299999999999,
+          1.1685512,
+          0.0001850000000000046
+        ]
+      ],
+      "vertexCount": 762,
+      "indexCount": 4536,
+      "positions": 3015132,
+      "normals": 3024276,
+      "indices": 3028848
+    },
+    {
+      "id": "FJ3146",
+      "name": "Right ureter",
+      "system": "urinary",
+      "bounds": [
+        [
+          -0.0727935,
+          0.8893142,
+          -0.039654100000000005
+        ],
+        [
+          -0.009399290000000001,
+          1.1351111999999999,
+          0.018968999999999986
+        ]
+      ],
+      "vertexCount": 551,
+      "indexCount": 2454,
+      "positions": 3046992,
+      "normals": 3053604,
+      "indices": 3056912
+    },
+    {
+      "id": "FJ3147",
+      "name": "Right kidney",
+      "system": "urinary",
+      "bounds": [
+        [
+          -0.0875754,
+          1.0449232,
+          -0.035299899999999995
+        ],
+        [
+          -0.030427600000000003,
+          1.1493512,
+          0.011855000000000004
+        ]
+      ],
+      "vertexCount": 747,
+      "indexCount": 4440,
+      "positions": 3066728,
+      "normals": 3075692,
+      "indices": 3080176
+    },
+    {
+      "id": "FJ3149",
+      "name": "Urinary bladder",
+      "system": "urinary",
+      "bounds": [
+        [
+          -0.0341466,
+          0.8678432,
+          -0.043474700000000005
+        ],
+        [
+          0.0326238,
+          0.9081002000000001,
+          0.028240000000000015
+        ]
+      ],
+      "vertexCount": 126,
+      "indexCount": 672,
+      "positions": 3097936,
+      "normals": 3099448,
+      "indices": 3100204
+    },
+    {
+      "id": "FJ3152",
+      "name": "Right hip bone",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.14487200000000003,
+          0.8302642000000001,
+          -0.09888122
+        ],
+        [
+          -0.0027903,
+          1.0359802,
+          0.039019
+        ]
+      ],
+      "vertexCount": 1036,
+      "indexCount": 5694,
+      "positions": 3102892,
+      "normals": 3115324,
+      "indices": 3121540
+    },
+    {
+      "id": "FJ3154",
+      "name": "Tenth thoracic vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0336568,
+          1.1778811999999999,
+          -0.09217750000000001
+        ],
+        [
+          0.032245199999999995,
+          1.2352412000000002,
+          -0.015942200000000004
+        ]
+      ],
+      "vertexCount": 1251,
+      "indexCount": 6480,
+      "positions": 3144316,
+      "normals": 3159328,
+      "indices": 3166836
+    },
+    {
+      "id": "FJ3155",
+      "name": "Eleventh thoracic vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.026761,
+          1.1538312,
+          -0.0869911
+        ],
+        [
+          0.0255593,
+          1.2073812,
+          -0.007467600000000005
+        ]
+      ],
+      "vertexCount": 1238,
+      "indexCount": 6018,
+      "positions": 3192756,
+      "normals": 3207612,
+      "indices": 3215040
+    },
+    {
+      "id": "FJ3156",
+      "name": "Twelfth thoracic vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.022386399999999997,
+          1.1280712,
+          -0.07743910000000001
+        ],
+        [
+          0.021054800000000002,
+          1.1797011999999998,
+          0.0013849999999999973
+        ]
+      ],
+      "vertexCount": 1228,
+      "indexCount": 6186,
+      "positions": 3239112,
+      "normals": 3253848,
+      "indices": 3261216
+    },
+    {
+      "id": "FJ3157",
+      "name": "First lumbar vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0357798,
+          1.0933112,
+          -0.0707776
+        ],
+        [
+          0.034461399999999996,
+          1.1500911999999999,
+          0.009480000000000002
+        ]
+      ],
+      "vertexCount": 1391,
+      "indexCount": 7212,
+      "positions": 3285960,
+      "normals": 3302652,
+      "indices": 3311000
+    },
+    {
+      "id": "FJ3158",
+      "name": "First thoracic vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.037383000000000007,
+          1.4253312,
+          -0.08291330000000001
+        ],
+        [
+          0.0359162,
+          1.4550112,
+          -0.013128100000000004
+        ]
+      ],
+      "vertexCount": 915,
+      "indexCount": 4194,
+      "positions": 3339848,
+      "normals": 3350828,
+      "indices": 3356320
+    },
+    {
+      "id": "FJ3159",
+      "name": "Second lumbar vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0403509,
+          1.0704272000000001,
+          -0.0656512
+        ],
+        [
+          0.0390608,
+          1.1178712,
+          0.014719999999999997
+        ]
+      ],
+      "vertexCount": 1493,
+      "indexCount": 7476,
+      "positions": 3373096,
+      "normals": 3391012,
+      "indices": 3399972
+    },
+    {
+      "id": "FJ3160",
+      "name": "Second thoracic vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0359221,
+          1.4047011999999999,
+          -0.0878795
+        ],
+        [
+          0.0345784,
+          1.4384712,
+          -0.017324200000000012
+        ]
+      ],
+      "vertexCount": 965,
+      "indexCount": 4710,
+      "positions": 3429876,
+      "normals": 3441456,
+      "indices": 3447248
+    },
+    {
+      "id": "FJ3161",
+      "name": "Third cervical vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.029842800000000003,
+          1.4951112,
+          -0.0618669
+        ],
+        [
+          0.0285393,
+          1.5238512,
+          -0.012186800000000012
+        ]
+      ],
+      "vertexCount": 1184,
+      "indexCount": 5298,
+      "positions": 3466088,
+      "normals": 3480296,
+      "indices": 3487400
+    },
+    {
+      "id": "FJ3162",
+      "name": "Third lumbar vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0402029,
+          1.0458042,
+          -0.07048600000000001
+        ],
+        [
+          0.038841,
+          1.0878412,
+          0.015352999999999992
+        ]
+      ],
+      "vertexCount": 1420,
+      "indexCount": 7362,
+      "positions": 3508592,
+      "normals": 3525632,
+      "indices": 3534152
+    },
+    {
+      "id": "FJ3163",
+      "name": "Third thoracic vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0329661,
+          1.3803412,
+          -0.09863989000000001
+        ],
+        [
+          0.031840900000000005,
+          1.4199612,
+          -0.0232637
+        ]
+      ],
+      "vertexCount": 997,
+      "indexCount": 5088,
+      "positions": 3563600,
+      "normals": 3575564,
+      "indices": 3581548
+    },
+    {
+      "id": "FJ3164",
+      "name": "Fourth cervical vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0277534,
+          1.4827111999999998,
+          -0.0593064
+        ],
+        [
+          0.0263775,
+          1.5102512000000001,
+          -0.01089190000000001
+        ]
+      ],
+      "vertexCount": 1288,
+      "indexCount": 6186,
+      "positions": 3601900,
+      "normals": 3617356,
+      "indices": 3625084
+    },
+    {
+      "id": "FJ3165",
+      "name": "Fourth lumbar vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0427661,
+          1.0167752,
+          -0.07384380000000001
+        ],
+        [
+          0.0414154,
+          1.0615132,
+          0.010404999999999998
+        ]
+      ],
+      "vertexCount": 1503,
+      "indexCount": 7890,
+      "positions": 3649828,
+      "normals": 3667864,
+      "indices": 3676884
+    },
+    {
+      "id": "FJ3166",
+      "name": "Fourth thoracic vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0354617,
+          1.3558512,
+          -0.099802104
+        ],
+        [
+          0.034282,
+          1.3995212000000001,
+          -0.030395100000000008
+        ]
+      ],
+      "vertexCount": 1004,
+      "indexCount": 5052,
+      "positions": 3708444,
+      "normals": 3720492,
+      "indices": 3726516
+    },
+    {
+      "id": "FJ3167",
+      "name": "Fifth cervical vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0296978,
+          1.4718812,
+          -0.0639175
+        ],
+        [
+          0.028333200000000003,
+          1.4961012,
+          -0.00922740000000001
+        ]
+      ],
+      "vertexCount": 1396,
+      "indexCount": 5802,
+      "positions": 3746724,
+      "normals": 3763476,
+      "indices": 3771852
+    },
+    {
+      "id": "FJ3168",
+      "name": "Fifth lumbar vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0510007,
+          0.9827062000000001,
+          -0.08175500000000001
+        ],
+        [
+          0.0495736,
+          1.0329442,
+          -0.0009235000000000076
+        ]
+      ],
+      "vertexCount": 1469,
+      "indexCount": 7920,
+      "positions": 3795060,
+      "normals": 3812688,
+      "indices": 3821504
+    },
+    {
+      "id": "FJ3169",
+      "name": "Fifth thoracic vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.036151499999999996,
+          1.3178812,
+          -0.1000185499
+        ],
+        [
+          0.034889699999999996,
+          1.3753811999999999,
+          -0.03399100000000001
+        ]
+      ],
+      "vertexCount": 1089,
+      "indexCount": 5496,
+      "positions": 3853184,
+      "normals": 3866252,
+      "indices": 3872788
+    },
+    {
+      "id": "FJ3170",
+      "name": "Sixth cervical vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0312652,
+          1.4597011999999998,
+          -0.07082060000000001
+        ],
+        [
+          0.0299477,
+          1.4828512,
+          -0.008329000000000003
+        ]
+      ],
+      "vertexCount": 1257,
+      "indexCount": 5784,
+      "positions": 3894772,
+      "normals": 3909856,
+      "indices": 3917400
+    },
+    {
+      "id": "FJ3171",
+      "name": "Sixth thoracic vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0364227,
+          1.2874912,
+          -0.09880757000000001
+        ],
+        [
+          0.03503390000000001,
+          1.3471912,
+          -0.03477910000000001
+        ]
+      ],
+      "vertexCount": 1127,
+      "indexCount": 5490,
+      "positions": 3940536,
+      "normals": 3954060,
+      "indices": 3960824
+    },
+    {
+      "id": "FJ3172",
+      "name": "Seventh cervical vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0332293,
+          1.4428212,
+          -0.0787336
+        ],
+        [
+          0.0319316,
+          1.4699512,
+          -0.009968100000000008
+        ]
+      ],
+      "vertexCount": 1162,
+      "indexCount": 4560,
+      "positions": 3982784,
+      "normals": 3996728,
+      "indices": 4003700
+    },
+    {
+      "id": "FJ3173",
+      "name": "Seventh thoracic vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.037226300000000004,
+          1.2574112,
+          -0.09932850700000001
+        ],
+        [
+          0.0363206,
+          1.3199112,
+          -0.0330208
+        ]
+      ],
+      "vertexCount": 1223,
+      "indexCount": 6282,
+      "positions": 4021940,
+      "normals": 4036616,
+      "indices": 4043956
+    },
+    {
+      "id": "FJ3174",
+      "name": "Eighth thoracic vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0336594,
+          1.2318612,
+          -0.099068204
+        ],
+        [
+          0.032152700000000006,
+          1.2911612,
+          -0.027972399999999994
+        ]
+      ],
+      "vertexCount": 1195,
+      "indexCount": 6144,
+      "positions": 4069084,
+      "normals": 4083424,
+      "indices": 4090596
+    },
+    {
+      "id": "FJ3175",
+      "name": "Ninth thoracic vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.034394799999999996,
+          1.2047412000000002,
+          -0.09384394
+        ],
+        [
+          0.032998,
+          1.2629511999999998,
+          -0.022347099999999995
+        ]
+      ],
+      "vertexCount": 1153,
+      "indexCount": 6120,
+      "positions": 4115172,
+      "normals": 4129008,
+      "indices": 4135928
+    },
+    {
+      "id": "FJ3178",
+      "name": "Body of sternum",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.023614899999999998,
+          1.2577612,
+          0.065166
+        ],
+        [
+          0.0239556,
+          1.3677512,
+          0.11383199999999999
+        ]
+      ],
+      "vertexCount": 2511,
+      "indexCount": 8430,
+      "positions": 4160408,
+      "normals": 4190540,
+      "indices": 4205608
+    },
+    {
+      "id": "FJ3200",
+      "name": "Frontal bone",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0633025,
+          1.5990012,
+          0.006638999999999992
+        ],
+        [
+          0.0619921,
+          1.7080512,
+          0.07738499999999998
+        ]
+      ],
+      "vertexCount": 3315,
+      "indexCount": 15336,
+      "positions": 4239328,
+      "normals": 4279108,
+      "indices": 4299000
+    },
+    {
+      "id": "FJ3203",
+      "name": "Intervertebral disk of fourth thoracic vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0154939,
+          1.3561412,
+          -0.0623167
+        ],
+        [
+          0.014234700000000001,
+          1.3694411999999998,
+          -0.033264100000000005
+        ]
+      ],
+      "vertexCount": 999,
+      "indexCount": 3930,
+      "positions": 4360344,
+      "normals": 4372332,
+      "indices": 4378328
+    },
+    {
+      "id": "FJ3204",
+      "name": "Intervertebral disk of fifth thoracic vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0159234,
+          1.3326111999999999,
+          -0.0664435
+        ],
+        [
+          0.0146322,
+          1.3431112,
+          -0.034697500000000006
+        ]
+      ],
+      "vertexCount": 1280,
+      "indexCount": 4590,
+      "positions": 4394048,
+      "normals": 4409408,
+      "indices": 4417088
+    },
+    {
+      "id": "FJ3205",
+      "name": "Intervertebral disk of sixth thoracic vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0176541,
+          1.3052012,
+          -0.0693935
+        ],
+        [
+          0.0163522,
+          1.3172512,
+          -0.033801100000000014
+        ]
+      ],
+      "vertexCount": 1831,
+      "indexCount": 6312,
+      "positions": 4435448,
+      "normals": 4457420,
+      "indices": 4468408
+    },
+    {
+      "id": "FJ3206",
+      "name": "Intervertebral disk of seventh thoracic vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.017619,
+          1.2790612,
+          -0.06715650000000001
+        ],
+        [
+          0.0162887,
+          1.2912912,
+          -0.030507400000000004
+        ]
+      ],
+      "vertexCount": 1813,
+      "indexCount": 6438,
+      "positions": 4493656,
+      "normals": 4515412,
+      "indices": 4526292
+    },
+    {
+      "id": "FJ3207",
+      "name": "Intervertebral disk of eighth thoracic vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0184752,
+          1.2528312,
+          -0.061617700000000004
+        ],
+        [
+          0.017160699999999997,
+          1.2674811999999998,
+          -0.025817499999999993
+        ]
+      ],
+      "vertexCount": 2675,
+      "indexCount": 7644,
+      "positions": 4552044,
+      "normals": 4584144,
+      "indices": 4600196
+    },
+    {
+      "id": "FJ3208",
+      "name": "Intervertebral disk of ninth thoracic vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.019579100000000002,
+          1.2252211999999998,
+          -0.0564148
+        ],
+        [
+          0.0182622,
+          1.2406511999999998,
+          -0.020368300000000006
+        ]
+      ],
+      "vertexCount": 2552,
+      "indexCount": 7260,
+      "positions": 4630772,
+      "normals": 4661396,
+      "indices": 4676708
+    },
+    {
+      "id": "FJ3209",
+      "name": "Intervertebral disk of tenth thoracic vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0199665,
+          1.1980212000000001,
+          -0.0503185
+        ],
+        [
+          0.018669599999999998,
+          1.2134212,
+          -0.012205800000000003
+        ]
+      ],
+      "vertexCount": 2554,
+      "indexCount": 7368,
+      "positions": 4705748,
+      "normals": 4736396,
+      "indices": 4751720
+    },
+    {
+      "id": "FJ3210",
+      "name": "Intervertebral disk of eleventh thoracic vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0207728,
+          1.1697212,
+          -0.043013100000000005
+        ],
+        [
+          0.0194286,
+          1.1863512,
+          -0.002987799999999999
+        ]
+      ],
+      "vertexCount": 2892,
+      "indexCount": 7944,
+      "positions": 4781192,
+      "normals": 4815896,
+      "indices": 4833248
+    },
+    {
+      "id": "FJ3212",
+      "name": "Intervertebral disk of first lumbar vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0218952,
+          1.1106711999999999,
+          -0.0254679
+        ],
+        [
+          0.0205982,
+          1.1266812,
+          0.012302999999999994
+        ]
+      ],
+      "vertexCount": 3399,
+      "indexCount": 8646,
+      "positions": 4865024,
+      "normals": 4905812,
+      "indices": 4926208
+    },
+    {
+      "id": "FJ3213",
+      "name": "Intervertebral disk of third cervical vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0119711,
+          1.5050012000000001,
+          -0.027338100000000004
+        ],
+        [
+          0.010661400000000001,
+          1.5111812,
+          -0.011309
+        ]
+      ],
+      "vertexCount": 582,
+      "indexCount": 2184,
+      "positions": 4960792,
+      "normals": 4967776,
+      "indices": 4971268
+    },
+    {
+      "id": "FJ3214",
+      "name": "Intervertebral disk of second lumbar vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.022969899999999998,
+          1.0792312,
+          -0.021870700000000007
+        ],
+        [
+          0.021649,
+          1.0906812,
+          0.01599099999999999
+        ]
+      ],
+      "vertexCount": 2955,
+      "indexCount": 7812,
+      "positions": 4980004,
+      "normals": 5015464,
+      "indices": 5033196
+    },
+    {
+      "id": "FJ3215",
+      "name": "Intervertebral disk of third lumbar vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.023009699999999998,
+          1.0414052,
+          -0.025421600000000003
+        ],
+        [
+          0.0217167,
+          1.0588182,
+          0.01285299999999999
+        ]
+      ],
+      "vertexCount": 3750,
+      "indexCount": 8766,
+      "positions": 5064444,
+      "normals": 5109444,
+      "indices": 5131944
+    },
+    {
+      "id": "FJ3216",
+      "name": "Intervertebral disk of fourth lumbar vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0252531,
+          1.0087392,
+          -0.03574500000000001
+        ],
+        [
+          0.023898700000000002,
+          1.0317042,
+          0.0027669999999999917
+        ]
+      ],
+      "vertexCount": 3137,
+      "indexCount": 8130,
+      "positions": 5167008,
+      "normals": 5204652,
+      "indices": 5223476
+    },
+    {
+      "id": "FJ3217",
+      "name": "Intervertebral disk of fifth lumbar vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.024355,
+          0.9729372000000001,
+          -0.046054000000000005
+        ],
+        [
+          0.0229925,
+          1.0018822,
+          -0.008921499999999999
+        ]
+      ],
+      "vertexCount": 1765,
+      "indexCount": 6144,
+      "positions": 5255996,
+      "normals": 5277176,
+      "indices": 5287768
+    },
+    {
+      "id": "FJ3218",
+      "name": "Intervertebral disk of fourth cervical vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0133902,
+          1.4868212,
+          -0.02578480000000001
+        ],
+        [
+          0.0120673,
+          1.4974412,
+          -0.008716500000000002
+        ]
+      ],
+      "vertexCount": 626,
+      "indexCount": 2520,
+      "positions": 5312344,
+      "normals": 5319856,
+      "indices": 5323612
+    },
+    {
+      "id": "FJ3219",
+      "name": "Intervertebral disk of fifth cervical vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0148096,
+          1.4706811999999998,
+          -0.024478600000000003
+        ],
+        [
+          0.013479,
+          1.4814412,
+          -0.008020200000000005
+        ]
+      ],
+      "vertexCount": 629,
+      "indexCount": 2592,
+      "positions": 5333692,
+      "normals": 5341240,
+      "indices": 5345016
+    },
+    {
+      "id": "FJ3220",
+      "name": "Intervertebral disk of sixth cervical vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.014826,
+          1.4552912,
+          -0.026477100000000003
+        ],
+        [
+          0.013355,
+          1.4648611999999999,
+          -0.009698800000000007
+        ]
+      ],
+      "vertexCount": 850,
+      "indexCount": 2502,
+      "positions": 5355384,
+      "normals": 5365584,
+      "indices": 5370684
+    },
+    {
+      "id": "FJ3221",
+      "name": "Intervertebral disk of seventh cervical vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0163312,
+          1.4381112,
+          -0.030224700000000007
+        ],
+        [
+          0.014939000000000001,
+          1.4497812,
+          -0.012387700000000001
+        ]
+      ],
+      "vertexCount": 828,
+      "indexCount": 2868,
+      "positions": 5380692,
+      "normals": 5390628,
+      "indices": 5395596
+    },
+    {
+      "id": "FJ3222",
+      "name": "Intervertebral disk of first thoracic vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.017064,
+          1.4200112,
+          -0.03609130000000001
+        ],
+        [
+          0.0155358,
+          1.4328612,
+          -0.016218100000000013
+        ]
+      ],
+      "vertexCount": 950,
+      "indexCount": 3186,
+      "positions": 5407068,
+      "normals": 5418468,
+      "indices": 5424168
+    },
+    {
+      "id": "FJ3223",
+      "name": "Intervertebral disk of second thoracic vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0166084,
+          1.3988512,
+          -0.04464560000000001
+        ],
+        [
+          0.015304700000000001,
+          1.4137312,
+          -0.02173380000000001
+        ]
+      ],
+      "vertexCount": 1128,
+      "indexCount": 3690,
+      "positions": 5436912,
+      "normals": 5450448,
+      "indices": 5457216
+    },
+    {
+      "id": "FJ3224",
+      "name": "Intervertebral disk of third thoracic vertebra",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.015544200000000001,
+          1.3778412,
+          -0.054310300000000006
+        ],
+        [
+          0.0142062,
+          1.3925112,
+          -0.0284166
+        ]
+      ],
+      "vertexCount": 1410,
+      "indexCount": 4164,
+      "positions": 5471976,
+      "normals": 5488896,
+      "indices": 5497356
+    },
+    {
+      "id": "FJ3225",
+      "name": "Left tenth rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          0.015562300000000001,
+          1.1010712,
+          -0.0886455
+        ],
+        [
+          0.122349,
+          1.2371012,
+          0.017714999999999995
+        ]
+      ],
+      "vertexCount": 754,
+      "indexCount": 4500,
+      "positions": 5514012,
+      "normals": 5523060,
+      "indices": 5527584
+    },
+    {
+      "id": "FJ3226",
+      "name": "Left eleventh rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          0.016279000000000002,
+          1.0861712,
+          -0.0820386
+        ],
+        [
+          0.110054,
+          1.1998512,
+          -0.0039883
+        ]
+      ],
+      "vertexCount": 537,
+      "indexCount": 3210,
+      "positions": 5545584,
+      "normals": 5552028,
+      "indices": 5555252
+    },
+    {
+      "id": "FJ3227",
+      "name": "Left twelfth rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          0.0168903,
+          1.0894412,
+          -0.0719851
+        ],
+        [
+          0.08522110000000001,
+          1.1672712,
+          -0.03393020000000001
+        ]
+      ],
+      "vertexCount": 367,
+      "indexCount": 2190,
+      "positions": 5568092,
+      "normals": 5572496,
+      "indices": 5574700
+    },
+    {
+      "id": "FJ3228",
+      "name": "Left first rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          0.0138004,
+          1.3881812,
+          -0.035583000000000004
+        ],
+        [
+          0.0684546,
+          1.4485912,
+          0.030419999999999975
+        ]
+      ],
+      "vertexCount": 507,
+      "indexCount": 3030,
+      "positions": 5583460,
+      "normals": 5589544,
+      "indices": 5592588
+    },
+    {
+      "id": "FJ3229",
+      "name": "Left second rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          0.0147349,
+          1.3516211999999999,
+          -0.04935320000000001
+        ],
+        [
+          0.09566100000000001,
+          1.4371412,
+          0.06712700000000002
+        ]
+      ],
+      "vertexCount": 656,
+      "indexCount": 3690,
+      "positions": 5604708,
+      "normals": 5612580,
+      "indices": 5616516
+    },
+    {
+      "id": "FJ3230",
+      "name": "Left third rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          0.0127243,
+          1.3219511999999998,
+          -0.0631421
+        ],
+        [
+          0.10763299999999999,
+          1.4140911999999999,
+          0.079257
+        ]
+      ],
+      "vertexCount": 802,
+      "indexCount": 4782,
+      "positions": 5631276,
+      "normals": 5640900,
+      "indices": 5645712
+    },
+    {
+      "id": "FJ3231",
+      "name": "Left fourth rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          0.012905699999999999,
+          1.2892111999999998,
+          -0.0768081
+        ],
+        [
+          0.11628100000000001,
+          1.3934612,
+          0.092195
+        ]
+      ],
+      "vertexCount": 981,
+      "indexCount": 5838,
+      "positions": 5664840,
+      "normals": 5676612,
+      "indices": 5682500
+    },
+    {
+      "id": "FJ3232",
+      "name": "Left fifth rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          0.014004500000000001,
+          1.2502812,
+          -0.0872773
+        ],
+        [
+          0.125768,
+          1.3694312,
+          0.097688
+        ]
+      ],
+      "vertexCount": 1095,
+      "indexCount": 6408,
+      "positions": 5705852,
+      "normals": 5718992,
+      "indices": 5725564
+    },
+    {
+      "id": "FJ3233",
+      "name": "Left sixth rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          0.0127754,
+          1.2160112,
+          -0.0963556
+        ],
+        [
+          0.133054,
+          1.3449411999999998,
+          0.093495
+        ]
+      ],
+      "vertexCount": 1147,
+      "indexCount": 6774,
+      "positions": 5751196,
+      "normals": 5764960,
+      "indices": 5771844
+    },
+    {
+      "id": "FJ3234",
+      "name": "Left seventh rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          0.012382500000000001,
+          1.1833012,
+          -0.09550205
+        ],
+        [
+          0.13577799999999998,
+          1.3183612,
+          0.080208
+        ]
+      ],
+      "vertexCount": 1122,
+      "indexCount": 6618,
+      "positions": 5798940,
+      "normals": 5812404,
+      "indices": 5819136
+    },
+    {
+      "id": "FJ3235",
+      "name": "Left eighth rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          0.0123704,
+          1.1527612,
+          -0.09543043000000001
+        ],
+        [
+          0.131638,
+          1.2894311999999999,
+          0.06267500000000001
+        ]
+      ],
+      "vertexCount": 936,
+      "indexCount": 5496,
+      "positions": 5845608,
+      "normals": 5856840,
+      "indices": 5862456
+    },
+    {
+      "id": "FJ3236",
+      "name": "Left ninth rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          0.0145582,
+          1.1282012,
+          -0.09247234
+        ],
+        [
+          0.127783,
+          1.2634712,
+          0.035601999999999995
+        ]
+      ],
+      "vertexCount": 843,
+      "indexCount": 4998,
+      "positions": 5884440,
+      "normals": 5894556,
+      "indices": 5899616
+    },
+    {
+      "id": "FJ3237",
+      "name": "Left clavicle",
+      "system": "skeletal",
+      "bounds": [
+        [
+          0.00837873,
+          1.3866412,
+          -0.0456125
+        ],
+        [
+          0.14394200000000001,
+          1.4332912,
+          0.04707800000000001
+        ]
+      ],
+      "vertexCount": 426,
+      "indexCount": 2478,
+      "positions": 5919608,
+      "normals": 5924720,
+      "indices": 5927276
+    },
+    {
+      "id": "FJ3259",
+      "name": "Left femur",
+      "system": "skeletal",
+      "bounds": [
+        [
+          0.0319662,
+          0.4461672,
+          -0.05051780000000001
+        ],
+        [
+          0.150237,
+          0.9123502000000001,
+          0.012275999999999995
+        ]
+      ],
+      "vertexCount": 459,
+      "indexCount": 2652,
+      "positions": 5937188,
+      "normals": 5942696,
+      "indices": 5945452
+    },
+    {
+      "id": "FJ3260",
+      "name": "Left fibula",
+      "system": "skeletal",
+      "bounds": [
+        [
+          0.08452899999999999,
+          0.052920600000000005,
+          -0.051466000000000005
+        ],
+        [
+          0.120108,
+          0.43724219999999997,
+          -0.021880999999999998
+        ]
+      ],
+      "vertexCount": 149,
+      "indexCount": 834,
+      "positions": 5956060,
+      "normals": 5957848,
+      "indices": 5958744
+    },
+    {
+      "id": "FJ3262",
+      "name": "Left humerus",
+      "system": "skeletal",
+      "bounds": [
+        [
+          0.140073,
+          1.1073212,
+          -0.048944100000000004
+        ],
+        [
+          0.24076,
+          1.4146311999999999,
+          0.0002289999999999931
+        ]
+      ],
+      "vertexCount": 586,
+      "indexCount": 2886,
+      "positions": 5962080,
+      "normals": 5969112,
+      "indices": 5972628
+    },
+    {
+      "id": "FJ3274",
+      "name": "Left parietal bone",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.00786774,
+          1.5959112,
+          -0.1149522
+        ],
+        [
+          0.07485649999999999,
+          1.7143812,
+          0.03168599999999999
+        ]
+      ],
+      "vertexCount": 2927,
+      "indexCount": 11196,
+      "positions": 5984172,
+      "normals": 6019296,
+      "indices": 6036860
+    },
+    {
+      "id": "FJ3275",
+      "name": "Left patella",
+      "system": "skeletal",
+      "bounds": [
+        [
+          0.0605925,
+          0.4396082,
+          0.000900999999999999
+        ],
+        [
+          0.10222400000000001,
+          0.47887419999999997,
+          0.022751000000000007
+        ]
+      ],
+      "vertexCount": 177,
+      "indexCount": 912,
+      "positions": 6081644,
+      "normals": 6083768,
+      "indices": 6084832
+    },
+    {
+      "id": "FJ3279",
+      "name": "Left scapula",
+      "system": "skeletal",
+      "bounds": [
+        [
+          0.0570614,
+          1.2620612,
+          -0.1050764
+        ],
+        [
+          0.166464,
+          1.4279711999999998,
+          0.0028450000000000003
+        ]
+      ],
+      "vertexCount": 3097,
+      "indexCount": 18540,
+      "positions": 6088480,
+      "normals": 6125644,
+      "indices": 6144228
+    },
+    {
+      "id": "FJ3282",
+      "name": "Left tibia",
+      "system": "skeletal",
+      "bounds": [
+        [
+          0.0350342,
+          0.07201587000000001,
+          -0.0480179
+        ],
+        [
+          0.109455,
+          0.4519732,
+          0.014515
+        ]
+      ],
+      "vertexCount": 331,
+      "indexCount": 1860,
+      "positions": 6218388,
+      "normals": 6222360,
+      "indices": 6224348
+    },
+    {
+      "id": "FJ3288",
+      "name": "Left hip bone",
+      "system": "skeletal",
+      "bounds": [
+        [
+          0.0027503099999999997,
+          0.8300622000000001,
+          -0.09868506
+        ],
+        [
+          0.144754,
+          1.0362012,
+          0.03909499999999999
+        ]
+      ],
+      "vertexCount": 986,
+      "indexCount": 5424,
+      "positions": 6231788,
+      "normals": 6243620,
+      "indices": 6249536
+    },
+    {
+      "id": "FJ3289",
+      "name": "Mandible",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0538459,
+          1.4997412,
+          -0.010146299999999997
+        ],
+        [
+          0.0525541,
+          1.5842112,
+          0.07383199999999998
+        ]
+      ],
+      "vertexCount": 1207,
+      "indexCount": 7044,
+      "positions": 6271232,
+      "normals": 6285716,
+      "indices": 6292960
+    },
+    {
+      "id": "FJ3309",
+      "name": "Occipital bone",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0619612,
+          1.5558812,
+          -0.11800100000000001
+        ],
+        [
+          0.060705300000000004,
+          1.6626212,
+          0.0009590000000000015
+        ]
+      ],
+      "vertexCount": 2938,
+      "indexCount": 14736,
+      "positions": 6321136,
+      "normals": 6356392,
+      "indices": 6374020
+    },
+    {
+      "id": "FJ3330",
+      "name": "Right tenth rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.123648,
+          1.1010912,
+          -0.0886407
+        ],
+        [
+          -0.016872900000000003,
+          1.2370912,
+          0.017686999999999994
+        ]
+      ],
+      "vertexCount": 754,
+      "indexCount": 4500,
+      "positions": 6432964,
+      "normals": 6442012,
+      "indices": 6446536
+    },
+    {
+      "id": "FJ3331",
+      "name": "Right eleventh rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.111353,
+          1.0861912,
+          -0.082038
+        ],
+        [
+          -0.0175963,
+          1.1998412,
+          -0.003981700000000005
+        ]
+      ],
+      "vertexCount": 538,
+      "indexCount": 3210,
+      "positions": 6464536,
+      "normals": 6470992,
+      "indices": 6474220
+    },
+    {
+      "id": "FJ3332",
+      "name": "Right twelfth rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.08653319999999999,
+          1.0894512,
+          -0.07200780000000001
+        ],
+        [
+          -0.0182125,
+          1.1672812000000001,
+          -0.033902699999999994
+        ]
+      ],
+      "vertexCount": 372,
+      "indexCount": 2220,
+      "positions": 6487060,
+      "normals": 6491524,
+      "indices": 6493756
+    },
+    {
+      "id": "FJ3334",
+      "name": "Right first rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0697641,
+          1.3881812,
+          -0.03558540000000002
+        ],
+        [
+          -0.015110900000000002,
+          1.4485912,
+          0.030424000000000007
+        ]
+      ],
+      "vertexCount": 519,
+      "indexCount": 3096,
+      "positions": 6502636,
+      "normals": 6508864,
+      "indices": 6511980
+    },
+    {
+      "id": "FJ3336",
+      "name": "Right second rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0969721,
+          1.3516612,
+          -0.049347100000000005
+        ],
+        [
+          -0.016049499999999998,
+          1.4371412,
+          0.06715700000000002
+        ]
+      ],
+      "vertexCount": 648,
+      "indexCount": 3690,
+      "positions": 6524364,
+      "normals": 6532140,
+      "indices": 6536028
+    },
+    {
+      "id": "FJ3338",
+      "name": "Right third rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.108947,
+          1.3219311999999999,
+          -0.063171
+        ],
+        [
+          -0.014024,
+          1.4140812,
+          0.079268
+        ]
+      ],
+      "vertexCount": 800,
+      "indexCount": 4782,
+      "positions": 6550788,
+      "normals": 6560388,
+      "indices": 6565188
+    },
+    {
+      "id": "FJ3340",
+      "name": "Right fourth rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.117593,
+          1.2892111999999998,
+          -0.0768055
+        ],
+        [
+          -0.015011900000000002,
+          1.3934612,
+          0.092192
+        ]
+      ],
+      "vertexCount": 979,
+      "indexCount": 5826,
+      "positions": 6584316,
+      "normals": 6596064,
+      "indices": 6601940
+    },
+    {
+      "id": "FJ3342",
+      "name": "Right fifth rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.127079,
+          1.2502712,
+          -0.0872724
+        ],
+        [
+          -0.0153142,
+          1.3694312,
+          0.09765100000000002
+        ]
+      ],
+      "vertexCount": 1093,
+      "indexCount": 6408,
+      "positions": 6625244,
+      "normals": 6638360,
+      "indices": 6644920
+    },
+    {
+      "id": "FJ3344",
+      "name": "Right sixth rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.134349,
+          1.2160212000000001,
+          -0.09635859000000001
+        ],
+        [
+          -0.014837300000000001,
+          1.3438112,
+          0.093505
+        ]
+      ],
+      "vertexCount": 1147,
+      "indexCount": 6762,
+      "positions": 6670552,
+      "normals": 6684316,
+      "indices": 6691200
+    },
+    {
+      "id": "FJ3346",
+      "name": "Right seventh rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.137085,
+          1.1833012,
+          -0.09551309000000001
+        ],
+        [
+          -0.0136897,
+          1.3183812,
+          0.080203
+        ]
+      ],
+      "vertexCount": 1122,
+      "indexCount": 6618,
+      "positions": 6718248,
+      "normals": 6731712,
+      "indices": 6738444
+    },
+    {
+      "id": "FJ3347",
+      "name": "Right eighth rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.132968,
+          1.1527712,
+          -0.09543551
+        ],
+        [
+          -0.013676500000000001,
+          1.2894412,
+          0.06267799999999998
+        ]
+      ],
+      "vertexCount": 928,
+      "indexCount": 5496,
+      "positions": 6764916,
+      "normals": 6776052,
+      "indices": 6781620
+    },
+    {
+      "id": "FJ3348",
+      "name": "Right ninth rib",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.12909800000000002,
+          1.1282012,
+          -0.09247093
+        ],
+        [
+          -0.0158646,
+          1.2634811999999997,
+          0.035632
+        ]
+      ],
+      "vertexCount": 842,
+      "indexCount": 4998,
+      "positions": 6803604,
+      "normals": 6813708,
+      "indices": 6818760
+    },
+    {
+      "id": "FJ3362",
+      "name": "Right clavicle",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.145277,
+          1.3867311999999998,
+          -0.0455875
+        ],
+        [
+          -0.00966165,
+          1.4335512,
+          0.04694800000000002
+        ]
+      ],
+      "vertexCount": 420,
+      "indexCount": 2460,
+      "positions": 6838752,
+      "normals": 6843792,
+      "indices": 6846312
+    },
+    {
+      "id": "FJ3365",
+      "name": "Right femur",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.150134,
+          0.44626119999999997,
+          -0.0504698
+        ],
+        [
+          -0.0318943,
+          0.9123632,
+          0.012191999999999995
+        ]
+      ],
+      "vertexCount": 480,
+      "indexCount": 2790,
+      "positions": 6856152,
+      "normals": 6861912,
+      "indices": 6864792
+    },
+    {
+      "id": "FJ3366",
+      "name": "Right fibula",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.12016500000000001,
+          0.052831300000000005,
+          -0.051512600000000006
+        ],
+        [
+          -0.0843445,
+          0.43726119999999996,
+          -0.021831199999999995
+        ]
+      ],
+      "vertexCount": 162,
+      "indexCount": 894,
+      "positions": 6875952,
+      "normals": 6877896,
+      "indices": 6878868
+    },
+    {
+      "id": "FJ3368",
+      "name": "Right humerus",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.240841,
+          1.1073112,
+          -0.04896090000000001
+        ],
+        [
+          -0.14009000000000002,
+          1.4146512,
+          0.00021899999999999697
+        ]
+      ],
+      "vertexCount": 794,
+      "indexCount": 3210,
+      "positions": 6882444,
+      "normals": 6891972,
+      "indices": 6896736
+    },
+    {
+      "id": "FJ3380",
+      "name": "Right parietal bone",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.0761885,
+          1.5959912,
+          -0.1148314
+        ],
+        [
+          0.00500244,
+          1.7143812,
+          0.027885999999999994
+        ]
+      ],
+      "vertexCount": 2734,
+      "indexCount": 11082,
+      "positions": 6909576,
+      "normals": 6942384,
+      "indices": 6958788
+    },
+    {
+      "id": "FJ3381",
+      "name": "Right patella",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.102288,
+          0.43959719999999997,
+          0.0009920000000000068
+        ],
+        [
+          -0.0606208,
+          0.4789072,
+          0.022726999999999997
+        ]
+      ],
+      "vertexCount": 176,
+      "indexCount": 912,
+      "positions": 7003116,
+      "normals": 7005228,
+      "indices": 7006284
+    },
+    {
+      "id": "FJ3384",
+      "name": "Right scapula",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.166464,
+          1.2620712,
+          -0.10508275
+        ],
+        [
+          -0.0570538,
+          1.4279711999999998,
+          0.0028559999999999974
+        ]
+      ],
+      "vertexCount": 2896,
+      "indexCount": 17268,
+      "positions": 7009932,
+      "normals": 7044684,
+      "indices": 7062060
+    },
+    {
+      "id": "FJ3387",
+      "name": "Right tibia",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.10935299999999999,
+          0.07207404,
+          -0.04792710000000001
+        ],
+        [
+          -0.035216000000000004,
+          0.4520312,
+          0.014834999999999987
+        ]
+      ],
+      "vertexCount": 334,
+      "indexCount": 1902,
+      "positions": 7131132,
+      "normals": 7135140,
+      "indices": 7137144
+    },
+    {
+      "id": "FJ3393",
+      "name": "Sacrum",
+      "system": "skeletal",
+      "bounds": [
+        [
+          -0.059591200000000004,
+          0.8609482,
+          -0.10725375000000001
+        ],
+        [
+          0.0582029,
+          1.0053112,
+          -0.018603599999999998
+        ]
+      ],
+      "vertexCount": 2771,
+      "indexCount": 15174,
+      "positions": 7144752,
+      "normals": 7178004,
+      "indices": 7194632
+    },
+    {
+      "id": "FJ3411",
+      "name": "Arch of aorta",
+      "system": "arterial",
+      "bounds": [
+        [
+          -0.006830460000000001,
+          1.3600112,
+          -0.0501551
+        ],
+        [
+          0.0348378,
+          1.3952011999999998,
+          0.037163
+        ]
+      ],
+      "vertexCount": 337,
+      "indexCount": 1788,
+      "positions": 7255328,
+      "normals": 7259372,
+      "indices": 7261396
+    },
+    {
+      "id": "FJ3413",
+      "name": "Ascending aorta",
+      "system": "arterial",
+      "bounds": [
+        [
+          -0.006822180000000001,
+          1.3121711999999999,
+          0.006662000000000001
+        ],
+        [
+          0.028943000000000003,
+          1.3600112,
+          0.037439
+        ]
+      ],
+      "vertexCount": 225,
+      "indexCount": 1164,
+      "positions": 7268548,
+      "normals": 7271248,
+      "indices": 7272600
+    }
+  ]
+}
