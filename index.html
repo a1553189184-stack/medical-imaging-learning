@@ -20,7 +20,7 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="learning.css?v=route1" />
-  <link rel="stylesheet" href="three-d-body.css?v=3" />
+  <link rel="stylesheet" href="three-d-body.css?v=4" />
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"影研社","alternateName":"Image Lab","url":"https://yingyan-image-lab.vercel.app/","description":"医学影像学习路径、开放病例图谱、结构化阅片训练与 DICOM 序列学习","inLanguage":"zh-CN","isAccessibleForFree":true}</script>
 </head>
 <body>
@@ -211,7 +211,7 @@
     </section>
 
     <section class="view" id="threeDBody">
-      <div class="page-title anatomy-heading"><div><span class="eyebrow mint">IMAGE LAB · ANATOMY STUDIO</span><h1>3D 人体与断层解剖</h1><p>旋转人体、辨认结构，再逐层观察真实 CT 与 MRI 教学影像。</p></div><span class="anatomy-count">129 个三维结构 · 269 个断层层面</span></div>
+      <div class="page-title anatomy-heading"><div><span class="eyebrow mint">IMAGE LAB · ANATOMY STUDIO</span><h1>3D 人体与断层解剖</h1><p>分层探索骨骼、血管和神经，再逐层观察 CT 与 MRI 教学影像。</p></div><span id="anatomyCount" class="anatomy-count">正在读取解剖目录…</span></div>
       <div class="anatomy-tabs" role="tablist" aria-label="解剖学习模式">
         <button class="active" id="anatomyTabModel" type="button" role="tab" aria-selected="true" aria-controls="anatomyPanelModel">三维人体</button>
         <button id="anatomyTabSlices" type="button" role="tab" aria-selected="false" aria-controls="anatomyPanelSlices">逐层断层</button>
@@ -220,13 +220,15 @@
         <div class="anatomy-workspace">
           <div class="anatomy-canvas-wrap">
             <div class="anatomy-stage-top"><span>成人参考人体 · 正常解剖</span><div class="anatomy-view-buttons" aria-label="观察方向"><button type="button" data-anatomy-view="front">正面</button><button type="button" data-anatomy-view="back">背面</button><button type="button" data-anatomy-view="side">侧面</button><button id="anatomyReset" type="button">重置视角</button></div></div>
-            <div id="anatomyStage" role="img" aria-label="可旋转和缩放的三维人体解剖模型"><p id="anatomyLoading" role="status">正在载入三维模型…</p><div id="anatomyHover" class="anatomy-hover" role="tooltip" hidden></div></div>
+            <div id="anatomyStage" role="img" aria-label="可旋转和缩放的三维人体解剖模型"><p id="anatomyLoading" role="status">正在载入三维模型…</p><div id="anatomyHover" class="anatomy-hover" role="tooltip" hidden></div><div id="anatomyPickLabel" class="anatomy-pick-label" aria-live="polite" hidden></div></div>
             <div class="anatomy-stage-bottom"><span>拖动旋转 · 滚轮缩放 · 点击选择结构</span><span>BodyParts3D 4.0</span></div>
           </div>
           <aside class="anatomy-controls" aria-label="三维结构控制">
             <div class="anatomy-control-head"><span class="eyebrow mint">STRUCTURES</span><h2>结构图层</h2><p>按系统显示，再逐个查看结构。</p></div>
-            <div class="anatomy-presets" aria-label="图层预设"><button type="button" data-anatomy-preset="all">整体</button><button type="button" data-anatomy-preset="skeletal">骨架</button><button type="button" data-anatomy-preset="organs">脏器与血管</button></div>
+            <div class="anatomy-presets" aria-label="图层预设"><button type="button" data-anatomy-preset="all">整体</button><button type="button" data-anatomy-preset="skeletal">骨架</button><button type="button" data-anatomy-preset="organs">骨骼以外</button></div>
+            <div class="anatomy-regions" aria-label="快速查看部位"><button type="button" data-anatomy-region="forearm">前臂</button><button type="button" data-anatomy-region="hand">手部</button><button type="button" data-anatomy-region="foot">足部</button><button type="button" data-anatomy-region="face">面部</button><button type="button" data-anatomy-region="vessels">血管</button><button type="button" data-anatomy-region="nerves">神经</button></div>
             <div id="anatomySystems" class="anatomy-systems" aria-label="解剖系统"></div>
+            <p class="anatomy-layer-note">神经网格以脑和头面为主；四肢的 14 条神经为沿骨性标志绘制的教学示意走行，非真实分割。</p>
             <label class="anatomy-skin-toggle"><input id="anatomySkin" type="checkbox" checked> 显示半透明体表</label>
             <div id="anatomySelection" class="anatomy-selection" aria-live="polite"><b>选择一个结构</b><span>可在模型中点击，也可从列表选择。</span></div>
             <div class="anatomy-part-actions" aria-label="所选结构操作"><button id="anatomyIsolate" type="button" disabled>单独显示</button><button id="anatomyHide" type="button" disabled>隐藏</button><button id="anatomyTranslucent" type="button" disabled>半透明</button><button id="anatomyRestore" type="button">恢复全部</button></div>
@@ -237,13 +239,13 @@
       </div>
       <div class="anatomy-panel" id="anatomyPanelSlices" role="tabpanel" aria-labelledby="anatomyTabSlices" hidden>
         <div class="anatomy-slice-toolbar">
-          <div class="anatomy-datasets" aria-label="选择断层数据"><button class="active" type="button" data-anatomy-dataset="chest">胸部 CT · 139 层</button><button type="button" data-anatomy-dataset="head">头部 MRI · 130 层</button></div>
-          <div id="anatomyWindowGroup" class="anatomy-windows" aria-label="CT 窗位"><button class="active" type="button" data-anatomy-window="soft">软组织窗</button><button type="button" data-anatomy-window="lung">肺窗</button></div>
+            <div class="anatomy-datasets" aria-label="选择断层数据"><button class="active" type="button" data-anatomy-dataset="chest">胸部 CT</button><button type="button" data-anatomy-dataset="abdomen">腹盆部 CT</button><button type="button" data-anatomy-dataset="headAxial">头部 MRI · 横断</button><button type="button" data-anatomy-dataset="head">头部 MRI · 矢状</button></div>
+          <div id="anatomyWindowGroup" class="anatomy-windows" aria-label="CT 窗位"><button class="active" type="button" data-anatomy-window="soft">软组织窗</button><button type="button" data-anatomy-window="lung">肺窗</button><button type="button" data-anatomy-window="bone">骨窗</button></div>
         </div>
         <div class="anatomy-slice-workspace">
           <div class="anatomy-image-column">
             <div class="anatomy-image-top"><span id="anatomySliceTitle">胸部 CT · 轴位</span><span id="anatomySliceCounter">— / 139</span></div>
-            <div id="anatomySliceStage" class="anatomy-slice-stage" tabindex="0" aria-label="逐层断层影像，可使用滚轮切层"><img id="anatomySliceImage" alt="胸部 CT 断层影像"><span id="anatomySliceStatus" role="status">正在载入断层影像…</span></div>
+            <div id="anatomySliceStage" class="anatomy-slice-stage" tabindex="0" aria-label="逐层断层影像，可使用滚轮切层并点击已标注结构"><div id="anatomySliceImageWrap" class="anatomy-slice-image-wrap"><img id="anatomySliceImage" alt="胸部 CT 断层影像"><div id="anatomySliceMarkers" class="anatomy-slice-markers" aria-label="已校对结构标记"></div></div><span id="anatomySliceStatus" role="status">正在载入断层影像…</span></div>
             <div class="anatomy-image-bottom"><span id="anatomyOrientation">轴位 · 图像左侧为受检者右侧</span><div><button id="anatomyZoomOut" type="button" aria-label="缩小影像">−</button><button id="anatomyZoomReset" type="button" aria-label="还原影像">1:1</button><button id="anatomyZoomIn" type="button" aria-label="放大影像">＋</button></div></div>
           </div>
           <aside class="anatomy-slice-controls">
@@ -252,12 +254,13 @@
             <div class="anatomy-slice-nav"><button id="anatomySlicePrev" type="button" aria-label="上一层">← 上一层</button><input id="anatomySliceRange" type="range" min="0" max="138" value="75" aria-label="断层层面"><button id="anatomySliceNext" type="button" aria-label="下一层">下一层 →</button></div>
             <button id="anatomySlicePlay" class="anatomy-slice-play" type="button" aria-pressed="false">▶ 连续播放</button>
             <p id="anatomySlicePosition" class="anatomy-slice-position">第 76 / 139 层</p>
+            <div id="anatomySliceAnnotation" class="anatomy-slice-annotation" aria-live="polite"><b>点选结构名称</b><span>在已标注的代表层面点击标记；未标注位置不做自动猜测。</span></div>
             <h3>定位层面</h3><div id="anatomyLandmarks" class="anatomy-landmarks"></div>
-            <p class="anatomy-slice-help">点击层面快速定位。滚轮逐层切换；滑块可连续浏览。影像来自独立的公开教学样本，与左侧三维模型并非同一受检者。</p>
+            <p class="anatomy-slice-help">点击层面快速定位。滚轮逐层切换；滑块可连续浏览。绿色点位仅出现在人工核对的代表层面，不表示全层面像素分割。各组影像来自独立教学样本，与三维模型并非同一受检者；腹盆部样本含肝脏病灶。</p>
           </aside>
         </div>
       </div>
-      <details class="anatomy-sources"><summary>数据来源与使用范围</summary><p>三维模型节选自 <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html" target="_blank" rel="noopener noreferrer">BodyParts3D 4.0</a>：BodyParts3D, © The Database Center for Life Science licensed under <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>。网页几何数据以 <a href="https://github.com/ashemag/human-atlas" target="_blank" rel="noopener noreferrer">Human Atlas</a> 的开放转换结果为中间来源，影研社选取并重打包 129 个结构。断层影像来自 <a href="https://www.slicer.org/wiki/SampleData" target="_blank" rel="noopener noreferrer">3D Slicer SampleData</a> 的 CTChest 和 MRHead，经窗位映射及 WebP 转换。所附扫描图谱仅用于确定学习范围，未复制其图片。此模块用于正常解剖教学，不用于诊断。</p></details>
+      <details class="anatomy-sources"><summary>数据来源与使用范围</summary><p>三维模型节选自 <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html" target="_blank" rel="noopener noreferrer">BodyParts3D 4.0</a>：BodyParts3D, © The Database Center for Life Science licensed under <a href="https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>。网页几何数据以 <a href="https://github.com/ashemag/human-atlas" target="_blank" rel="noopener noreferrer">Human Atlas</a> 的开放转换结果为中间来源，影研社重新筛选并打包 655 个结构；另有 14 条自行绘制的周围神经示意曲线，不能用于精确定位。断层影像的胸部 CT、头部 MRI 来自 <a href="https://github.com/Slicer/Slicer/blob/main/Modules/Scripted/SampleData/SampleData.py" target="_blank" rel="noopener noreferrer">3D Slicer SampleData</a>；腹盆部 CT 来自 Medical Segmentation Decathlon Task03_Liver，经 3D Slicer 分发，原始数据使用 <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>，本站转换的腹盆部切片按相同许可提供。所附扫描图谱仅用于确定学习范围，未复制书页或插图。此模块用于解剖教学，不用于临床诊断。</p></details>
     </section>
 
     <section class="view" id="diseaseLibrary">
@@ -440,7 +443,7 @@
   <script src="medical-reviews.js?v=atlas10"></script>
   <script src="case-packages.js?v=atlas29"></script>
   <script src="sop-data.js?v=sop1"></script>
-  <script src="app.js?v=anatomy3"></script>
+  <script src="app.js?v=anatomy4"></script>
   <script src="sop.js?v=sop1"></script>
   <script src="mylibrary.js?v=mylib2"></script>
   <script src="auth-config.js?v=auth1"></script>

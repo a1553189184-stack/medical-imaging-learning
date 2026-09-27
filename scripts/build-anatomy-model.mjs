@@ -7,16 +7,19 @@ const source = process.argv[2];
 const output = process.argv[3] || 'assets/anatomy/model';
 if (!source) throw new Error('Usage: node scripts/build-anatomy-model.mjs <human-atlas/public/models> [output]');
 const atlas = JSON.parse(await readFile(join(source, 'atlas.json'), 'utf8'));
+const majorArteries = /(?:aorta|carotid artery|vertebral artery|subclavian artery|axillary artery|brachial artery|radial artery|ulnar artery|femoral artery|popliteal artery|anterior tibial artery|posterior tibial artery|fibular artery|common iliac artery|external iliac artery|internal iliac artery|renal artery|celiac trunk|superior mesenteric artery|inferior mesenteric artery|basilar artery|anterior cerebral artery|middle cerebral artery|posterior cerebral artery|anterior communicating artery|posterior communicating artery|ophthalmic artery|superficial temporal artery|facial artery|dorsalis pedis artery|palmar arch)/i;
+const majorVeins = /(?:superior vena cava|inferior vena cava|jugular vein|subclavian vein|axillary vein|brachial vein|cephalic vein|basilic vein|radial vein|ulnar vein|femoral vein|popliteal vein|great saphenous vein|small saphenous vein|renal vein|portal vein|common iliac vein|external iliac vein|internal iliac vein)/i;
 const selected = atlas.parts.filter(part => {
   const name = part.name;
   if (part.id === 'FJ2810') return true; // adult reference skin surface
-  if (part.system === 'skeletal') return /(?:\b(?:rib|vertebra|sternum|sacrum|coccyx|femur|humerus|clavicle|scapula|hip bone|mandible|frontal bone|parietal bone|occipital bone|patella|tibia|fibula)\b)/i.test(name);
+  if (part.system === 'skeletal') return !/(?:fibularis|iliotibial tract|tibialis anterior|tibialis posterior|subscapularis|levator scapulae|gingiva)/i.test(name);
   if (part.system === 'digestive') return /^(Pancreas|Stomach|Gallbladder|Esophagus|Duodenum|Appendix|Rectum|Ascending colon|Descending colon|Transverse colon|Caudate lobe of liver|Hepatovenous segment)/i.test(name);
   if (part.system === 'urinary') return /^(Left kidney|Right kidney|Urinary bladder|Left ureter|Right ureter)$/i.test(name);
   if (part.system === 'cardiac') return /^(Wall of ventricle|Wall of left atrium|Wall of right atrium|Cavity of left ventricle|Cavity of right ventricle)/i.test(name);
   if (part.system === 'respiratory') return /^(Trachea|Left main bronchus|Right main bronchus proper)$/i.test(name);
-  if (part.system === 'nervous') return /^(White matter of .* cerebral hemisphere|Cerebellum|Midbrain|Pons|Medulla oblongata|Spinal cord)$/i.test(name);
-  if (part.system === 'arterial') return /^(Ascending aorta|Arch of aorta|Descending thoracic aorta|Abdominal aorta)$/i.test(name);
+  if (part.system === 'nervous') return true;
+  if (part.system === 'arterial') return majorArteries.test(name);
+  if (part.system === 'venous') return majorVeins.test(name);
   return false;
 });
 const chunks = new Map();

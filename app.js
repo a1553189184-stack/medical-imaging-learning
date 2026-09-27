@@ -197,7 +197,7 @@ function showView(view, updateUrl = true) {
   if (view === 'cases') renderCases();
   if (view === 'dicom') renderDicomStudies();
   if (view === 'diseaseLibrary') renderDiseaseLibrary();
-  if (view === 'threeDBody') import('./assets/anatomy/runtime/anatomy.js?v=2').then(function(studio) { studio.mount(); }).catch(function(error) { const status = $('#anatomyLoading'); if (status) status.textContent = '三维模块暂时无法加载：' + error.message; console.error('Anatomy module:', error); });
+  if (view === 'threeDBody') import('./assets/anatomy/runtime/anatomy.js?v=3').then(function(studio) { studio.mount(); }).catch(function(error) { const status = $('#anatomyLoading'); if (status) status.textContent = '三维模块暂时无法加载：' + error.message; console.error('Anatomy module:', error); });
   if (view === 'sop' && window.SopCenter) window.SopCenter.render();
   if (view === 'progress') updateStats();
   if (view === 'mylibrary' && window.__myLib) window.__myLib.render();

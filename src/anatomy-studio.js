@@ -6,7 +6,7 @@ const $$ = selector => [...document.querySelectorAll(selector)];
 const asset = path => new URL(`assets/anatomy/${path}`, document.baseURI).href;
 const systems = {
   skeletal: ['骨骼', '#e7dac1'], nervous: ['神经', '#e6a772'], cardiac: ['心脏', '#d46b71'],
-  respiratory: ['呼吸', '#93bdd1'], digestive: ['消化', '#c6a76c'], urinary: ['泌尿', '#bd91bc'], arterial: ['动脉', '#e37d72']
+  respiratory: ['呼吸', '#93bdd1'], digestive: ['消化', '#c6a76c'], urinary: ['泌尿', '#bd91bc'], arterial: ['动脉', '#e37d72'], venous: ['静脉', '#7f9fcb'], peripheralNerve: ['周围神经示意', '#f0c970']
 };
 const translations = {
   'Skin':'体表', 'Frontal bone':'额骨', 'Occipital bone':'枕骨', 'Mandible':'下颌骨',
@@ -21,9 +21,71 @@ const translations = {
   'Cavity of left ventricle':'左心室腔', 'Cavity of right ventricle':'右心室腔', 'Body of sternum':'胸骨体',
   'Ascending aorta':'升主动脉', 'Arch of aorta':'主动脉弓', 'Descending thoracic aorta':'胸降主动脉', 'Abdominal aorta':'腹主动脉'
 };
+const boneNames = {
+  radius:'桡骨', ulna:'尺骨', maxilla:'上颌骨', 'nasal bone':'鼻骨', 'zygomatic bone':'颧骨',
+  'temporal bone':'颞骨', 'palatine bone':'腭骨', calcaneus:'跟骨', talus:'距骨',
+  scaphoid:'舟骨', lunate:'月骨', triquetral:'三角骨', pisiform:'豌豆骨',
+  trapezium:'大多角骨', trapezoid:'小多角骨', capitate:'头状骨', hamate:'钩骨',
+  'cuboid bone':'骰骨', 'medial cuneiform bone':'内侧楔骨', 'intermediate cuneiform bone':'中间楔骨',
+  'lateral cuneiform bone':'外侧楔骨', 'navicular bone':'足舟骨', 'hip bone':'髋骨',
+  'first metacarpal bone':'第一掌骨', 'second metacarpal bone':'第二掌骨', 'third metacarpal bone':'第三掌骨',
+  'fourth metacarpal bone':'第四掌骨', 'fifth metacarpal bone':'第五掌骨',
+  'first metatarsal bone':'第一跖骨', 'second metatarsal bone':'第二跖骨', 'third metatarsal bone':'第三跖骨',
+  'fourth metatarsal bone':'第四跖骨', 'fifth metatarsal bone':'第五跖骨'
+};
+const vesselAndNerveNames = {
+  'internal carotid artery':'颈内动脉','common carotid artery':'颈总动脉','external carotid artery':'颈外动脉',
+  'vertebral artery':'椎动脉','subclavian artery':'锁骨下动脉','axillary artery':'腋动脉',
+  'brachial artery':'肱动脉','radial artery':'桡动脉','ulnar artery':'尺动脉',
+  'femoral artery':'股动脉','popliteal artery':'腘动脉','anterior tibial artery':'胫前动脉',
+  'posterior tibial artery':'胫后动脉','renal artery':'肾动脉','ophthalmic artery':'眼动脉',
+  'anterior cerebral artery':'大脑前动脉','middle cerebral artery':'大脑中动脉','posterior cerebral artery':'大脑后动脉',
+  'internal jugular vein':'颈内静脉','external jugular vein':'颈外静脉','subclavian vein':'锁骨下静脉',
+  'axillary vein':'腋静脉','brachial vein':'肱静脉','cephalic vein':'头静脉','basilic vein':'贵要静脉',
+  'femoral vein':'股静脉','popliteal vein':'腘静脉','renal vein':'肾静脉','radial vein':'桡静脉',
+  'ulnar vein':'尺静脉','great saphenous vein':'大隐静脉','small saphenous vein':'小隐静脉',
+  'dorsalis pedis artery':'足背动脉','deep palmar arch':'掌深弓','portal vein':'门静脉',
+  'optic nerve':'视神经','ophthalmic nerve':'眼神经',
+  'oculomotor nerve':'动眼神经','trochlear nerve':'滑车神经','frontal nerve':'额神经',
+  'lacrimal nerve':'泪腺神经','nasociliary nerve':'鼻睫神经','supra-orbital nerve':'眶上神经',
+  'supratrochlear nerve':'滑车上神经','thalamus':'丘脑','hippocampus':'海马',
+  'caudate nucleus':'尾状核','putamen':'壳核','amygdala':'杏仁核','internal capsule':'内囊',
+  'globus pallidus':'苍白球','median nerve':'正中神经','ulnar nerve':'尺神经',
+  'radial nerve':'桡神经','sciatic nerve':'坐骨神经','tibial nerve':'胫神经',
+  'common fibular nerve':'腓总神经','femoral nerve':'股神经'
+};
+const otherNames = {
+  'Corpus callosum':'胼胝体','Optic chiasm':'视交叉','Hypothalamus':'下丘脑','Basilar artery':'基底动脉',
+  'Anterior communicating artery':'前交通动脉','Superior mesenteric artery':'肠系膜上动脉',
+  'Hepatic portal vein':'肝门静脉','Ethmoid':'筛骨','Sphenoid bone':'蝶骨','Vomer':'犁骨',
+  'Hyoid bone':'舌骨','Atlas':'寰椎','Axis':'枢椎','Manubrium':'胸骨柄','Xiphoid process':'剑突',
+  'Cerebral aqueduct':'中脑导水管','Anterior commissure':'前连合','Posterior commissure':'后连合',
+  'Left portal vein':'左门静脉','Right portal vein':'右门静脉','Pre-hepatic portal vein':'肝前门静脉',
+  'Cricoid cartilage':'环状软骨','Thyroid cartilage':'甲状软骨','Tentorium cerebelli':'小脑幕'
+};
 const ordinals = {first:1,second:2,third:3,fourth:4,fifth:5,sixth:6,seventh:7,eighth:8,ninth:9,tenth:10,eleventh:11,twelfth:12};
 function chineseName(name) {
   if (translations[name]) return translations[name];
+  if (otherNames[name]) return otherNames[name];
+  if (vesselAndNerveNames[name.toLowerCase()]) return vesselAndNerveNames[name.toLowerCase()];
+  const side = name.match(/^(Left|Right) (.+)$/i);
+  if (side) {
+    const prefix = side[1].toLowerCase() === 'left' ? '左' : '右';
+    const base = side[2].toLowerCase();
+    if (boneNames[base]) return prefix + boneNames[base];
+    if (vesselAndNerveNames[base]) return prefix + vesselAndNerveNames[base];
+  }
+  const phalanx = name.match(/^(Distal|Middle|Proximal) phalanx of (left|right) (.+)$/i);
+  if (phalanx) {
+    const digit = {'thumb':'拇指','index finger':'食指','middle finger':'中指','ring finger':'环指','little finger':'小指','big toe':'拇趾','second toe':'第二趾','third toe':'第三趾','fourth toe':'第四趾','little toe':'第五趾'}[phalanx[3].toLowerCase()];
+    if (digit) return `${phalanx[2].toLowerCase()==='left'?'左':'右'}${digit}${{distal:'远节',middle:'中节',proximal:'近节'}[phalanx[1].toLowerCase()]}${phalanx[3].includes('toe')?'趾骨':'指骨'}`;
+  }
+  const tooth=name.match(/^(Left|Right) (upper|lower) (?:(first|second|central|lateral) )?secondary (molar|premolar|incisor|canine) tooth$/i);
+  if (tooth) return `${tooth[1]==='Left'?'左':'右'}${tooth[2]==='upper'?'上':'下'}${{first:'第一',second:'第二',central:'中切',lateral:'侧切'}[tooth[3]]||''}${{molar:'恒磨牙',premolar:'前磨牙',incisor:'牙',canine:'尖牙'}[tooth[4]]}`;
+  const navicular=name.match(/^Navicular bone of (left|right) foot$/i);
+  if(navicular)return `${navicular[1]==='left'?'左':'右'}足舟骨`;
+  const sesamoid=name.match(/^Sesamoid bone of (left|right) foot$/i);
+  if(sesamoid)return `${sesamoid[1]==='left'?'左':'右'}足籽骨`;
   const paired = name.match(/^(Left|Right) (clavicle|fibula|humerus|patella|scapula|tibia|ureter)$/i);
   if (paired) return `${paired[1] === 'Left' ? '左' : '右'}${{clavicle:'锁骨',fibula:'腓骨',humerus:'肱骨',patella:'髌骨',scapula:'肩胛骨',tibia:'胫骨',ureter:'输尿管'}[paired[2].toLowerCase()]}`;
   const rib = name.match(/^(Left|Right) (\w+) rib$/i);
@@ -47,15 +109,50 @@ const landmarks = {
     [10,'外侧层面','从外向内观察头皮与颅骨'], [35,'大脑半球','观察皮质与白质轮廓'],
     [65,'近中线矢状面','辨认胼胝体、小脑和脑干'], [95,'对侧半球','比较脑沟与脑室邻近结构'],
     [120,'外侧层面','观察颞部与颅骨外侧']
+  ],
+  headAxial: [
+    [70,'大脑凸面','观察额叶、顶叶和枕叶皮质'], [110,'大脑深部','观察双侧大脑半球与脑室周围'],
+    [150,'后颅窝','观察小脑与眼眶'], [190,'颌面部','观察牙列、咽腔和颈部']
+  ],
+  abdomen: [
+    [70,'骨盆下部','观察股骨头和直肠'], [120,'骨盆上部','观察髂骨与肠袢'],
+    [170,'腰椎中段','观察腹主动脉、腰大肌和肠袢'], [220,'双肾层面','观察肝脏与双肾'],
+    [270,'肝脾层面','观察肝脏、脾脏和胃']
   ]
 };
+const regionMatchers = {
+  forearm: part => /(?:radius|ulna|radial|ulnar|carpi|pronator)/i.test(part.name),
+  hand: part => /(?:carpal|metacarpal|finger|thumb|palmar|scaphoid|lunate|triquetral|pisiform|trapezium|trapezoid|capitate|hamate)/i.test(part.name),
+  foot: part => /(?:tarsal|metatarsal|toe|calcaneus|talus|navicular bone|cuneiform bone|cuboid bone|dorsalis pedis)/i.test(part.name),
+  face: part => /(?:maxilla|mandible|nasal bone|zygomatic|palatine bone|vomer|tooth|optic nerve|ophthalmic nerve|lacrimal nerve|frontal bone)/i.test(part.name),
+  vessels: part => part.system === 'arterial' || part.system === 'venous',
+  nerves: part => part.system === 'nervous' || part.system === 'peripheralNerve'
+};
+const schematicNerveRoutes = {
+  'median nerve': [[.08,1.46,.01],[.14,1.37,.018],[.17,1.26,.035],[.215,1.11,.038],[.235,1.00,.035],[.255,.89,.04],[.285,.83,.042]],
+  'ulnar nerve': [[.08,1.46,.01],[.14,1.37,.012],[.165,1.25,-.018],[.205,1.11,-.038],[.218,1.00,.005],[.233,.89,.015],[.265,.82,.02]],
+  'radial nerve': [[.09,1.45,.005],[.16,1.34,-.03],[.20,1.24,-.05],[.225,1.13,-.025],[.265,1.01,.0],[.275,.90,-.018],[.300,.83,-.017]],
+  'femoral nerve': [[.055,1.01,.015],[.08,.90,.035],[.095,.80,.04],[.10,.68,.045],[.10,.55,.035]],
+  'sciatic nerve': [[.055,.92,-.07],[.085,.82,-.07],[.10,.70,-.075],[.10,.58,-.072],[.095,.46,-.065]],
+  'tibial nerve': [[.095,.46,-.065],[.075,.37,-.055],[.07,.25,-.052],[.075,.12,-.045],[.078,.06,-.035]],
+  'common fibular nerve': [[.095,.46,-.064],[.11,.39,-.055],[.115,.33,-.035],[.11,.23,-.005],[.10,.12,.012]]
+};
+const featuredNames = [
+  'Left radius','Left ulna','Left scaphoid','Left first metacarpal bone','Left talus','Left calcaneus',
+  'Left maxilla','Left zygomatic bone','Mandible','Frontal bone','Left optic nerve','Corpus callosum',
+  'Left thalamus','Cerebellum','Left brachial artery','Left radial artery','Left ulnar artery',
+  'Left femoral artery','Left anterior tibial artery','Left cephalic vein','Left great saphenous vein',
+  'Pancreas','Stomach','Left kidney','Right kidney','Trachea',
+  'Left median nerve','Left ulnar nerve','Left radial nerve','Left sciatic nerve'
+];
 
 let initialized = false;
 let modelReady = false;
 let sliceReady = false;
-let scene, camera, renderer, controls, meshes = [], metadata, partRecords = [];
+let scene, camera, renderer, controls, meshes = [], metadata, annotations, partRecords = [];
 let activeSystems = new Set(Object.keys(systems));
 let selectedId = null;
+let activeRegion = null;
 let isolatedId = null;
 const hiddenParts = new Set(), translucentParts = new Set();
 let playback = null;
@@ -135,13 +232,19 @@ function renderStructureList() {
   const target = $('#anatomyStructureList');
   const query = $('#anatomySearch').value.trim().toLocaleLowerCase();
   target.replaceChildren();
-  const visible = partRecords.filter(part => part.system !== 'integumentary' && activeSystems.has(part.system) && (`${part.name} ${chineseName(part.name)} ${systems[part.system]?.[0] || ''}`).toLocaleLowerCase().includes(query));
+  const featured = !query && !activeRegion && activeSystems.size === Object.keys(systems).length;
+  const source = featured ? featuredNames.map(name=>partRecords.find(part=>part.name===name)).filter(Boolean) : partRecords;
+  const visible = source.filter(part => part.system !== 'integumentary' && activeSystems.has(part.system) && (!activeRegion || regionMatchers[activeRegion](part)) && (`${part.name} ${chineseName(part.name)} ${systems[part.system]?.[0] || ''}`).toLocaleLowerCase().includes(query));
+  if (activeRegion === 'nerves') visible.sort((a,b)=>Number(Boolean(b.schematic))-Number(Boolean(a.schematic)));
   if (!visible.length) { const empty = document.createElement('p'); empty.className = 'anatomy-list-empty'; empty.textContent = '没有匹配的结构。'; target.append(empty); return; }
-  for (const part of visible) {
+  const summary=document.createElement('p');summary.className='anatomy-list-summary';summary.textContent=featured ? '常用结构 · 搜索或选择部位可查看全部' : visible.length>100 ? `找到 ${visible.length} 个结构 · 显示前 100 个；输入名称可精确查找` : `${visible.length} 个结构`;
+  target.append(summary);
+  for (const part of visible.slice(0,100)) {
     const button = document.createElement('button'); button.type = 'button';
     button.className = selectedId === part.id ? 'active' : '';
-    button.textContent = chineseName(part.name);
-    const small = document.createElement('small'); small.textContent = part.name; button.append(small);
+    const translated=chineseName(part.name);
+    button.textContent = translated;
+    const small = document.createElement('small'); small.textContent = translated === part.name ? systems[part.system]?.[0] || '' : part.name; button.append(small);
     if (hiddenParts.has(part.id)) {button.classList.add('is-hidden');button.title='当前已隐藏，点击可重新显示';}
     if (isolatedId === part.id) button.classList.add('is-isolated');
     button.onclick = () => selectPart(part.id, true);
@@ -153,13 +256,16 @@ function selectPart(id, focus) {
   if (id && isolatedId && isolatedId !== id) {isolatedId = null; updateModelVisibility();}
   selectedId = id;
   const part = partRecords.find(item => item.id === id);
+  const pickLabel = $('#anatomyPickLabel');
+  pickLabel.hidden = !part;
+  if (part) pickLabel.textContent = `${chineseName(part.name)} · ${part.name}`;
   if (part && hiddenParts.delete(id)) updateModelVisibility();
   for (const mesh of meshes) mesh.material.emissive.set(mesh.userData.id === id ? '#2a9b77' : '#000000');
   const box = $('#anatomySelection');
   box.replaceChildren();
   if (part) {
     const title = document.createElement('b'); title.textContent = chineseName(part.name);
-    const detail = document.createElement('span'); detail.textContent = `${part.name} · ${systems[part.system]?.[0] || '体表'} · 成人参考模型`;
+    const detail = document.createElement('span'); detail.textContent = part.schematic ? `${part.name} · 教学示意走行，非真实神经分割` : `${part.name} · ${systems[part.system]?.[0] || '体表'} · 成人参考模型`;
     box.append(title, detail);
     if (focus) {
       const bounds = new THREE.Box3(new THREE.Vector3(...part.bounds[0]), new THREE.Vector3(...part.bounds[1]));
@@ -190,7 +296,8 @@ async function initModel() {
     if (!manifestResponse.ok || !bodyResponse.ok) throw new Error('三维数据暂时不可用');
     const manifest = await manifestResponse.json();
     const buffer = await bodyResponse.arrayBuffer();
-    partRecords = manifest.parts;
+    partRecords = [...manifest.parts];
+    $('#anatomyCount').textContent = `${partRecords.length} 个三维结构 · 868 个断层层面`;
     scene = new THREE.Scene(); scene.background = new THREE.Color('#0b171a');
     camera = new THREE.PerspectiveCamera(38, 1, .01, 20);
     camera.position.set(.7, 1.02, 2.25);
@@ -215,10 +322,42 @@ async function initModel() {
       mesh.userData = {id:part.id, system:part.system};
       scene.add(mesh); meshes.push(mesh);
     }
+    for (const [nerve,route] of Object.entries(schematicNerveRoutes)) {
+      for (const [side,sign] of [['Left',1],['Right',-1]]) {
+        const points=route.map(([x,y,z])=>new THREE.Vector3(x*sign,y,z));
+        const curve=new THREE.CatmullRomCurve3(points);
+        const geometry=new THREE.TubeGeometry(curve,36,.0025,6,false);
+        const material=new THREE.MeshStandardMaterial({color:systems.peripheralNerve[1],roughness:.6,emissive:'#604716',emissiveIntensity:.2});
+        const id=`schematic:${side}:${nerve}`;
+        const mesh=new THREE.Mesh(geometry,material);mesh.userData={id,system:'peripheralNerve'};
+        scene.add(mesh);meshes.push(mesh);
+        const bounds=new THREE.Box3().setFromObject(mesh);
+        partRecords.push({id,name:`${side} ${nerve}`,system:'peripheralNerve',bounds:[bounds.min.toArray(),bounds.max.toArray()],schematic:true});
+      }
+    }
+    $('#anatomyCount').textContent = `${manifest.parts.length} 个三维结构 + 14 条周围神经示意 · 868 个断层层面`;
     renderSystemButtons(); updateModelVisibility();
     $('#anatomySearch').oninput = renderStructureList;
     $('#anatomySkin').onchange = updateModelVisibility;
     $('#anatomyReset').onclick = () => {controls.target.copy(modelTarget); camera.position.set(.7,1.02,2.25); controls.update(); selectPart(null,false);};
+    $$('#threeDBody [data-anatomy-region]').forEach(button => button.onclick = () => {
+      const region = button.dataset.anatomyRegion;
+      activeRegion = activeRegion === region ? null : region;
+      $$('#threeDBody [data-anatomy-region]').forEach(item => {const active=item.dataset.anatomyRegion===activeRegion;item.classList.toggle('active',active);item.setAttribute('aria-pressed',String(active));});
+      if (activeRegion) {
+        const matched = partRecords.filter(part => regionMatchers[activeRegion](part) && part.system !== 'integumentary');
+        for (const part of matched) activeSystems.add(part.system);
+        renderSystemButtons(); updateModelVisibility();
+        if (!['vessels','nerves'].includes(activeRegion)) {
+          const left = matched.filter(part => part.name.startsWith('Left '));
+          const regionParts = left.length ? left : matched;
+          const box = new THREE.Box3();
+          for (const part of regionParts) box.union(new THREE.Box3(new THREE.Vector3(...part.bounds[0]),new THREE.Vector3(...part.bounds[1])));
+          if (!box.isEmpty()) {const center=box.getCenter(new THREE.Vector3());const distance=Math.min(1.4,Math.max(.3,box.getSize(new THREE.Vector3()).length()*2.3));controls.target.copy(center);camera.position.copy(center).add(new THREE.Vector3(distance*.5,distance*.2,distance));controls.update();}
+        }
+      }
+      renderStructureList();
+    });
     $$('#threeDBody [data-anatomy-view]').forEach(button => button.onclick = () => {
       controls.target.copy(modelTarget);
       const view = button.dataset.anatomyView;
@@ -228,6 +367,7 @@ async function initModel() {
     $$('#threeDBody [data-anatomy-preset]').forEach(button => button.onclick = () => {
       const preset = button.dataset.anatomyPreset;
       activeSystems = new Set(preset === 'skeletal' ? ['skeletal'] : Object.keys(systems).filter(key => preset !== 'organs' || key !== 'skeletal'));
+      activeRegion=null;$$('#threeDBody [data-anatomy-region]').forEach(item=>{item.classList.remove('active');item.setAttribute('aria-pressed','false');});
       isolatedId = null;
       $('#anatomySkin').checked = preset === 'all';
       renderSystemButtons(); updateModelVisibility(); selectPart(null,false);
@@ -235,7 +375,7 @@ async function initModel() {
     $('#anatomyIsolate').onclick = () => {if (!selectedId) return; isolatedId = isolatedId === selectedId ? null : selectedId; updateModelVisibility(); selectPart(selectedId,false);};
     $('#anatomyHide').onclick = () => {if (!selectedId) return; hiddenParts.add(selectedId); isolatedId = null; updateModelVisibility(); selectPart(null,false);};
     $('#anatomyTranslucent').onclick = () => {if (!selectedId) return; if (translucentParts.has(selectedId)) translucentParts.delete(selectedId); else translucentParts.add(selectedId); updateModelVisibility(); selectPart(selectedId,false);};
-    $('#anatomyRestore').onclick = () => {hiddenParts.clear();translucentParts.clear();isolatedId=null;activeSystems=new Set(Object.keys(systems));$('#anatomySkin').checked=true;renderSystemButtons();updateModelVisibility();selectPart(null,false);};
+    $('#anatomyRestore').onclick = () => {hiddenParts.clear();translucentParts.clear();isolatedId=null;activeRegion=null;$$('#threeDBody [data-anatomy-region]').forEach(item=>{item.classList.remove('active');item.setAttribute('aria-pressed','false');});activeSystems=new Set(Object.keys(systems));$('#anatomySkin').checked=true;renderSystemButtons();updateModelVisibility();selectPart(null,false);};
     const ray = new THREE.Raycaster();
     const hitPart = event => {
       const rect = renderer.domElement.getBoundingClientRect();
@@ -262,13 +402,13 @@ async function initModel() {
     });
     new ResizeObserver(resize).observe($('#anatomyStage'));
     resize(); loading.hidden = true;
-    const animate = () => {requestAnimationFrame(animate); if ($('#anatomyPanelModel').hidden) return; controls.update(); renderer.render(scene,camera);};
+    const animate = () => {requestAnimationFrame(animate); if ($('#anatomyPanelModel').hidden || !$('#threeDBody').classList.contains('active')) return; controls.update(); renderer.render(scene,camera);};
     animate();
   } catch (error) { loading.textContent = `模型加载失败：${error.message}。请刷新页面重试。`; modelReady = false; }
 }
 
 function updateZoom() {
-  $('#anatomySliceImage').style.transform = `translate(${panX}px, ${panY}px) scale(${zoom})`;
+  $('#anatomySliceImageWrap').style.transform = `translate(${panX}px, ${panY}px) scale(${zoom})`;
 }
 function stopPlayback() {
   if (playback) {clearInterval(playback);playback=null;}
@@ -280,8 +420,9 @@ function showSlice() {
   const info = metadata[dataset];
   sliceIndex = Math.max(0, Math.min(info.count - 1, sliceIndex));
   if (playback && sliceIndex === info.count - 1) stopPlayback();
-  const view = dataset === 'chest' ? windowName : 'sagittal';
-  const src = asset(`slices/${dataset}/${view}/${String(sliceIndex).padStart(3,'0')}.webp`);
+  const view = dataset === 'chest' || dataset === 'abdomen' ? windowName : dataset === 'headAxial' ? 'axial' : 'sagittal';
+  const folder = dataset === 'headAxial' ? 'head' : dataset;
+  const src = asset(`slices/${folder}/${view}/${String(sliceIndex).padStart(3,'0')}.webp`);
   const image = $('#anatomySliceImage');
   const status = $('#anatomySliceStatus'); status.hidden = false; status.textContent = '正在加载层面…';
   image.onload = () => {status.hidden = true;};
@@ -292,11 +433,29 @@ function showSlice() {
   $('#anatomySliceTitle').textContent = info.title;
   $('#anatomySliceCounter').textContent = `${sliceIndex+1} / ${info.count}`;
   $('#anatomySlicePosition').textContent = `第 ${sliceIndex+1} / ${info.count} 层 · 层距约 ${info.spacingMm} mm`;
-  $('#anatomyOrientation').textContent = dataset === 'chest' ? '轴位 · 图像左侧为受检者右侧' : '矢状位 · 图像左侧为前方';
+  $('#anatomyOrientation').textContent = dataset === 'head' ? '矢状位 · 图像左侧为前方' : '轴位 · 图像左侧为受检者右侧';
   const near = landmarks[dataset].reduce((best,item) => Math.abs(item[0]-sliceIndex) < Math.abs(best[0]-sliceIndex) ? item : best);
   $('#anatomySliceDescription').textContent = `当前位于「${near[1]}」附近。${near[2]}；可逐层观察结构连续变化。`;
   $$('#anatomyLandmarks button').forEach(button => button.classList.toggle('active', Number(button.dataset.slice) === near[0]));
-  for (const offset of [-1,1]) {const next = sliceIndex+offset; if (next >= 0 && next < info.count) {const preload = new Image(); preload.src = asset(`slices/${dataset}/${view}/${String(next).padStart(3,'0')}.webp`);}}
+  renderSliceAnnotations();
+  for (const offset of [-1,1]) {const next = sliceIndex+offset; if (next >= 0 && next < info.count) {const preload = new Image(); preload.src = asset(`slices/${folder}/${view}/${String(next).padStart(3,'0')}.webp`);}}
+}
+function renderSliceAnnotations() {
+  const target = $('#anatomySliceMarkers'); target.replaceChildren();
+  const points = annotations?.[dataset]?.[sliceIndex] || [];
+  const output = $('#anatomySliceAnnotation');
+  output.replaceChildren();
+  const title=document.createElement('b');title.textContent=points.length ? `本层已核对 ${points.length} 处结构` : '本层暂无结构标记';
+  const detail=document.createElement('span');detail.textContent=points.length ? '点击影像上的圆点，查看对应结构名称。' : '可继续逐层浏览；仅在人工核对的代表层面显示名称。';
+  output.append(title,detail);
+  for (let i=0;i<points.length;i++) {
+    const [x,y,name,english]=points[i];
+    const button=document.createElement('button');button.type='button';button.className='anatomy-slice-marker';
+    button.style.left=`${x*100}%`;button.style.top=`${y*100}%`;button.textContent=String(i+1);
+    button.title=name;button.setAttribute('aria-label',`${name} ${english}`);
+    button.onclick=event=>{event.stopPropagation();output.replaceChildren();const label=document.createElement('b');label.textContent=name;const sub=document.createElement('span');sub.textContent=`${english} · 第 ${sliceIndex+1} 层 · 人工核对点位`;output.append(label,sub);$$('#anatomySliceMarkers button').forEach(item=>item.classList.toggle('active',item===button));};
+    target.append(button);
+  }
 }
 function renderLandmarks() {
   const target = $('#anatomyLandmarks'); target.replaceChildren();
@@ -309,19 +468,20 @@ function renderLandmarks() {
 }
 function setDataset(name) {
   stopPlayback();
-  dataset=name; sliceIndex=name==='chest'?75:65; windowName='soft'; zoom=1;panX=0;panY=0;updateZoom();
+  dataset=name; sliceIndex={chest:75,abdomen:220,headAxial:110,head:65}[name]; windowName='soft'; zoom=1;panX=0;panY=0;updateZoom();
   $$('#threeDBody [data-anatomy-dataset]').forEach(button=>button.classList.toggle('active',button.dataset.anatomyDataset===name));
-  $('#anatomyWindowGroup').hidden=name!=='chest';
-  $$('#threeDBody [data-anatomy-window]').forEach(button=>button.classList.toggle('active',button.dataset.anatomyWindow==='soft'));
+  $('#anatomyWindowGroup').hidden=!['chest','abdomen'].includes(name);
+  $$('#threeDBody [data-anatomy-window]').forEach(button=>{button.hidden=!metadata[name].views.includes(button.dataset.anatomyWindow);button.classList.toggle('active',button.dataset.anatomyWindow==='soft');});
   $('#anatomySliceRange').max=String(metadata[name].count-1);
   renderLandmarks(); showSlice();
 }
 async function initSlices() {
   sliceReady=true;
   try {
-    const response=await fetch(asset('slices/slices.json'));
-    if(!response.ok) throw new Error('无法读取断层目录');
-    metadata=await response.json();
+    const [response,annotationResponse]=await Promise.all([fetch(asset('slices/slices.json')),fetch(asset('slices/annotations.json'))]);
+    if(!response.ok || !annotationResponse.ok) throw new Error('无法读取断层目录或标记');
+    metadata=await response.json();annotations=await annotationResponse.json();
+    $('#anatomyCount').textContent=`${partRecords.filter(part=>!part.schematic).length || 655} 个三维结构 + 14 条周围神经示意 · ${Object.values(metadata).reduce((sum,item)=>sum+item.count,0)} 个断层层面`;
     $$('#threeDBody [data-anatomy-dataset]').forEach(button=>button.onclick=()=>setDataset(button.dataset.anatomyDataset));
     $$('#threeDBody [data-anatomy-window]').forEach(button=>button.onclick=()=>{windowName=button.dataset.anatomyWindow;$$('#threeDBody [data-anatomy-window]').forEach(item=>item.classList.toggle('active',item===button));showSlice();});
     $('#anatomySliceRange').oninput=event=>{sliceIndex=Number(event.target.value);showSlice();};
@@ -340,6 +500,17 @@ async function initSlices() {
     $('#anatomyZoomOut').onclick=()=>{zoom=Math.max(1,zoom-.25);if(zoom===1){panX=0;panY=0;}updateZoom();};
     $('#anatomyZoomReset').onclick=()=>{zoom=1;panX=0;panY=0;updateZoom();};
     const stage=$('#anatomySliceStage');
+    $('#anatomySliceImageWrap').addEventListener('click',event=>{
+      if(event.target.closest('button'))return;
+      const rect=$('#anatomySliceImageWrap').getBoundingClientRect();
+      const x=(event.clientX-rect.left)/rect.width,y=(event.clientY-rect.top)/rect.height;
+      const buttons=[...$('#anatomySliceMarkers').children];
+      const points=annotations?.[dataset]?.[sliceIndex]||[];
+      let nearest=-1,distance=Infinity;
+      points.forEach((point,index)=>{const next=Math.hypot((point[0]-x)*rect.width,(point[1]-y)*rect.height);if(next<distance){distance=next;nearest=index;}});
+      if(nearest>=0 && distance<=Math.max(20,rect.width*.06)) buttons[nearest].click();
+      else {const output=$('#anatomySliceAnnotation');output.replaceChildren();const title=document.createElement('b');title.textContent='此处没有已核对的名称';const detail=document.createElement('span');detail.textContent='请选择圆点标记；本站不会根据灰度自动猜测解剖结构。';output.append(title,detail);}
+    });
     stage.addEventListener('wheel',event=>{event.preventDefault();sliceIndex+=Math.sign(event.deltaY);showSlice();},{passive:false});
     stage.addEventListener('keydown',event=>{if(event.key==='ArrowRight'||event.key==='ArrowDown'){sliceIndex++;showSlice();event.preventDefault();}if(event.key==='ArrowLeft'||event.key==='ArrowUp'){sliceIndex--;showSlice();event.preventDefault();}});
     let drag=null;
@@ -355,5 +526,6 @@ export function mount() {
   initialized=true;
   $('#anatomyTabModel').onclick=()=>selectTab('model');
   $('#anatomyTabSlices').onclick=()=>selectTab('slices');
+  new MutationObserver(()=>{if(!$('#threeDBody').classList.contains('active'))stopPlayback();else if(!$('#anatomyPanelModel').hidden)resize();}).observe($('#threeDBody'),{attributes:true,attributeFilter:['class']});
   selectTab('model');
 }

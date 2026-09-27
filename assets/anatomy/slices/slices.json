@@ -23,5 +23,32 @@
     ],
     "source": "https://github.com/Slicer/SlicerTestingData/releases/download/SHA256/cc211f0dfd9a05ca3841ce1141b292898b2dd2d3f08286affadf823a7e58df93",
     "sha256": "cc211f0dfd9a05ca3841ce1141b292898b2dd2d3f08286affadf823a7e58df93"
+  },
+  "headAxial": {
+    "title": "头部 MRI · 横断面",
+    "count": 256,
+    "width": 256,
+    "height": 256,
+    "spacingMm": 1.0,
+    "views": [
+      "axial"
+    ],
+    "source": "https://github.com/Slicer/SlicerTestingData/releases/download/SHA256/cc211f0dfd9a05ca3841ce1141b292898b2dd2d3f08286affadf823a7e58df93",
+    "sha256": "cc211f0dfd9a05ca3841ce1141b292898b2dd2d3f08286affadf823a7e58df93"
+  },
+  "abdomen": {
+    "title": "腹盆部 CT · 轴位",
+    "count": 343,
+    "width": 512,
+    "height": 512,
+    "spacingMm": 1.4,
+    "views": [
+      "soft",
+      "bone"
+    ],
+    "source": "https://github.com/Slicer/SlicerTestingData/releases/download/SHA256/e16eae0ae6fefa858c5c11e58f0f1bb81834d81b7102e021571056324ef6f37e",
+    "sha256": "e16eae0ae6fefa858c5c11e58f0f1bb81834d81b7102e021571056324ef6f37e",
+    "license": "CC BY-SA 4.0",
+    "originalSeries": "Medical Segmentation Decathlon Task03_Liver/imagesTr/liver_100.nii.gz"
   }
 }
