@@ -35,6 +35,30 @@
       "doi": "10.3390/diagnostics16152462",
       "author": "Teja et al.",
       "title": "Common and Uncommon Splenic Lesions: A Review"
+    },
+    "diagnostics-12-02171": {
+      "pmc": "PMC9498052",
+      "doi": "10.3390/diagnostics12092171",
+      "author": "Bracci et al.",
+      "title": "Adrenal Lesions: A Review of Imaging"
+    },
+    "cancers-17-00849": {
+      "pmc": "PMC11899669",
+      "doi": "10.3390/cancers17050849",
+      "author": "Grazzini et al.",
+      "title": "Adrenal Mass Evaluation: Suspicious Radiological Signs of Malignancy"
+    },
+    "diagnostics-06-00002": {
+      "pmc": "PMC4808817",
+      "doi": "10.3390/diagnostics6010002",
+      "author": "Hansen et al.",
+      "title": "Ultrasonography of the Kidney: A Pictorial Review"
+    },
+    "cancers-15-02799": {
+      "pmc": "PMC10216374",
+      "doi": "10.3390/cancers15102799",
+      "author": "Chartier et al.",
+      "title": "MR Virtual Biopsy of Solid Renal Masses: An Algorithmic Approach"
     }
   },
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -434,6 +458,198 @@
       "license": "CC BY 4.0",
       "localSha256": "a9a52c081ca40a34630ab3b5416fbe918e3257db33de3095f328cf464aa79afd",
       "bytes": 110873
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-v2-0649",
+      "name": "肾上腺皮质腺瘤：功能性（皮质醇腺瘤、醛固酮腺瘤、性激素腺瘤）、无功能腺瘤",
+      "figure": 1,
+      "diagnosis": "Adrenocortical adenoma",
+      "src": "assets/authorized/abdomen/open-review/diagnostics-12-02171-fig1.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9498052/figure/diagnostics-12-02171-f001/",
+      "license": "CC BY 4.0",
+      "localSha256": "42ef214edf30e9e5fb6152542cb0a9aa5985ae564a6cc714ea829f31b2f9ef93",
+      "bytes": 542907
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-v2-0651",
+      "name": "肾上腺囊肿",
+      "figure": 4,
+      "diagnosis": "Adrenal cyst",
+      "src": "assets/authorized/abdomen/open-review/diagnostics-12-02171-fig4.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9498052/figure/diagnostics-12-02171-f004/",
+      "license": "CC BY 4.0",
+      "localSha256": "3cb8e5643755c2305d4b5d01a09e4f7366f6591219df7e98c7b20f6deb75efe1",
+      "bytes": 1884606
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-v2-0654",
+      "name": "肾上腺皮质癌（ACC）：低级别、高级别",
+      "figure": 9,
+      "diagnosis": "Adrenocortical carcinoma",
+      "src": "assets/authorized/abdomen/open-review/cancers-17-00849-fig9.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11899669/figure/cancers-17-00849-f009/",
+      "license": "CC BY 4.0",
+      "localSha256": "4b67b4fbcc702eb0620203f77a795dfe0f4840463d86211be81b82fdb3b30806",
+      "bytes": 910489
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-v2-0687",
+      "name": "肾上腺意外瘤：影像学偶然发现，含无功能腺瘤、增生、囊肿、转移瘤等",
+      "figure": 10,
+      "diagnosis": "Adrenal incidentaloma",
+      "src": "assets/authorized/abdomen/open-review/cancers-17-00849-fig10.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11899669/figure/cancers-17-00849-f010/",
+      "license": "CC BY 4.0",
+      "localSha256": "b4ff026e52f0e38370483af84fa7402ffce87c2f2379651df20d20f60f6d8988",
+      "bytes": 835953
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-v2-0837",
+      "name": "肾脏淋巴瘤（原发 / 继发累及）",
+      "figure": 10,
+      "diagnosis": "Renal lymphoma",
+      "src": "assets/authorized/abdomen/open-review/diagnostics-06-00002-fig10.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4808817/figure/diagnostics-06-00002-f010/",
+      "license": "CC BY 4.0",
+      "localSha256": "b79d739f07701894e88f9314db94b82565fbc3798b0e78fada026bcea795d883",
+      "bytes": 827880
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-v2-0768",
+      "name": "肾盂输尿管连接部梗阻（UPJO）",
+      "figure": 13,
+      "diagnosis": "Hydronephrosis due to ureteropelvic junction obstruction",
+      "src": "assets/authorized/abdomen/open-review/diagnostics-06-00002-fig13.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4808817/figure/diagnostics-06-00002-f013/",
+      "license": "CC BY 4.0",
+      "localSha256": "d0f4e92a1d61b52b05942807e3eaf2d8a8b7582f15f2ece0109d36c21576883d",
+      "bytes": 608605
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-v2-0775",
+      "name": "输尿管反流",
+      "figure": 14,
+      "diagnosis": "Vesicoureteric reflux",
+      "src": "assets/authorized/abdomen/open-review/diagnostics-06-00002-fig14.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4808817/figure/diagnostics-06-00002-f014/",
+      "license": "CC BY 4.0",
+      "localSha256": "e849841e1215ce7f84ffbb52a306cf76dfcfd91d21e84c83530926def27238c7",
+      "bytes": 255356
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-v2-0744",
+      "name": "慢性肾盂肾炎",
+      "figure": 24,
+      "diagnosis": "Chronic pyelonephritis",
+      "src": "assets/authorized/abdomen/open-review/diagnostics-06-00002-fig24.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4808817/figure/diagnostics-06-00002-f024/",
+      "license": "CC BY 4.0",
+      "localSha256": "de4886ada78778a3d597132065e09d7e26fa8e15a0cdb42872384e3ce4fe9a4a",
+      "bytes": 644217
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-v2-0730",
+      "name": "急性肾小管坏死（急性肾损伤）",
+      "figure": 27,
+      "diagnosis": "Acute tubular necrosis confirmed by biopsy",
+      "src": "assets/authorized/abdomen/open-review/diagnostics-06-00002-fig27.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4808817/figure/diagnostics-06-00002-f027/",
+      "license": "CC BY 4.0",
+      "localSha256": "3fff0908ced0c2d83ec3109a92764b4ddeb6f108e1c4f42838bd5c354376ccd0",
+      "bytes": 394818
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-vascular-trauma-traumatic-renal-injury",
+      "name": "肾挫伤、肾撕裂伤、肾破裂",
+      "figure": 28,
+      "diagnosis": "Traumatic renal laceration",
+      "src": "assets/authorized/abdomen/open-review/diagnostics-06-00002-fig28.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4808817/figure/diagnostics-06-00002-f028/",
+      "license": "CC BY 4.0",
+      "localSha256": "ba219359f05a57f8b1ce49c633705355ff92876aa2529b67f8a17da774e8c598",
+      "bytes": 455207
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-v2-0825",
+      "name": "血管平滑肌脂肪瘤（PEComa 家族）",
+      "figure": 2,
+      "diagnosis": "Renal angiomyolipoma with macroscopic fat",
+      "src": "assets/authorized/abdomen/open-review/cancers-15-02799-fig2.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10216374/figure/cancers-15-02799-f002/",
+      "license": "CC BY 4.0",
+      "localSha256": "4d2b2c4a3105427cbcb0ad586e53ecc86a365f37130489845d3d13b9015bd86d",
+      "bytes": 1365544
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-v2-0784",
+      "name": "嗜酸细胞腺瘤（肾 oncocytoma）",
+      "figure": 3,
+      "diagnosis": "Renal oncocytoma",
+      "src": "assets/authorized/abdomen/open-review/cancers-15-02799-fig3.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10216374/figure/cancers-15-02799-f003/",
+      "license": "CC BY 4.0",
+      "localSha256": "ba99bfc79a0e5932e14c2e9a8985065a3e0244481d84758e7ecf8b8784c05996",
+      "bytes": 1876187
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-renal-adrenal-clear-cell-renal-cell-carcinoma",
+      "name": "透明细胞肾细胞癌",
+      "figure": 4,
+      "diagnosis": "Clear cell renal cell carcinoma",
+      "src": "assets/authorized/abdomen/open-review/cancers-15-02799-fig4.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10216374/figure/cancers-15-02799-f004/",
+      "license": "CC BY 4.0",
+      "localSha256": "2c19a9bf6016aa066f8f27114aae69d817c547007fba3bd6dc90c4516bffd0eb",
+      "bytes": 3098343
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-renal-adrenal-papillary-renal-cell-carcinoma",
+      "name": "乳头状肾细胞癌",
+      "figure": 5,
+      "diagnosis": "Papillary renal cell carcinoma",
+      "src": "assets/authorized/abdomen/open-review/cancers-15-02799-fig5.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10216374/figure/cancers-15-02799-f005/",
+      "license": "CC BY 4.0",
+      "localSha256": "315a6cbbf6ecb1599ca76adb555a74d98314385b54b9847300e1cc90e9be18fe",
+      "bytes": 624574
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-v2-0794",
+      "name": "嫌色细胞肾细胞癌",
+      "figure": 6,
+      "diagnosis": "Chromophobe renal cell carcinoma",
+      "src": "assets/authorized/abdomen/open-review/cancers-15-02799-fig6.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10216374/figure/cancers-15-02799-f006/",
+      "license": "CC BY 4.0",
+      "localSha256": "5f290112e7f50e5393578f28fe1d8f14809f38ee4a315c8e4ef97216f39c887e",
+      "bytes": 1679007
+    },
+    {
+      "system": "abdomen",
+      "recordId": "abdomen-v2-0847",
+      "name": "上尿路浸润性尿路上皮癌（肾盂癌、输尿管癌）",
+      "figure": 9,
+      "diagnosis": "Transitional cell carcinoma of the renal pelvis",
+      "src": "assets/authorized/abdomen/open-review/cancers-15-02799-fig9.png",
+      "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10216374/figure/cancers-15-02799-f009/",
+      "license": "CC BY 4.0",
+      "localSha256": "52c3fbedc3bcb0799bda89953782603719d1736513538d7838151c324b8bdf69",
+      "bytes": 606237
     }
   ]
 }
